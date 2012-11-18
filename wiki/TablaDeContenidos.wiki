@@ -1,1 +1,1 @@
-#sidebar tabla de contenidos
+#sidebar TablaDeContenidos
