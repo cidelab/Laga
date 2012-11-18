@@ -19,18 +19,25 @@ Ejemplo de un cromosoma binario compuesto por 1s y 0s.
 
 ==Funcionamiento de un Algoritmo Genético==
 Un Algoritmo Genético puede dividirse en una serie de pasos:
- #Consiste en generar una  población aleatoria de posibles soluciones a   
- un problema. Está población de soluciones estará codificada de cierta  
- manera para permitir el cruce y la mutación(operadores genéticos) entre     
- ellos.
- #En el siguiente paso, las posibles soluciones son ordenadas de acuerdo     a su aptitud para resolver el problema que se busca solucionar. Está aptitud necesariamente debe ser medida y es conocida como el fitness. De esta manera, las soluciones con una mejor aptitud tendrán un mejor fitness que uno  que no  responda tan bien. La evaluación de aptitud depende estrechamente del problema que se está evaluando y es determinante en la eficiencia y eficacia que tenga el AG. Luego los individuos más aptos y algunos no tanto son seleccionados 
- #En esta etapa del algoritmo, los individuos seleccionados anteriormente son cruzados entre sí y 
-su descendencia es levemente mutada. Los nuevos  individuos remplazan a la  población
-anterior, y se espera que está nueva población tenga una mejor aptitud. La idea de remplazar 
-la antigua población, consiste en que el promedio de aptitud se vaya incrementando con cada 
-iteración del algoritmo.
- #La nueva  población es evaluada. Si el mejor  Individuo de la  nueva  población no satisface el 
-problema o el número de iteraciones del algoritmo no se ha alcanzado, entonces se regresa al 
-paso 2 y todo el proceso se vuelve a repetir
+ # Consiste en generar una  población aleatoria de posibles soluciones a   
+  un problema. Está población de soluciones estará codificada de cierta  
+  manera para permitir el cruce y la mutación(operadores genéticos) entre     
+  ellos.
+ # En el siguiente paso, las posibles soluciones son ordenadas de acuerdo 
+  a su aptitud para resolver el problema que se busca solucionar. Está aptitud 
+  necesariamente debe ser medida y es conocida como el fitness. 
+  De esta manera, las soluciones con una mejor aptitud tendrán un mejor fitness 
+  que uno que no responda tan bien. 
+  La evaluación de aptitud depende estrechamente del problema que se está evaluando
+  y es determinante en la eficiencia y eficacia que tenga el AG.  
+  Luego los individuos más aptos algunos no tanto son seleccionados   
+ # En esta etapa del algoritmo, los individuos seleccionados anteriormente son 
+   cruzados entre sí y su descendencia es levemente mutada. Los nuevos individuos 
+   remplazan a la  población anterior, y se espera que está nueva población tenga 
+   una mejor aptitud. La idea de remplazar la antigua población, consiste en que el 
+   promedio de aptitud se vaya incrementando con cada iteración del algoritmo.
+ # La nueva  población es evaluada. Si el mejor individuo de la nueva población no satisface el 
+   problema o el número de iteraciones del algoritmo no se ha alcanzado, entonces se regresa al 
+   paso 2 y todo el proceso se vuelve a repetir
 
 http://www.designemergente.org/laga/Page_07.jpg
