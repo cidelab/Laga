@@ -1,6 +1,6 @@
 #sidebar TablaDeContenidos
 
-  * [Articles Crossover]
+  * [Crossover]
     * [ArticlesXSS Web security]
     * [ArticlesDom DOM manipulation]
     * [ArticlesStyle CSS and style]
