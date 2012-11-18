@@ -8,7 +8,7 @@
 * laga
     * [Overview]	 
     * [Architecture]
-    * [Classes]
+    * Classes
         * [GenrChromosome]
         * [GenrPopulation]
         * [RankingSort]
