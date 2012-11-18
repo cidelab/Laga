@@ -3,6 +3,7 @@
 text-align:justify;
 text-justify:inter-word;
 
+#sidebar TableOfContents
 
 
 <br/>
