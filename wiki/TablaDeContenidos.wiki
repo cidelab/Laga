@@ -1,10 +1,28 @@
 #sidebar TablaDeContenidos
 
-
-  * [Introduccion]
-  * [AlgoritmosGeneticos]
+* Introduction
+    * [Introduccion]
+    * [AlgoritmosGeneticos]
 * Genetic Operators
     * [Codification]	 
     * [NaturalSelection]
     * [Crossover]
     * [Mutation]
+* laga
+    * [Overview]	 
+    * [Architecture]
+    * [Classes]
+        * [GenrChromosome]
+        * [GenrPopulation]
+        * [RankingSort]
+        * [NaturalSelection]
+        * [Crossover]
+        * [Mutation]
+        * [Replacement]
+    * [Fitness]
+    * [Examples]
+        * [GenrChromosome]
+        * [GenrPopulation]
+        * [RankingSort]
+        * [NaturalSelection]
+        * [Crossover]
