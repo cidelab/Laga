@@ -9,12 +9,12 @@ Todos estos trabajos, establecieron las bases de algo más generalizado sobre la
 Los AGs están basados en la Selección Natural:
 
 *1*
-Los individuos de una población compiten constantemente por recursos. Los que tienen más éxito en conseguirlos, tienen mayor oportunidad de aparearse y de tener descendencia.
+Los individuos de una población compiten constantemente por recursos. Los que tienen más éxito en conseguirlos, tienen mayor oportunidad de aparearse y de tener descendencia.<br/>
 *2*
 Los individuos más débiles tienen menor oportunidad de tener descendencia.
-*3*
+*3*<br/>
 Entonces los individuos más fuertes se copian un número mayor de veces en las futuras generaciones que las de uno más débil.||
-*4*
+*4*<br/>
 El hijo no es una copia fiel del padre y la madre, porque incorpora mutaciones en su ADN.
 
 http://www.designemergente.org/laga/Page_04.jpg
