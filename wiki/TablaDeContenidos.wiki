@@ -4,5 +4,8 @@
   * [Introduccion]
   * [AlgoritmosGeneticos]
   * [Crossover]
-  * [Codification]	 
-  * [NaturalSelection]
+ *Operadores Genéticos / Genetic Operators
+   #[Codification]	 
+   #[NaturalSelection]
+   #[Crossover]
+   #[Mutation]
