@@ -1,11 +1,11 @@
-* Introduccion
-* AlgoritmosGeneticos
-* Genetic Operators
+ * Introduccion
+ * AlgoritmosGeneticos
+ * Genetic Operators
     * [Codification]	 
     * [NaturalSelection]
     * [Crossover]
     * [Mutation]
-* laga
+ * laga
     * [Overview]	 
     * [Architecture]
     * Classes
