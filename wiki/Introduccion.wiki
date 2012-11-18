@@ -6,9 +6,7 @@ Los AGs como tal fueron inventados por John Holland en los 60 y fueron desarroll
 Todos estos trabajos, establecieron las bases de algo más generalizado sobre la computación evolutiva. Durante los 80 los AG se aplicaron a una amplia variedad de áreas, desde problemas de juegos matemáticos hasta la ingeniería. En un principio, los problemas a los que fueron aplicados eran bastante teóricos, pero luego comenzaron a ser aplicados hacia sectores comerciales, como la predicción de la bolsa, la planificación de cartera de valores, ingeniería aeroespacial,  diseño de microchips, bioquímica y biología molecular, diseño de horarios en aeropuertos y líneas de montaje, por nombrar algunas.
 <br/>
 <br/>
-== Subheading ==
-*Las Bases Biológicas*
-
+== Las Bases Biológicas ==
 Los AGs están basados en la Selección Natural:
 
 ||1||Los individuos de una población compiten constantemente por recursos. Los que tienen más éxito en conseguirlos, tienen mayor oportunidad de aparearse y de tener descendencia.||
