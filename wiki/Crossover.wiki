@@ -1,13 +1,4 @@
-#summary One-sentence summary of this page.
+= Cruzamiento =
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Una vez que se han generado los  individuos y han sido seleccionados el siguiente  operador genético en entrar en acción es el cruce(Crossover). El cruzamiento, requiere dos individuos que intercambien segmentos de su  cromosoma, produciendo uno o dos  individuos llamados descendencia artificial. Este proceso simula la combinación de los cromosomas del padre y la madre en la reproducción sexual. El cruce (Crossover) es un método basado en la estrategia de reproducción sexual. Opera en la transición  de generaciones y es aplicada al 90% de los  individuos seleccionados. Existen diferentes métodos de cruce, pero la mayoría opera de dos maneras diferentes. La primera es llamada estrategia destructiva, donde los descendientes se insertarán en la nueva población, aunque sus padres tengan un mejor  fitness. La otra estrategia es llamada no destructiva. Consiste en que si la descendencia no supera el fitness de los padres no se insertarán en la siguiente población. La idea del cruce consiste en que si se toman dos  individuos con buenaaptitud se obtiene una descendencia que comparte los genes de ambos padres, y por lo tanto, existe una alta posibilidad de que los genes heredados aumenten la aptitud del hijo.  Al 
+compartir las características buenas de ambos padres, la descendencia, o al menos alguna parte de ella, debiese ser mejor que la de los padres por separado. Existen muchos tipos de cruce, pero los más utilizados son tres: Cruce de 1 punto, Cruce de 2 puntos y Cruce uniforme.
