@@ -1,5 +1,5 @@
 = Mutación =
-
+<p align="justify">
 Una vez que  los  individuos seleccionados han sido  cruzados y hay una descendencia que ha 
 heredado las características de sus padres, el siguiente operador genético en entrar en acción 
 es  la mutación. Este operador consiste en  alterar  aleatoriamente  los cromosomas de  los 
@@ -15,4 +15,5 @@ sobre todo a que los  individuos suelen tener un fitness menor después de ser m
 mutación más usual es el remplazo aleatorio, que consiste en variar aleatoriamente un gen del 
 cromosoma. Si se trabaja con cromosomas binarios (101001010), bastará con sólo invertir un 1 
 por un 0 o viceversa. También es posible realizar la mutación intercambiando valores dentro 
-del cromosoma o multiplicar un gen por un valor aleatorio entre un mínimo y un máximo, etc.
+del cromosoma o multiplicar un gen por un valor aleatorio entre un mínimo y un máximo, etc. 
+</p>
