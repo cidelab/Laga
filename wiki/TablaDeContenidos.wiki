@@ -1,6 +1,6 @@
 #sidebar TablaDeContenidos
 
 
-  * [Introduction]
+  * [Introduccion]
   * [Natural selection]
   * [Crossover]
