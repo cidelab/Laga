@@ -1,11 +1,11 @@
 = Algoritmos Genéticos (AGs) =
 
-Add your content here.
+Un Algoritmo Genético es un método de programación adaptativo que puede usarse para resolver problemas de búsqueda y de optimización. Su estrategia está basada en los procesos evolutivos de los organismos vivos. 
 
+A lo largo de las generaciones, las poblaciones de seres vivos evolucionan de acorde con los principios de la selección natural y la supervivencia de los más fuertes o los más aptos. La estrategia de la naturaleza opera produciendo una gran cantidad de modelos, que son evaluados por el medio ambiente. Si estos modelos no son capaces de  adaptarse, desaparecen, prevaleciendo sólo los más aptos.
 
-= Details =
+Los AGs operan produciendo aleatoriamente  una cierta cantidad de modelos, o posibles soluciones a un problema. Cada una de estas soluciones está codificada de alguna manera, y son evaluados cuantitativamente bajo una función de aptitud. Los individuos que no cumplan con la aptitud mínima son eliminados. Sin embargo, algunos individuos serán prometedores, y estos  serán conservados y copiados para ser recombinados y así producir nuevas descendencias que incorporaran pequeñas mutaciones en sus cromosomas. De esta manera se  produce una nueva  población de posibles soluciones, que remplazará a la antigua. Así a lo largo de las generaciones las buenas propiedades y características de los mejores individuos se irán propagando por toda la población, haciendo que el promedio de aptitud vaya mejorando tras cada iteración del algoritmo. Entonces se favorecerá el  cruce de los  individuos mejor adaptados y serán exploradas las mejores áreas del espacio de búsqueda del problema.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Los AGs son una técnica robusta y pueden tratar con éxito una gran variedad de problemas provenientes de diferentes áreas, incluyendo aquellos en la que otros métodos encuentran dificultades. Si bien no garantiza que se encuentre la solución óptima del problema, existe una 
+evidencia empírica de que se encuentran soluciones de un nivel aceptable en un tiempo competitivo con respecto a otras técnicas de optimización. 
+Los AGs pueden ser vistos como un vehículo 4x4, en el sentido en que se adaptan a la mayoría de los terrenos. Sin embargo cuando existen técnicas especializadas para resolver un determinado problema, como por ejemplo correr sobre una carretera de asfalto, lo más probable es que superen al AG en rapidez y en eficacia (un automóvil deportivo). El campo de aplicaciones de los AGs se relaciona usualmente con aquellos problemas, para los cuales no existen técnicas especializadas. Aunque actualmente se están reportando muy buenos resultados con técnicas hibridas de algoritmos de optimización específica y AGs. Los AGs se basan en operadores genéticos para realizar su tarea (selección, cruce y mutación). Cada prototipo al ser testeado es representado por una tira de parámetros, la cual recibe el nombre de cromosoma. Gracias al cromosoma se facilita la tarea de  los operadores. Un ejemplo de un cromosoma genérico puede ser el siguiente.
