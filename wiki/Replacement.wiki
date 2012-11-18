@@ -1,0 +1,238 @@
+= Replacement =
+
+laga
+Class Replacement
+
+java.lang.Object
+laga.Replacement
+
+public class Replacement
+extends Object
+The Replace class has some methods to create and initialize the replacement population with the new individuals. only a char random replace is implemented
+Constructor Summary
+
+Constructors 
+Constructor and Description
+Replacement(PApplet parent) 
+Method Summary
+
+Methods 
+Modifier and Type	Method and Description
+char[][]	CharRandomReplace(char[][] newPartOfPopulation, int sizePopulation)
+CharRandomReplace method.
+double[][]	ReplaceInheritance(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation)
+ReplaceInheritance method.
+float[][]	ReplaceInheritance(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation)
+ReplaceInheritance method.
+int[][]	ReplaceInheritance(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation)
+ReplaceInheritance method.
+Object[][]	ReplaceInheritance(Object[][] sonMutPopulation, Object[][] ParentsPopulation, int sizePopulation)
+ReplaceInheritance method.
+double[][]	ReplaceInheritanceRandom(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation, double min, double max, float percentInherit)
+ReplaceInheritanceRandom method.
+float[][]	ReplaceInheritanceRandom(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation, float min, float max, float percentInherit)
+ReplaceInheritanceRandom method.
+int[][]	ReplaceInheritanceRandom(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation, int min, double max, float percentInherit)
+ReplaceInheritanceRandom method.
+Object[][]	ReplaceInheritanceRandom(Object[][] sonMutPopulation, Object[][] ParentsPopulation, int sizePopulation, float percentInherit)
+ReplaceInheritanceRandom method.
+double[][]	ReplaceRandom(double[][] sonMutPopulation, int sizePopulation, double min, double max)
+ReplaceRandom method.
+float[][]	ReplaceRandom(float[][] sonMutPopulation, int sizePopulation, float min, float max)
+ReplaceRandom method.
+int[][]	ReplaceRandom(int[][] sonMutPopulation, int sizePopulation, int min, int max)
+ReplaceRandom method.
+Object[][]	ReplaceRandom(Object[][] sonMutPopulation, float percent, int sizePopulation)
+ReplaceRandom method.
+Methods inherited from class java.lang.Object
+
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+
+Replacement
+
+public Replacement(PApplet parent)
+Method Detail
+
+ReplaceInheritance
+
+public Object[][] ReplaceInheritance(Object[][] sonMutPopulation,
+                            Object[][] ParentsPopulation,
+                            int sizePopulation)
+ReplaceInheritance method. this replace method is ideal for combinatorial problems with objects types in chromsome. and where is not possible generate new data in the replacement population. The Replace Inheritance use the parents and the mutated Inheritance. becareful...
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+Returns:
+Object[][] new population.
+ReplaceRandom
+
+public Object[][] ReplaceRandom(Object[][] sonMutPopulation,
+                       float percent,
+                       int sizePopulation)
+ReplaceRandom method. this replace method create a new population using the mutated inheritance and new random chromsomes.
+Parameters:
+sonMutPopulation - -> the son mutated population
+percent - -> the random level of the new chromosomes. 0 < level < 1.
+sizePopulation - -> the size of the population.
+Returns:
+Object[][] new population.
+ReplaceInheritanceRandom
+
+public Object[][] ReplaceInheritanceRandom(Object[][] sonMutPopulation,
+                                  Object[][] ParentsPopulation,
+                                  int sizePopulation,
+                                  float percentInherit)
+ReplaceInheritanceRandom method. this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will (parents) and how many new ones will be created for the new population.
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+min - -> min value in the chromosome.
+max - -> max value in the chromosome.
+percentInherit - -> percentInherit.
+Returns:
+Object[][] new population.
+ReplaceInheritance
+
+public double[][] ReplaceInheritance(double[][] sonMutPopulation,
+                            double[][] ParentsPopulation,
+                            int sizePopulation)
+ReplaceInheritance method. this replace method is ideal for combinatorial problems with float types in chromsome. and where is not possible generate new data in the replacement population. The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+Returns:
+double[][] new population.
+ReplaceRandom
+
+public double[][] ReplaceRandom(double[][] sonMutPopulation,
+                       int sizePopulation,
+                       double min,
+                       double max)
+ReplaceRandom method. this replace method create a new population using the mutated inheritance and new random chromsomes.
+Parameters:
+sonMutPopulation - -> the son mutated population
+sizePopulation - -> the size of the population.
+min - -> the minimum value in the crhomosome
+max - -> the maximum value in the chromosome
+Returns:
+double[][] new population.
+ReplaceInheritanceRandom
+
+public double[][] ReplaceInheritanceRandom(double[][] sonMutPopulation,
+                                  double[][] ParentsPopulation,
+                                  int sizePopulation,
+                                  double min,
+                                  double max,
+                                  float percentInherit)
+ReplaceInheritanceRandom method. this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will (parents) and how many new ones will be created for the new population.
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+min - -> min value in the chromosome.
+max - -> max value in the chromosome.
+percentInherit - -> percentInherit.
+Returns:
+double[][] new population.
+ReplaceInheritance
+
+public float[][] ReplaceInheritance(float[][] sonMutPopulation,
+                           float[][] ParentsPopulation,
+                           int sizePopulation)
+ReplaceInheritance method. this replace method is ideal for combinatorial problems with float types in chromsome. and where is not possible generate new data in the replacement population. The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+Returns:
+float[][] new population.
+ReplaceRandom
+
+public float[][] ReplaceRandom(float[][] sonMutPopulation,
+                      int sizePopulation,
+                      float min,
+                      float max)
+ReplaceRandom method. this replace method create a new population using the mutated inheritance and new random chromsomes.
+Parameters:
+sonMutPopulation - -> the son mutated population
+sizePopulation - -> the size of the population.
+min - -> the minimum value in the crhomosome
+max - -> the maximum value in the chromosome
+Returns:
+float[][] new population.
+ReplaceInheritanceRandom
+
+public float[][] ReplaceInheritanceRandom(float[][] sonMutPopulation,
+                                 float[][] ParentsPopulation,
+                                 int sizePopulation,
+                                 float min,
+                                 float max,
+                                 float percentInherit)
+ReplaceInheritanceRandom method. this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will (parents) and how many new ones will be created for the new population.
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+min - -> min value in the chromosome.
+max - -> max value in the chromosome.
+percentInherit - -> percentInherit.
+Returns:
+float[][] new population.
+ReplaceInheritance
+
+public int[][] ReplaceInheritance(int[][] sonMutPopulation,
+                         int[][] ParentsPopulation,
+                         int sizePopulation)
+ReplaceInheritance method. this replace method is ideal for combinatorial problems with float types in chromsome. and where is not possible generate new data in the replacement population. The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+Returns:
+int[][] new population.
+ReplaceRandom
+
+public int[][] ReplaceRandom(int[][] sonMutPopulation,
+                    int sizePopulation,
+                    int min,
+                    int max)
+ReplaceRandom method. this replace method create a new population using the mutated inheritance and new random chromsomes.
+Parameters:
+sonMutPopulation - -> the son mutated population
+sizePopulation - -> the size of the population.
+min - -> the minimum value in the crhomosome
+max - -> the maximum value in the chromosome
+Returns:
+int[][] new population.
+ReplaceInheritanceRandom
+
+public int[][] ReplaceInheritanceRandom(int[][] sonMutPopulation,
+                               int[][] ParentsPopulation,
+                               int sizePopulation,
+                               int min,
+                               double max,
+                               float percentInherit)
+ReplaceInheritanceRandom method. this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will (parents) and how many new ones will be created for the new population.
+Parameters:
+sonMutPopulation - -> the son mutated population
+ParentsPopulation - -> the parents population.
+sizePopulation - -> the size of the population.
+min - -> min value in the chromosome.
+max - -> max value in the chromosome.
+percentInherit - -> percentInherit.
+Returns:
+int[][] new population.
+CharRandomReplace
+
+public char[][] CharRandomReplace(char[][] newPartOfPopulation,
+                         int sizePopulation)
+CharRandomReplace method. set a new a population from the selected individuals.
+Parameters:
+newPartOfPopulation - -> selected individuals.
+sizePopulation - -> the size of the population.
+Returns:
+char[][] population.
