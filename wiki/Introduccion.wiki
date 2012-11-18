@@ -1,11 +1,11 @@
 #summary One-sentence summary of this page.
-<style>
+
 div
 {
 text-align:justify;
 text-justify:inter-word;
 }
-</style>
+
 
 <br/>
 = Algoritmos Genéticos =
