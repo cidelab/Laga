@@ -1,6 +1,6 @@
 = Selección =
 
-Existen diferentes maneras de seleccionar los mejores individuos dentro de una población de 
+<p align="justify">Existen diferentes maneras de seleccionar los mejores individuos dentro de una población de 
 soluciones a un problema.  Algunos métodos son exclusivos y otros  en cambio,  pueden 
 utilizarse en combinación con otras estrategias de selección. Un algoritmo de selección es el 
 que decide que individuos tendrán la oportunidad de reproducirse y cuáles no. La posibilidad 
@@ -15,4 +15,8 @@ adaptados se propagarán en sucesivas generaciones hacia un número de individuo
 Existen bastantes algoritmos de selección y la mayoría de ellos son personalizados para 
 enfrentar los diferentes problemas. Unos buscan mejorar el consumo computacional, otros los 
 rangos de selección de los mejores y peores  individuos, etc. La elección del método de 
-selección determinará la estrategia de búsqueda del AG. Si se elige un método con una alta 
+selección determinará la estrategia de búsqueda del AG. Si se elige un método con una alta presión de selección se centra la búsqueda de las soluciones en un entorno próximo a las 
+mejores soluciones de la  población. En cambio, si se elige un método de baja presión de 
+selección se deja el camino más abierto a explorar otras zonas del espacio de búsqueda. >p/>
+
+Los principales métodos de selección son:
