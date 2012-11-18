@@ -9,6 +9,9 @@
 <p align="justify">Los AGs son una técnica robusta y pueden tratar con éxito una gran variedad de problemas provenientes de diferentes áreas, incluyendo aquellos en la que otros métodos encuentran dificultades. Si bien no garantiza que se encuentre la solución óptima del problema, existe una evidencia empírica de que se encuentran soluciones de un nivel aceptable en un tiempo competitivo con respecto a otras técnicas de optimización. 
 Los AGs pueden ser vistos como un vehículo 4x4, en el sentido en que se adaptan a la mayoría de los terrenos. Sin embargo cuando existen técnicas especializadas para resolver un determinado problema, como por ejemplo correr sobre una carretera de asfalto, lo más probable es que superen al AG en rapidez y en eficacia (un automóvil deportivo). El campo de aplicaciones de los AGs se relaciona usualmente con aquellos problemas, para los cuales no existen técnicas especializadas. Aunque actualmente se están reportando muy buenos resultados con técnicas hibridas de algoritmos de optimización específica y AGs. Los AGs se basan en operadores genéticos para realizar su tarea (selección, cruce y mutación). Cada prototipo al ser testeado es representado por una tira de parámetros, la cual recibe el nombre de cromosoma. Gracias al cromosoma se facilita la tarea de  los operadores. Un ejemplo de un cromosoma genérico puede ser el siguiente.</p>
 
-||0||1||2||3||4||5||6||7||8||9||10|| ... ||   n   ||
-||0||1||1||0||1||0||1||0||0||1||0|| ... ||   n   ||
-Ejemplo de un cromosoma binario compuesto por 1s y 0s. Un cromosoma tipo puede ser una lista de valores de 1s y 0s.
+||0||1||2||3||4||5||6||7||8||9||
+||0||1||1||0||1||0||1||0||0||1||
+Ejemplo de un cromosoma binario compuesto por 1s y 0s. 
+<p align="justify">
+Un cromosoma tipo puede ser una lista de valores de 1s y 0s. a cada casilla le corresponde un parámetro a evaluar. Si el parámetro a 
+evaluar es satisfecho, la casilla es marcada con un 1, de lo contrario un 0.  La suma total de los genes determinan el factor de aptitud del individuo, en este caso, el modelo cumple sólo con 5 de los 10 evaluados.</p>
