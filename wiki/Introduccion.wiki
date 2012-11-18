@@ -1,4 +1,4 @@
-#introducción a los Algoritmos Genéticos (AGs).
+#introducción a los Algoritmos Genéticos.
 <br/>
 = Algoritmos Genéticos =
 
