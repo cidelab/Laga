@@ -1,13 +1,10 @@
 #summary One-sentence summary of this page.
-
-text-align justify;
-
 <br/>
 = Algoritmos Genéticos =
-
+||
 Los Algoritmos Genéticos como tal fueron inventados por John Holland en los 60 y fueron desarrollados por él, sus estudiantes y colegas de la universidad de Michigan entre los años 1960 y 1970. Holland fue el primero en proponer el cruzamiento y otros operadores de recombinación. El objetivo general de Holland, no fue diseñar algoritmos para resolver problemas específicos, sino más bien un estudio formal sobre el fenómeno de adaptación que ocurre en la naturaleza y de esa manera desarrollar las vías en el cuál estos mecanismos de adaptación natural pueden ser importados a los sistemas computacionales. El libro de Holland salió el año 1975, bajo el nombre “Adaptation in Natural and Artificial Systems”. En el libro se presentan los algoritmos genéticos de manera detallada, utilizando la mutación, la selección y el cruzamiento. Además Holland fue el primero en intentar poner la computación evolutiva sobre una firme base teórica. Además planteo la Teoría de esquemas que ha sido la base de casi todos los trabajos sobre algoritmos genéticos.
 
-Todos estos trabajos, establecieron las bases de algo más generalizado sobre la computación evolutiva. Durante los 80 los AG se aplicaron a una amplia variedad de áreas, desde problemas de juegos matemáticos hasta la ingeniería. En un principio, los problemas a los que fueron aplicados eran bastante teóricos, pero luego comenzaron a ser aplicados hacia sectores comerciales, como la predicción de la bolsa, la planificación de cartera de valores, ingeniería aeroespacial,  diseño de microchips, bioquímica y biología molecular, diseño de horarios en aeropuertos y líneas de montaje, por nombrar algunas.
+Todos estos trabajos, establecieron las bases de algo más generalizado sobre la computación evolutiva. Durante los 80 los AG se aplicaron a una amplia variedad de áreas, desde problemas de juegos matemáticos hasta la ingeniería. En un principio, los problemas a los que fueron aplicados eran bastante teóricos, pero luego comenzaron a ser aplicados hacia sectores comerciales, como la predicción de la bolsa, la planificación de cartera de valores, ingeniería aeroespacial,  diseño de microchips, bioquímica y biología molecular, diseño de horarios en aeropuertos y líneas de montaje, por nombrar algunas.||
 
 
 http://www.designemergente.org/laga/Page_04.jpg
