@@ -1,6 +1,6 @@
 * Introduction
-    * [Introduccion]
-    * [AlgoritmosGeneticos]
+  * [Introduccion]
+  * [AlgoritmosGeneticos]
 * Genetic Operators
     * [Codification]	 
     * [NaturalSelection]
