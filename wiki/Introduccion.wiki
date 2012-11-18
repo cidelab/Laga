@@ -17,3 +17,17 @@ Entonces los individuos más fuertes se copian un número mayor de veces en las 
 El hijo no es una copia fiel del padre y la madre, porque incorpora mutaciones en su ADN.
 
 http://www.designemergente.org/laga/Page_04.jpg
+
+En la selección natural, los  individuos de una población compiten constantemente con otros por comida y agua. Los  individuos que más éxito tienen en conseguir estos recursos, tienen mayor oportunidad de aparearse y de tener descendencia. En cambio, los  individuos más débiles tienen menor oportunidad de aparearse. De esta manera lo que sucede es que los genes de los  individuos más fuertes  se copian un número mayor de veces en las futuras generaciones que las de uno más débil. El hijo no es una copia fiel del padre y la madre, porque incorpora pequeñas mutaciones en su ADN. Esto hace posible que el hijo pueda o no salir mejor adaptado que sus padres. De esta manera la especie es capaz de irse adaptando al medio que lo rodea.  Sin embargo la adaptación del individuo no es 100% genética, influyen otros factores como aprendizaje, el cual puede conseguirse a través de la imitación del 
+comportamiento de los padres o por ensayo y error.
+<br/>
+Todos los organismos vivos están constituidos por células y cada célula contiene el mismo grupo de uno o más cromosomas, cadenas de ADN, que son los planos para construir el organismo. Los cromosomas se dividen en genes, los cuales son una codificación de unas proteínas que explican los rasgos de un organismo, como por ejemplo el color de la piel. Las 
+diferentes opciones que pueden tener estos rasgos se conocen como alelos. La mayoría de los individuos son diploides, lo que significa que tienen dos alelos por cada gen, uno heredado del padre y otro de la madre. Cada par de alelos se ubica en igual locus o lugar del cromosoma.
+La mayoría de los organismos tienen muchos cromosomas en cada célula. Todos los cromosomas juntos se llaman genoma. El genotipo es el conjunto de genes de un organismo, pero no es la forma final del organismo. El fenotipo es la expresión del genotipo influenciado por el medio ambiente y es la forma final del organismo. Sin embargo, el fenotipo no es todo 
+lo visible  que vemos del organismo, como por ejemplo sería el caso de ciertos rasgos de personalidad, o la producción de ciertas enzimas. Otra cosa interesante es que no todos los genes se manifiestan en el fenotipo.
+Los organismos que tienen pares de cromosomas se conocen como diploides y los organismos 
+que sólo tienen un par de cromosomas se llaman haploides. En la naturaleza, la mayoría de las 
+especies que se reproducen sexualmente  son diploides, incluyendo a los seres humanos. 
+Durante la reproducción sexual (Crossover), en cada padre, los genes son intercambiados entre 
+cada par de cromosomas para formar un gameto (haploide) y luego los gametos de ambos 
+padres se emparejan para crear un grupo de cromosomas diploides.
