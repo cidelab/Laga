@@ -1,13 +1,3 @@
-#summary One-sentence summary of this page.
+= Codificación =
 
-= Introduction =
-
-<p align="justify">El término cromosoma en AGs, se refiere a la codificación de una posible solución a un problema. El cromosoma está representado por una serie de parámetros o valores y su conjunto recibe el nombre de  cromosoma, que contiene la información necesaria para la construcción del modelo, es decir la solución real al problema. La codificación suele hacerse por medio de valores binarios (10010), por lo que se asigna un número determinado de bits a cada parámetro. No todos los parámetros tienen que estar definidos por el mismo número de bits. Otro método consiste en codificar las soluciones como listas de enteros, reales o incluso letras, donde cada  elemento en la lista representa un aspecto especifico de la solución. El objetivo de la codificación básicamente consiste en facilitar el trabajo de los operadores que cruzan y mutan a los candidatos seleccionados.</p>
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+<p align="justify"> El término cromosoma en AGs, se refiere a la codificación de una posible solución a un problema. El cromosoma está representado por una serie de parámetros o valores y su conjunto recibe el nombre de cromosoma, que contiene la información necesaria para la construcción del modelo, es decir la solución real al problema. La codificación suele hacerse por medio de valores binarios {{{{1,0,0,1,0)}}}}, por lo que se asigna un número determinado de bits a cada parámetro. No todos los parámetros tienen que estar definidos por el mismo número de bits. Otro método consiste en codificar las soluciones como listas de enteros, reales o incluso letras, donde cada elemento en la lista representa un aspecto especifico de la solución. El objetivo de la codificación básicamente consiste en facilitar el trabajo de los operadores que cruzan y mutan a los candidatos seleccionados.</p>
