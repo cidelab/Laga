@@ -16,8 +16,8 @@
         * [Crossover]
         * [Mutation]
         * [Replacement]
-    * [Fitness]
-    * [Examples]
+    * Fitness
+    * Examples
         * [GenrChromosome]
         * [GenrPopulation]
         * [RankingSort]
