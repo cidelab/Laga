@@ -11,7 +11,8 @@ Los AGs pueden ser vistos como un vehículo 4x4, en el sentido en que se adaptan
 
 ||0||1||2||3||4||5||6||7||8||9||
 ||0||1||1||0||1||0||1||0||0||1||
-Ejemplo de un cromosoma binario compuesto por 1s y 0s. 
+Ejemplo de un cromosoma binario compuesto por 1s y 0s.
+<br/>
 <p align="justify">
 Un cromosoma tipo puede ser una lista de valores de 1s y 0s. a cada casilla le corresponde un parámetro a evaluar. Si el parámetro a 
 evaluar es satisfecho, la casilla es marcada con un 1, de lo contrario un 0.  La suma total de los genes determinan el factor de aptitud del individuo, en este caso, el modelo cumple sólo con 5 de los 10 evaluados.</p>
