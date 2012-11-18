@@ -15,5 +15,7 @@ sobre todo a que los  individuos suelen tener un fitness menor después de ser m
 mutación más usual es el remplazo aleatorio, que consiste en variar aleatoriamente un gen del 
 cromosoma. Si se trabaja con cromosomas binarios (101001010), bastará con sólo invertir un 1 
 por un 0 o viceversa. También es posible realizar la mutación intercambiando valores dentro 
-del cromosoma o multiplicar un gen por un valor aleatorio entre un mínimo y un máximo, etc. 
+del cromosoma o multiplicar un gen por un valor aleatorio entre un mínimo y un máximo, etc. La mutación de un individuo pasa por variar en alrededor de un 1% su cromosoma. La técnica y 
+la manera que se emplee dependerán estrechamente, de las condiciones del problema y del 
+tipo de dato que se tenga en el cromosoma.
 </p>
