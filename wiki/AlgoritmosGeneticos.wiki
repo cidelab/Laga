@@ -12,7 +12,6 @@ Los AGs pueden ser vistos como un vehículo 4x4, en el sentido en que se adaptan
 Ejemplo de un cromosoma binario compuesto por 1s y 0s.
 ||0||1||2||3||4||5||6||7||8||9||
 ||0||1||1||0||1||0||1||0||0||1||
-
 <br/>
 <p align="justify">
 Un cromosoma tipo puede ser una lista de valores de 1s y 0s. a cada casilla le corresponde un parámetro a evaluar. Si el parámetro a 
