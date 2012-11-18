@@ -8,6 +8,8 @@ Todos estos trabajos, establecieron las bases de algo más generalizado sobre la
 <br/>
 <br/>
 *Las Bases Biológicas*
+
+margin-left:2cm;
 Los AGs están basados en la Selección Natural:
 
 ||1||Los individuos de una población compiten constantemente por recursos. Los que tienen más éxito en conseguirlos, tienen mayor oportunidad de aparearse y de tener descendencia.||
