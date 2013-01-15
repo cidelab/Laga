@@ -17,7 +17,7 @@ Methods Modifier and Types
 Methods and Descriptions
 <br>
 <br>
-===={{{int[] BinaryChromosome(int sizeChromosome)}}}<br>====
+{{{int[] BinaryChromosome(int sizeChromosome)}}}<br>
 This method generate a binary chromosome composed by 1s and 0s in random flavor
 <br>
  * Parameters
