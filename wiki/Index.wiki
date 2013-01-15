@@ -2,7 +2,7 @@
  * [AlgoritmosGeneticos]
  * Genetic Operators
     * [Codification]	 
-    * [NaturalSelection]
+    * [DarwinSelection]
     * [Crossover]
     * [Mutation]
  * laga
