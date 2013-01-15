@@ -3,20 +3,20 @@
  * Genetic Operators
     * [Codification]	 
     * [Natural Selection]
-    * [Crossover Op.]
-    * [Mutation Op.]
-    * [Replacement Op.]
+    * [Crossover]
+    * [Mutation]
+    * [Replacement]
  * laga
     * [Overview]	 
     * [Architecture]
     * Classes
-        * [GenrChromosome]
-        * [GenrPopulation]
-        * [RankingSort]
-        * [NaturalSelection]
-        * [Crossover]
-        * [Mutation]
-        * [Replacement]
+        * [GenrChromosome class]
+        * [GenrPopulation class]
+        * [RankingSort class]
+        * [NaturalSelection class]
+        * [Crossover class]
+        * [Mutation class]
+        * [Replacement class]
     * Fitness
     * Examples(not implemented)
         * [Pisco Sour]
