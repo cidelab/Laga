@@ -17,9 +17,8 @@
         * [Mutation]
         * [Replacement]
     * Fitness
-    * Examples
-        * [GenrChromosome]
-        * [GenrPopulation]
-        * [RankingSort]
-        * [NaturalSelection]
-        * [Crossover]
+    * Examples(not implemented)
+        * [Pisco Sour]
+        * [Travelling Salesman]
+        * [The closer Point]
+        * [Points on Surface]
