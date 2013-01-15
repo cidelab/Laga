@@ -1,96 +1,68 @@
 = GenrChromosome =
 
-public class GenrChromosome
-extends Object
-The GenrChromosome class has all the methods to create and initialize different flavors of chromosomes:
-Constructor Summary
+Public class GenrChromosome, extends Object <br>
+The GenrChromosome class has all the methods to create and initialize different flavours of chromosomes.
+<br>
+<br>
+<br>
+==Constructor Summary== 
+Constructor and Description:<br>
+One constructor.<br>
+{{{GenrChromosome(PApplet theParent)}}}
+<br>
+<br>
+<br>
+===Method Summary===
+Methods Modifier and Types
+Methods and Descriptions
+<br>
+<br>
+{{{int[] BinaryChromosome(int sizeChromosome)}}}<br>
+This method generate a binary chromosome composed by 1s and 0s in random flavor
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+<br>
+<br>
+{{{char[] CharChromosome(int sizeChromosome)}}}<br>
+This method generate a character chromosome composed by lower case (a - z) characters and spaces in a random flavour.
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+<br>
+<br>
 
-Constructors 
-Constructor and Description
-GenrChromosome(PApplet theParent) 
-Method Summary
-
-Methods 
-Modifier and Type	Method and Description
-int[]	BinaryChromosome(int sizeChromosome)
-This method generate a binary chromosome composed by 1s and 0s in random flavor...
-char[]	CharChromosome(int sizeChromosome)
-this method generate a character chromosome composed by lower case characters and spaces in a random flavor.
-double[]	NumberChromosome(int sizeChromosome, double minParam, double maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
-float[]	NumberChromosome(int sizeChromosome, float minParam, float maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
-int[]	NumberChromosome(int sizeChromosome, int minParam, int maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
-int[]	NumberChromosomeSwap(int sizeChromosome)
-the method generate a number chromosome composed by non repeated numbers between 0 and sizeChromosome(not inclusive).
-Methods inherited from class java.lang.Object
-
-equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-Constructor Detail
-
-GenrChromosome
-
-public GenrChromosome(PApplet theParent)
-Method Detail
-
-NumberChromosome
-
-public double[] NumberChromosome(int sizeChromosome,
-                        double minParam,
-                        double maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter. the method is based on double numbers.
-Parameters:
-sizeChromosome - -> the size of the chromosome
-minParam - -> the smallest value in the chromosome
-maxParam - -> the bigger value in the chromosome
-Returns:
-double random chromosome
-NumberChromosome
-
-public float[] NumberChromosome(int sizeChromosome,
-                       float minParam,
-                       float maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter. the method is based on float numbers.
-Parameters:
-sizeChromosome - -> the size of the chromosome
-minParam - -> the smallest value in the chromosome
-maxParam - -> the bigger value in the chromosome
-Returns:
-float list in the flavor: float[]
-NumberChromosome
-
-public int[] NumberChromosome(int sizeChromosome,
-                     int minParam,
-                     int maxParam)
-the method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter. the method is based on int numbers.
-Parameters:
-sizeChromosome - -> the size of the chromosome
-minParam - -> the smallest value in the chromosome
-maxParam - -> the bigger value in the chromosome
-Returns:
-int list in the flavor: int[]
-BinaryChromosome
-
-public int[] BinaryChromosome(int sizeChromosome)
-This method generate a binary chromosome composed by 1s and 0s in random flavor...
-Parameters:
-sizeChromosome - -> the size of the population
-Returns:
-Integer list in the flavor: int[]
-CharChromosome
-
-public char[] CharChromosome(int sizeChromosome)
-this method generate a character chromosome composed by lower case characters and spaces in a random flavor. composed by singles characters from a to z plus (space)
-Parameters:
-sizeChromosome - -> the size of the population
-Returns:
-char list in the flavor: char[]
-NumberChromosomeSwap
-
-public int[] NumberChromosomeSwap(int sizeChromosome)
-the method generate a number chromosome composed by non repeated numbers between 0 and sizeChromosome(not inclusive). the method is based on integer numbers. this method is designed by combinatorial problems.
-Parameters:
-sizeChromosome - -> the size of the chromosome
-Returns:
-int list in the flavor: int[]
+{{{double[] NumberChromosome(int sizeChromosome, double minParam, double maxParam)}}}<br>
+The method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+    # {{{minParam      }}}: The smallest value in the chromosome
+    # {{{maxParam      }}}: The bigger value in the chromosome
+<br>
+<br>
+{{{float[] NumberChromosome(int sizeChromosome, float minParam, float maxParam)}}}<br>
+The method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+    # {{{minParam      }}}: The smallest value in the chromosome
+    # {{{maxParam      }}}: The bigger value in the chromosome
+<br>
+<br>
+{{{int[] NumberChromosome(int sizeChromosome, int minParam, int maxParam)}}}<br>
+The method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+    # {{{minParam      }}}: The smallest value in the chromosome
+    # {{{maxParam      }}}: The bigger value in the chromosome
+<br>
+<br>
+{{{int[] NumberChromosomeSwap(int sizeChromosome)}}}<br>
+The method generate a number chromosome composed by non repeated numbers between 0 and the sizeChromosome(not inclusive).
+<br>
+ * Parameters
+    # {{{sizeChromosome}}}: The size of the chromosome
+<br>
+<br>
