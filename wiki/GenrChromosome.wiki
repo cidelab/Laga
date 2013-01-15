@@ -31,7 +31,6 @@ This method generate a character chromosome composed by lower case (a - z) chara
     # {{{sizeChromosome}}}: The size of the chromosome
 <br>
 <br>
-
 {{{double[] NumberChromosome(int sizeChromosome, double minParam, double maxParam)}}}<br>
 The method generate a number chromosome composed by random numbers between a minimum parameter and a maximum parameter.
 <br>
