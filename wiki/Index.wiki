@@ -2,7 +2,7 @@
  * [AlgoritmosGeneticos]
  * Genetic Operators
     * [Codification]	 
-    * [NaturalSelection]
+    * [Natural_Selection]
     * [Crossover]
     * [Mutation]
     * [Replacement]
@@ -10,13 +10,13 @@
     * [Overview]	 
     * [Architecture]
     * Classes
-        * [GenrChromosomecl]
-        * [GenrPopulationcl]
-        * [RankingSortcl]
-        * [NaturalSelectioncl]
-        * [Crossovercl]
-        * [Mutationcl]
-        * [Replacementcl]
+        * [GenrChromosome]
+        * [GenrPopulation]
+        * [RankingSort]
+        * [NaturalSelection]
+        * [Crossover]
+        * [Mutation]
+        * [Replacement]
     * Fitness
     * Examples(not implemented)
         * [Pisco Sour]
