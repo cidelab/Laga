@@ -2,9 +2,10 @@
  * [AlgoritmosGeneticos]
  * Genetic Operators
     * [Codification]	 
-    * [NaturalSelection]
-    * [Crossover]
-    * [Mutation]
+    * [Natural Selection Operator]
+    * [Crossover Operator]
+    * [Mutation Operator]
+    * [Replacement Operator]
  * laga
     * [Overview]	 
     * [Architecture]
