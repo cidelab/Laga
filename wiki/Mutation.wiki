@@ -1,21 +1,90 @@
-= Mutación =
-<p align="justify">
-Una vez que  los  individuos seleccionados han sido  cruzados y hay una descendencia que ha 
-heredado las características de sus padres, el siguiente operador genético en entrar en acción 
-es  la mutación. Este operador consiste en  alterar  aleatoriamente  los cromosomas de  los 
-individuos. Esto es hecho por dos motivos. El primero, es para que exista una probabilidad de 
-mejoría de la aptitud en la siguiente generación y la segunda, es para abarcar el mayor espacio 
-de búsqueda posible.
-La mutación provoca que alguno de los genes varíe de forma aleatoria y usualmente se aplica a 
-la descendencia de los individuos cruzados. De esta manera, se imita el comportamiento de la 
-naturaleza porque cuando se genera la descendencia siempre se produce algún tipo de error, 
-que por lo general no tiene mayor trascendencia en el paso de los datos genéticos del padre al 
-hijo. La probabilidad de mutación siempre es  muy baja, alrededor de un 1%. Esto se debe 
-sobre todo a que los  individuos suelen tener un fitness menor después de ser mutados. La 
-mutación más usual es el remplazo aleatorio, que consiste en variar aleatoriamente un gen del 
-cromosoma. Si se trabaja con cromosomas binarios (101001010), bastará con sólo invertir un 1 
-por un 0 o viceversa. También es posible realizar la mutación intercambiando valores dentro 
-del cromosoma o multiplicar un gen por un valor aleatorio entre un mínimo y un máximo, etc. La mutación de un individuo pasa por variar en alrededor de un 1% su cromosoma. La técnica y 
-la manera que se emplee dependerán estrechamente, de las condiciones del problema y del 
-tipo de dato que se tenga en el cromosoma.
-</p>
+= Mutation =
+The Mutation class has all the methods to create and initialize different flavors of mutations on individuals, (not implemented yet).
+Constructor Summary
+
+Constructors 
+Constructor and Description
+Mutation(PApplet parent, float MutationRate)
+The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population. always a small number closer to 0.
+Method Summary
+
+Methods 
+Modifier and Type	Method and Description
+char[][]	CharMutation(char[][] pop, float ChroPercent)
+The Method GenrMutation() takes two arguments. the population that is going to be mutated and the percent of the chromosome mutated.
+Object[][]	MutationSwap(Object[][] population, float percentChrom)
+MutationSwap method.
+double[][]	NumbMutation(double[][] pop, double min, double max, float percentChrom)
+MutationSwap method.
+float[][]	NumbMutation(float[][] pop, float min, float max, float percentChrom)
+MutationSwap method.
+int[][]	NumbMutation(int[][] pop, int min, int max, float percentChrom)
+MutationSwap method.
+Methods inherited from class java.lang.Object
+
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+
+Mutation
+
+public Mutation(PApplet parent,
+        float MutationRate)
+The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population. always a small number closer to 0.
+Method Detail
+
+MutationSwap
+
+public Object[][] MutationSwap(Object[][] population,
+                      float percentChrom)
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+Parameters:
+population - -> population to be mutated.
+percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
+Returns:
+Object[][] population.
+NumbMutation
+
+public double[][] NumbMutation(double[][] pop,
+                      double min,
+                      double max,
+                      float percentChrom)
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+Parameters:
+population - -> population to be mutated.
+percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
+Returns:
+double[][] population.
+NumbMutation
+
+public float[][] NumbMutation(float[][] pop,
+                     float min,
+                     float max,
+                     float percentChrom)
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+Parameters:
+population - -> population to be mutated.
+percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
+Returns:
+float[][] population.
+NumbMutation
+
+public int[][] NumbMutation(int[][] pop,
+                   int min,
+                   int max,
+                   float percentChrom)
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+Parameters:
+population - -> population to be mutated.
+percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
+Returns:
+int[][] population.
+CharMutation
+
+public char[][] CharMutation(char[][] pop,
+                    float ChroPercent)
+The Method GenrMutation() takes two arguments. the population that is going to be mutated and the percent of the chromosome mutated.
+Parameters:
+pop - the population that is going to be mutated;
+Chromosomepercent - the percent rate in the chromosome that is going to be mutated.
+Returns:
+a mutated population in the passed flavor.
