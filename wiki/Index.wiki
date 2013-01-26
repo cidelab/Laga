@@ -1,10 +1,11 @@
  * [Introduccion]
- * [AlgoritmosGeneticos]
+ * [GeneticAlgorithms]
  * Genetic Operators
-    * [_Codification]	 
-    * [_NaturalSelection]
-    * [_Crossover]
-    * [_Mutation]
+    * [OpCodification]
+    * [OpFitness]	 
+    * [OpNaturalSelection]
+    * [OpMutation]
+    * [OpCrossover]
  * laga
     * [Overview]	 
     * [Architecture]
