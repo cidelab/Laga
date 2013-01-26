@@ -1,4 +1,3 @@
- * [Introduccion]
  * [GeneticAlgorithms]
  * Genetic Operators
     * [OpCodification]
