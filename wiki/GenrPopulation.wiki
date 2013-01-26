@@ -1,11 +1,129 @@
 = GenrPopulation =
 
-Add your content here.
+java.lang.Object
+laga.GenrPopulation
 
+public class GenrPopulation
+extends Object
+The GenrPopulation class has all the methods to create and initialize different flavors of populations, this class must be called to create the first random population.
+Constructor Summary
 
-= Details =
+Constructors 
+Constructor and Description
+GenrPopulation(PApplet parent) 
+Method Summary
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Methods 
+Modifier and Type	Method and Description
+int[][]	BinaryPopulation(int sizePopulation, int sizeChromosome)
+BinaryPopulation.
+char[][]	CharPopulation(int sizePopulation, int sizeChromosome)
+CharPopulation method.
+double[][]	NumbPopulation(int sizePopulation, int sizeChromosome, double min, double max)
+NumberPopulation method.
+float[][]	NumbPopulation(int sizePopulation, int sizeChromosome, float min, float max)
+NumberPopulation method.
+int[][]	NumbPopulation(int sizePopulation, int sizeChromosome, int min, int max)
+NumberPopulation method.
+Object[][]	ObjectPopulationSwap(int sizePopulation, Object[] SeedChromosome, float percent, boolean InOut)
+ObjectPopulationSwap.
+double[][][]	PointsPopulationXYZ(int sizePopulation, double[][] SeedCoordinates, double[][] SeedThershold)
+PointsPopulationXYZ.
+Methods inherited from class java.lang.Object
+
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+
+GenrPopulation
+
+public GenrPopulation(PApplet parent)
+Method Detail
+
+ObjectPopulationSwap
+
+public Object[][] ObjectPopulationSwap(int sizePopulation,
+                              Object[] SeedChromosome,
+                              float percent,
+                              boolean InOut)
+ObjectPopulationSwap. Create a random population based on seed of Object[] chromosome. this method is designed for combinatorial problems.
+Parameters:
+sizePopulation - -> the size of the population;
+seedChromosome - -> the seed chromosome to create the population.
+percent - -> the mutation percent in the population 0 <= percent <= 1
+InOut - -> if is true the seed will be included in the population
+Returns:
+a population in the flavor Object[][] based on a seed Object[] chromosome.
+PointsPopulationXYZ
+
+public double[][][] PointsPopulationXYZ(int sizePopulation,
+                               double[][] SeedCoordinates,
+                               double[][] SeedThershold)
+PointsPopulationXYZ. Create a random population based on seedCoordinates of xyz coordinates in the flavor {{x,y,z}, {x,y,z}}. the population returned is in the flavor {{{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}}
+Parameters:
+sizePopulation - -> the size of the population;
+seedCoordinates-> - the seed coordinates feeds the necessary points to establish the coordinates. The length of the seed will represent the size of the chromosome.
+seedThershold - -> the seed threshold to determine the movement of points.
+Returns:
+a population in the flavor {{{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}}, where x, y and z are doubles.
+NumbPopulation
+
+public double[][] NumbPopulation(int sizePopulation,
+                        int sizeChromosome,
+                        double min,
+                        double max)
+NumberPopulation method. Create a Random population by float numbers.
+Parameters:
+sizePopulation - -> the size of the population;
+sizeChromosome - -> the length of each Chromosome in the population.
+min - -> the minimum value in the chromosome;
+max - -> the maximum value in the chromosome;.
+Returns:
+a NumberPopulation in the flavor double[][].
+NumbPopulation
+
+public float[][] NumbPopulation(int sizePopulation,
+                       int sizeChromosome,
+                       float min,
+                       float max)
+NumberPopulation method. Create a Random population by float numbers.
+Parameters:
+sizePopulation - -> the size of the population;
+sizeChromosome - -> the length of each Chromosome in the population.
+min - -> the minimum value in the chromosome;
+max - -> the maximum value in the chromosome;.
+Returns:
+a NumberPopulation in the flavor float[][].
+NumbPopulation
+
+public int[][] NumbPopulation(int sizePopulation,
+                     int sizeChromosome,
+                     int min,
+                     int max)
+NumberPopulation method. Create a Random population by integers chromosome.
+Parameters:
+sizePopulation - -> the size of the population;
+sizeChromosome - -> the length of each Chromosome in the population.
+min - -> the minimum value in the chromosome;
+max - -> the maximum value in the chromosome;.
+Returns:
+a NumberPopulation in the flavor int[][].
+BinaryPopulation
+
+public int[][] BinaryPopulation(int sizePopulation,
+                       int sizeChromosome)
+BinaryPopulation. Create a Random binary population.
+Parameters:
+sizePopulation - -> the size of the population;
+sizeChromosome - -> the length of each chromosome in the population.
+Returns:
+a population in the flavor int[][] in the type 1010110101.
+CharPopulation
+
+public char[][] CharPopulation(int sizePopulation,
+                      int sizeChromosome)
+CharPopulation method. Create a Random population by characters chromosome in the flavor charChromosome method
+Parameters:
+sizePopulation - -> the size of the population;
+sizeChromosome - -> the length of each Chromosome in the population.
+Returns:
+a charPopulation in the flavor char[][].
