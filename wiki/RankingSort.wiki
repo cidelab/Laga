@@ -1,49 +1,24 @@
 = RankingSort =
-Public class GenrChromosome, extends Object. <br>
+Public class GenrChromosome, extends Object<br>
 The RankingSort class has all the methods to create and initialize the bidirectional BubbleSort algorithm.
 <br>
-_NOTE_
+_NOTE
 <br>
-_The bidirectional BubbleSort Methods split the list in tho parts, and goes properly than the traditional BubbleSort. Nevertheless I'm working in a most efective method to sort the data. a recursive method will be implemented._
-
-Constructors 
-Constructor and Description
-RankingSort(PApplet parent) 
-Method Summary
-
-Methods 
-Modifier and Type	Method and Description
-void	BidirectionalBubbleSort(char[][] population, float[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(char[][] population, int[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(double[][] population, float[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(double[][] population, int[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(float[][] population, float[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(float[][] population, int[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(int[][] population, float[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(int[][] population, int[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(Object[][] population, float[] arrResults)
-An optimized BidirectionalBubbleSort method.
-void	BidirectionalBubbleSort(Object[][] population, int[] arrResults)
-An optimized BidirectionalBubbleSort method.
-Methods inherited from class java.lang.Object
-
-equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-Constructor Detail
-
-RankingSort
-
-public RankingSort(PApplet parent)
-Method Detail
-
-BidirectionalBubbleSort
+The bidirectional BubbleSort Methods split the list in tho parts, and goes properly than the traditional BubbleSort. Nevertheless I'm working in a most efective method to sort the data. a recursive method will be implemented._
+<br>
+<br>
+<br> 
+==Constructor Summary== 
+Constructor and Description:<br>
+One constructor.<br>
+<br>
+<br>
+===Method Summary===
+Methods Modifier and Types
+Methods and Descriptions
+{{{RankingSort(PApplet parent)}}}
+<br>
+<br>
 
 public void BidirectionalBubbleSort(Object[][] population,
                            float[] arrResults)
