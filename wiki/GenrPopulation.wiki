@@ -19,115 +19,84 @@ One constructor.
 Methods, Modifier and Type	
 Method and Description
 
-{{{int[][] BinaryPopulation(int sizePopulation, int sizeChromosome)}}}<br>
+{{{int[][] BinaryPopulation(int sizePopulation, int sizeChromosome)}}}
+<br>
 This method creates a binary population, the populations is composed by families of 1s-0s lists.
 <br>
-* Parameters
+ * Parameters
     # {{{sizePopulation}}}: the size of the population
     # {{{sizeChromosome}}}: the length of each chromosome in the population
     # {{{return}}}: population in the flavor int[][]
 <br>
 <br>
-    # {{{sizeChromosome}}}: The size of the chromosome
-char[][]	CharPopulation(int sizePopulation, int sizeChromosome)
-CharPopulation method.
-double[][]	NumbPopulation(int sizePopulation, int sizeChromosome, double min, double max)
-NumberPopulation method.
-float[][]	NumbPopulation(int sizePopulation, int sizeChromosome, float min, float max)
-NumberPopulation method.
-int[][]	NumbPopulation(int sizePopulation, int sizeChromosome, int min, int max)
-NumberPopulation method.
-Object[][]	ObjectPopulationSwap(int sizePopulation, Object[] SeedChromosome, float percent, boolean InOut)
-ObjectPopulationSwap.
-double[][][]	PointsPopulationXYZ(int sizePopulation, double[][] SeedCoordinates, double[][] SeedThershold)
-PointsPopulationXYZ.
-Methods inherited from class java.lang.Object
-
-equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-Constructor Detail
-
-GenrPopulation
-
-public GenrPopulation(PApplet parent)
-Method Detail
-
-ObjectPopulationSwap
-
-public Object[][] ObjectPopulationSwap(int sizePopulation,
-                              Object[] SeedChromosome,
-                              float percent,
-                              boolean InOut)
-ObjectPopulationSwap. Create a random population based on seed of Object[] chromosome. this method is designed for combinatorial problems.
-Parameters:
-sizePopulation - -> the size of the population;
-seedChromosome - -> the seed chromosome to create the population.
-percent - -> the mutation percent in the population 0 <= percent <= 1
-InOut - -> if is true the seed will be included in the population
-Returns:
-a population in the flavor Object[][] based on a seed Object[] chromosome.
-PointsPopulationXYZ
-
-public double[][][] PointsPopulationXYZ(int sizePopulation,
-                               double[][] SeedCoordinates,
-                               double[][] SeedThershold)
-PointsPopulationXYZ. Create a random population based on seedCoordinates of xyz coordinates in the flavor {{x,y,z}, {x,y,z}}. the population returned is in the flavor {{{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}}
-Parameters:
-sizePopulation - -> the size of the population;
-seedCoordinates-> - the seed coordinates feeds the necessary points to establish the coordinates. The length of the seed will represent the size of the chromosome.
-seedThershold - -> the seed threshold to determine the movement of points.
-Returns:
-a population in the flavor {{{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}, {{x,y,z}, {x,y,z}}}, where x, y and z are doubles.
-NumbPopulation
-
-public double[][] NumbPopulation(int sizePopulation,
-                        int sizeChromosome,
-                        double min,
-                        double max)
-NumberPopulation method. Create a Random population by float numbers.
-Parameters:
-sizePopulation - -> the size of the population;
-sizeChromosome - -> the length of each Chromosome in the population.
-min - -> the minimum value in the chromosome;
-max - -> the maximum value in the chromosome;.
-Returns:
-a NumberPopulation in the flavor double[][].
-NumbPopulation
-
-public float[][] NumbPopulation(int sizePopulation,
-                       int sizeChromosome,
-                       float min,
-                       float max)
-NumberPopulation method. Create a Random population by float numbers.
-Parameters:
-sizePopulation - -> the size of the population;
-sizeChromosome - -> the length of each Chromosome in the population.
-min - -> the minimum value in the chromosome;
-max - -> the maximum value in the chromosome;.
-Returns:
-a NumberPopulation in the flavor float[][].
-NumbPopulation
-
-public int[][] NumbPopulation(int sizePopulation,
-                     int sizeChromosome,
-                     int min,
-                     int max)
-NumberPopulation method. Create a Random population by integers chromosome.
-Parameters:
-sizePopulation - -> the size of the population;
-sizeChromosome - -> the length of each Chromosome in the population.
-min - -> the minimum value in the chromosome;
-max - -> the maximum value in the chromosome;.
-Returns:
-a NumberPopulation in the flavor int[][].
-BinaryPopulation
-
-
-
-public char[][] CharPopulation(int sizePopulation,
-                      int sizeChromosome)
-CharPopulation method. Create a Random population by characters chromosome in the flavor charChromosome method
-Parameters:
-sizePopulation - -> the size of the population;
-sizeChromosome - -> the length of each Chromosome in the population.
-Returns:
-a charPopulation in the flavor char[][].
+{{{char[][] CharPopulation(int sizePopulation, int sizeChromosome)}}}
+<br>
+CharPopulation method. Create a Random population by characters The chromosome type is composed by families of chromosomes Class.
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population
+    # {{{sizeChromosome}}}: the length of each Chromosome in the population
+    # {{{return}}}: a charPopulation in the flavor char[][]
+<br>
+<br>
+{{{double[][] NumbPopulation(int sizePopulation, int sizeChromosome, double min, double max)}}}
+<br>
+Creates a Random population of doubles. Set the min and max value to control de range.
+It should looks like a population composed by families of double numbers.
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population
+    # {{{sizeChromosome}}}: the length of each Chromosome in the population
+    # {{{min}}}: the minimum value in the chromosome
+    # {{{max}}}: the maximum value in the chromosome
+    # {{{return}}}: a population of doubles[][]
+<br>
+<br>
+{{{float[][] NumbPopulation(int sizePopulation, int sizeChromosome, float min, float max)}}}
+<br>
+Creates a Random population of floats Set the min and max value to control de range.
+It should looks like a population composed by families of float numbers.
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population
+    # {{{sizeChromosome}}}: the length of each Chromosome in the population
+    # {{{min}}}: the minimum value in the chromosome
+    # {{{max}}}: the maximum value in the chromosome
+    # {{{return}}}: a population of flavor float[][]
+<br>
+<br>
+{{{int[][] NumbPopulation(int sizePopulation, int sizeChromosome, int min, int max)}}}
+<br>
+Creates a Random population of integers Set the min and max value to control de range.
+It should looks like a population composed by families of int numbers.
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population
+    # {{{sizeChromosome}}}: the length of each Chromosome in the population
+    # {{{min}}}: the minimum value in the chromosome
+    # {{{max}}}: the maximum value in the chromosome
+    # {{{return}}}: a population of flavor int[][]
+<br>
+<br>
+{{{Object[][] ObjectPopulationSwap(int sizePopulation, Object[] SeedChromosome, float percent, boolean InOut)}}}
+<br>
+Creates a random population based on seed  Object[] chromosome. This method was designed for combinatorial problems.
+(make research)
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population;
+    # {{{seedChromosome}}}: the seed chromosome to create the population.
+    # {{{percent}}}: the mutation percent in the population 0 <= percent <= 1
+    # {{{InOut}}}: if is true the seed will be included in the population
+    # {{{return}}}: a population of flavor Object[][] based in a seed Object[] chromosome
+<br>
+<br>
+{{{double[][][]	PointsPopulationXYZ(int sizePopulation, double[][] SeedCoordinates, double[][] SeedThershold)}}}
+<br>
+Creates a random population based on seedCoordinates of xyz in the flavor [[x,y,z],[x,y,z]]. The population returned is in the flavor [[[x,y,z],[x,y,z],n..], [[x,y,z],[x,y,z]],n..] 
+<br>
+ * Parameters:
+    # {{{sizePopulation}}}: the size of the population;
+    # {{{seedCoordinates}}}: the seed coordinates feeds the necessary points to establish the coordinates. The length of the seed will represent the size of the chromosome.
+    # {{{seedThershold}}}: the seed threshold to determine the movement of points.
+    # {{{return}}}: a population of [[[x,y,z],[x,y,z],n..],[[x,y,z],[x,y,z],n..], n..], where x, y and z are doubles.
