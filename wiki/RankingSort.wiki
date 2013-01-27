@@ -1,7 +1,10 @@
-== RankingSort ==
-
+= RankingSort =
+Public class GenrChromosome, extends Object. <br>
 The RankingSort class has all the methods to create and initialize the bidirectional BubbleSort algorithm.
-Constructor Summary
+<br>
+_NOTE_
+<br>
+_The bidirectional BubbleSort Methods split the list in tho parts, and goes properly than the traditional BubbleSort. Nevertheless I'm working in a most efective method to sort the data. a recursive method will be implemented._
 
 Constructors 
 Constructor and Description
