@@ -198,7 +198,7 @@ RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of
 RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x). Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population. the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
 <br>
  * Parameters:
-    # {{{srtPopulation - -> a sorted population by any sort algorithm.
+    # {{{srtPopulation}}}: a sorted population by any sort algorithm.
     # {{{results}}}: the array of results from the evaluation in int[] flavor
     # {{{pointer}}}: the pointer is the maximum number of individuals in the roulette wheel.
     # {{{displace}}}: this parameter move the nonpolinomic curve in the y Axis.
@@ -207,11 +207,11 @@ RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of
 <br>
 {{{float[][] RouletteWheelSigmoidal(float[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)}}}
 <br>
-RouletteWheelSigmoidal method. select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+Select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
 <br>
  * Parameters:
-    # {{{srtPopulation - -> a sorted population by any sort algorithm.
-    # {{{sizeRoulette - -> number of the individuals selected.
+    # {{{srtPopulation}}}: a sorted population by any sort algorithm.
+    # {{{sizeRoulette}}}: number of the individuals selected.
     # {{{A1}}}: the maximum number of individuals in the roulette wheel (aprox).
     # {{{A2}}}: the minimum number of individuals in the roulette wheel (aprox).
     # {{{B1}}}: the start scope in the population, i.e. 1 the selection will start in the second individual
@@ -222,7 +222,7 @@ RouletteWheelSigmoidal method. select a number of indiviudals depending of their
 <br>
 {{{float[][] TournamentSelection(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)}}}
 <br>
-TournamentSelection method. select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
+Select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a population.
@@ -236,7 +236,7 @@ TournamentSelection method. select a number of indiviudals trough a tournament s
 <br>
 {{{float[][] TournamentSelection(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)}}}
 <br>
-TournamentSelection method. select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
+Select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a population.
@@ -248,7 +248,8 @@ TournamentSelection method. select a number of indiviudals trough a tournament s
     # {{{return}}}: float[][] population.
 <br>
 <br>
-{{{int[][] ElitismSelection(int[][] srtPopulation, int count)
+{{{int[][] ElitismSelection(int[][] srtPopulation, int count)}}}
+<br>
 ElitismSelection method. select the number of the best indiviudals in the population.
 <br>
  * Parameters:
@@ -259,7 +260,7 @@ ElitismSelection method. select the number of the best indiviudals in the popula
 <br>
 {{{int[][] RouletteWheelNonPolinomicMin(int[][] srtPopulation, float[] results, int pointer, int displace)}}}
 <br>
-RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x). Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population. the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+Select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x). Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population. the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a sorted population by any sort algorithm.
@@ -271,7 +272,7 @@ RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of
 <br>
 {{{int[][] RouletteWheelNonPolinomicMin(int[][] srtPopulation, int[] results, int pointer, int displace)}}}
 <br>
-RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x). Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population. the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+Select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x). Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population. the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a sorted population by any sort algorithm.
@@ -283,7 +284,7 @@ RouletteWheelNonPolinomicMin method. select a number of indiviudals depending of
 <br>
 {{{int[][] RouletteWheelSigmoidal(int[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)}}}
 <br>
-RouletteWheelSigmoidal method. select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+Select a number of indiviudals depending of their ranking in the population. the best ranked individuals have more chance to be selected thant worst. Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a sorted population by any sort algorithm.
@@ -298,7 +299,7 @@ RouletteWheelSigmoidal method. select a number of indiviudals depending of their
 <br>
 {{{int[][] TournamentSelection(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)}}}
 <br>
-TournamentSelection method. select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
+Select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a population.
@@ -312,7 +313,7 @@ TournamentSelection method. select a number of indiviudals trough a tournament s
 <br>
 {{{int[][] TournamentSelection(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)}}}
 <br>
-TournamentSelection method. select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
+Select a number of indiviudals trough a tournament selection. As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation An interest parameter is the preasure: as bigger value is, best individuals will be selected. This method return a new population and can be bigger than the original size. in the TorunamentSelection method is not necessary a sorted population.
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a population.
@@ -326,7 +327,7 @@ TournamentSelection method. select a number of indiviudals trough a tournament s
 <br>
 {{{char[][] ElitismSelection(char[][] srtPopulation, int count)}}}
 <br>
-ElitismSelection method. select the number of the best indiviudals in the population.
+Select the number of the best indiviudals in the population.
 <br>
  * Parameters:
     # {{{srtPopulation}}}: a sorted population by any sort algorithm.
