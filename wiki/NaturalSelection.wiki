@@ -1,12 +1,18 @@
-public class NaturalSelection
-extends Object
+= NaturalSelection =
+Public class NaturalSelection, extends Object
+<br>
 The NaturalSelection class has all the methods to create and initialize different flavors of Selections:
-Constructor Summary
-
-Constructors 
+<br>
+<br>
+<br>
+==Constructor Summary==
 Constructor and Description
-NaturalSelection(PApplet parent) 
-Method Summary
+<br>
+{{{NaturalSelection(PApplet parent)}}}
+<br>
+<br>
+<br>
+===Method Summary===
 
 Methods 
 Modifier and Type	Method and Description
