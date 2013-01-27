@@ -10,7 +10,7 @@ The bidirectional BubbleSort Methods split the list in tho parts, and goes prope
 <br> 
 ==Constructor Summary== 
 Constructor and Description:<br>
-One constructor.<br>
+One constructor.
 <br>
 <br>
 ===Method Summary===
@@ -19,9 +19,7 @@ Methods and Descriptions
 {{{RankingSort(PApplet parent)}}}
 <br>
 <br>
-
-public void BidirectionalBubbleSort(Object[][] population,
-                           float[] arrResults)
+{{{BidirectionalBubbleSort(Object[][] population, float[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -29,8 +27,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(Object[][] population,
-                           int[] arrResults)
+{{{void BidirectionalBubbleSort(Object[][] population, int[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -38,8 +35,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(double[][] population,
-                           float[] arrResults)
+{{{void BidirectionalBubbleSort(double[][] population, float[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -47,8 +43,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(double[][] population,
-                           int[] arrResults)
+{{{void BidirectionalBubbleSort(double[][] population, int[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -56,8 +51,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(float[][] population,
-                           float[] arrResults)
+{{{void BidirectionalBubbleSort(float[][] population, float[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -65,8 +59,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(float[][] population,
-                           int[] arrResults)
+{{{void BidirectionalBubbleSort(float[][] population, int[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -74,8 +67,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(int[][] population,
-                           float[] arrResults)
+{{{void BidirectionalBubbleSort(int[][] population, float[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -83,8 +75,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(int[][] population,
-                           int[] arrResults)
+{{{void BidirectionalBubbleSort(int[][] population, int[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -92,8 +83,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(char[][] population,
-                           float[] arrResults)
+{{{void BidirectionalBubbleSort(char[][] population, float[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
@@ -101,8 +91,7 @@ arrResults - -> Array of fitness in the population. Only two flavors are support
 minmax - -> if is true the sort is by min to max, else max to min.
 BidirectionalBubbleSort
 
-public void BidirectionalBubbleSort(char[][] population,
-                           int[] arrResults)
+{{{void BidirectionalBubbleSort(char[][] population, int[] arrResults)}}}
 An optimized BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
 Parameters:
 population - -> population to sort;
