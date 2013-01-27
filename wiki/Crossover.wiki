@@ -18,41 +18,51 @@ Methods Modifier and Types
 Methods and Descriptions
 <br>
 <br>
-{{{Object[][] SinglePointCrossover(Object[][] population, float percent, int pointCutter)
-SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
-Parameters:
-population - -> An object type population.
-percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
-pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
+{{{Object[][] SinglePointCrossover(Object[][] population, float percent, int pointCutter)}}}
+<br>
+Single Method prepared to recieve any type of class, ideal for combintorial problems.
+<br>
+ * Parameters:
+    # {{{population}}}: An object type population.
+    # {{{percent}}}: Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+    # {{{pointCutter}}}: An integer to represent where you want to cut the chromosome for the crossover.
 <br>
 <br>
-{{{double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)
-SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
-Parameters:
-population - -> An object type population.
-percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
-pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
+{{{double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)}}}
+<br>
+Single Method prepared to recieve any type of class, ideal for combintorial problems.
+<br>
+ * Parameters:
+    # {{{population}}}: An object type population.
+    # {{{percent}}}: Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+    # {{{pointCutter}}}: An integer to represent where you want to cut the chromosome for the crossover.
 <br>
 <br>
-{{{float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
-SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
-Parameters:
-population - -> An object type population.
-percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
-pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
+{{{float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)}}}
+<br>
+Single Method prepared to recieve any type of class, ideal for combintorial problems.
+<br>
+ * Parameters:
+    # {{{population}}}: An object type population.
+    # {{{percent}}}: Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+    # {{{pointCutter}}}: An integer to represent where you want to cut the chromosome for the crossover.
 <br>
 <br>
-{{{int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
-SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
-Parameters:
-population - -> An object type population.
-percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
-pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
+{{{int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)}}}
+<br>
+Single Method prepared to recieve any type of class, ideal for combintorial problems.
+<br>
+ * Parameters:
+    # {{{population}}}: An object type population.
+    # {{{percent}}}: Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+    # {{{pointCutter}}}: An integer to represent where you want to cut the chromosome for the crossover.
 <br>
 <br>
-{{{char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
-SinglePointCrossover method. Single Method prepared to recieve a char type population.
-Parameters:
-population - -> An object type population.
-percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
-pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
+{{{char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)}}}
+<br>
+Single Method prepared to recieve a char type population.
+<br>
+ * Parameters:
+    # {{{population}}}: An object type population.
+    # {{{percent}}}: Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+    # {{{pointCutter}}}: An integer to represent where you want to cut the chromosome for the crossover.
