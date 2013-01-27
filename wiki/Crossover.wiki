@@ -1,79 +1,56 @@
-= Cruzamiento =
+= Crossover =
 
-Constructor Summary
-
-Constructors 
-Constructor and Description
-Crossover(PApplet parent) 
-Method Summary
-
-Methods 
-Modifier and Type	Method and Description
-char[][]	SinglePointCrossover(char[][] population, float percent, int pointCutter)
-SinglePointCrossover method.
-double[][]	SinglePointCrossover(double[][] population, float percent, int pointCutter)
-SinglePointCrossover method.
-float[][]	SinglePointCrossover(float[][] population, float percent, int pointCutter)
-SinglePointCrossover method.
-int[][]	SinglePointCrossover(int[][] population, float percent, int pointCutter)
-SinglePointCrossover method.
-Object[][]	SinglePointCrossover(Object[][] population, float percent, int pointCutter)
-SinglePointCrossover method.
-Methods inherited from class java.lang.Object
-
-equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-Constructor Detail
-
-Crossover
-
-public Crossover(PApplet parent)
-Method Detail
-
-SinglePointCrossover
-
-public Object[][] SinglePointCrossover(Object[][] population,
-                              float percent,
-                              int pointCutter)
+Public class Crossover , extends Object
+<br>
+The method to realize Crossover between two parents
+<br>
+<br>
+<br>
+==Constructor Summary== 
+Constructor and Description:<br>
+One constructor.<br>
+{{{Crossover(PApplet theParent)}}}
+<br>
+<br>
+<br>
+===Method Summary===
+Methods Modifier and Types
+Methods and Descriptions
+<br>
+<br>
+{{{Object[][] SinglePointCrossover(Object[][] population, float percent, int pointCutter)
 SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
 Parameters:
 population - -> An object type population.
 percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
 pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
-SinglePointCrossover
-
-public double[][] SinglePointCrossover(double[][] population,
-                              float percent,
-                              int pointCutter)
+<br>
+<br>
+{{{double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)
 SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
 Parameters:
 population - -> An object type population.
 percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
 pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
-SinglePointCrossover
-
-public float[][] SinglePointCrossover(float[][] population,
-                             float percent,
-                             int pointCutter)
+<br>
+<br>
+{{{float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
 SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
 Parameters:
 population - -> An object type population.
 percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
 pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
-SinglePointCrossover
-
-public int[][] SinglePointCrossover(int[][] population,
-                           float percent,
-                           int pointCutter)
+<br>
+<br>
+{{{int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
 SinglePointCrossover method. Single Method prepared to recieve any type of class, ideal for combintorial problems.
 Parameters:
 population - -> An object type population.
 percent - -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
 pointCutter - -> An integer to represent where you want to cut the chromosome for the crossover.
-SinglePointCrossover
-
-public char[][] SinglePointCrossover(char[][] population,
-                            float percent,
-                            int pointCutter)
+<br>
+<br>
+{{{char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
 SinglePointCrossover method. Single Method prepared to recieve a char type population.
 Parameters:
 population - -> An object type population.
