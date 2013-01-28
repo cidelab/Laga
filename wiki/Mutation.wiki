@@ -13,11 +13,14 @@ One constructor.
 <br>
 {{{Mutation(PApplet parent, float MutationRate)}}}
 The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population.
-<br>
 _tip: always a small number closer to 0._
 <br>
  * Parameters:
     # {{{MutationRate}}}: range fo mutation percent in the population.
+<br>
+===Method Summary===
+Methods Modifier and Types
+Methods and Descriptions
 <br>
 <br>
 {{{public Object[][] MutationSwap(Object[][] population, float percentChrom)}}}
