@@ -1,90 +1,65 @@
 = Mutation =
+
+public Class Mutation, extends Object
+<br>
 The Mutation class has all the methods to create and initialize different flavors of mutations on individuals, (not implemented yet).
-Constructor Summary
-
-Constructors 
-Constructor and Description
-Mutation(PApplet parent, float MutationRate)
-The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population. always a small number closer to 0.
-Method Summary
-
-Methods 
-Modifier and Type	Method and Description
-char[][]	CharMutation(char[][] pop, float ChroPercent)
+<br>
+<br>
+<br>
+==Constructor Summary== 
+Constructor and Description:
+<br>
+One constructor.
+<br>
+{{{Mutation(PApplet parent, float MutationRate)}}}
+The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population. _tip: always a small number closer to 0._
+<br>
+<br>
+{{{public Object[][] MutationSwap(Object[][] population, float percentChrom)}}}
+<br>
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+<br>
+ * Parameters:
+    # {{{population}}}: population to be mutated.
+    # {{{percentChrom}}}: percent mutation in the chromsome 0 <= percentChrom <= 1.
+    # {{{return}}}: Object[][] population.
+<br>
+<br>
+{{{public double[][] NumbMutation(double[][] pop, double min, double max, float percentChrom)}}}
+<br>
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+<br>
+ * Parameters:
+    # {{{population}}}: population to be mutated.
+    # {{{percentChrom}}}: percent mutation in the chromsome 0 <= percentChrom <= 1.
+    # {{{return}}}: double[][] population.
+<br>
+<br>
+{{{float[][] NumbMutation(float[][] pop, float min, float max, float percentChrom)}}}
+<br>
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+<br>
+ * Parameters:
+    # {{{population}}}: population to be mutated.
+    # {{{percentChrom}}}: percent mutation in the chromsome 0 <= percentChrom <= 1.
+    # {{{return}}}: float[][] population.
+<br>
+<br>
+{{{int[][] NumbMutation(int[][] pop, int min, int max, float percentChrom)}}}
+<br>
+MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
+<br>
+ * Parameters:
+    # {{{population}}}: population to be mutated.
+    # {{{percentChrom}}}: percent mutation in the chromsome 0 <= percentChrom <= 1.
+    # {{{return}}}: int[][] population.
+<br>
+<br>
+{{{char[][] CharMutation(char[][] pop, float ChroPercent)}}}
+<br>
 The Method GenrMutation() takes two arguments. the population that is going to be mutated and the percent of the chromosome mutated.
-Object[][]	MutationSwap(Object[][] population, float percentChrom)
-MutationSwap method.
-double[][]	NumbMutation(double[][] pop, double min, double max, float percentChrom)
-MutationSwap method.
-float[][]	NumbMutation(float[][] pop, float min, float max, float percentChrom)
-MutationSwap method.
-int[][]	NumbMutation(int[][] pop, int min, int max, float percentChrom)
-MutationSwap method.
-Methods inherited from class java.lang.Object
-
-equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-Constructor Detail
-
-Mutation
-
-public Mutation(PApplet parent,
-        float MutationRate)
-The constructor takes two parameters, the first is the parent for processing and the second is the mutation percent in the population. always a small number closer to 0.
-Method Detail
-
-MutationSwap
-
-public Object[][] MutationSwap(Object[][] population,
-                      float percentChrom)
-MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
-Parameters:
-population - -> population to be mutated.
-percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-Returns:
-Object[][] population.
-NumbMutation
-
-public double[][] NumbMutation(double[][] pop,
-                      double min,
-                      double max,
-                      float percentChrom)
-MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
-Parameters:
-population - -> population to be mutated.
-percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-Returns:
-double[][] population.
-NumbMutation
-
-public float[][] NumbMutation(float[][] pop,
-                     float min,
-                     float max,
-                     float percentChrom)
-MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
-Parameters:
-population - -> population to be mutated.
-percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-Returns:
-float[][] population.
-NumbMutation
-
-public int[][] NumbMutation(int[][] pop,
-                   int min,
-                   int max,
-                   float percentChrom)
-MutationSwap method. this method swap two or more alleles in the chromosome, same as RNA does in the DNA Don't forget implement a float parameter in the constructor.
-Parameters:
-population - -> population to be mutated.
-percentChrom - -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-Returns:
-int[][] population.
-CharMutation
-
-public char[][] CharMutation(char[][] pop,
-                    float ChroPercent)
-The Method GenrMutation() takes two arguments. the population that is going to be mutated and the percent of the chromosome mutated.
-Parameters:
-pop - the population that is going to be mutated;
-Chromosomepercent - the percent rate in the chromosome that is going to be mutated.
-Returns:
-a mutated population in the passed flavor.
+<br>
+ * Parameters:
+    # {{{pop}}}: the population that is going to be mutated;
+    # {{{Chromosomepercent}}}: the percent rate in the chromosome that is going to be mutated.
+    # {{{return}}}: a mutated population in the passed flavor.
