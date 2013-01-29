@@ -1,4 +1,4 @@
-= GenrChromosome =
+http://www.designemergente.org/laga/RCrossover.jpg
 
 Public class GenrChromosome, extends Object <br>
 The GenrChromosome class has all the methods to create and initialize different flavours of chromosomes.
