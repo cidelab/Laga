@@ -1,5 +1,4 @@
-
-ftp://designemer@designemergente.org/web/laga/Rmutation.jpg
+http://www.designemergente.org/laga/Rmutation.jpg
 public Class Mutation, extends Object
 <br>
 The Mutation class has all the methods to create and initialize different flavors of mutations on individuals, (not implemented yet).
