@@ -1,5 +1,4 @@
-= GenrPopulation =
-
+http://www.designemergente.org/laga/RgeneratePopulation.jpg
 public class GenrPopulation, extends Object 
 <br>
 The GenrPopulation class has all the methods to create and initialize different flavors of populations, this class must be called to create the first random population.
