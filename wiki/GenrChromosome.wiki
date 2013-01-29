@@ -1,4 +1,4 @@
-http://www.designemergente.org/laga/RCrossover.jpg
+http://www.designemergente.org/laga/Rgeneratechromosome.jpg
 Public class GenrChromosome, extends Object <br>
 The GenrChromosome class has all the methods to create and initialize different flavours of chromosomes.
 <br>
