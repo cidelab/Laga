@@ -1,5 +1,4 @@
-= Replacement =
-
+http://www.designemergente.org/laga/RReplacement.jpg
 Public class Replacement, extends Object <br>
 The Replace class has some methods to create and initialize the replacement population with the new individuals.
 <br>
