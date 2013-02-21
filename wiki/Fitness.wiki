@@ -1,8 +1,7 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
+= Fitness =
+<p>
+The most common application of GAs is the optimization task. The goal is to find the correct values for a list of parameters in a function. The fitness function depends of problem to optimize and can goes from find a simple value like a distance to resolve complex functions where all the parameters are related and is not possible to maxime one of the with out to minimize others.
+</p>
 
 
 = Details =
@@ -10,4 +9,4 @@ Add your content here.
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Automatic links to ot
