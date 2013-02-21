@@ -1,10 +1,10 @@
  * [GeneticAlgorithms]
  * Genetic Operators
-    * [OpCodification]
-    * [OpFitness]	 
+    * [OpCodification]	 
     * [OpNaturalSelection]
     * [OpMutation]
     * [OpCrossover]
+    * [Fitness]
  * laga
     * [Overview]	 
     * [Architecture]
@@ -16,7 +16,6 @@
         * [Crossover]
         * [Mutation]
         * [Replacement]
-    * Fitness
     * Examples(not implemented)
         * [PiscoSour]
         * [TravellingSalesman]
