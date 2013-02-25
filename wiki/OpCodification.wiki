@@ -1,6 +1,6 @@
 = Codification =
 <p align="justify">
-Any problem or generative design that involves Genetic Algorithms needs a codification. The codification is the representation of a possible solution and usually is called chromosome. Is an analogy of the genetic code in the living creatures. In their simplest form the chromosome is represented by a list of parameters or values. Usually the chromosome is set by a binary list of 1s and 0s (1010111), and each parameter has a specific  number of bits into the list. Not all the parameters must be defined by the same number of bits. Also you can codify a possible solution by integers, real numbers, characters even points. The objective of the codification consist in helping the genetic operators their job.
+Any problem or generative design that involves Genetic Algorithms needs a codification. The codification is the representation of a possible solution and usually is called chromosome. Is an analogy of the genetic code in the living creatures. In their simplest form the chromosome is represented by a list of parameters or values. Usually the chromosome is set by a binary list of 1s and 0s (1010111), and each parameter has a specific  number of bits into the list. Not all the parameters must be defined by the same number of bits. Also you can codify a possible solution by integers, real numbers, characters even points. The objective of the codification consist in helping the genetic operators do their job.
 </p>
 
 
