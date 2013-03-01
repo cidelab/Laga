@@ -4,9 +4,7 @@ Any problem or generative design that involves Genetic Algorithms needs a codifi
 </p>
 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+===== Laga Example =====
+<p align="justify">
+The most common chromosome that we can create to use GAs are: 
+</p>
