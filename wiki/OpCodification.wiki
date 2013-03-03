@@ -26,5 +26,5 @@ So, modifying the values in the chromosome we have a new design. Each value is c
 </p>
 <br>
 <br>
-Some chromosome examples of laga.
+Some chromosome examples of laga.<br>
 http://www.designemergente.org/laga/chrLaga.jpg
