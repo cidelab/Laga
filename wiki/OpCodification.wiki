@@ -15,7 +15,7 @@ We are designing a robotic leg to run faster. We actually have the design. Never
 http://www.designemergente.org/laga/legexample.jpg
 <br>
 <p align="justify">
-The leg chromosome is length 5. Each value in the chromosome has a unique parameter in our leg. If we change any of this values we are going to have a new design, ready to test. So after all we assume the design does not evolve is the dna.
+The chromosome leg is length 5. Each value in the chromosome has a unique parameter in our leg. If we change any of this values we are going to have a new design, ready to test. So after all we assume the design does not evolve is the dna.
 </p>
 http://www.designemergente.org/laga/legfamily2.jpg
 <br>
