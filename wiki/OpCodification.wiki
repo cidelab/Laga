@@ -5,6 +5,9 @@ Any problem or generative design that involves Genetic Algorithms needs a codifi
 
 
 ===== Example =====
+
+
+
 <p align="justify">
 We are designing a robotic leg to run faster. We actually have the design. Nevertheless we need to know the right parameters to find the best proportion in our leg. So we are going to use genetic algorithms to find the correct values. There are so many possiblities that GAs is the best approach.
 </p>
