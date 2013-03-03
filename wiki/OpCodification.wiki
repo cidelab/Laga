@@ -25,6 +25,5 @@ http://www.designemergente.org/laga/legfamily2.jpg
 So, modifying the values in the chromosome we have a new design. Each value is connected to one of the parameters in the design. Usually we call the design individual. The group of chromosomes or individuals is called population. in this case the population size is 8.
 </p>
 <br>
-<br>
 Some chromosome examples of laga.<br>
 http://www.designemergente.org/laga/chrLaga.jpg
