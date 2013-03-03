@@ -10,12 +10,12 @@ Chromosome of individual, based in http://sabia.tic.udc.es/mgestal/ [06/08/10]
 <br>
 === Chromosome example ===
 <p align="justify">
-We are designing a robotic leg to run faster. We actually have the design. Nevertheless we need to know the right parameters to find the best proportion in our leg. So we are going to use genetic algorithms to find the correct values. There are so many possiblities that GAs is the best approach.
+We are designing a robotic leg to run faster. We actually have the leg design. Nevertheless we need to know the right parameters to find the best proportion of our leg. So we are going to use genetic algorithms to find the correct values. There are so many possibilities that GAs is the best approach.
 </p>
 http://www.designemergente.org/laga/legexample.jpg
 <br>
 <p align="justify">
-The chromosome leg is length 5. Each value in the chromosome has a unique parameter in our leg. If we change any of this values we are going to have a new design, ready to test. So after all we assume the design does not evolve is the dna.
+The chromosome leg is length 5. Each value in the chromosome, represent a length and has a unique parameter in our design. If we change any of this values we are going to have a new design, ready to test. So after all we assume the design does not evolve is the dna it does.
 </p>
 http://www.designemergente.org/laga/legfamily2.jpg
 <br>
