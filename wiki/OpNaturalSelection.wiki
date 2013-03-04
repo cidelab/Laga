@@ -4,13 +4,10 @@ There are many ways to select the best individuals in a population. Some methods
 <br/>
 There are many natural selection algorithms, but all of them are based in the fitness evaluation. The natural selection must allow best individuals have more chances to offspring that worst. The "genes" of the best individuals are going to spread faster in the population than the others.
 <br/>
-There are many different natural selection algorithms and in almost all  cases are customized to face up specific problems. Some of them looks the lower computational resource, others deals with different select ranges, etc. The natural selection algorithm will determine the GA search strategy. If we select a high pressure selection method the search will be focus closer to the best individuals in the population. In the other hand if we select a low pressure selection method, the 
+There are many different natural selection algorithms and in almost all  cases are customized to face up specific problems. Some of them looks the lower computational resource, others deals with different select ranges, etc. The natural selection algorithm will determine the GA search strategy. If we select a high pressure selection method the search will be focus near to best individuals in the population. In the other hand if we select a low pressure selection method, we are going to leave many open roads to explore in the search space.
 </p>
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+<br/>
+=== Elitism Selection ===
+<p align="justify">
+This method select only the best ranked individuals in the population. Nevertheless the most GAs do not use this technique, in fact they use a modified elitism selection algorithm. This technique is not very useful because you get an early convergence in the population. The important thing is to ensure select some individuals with low fitness.
+</p>
