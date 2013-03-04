@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+= Natural Selection =
 
-= Operator Natural Selection =
-
-Add your content here.
+<p style = "justify" >
+A message in its most general meaning is an object of communication. It is a vessel which provides information. Yet, it can also be this information. Therefore, its meaning is dependent upon the context in which it is used; the term may apply to both the information and its form. A communiqué (pronounced /kəˈmjuːnɨkeɪ/) is a brief report or statement released by a public agency.
+</p>
 
 
 = Details =
