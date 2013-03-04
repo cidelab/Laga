@@ -1,7 +1,10 @@
 = Natural Selection =
-
 <p align="justify">
-There are many ways to select the best individuals in a population. Some methods are exclusive, but others can be combined with selection strategies. The natural selection algorithm is the operator who decide  which individuals are going to have a chance to crossover and which not. The possibility to be selected is extremely related with the fitness aptitude of the individual or chromosome. 
+There are many ways to select the best individuals in a population. Some methods are exclusive, but others can be combined with selection strategies. The natural selection algorithm is the operator who decide  which individuals are going to have a chance to crossover and who don`t. The possibility to be selected is extremely related with the fitness of the chromosome. We can not select always the most fit and reject the others, because the populations turns homogenic and will not search in the whole space solution, thus we are going to have a fast convergence and a not so good result.
+<br/>
+There are many natural selection algorithms, but all of them are based in the fitness evaluation. The natural selection must allow best individuals have more chances to offspring that worst. The "genes" of the best individuals are going to spread faster in the population than the others.
+<br/>
+There are many different natural selection algorithms and almost all of them are customized to face up different problems. Some of them looks the lower computational resource, others deals with different select ranges among the best and worst.
 </p>
 
 
