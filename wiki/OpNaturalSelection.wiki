@@ -1,7 +1,7 @@
 = Natural Selection =
 
-<p style = "justify" >
-A message in its most general meaning is an object of communication. It is a vessel which provides information. Yet, it can also be this information. Therefore, its meaning is dependent upon the context in which it is used; the term may apply to both the information and its form. A communiqué (pronounced /kəˈmjuːnɨkeɪ/) is a brief report or statement released by a public agency.
+<p align="justify">
+There are many ways to select the best individuals in a population. Some methods are exclusive, but others can be combined with selection strategies. The natural selection algorithm is the operator who decide  which individuals are going to have a chance to crossover and which not. The possibility to be selected is extremely related with the fitness aptitude of the individual or chromosome. 
 </p>
 
 
