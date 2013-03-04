@@ -4,7 +4,7 @@ There are many ways to select the best individuals in a population. Some methods
 <br/>
 There are many natural selection algorithms, but all of them are based in the fitness evaluation. The natural selection must allow best individuals have more chances to offspring that worst. The "genes" of the best individuals are going to spread faster in the population than the others.
 <br/>
-There are many different natural selection algorithms and almost all of them are customized to face up different problems. Some of them looks the lower computational resource, others deals with different select ranges among the best and worst.
+There are many different natural selection algorithms and in almost all  cases are customized to face up specific problems. Some of them looks the lower computational resource, others deals with different select ranges, etc. The natural selection algorithm will determine the GA search strategy. If we select a high pressure selection method the search will be focus closer to the best individuals in the population. In the other hand if we select a low pressure selection method, the 
 </p>
 
 
