@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
-
-= Operator Mutation =
+= Mutation =
 
 Add your content here.
 
