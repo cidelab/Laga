@@ -11,3 +11,19 @@ There are many different natural selection algorithms and in almost all  cases a
 <p align="justify">
 This method select only the best ranked individuals in the population. Nevertheless the most GAs do not use this technique, in fact they use a modified elitism selection algorithm. This technique is not very useful because you get an early convergence in the population. The important thing is to ensure select some individuals with low fitness.
 </p>
+=== Roulette Wheel ===
+<p align="justify">
+soon stay tuned!
+</p>
+=== Tournament Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
+==== Tournament Selection Deterministic ====
+<p align="justify">
+soon stay tuned!
+</p>
+==== Tournament Selection Probabilistic ====
+<p align="justify">
+soon stay tuned!
+</p>
