@@ -1,6 +1,6 @@
  * [GeneticAlgorithms]
  * Genetic Operators
-    * [OpCodification]	 
+    * [Codification]	 
     * [OpNaturalSelection]
     * [OpMutation]
     * [OpCrossover]
