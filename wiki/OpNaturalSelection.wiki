@@ -27,3 +27,23 @@ soon stay tuned!
 <p align="justify">
 soon stay tuned!
 </p>
+=== Hierarchical Tournament Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
+=== Climbing Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
+=== Range Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
+=== Generation Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
+=== Steady State Selection ===
+<p align="justify">
+soon stay tuned!
+</p>
