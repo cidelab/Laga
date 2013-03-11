@@ -34,33 +34,34 @@ http://www.designemergente.org/laga/natSelection4.jpg
 <br>
 === Tournament Selection ===
 <p align="justify">
-soon stay tuned!
+La idea de este método consiste en escoger al azar un número de individuos de la población y seleccionar al mejor de ellos compitiendo con su fitness como si fuese un torneo. El proceso se repite hasta que el número de individuos coincida con el tamaño de la población. Usualmente el tamaño del torneo es de dos individuos, pero se pueden incluir más. La cantidad de individuos dentro del torneo determina la presión de selectividad. Mientras más individuos estén compitiendo mayor será la presión y los peores individuos apenas tendrán oportunidades de ser elegidos. Este tipo de selección usualmente se combina con la selección por escalada para ir aumentando la presión de selectividad a medida que la aptitud mejora en la población. Existen dos versiones de selección por torneo.
 </p>
 ==== Tournament Selection Deterministic ====
 <p align="justify">
-soon stay tuned!
+Habitualmente, se selecciona el mejor de los individuos. Está técnica es llamada determinista de tipo, ya sea el mejor o el peor. Tiene la ventaja de que permite un cierto grado de elitismo, el mejor nunca va a morir y tienen más probabilidad de reproducirse que el menos adaptado. Además no produce una convergencia prematura.
 </p>
 ==== Tournament Selection Probabilistic ====
 <p align="justify">
-soon stay tuned!
+La versión probabilística únicamente se diferencia en que en vez de elegir siempre el mejor, se genera un número aleatorio entre 0 y 1. Si es mayor que un parámetro T se escoge al mejor de los individuos, de lo contrario se escoge al otro.
 </p>
 === Hierarchical Tournament Selection ===
 <p align="justify">
-soon stay tuned!
+Los individuos atraviesan múltiples rondas de selección en cada generación, haciéndose cada vez más discriminatorias y rigurosas. La ventaja de este método es que reduce el tiempo total de cálculo.
 </p>
 === Climbing Selection ===
 <p align="justify">
-soon stay tuned!
+Tras varias generaciones, la aptitud media de la población va incrementándose y con esto la presión selectiva. Porque cada individuo cava vez se diferencia menos de sus competidores. Entonces la función de aptitud se vuelve cada vez más discriminatoria. Este método es útil en el momento en que todos los individuos tienen una aptitud alta y las diferencias entre ellos es muy baja. También es útil cuando se trabajan con población de pocos individuos.
+Este método se va poniendo cada vez más estricto en cuanto a selección durante la ejecución del algoritmo. Esto sucede porque con cada mejora de la aptitud de la población las diferencias entre los individuos buenos y malos son más estrechas.
 </p>
 === Range Selection ===
 <p align="justify">
-soon stay tuned!
+A cada individuo se le asigna un rango numérico basado en su aptitud y la selección se basa en este ranking. La ventaja de este tipo de selección es que se evita que los individuos más aptos ganen en dominio por sobre los otros, de cierta manera lo que hace es preservar la diversidad de individuos y evitar que se obstaculice la búsqueda de una solución aceptable. Este tipo de selección es usado generalmente en problemas con espacios de búsqueda de mucho ruido.
 </p>
 === Generation Selection ===
 <p align="justify">
-soon stay tuned!
+La descendencia de los individuos seleccionados en cada generación remplaza completamente a la generación anterior. No se conservan individuos entre generaciones. Este tipo de selección creará una población completamente nueva que remplazará a la generación anterior. Este tipo de selección se aplica generalmente sobre poblaciones pequeñas. Entre 20 y 30 individuos por población.
 </p>
 === Steady State Selection ===
 <p align="justify">
-soon stay tuned!
+Se conservan individuos entre generaciones. Los individuos durante el proceso de optimización pasan por múltiples rondas de evaluación. Está técnica permite que entre generaciones se vayan conservando ciertos individuos y remplazando algunos otros. Este tipo de selección es más cercano a lo que sucede en la selección natural biológica. Este tipo de selección usualmente es usado en grandes poblaciones. Más de 100 individuos por población.
 </p>
