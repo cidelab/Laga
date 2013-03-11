@@ -11,10 +11,21 @@ There are many different natural selection algorithms and in almost all  cases a
 <p align="justify">
 This method select only the best ranked individuals in the population. Nevertheless the most GAs do not use this technique, in fact they use a modified elitism selection algorithm. This technique is not very useful because you get an early convergence in the population. The important thing is to ensure select some individuals with low fitness.
 </p>
-=== Roulette Wheel ===
+http://www.designemergente.org/laga/natSelection2.jpg
+<br>
 <p align="justify">
-soon stay tuned!
+In this case only the first 5 individuals ranked in the population are going to be selected 10 times each. Since all of them has more than less the same fitness, The selected individuals are quite similar. this mean that the GA will search in small portion of the space search.
 </p>
+  
+=== Roulette Wheel ===
+<p align="justify"> 
+The Roulette Wheel selection, probably is the most used technique in GAs. The selection of the individuals is proportional to their fitness. Each individual in the population has a chance to be selected for the next generation. The individuals in the top of the ranking (with best fitness) will have more chance of be selected than less fitness value.
+
+Cada uno de los individuos de la población se le asigna una parte de la ruleta, proporcional a su fitness. De tal forma que la suma de todos los porcentajes sea el valor total de la ruleta. Los mejores individuos recibirán una porción de la ruleta mayor que la de los peores individuos. Usualmente los mejores individuos, se encuentran al principio de la ruleta y para seleccionar se genera un número aleatorio entre 0 y el tamaño de la ruleta. Es un método simple pero se vuelve ineficiente cuando se trabajan con grandes poblaciones.
+Usualmente el tamaño de la ruleta, la cantidad de individuos que contendrá, no es un valor fijo, pero si es necesario definir el la cantidad de veces en que el mejor individuo será seleccionado. Esto se hace para reducir costos computacionales y controlar el porcentaje de selección de los peores individuos. La selección de este tipo suele representarse por una curva no polinómica de la forma y = 1/x.
+</p>
+http://www.designemergente.org/laga/natSelection.jpg
+<br>
 === Tournament Selection ===
 <p align="justify">
 soon stay tuned!
