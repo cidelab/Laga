@@ -23,10 +23,7 @@ The Roulette Wheel selection, probably is the most used technique in GAs. The se
 
 Each individual in the population is assigned a piece of the roulette, proportional to their fitness. This mean the sum of all percents is equal to the whole value of the roulette. The individuals with high fitness will have a bigger percent in the roulette. Usually the top individuals are in the beginning of the roulette an so on to complete the graph. In order to make the selection is possible to generate a random number between 0 and the size of the roulette. The method is simple but no so useful when you work with big populations.
 
-Is possible make modification of the traditional roulette wheel
-
-Cada uno de los individuos de la población se le asigna una parte de la ruleta, proporcional a su fitness. De tal forma que la suma de todos los porcentajes sea el valor total de la ruleta. Los mejores individuos recibirán una porción de la ruleta mayor que la de los peores individuos. Usualmente los mejores individuos, se encuentran al principio de la ruleta y para seleccionar se genera un número aleatorio entre 0 y el tamaño de la ruleta. Es un método simple pero se vuelve ineficiente cuando se trabajan con grandes poblaciones.
-Usualmente el tamaño de la ruleta, la cantidad de individuos que contendrá, no es un valor fijo, pero si es necesario definir el la cantidad de veces en que el mejor individuo será seleccionado. Esto se hace para reducir costos computacionales y controlar el porcentaje de selección de los peores individuos. La selección de este tipo suele representarse por una curva no polinómica de la forma y = 1/x.
+Is possible make modification of the traditional roulette wheel. The size of the roulette, the size of the population is not a fixed value, and some times is necessary re-define how many times the first individual in the ranking is going to be selected. Doing this is possible to increase the computational efficiency and manage the selection of the individuals with small fitness. This flavor of roulette wheel can be represented by the non polynomial curve y = 1/x.
 </p>
 http://www.designemergente.org/laga/natSelection.jpg
 <br>
