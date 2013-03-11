@@ -16,16 +16,21 @@ http://www.designemergente.org/laga/natSelection2.jpg
 <p align="justify">
 In this case only the first 5 individuals ranked in the population are going to be selected 10 times each. Since all of them has more than less the same fitness, The selected individuals are quite similar. this mean that the GA will search in small portion of the space search.
 </p>
-  
+<br/>
+<br/>
 === Roulette Wheel ===
 <p align="justify"> 
 The Roulette Wheel selection, probably is the most used technique in GAs. The selection of the individuals is proportional to their fitness. Each individual in the population has a chance to be selected for the next generation. The individuals in the top of the ranking (best fitness) will have more chance of be selected than the other with less fitness value.
-
+</p><p align="justify"> 
 Each individual in the population is assigned a piece of the roulette, proportional to their fitness. This mean the sum of all percents is equal to the whole value of the roulette. The individuals with high fitness will have a bigger percent in the roulette. Usually the top individuals are in the beginning of the roulette an so on to complete the graph. In order to make the selection is possible to generate a random number between 0 and the size of the roulette. The method is simple but no so useful when you work with big populations.
-
+</p><p align="justify"> 
 Is possible make modification of the traditional roulette wheel. The size of the roulette, the size of the population is not a fixed value, and some times is necessary re-define how many times the first individual in the ranking is going to be selected. Doing this is possible to increase the computational efficiency and manage the selection of the individuals with small fitness. This flavor of roulette wheel can be represented by the non polynomial curve y = 1/x.
 </p>
 http://www.designemergente.org/laga/natSelection.jpg
+<br>
+http://www.designemergente.org/laga/natSelection3.jpg
+<br>
+http://www.designemergente.org/laga/natSelection4.jpg
 <br>
 === Tournament Selection ===
 <p align="justify">
