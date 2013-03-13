@@ -29,7 +29,11 @@ Is possible make modification of the traditional roulette wheel. The size of the
 http://www.designemergente.org/laga/natSelection.jpg
 <br>
 <p align="justify">
-*Roulette Wheel Selection*En la imagen se ve que el cromosoma 1 tiene un fitness de 3, el cual le da un área dentro de la ruleta proporcional a su aptitud. El cromosoma 2 tiene el menor fitness de todo el grupo, por lo que sus probabilidades de ser seleccionado son bastante bajas. El cromosoma 4 es el mejor posicionado de todos, porque al tener el mayor fitness es el que más probabilidades tiene de ser seleccionado. Aunque no la certeza, como ocurría en el método anterior.
+*Roulette Wheel Selection* In the image above the chromosome 1 has a fitness 100 and has a proportional area into the roulette wheel.
+
+The selection probabilities are very small, but it has some probabilities to be selected for crossover, as occur in the real life.
+
+En la imagen se ve que el cromosoma 1 tiene un fitness de 3, el cual le da un área dentro de la ruleta proporcional a su aptitud. El cromosoma 2 tiene el menor fitness de todo el grupo, por lo que sus probabilidades de ser seleccionado son bastante bajas. El cromosoma 4 es el mejor posicionado de todos, porque al tener el mayor fitness es el que más probabilidades tiene de ser seleccionado. Aunque no la certeza, como ocurría en el método anterior.
 </p>
 http://www.designemergente.org/laga/natSelection3.jpg
 <br>
