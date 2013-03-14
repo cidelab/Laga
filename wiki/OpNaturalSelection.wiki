@@ -29,10 +29,13 @@ Is possible make modification of the traditional roulette wheel. The size of the
 http://www.designemergente.org/laga/natSelection.jpg
 <br>
 <p align="justify">
-*Roulette Wheel Selection* In the image above the chromosome 1 has a fitness 100 and has a proportional area to it fitness into the roulette wheel. The chromosome 4 has a fitness 5, it is at the end of the roulette and selection probabilities are very small. Nevertheless it has some probabilities to be selected for crossover, as occur in the real life.
+*Roulette Wheel Selection* In the image above the chromosome 1 has a fitness 100 and has a proportional area to it fitness into the roulette wheel. The chromosome 4, in the other hand, has a fitness 5. It is at the end of the roulette wheel and their selection probabilities are very small. Nevertheless it has some probabilities to be selected for crossover, as occur in the real life.
 </p>
 http://www.designemergente.org/laga/natSelection3.jpg
 <br>
+<p align="justify">
+*Roulette Wheel Selection variations* In the image above there are two variations of a roulette wheel. Modifying the parameters of the functions is possible to control the size of the roulette, the selection of the individuals and the difference among them.
+</p>
 === Tournament Selection ===
 <p align="justify">
 La idea de este método consiste en escoger al azar un número de individuos de la población y seleccionar al mejor de ellos compitiendo con su fitness como si fuese un torneo. El proceso se repite hasta que el número de individuos coincida con el tamaño de la población. Usualmente el tamaño del torneo es de dos individuos, pero se pueden incluir más. La cantidad de individuos dentro del torneo determina la presión de selectividad. Mientras más individuos estén compitiendo mayor será la presión y los peores individuos apenas tendrán oportunidades de ser elegidos. Este tipo de selección usualmente se combina con la selección por escalada para ir aumentando la presión de selectividad a medida que la aptitud mejora en la población. Existen dos versiones de selección por torneo.
