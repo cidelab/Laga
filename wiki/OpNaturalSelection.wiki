@@ -36,42 +36,58 @@ http://www.designemergente.org/laga/natSelection3.jpg
 <p align="justify">
 *Roulette Wheel Selection variations* In the image above there are two variations of a roulette wheel. Modifying the parameters of the functions is possible to control the size of the roulette, the selection of the individuals and the difference among them.
 </p>
+<br>
+<br>
 === Tournament Selection ===
 <p align="justify">
 The idea consists in choose in random way, a bunch of individuals into the population. They use their fitness ranking to such as a tournament. The algorithm selects the top ranking individual in the bunch. The process is repeated until the new population is created.
 Usually the size of the tournament is two, but you can include as many as you want. The size of the bunch is called pressure. If the bunch is bigger, more individuals will be in the tournament. This implies that the worst ranked individuals will have tinny chance of selection. In the other hand smaller bunch more options to be select.
-Is possible to combine this method with the 
-
- Usualmente el tamaño del torneo es de dos individuos, pero se pueden incluir más. La cantidad de individuos dentro del torneo determina la presión de selectividad. Mientras más individuos estén compitiendo mayor será la presión y los peores individuos apenas tendrán oportunidades de ser elegidos. Este tipo de selección usualmente se combina con la selección por escalada para ir aumentando la presión de selectividad a medida que la aptitud mejora en la población. Existen dos versiones de selección por torneo.
+Is possible to combine this method with the Climbing Selection algorithm you can increase the pressure progressively.
+<br/>
+There are mainly two flavors of the Tournament Selection algorithm.
 </p>
 http://www.designemergente.org/laga/natSelection4.jpg
 <br>
 ==== Tournament Selection Deterministic ====
 <p align="justify">
+Usually you use the Deterministic method: Choose the top ranked individual. Its called deterministic because is based in the best and worst. This methid has the advantage to control the elitism, be you can control the pressure. Also you can avoid the premature convergence.
+
+This method is very good to control the premature convergence.
 Habitualmente, se selecciona el mejor de los individuos. Está técnica es llamada determinista de tipo, ya sea el mejor o el peor. Tiene la ventaja de que permite un cierto grado de elitismo, el mejor nunca va a morir y tienen más probabilidad de reproducirse que el menos adaptado. Además no produce una convergencia prematura.
 </p>
+<br>
+<br>
 ==== Tournament Selection Probabilistic ====
 <p align="justify">
-La versión probabilística únicamente se diferencia en que en vez de elegir siempre el mejor, se genera un número aleatorio entre 0 y 1. Si es mayor que un parámetro T se escoge al mejor de los individuos, de lo contrario se escoge al otro.
+This version generates a random number between 0 and 1. If the random number is bigger than some threshold, the algorithm select the top ranked individual. Else the algorithm select the other one.
 </p>
+<br>
+<br>
 === Hierarchical Tournament Selection ===
 <p align="justify">
-Los individuos atraviesan múltiples rondas de selección en cada generación, haciéndose cada vez más discriminatorias y rigurosas. La ventaja de este método es que reduce el tiempo total de cálculo.
+The same individuals should have many tournament selection per each generation. Getting the selection, is become more precisely. this method reduce the calculus time of the GA.
 </p>
+<br>
+<br>
 === Climbing Selection ===
 <p align="justify">
-Tras varias generaciones, la aptitud media de la población va incrementándose y con esto la presión selectiva. Porque cada individuo cava vez se diferencia menos de sus competidores. Entonces la función de aptitud se vuelve cada vez más discriminatoria. Este método es útil en el momento en que todos los individuos tienen una aptitud alta y las diferencias entre ellos es muy baja. También es útil cuando se trabajan con población de pocos individuos.
-Este método se va poniendo cada vez más estricto en cuanto a selección durante la ejecución del algoritmo. Esto sucede porque con cada mejora de la aptitud de la población las diferencias entre los individuos buenos y malos son más estrechas.
+This method Climbing Selection increase the selection threshold during the execution of the algorithm. So the fitness function its become more discriminatory. This method is useful when all the individuals are looks like similar and their difference is closer to 0. Also is useful in small populations.
 </p>
+<br>
+<br>
 === Range Selection ===
 <p align="justify">
-A cada individuo se le asigna un rango numérico basado en su aptitud y la selección se basa en este ranking. La ventaja de este tipo de selección es que se evita que los individuos más aptos ganen en dominio por sobre los otros, de cierta manera lo que hace es preservar la diversidad de individuos y evitar que se obstaculice la búsqueda de una solución aceptable. Este tipo de selección es usado generalmente en problemas con espacios de búsqueda de mucho ruido.
+Each individual has a based fitness range number. The algorithm select the individual from this number. The advantage is to avoid the top ranked individuals get domain over the others. In some way this algorithm preserve the diversity into the population. This method is useful in very noisy search spaces.
 </p>
+<br>
+<br>
 === Generation Selection ===
 <p align="justify">
-La descendencia de los individuos seleccionados en cada generación remplaza completamente a la generación anterior. No se conservan individuos entre generaciones. Este tipo de selección creará una población completamente nueva que remplazará a la generación anterior. Este tipo de selección se aplica generalmente sobre poblaciones pequeñas. Entre 20 y 30 individuos por población.
+Per each generation the algorithm select different individuals. So the old population is completely replaced.
 </p>
+<br>
+<br>
 === Steady State Selection ===
 <p align="justify">
-Se conservan individuos entre generaciones. Los individuos durante el proceso de optimización pasan por múltiples rondas de evaluación. Está técnica permite que entre generaciones se vayan conservando ciertos individuos y remplazando algunos otros. Este tipo de selección es más cercano a lo que sucede en la selección natural biológica. Este tipo de selección usualmente es usado en grandes poblaciones. Más de 100 individuos por población.
+The algorithm save individuals trough generations, also they have to pass many tournament selections. this technique allow save and replace the individuals in future generations, and replace others. This selection method is very similar like in the real world. This type of selection is useful for big populations.
 </p>
