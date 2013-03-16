@@ -38,8 +38,14 @@ http://www.designemergente.org/laga/natSelection3.jpg
 </p>
 === Tournament Selection ===
 <p align="justify">
-La idea de este método consiste en escoger al azar un número de individuos de la población y seleccionar al mejor de ellos compitiendo con su fitness como si fuese un torneo. El proceso se repite hasta que el número de individuos coincida con el tamaño de la población. Usualmente el tamaño del torneo es de dos individuos, pero se pueden incluir más. La cantidad de individuos dentro del torneo determina la presión de selectividad. Mientras más individuos estén compitiendo mayor será la presión y los peores individuos apenas tendrán oportunidades de ser elegidos. Este tipo de selección usualmente se combina con la selección por escalada para ir aumentando la presión de selectividad a medida que la aptitud mejora en la población. Existen dos versiones de selección por torneo.
+The idea consists in choose in random way, a bunch of individuals into the population. They use their fitness ranking to such as a tournament. The algorithm selects the top ranking individual in the bunch. The process is repeated until the new population is created.
+Usually the size of the tournament is two, but you can include as many as you want. The size of the bunch is called pressure. If the bunch is bigger, more individuals will be in the tournament. This implies that the worst ranked individuals will have tinny chance of selection. In the other hand smaller bunch more options to be select.
+Is possible to combine this method with the 
+
+ Usualmente el tamaño del torneo es de dos individuos, pero se pueden incluir más. La cantidad de individuos dentro del torneo determina la presión de selectividad. Mientras más individuos estén compitiendo mayor será la presión y los peores individuos apenas tendrán oportunidades de ser elegidos. Este tipo de selección usualmente se combina con la selección por escalada para ir aumentando la presión de selectividad a medida que la aptitud mejora en la población. Existen dos versiones de selección por torneo.
 </p>
+http://www.designemergente.org/laga/natSelection4.jpg
+<br>
 ==== Tournament Selection Deterministic ====
 <p align="justify">
 Habitualmente, se selecciona el mejor de los individuos. Está técnica es llamada determinista de tipo, ya sea el mejor o el peor. Tiene la ventaja de que permite un cierto grado de elitismo, el mejor nunca va a morir y tienen más probabilidad de reproducirse que el menos adaptado. Además no produce una convergencia prematura.
