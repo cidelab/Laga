@@ -55,8 +55,6 @@ Usually you use the Deterministic method: Choose the top ranked individual. Its 
 This method is very good to control the premature convergence.
 Habitualmente, se selecciona el mejor de los individuos. Está técnica es llamada determinista de tipo, ya sea el mejor o el peor. Tiene la ventaja de que permite un cierto grado de elitismo, el mejor nunca va a morir y tienen más probabilidad de reproducirse que el menos adaptado. Además no produce una convergencia prematura.
 </p>
-<br>
-<br>
 ==== Tournament Selection Probabilistic ====
 <p align="justify">
 This version generates a random number between 0 and 1. If the random number is bigger than some threshold, the algorithm select the top ranked individual. Else the algorithm select the other one.
