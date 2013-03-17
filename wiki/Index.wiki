@@ -2,8 +2,8 @@
  * Genetic Operators
     * [OpCodification]	 
     * [OpNaturalSelection]
-    * [OpMutation]
     * [OpCrossover]
+    * [OpMutation]
  * [Fitness]
  * laga
     * [Overview]	 
