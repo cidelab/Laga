@@ -12,14 +12,19 @@ There are many types of the crossover operator, but the most used are:
 === Single Point Crossover ===
 <p align="justify">
 The single point crossover takes two individuals. Then, split each chromosome in two parts and interchange the genes to create two new chromosomes. The split point can be generated randomly or not.
+http://www.designemergente.org/laga/crossover1.jpg
+<br>
 </p>
 <br/>
 === Two Points Crossover ===
 <p align="justify">
 This method is very similar to the single point crossover, but in this case the chromosomes are split in three parts. None of the split points should fit with the chromosomes boundaries.
 </p>
-<br/>
+http://www.designemergente.org/laga/crossover2.jpg
+<br>
 === Uniform Crossover ===
 <p align="justify">
 In the uniform crossover the gens in the offspring has the same probabilities to come from one parent or other. This technique implies to generate a random binary list (101101001). If is 1 the gen will come from the parent 1 else will come from the parent 2. In order to generate the second offspring the rule is inverted.
 </p>
+http://www.designemergente.org/laga/crossover3.jpg
+<br>
