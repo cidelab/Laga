@@ -9,3 +9,7 @@ The idea of the crossover is based in the inheritance. If the parents have a goo
 There are many types of the crossover operator, but the most used are:
 </p>
 <br/>
+=== One Point Crossover ===
+<p align="justify">
+
+</p>
