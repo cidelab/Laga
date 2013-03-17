@@ -13,3 +13,13 @@ There are many types of the crossover operator, but the most used are:
 <p align="justify">
 
 </p>
+<br/>
+=== Two Points Crossover ===
+<p align="justify">
+
+</p>
+<br/>
+=== Uniform Crossover ===
+<p align="justify">
+
+</p>
