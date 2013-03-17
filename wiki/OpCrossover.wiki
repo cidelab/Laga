@@ -15,11 +15,13 @@ The single point crossover takes two individuals. Then, split each chromosome in
 </p>
 http://www.designemergente.org/laga/crossover1.jpg
 <br/>
+<br/>
 === Two Points Crossover ===
 <p align="justify">
 This method is very similar to the single point crossover, but in this case the chromosomes are split in three parts. None of the split points should fit with the chromosomes boundaries.
 </p>
 http://www.designemergente.org/laga/crossover2.jpg
+<br/>
 <br/>
 === Uniform Crossover ===
 <p align="justify">
