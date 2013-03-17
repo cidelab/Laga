@@ -21,5 +21,5 @@ This method is very similar to the single point crossover, but in this case the 
 <br/>
 === Uniform Crossover ===
 <p align="justify">
-
+In the uniform crossover the gens in the offspring has the same probabilities to come from one parent or other. This technique implies to generate a random binary list (101101001). If is 1 the gen will come from the parent 1 else will come from the parent 2. In order to generate the second offspring the rule is inverted.
 </p>
