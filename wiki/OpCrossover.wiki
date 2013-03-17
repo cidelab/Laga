@@ -12,7 +12,7 @@ There are many types of the crossover operator, but the most used are:
 === Single Point Crossover ===
 <p align="justify">
 The single point crossover takes two individuals. Then, split each chromosome in two parts and interchange the genes to create two new chromosomes. The split point can be generated randomly or not.
-http://www.designemergente.org/laga/crossover1.jpg
+http://www.designemergente.org/laga/crossover.jpg
 <br>
 </p>
 <br/>
