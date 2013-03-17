@@ -9,14 +9,14 @@ The idea of the crossover is based in the inheritance. If the parents have a goo
 There are many types of the crossover operator, but the most used are:
 </p>
 <br/>
-=== One Point Crossover ===
+=== Single Point Crossover ===
 <p align="justify">
-
+The single point crossover takes two individuals. Then, split each chromosome in two parts and interchange the genes to create two new chromosomes. The split point can be generated randomly or not.
 </p>
 <br/>
 === Two Points Crossover ===
 <p align="justify">
-
+This method is very similar to the single point crossover, but in this case the chromosomes are split in three parts. None of the split points should fit with the chromosomes boundaries.
 </p>
 <br/>
 === Uniform Crossover ===
