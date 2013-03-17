@@ -1,3 +1,11 @@
 = Crossover =
-
-soon, stay tuned.
+<p align="justify">
+Once the natural selection is finished and we have a set of selected individuals, the next 
+Genetic operator in the action is the crossover. The crossover operator needs two individuals (parents) to interchange their chromosomes in order to produce one or two new individuals (offspring). This process imitates the DNA recombination of parents in the sexual reproduction.
+<br/>
+The crossover method is based in the sexual reproduction. It works between generations and it is used in the 90% of the selected individuals. We can find different crossover methods, but all of them work in two different ways. The first one is called destructive strategy and consists that the offspring will replace the parents even if they have a better fitness. The other strategy is called non-destructive: If the offspring don’t have a better fitness than parents, they will not have any chance to replace the new generation.
+<br/>
+The idea of the crossover is based in the inheritance. If the parents have a good fitness, we are going to expect an offspring with good fitness too. Both parents share their chromosomes, the offspring, or at least some part of it should have a better fitness than the parents for separate.
+There are many types of the crossover operator, but the most used are:
+</p>
+<br/>
