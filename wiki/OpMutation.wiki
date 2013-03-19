@@ -7,7 +7,6 @@ The mutation modifies in a random way some genes in the chromosome and usually i
 The most common mutation is the random replacement. It consists in vary randomly a gene in the chromosome. If the chromosome is binary is possible to swap a 1 by 0 or vice versa. Also is possible to make the mutation changing values or un-sorted the chromosome. It is possible to multiply gen by a random value between min and max values.
 </p>
 http://www.designemergente.org/laga/mutation.jpg
-<br/>
 <p align="justify">
 The mutation only varies around the 1% in the chromosome. The mutation method used in the GA it will depends of the problem type, the conditions of the problem and the data type of the chromosome.
 The crossover operator is charge of the fast search, while the mutation is charge to search in any nook of the space search. This operator earns more importance when the population increases their fitness, and the individuals are getting equals.
