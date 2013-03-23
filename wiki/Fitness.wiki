@@ -61,3 +61,5 @@ The problem here consists in find the correct set of actions that will move for 
 <p align="justify">
 The idea here is more abstract. Find (efficiently) a solution to a problem in a large space of candidate solutions. These are the kinds of search problems for which genetic algorithms are used. The cool thing here is when we search a space of candidate solutions with a GA, not all the possible solutions are created first and the evaluated; rather, the GA is a method for finding optimal or good solutions by examining a small fraction (pollster) of the possible candidates.
 </p>
+
+[http://dl.dropbox.com/u/2542097/Resources/10_bibliografia.pdf REFERENCES]
