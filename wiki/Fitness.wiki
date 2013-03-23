@@ -6,6 +6,11 @@ The most common application of GAs is the optimization task. The goal is to find
 
 Computer Scientist define the collection of all possible solutions to a problem as a "search space". Suppose we want to design a protein with similar performance as collagen.
 </p>
+http://www.designemergente.org/laga/spaceSearch.jpg
+<p align="justify">
+The mutation only varies around the 1% in the chromosome. The mutation method used in the GA it will depends of the problem type, the conditions of the problem and the data type of the chromosome.
+The crossover operator is charge of the fast search, while the mutation is charge to search in any nook of the space search. This operator earns more importance when the population increases their fitness, and the individuals are getting equals.
+</p>
 
 
 = WIP =
