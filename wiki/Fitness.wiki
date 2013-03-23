@@ -8,6 +8,9 @@ Computer Scientist define the collection of all possible solutions to a problem 
 
 ==== ¿How many possible sequence we have? ====
 </p>
+http://www.designemergente.org/laga/spaceSearch1.jpg
+<br>
+
 http://www.designemergente.org/laga/spaceSearch.jpg
 <p align="justify">
 The mutation only varies around the 1% in the chromosome. The mutation method used in the GA it will depends of the problem type, the conditions of the problem and the data type of the chromosome.
