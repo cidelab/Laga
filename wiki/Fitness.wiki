@@ -16,8 +16,8 @@ Since the search space it is so big that use GAs is a clever chance to find a ve
 ABCDDEDFRLLGA...
 An algorithm for search in this space is an effective method for choosing which candidate solutions to test in each generation of the run time. Genetic Algorithms combine via crossover and mutation the high quality candidate solutions from different regions in the search space. The search space is the collection of candidate solutions to a problem. in this case all the possibilities to have to design our collagen protein.
 </p>
-</br>
-<br>
+<br/>
+<br/>
 == Fitness Landscape ==
 <p align="justify">
 The fitness landascape is a representation of the space of all possible genotypes along with their fitness. The fitness landscape can be seen as a surface with valleys and peaks. Imagine a range mountain where the population is travelling, and looking for the highest peak. Valleys represents the the low quality solutions and the highest peak the high-quality solution in the space search. 
@@ -26,11 +26,11 @@ Since is a mountain range it is possible to find "peaks", "hills" and "valleys".
 <br/>
 In GAs the operators of crossover and mutation can be seen as ways of moving a population on the landscape defined by the fitness function. The idea of the evolution moving  population around fixed landscape is no realistic for several reasons. In the real world the landscape is not separated from the organisms that inhabit it.
 </p>
+==== Fitness landscape representation ====
 http://www.designemergente.org/laga/spaceSearch.jpg
+<br/>
+<br/>
+== Fitness Function ==
 <p align="justify">
-The mutation only varies around the 1% in the chromosome. The mutation method used in the GA it will depends of the problem type, the conditions of the problem and the data type of the chromosome.
-The crossover operator is charge of the fast search, while the mutation is charge to search in any nook of the space search. This operator earns more importance when the population increases their fitness, and the individuals are getting equals.
+The fitness function.
 </p>
-
-
-= WIP =
