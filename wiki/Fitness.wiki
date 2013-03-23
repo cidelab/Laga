@@ -33,10 +33,31 @@ http://www.designemergente.org/laga/spaceSearch.jpg
 The chromosomes in GAs tipically are composed if bit strings. Each gen in the chromosome has two possibility 0 or 1. Each chromosome can be represented as a point in the search space of candidate solutions. The GA processes populations of chromosomes, successively replacing by new generations. The GAs most often requires a fitness function to determine a fitness of each chromosome in the current population. The fitness of a chromosome depends on how well that chromosome solves the problem.
 <br/>
 One common application of GAs is function optimization, where the goal is to find a set of parameters values that maximize a multy-parameter function or one real dimensional function.
-
+<br/>
 lets see an example of Melanie Mitchell
 <br/>
 {{{f(y) = y + |Sin(32y)|}}}
 <br/>
-
+The candidate solutions are values of y. Each individual is encoded as bit string representing the real numbers (0 ≤ y < π). Is necessary to translate the bit string _x_ into a real number _y_ and the evaluate the value. Finally the fitness of string is the function value at that point.
+<br/>
+Going back to the above problem, we can define the fitness of a individual as the negative of the potential energy of the sequence with respect to the desire protein structure. The potential energy is a measure of how much physical resistance the sequence would put if forced to be folded into the desire structure. The lower energy, the higher fitness.
+<br/>
+The important thing here is understand that the individuals are encoded as abstract chromosome of numbers or letters or both. The fitness function is defined to evaluate each chromosome and assign a value to determine how it fit in the fitness landscape.
+</p>
+<br/>
+== Search Methods ==
+<p align="justify">
+We can find (at least) three search types.
+</p>
+ # Search for Sorted Data
+<p align="justify">
+Imagine we have a list of 1000 numbers, and is necessary find the closer to 20. {-623, -345, -34, 16, 56, 500, 845,…} we start with the -623, then we move it to -345 and so on to 16. Since the algorithm don´t know what is the next number it continues to 56, but the result is lower than 16. so the algorithm return 16 and finish the search. _Binary Search_ is one method for efficiently finding the desire record in a sorted list.
+</p>
+ # Search for Paths to Objective
+<p align="justify">
+The problem here consists in find the correct set of actions that will move for an initial state to a given goal. This types of algorithms are the central of many artificial intelligence methods.
+</p>
+ # Search for Solutions
+<p align="justify">
+The idea here is more abstract. Find (efficiently) a solution to a problem in a large space of candidate solutions. These are the kinds of search problems for which genetic algorithms are used. The cool thing here is when we search a space of candidate solutions with a GA, not all the possible solutions are created first and the evaluated; rather, the GA is a method for finding optimal or good solutions by examining a small fraction (pollster) of the possible candidates.
 </p>
