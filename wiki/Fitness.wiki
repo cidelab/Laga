@@ -4,7 +4,9 @@ It does not exist a definition of "Genetic Algorithms" accepted by all, However,
 
 The most common application of GAs is the optimization task. The goal is to find the correct values for a list of parameters in a function. The fitness function depends of the problem to optimize and can goes from find a simple value like a distance to resolve complex functions where all the parameters are related and is not possible to maximize one of it without to minimize others.
 
-Computer Scientist define the collection of all possible solutions to a problem as a "search space". Suppose we want to design a protein with similar performance as collagen.
+Computer Scientist define the collection of all possible solutions to a problem as a "search space". Suppose we want to design a protein with similar performance as collagen. The search space is the collection of all possible sequences of protein with length 100 and we have 26 possible amino-acids by letters in each gen of the chromosome.
+
+==== ¿How many possible sequence we have? ====
 </p>
 http://www.designemergente.org/laga/spaceSearch.jpg
 <p align="justify">
