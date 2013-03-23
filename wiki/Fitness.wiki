@@ -17,7 +17,6 @@ ABCDDEDFRLLGA...
 An algorithm for search in this space is an effective method for choosing which candidate solutions to test in each generation of the run time. Genetic Algorithms combine via crossover and mutation the high quality candidate solutions from different regions in the search space. The search space is the collection of candidate solutions to a problem. in this case all the possibilities to have to design our collagen protein.
 </p>
 <br/>
-<br/>
 == Fitness Landscape ==
 <p align="justify">
 The fitness landascape is a representation of the space of all possible genotypes along with their fitness. The fitness landscape can be seen as a surface with valleys and peaks. Imagine a range mountain where the population is travelling, and looking for the highest peak. Valleys represents the the low quality solutions and the highest peak the high-quality solution in the space search. 
@@ -29,8 +28,15 @@ In GAs the operators of crossover and mutation can be seen as ways of moving a p
 ==== Fitness landscape representation ====
 http://www.designemergente.org/laga/spaceSearch.jpg
 <br/>
-<br/>
 == Fitness Function ==
 <p align="justify">
-The fitness function.
+The chromosomes in GAs tipically are composed if bit strings. Each gen in the chromosome has two possibility 0 or 1. Each chromosome can be represented as a point in the search space of candidate solutions. The GA processes populations of chromosomes, successively replacing by new generations. The GAs most often requires a fitness function to determine a fitness of each chromosome in the current population. The fitness of a chromosome depends on how well that chromosome solves the problem.
+<br/>
+One common application of GAs is function optimization, where the goal is to find a set of parameters values that maximize a multy-parameter function or one real dimensional function.
+
+lets see an example of Melanie Mitchell
+<br/>
+{{{f(y) = y + |Sin(32y)|}}}
+<br/>
+
 </p>
