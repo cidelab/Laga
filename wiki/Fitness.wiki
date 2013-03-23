@@ -1,16 +1,31 @@
-= Fitness Function =
+= Fitness =
+
+== Search Space ==
 <p align="justify">
 It does not exist a definition of "Genetic Algorithms" accepted by all, However, most methods called GAs have at least the following elements in common: population of chromosomes, selection according to fitness function, crossover with offspring and random mutation.
-
+<br/>
 The most common application of GAs is the optimization task. The goal is to find the correct values for a list of parameters in a function. The fitness function depends of the problem to optimize and can goes from find a simple value like a distance to resolve complex functions where all the parameters are related and is not possible to maximize one of it without to minimize others.
-
-Computer Scientist define the collection of all possible solutions to a problem as a "search space". Suppose we want to design a protein with similar performance as collagen. The search space is the collection of all possible sequences of protein with length 100 and we have 26 possible amino-acids by letters in each gen of the chromosome.
-
-==== ¿How many possible sequence we have? ====
+<br/>
+Computer Scientist define the collection of all possible solutions to a problem as a _"search space"_. Suppose we want to design a protein with similar performance as collagen. The search space is the collection of all possible sequences of protein with length 100 and we have 26 possible amino-acids by letters in each gen of the chromosome.
 </p>
+==== ¿How many possible sequence we have? ====
 http://www.designemergente.org/laga/spaceSearch1.jpg
 <br>
-
+<p align="justify">
+Since the search space it is so big that use GAs is a clever chance to find a very good result. Each candidate solution will look like this:
+ABCDDEDFRLLGA...
+An algorithm for search in this space is an effective method for choosing which candidate solutions to test in each generation of the run time. Genetic Algorithms combine via crossover and mutation the high quality candidate solutions from different regions in the search space. The search space is the collection of candidate solutions to a problem. in this case all the possibilities to have to design our collagen protein.
+</p>
+</br>
+<br>
+== Fitness Landscape ==
+<p align="justify">
+The fitness landascape is a representation of the space of all possible genotypes along with their fitness. The fitness landscape can be seen as a surface with valleys and peaks. Imagine a range mountain where the population is travelling, and looking for the highest peak. Valleys represents the the low quality solutions and the highest peak the high-quality solution in the space search. 
+<br/>
+Since is a mountain range it is possible to find "peaks", "hills" and "valleys". Only one peak will contain the best fitness and is called _Best Global_ or _Global Optimum_ all the others peaks and hills are called _Best Local_ or _Local Optimum_, where their fitness is the best in the zone but not in search space. Evolution causes populations to move along the landscape in particular ways, and adaptation can be seen as the movement toward local peaks. Some times is not necessarily the highest point in the landscape, but any small.
+<br/>
+In GAs the operators of crossover and mutation can be seen as ways of moving a population on the landscape defined by the fitness function. The idea of the evolution moving  population around fixed landscape is no realistic for several reasons. In the real world the landscape is not separated from the organisms that inhabit it.
+</p>
 http://www.designemergente.org/laga/spaceSearch.jpg
 <p align="justify">
 The mutation only varies around the 1% in the chromosome. The mutation method used in the GA it will depends of the problem type, the conditions of the problem and the data type of the chromosome.
