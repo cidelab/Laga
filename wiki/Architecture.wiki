@@ -1,4 +1,4 @@
 = laga Architecture =
 
-==== The current laga architecture V 0.0.1: ====
+==== The laga architecture V 0.0.1: ====
 http://www.designemergente.org/laga/Page_39.jpg
