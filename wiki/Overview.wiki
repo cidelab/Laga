@@ -9,5 +9,3 @@ In this web page you will find the latest current version of *laga* as well as e
 <br/>
 If you are interested in laga or need use it for some project or even if you plan to make a workshop about GAs and architecture, do not hesitate to write me.
 </p>
-==== The current laga architecture is: ====
-http://www.designemergente.org/laga/Page_39.jpg
