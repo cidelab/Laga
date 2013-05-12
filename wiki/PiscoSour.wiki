@@ -1,11 +1,1 @@
-#summary One-sentence summary of this page.
-
 = PiscoSour =
-
-Add your content here.
-
-
-= Details =
-
-testing the loop.
-[sketch name="typer_facadePost.class" listostuff="http://www.designemergente.org/applets/typer_facadePost/typer_facadePost.jar,http://www.designemergente.org/applets/typer_facadePost/controlP5.jar,http://www.designemergente.org/applets/typer_facadePost/core.jar" width="700" height="380" param="image:loading.gif,centerimage:true"]
