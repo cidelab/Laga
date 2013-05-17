@@ -16,7 +16,7 @@
         * [Crossover]
         * [Mutation]
         * [Replacement]
-    * Examples(not implemented)
+    * Examples
         * [PiscoSour]
         * [TravellingSalesman]
         * [TheCloserPoint]
