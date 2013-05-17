@@ -3,6 +3,7 @@
 This is a combinatorial problem. The result is very simple: find the correct order of characters in a word. Each character in the word has 26 possible options. so the space search of a word of 20 letters is _26pow(20)_, which means a huge search space.
 </p>
 <br>
+==== User interface explanation ====
 http://www.designemergente.org/laga/piscosour.jpg
 <br>
 <br>
