@@ -1,1 +1,11 @@
 = PiscoSour =
+<p align="justify">
+This is a combinatorial problem. The result is very simple: find the correct order of characters in a word. Each character in the word has 26 possible options. so the space search of a word of 20 letters is !20pow(26), which means a huge space search 
+</p>
+<br>
+http://www.designemergente.org/laga/piscosour.jpg
+<br>
+Chromosome of individual, based in http://sabia.tic.udc.es/mgestal/ [06/08/10]
+<br>
+<br>
+=== Chromosome example ===
