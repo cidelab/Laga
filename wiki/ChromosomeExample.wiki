@@ -4,9 +4,9 @@
 in this chunk you will find how to initialize and create chromosomes.
 </p>
 <br>
-==== Applet image ====
+==== Example and explication ====
 http://www.designemergente.org/laga/gnerChromsomepost.jpg
 <br>
 <br>
 Download the source code and the libraries from here:
-[https://www.dropbox.com/s/ozzg10pis55g7uh/Lga_Characters.zip]
+[https://www.dropbox.com/s/umoxa7hlyvjg58v/Chr_example.zip]
