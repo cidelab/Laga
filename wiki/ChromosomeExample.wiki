@@ -1,11 +1,11 @@
 = GenrChromosome Class Examples =
 
 <p align="justify">
-in this chunk you will find how to set 
+in this chunk you will find how to initialize and create chromosomes.
 </p>
 <br>
-==== User interface explanation ====
-http://www.designemergente.org/laga/piscosour.jpg
+==== Applet image ====
+http://www.designemergente.org/laga/gnerChromsomepost.jpg
 <br>
 <br>
 Download the source code and the libraries from here:
