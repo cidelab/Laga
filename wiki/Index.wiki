@@ -17,7 +17,7 @@
         * [Mutation]
         * [Replacement]
     * Examples
-        * [How to create Chromosomes]
+        * [GenrChromosome_Example]
         * [PiscoSour]
         * [TravellingSalesman]
         * [TheCloserPoint]
