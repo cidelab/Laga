@@ -17,7 +17,7 @@
         * [Mutation]
         * [Replacement]
     * Examples
-        * [GenrChromosomeExample]
+        * [ChromosomeExample]
         * [PiscoSour]
         * [TravellingSalesman]
         * [TheCloserPoint]
