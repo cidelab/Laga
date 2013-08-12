@@ -1,13 +1,12 @@
-#summary One-sentence summary of this page.
+= GenrChromosome Class Examples =
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+<p align="justify">
+in this chunk you will find how to set 
+</p>
+<br>
+==== User interface explanation ====
+http://www.designemergente.org/laga/piscosour.jpg
+<br>
+<br>
+Download the source code and the libraries from here:
+[https://www.dropbox.com/s/ozzg10pis55g7uh/Lga_Characters.zip]
