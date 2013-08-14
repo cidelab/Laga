@@ -18,6 +18,7 @@
         * [Replacement]
     * Examples
         * [ChromosomeExample]
+        * [PopulationExample]
         * [PiscoSour]
         * [TravellingSalesman]
         * [TheCloserPoint]
