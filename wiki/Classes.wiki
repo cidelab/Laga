@@ -1,7 +1,0 @@
-        * [GenrChromosome]
-        * [GenrPopulation]
-        * [RankingSort]
-        * [NaturalSelection]
-        * [Crossover]
-        * [Mutation]
-        * [Replacement]

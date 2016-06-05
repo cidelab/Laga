@@ -57,6 +57,20 @@ public class LagaTools {
 		}
 		return chrom;
 	}
+	
+	public char RandomCharBinary() {
+		Random rnd = new Random();
+		char t;
+		if(rnd.nextFloat() < 0.5)
+		{
+			t = '1';
+		}
+		else
+		{
+			t = '0';
+		}
+		return t;
+	}
 		
 	public char RandomChar()
 	{

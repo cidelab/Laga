@@ -28,7 +28,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public Object[][] ElitismSelection(Object[][] srtPopulation, int count)
+	public Object[][] Elitism(Object[][] srtPopulation, int count)
 	{
 		//clone the array.
 		Object[][] elitismPop = new Object[srtPopulation.length][];
@@ -51,30 +51,31 @@ public class NaturalSelection
 		return selChromosome;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in int[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return Object[][] population.
-	 * 
-	 * 
 	 */
-	public Object[][] RouletteWheelNonPolinomicMin(Object[][] srtPopulation, int[] results, int pointer, int displace)
+	public Object[][] RouletteWheel(Object[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<Object> arrRwheelPop = new ArrayList <Object>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -94,30 +95,31 @@ public class NaturalSelection
 	return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in float[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return Object[][] population.
-	 * 
-	 * 
 	 */
-	public Object[][] RouletteWheelNonPolinomicMin(Object[][] srtPopulation, float[] results, int pointer, int displace)
+	public Object[][] RouletteWheel(Object[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<Object> arrRwheelPop = new ArrayList <Object>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -198,7 +200,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public Object[][] TournamentSelection(Object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public Object[][] Tournament(Object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		Object[][] TourPop = new Object[numbTour][];
 		Object[][] arrTour;
@@ -239,7 +241,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public Object[][] TournamentSelection(Object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public Object[][] Tournament(Object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		Object[][] TourPop = new Object[numbTour][];
 		Object[][] arrTour;
@@ -263,7 +265,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}
-	Object[] Tournament(Object[][] torneo, float[] results, String type)
+	private Object[] Tournament(Object[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -294,7 +296,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	Object[] Tournament(Object[][] torneo, int[] results, String type)
+	private Object[] Tournament(Object[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -335,7 +337,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public double[][] ElitismSelection(double[][] srtPopulation, int count)
+	public double[][] Elitism(double[][] srtPopulation, int count)
 	{
 		//clone the array.
 		double[][] elitismPop = new double[srtPopulation.length][];
@@ -353,30 +355,31 @@ public class NaturalSelection
 		return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in float[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return double[][] population.
-	 * 
-	 * 
 	 */
-	public double[][] RouletteWheelNonPolinomicMin(double[][] srtPopulation, float[] results, int pointer, int displace)
+	public double[][] RouletteWheel(double[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<double[]> arrRwheelPop = new ArrayList <double[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -396,30 +399,31 @@ public class NaturalSelection
 	return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in int[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return double[][] population.
-	 * 
-	 * 
 	 */
-	public double[][] RouletteWheelNonPolinomicMin(double[][] srtPopulation, int[] results, int pointer, int displace)
+	public double[][] RouletteWheel(double[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<double[]> arrRwheelPop = new ArrayList <double[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -500,7 +504,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public double[][] TournamentSelection(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public double[][] Tournament(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		double[][] TourPop = new double[numbTour][];
 		double[][] arrTour;
@@ -541,7 +545,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public double[][] TournamentSelection(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public double[][] Tournament(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		double[][] TourPop = new double[numbTour][];
 		double[][] arrTour;
@@ -564,7 +568,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	double[] Tournament(double[][] torneo, float[] results, String type)
+	private double[] Tournament(double[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -593,7 +597,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	double[] Tournament(double[][] torneo, int[] results, String type)
+	private double[] Tournament(double[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -634,7 +638,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public float[][] ElitismSelection(float[][] srtPopulation, int count)
+	public float[][] Elitism(float[][] srtPopulation, int count)
 	{
 		//clone the array.
 		float[][] elitismPop = new float[srtPopulation.length][];
@@ -654,30 +658,31 @@ public class NaturalSelection
 		return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in float[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return float[][] population.
-	 * 
-	 * 
 	 */
-	public float[][] RouletteWheelNonPolinomicMin(float[][] srtPopulation, float[] results, int pointer, int displace)
+	public float[][] RouletteWheel(float[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<float[]> arrRwheelPop = new ArrayList <float[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -697,30 +702,31 @@ public class NaturalSelection
 	return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in int[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return float[][] population.
-	 * 
-	 * 
 	 */
-	public float[][] RouletteWheelNonPolinomicMin(float[][] srtPopulation, int[] results, int pointer, int displace)
+	public float[][] RouletteWheel(float[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<float[]> arrRwheelPop = new ArrayList <float[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -801,7 +807,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public float[][] TournamentSelection(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public float[][] Tournament(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		float[][] TourPop = new float[numbTour][];
 		float[][] arrTour;
@@ -842,7 +848,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public float[][] TournamentSelection(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public float[][] Tournament(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		float[][] TourPop = new float[numbTour][];
 		float[][] arrTour;
@@ -865,7 +871,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	float[] Tournament(float[][] torneo, float[] results, String type)
+	private float[] Tournament(float[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -894,7 +900,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	float[] Tournament(float[][] torneo, int[] results, String type)
+	private float[] Tournament(float[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -935,7 +941,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public int[][] ElitismSelection(int[][] srtPopulation, int count)
+	public int[][] Elitism(int[][] srtPopulation, int count)
 	{
 		//clone the array.
 		int[][] elitismPop = new int[srtPopulation.length][];
@@ -955,30 +961,31 @@ public class NaturalSelection
 		return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in float[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return int[][] population.
-	 * 
-	 * 
 	 */
-	public int[][] RouletteWheelNonPolinomicMin(int[][] srtPopulation, float[] results, int pointer, int displace)
+	public int[][] RouletteWheel(int[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<int[]> arrRwheelPop = new ArrayList <int[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -998,30 +1005,31 @@ public class NaturalSelection
 	return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in int[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return int[][] population.
-	 * 
-	 * 
 	 */
-	public int[][] RouletteWheelNonPolinomicMin(int[][] srtPopulation, int[] results, int pointer, int displace)
+	public int[][] RouletteWheel(int[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<int[]> arrRwheelPop = new ArrayList <int[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -1102,7 +1110,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public int[][] TournamentSelection(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public int[][] Tournament(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		int[][] TourPop = new int[numbTour][];
 		int[][] arrTour;
@@ -1127,14 +1135,14 @@ public class NaturalSelection
 	}
 	/**
 	 * TournamentSelection method.
-	 * select a number of indiviudals trough a tournament selection.
+	 * select a number of individuals trough a tournament selection.
 	 * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-	 * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+	 * An interest parameter is the pressure: as bigger value is, best individuals will be selected.
 	 * This method return a new population and can be bigger than the original size.
 	 * in the TorunamentSelection method is not necessary a sorted population.
 	 * 
 	 * @param srtPopulation -> a population.
-	 * @param resutls		-> the array of results from the evaluation in int[] flavor.
+	 * @param resutls		-> the array of results from the evaluation in int[] flavour.
 	 * @param numbTour 		-> the quantity of tournaments, any integer.
 	 * @param preasure 	 	-> number of individuals in the competition.
 	 * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
@@ -1143,7 +1151,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public int[][] TournamentSelection(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public int[][] Tournament(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		int[][] TourPop = new int[numbTour][];
 		int[][] arrTour;
@@ -1166,7 +1174,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	int[] Tournament(int[][] torneo, float[] results, String type)
+	private int[] Tournament(int[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -1195,7 +1203,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	int[] Tournament(int[][] torneo, int[] results, String type)
+	private int[] Tournament(int[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -1236,7 +1244,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public char[][] ElitismSelection(char[][] srtPopulation, int count)
+	public char[][] Elitism(char[][] srtPopulation, int count)
 	{
 		//clone the array.
 		char[][] elitismPop = new char[srtPopulation.length][];
@@ -1258,31 +1266,33 @@ public class NaturalSelection
 
 		return selChromosome;
 	}
+
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in float[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return char[][] population.
-	 * 
-	 * 
 	 */
-	public char[][] RouletteWheelNonPolinomicMin(char[][] srtPopulation, float[] results, int pointer, int displace)
+	public char[][] RouletteWheel(char[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<char[]> arrRwheelPop = new ArrayList <char[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -1302,30 +1312,32 @@ public class NaturalSelection
 	return RwheelPop;
 	}
 	/**
-	 * RouletteWheelNonPolinomicMin method.
-	 * select a number of indiviudals depending of their ranking in the population.
-	 * the best ranked individuals have more chance to be selected thant worst. 
-	 * Although all the individuals has a chance to be selected. the roulette wheel is based in a non polinomic curve (y = 1/x).
-	 * Since is a non polinomic curve the best individual has the less value in the result and the first individual in the population.
-	 * the method is based on the Roulette Wheel natural selection. This method return a new population, same size as the origin
+	 * RouletteWheel method.
+	 * select a number of individuals depending of their ranking in the population.
+	 * the best ranked individuals have more chance to be selected than worst. 
+	 * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
 	 * 
 	 * @param srtPopulation -> a sorted population by any sort algorithm.
-	 * @param results 		-> the array of results from the evaluation in int[] flavor
-	 * @param pointer 		-> the pointer is the maximum number of individuals in the roulette wheel.
-	 * @param displace 		-> this parameter move the nonpolinomic curve in the y Axis.
+	 * @param results 		-> the array of results from the evaluation in int[] flavour
+	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return char[][] population.
-	 * 
-	 * 
 	 */
-	public char[][] RouletteWheelNonPolinomicMin(char[][] srtPopulation, int[] results, int pointer, int displace)
+	public char[][] RouletteWheel(char[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<char[]> arrRwheelPop = new ArrayList <char[]>();
 		int index;
+		float p1 = results[0];
+		float p2;
+		float r;
 		
 		for(int i = 0; i < srtPopulation.length; i++) 
 		{
-			index = (int)((results[0] / results[i] * (pointer / (i + 1))) - displace);
+			p2 = results[i];
+			r = (p1 / p2) * maxItem;
+			index = (int)r;
+			index = index < 1 ? 1 : index;
+			
 			for(int j = 0; j < index; ++j)
 			{
 				arrRwheelPop.add(srtPopulation[i]);
@@ -1406,7 +1418,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public char[][] TournamentSelection(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public char[][] Tournament(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		char[][] TourPop = new char[numbTour][];
 		char[][] arrTour;
@@ -1470,7 +1482,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	char[] Tournament(char[][] torneo, float[] results, String type)
+	private char[] Tournament(char[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -1499,7 +1511,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	char[] Tournament(char[][] torneo, int[] results, String type)
+	private char[] Tournament(char[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;

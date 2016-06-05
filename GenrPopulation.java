@@ -3,14 +3,14 @@ import java.util.Random;
 import processing.core.PApplet;
 
 /**
- * The GenrPopulation class has all the methods to create and initialize different flavors
+ * The GenrPopulation class has all the methods to create and initialise different flavours
  * of populations, this class must be called to create the first random population. 
  */
 
 public class GenrPopulation {
 	
 	PApplet myParent;
-	//private int[] arrIndex;
+	
 	LagaTools lgTools;
 	
 	public GenrPopulation (PApplet theParent) {
@@ -27,7 +27,7 @@ public class GenrPopulation {
 	 * @param seedChromosome -> the seed chromosome to create the population.
 	 * @param percent 		 -> the mutation percent in the population 0 <= percent <= 1
 	 * @param InOut 		 -> if is true the seed will be included in the population
-	 * @return a population in the flavor Object[][] based on a seed Object[] chromosome.
+	 * @return a population in the flavour Object[][] based on a seed Object[] chromosome.
 	 * 
 	 * 
 	 */
@@ -63,7 +63,7 @@ public class GenrPopulation {
 	 * @param sizeChromosome -> the length of each Chromosome in the population.
 	 * @param min -> the minimum value in the chromosome;
 	 * @param max -> the maximum value in the chromosome;.
-	 * @return a NumberPopulation in the flavor double[][].
+	 * @return a NumberPopulation in the flavour double[][].
 	 * 
 	 * 
 	 */
@@ -180,7 +180,7 @@ public class GenrPopulation {
 	 * 
 	 * 
 	 */
-	public int[][] BinaryPopulation(int sizePopulation, int sizeChromosome)
+	public int[][] BinaryPopulationInt(int sizePopulation, int sizeChromosome)
 	{
 		int[][] pop = new int[sizePopulation][];
 		int[] chromosome;
@@ -201,6 +201,34 @@ public class GenrPopulation {
 				}
 			}
 			pop[i] = chromosome;
+		}
+		return pop;
+	}
+	
+	/**
+	 * BinaryPopulation.
+	 * Create a Random binary population.
+	 * 
+	 * @param sizePopulation -> the size of the population;
+	 * @param sizeChromosome -> the length of each chromosome in the population.
+	 * @return a population in the flavor char[] of type 1010110101.
+	 * 
+	 * 
+	 */
+	public char[][] BinaryPopulationChr(int sizePopulation, int sizeChromosome)
+	{
+		char[][] pop = new char[sizePopulation][sizeChromosome];
+		char[] arrChr;
+		
+		for(int i = 0; i < sizePopulation; ++i)
+		{
+			arrChr = new char[sizeChromosome];
+			for(int j = 0; j< sizeChromosome; ++j)
+			{
+				arrChr[j] = lgTools.RandomCharBinary();
+			}
+			
+			pop[i] = arrChr;
 		}
 		return pop;
 	}

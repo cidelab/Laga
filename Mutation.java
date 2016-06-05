@@ -1,9 +1,9 @@
 /**
- * ##library.name##
- * ##library.sentence##
- * ##library.url##
+ * laga
+ * A collection of classes to design and create Genetic Algorithms
+ * http://designemergente.com
  *
- * Copyright ##copyright## ##author##
+ * Copyright (c) 2015 cidelab http://designemergente.com
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,9 +20,9 @@
  * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA  02111-1307  USA
  * 
- * @author      ##author##
- * @modified    ##date##
- * @version     ##library.prettyVersion## (##library.version##)
+ * @author      cidelab http://designemergente.com
+ * @modified    12/22/2015
+ * @version     0.0.1 (1)
  */
 
 package laga;
