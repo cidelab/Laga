@@ -1,12 +1,14 @@
 package laga;
+
 import processing.core.*;
 
 /**
- * The RankingSort class has all the methods to create and initialize the bidirectional BubbleSort algorithm.
+ * The RankingSort class has all the methods to create and initialise the bidirectional BubbleSort algorithm.
  */
 public class RankingSort 
 {
 	PApplet myParent;
+	LagaCasting lc = new LagaCasting();
 	
 	Object[][] objPopulation;
 	double[][] dblPopulation;
@@ -22,7 +24,7 @@ public class RankingSort
 		myParent = parent;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -32,7 +34,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(Object[][] population, float[] arrResults)
+	public void BidirectionalBubbleSort(Object[][] population, float[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -67,13 +69,19 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		objPopulation = population;
 		fltArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -83,7 +91,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(Object[][] population, int[] arrResults)
+	public void BidirectionalBubbleSort(Object[][] population, int[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -118,13 +126,19 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		objPopulation = population;
 		intArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -134,7 +148,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(double[][] population, float[] arrResults)
+	public void BidirectionalBubbleSort(double[][] population, float[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -171,11 +185,17 @@ public class RankingSort
 			}
 		}
 		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
+		}
+		
 		dblPopulation = population;
 		fltArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -185,7 +205,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(double[][] population, int[] arrResults)
+	public void BidirectionalBubbleSort(double[][] population, int[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -221,6 +241,12 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 
 		dblPopulation = population;
@@ -228,7 +254,7 @@ public class RankingSort
 
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -238,7 +264,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(float[][] population, float[] arrResults)
+	public void BidirectionalBubbleSort(float[][] population, float[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -273,13 +299,19 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		fltPopulation = population;
 		fltArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -289,7 +321,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(float[][] population, int[] arrResults)
+	public void BidirectionalBubbleSort(float[][] population, int[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -326,11 +358,17 @@ public class RankingSort
 			}
 		}
 		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
+		}
+		
 		fltPopulation = population;
 		intArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -340,7 +378,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(int[][] population, float[] arrResults)
+	public void BidirectionalBubbleSort(int[][] population, float[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -375,13 +413,19 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		intPopulation = population;
 		fltArrResults = arrResults;
 	}	
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -391,7 +435,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(int[][] population, int[] arrResults)
+	public void BidirectionalBubbleSort(int[][] population, int[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -426,23 +470,29 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		intPopulation = population;
 		intArrResults = arrResults;
 	}
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
 	 * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-	 * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-	 * @return automatically the population is sorted updated. the original population will be modified.
+	 * @param minmax 	 -> if is false the sort is by min to max, true max to min.
+	 * @return automatically the population sorted is updated. the original population will be modified.
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(char[][] population, float[] arrResults)
+	public void BidirectionalBubbleSort(char[][] population, float[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -479,11 +529,17 @@ public class RankingSort
 			}
 		}
 		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
+		}
 		srtPopulation = population;
 		fltArrResults = arrResults;
 	}
+
 	/**
-	 *An optimized BidirectionalBubbleSort method.
+	 *An optimised BidirectionalBubbleSort method.
 	 * Sort the individuals in the population by fitness value.
 	 * 
 	 * @param population -> population to sort;
@@ -493,7 +549,7 @@ public class RankingSort
 	 * 
 	 * 
 	 */
-	public void BidirectionalBubbleSort(char[][] population, int[] arrResults)
+	public void BidirectionalBubbleSort(char[][] population, int[] arrResults, boolean minmax)
 	{
 		int j;
 		int st = -1;
@@ -528,6 +584,12 @@ public class RankingSort
 					population[j + 1] = temp;
 				}
 			}
+		}
+		
+		if(minmax)
+		{
+			lc.Reverse(arrResults);
+			lc.ReversePopulation(population);
 		}
 		
 		srtPopulation = population;
@@ -536,4 +598,3 @@ public class RankingSort
 
 	
 }
-

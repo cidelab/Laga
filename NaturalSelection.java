@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * The NaturalSelection class has all the methods to create and initialize different flavors
+ * The NaturalSelection class has all the methods to create and initialise different flavours
  * of Selections:
  */
 public class NaturalSelection 
@@ -61,7 +61,7 @@ public class NaturalSelection
 	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return Object[][] population.
 	 */
-	public Object[][] RouletteWheel(Object[][] srtPopulation, int[] results, int maxItem)
+	public Object[][] RouletteWheelNonPolinomicMin(Object[][] srtPopulation, int[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<Object> arrRwheelPop = new ArrayList <Object>();
@@ -200,7 +200,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public Object[][] Tournament(Object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public Object[][] TournamentSelection(Object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		Object[][] TourPop = new Object[numbTour][];
 		Object[][] arrTour;
@@ -241,7 +241,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public Object[][] Tournament(Object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public Object[][] TournamentSelection(Object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		Object[][] TourPop = new Object[numbTour][];
 		Object[][] arrTour;
@@ -265,7 +265,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}
-	private Object[] Tournament(Object[][] torneo, float[] results, String type)
+	Object[] Tournament(Object[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -296,7 +296,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	private Object[] Tournament(Object[][] torneo, int[] results, String type)
+	Object[] Tournament(Object[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -365,7 +365,7 @@ public class NaturalSelection
 	 * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
 	 * @return double[][] population.
 	 */
-	public double[][] RouletteWheel(double[][] srtPopulation, float[] results, int maxItem)
+	public double[][] RouletteWheelNonPolinomicMin(double[][] srtPopulation, float[] results, int maxItem)
 	{
 		//clone the array.
 		ArrayList<double[]> arrRwheelPop = new ArrayList <double[]>();
@@ -504,7 +504,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public double[][] Tournament(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public double[][] TournamentSelection(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		double[][] TourPop = new double[numbTour][];
 		double[][] arrTour;
@@ -545,7 +545,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public double[][] Tournament(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public double[][] TournamentSelection(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		double[][] TourPop = new double[numbTour][];
 		double[][] arrTour;
@@ -568,7 +568,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	private double[] Tournament(double[][] torneo, float[] results, String type)
+	double[] Tournament(double[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -597,7 +597,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	private double[] Tournament(double[][] torneo, int[] results, String type)
+	double[] Tournament(double[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -807,7 +807,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public float[][] Tournament(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public float[][] TournamentSelection(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		float[][] TourPop = new float[numbTour][];
 		float[][] arrTour;
@@ -848,7 +848,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public float[][] Tournament(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public float[][] TournamentSelection(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		float[][] TourPop = new float[numbTour][];
 		float[][] arrTour;
@@ -871,7 +871,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	private float[] Tournament(float[][] torneo, float[] results, String type)
+	float[] Tournament(float[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -900,7 +900,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	private float[] Tournament(float[][] torneo, int[] results, String type)
+	float[] Tournament(float[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -1110,7 +1110,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public int[][] Tournament(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public int[][] TournamentSelection(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		int[][] TourPop = new int[numbTour][];
 		int[][] arrTour;
@@ -1151,7 +1151,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public int[][] Tournament(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
+	public int[][] TournamentSelection(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
 	{
 		int[][] TourPop = new int[numbTour][];
 		int[][] arrTour;
@@ -1174,7 +1174,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	private int[] Tournament(int[][] torneo, float[] results, String type)
+	int[] Tournament(int[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -1203,7 +1203,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	private int[] Tournament(int[][] torneo, int[] results, String type)
+	int[] Tournament(int[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
@@ -1246,6 +1246,8 @@ public class NaturalSelection
 	 */
 	public char[][] Elitism(char[][] srtPopulation, int count)
 	{
+		count  = (count > srtPopulation.length)? srtPopulation.length : count;
+		
 		//clone the array.
 		char[][] elitismPop = new char[srtPopulation.length][];
 		for(int i = 0; i < srtPopulation.length; i++) 
@@ -1254,19 +1256,14 @@ public class NaturalSelection
 			System.arraycopy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].length);
 		}
 		
-		int start = (srtPopulation.length - count);
 		char[][] selChromosome = new char[count][];
-		int c = 0;
-
-		for(int i = start; i < elitismPop.length; ++i)
+		for(int i = 0; i < count; ++i)
 		{
-			selChromosome[c] = elitismPop[i];
-			c++;
+			selChromosome[i] = elitismPop[i];
 		}
 
 		return selChromosome;
 	}
-
 	/**
 	 * RouletteWheel method.
 	 * select a number of individuals depending of their ranking in the population.
@@ -1418,7 +1415,7 @@ public class NaturalSelection
 	 * 
 	 * 
 	 */
-	public char[][] Tournament(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
+	public char[][] TournamentSelection(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
 	{
 		char[][] TourPop = new char[numbTour][];
 		char[][] arrTour;
@@ -1482,7 +1479,7 @@ public class NaturalSelection
 		
 		return TourPop;
 	}	
-	private char[] Tournament(char[][] torneo, float[] results, String type)
+	char[] Tournament(char[][] torneo, float[] results, String type)
 	{
 		float test = results[0];
 		int c = 0;
@@ -1511,7 +1508,7 @@ public class NaturalSelection
 		winner = torneo[c];
 		return winner;
 	}
-	private char[] Tournament(char[][] torneo, int[] results, String type)
+	char[] Tournament(char[][] torneo, int[] results, String type)
 	{
 		int test = results[0];
 		int c = 0;
