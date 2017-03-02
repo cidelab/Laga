@@ -91,31 +91,34 @@ namespace Laga
             return inherencePop;
         }
 
-        /*
+       
         public double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)
         {
-            SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
+            int popLength = population.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length;
+
             double[] dad;
             double[] mom;
             double[] son1;
             double[] son2;
 
-            double[][] inherencePop = new double[arrIndex.length][];
+            double[][] inherencePop = new double[iLength][];
 
             //clone the array.
-            double[][] crossPop = new double[population.length][];
-            for (int i = 0; i < population.length; i++)
+            double[][] crossPop = new double[popLength][];
+            for (int i = 0; i < popLength; i++)
             {
-                crossPop[i] = new double[population[i].length];
-                System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
+                crossPop[i] = new double[population[i].Length];
+                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
             }
 
-            for (int i = 0; i < arrIndex.length - 1; i += 2)
+            for (int i = 0; i < arrIndex.Length - 1; i += 2)
             {
                 dad = crossPop[arrIndex[i]];
                 mom = crossPop[arrIndex[i + 1]];
-                son1 = new double[dad.length];
-                son2 = new double[mom.length];
+                son1 = new double[dad.Length];
+                son2 = new double[mom.Length];
 
                 for (int j = 0; j < pointCutter; ++j)
                 {
@@ -123,7 +126,7 @@ namespace Laga
                     son2[j] = mom[j];
                 }
 
-                for (int k = pointCutter; k < dad.length; ++k)
+                for (int k = pointCutter; k < dad.Length; ++k)
                 {
                     son1[k] = mom[k];
                     son2[k] = dad[k];
@@ -135,138 +138,138 @@ namespace Laga
             return inherencePop;
         }
 
+        /*
+       public float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
+       {
+           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
+           float[] dad;
+           float[] mom;
+           float[] son1;
+           float[] son2;
 
-        public float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
-        {
-            SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
-            float[] dad;
-            float[] mom;
-            float[] son1;
-            float[] son2;
+           float[][] inherencePop = new float[arrIndex.length][];
 
-            float[][] inherencePop = new float[arrIndex.length][];
+           //clone the array.
+           float[][] crossPop = new float[population.length][];
+           for (int i = 0; i < population.length; i++)
+           {
+               crossPop[i] = new float[population[i].length];
+               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
+           }
 
-            //clone the array.
-            float[][] crossPop = new float[population.length][];
-            for (int i = 0; i < population.length; i++)
-            {
-                crossPop[i] = new float[population[i].length];
-                System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-            }
+           for (int i = 0; i < arrIndex.length - 1; i += 2)
+           {
+               dad = crossPop[arrIndex[i]];
+               mom = crossPop[arrIndex[i + 1]];
+               son1 = new float[dad.length];
+               son2 = new float[mom.length];
 
-            for (int i = 0; i < arrIndex.length - 1; i += 2)
-            {
-                dad = crossPop[arrIndex[i]];
-                mom = crossPop[arrIndex[i + 1]];
-                son1 = new float[dad.length];
-                son2 = new float[mom.length];
+               for (int j = 0; j < pointCutter; ++j)
+               {
+                   son1[j] = dad[j];
+                   son2[j] = mom[j];
+               }
 
-                for (int j = 0; j < pointCutter; ++j)
-                {
-                    son1[j] = dad[j];
-                    son2[j] = mom[j];
-                }
+               for (int k = pointCutter; k < dad.length; ++k)
+               {
+                   son1[k] = mom[k];
+                   son2[k] = dad[k];
+               }
 
-                for (int k = pointCutter; k < dad.length; ++k)
-                {
-                    son1[k] = mom[k];
-                    son2[k] = dad[k];
-                }
-
-                inherencePop[i] = son1;
-                inherencePop[i + 1] = son2;
-            }
-            return inherencePop;
-        }
-
-
-        public int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
-        {
-            SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
-            int[] dad;
-            int[] mom;
-            int[] son1;
-            int[] son2;
-
-            int[][] inherencePop = new int[arrIndex.length][];
-
-            //clone the array.
-            int[][] crossPop = new int[population.length][];
-            for (int i = 0; i < population.length; i++)
-            {
-                crossPop[i] = new int[population[i].length];
-                System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-            }
-
-            for (int i = 0; i < arrIndex.length - 1; i += 2)
-            {
-                dad = crossPop[arrIndex[i]];
-                mom = crossPop[arrIndex[i + 1]];
-                son1 = new int[dad.length];
-                son2 = new int[mom.length];
-
-                for (int j = 0; j < pointCutter; ++j)
-                {
-                    son1[j] = dad[j];
-                    son2[j] = mom[j];
-                }
-
-                for (int k = pointCutter; k < dad.length; ++k)
-                {
-                    son1[k] = mom[k];
-                    son2[k] = dad[k];
-                }
-
-                inherencePop[i] = son1;
-                inherencePop[i + 1] = son2;
-            }
-            return inherencePop;
-        }
+               inherencePop[i] = son1;
+               inherencePop[i + 1] = son2;
+           }
+           return inherencePop;
+       }
 
 
-        public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
-        {
-            SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
+       public int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
+       {
+           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
+           int[] dad;
+           int[] mom;
+           int[] son1;
+           int[] son2;
 
-            char[][] inherencePop = new char[arrIndex.length][];
-            int count = 0;
+           int[][] inherencePop = new int[arrIndex.length][];
 
-            //clone the array.
-            char[][] crossPop = new char[population.length][];
-            for (int i = 0; i < population.length; i++)
-            {
-                crossPop[i] = new char[population[i].length];
-                System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-            }
+           //clone the array.
+           int[][] crossPop = new int[population.length][];
+           for (int i = 0; i < population.length; i++)
+           {
+               crossPop[i] = new int[population[i].length];
+               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
+           }
 
-            for (int i = 0; i < arrIndex.length - 1; i += 2)
-            {
+           for (int i = 0; i < arrIndex.length - 1; i += 2)
+           {
+               dad = crossPop[arrIndex[i]];
+               mom = crossPop[arrIndex[i + 1]];
+               son1 = new int[dad.length];
+               son2 = new int[mom.length];
 
-                char[] dad = crossPop[arrIndex[i]];
-                char[] mom = crossPop[arrIndex[i + 1]];
+               for (int j = 0; j < pointCutter; ++j)
+               {
+                   son1[j] = dad[j];
+                   son2[j] = mom[j];
+               }
 
-                char[] son1 = new char[dad.length];
-                char[] son2 = new char[mom.length];
+               for (int k = pointCutter; k < dad.length; ++k)
+               {
+                   son1[k] = mom[k];
+                   son2[k] = dad[k];
+               }
 
-                for (int j = 0; j < pointCutter; ++j)
-                {
-                    son1[j] = dad[j];
-                    son2[j] = mom[j];
-                }
+               inherencePop[i] = son1;
+               inherencePop[i + 1] = son2;
+           }
+           return inherencePop;
+       }
 
-                for (int k = pointCutter; k < dad.length; ++k)
-                {
-                    son1[k] = mom[k];
-                    son2[k] = dad[k];
-                }
 
-                inherencePop[count] = son1;
-                inherencePop[count + 1] = son2;
+       public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
+       {
+           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
 
-                count += 2;
-            }
-            return inherencePop;
-        }
+           char[][] inherencePop = new char[arrIndex.length][];
+           int count = 0;
+
+           //clone the array.
+           char[][] crossPop = new char[population.length][];
+           for (int i = 0; i < population.length; i++)
+           {
+               crossPop[i] = new char[population[i].length];
+               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
+           }
+
+           for (int i = 0; i < arrIndex.length - 1; i += 2)
+           {
+
+               char[] dad = crossPop[arrIndex[i]];
+               char[] mom = crossPop[arrIndex[i + 1]];
+
+               char[] son1 = new char[dad.length];
+               char[] son2 = new char[mom.length];
+
+               for (int j = 0; j < pointCutter; ++j)
+               {
+                   son1[j] = dad[j];
+                   son2[j] = mom[j];
+               }
+
+               for (int k = pointCutter; k < dad.length; ++k)
+               {
+                   son1[k] = mom[k];
+                   son2[k] = dad[k];
+               }
+
+               inherencePop[count] = son1;
+               inherencePop[count + 1] = son2;
+
+               count += 2;
+           }
+           return inherencePop;
+       }
 */
     }
 
