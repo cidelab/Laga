@@ -23,22 +23,24 @@ namespace Laga
         /// <param name="percent">the mutation percent in the population</param>
         /// <param name="InOut">true to include the seed chromosome in the population</param>
         /// <returns>Population object [][]</returns>
-        public Object[][] ObjectPopulationSwap(int sizePopulation, Object[] SeedChromosome, float percent, bool InOut)
+        public object[][] ObjectPopulationSwap(int sizePopulation, object[] SeedChromosome, float percent, bool InOut)
         {
-
-            Object[][] pop = new Object[sizePopulation][];
+            object[][] pop = new object[sizePopulation][];
 
             int s = 0;
             if (InOut)
             {
                 pop[s] = SeedChromosome;
                 s++;
+                          
+                for (int i = s; i < sizePopulation; ++i)
+                {
+                    SeedChromosome = pop[i - 1];
+                    pop[i] = lgTools.Fisher_YatesPercent(SeedChromosome, percent);
+                }
             }
              
-            for (int i = s; i < sizePopulation; ++i)
-            {
-              pop[i] = lgTools.Fisher_YatesPercent(SeedChromosome, percent);
-            }
+
             return pop;
         }
 

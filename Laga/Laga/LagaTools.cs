@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Laga
 {
-    class LagaTools
+    public class LagaTools
     {
         Random rnd;
         public LagaTools()
@@ -21,15 +21,18 @@ namespace Laga
         public int[] Fisher_Yates(int[] arrInt)
         {
             int cant = arrInt.Length;
+
+            int[] arrMut = new int[cant];
+            Array.Copy(arrInt, arrMut, cant);
             
             for(int i = 0; i < cant; i++)
             {
                 int index = i + (int)(rnd.NextDouble() * (cant - i));
-                int temp = arrInt[index];
-                arrInt[index] = arrInt[i];
-                arrInt[i] = temp;
+                int temp = arrMut[index];
+                arrMut[index] = arrMut[i];
+                arrMut[i] = temp;
             }
-            return arrInt;
+            return arrMut;
         }
 
         /// <summary>
@@ -37,21 +40,23 @@ namespace Laga
         /// </summary>
         /// <param name="arrObj">the array of objects to shuffle</param>
         /// <returns></returns>
-        public Object[] Fisher_Yates(Object[] arrObj)
+        public object[] Fisher_Yates(object[] arrObj)
         {
-            int n = arrObj.Length;
+            int cant = arrObj.Length;
+            object[] arrObjMuts = new object[cant];
+            Array.Copy(arrObj, arrObjMuts, cant);
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(rnd.NextDouble() * (n - i));
+                int index = i + (int)(rnd.NextDouble() * (cant - i));
                 
                 //swap
-                Object temp = arrObj[index];
-                arrObj[index] = arrObj[i];
-                arrObj[i] = temp;
+                object temp = arrObjMuts[index];
+                arrObjMuts[index] = arrObjMuts[i];
+                arrObjMuts[i] = temp;
             }
 
-            return arrObj;
+            return arrObjMuts;
         }
 
         /// <summary>
@@ -60,21 +65,25 @@ namespace Laga
         /// <param name="arrObj">the array of objects to shuffle</param>
         /// <param name="percent">the percent to shuffle</param>
         /// <returns></returns>
-        public Object[] Fisher_YatesPercent(Object[] arrObj, float percent)
+        public object[] Fisher_YatesPercent(object[] arrObj, float percent)
         {
-            int cant = (int)(arrObj.Length * percent);
-            if (cant == 0) { cant = 1; }
+            int l = arrObj.Length;
+            object[] arrObjMuts = new object[l];
+            Array.Copy(arrObj, arrObjMuts, l);
+
+            int cant = (int)(l * percent);
+            cant = (cant <= 0) ? cant = 2 : cant;
 
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(rnd.NextDouble() * (cant - i)); //rnd.Next(i);// 0 <= j <= i-1
+                int index = i + (int)(rnd.NextDouble() * (cant - i));
 
                 //swap
-                Object temp = arrObj[index];
-                arrObj[index] = arrObj[i];
-                arrObj[i] = temp;
+                object temp = arrObjMuts[index];
+                arrObjMuts[index] = arrObjMuts[i];
+                arrObjMuts[i] = temp;
             }
-            return arrObj;
+            return arrObjMuts;
         }
 
         /// <summary>
@@ -124,6 +133,52 @@ namespace Laga
                 arrData[r] = arrData[i];
                 arrData[i] = t;
             }
+        }
+
+        public int[] Mom_Dad(int lengthPop, float percent)
+        {
+            //numbers and utilities..
+            int size = (int)(percent * lengthPop);
+            size = (size <= 0) ? 2 : size; //check if is too small...
+            size = (size % 2 == 1) ? size-- : size; //check if is even...
+
+            int[] arrIndex = new int[size];
+
+            int c;
+
+            //random zone.
+            int index;
+
+            //loop to find random and not repeated indexes.
+            for (int i = 0; i < size; ++i)
+            {
+                do
+                {
+                    c = 0;
+                    index = rnd.Next(lengthPop);
+                    if (i > 0)
+                    {
+                        for (int j = 0; j < i; ++j)
+                        {
+                            if (arrIndex[j] == index)
+                            {
+                                c++;
+                            }
+                        }
+                        if (c == 0)
+                        {
+                            arrIndex[i] = index;
+                        }
+
+                    }
+                    else
+                    {
+                        arrIndex[i] = index;
+                    }
+                } while (c != 0);
+            }
+
+            return arrIndex;
         }
 
     }
