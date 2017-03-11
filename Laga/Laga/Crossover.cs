@@ -22,36 +22,36 @@ namespace Laga
         /// <param name="percent">The percent to crossover between 0.00 and 1.00</param>
         /// <param name="pointCutter">The integer to split the chromosome</param>
         /// <returns>Crossover Object[][]</returns>
-        public object[][] SinglePointCrossover(object[][] population, float percent, int pointCutter)
+        ///            int popLength = population.Length;
+        ///int[] arrIndex = lt.Mom_Dad(popLength, percent);
+        ///int iLength = arrIndex.Length;
+
+        public Object[][] SinglePointCrossover(Object[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            int[] arrIndex = lt.Mom_Dad(popLength, percent); 
-            int iLength = arrIndex.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length; 
+            Object[] dad;
+            Object[] mom;
+            Object[] son1;
+            Object[] son2;
 
-            object[] dad;
-            object[] mom;
-            object[] son1;
-            object[] son2;
-
-            object[][] inherencePop = new object[iLength][];
+            Object[][] inherencePop = new Object[iLength][];
 
             //clone the array.
-            object[][] crossPop = new object[popLength][];
-            int dadLength;
-
+            Object[][] crossPop = new Object[popLength][];
             for (int i = 0; i < popLength; i++)
             {
-                dadLength = population[i].Length;
-                crossPop[i] = new object[dadLength];
-                Array.Copy(population[i], crossPop[i], dadLength);
+                crossPop[i] = new Object[population[i].Length];
+                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
             }
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
                 dad = crossPop[arrIndex[i]];
                 mom = crossPop[arrIndex[i + 1]];
-                son1 = new object[dad.Length];
-                son2 = new object[mom.Length];
+                son1 = new Object[dad.Length];
+                son2 = new Object[mom.Length];
 
                 int t = pointCutter;
                 int t2 = pointCutter;
@@ -66,7 +66,7 @@ namespace Laga
                 {
                     for (int k = pointCutter; k < dad.Length; ++k)
                     {
-                        if (mom[j] == dad[k])
+                        if (mom[j].Equals(dad[k]))
                         {
                             son1[t] = mom[j];
                             t++;
@@ -78,7 +78,7 @@ namespace Laga
                 {
                     for (int k = pointCutter; k < mom.Length; ++k)
                     {
-                        if (dad[j] == mom[k])
+                        if (dad[j].Equals(mom[k]))
                         {
                             son2[t2] = dad[j];
                             t2++;
@@ -90,8 +90,17 @@ namespace Laga
             }
             return inherencePop;
         }
-
-       
+ 
+        /**
+        * SinglePointCrossover method.
+         * Single Method prepared to received any type of class, ideal for combinatorial problems.
+         * 
+         * @param population  -> An object type population.
+         * @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+         * @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+         * 
+         * 
+         */
         public double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
@@ -113,7 +122,7 @@ namespace Laga
                 Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
             }
 
-            for (int i = 0; i < arrIndex.Length - 1; i += 2)
+            for (int i = 0; i < iLength - 1; i += 2)
             {
                 dad = crossPop[arrIndex[i]];
                 mom = crossPop[arrIndex[i + 1]];
@@ -137,140 +146,130 @@ namespace Laga
             }
             return inherencePop;
         }
+ 
+        /**
+         * SinglePointCrossover method.
+         * Single Method prepared to recieve any type of class, ideal for combintorial problems.
+         * 
+         * @param population  -> An object type population.
+         * @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+         * @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+         * 
+         * 
+         */
+        public float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
+        {
+            int popLength = population.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length;
+            float[] dad;
+            float[] mom;
+            float[] son1;
+            float[] son2;
 
-        /*
-       public float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
-       {
-           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
-           float[] dad;
-           float[] mom;
-           float[] son1;
-           float[] son2;
+            float[][] inherencePop = new float[iLength][];
 
-           float[][] inherencePop = new float[arrIndex.length][];
+            //clone the array.
+            float[][] crossPop = new float[popLength][];
+            for (int i = 0; i < popLength; i++)
+            {
+                crossPop[i] = new float[population[i].Length];
+                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
+            }
 
-           //clone the array.
-           float[][] crossPop = new float[population.length][];
-           for (int i = 0; i < population.length; i++)
-           {
-               crossPop[i] = new float[population[i].length];
-               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-           }
+            for (int i = 0; i < iLength - 1; i += 2)
+            {
+                dad = crossPop[arrIndex[i]];
+                mom = crossPop[arrIndex[i + 1]];
+                son1 = new float[dad.Length];
+                son2 = new float[mom.Length];
 
-           for (int i = 0; i < arrIndex.length - 1; i += 2)
-           {
-               dad = crossPop[arrIndex[i]];
-               mom = crossPop[arrIndex[i + 1]];
-               son1 = new float[dad.length];
-               son2 = new float[mom.length];
+                for (int j = 0; j < pointCutter; ++j)
+                {
+                    son1[j] = dad[j];
+                    son2[j] = mom[j];
+                }
 
-               for (int j = 0; j < pointCutter; ++j)
-               {
-                   son1[j] = dad[j];
-                   son2[j] = mom[j];
-               }
+                for (int k = pointCutter; k < dad.Length; ++k)
+                {
+                    son1[k] = mom[k];
+                    son2[k] = dad[k];
+                }
 
-               for (int k = pointCutter; k < dad.length; ++k)
-               {
-                   son1[k] = mom[k];
-                   son2[k] = dad[k];
-               }
-
-               inherencePop[i] = son1;
-               inherencePop[i + 1] = son2;
-           }
-           return inherencePop;
-       }
-
-
-       public int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
-       {
-           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
-           int[] dad;
-           int[] mom;
-           int[] son1;
-           int[] son2;
-
-           int[][] inherencePop = new int[arrIndex.length][];
-
-           //clone the array.
-           int[][] crossPop = new int[population.length][];
-           for (int i = 0; i < population.length; i++)
-           {
-               crossPop[i] = new int[population[i].length];
-               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-           }
-
-           for (int i = 0; i < arrIndex.length - 1; i += 2)
-           {
-               dad = crossPop[arrIndex[i]];
-               mom = crossPop[arrIndex[i + 1]];
-               son1 = new int[dad.length];
-               son2 = new int[mom.length];
-
-               for (int j = 0; j < pointCutter; ++j)
-               {
-                   son1[j] = dad[j];
-                   son2[j] = mom[j];
-               }
-
-               for (int k = pointCutter; k < dad.length; ++k)
-               {
-                   son1[k] = mom[k];
-                   son2[k] = dad[k];
-               }
-
-               inherencePop[i] = son1;
-               inherencePop[i + 1] = son2;
-           }
-           return inherencePop;
-       }
+                inherencePop[i] = son1;
+                inherencePop[i + 1] = son2;
+            }
+            return inherencePop;
+        }
+  
+        /**
+         * SinglePointCrossover method.
+         * Single Method prepared to recieve any type of class, ideal for combintorial problems.
+         * 
+         * @param population  -> An object type population.
+         * @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+         * @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+         * 
+         * 
+         */
 
 
-       public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
-       {
-           SelectDadMom(population, percent); //call the method to determine who with who is going to have sex. 
+        /**
+         * SinglePointCrossover method.
+         * Single Method prepared to receive a char type population.
+         * 
+         * @param population  -> An object type population.
+         * @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+         * @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+         * 
+         * 
+         */
+        public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
+        {
+            int popLength = population.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length;
 
-           char[][] inherencePop = new char[arrIndex.length][];
-           int count = 0;
+            char[][] inherencePop = new char[iLength][];
+            int count = 0;
 
-           //clone the array.
-           char[][] crossPop = new char[population.length][];
-           for (int i = 0; i < population.length; i++)
-           {
-               crossPop[i] = new char[population[i].length];
-               System.arraycopy(population[i], 0, crossPop[i], 0, population[i].length);
-           }
+            //clone the array.
+            char[][] crossPop = new char[popLength][];
+            for (int i = 0; i < popLength; i++)
+            {
+                crossPop[i] = new char[population[i].Length];
+                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
+            }
 
-           for (int i = 0; i < arrIndex.length - 1; i += 2)
-           {
+            for (int i = 0; i < iLength - 1; i += 2)
+            {
 
-               char[] dad = crossPop[arrIndex[i]];
-               char[] mom = crossPop[arrIndex[i + 1]];
+                char[] dad = crossPop[arrIndex[i]];
+                char[] mom = crossPop[arrIndex[i + 1]];
 
-               char[] son1 = new char[dad.length];
-               char[] son2 = new char[mom.length];
+                char[] son1 = new char[dad.Length];
+                char[] son2 = new char[mom.Length];
 
-               for (int j = 0; j < pointCutter; ++j)
-               {
-                   son1[j] = dad[j];
-                   son2[j] = mom[j];
-               }
+                for (int j = 0; j < pointCutter; ++j)
+                {
+                    son1[j] = dad[j];
+                    son2[j] = mom[j];
+                }
 
-               for (int k = pointCutter; k < dad.length; ++k)
-               {
-                   son1[k] = mom[k];
-                   son2[k] = dad[k];
-               }
+                for (int k = pointCutter; k < dad.Length; ++k)
+                {
+                    son1[k] = mom[k];
+                    son2[k] = dad[k];
+                }
 
-               inherencePop[count] = son1;
-               inherencePop[count + 1] = son2;
+                inherencePop[count] = son1;
+                inherencePop[count + 1] = son2;
 
-               count += 2;
-           }
-           return inherencePop;
-       }
-*/
+                count += 2;
+            }
+            return inherencePop;
+        }
+
     }
 
 }

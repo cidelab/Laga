@@ -13,6 +13,56 @@ namespace Laga
         {
             rnd = new Random((int)DateTime.Now.Millisecond);
         }
+
+        public static void ReversePopulation(char[][] charPop)
+        {
+            char[] arrTempInd;
+            for (int i = 0; i < charPop.Length / 2; i++)
+            {
+                arrTempInd = new char[charPop[i].Length];
+                arrTempInd = charPop[i];
+                charPop[i] = charPop[charPop.Length - i - 1];
+                charPop[charPop.Length - i - 1] = arrTempInd;
+            }
+        }
+
+        public static void Reverse(float[] arrFloat)
+        {
+            float temp;
+            for (int i = 0; i < arrFloat.Length / 2; i++)
+            {
+                temp = arrFloat[i];
+                arrFloat[i] = arrFloat[arrFloat.Length - i - 1];
+                arrFloat[arrFloat.Length - i - 1] = temp;
+            }
+        }
+
+        public static void Reverse(int[] arrInt)
+        {
+            int temp;
+            for (int i = 0; i < arrInt.Length / 2; i++)
+            {
+                temp = arrInt[i];
+                arrInt[i] = arrInt[arrInt.Length - i - 1];
+                arrInt[arrInt.Length - i - 1] = temp;
+            }
+        }
+        public static void Reverse(double[] arrDbl)
+        {
+            double temp;
+            for (int i = 0; i < arrDbl.Length / 2; i++)
+            {
+                temp = arrDbl[i];
+                arrDbl[i] = arrDbl[arrDbl.Length - i - 1];
+                arrDbl[arrDbl.Length - i - 1] = temp;
+            }
+        }
+
+        public static void ReversePopulation(int[][] intPop) { }
+        public static void ReversePopulation(double[][] dblPop) { }
+        public static void ReversePopulation(float[][] flPop) { }
+        public static void ReversePopulation(object[][] objPop) { }
+
         /// <summary>
         /// Fisher-Yates Shuffle Algorithm for an array of integers.
         /// </summary>
