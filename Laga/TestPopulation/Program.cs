@@ -31,8 +31,11 @@ namespace TestPopulation
                 ChromosomeCat[i] = myCat;
             }
 
-            GenrPopulation pop = new GenrPopulation();
-            object[][] CatPopulation = pop.ObjectPopulationSwap(10, ChromosomeCat, 0.5f, true);
+            GenrPopulation pop = new GenrPopulation(10);
+            object[][] CatPopulation = pop.ObjectPopulationSwap(ChromosomeCat, 0.5f, true);
+
+            pop.SizePop = 7;
+            int[][] IntPopulation = pop.NumPopulationSwap(12, 17);
 
             int increment = 0;
             int count;

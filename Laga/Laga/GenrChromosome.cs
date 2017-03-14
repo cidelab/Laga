@@ -8,9 +8,29 @@ namespace Laga
     public class GenrChromosome
     {
         private int size;
-        LagaTools lg;
-        Random rnd;
 
+        /// <summary>
+        /// size of the chromosome
+        /// </summary>
+        public int SizeChrom
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+            }
+        }
+
+        private LagaTools lg;
+        private Random rnd;
+
+        /// <summary>
+        /// Constructor:
+        /// </summary>
+        /// <param name="Size">The Size of the Chromosome</param>
         public GenrChromosome(int Size)
         {
             rnd = new Random((int)DateTime.Now.Millisecond);

@@ -6,11 +6,32 @@ namespace Laga
 {
     public class GenrPopulation
     {
-        LagaTools lgTools;
-        Random rnd;
+        private LagaTools lgTools;
+        private Random rnd;
+        private int sizePopulation;
 
-        public GenrPopulation()
+        /// <summary>
+        /// SizePopulation
+        /// </summary>
+        public int SizePop
         {
+            get
+            {
+                return sizePopulation;
+            }
+            set
+            {
+                sizePopulation = value;
+            }
+        }
+        
+        /// <summary>
+        /// Constructor:
+        /// </summary>
+        /// <param name="SizePopulation">The size of the Population</param>
+        public GenrPopulation(int SizePopulation)
+        {
+            sizePopulation = SizePopulation;
             lgTools = new LagaTools();
             rnd = new Random((int)DateTime.Now.Millisecond);
         }
@@ -23,7 +44,7 @@ namespace Laga
         /// <param name="percent">the mutation percent in the population</param>
         /// <param name="InOut">true to include the seed chromosome in the population</param>
         /// <returns>Population object [][]</returns>
-        public object[][] ObjectPopulationSwap(int sizePopulation, object[] SeedChromosome, float percent, bool InOut)
+        public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)
         {
             object[][] pop = new object[sizePopulation][];
 
@@ -52,7 +73,7 @@ namespace Laga
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population double[][]</returns>
-        public double[][] NumPopulation(int sizePopulation, int sizeChromosome, double min, double max)
+        public double[][] NumPopulation(int sizeChromosome, double min, double max)
         {
             double[][] pop = new double[sizePopulation][];
             double[] chromosome;
@@ -77,7 +98,7 @@ namespace Laga
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population float[][]</returns>
-        public float[][] NumPopulation(int sizePopulation, int sizeChromosome, float min, float max)
+        public float[][] NumPopulation(int sizeChromosome, float min, float max)
         {
             float[][] pop = new float[sizePopulation][];
             float[] chromosome;
@@ -102,7 +123,7 @@ namespace Laga
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population int[][]</returns>
-        public int[][] NumPopulation(int sizePopulation, int sizeChromosome, int min, int max)
+        public int[][] NumPopulation(int sizeChromosome, int min, int max)
         {
             int[][] pop = new int[sizePopulation][];
             int[] chromosome;
@@ -126,23 +147,31 @@ namespace Laga
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population int[][]</returns>
-        public int[][] NumPopulationSwap(int sizePopulation, int min, int max)
+        public int[][] NumPopulationSwap(int min, int max)
         {
             int[][] pop = new int[sizePopulation][];
-            int[] chromosome = new int[max];
-
-            int count = 0;
-            for (int i = min; i < max + 1; ++i)
+            if (min >= max)
             {
-                chromosome[count] = i;
-                count++;
+                return pop;
             }
-
-            for (int i = 0; i < sizePopulation; ++i)
+            else
             {
-                pop[i] = lgTools.Fisher_Yates(chromosome);
+                int capacity = (max - min) + 1;
+                int[] chromosome = new int[capacity];
+
+                int count = 0;
+                for (int i = min; i < (min + capacity); ++i)
+                {
+                    chromosome[count] = i;
+                    count++;
+                }
+
+                for (int i = 0; i < sizePopulation; ++i)
+                {
+                    pop[i] = lgTools.Fisher_Yates(chromosome);
+                }
+                return pop;
             }
-            return pop;
         }
 
         /// <summary>
@@ -151,7 +180,7 @@ namespace Laga
         /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <returns>Population int[][]</returns>
-        public int[][] BinaryPopulationInt(int sizePopulation, int sizeChromosome)
+        public int[][] BinaryPopulationInt(int sizeChromosome)
         {
             int[][] pop = new int[sizePopulation][];
             int[] chromosome;
@@ -182,7 +211,7 @@ namespace Laga
         /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <returns>Population char[][]</returns>
-        public char[][] BinaryPopulationChr(int sizePopulation, int sizeChromosome)
+        public char[][] BinaryPopulationChr(int sizeChromosome)
         {
             char[][] pop = new char[sizePopulation][];
             char[] arrChr;
@@ -200,7 +229,15 @@ namespace Laga
             return pop;
         }
 
-        public char[][] CharPopulation(int sizePopulation, int sizeChromosome, int start, int end)
+        /// <summary>
+        /// Genr8 a Population composed by random chars.
+        /// based on this link: http://www.asciitable.com/
+        /// </summary>
+        /// <param name="sizeChromosome"></param>
+        /// <param name="start">the start number for the table, inclusive</param>
+        /// <param name="end">the end number for the table, inclusive</param>
+        /// <returns></returns>
+        public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {
             char[] chromosome;
             char[][] charPopulation = new char[sizePopulation][];
