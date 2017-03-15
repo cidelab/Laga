@@ -191,7 +191,7 @@ namespace Laga
                 chromosome = new int[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    if (rnd.NextDouble() < 0.5)
+                    if (rnd.NextDouble() >= 0.5)
                     {
                         chromosome[j] = 1;
                     }
@@ -221,7 +221,7 @@ namespace Laga
                 arrChr = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    arrChr[j] = rnd.NextDouble() < 0.5 ? '1' : '0';
+                    arrChr[j] = rnd.NextDouble() >= 0.5 ? '1' : '0';
                 }
 
                 pop[i] = arrChr;
@@ -234,8 +234,8 @@ namespace Laga
         /// based on this link: http://www.asciitable.com/
         /// </summary>
         /// <param name="sizeChromosome"></param>
-        /// <param name="start">the start number for the table, inclusive</param>
-        /// <param name="end">the end number for the table, inclusive</param>
+        /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
+        /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns></returns>
         public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {

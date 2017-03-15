@@ -31,11 +31,23 @@ namespace TestPopulation
                 ChromosomeCat[i] = myCat;
             }
 
+            //object population...
             GenrPopulation pop = new GenrPopulation(10);
             object[][] CatPopulation = pop.ObjectPopulationSwap(ChromosomeCat, 0.5f, true);
 
+            //test Population numbers...
             pop.SizePop = 7;
             int[][] IntPopulation = pop.NumPopulationSwap(12, 17);
+
+            //number poulations
+            int[][] intPop = pop.BinaryPopulationInt(10);
+            double[][] dblPop = pop.NumPopulation(10, 1d, 10d);
+            float[][] fltPop = pop.NumPopulation(10, 1f, 10f);
+            int[][] mmPop = pop.NumPopulation(10, 2, 9);
+
+            //strings.
+            char[][] charPop = pop.CharPopulation(10, 97, 122);
+            char[][] charBin = pop.BinaryPopulationChr(10);
 
             int increment = 0;
             int count;
