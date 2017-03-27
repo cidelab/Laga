@@ -26,17 +26,17 @@ namespace Laga
         ///int[] arrIndex = lt.Mom_Dad(popLength, percent);
         ///int iLength = arrIndex.Length;
 
-        public Object[][] SinglePointCrossover(Object[][] population, float percent, int pointCutter)
+        public object[][] SinglePointCrossover(object[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
             int[] arrIndex = lt.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length; 
-            Object[] dad;
-            Object[] mom;
-            Object[] son1;
-            Object[] son2;
+            object[] dad;
+            object[] mom;
+            object[] son1;
+            object[] son2;
 
-            Object[][] inherencePop = new Object[iLength][];
+            object[][] inherencePop = new object[iLength][];
 
             //clone the array.
             Object[][] crossPop = new Object[popLength][];
