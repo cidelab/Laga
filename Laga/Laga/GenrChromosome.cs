@@ -139,15 +139,17 @@ namespace Laga
         /// the method generate a number chromosome composed by non repeated numbers between start and start + size(not inclusive).
 	    /// the method is based on integer numbers. this method is designed by combinatorial problems.
         /// </summary>
-        /// <param name="start">the value to start the sequence</param>
-        /// <returns>a random integer list</returns>
-        public int[] NumberChromosomeSwap(int start)
+        /// <param name="min">the minimum value in the sequence</param>
+        /// /// <param name="max">the maximum value in the sequence</param>
+        /// <returns>a non repeat random integer list</returns>
+        public int[] NumberChromosomeSwap(int min, int max)
         {
             int[] chr = new int[size];
-            for (int i = 0; i < size; i++)
+            int count = 0;
+            for (int i = min; i < max + 1; i++)
             {
-                chr[i] = start;
-                start++;
+                chr[i] = i;
+                count++;
             }
             return lg.Fisher_Yates(chr);
         }

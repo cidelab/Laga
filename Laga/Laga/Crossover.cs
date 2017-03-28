@@ -25,7 +25,6 @@ namespace Laga
         ///            int popLength = population.Length;
         ///int[] arrIndex = lt.Mom_Dad(popLength, percent);
         ///int iLength = arrIndex.Length;
-
         public object[][] SinglePointCrossover(object[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
@@ -90,7 +89,7 @@ namespace Laga
             }
             return inherencePop;
         }
- 
+
         /**
         * SinglePointCrossover method.
          * Single Method prepared to received any type of class, ideal for combinatorial problems.
@@ -201,7 +200,53 @@ namespace Laga
             }
             return inherencePop;
         }
-  
+
+        public int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
+        {
+            int popLength = population.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length;
+
+            int[] dad;
+            int[] mom;
+            int[] son1;
+            int[] son2;
+
+            int[][] inherencePop = new int[iLength][];
+
+            //clone the array.
+            int[][] crossPop = new int[popLength][];
+            for (int i = 0; i < popLength; i++)
+            {
+                crossPop[i] = new int[population[i].Length];
+               Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
+            }
+
+            for (int i = 0; i < iLength - 1; i += 2)
+            {
+                dad = crossPop[arrIndex[i]];
+                mom = crossPop[arrIndex[i + 1]];
+                son1 = new int[dad.Length];
+                son2 = new int[mom.Length];
+
+                for (int j = 0; j < pointCutter; ++j)
+                {
+                    son1[j] = dad[j];
+                    son2[j] = mom[j];
+                }
+
+                for (int k = pointCutter; k < dad.Length; ++k)
+                {
+                    son1[k] = mom[k];
+                    son2[k] = dad[k];
+                }
+
+                inherencePop[i] = son1;
+                inherencePop[i + 1] = son2;
+            }
+            return inherencePop;
+        }
+
         /**
          * SinglePointCrossover method.
          * Single Method prepared to recieve any type of class, ideal for combintorial problems.
@@ -212,7 +257,6 @@ namespace Laga
          * 
          * 
          */
-
 
         /**
          * SinglePointCrossover method.
