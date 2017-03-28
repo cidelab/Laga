@@ -144,11 +144,11 @@ namespace Laga
         /// <returns>a non repeat random integer list</returns>
         public int[] NumberChromosomeSwap(int min, int max)
         {
-            int[] chr = new int[size];
+            int[] chr = new int[(max - min) + 1];
             int count = 0;
             for (int i = min; i < max + 1; i++)
             {
-                chr[i] = i;
+                chr[count] = i;
                 count++;
             }
             return lg.Fisher_Yates(chr);
