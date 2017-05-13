@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Laga
 {
-    class NaturalSelection
+    public class NaturalSelection
     {
         public NaturalSelection()
         {
@@ -25,13 +25,8 @@ namespace Laga
         public object[][] Elitism(object[][] srtPopulation, int count)
         {
             //clone the array.
-            object[][] elitismPop = new object[srtPopulation.Length][];
-            for (int i = 0; i < srtPopulation.Length; i++)
-            {
-                elitismPop[i] = new object[srtPopulation[i].Length];
-                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
-            }
-
+            object[][] elitismPop = srtPopulation.Clone() as object[][];  
+           
             int start = (srtPopulation.Length - count);
             object[][] selChromosome = new object[count][];
             int c = 0;
@@ -337,12 +332,7 @@ namespace Laga
         public double[][] Elitism(double[][] srtPopulation, int count)
         {
             //clone the array.
-            double[][] elitismPop = new double[srtPopulation.Length][];
-            for (int i = 0; i < srtPopulation.Length; i++)
-            {
-                elitismPop[i] = new double[srtPopulation[i].Length];
-                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
-            }
+            double[][] elitismPop = srtPopulation.Clone() as double[][];
 
             double[][] RwheelPop = new double[count][];
             for (int i = 0; i < count; ++i)
@@ -641,12 +631,7 @@ namespace Laga
         public float[][] Elitism(float[][] srtPopulation, int count)
         {
             //clone the array.
-            float[][] elitismPop = new float[srtPopulation.Length][];
-            for (int i = 0; i < srtPopulation.Length; i++)
-            {
-                elitismPop[i] = new float[srtPopulation[i].Length];
-                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
-            }
+            float[][] elitismPop = srtPopulation.Clone() as float[][];
 
             float[][] RwheelPop = new float[count][];
 
@@ -947,7 +932,8 @@ namespace Laga
         public int[][] Elitism(int[][] srtPopulation, int count)
         {
             //clone the array.
-            int[][] elitismPop = new int[srtPopulation.Length][];
+            int[][] elitismPop = srtPopulation.Clone() as int[][];
+
             for (int i = 0; i < srtPopulation.Length; i++)
             {
                 elitismPop[i] = new int[srtPopulation[i].Length];
@@ -1255,12 +1241,7 @@ namespace Laga
             count = (count > srtPopulation.Length) ? srtPopulation.Length : count;
 
             //clone the array.
-            char[][] elitismPop = new char[srtPopulation.Length][];
-            for (int i = 0; i < srtPopulation.Length; i++)
-            {
-                elitismPop[i] = new char[srtPopulation[i].Length];
-                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
-            }
+            char[][] elitismPop = srtPopulation.Clone() as char[][];
 
             char[][] selChromosome = new char[count][];
             for (int i = 0; i < count; ++i)

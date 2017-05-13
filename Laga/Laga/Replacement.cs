@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Laga
 {
-    class Replacement
+    public class Replacement
     {
         LagaTools lTools = new LagaTools();
         public Replacement()

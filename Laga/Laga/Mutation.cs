@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Laga
 {
-    class Mutation
+    public class Mutation
     {
-        float popPercent;
+        private float popPercent;
         private int cant;
         private int[] arrIndex;
         LagaTools lagaT;
@@ -16,29 +14,14 @@ namespace Laga
             popPercent = MutationRate;
             lagaT = new LagaTools();
         }
-        /**
- * MutationSwap method.
- * this method swap two or more alleles in the chromosome, same as RNA does in the DNA
- * Don't forget implement a float parameter in the constructor.
- *
- * @param population 	-> population to be mutated.
- * @param percentChrom  -> percent mutation in the chromsome 0 <= percentChrom <= 1.
- * @return object[][] population.
- * 
- * 
- */
+
         public object[][] MutationSwap(object[][] population, float percentChrom)
         {
             cant = (int)(popPercent * population.Length);
             if (cant == 0) { cant = 1; }
 
             //clone the array.
-            object[][] mutatedPop = new object[population.Length][];
-            for (int i = 0; i < population.Length; i++)
-            {
-                mutatedPop[i] = new object[population[i].Length];
-                Array.Copy(population[i], 0, mutatedPop[i], 0, population[i].Length);
-            }
+            object[][] mutatedPop = population.Clone() as object[][];
 
             //random list...
             int[] arrindex = new int[population.Length];
@@ -76,29 +59,13 @@ namespace Laga
             }
         }
 
-        /**
-         * MutationSwap method.
-         * this method swap two or more alleles in the chromosome, same as RNA does in the DNA
-         * Don't forget implement a float parameter in the constructor.
-         *
-         * @param population 	-> population to be mutated.
-         * @param percentChrom  -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-         * @return double[][] population.
-         * 
-         * 
-         */
         public double[][] NumbMutation(double[][] pop, double min, double max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
             //clone the array.
-            double[][] mutatedPop = new double[pop.Length][];
-            for (int i = 0; i < pop.Length; i++)
-            {
-                mutatedPop[i] = new double[pop[i].Length];
-                Array.Copy(pop[i], 0, mutatedPop[i], 0, pop[i].Length);
-            }
+            double[][] mutatedPop = pop.Clone() as double[][];
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
@@ -125,29 +92,13 @@ namespace Laga
             }
         }
 
-        /**
-         * MutationSwap method.
-         * this method swap two or more alleles in the chromosome, same as RNA does in the DNA
-         * Don't forget implement a float parameter in the constructor.
-         *
-         * @param population 	-> population to be mutated.
-         * @param percentChrom  -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-         * @return float[][] population.
-         * 
-         * 
-         */
         public float[][] NumbMutation(float[][] pop, float min, float max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
             //clone the array.
-            float[][] mutatedPop = new float[pop.Length][];
-            for (int i = 0; i < pop.Length; i++)
-            {
-                mutatedPop[i] = new float[pop[i].Length];
-                Array.Copy(pop[i], 0, mutatedPop[i], 0, pop[i].Length);
-            }
+            float[][] mutatedPop = pop.Clone() as float[][];
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
@@ -174,29 +125,13 @@ namespace Laga
             }
         }
 
-        /**
-         * MutationSwap method.
-         * this method swap two or more alleles in the chromosome, same as RNA does in the DNA
-         * Don't forget implement a float parameter in the constructor.
-         *
-         * @param population 	-> population to be mutated.
-         * @param percentChrom  -> percent mutation in the chromsome 0 <= percentChrom <= 1.
-         * @return int[][] population.
-         * 
-         * 
-         */
         public int[][] NumbMutation(int[][] pop, int min, int max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
             //clone the array.
-            int[][] mutatedPop = new int[pop.Length][];
-            for (int i = 0; i < pop.Length; i++)
-            {
-                mutatedPop[i] = new int[pop[i].Length];
-                Array.Copy(pop[i], 0, mutatedPop[i], 0, pop[i].Length);
-            }
+            int[][] mutatedPop = pop.Clone() as int[][];
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
@@ -223,15 +158,6 @@ namespace Laga
             }
         }
 
-        /**
-         * The Method GenrMutation() takes two arguments. the population that is going to be mutated and the
-         * percent of the chromosome mutated.
-         *@param pop
-         * 				the population that is going to be mutated;
-         * @param Chromosomepercent
-         * 				the percent rate in the chromosome that is going to be mutated.
-         * @return a mutated population in the passed flavour.
-         */
         public char[][] BinaryCharMutation(char[][] pop, float ChroPercent)
         {
             SelectChromosomes(pop);
@@ -239,12 +165,7 @@ namespace Laga
             if (chroCant == 0) { chroCant = 1; }
 
             //clone the array.
-            char[][] mutatedPop = new char[pop.Length][];
-            for (int i = 0; i < pop.Length; i++)
-            {
-                mutatedPop[i] = new char[pop[i].Length];
-                Array.Copy(pop[i], 0, mutatedPop[i], 0, pop[i].Length);
-            }
+            char[][] mutatedPop = pop.Clone() as char[][];
 
             char rndChar; //random Character to replace
             int pointer; //random pointer, for the index
@@ -262,15 +183,6 @@ namespace Laga
             return mutatedPop;
         }
 
-        /**
-         * The Method GenrMutation() takes two arguments. the population that is going to be mutated and the
-         * percent of the chromosome mutated.
-         *@param pop
-         * 				the population that is going to be mutated;
-         * @param Chromosomepercent
-         * 				the percent rate in the chromosome that is going to be mutated.
-         * @return a mutated population in the passed flavor.
-         */
         public char[][] CharMutation(char[][] pop, float ChroPercent, int start, int end)
         {
             SelectChromosomes(pop);
@@ -278,12 +190,7 @@ namespace Laga
             if (chroCant == 0) { chroCant = 1; }
 
             //clone the array.
-            char[][] mutatedPop = new char[pop.Length][];
-            for (int i = 0; i < pop.Length; i++)
-            {
-                mutatedPop[i] = new char[pop[i].Length];
-                Array.Copy(pop[i], 0, mutatedPop[i], 0, pop[i].Length);
-            }
+            char[][] mutatedPop = pop.Clone() as char[][];
 
             char rndChar; //random Character to replace
             int pointer; //random pointer, for the index

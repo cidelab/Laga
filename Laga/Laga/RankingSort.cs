@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Laga
 {
-    class RankingSort
+    public class RankingSort
     {
         //LagaCasting lc = new LagaCasting();
 
