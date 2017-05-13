@@ -22,25 +22,27 @@ namespace Laga
          * @param sonMutPopulation  -> the son mutated population
          * @param ParentsPopulation -> the parents population.
          * @param sizePopulation    -> the size of the population.
-         * @return Object[][] new population.
+         * @return object[][] new population.
          * 
          * 
+         *
          */
-        public Object[][] ReplaceInheritance(Object[][] sonMutPopulation, Object[][] ParentsPopulation, int sizePopulation)
-        {
-            Object[][] newPopulation = new Object[sizePopulation][];
 
-            Object[][] newPopulation1 = new Object[sonMutPopulation.Length][]; //copy the sons part.
+        public object[][] ReplaceInheritance(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation)
+        {
+            object[][] newPopulation = new object[sizePopulation][];
+
+            object[][] newPopulation1 = new object[sonMutPopulation.Length][]; //copy the sons part.
             for (int i = 0; i < sonMutPopulation.Length; i++)
             {
-                newPopulation1[i] = new Object[sonMutPopulation[i].Length];
+                newPopulation1[i] = new object[sonMutPopulation[i].Length];
                 Array.Copy(sonMutPopulation[i], 0, newPopulation1[i], 0, sonMutPopulation[i].Length);
             }
 
-            Object[][] newPopulation2 = new Object[ParentsPopulation.Length][]; //copy the parents part.
+            object[][] newPopulation2 = new object[ParentsPopulation.Length][]; //copy the parents part.
             for (int i = 0; i < ParentsPopulation.Length; i++)
             {
-                newPopulation2[i] = new Object[ParentsPopulation[i].Length];
+                newPopulation2[i] = new object[ParentsPopulation[i].Length];
                 Array.Copy(ParentsPopulation[i], 0, newPopulation2[i], 0, ParentsPopulation[i].Length);
             }
 
@@ -68,18 +70,18 @@ namespace Laga
          * @param sonMutPopulation  -> the son mutated population
          * @param percent 			-> the random level of the new chromosomes. 0 < level < 1.
          * @param sizePopulation    -> the size of the population.
-         * @return Object[][] new population.
+         * @return object[][] new population.
          * 
          * 
          */
-        public Object[][] ReplaceRandom(Object[][] sonMutPopulation, float percent, int sizePopulation)
+        public object[][] ReplaceRandom(object[][] sonMutPopulation, float percent, int sizePopulation)
         {
-            Object[][] newPopulation = new Object[sizePopulation][];
+            object[][] newPopulation = new object[sizePopulation][];
 
-            Object[][] newPopulation1 = new Object[sonMutPopulation.Length][]; //copy the sons part.
+            object[][] newPopulation1 = new object[sonMutPopulation.Length][]; //copy the sons part.
             for (int i = 0; i < sonMutPopulation.Length; i++)
             {
-                newPopulation1[i] = new Object[sonMutPopulation[i].Length];
+                newPopulation1[i] = new object[sonMutPopulation[i].Length];
                 Array.Copy(sonMutPopulation[i], 0, newPopulation1[i], 0, sonMutPopulation[i].Length);
             }
 
@@ -111,29 +113,29 @@ namespace Laga
          * @param min    			-> min value in the chromosome.
          * @param max    			-> max value in the chromosome.
          * @param percentInherit    -> percentInherit.
-         * @return Object[][] new population.
+         * @return object[][] new population.
          * 
          * 
          */
-        public Object[][] ReplaceInheritanceRandom(Object[][] sonMutPopulation, Object[][] ParentsPopulation, int sizePopulation, float percentInherit)
+        public object[][] ReplaceInheritanceRandom(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation, float percentInherit)
         {
             int resta = sizePopulation - sonMutPopulation.Length;
             int cant = (int)(resta * percentInherit);
             if (cant > ParentsPopulation.Length) { cant = ParentsPopulation.Length; }
 
-            Object[][] newPopulation = new Object[sizePopulation][];
+            object[][] newPopulation = new object[sizePopulation][];
 
-            Object[][] newSon = new Object[sonMutPopulation.Length][]; //copiamos la herencia...
+            object[][] newSon = new object[sonMutPopulation.Length][]; //copiamos la herencia...
             for (int i = 0; i < sonMutPopulation.Length; ++i)
             {
-                newSon[i] = new Object[sonMutPopulation[i].Length];
+                newSon[i] = new object[sonMutPopulation[i].Length];
                 Array.Copy(sonMutPopulation[i], 0, newSon[i], 0, sonMutPopulation[i].Length);
             }
 
-            Object[][] newParents = new Object[ParentsPopulation.Length][]; //copiamos los padres...
+            object[][] newParents = new object[ParentsPopulation.Length][]; //copiamos los padres...
             for (int i = 0; i < ParentsPopulation.Length; ++i)
             {
-                newParents[i] = new Object[ParentsPopulation[i].Length];
+                newParents[i] = new object[ParentsPopulation[i].Length];
                 Array.Copy(ParentsPopulation[i], 0, newParents[i], 0, ParentsPopulation[i].Length);
             }
 
