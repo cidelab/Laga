@@ -46,7 +46,6 @@ namespace Laga
                 Array.Copy(ParentsPopulation[i], 0, newPopulation2[i], 0, ParentsPopulation[i].Length);
             }
 
-
             for (int i = 0; i < sonMutPopulation.Length; ++i)
             { //copy the son parts...
                 newPopulation[i] = newPopulation1[i];
