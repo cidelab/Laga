@@ -25,7 +25,7 @@ namespace Example_Parabola
             RankingSort rs = new RankingSort();
             NaturalSelection ns = new NaturalSelection();
             Crossover cs = new Crossover();
-            Mutation mut = new Mutation(0.01f);
+            Mutation mut = new Mutation(1f);
 
             result = new float[popSize];
             float eval = 0;
@@ -43,8 +43,8 @@ namespace Example_Parabola
                 PrintData(charPop[0], eval);
 
                 selChro = ns.Elitism(charPop, 5); //select the top five chromosomes...
-                sonPop = cs.SinglePointCrossover(selChro, 0.2f, 2);
-                mutPop = mut.BinaryCharMutation(sonPop, 0.025f);
+                sonPop = cs.SinglePointCrossover(selChro, 0.6f, 2);
+                mutPop = mut.BinaryCharMutation(sonPop, 0.02f);
                 charPop = ReplacementPop(selChro, sonPop, mutPop, popSize);
 
             } while (eval != 9);
@@ -104,7 +104,7 @@ namespace Example_Parabola
 
             float res = (float)(-Math.Pow(-x, 2) + 4 * x + 5);
 
-            string dta = x + "2 + 4*" + x + " + 5 = " + res;
+            string dta = "-" + x + "^2 + 4*" + x + " + 5 = " + res;
             Console.WriteLine(dta);
         }
 

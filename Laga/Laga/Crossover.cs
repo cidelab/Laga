@@ -21,7 +21,7 @@ namespace Laga
         /// <param name="population">The population to perform the crossover.</param>
         /// <param name="percent">The percent to crossover between 0.00 and 1.00</param>
         /// <param name="pointCutter">The integer to split the chromosome</param>
-        /// <returns>Crossover Object[][]</returns>
+        /// <returns>Crossover object[][]</returns>
         ///            int popLength = population.Length;
         ///int[] arrIndex = lt.Mom_Dad(popLength, percent);
         ///int iLength = arrIndex.Length;
@@ -38,19 +38,14 @@ namespace Laga
             object[][] inherencePop = new object[iLength][];
 
             //clone the array.
-            Object[][] crossPop = new Object[popLength][];
-            for (int i = 0; i < popLength; i++)
-            {
-                crossPop[i] = new Object[population[i].Length];
-                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
-            }
+            object[][] crossPop = population.Clone() as object[][];
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
                 dad = crossPop[arrIndex[i]];
                 mom = crossPop[arrIndex[i + 1]];
-                son1 = new Object[dad.Length];
-                son2 = new Object[mom.Length];
+                son1 = new object[dad.Length];
+                son2 = new object[mom.Length];
 
                 int t = pointCutter;
                 int t2 = pointCutter;
@@ -114,12 +109,7 @@ namespace Laga
             double[][] inherencePop = new double[iLength][];
 
             //clone the array.
-            double[][] crossPop = new double[popLength][];
-            for (int i = 0; i < popLength; i++)
-            {
-                crossPop[i] = new double[population[i].Length];
-                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
-            }
+            double[][] crossPop = population.Clone() as double[][];
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -169,12 +159,7 @@ namespace Laga
             float[][] inherencePop = new float[iLength][];
 
             //clone the array.
-            float[][] crossPop = new float[popLength][];
-            for (int i = 0; i < popLength; i++)
-            {
-                crossPop[i] = new float[population[i].Length];
-                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
-            }
+            float[][] crossPop = population.Clone() as float[][];
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -215,12 +200,7 @@ namespace Laga
             int[][] inherencePop = new int[iLength][];
 
             //clone the array.
-            int[][] crossPop = new int[popLength][];
-            for (int i = 0; i < popLength; i++)
-            {
-                crossPop[i] = new int[population[i].Length];
-               Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
-            }
+            int[][] crossPop = population.Clone() as int[][];
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -278,12 +258,7 @@ namespace Laga
             int count = 0;
 
             //clone the array.
-            char[][] crossPop = new char[popLength][];
-            for (int i = 0; i < popLength; i++)
-            {
-                crossPop[i] = new char[population[i].Length];
-                Array.Copy(population[i], 0, crossPop[i], 0, population[i].Length);
-            }
+            char[][] crossPop = population.Clone() as char[][];
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
