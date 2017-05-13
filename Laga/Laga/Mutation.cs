@@ -23,20 +23,20 @@ namespace Laga
  *
  * @param population 	-> population to be mutated.
  * @param percentChrom  -> percent mutation in the chromsome 0 <= percentChrom <= 1.
- * @return Object[][] population.
+ * @return object[][] population.
  * 
  * 
  */
-        public Object[][] MutationSwap(Object[][] population, float percentChrom)
+        public object[][] MutationSwap(object[][] population, float percentChrom)
         {
             cant = (int)(popPercent * population.Length);
             if (cant == 0) { cant = 1; }
 
             //clone the array.
-            Object[][] mutatedPop = new Object[population.Length][];
+            object[][] mutatedPop = new object[population.Length][];
             for (int i = 0; i < population.Length; i++)
             {
-                mutatedPop[i] = new Object[population[i].Length];
+                mutatedPop[i] = new object[population[i].Length];
                 Array.Copy(population[i], 0, mutatedPop[i], 0, population[i].Length);
             }
 
@@ -52,7 +52,7 @@ namespace Laga
 
             return mutatedPop;
         }
-        private void mutationSwap(Object[] chrom, float p)
+        private void mutationSwap(object[] chrom, float p)
         {
             int size = (int)(chrom.Length * p);
             if (size == 0) { size = 1; }
@@ -70,7 +70,7 @@ namespace Laga
                 } while (index == index2);
 
                 //swap
-                Object temp = chrom[index];
+                object temp = chrom[index];
                 chrom[index] = chrom[index2];
                 chrom[index2] = temp;
             }

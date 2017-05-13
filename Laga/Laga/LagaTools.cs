@@ -185,6 +185,12 @@ namespace Laga
             }
         }
 
+        /// <summary>
+        /// Non repeated indexs.
+        /// </summary>
+        /// <param name="lengthPop">the length of the population</param>
+        /// <param name="percent">the percent of mutation</param>
+        /// <returns>array of indexs</returns>
         public int[] Mom_Dad(int lengthPop, float percent)
         {
             //numbers and utilities..
