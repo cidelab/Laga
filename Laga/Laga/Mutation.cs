@@ -175,7 +175,7 @@ namespace Laga
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     rndChar = lagaT.RandomCharBinary(1.0f);
-                    pointer = new Random().Next(pop[i].Length);
+                    pointer = new Random(DateTime.Now.Millisecond).Next(pop[i].Length);
                     mutatedPop[arrIndex[i]][pointer] = rndChar;
                 }
             }
