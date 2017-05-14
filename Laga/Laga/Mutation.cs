@@ -8,11 +8,13 @@ namespace Laga
         private int cant;
         private int[] arrIndex;
         LagaTools lagaT;
+        private Random rnd;
 
         public Mutation(float MutationRate)
         {
             popPercent = MutationRate;
             lagaT = new LagaTools();
+            rnd = new Random((int)DateTime.Now.Millisecond);
         }
 
         public object[][] MutationSwap(object[][] population, float percentChrom)
@@ -40,7 +42,6 @@ namespace Laga
             int size = (int)(chrom.Length * p);
             if (size == 0) { size = 1; }
 
-            Random rnd = new Random();
             int index, index2;
 
             for (int i = 0; i < size; i++)
@@ -116,7 +117,6 @@ namespace Laga
             int cant = (int)(mutatedPop.Length * percent);
             if (cant == 0) { cant = 1; }
 
-            Random rnd = new Random();
             int rndIndex;
             for (int i = 0; i < cant; ++i)
             {
@@ -149,7 +149,6 @@ namespace Laga
             int cant = (int)(mutatedPop.Length * percent);
             if (cant == 0) { cant = 1; }
 
-            Random rnd = new Random();
             int rndIndex;
             for (int i = 0; i < cant; ++i)
             {
@@ -175,7 +174,7 @@ namespace Laga
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     rndChar = lagaT.RandomCharBinary(1.0f);
-                    pointer = new Random(DateTime.Now.Millisecond).Next(pop[i].Length);
+                    pointer = rnd.Next(pop[i].Length);
                     mutatedPop[arrIndex[i]][pointer] = rndChar;
                 }
             }
@@ -200,7 +199,7 @@ namespace Laga
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     rndChar = lagaT.RandomChar(start, end); // RandomChar();
-                    pointer = new Random().Next(pop[i].Length);
+                    pointer = rnd.Next(pop[i].Length);
                     mutatedPop[arrIndex[i]][pointer] = rndChar;
                 }
             }
