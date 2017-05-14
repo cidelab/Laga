@@ -1,0 +1,8 @@
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\bin\Debug\TestingCrossover.exe
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\bin\Debug\TestingCrossover.pdb
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\bin\Debug\Laga.dll
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\bin\Debug\Laga.pdb
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\obj\Debug\TestingCrossover.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\obj\Debug\TestingCrossover.exe
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\obj\Debug\TestingCrossover.pdb
+C:\Users\Carlos\Documents\GitHub\laga\Laga\TestingCrossover\TestingCrossover\bin\Debug\TestingCrossover.exe.config
