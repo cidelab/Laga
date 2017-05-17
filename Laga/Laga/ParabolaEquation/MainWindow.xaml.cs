@@ -26,29 +26,37 @@ namespace ParabolaEquation
             InitializeComponent();
         }
 
+        private int popSize = 10; //population size...
+        private int chromeSize = 4; //chromosome size....
+        private float eval;
+        private float[] mResults;
+        private float[] mParams;
+
+        private char[][] charPop;
+        private char[][] selChro;
+        private char[][] sonPop;
+        private char[][] mutPop;
+
+        GenrPopulation genPop;
+        RankingSort rs;
+        NaturalSelection ns;
+        Crossover cs;
+        Mutation mut;
 
         private void noteBook_Loaded(object sender, RoutedEventArgs e)
         {
-            int popSize = 10; //population size...
-            int chromeSize = 4; //chromosome size....
-            char[][] charPop;
-            char[][] selChro;
-            char[][] sonPop;
-            char[][] mutPop;
+            //when loads intialize all the GA parameters...
+            rs = new RankingSort();
+            ns = new NaturalSelection();
+            cs = new Crossover();
+            mut = new Mutation(0.01f);
 
-            GenrPopulation genPop = new GenrPopulation(popSize);
-            charPop = genPop.BinaryPopulationChr(chromeSize);
-            PrintData(noteBook.textBox, charPop, "Original pop");
+            RunOnce();
 
-            RankingSort rs = new RankingSort();
-            NaturalSelection ns = new NaturalSelection();
-            Crossover cs = new Crossover();
-            Mutation mut = new Mutation(0.01f);
+        }
 
-            float eval;
-            float[] mResults;
-            float[] mParams;
-
+        private void RunGA()
+        {
             do
             {
                 Evaluation(charPop, out mResults, out mParams); //eval the data...
@@ -71,6 +79,16 @@ namespace ParabolaEquation
                 PrintData(noteBook.txtEvolve_Copy, charPop, "");
 
             } while (eval != 9);
+
+        }
+
+        private void RunOnce()
+        {
+            genPop = new GenrPopulation(popSize);
+            charPop = genPop.BinaryPopulationChr(chromeSize);
+            PrintData(noteBook.textBox, charPop, "Original pop");
+            Evaluation(charPop, out mResults, out mParams); //eval the data...
+            PrintData(noteBook.txtEvolve, mResults, mParams, "Maximise f(x) = -x2 + 4x + 5");
         }
 
         private static char[][] ReplacementPop(char[][] selIndividuals, char[][] mutPop, char[][] sonPop, int sizePop)
@@ -193,6 +211,21 @@ namespace ParabolaEquation
 
                 count++;
             }
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            RunOnce();
+        }
+
+        private void btnRun_Click(object sender, RoutedEventArgs e)
+        {
+            RunGA();
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            eval = 9;
         }
     }
 }
