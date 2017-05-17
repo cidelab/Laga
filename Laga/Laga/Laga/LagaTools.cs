@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.Linq;
+using System.Linq;
 using System.Text;
 //using System.Threading.Tasks;
 
@@ -195,11 +195,24 @@ namespace Laga.GeneticAlgorithm
         {
             //numbers and utilities..
             int size = (int)(percent * lengthPop);
-            
-            size = (size <= 1) ? 2 : size; //check if is too small...
-            if (size % 2 != 0) { size++; } //check if is even...
 
-            int[] arrIndex = new int[size];
+            if (size % 2 != 0) { size--; } //check if is even...
+            size = (size <= 1) ? 2 : size; //check if is too small...
+            
+
+            int[] arrIndex = Enumerable.Range(0, lengthPop).ToArray();
+            arrIndex = Fisher_Yates(arrIndex);
+
+            int[] arrIndexSelected = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                arrIndexSelected[i] = arrIndex[i];
+            }
+
+            return arrIndexSelected;
+        }
+
+        /*
 
             int c;
 
@@ -236,7 +249,7 @@ namespace Laga.GeneticAlgorithm
             }
 
             return arrIndex;
-        }
+        }*/
 
     }
 }

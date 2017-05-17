@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Linq;
 
 namespace Laga.GeneticAlgorithm
 {
-    public class Mutation
+     public class Mutation
     {
         private float popPercent;
         private int cant;
@@ -17,16 +18,16 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random((int)DateTime.Now.Millisecond);
         }
 
-        public object[][] MutationSwap(object[][] population, float percentChrom)
+        public object[][] MutationSwap(object[][] pop, float percentChrom)
         {
-            cant = (int)(popPercent * population.Length);
+            cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
-            //clone the array.
-            object[][] mutatedPop = population.Clone() as object[][];
+            //deep copy the array.
+            object[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
             //random list...
-            int[] arrindex = new int[population.Length];
+            int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
             arrindex = lagaT.Fisher_Yates(arrindex); // fisher_yate(arrindex);
 
@@ -65,8 +66,8 @@ namespace Laga.GeneticAlgorithm
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
-            //clone the array.
-            double[][] mutatedPop = pop.Clone() as double[][];
+            //deep copy the array.
+            double[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
@@ -98,14 +99,13 @@ namespace Laga.GeneticAlgorithm
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
-            //clone the array.
-            float[][] mutatedPop = pop.Clone() as float[][];
+            float[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
-            arrindex = lagaT.Fisher_Yates(arrindex); //fisher_yate(arrindex);
+            arrindex = lagaT.Fisher_Yates(arrindex); 
 
-            for (int i = 0; i < cant; ++i) //loop para 
+            for (int i = 0; i < cant; ++i) 
             {
                 FloatMutation(mutatedPop[arrindex[i]], percentChrom, min, max);
             }
@@ -130,8 +130,8 @@ namespace Laga.GeneticAlgorithm
             cant = (int)(popPercent * pop.Length);
             if (cant == 0) { cant = 1; }
 
-            //clone the array.
-            int[][] mutatedPop = pop.Clone() as int[][];
+            //deep copy the array.
+            int[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
@@ -163,19 +163,22 @@ namespace Laga.GeneticAlgorithm
             int chroCant = (int)(pop[0].Length * ChroPercent);
             if (chroCant == 0) { chroCant = 1; }
 
-            //clone the array.
-            char[][] mutatedPop = pop.Clone() as char[][];
+            //deep copy the array.
+            char[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
-            char rndChar; //random Character to replace
-            int pointer; //random pointer, for the index
+            int[] arrPointer;
 
+            char gen, mutGen;
             for (int i = 0; i < cant; ++i) //the loop for the population
             {
+                arrPointer = lagaT.Mom_Dad(chroCant, ChroPercent);
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
-                    rndChar = lagaT.RandomCharBinary(1.0f);
-                    pointer = rnd.Next(pop[i].Length);
-                    mutatedPop[arrIndex[i]][pointer] = rndChar;
+                    gen = mutatedPop[arrIndex[i]][arrPointer[j]];
+
+                    mutGen = (gen == '0') ? '1' : '0';
+
+                    mutatedPop[arrIndex[i]][arrPointer[j]] = mutGen;
                 }
             }
 
@@ -189,7 +192,7 @@ namespace Laga.GeneticAlgorithm
             if (chroCant == 0) { chroCant = 1; }
 
             //clone the array.
-            char[][] mutatedPop = pop.Clone() as char[][];
+            char[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
             char rndChar; //random Character to replace
             int pointer; //random pointer, for the index
