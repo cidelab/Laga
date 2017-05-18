@@ -24,7 +24,6 @@
         <Line X1="180" Y1="350"  X2="180" Y2="330" Stroke="#FF3552A6" StrokeThickness="2" />
         <Line X1="730" Y1="350"  X2="730" Y2="330" Stroke="#FF3552A6" StrokeThickness="2" />
         <Button x:Name="btnRun" Content="Run" HorizontalAlignment="Left" Margin="278,216,0,0" VerticalAlignment="Top" Width="75" Click="btnRun_Click"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="278,247,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnClear_Click"/>
-        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="278,279,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnStop_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="278,246,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnStop_Click"/>
     </Grid>
 </Window>

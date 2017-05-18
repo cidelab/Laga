@@ -171,7 +171,7 @@ namespace Laga.GeneticAlgorithm
             char gen, mutGen;
             for (int i = 0; i < cant; ++i) //the loop for the population
             {
-                arrPointer = lagaT.Mom_Dad(chroCant, ChroPercent);
+                arrPointer = lagaT.RandomInt(0, pop[i].Length, ChroPercent);
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     gen = mutatedPop[arrIndex[i]][arrPointer[j]];

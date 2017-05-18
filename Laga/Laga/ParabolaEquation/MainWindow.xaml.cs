@@ -51,8 +51,17 @@ namespace ParabolaEquation
             cs = new Crossover();
             mut = new Mutation(0.01f);
 
-            RunOnce();
 
+
+        }
+
+        private void RunOne()
+        {
+            genPop = new GenrPopulation(popSize);
+            charPop = genPop.BinaryPopulationChr(chromeSize);
+            PrintData(noteBook.textBox, charPop, "Original pop");
+            Evaluation(charPop, out mResults, out mParams); //eval the data...
+            PrintData(noteBook.txtEvolve, mResults, mParams, "Maximise f(x) = -x2 + 4x + 5");
         }
 
         private void RunGA()
@@ -69,7 +78,7 @@ namespace ParabolaEquation
 
                 selChro = ns.Elitism(charPop, 5); //select the top five chromosomes...
                 sonPop = cs.SinglePointCrossover(selChro, 0.2f, 2);
-                mutPop = mut.BinaryCharMutation(sonPop, 1f); //we are going to mutate the whole chromosome...
+                mutPop = mut.BinaryCharMutation(sonPop, 0.01f); //we are going to mutate the whole chromosome...
 
                 PrintData(noteBook.txtEvolve_Copy1, selChro);//print the selected individuals for crossover...
                 PrintData(noteBook.txtSonAndMutation, sonPop, ""); //print the selected crossover...
@@ -80,15 +89,6 @@ namespace ParabolaEquation
 
             } while (eval != 9);
 
-        }
-
-        private void RunOnce()
-        {
-            genPop = new GenrPopulation(popSize);
-            charPop = genPop.BinaryPopulationChr(chromeSize);
-            PrintData(noteBook.textBox, charPop, "Original pop");
-            Evaluation(charPop, out mResults, out mParams); //eval the data...
-            PrintData(noteBook.txtEvolve, mResults, mParams, "Maximise f(x) = -x2 + 4x + 5");
         }
 
         private static char[][] ReplacementPop(char[][] selIndividuals, char[][] mutPop, char[][] sonPop, int sizePop)
@@ -213,11 +213,6 @@ namespace ParabolaEquation
             }
         }
 
-        private void btnClear_Click(object sender, RoutedEventArgs e)
-        {
-            RunOnce();
-        }
-
         private void btnRun_Click(object sender, RoutedEventArgs e)
         {
             RunGA();
@@ -225,7 +220,7 @@ namespace ParabolaEquation
 
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
-            eval = 9;
+            RunOne();
         }
     }
 }

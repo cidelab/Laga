@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
@@ -38,7 +39,7 @@ namespace Laga.GeneticAlgorithm
             object[][] inherencePop = new object[iLength][];
 
             //clone the array.
-            object[][] crossPop = population.Clone() as object[][];
+            object[][] crossPop = population.Select(a => a.ToArray()).ToArray();
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -109,7 +110,7 @@ namespace Laga.GeneticAlgorithm
             double[][] inherencePop = new double[iLength][];
 
             //clone the array.
-            double[][] crossPop = population.Clone() as double[][];
+            double[][] crossPop = population.Select(a => a.ToArray()).ToArray();
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -159,7 +160,7 @@ namespace Laga.GeneticAlgorithm
             float[][] inherencePop = new float[iLength][];
 
             //clone the array.
-            float[][] crossPop = population.Clone() as float[][];
+            float[][] crossPop = population.Select(a => a.ToArray()).ToArray();
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -200,7 +201,7 @@ namespace Laga.GeneticAlgorithm
             int[][] inherencePop = new int[iLength][];
 
             //clone the array.
-            int[][] crossPop = population.Clone() as int[][];
+            int[][] crossPop = population.Select(a => a.ToArray()).ToArray();
 
             for (int i = 0; i < iLength - 1; i += 2)
             {
@@ -257,8 +258,8 @@ namespace Laga.GeneticAlgorithm
             char[][] inherencePop = new char[iLength][];
             int count = 0;
 
-            //clone the array.
-            char[][] crossPop = population.Clone() as char[][];
+            //deep copy the array.
+            char[][] crossPop = population.Select(a => a.ToArray()).ToArray();
 
             for (int i = 0; i < iLength - 1; i += 2)
             {

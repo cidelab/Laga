@@ -186,6 +186,31 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// Return non repetead integers between a min max and percent.
+        /// </summary>
+        /// <param name="min">the minimum value</param>
+        /// <param name="max">the maximum value</param>
+        /// <param name="percent">the percent of return, if 1f will return all the numbers.</param>
+        /// <returns>array of integers if wrong array of 0</returns>
+        public int[] RandomInt(int min, int max, float percent)
+        {
+            if(min > max) { return new int[] { 0 }; }
+
+            int size = (int)(percent * ((max - min) + 1));
+            size = (size < 1) ? 1 : size;
+            int[] arrIndexSelected = new int[size];
+
+            int[] arrIndex = Enumerable.Range(min, max).ToArray();
+            arrIndex = Fisher_Yates(arrIndex);
+
+            for (int i = 0; i < size; i++)
+            {
+                arrIndexSelected[i] = arrIndex[i];
+            }
+            return arrIndexSelected;
+        }
+
+        /// <summary>
         /// Non repeated indexs.
         /// </summary>
         /// <param name="lengthPop">the length of the population</param>
@@ -212,44 +237,6 @@ namespace Laga.GeneticAlgorithm
             return arrIndexSelected;
         }
 
-        /*
-
-            int c;
-
-            //random zone.
-            int index;
-
-            //loop to find random and not repeated indexes.
-            for (int i = 0; i < size; ++i)
-            {
-                do
-                {
-                    c = 0;
-                    index = rnd.Next(lengthPop);
-                    if (i > 0)
-                    {
-                        for (int j = 0; j < i; ++j)
-                        {
-                            if (arrIndex[j] == index)
-                            {
-                                c++;
-                            }
-                        }
-                        if (c == 0)
-                        {
-                            arrIndex[i] = index;
-                        }
-
-                    }
-                    else
-                    {
-                        arrIndex[i] = index;
-                    }
-                } while (c != 0);
-            }
-
-            return arrIndex;
-        }*/
 
     }
 }
