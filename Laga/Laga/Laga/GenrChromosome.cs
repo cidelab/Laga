@@ -117,6 +117,19 @@ namespace Laga.GeneticAlgorithm
             return chr;
         }
 
+        public char[] BinaryChromosomeChr()
+        {
+            char[] arrChr = new char[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                arrChr[i] = rnd.NextDouble() >= 0.5 ? '1' : '0';
+
+            }
+
+            return arrChr;
+        }
+
         /// <summary>
         /// creates an random char chromosome composed by characters.
         /// based on this link: http://www.asciitable.com/

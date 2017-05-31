@@ -1,0 +1,16 @@
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\bin\Debug\ParabolaEquation.exe.config
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\bin\Debug\ParabolaEquation.exe
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\bin\Debug\ParabolaEquation.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\bin\Debug\Laga.dll
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\bin\Debug\Laga.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\MainWindow.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\App.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation_MarkupCompile.cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation_MarkupCompile.lref
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\MainWindow.baml
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.g.resources
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.Properties.Resources.resources
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.exe
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\ParabolaEquation\obj\Debug\ParabolaEquation.pdb
