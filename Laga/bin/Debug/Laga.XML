@@ -4,6 +4,19 @@
         <name>Laga</name>
     </assembly>
     <members>
+        <member name="T:Laga.Graphics.Notebook">
+            <summary>
+            Static class to write in textboxes.
+            </summary>
+        </member>
+        <member name="M:Laga.Graphics.Notebook.PrintLines(System.Windows.Controls.TextBox,System.String[],System.Boolean)">
+            <summary>
+            Print line by line in a textbox. For appareance and other properties refer to xaml. 
+            </summary>
+            <param name="textBox">the textbox</param>
+            <param name="arrMessages">array of strings</param>
+            <param name="clear">in case you want to clean the textbox before</param>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Object[][],System.Single,System.Int32)">
              <summary>
              Single Point Crossover method
@@ -53,6 +66,11 @@
             @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
             
             
+        </member>
+        <member name="T:Laga.GeneticAlgorithm.GenrChromosome">
+            <summary>
+            use this class to creates Chromosomes.
+            </summary>
         </member>
         <member name="P:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom">
             <summary>
@@ -114,6 +132,12 @@
             <returns>a random char list of 1s and 0s</returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)" -->
+        <member name="T:Laga.GeneticAlgorithm.GenrPopulation">
+            <summary>
+            use this class to creates a Population
+            Populations are the base of the Genetic Algorithms.
+            </summary>
+        </member>
         <member name="P:Laga.GeneticAlgorithm.GenrPopulation.SizePop">
             <summary>
             SizePopulation
@@ -129,7 +153,6 @@
             <summary>
             Genr8 a random population based on a chromosome of objects[].
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="SeedChromosome">The seed chromosome to genr8 the population</param>
             <param name="percent">the mutation percent in the population</param>
             <param name="InOut">true to include the seed chromosome in the population</param>
@@ -139,7 +162,6 @@
             <summary>
             Genr8 a Population of random double.
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="sizeChromosome">The size of the chromosome</param>
             <param name="min">The minimum value in the chromosome, inclusive</param>
             <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -149,7 +171,6 @@
             <summary>
             Genr8 a Population of random float.
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="sizeChromosome">The size of the chromosome</param>
             <param name="min">The minimum value in the chromosome, inclusive</param>
             <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -159,7 +180,6 @@
             <summary>
             Genr8 a Population of random int.
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="sizeChromosome">The size of the chromosome</param>
             <param name="min">The minimum value in the chromosome, inclusive</param>
             <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -169,7 +189,6 @@
             <summary>
             Genr8 a Population of random integers, between min and max value.
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="min">The minimum value in the chromosome, inclusive</param>
             <param name="max">The maximum value in the chromosome, inclusive</param>
             <returns>Population int[][]</returns>
@@ -178,7 +197,6 @@
             <summary>
             Genr8 a binary Population 101011...
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="sizeChromosome">The size of the chromosome</param>
             <returns>Population int[][]</returns>
         </member>
@@ -186,7 +204,6 @@
             <summary>
             Genr8 a binary Population '1','0','1','0','1','1'...
             </summary>
-            <param name="sizePopulation">The size of the population</param>
             <param name="sizeChromosome">The size of the chromosome</param>
             <returns>Population char[][]</returns>
         </member>
@@ -195,10 +212,23 @@
             Genr8 a Population composed by random chars.
             based on this link: http://www.asciitable.com/
             </summary>
-            <param name="sizeChromosome"></param>
+            <param name="sizeChromosome">The size of the chromosome</param>
             <param name="start">the start number for the table, inclusive: Eg: 97</param>
             <param name="end">the end number for the table, inclusive: Eg: 122</param>
             <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="SizeChromosome">The size of the chromosome</param>
+            <param name="minX">The minimum value for X coordinate</param>
+            <param name="maxX">The maximum value for X coordinate</param>
+            <param name="minY">The minimum value for Y coordinate</param>
+            <param name="maxY">The maximum value for Y coordinate</param>
+            <param name="minZ">The minimum value for Z coordinate</param>
+            <param name="maxZ">The maximum value for Z coordinate</param>
+            <returns> a population of points</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Double[])">
             <summary>
@@ -662,6 +692,13 @@
             
             
         </member>
+        <member name="M:Laga.GeneticAlgorithm.point.distanceTo(Laga.GeneticAlgorithm.point)">
+            <summary>
+            Get the distance between 2 points.
+            </summary>
+            <param name="pt">The point to Test</param>
+            <returns>a double</returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Object[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
              Sort the individuals in the population by fitness value.
@@ -1124,14 +1161,6 @@
             clean all the marshalls and close the excel.
             </summary>
             <param name="saveFile">if is true, will save the file</param>
-        </member>
-        <member name="M:Laga.Graphics.Notebook.PrintLines(System.Windows.Controls.TextBox,System.String[],System.Boolean)">
-            <summary>
-            Print line by line in a textbox. For appareance and other properties refer to xaml. 
-            </summary>
-            <param name="textBox">the textbox</param>
-            <param name="arrMessages">array of strings</param>
-            <param name="clear">in case you want to clean the textbox before</param>
         </member>
     </members>
 </doc>

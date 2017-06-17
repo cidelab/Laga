@@ -7,10 +7,10 @@ C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\Laga\bin\Debug\L
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\Laga\bin\Debug\Laga.pdb
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\Laga\obj\Debug\Laga.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\bin\Debug\Laga.XML
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\bin\Debug\Laga.dll
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\bin\Debug\Laga.pdb
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\obj\Debug\Laga.csproj.ResolveComReference.cache
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\obj\Debug\Laga.pdb
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\bin\Debug\Laga.XML
 C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Laga\obj\Debug\Laga.csprojResolveAssemblyReference.cache

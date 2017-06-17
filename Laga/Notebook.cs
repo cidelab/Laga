@@ -7,12 +7,12 @@ using System.Windows.Controls;
 
 namespace Laga.Graphics
 {
-    public class Notebook
+    /// <summary>
+    /// Static class to write in textboxes.
+    /// </summary>
+    public static class Notebook
     {
-            public Notebook()
-        {
 
-        }
         /// <summary>
         /// Print line by line in a textbox. For appareance and other properties refer to xaml. 
         /// </summary>

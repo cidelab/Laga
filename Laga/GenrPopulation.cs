@@ -4,6 +4,10 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
+    /// <summary>
+    /// use this class to creates a Population
+    /// Populations are the base of the Genetic Algorithms.
+    /// </summary>
     public class GenrPopulation
     {
         private LagaTools lgTools;
@@ -39,7 +43,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a random population based on a chromosome of objects[].
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="SeedChromosome">The seed chromosome to genr8 the population</param>
         /// <param name="percent">the mutation percent in the population</param>
         /// <param name="InOut">true to include the seed chromosome in the population</param>
@@ -68,7 +71,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random double.
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -93,7 +95,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random float.
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -118,7 +119,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random int.
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
@@ -143,7 +143,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random integers, between min and max value.
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population int[][]</returns>
@@ -177,7 +176,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a binary Population 101011...
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <returns>Population int[][]</returns>
         public int[][] BinaryPopulationInt(int sizeChromosome)
@@ -208,7 +206,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a binary Population '1','0','1','0','1','1'...
         /// </summary>
-        /// <param name="sizePopulation">The size of the population</param>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <returns>Population char[][]</returns>
         public char[][] BinaryPopulationChr(int sizeChromosome)
@@ -233,7 +230,7 @@ namespace Laga.GeneticAlgorithm
         /// Genr8 a Population composed by random chars.
         /// based on this link: http://www.asciitable.com/
         /// </summary>
-        /// <param name="sizeChromosome"></param>
+        /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns></returns>
@@ -254,6 +251,36 @@ namespace Laga.GeneticAlgorithm
             }
 
             return charPopulation;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="SizeChromosome">The size of the chromosome</param>
+        /// <param name="minX">The minimum value for X coordinate</param>
+        /// <param name="maxX">The maximum value for X coordinate</param>
+        /// <param name="minY">The minimum value for Y coordinate</param>
+        /// <param name="maxY">The maximum value for Y coordinate</param>
+        /// <param name="minZ">The minimum value for Z coordinate</param>
+        /// <param name="maxZ">The maximum value for Z coordinate</param>
+        /// <returns> a population of points</returns>
+        public point[][] PointPopulation(int SizeChromosome, double minX, double maxX, double minY, double maxY, double minZ, double maxZ)
+        {
+            point[] chromosome;
+            point[][] popPoints = new point[sizePopulation][];
+
+            for (int i = 0; i < sizePopulation; i++)
+            {
+                chromosome = new point[SizeChromosome];
+                for (int j = 0; j < SizeChromosome; j++)
+                {
+                    chromosome[j] = new point(rnd.NextDouble() * (maxX - minX), rnd.NextDouble() * (maxY - minY), rnd.NextDouble() * (maxZ - minZ));
+                }
+
+                popPoints[i] = chromosome;
+            }
+            return popPoints;
         }
     }
 }

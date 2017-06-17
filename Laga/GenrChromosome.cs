@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
+    /// <summary>
+    /// use this class to creates Chromosomes.
+    /// </summary>
     public class GenrChromosome
     {
         private int size;
