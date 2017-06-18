@@ -26,6 +26,24 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
+
+        /// <summary>
+        /// Generate prefixs.
+        /// </summary>
+        /// <param name="prefix">string prefix</param>
+        /// <param name="size">the length of prefix to generate</param>
+        /// <returns>Array of strings</returns>
+        public static string[] Prefix(string prefix, int size)
+        {
+            string[] arrS = new string[size];
+            for(int i = 0; i < size; i++)
+            {
+                arrS[i] = prefix + i.ToString();
+            }
+
+            return arrS;
+        }
+
         /// <summary>
         /// Parse any Chromosome type to string Array
         /// </summary>

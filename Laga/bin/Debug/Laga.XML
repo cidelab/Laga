@@ -15,7 +15,37 @@
             </summary>
             <param name="textBox">the textbox</param>
             <param name="arrMessages">array of strings</param>
-            <param name="clear">in case you want to clean the textbox before</param>
+            <param name="clear">in case you want to clean the textbox before to write</param>
+        </member>
+        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Double[][],System.String[],System.String,System.Boolean)">
+            <summary>
+            Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
+            </summary>
+            <param name="textBox">the textbox</param>
+            <param name="population">the popupation to write</param>
+            <param name="prefix">an array of prefixs between chromosomes in the population</param>
+            <param name="sep">The string to use as a separator between genes in the chromosome</param>
+            <param name="clear">in case you want to clean the textbox before to write</param>
+        </member>
+        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Single[][],System.String[],System.String,System.Boolean)">
+            <summary>
+            Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
+            </summary>
+            <param name="textBox">the textbox</param>
+            <param name="population">the popupation to write</param>
+            <param name="prefix">an array of prefixs between chromosomes in the population</param>
+            <param name="sep">The string to use as a separator between genes in the chromosome</param>
+            <param name="clear">in case you want to clean the textbox before to write</param>
+        </member>
+        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Int32[][],System.String[],System.String,System.Boolean)">
+            <summary>
+            Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
+            </summary>
+            <param name="textBox">the textbox</param>
+            <param name="population">the popupation to write</param>
+            <param name="prefix">an array of prefixs between chromosomes in the population</param>
+            <param name="sep">The string to use as a separator between genes in the chromosome</param>
+            <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Object[][],System.Single,System.Int32)">
              <summary>
@@ -229,6 +259,14 @@
             <param name="minZ">The minimum value for Z coordinate</param>
             <param name="maxZ">The maximum value for Z coordinate</param>
             <returns> a population of points</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Prefix(System.String,System.Int32)">
+            <summary>
+            Generate prefixs.
+            </summary>
+            <param name="prefix">string prefix</param>
+            <param name="size">the length of prefix to generate</param>
+            <returns>Array of strings</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Double[])">
             <summary>
