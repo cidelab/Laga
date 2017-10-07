@@ -1,0 +1,34 @@
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.exe.config
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.exe
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\MainWindow.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\App.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics_MarkupCompile.cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics_MarkupCompile.lref
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\MainWindow.baml
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.g.resources
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting_Graphics.Properties.Resources.resources
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.exe
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Laga.dll
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Laga.pdb
+C:\Users\Carlos\Documents\Visual Studio 2015\Projects\laga\Starting Graphics\bin\Debug\Laga.xml
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.exe.config
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.exe
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Starting Graphics.pdb
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Laga.dll
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Laga.pdb
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\bin\Debug\Laga.xml
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\MainWindow.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\App.g.cs
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics_MarkupCompile.cache
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics_MarkupCompile.lref
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\MainWindow.baml
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.g.resources
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting_Graphics.Properties.Resources.resources
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.exe
+C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Starting Graphics\obj\Debug\Starting Graphics.pdb

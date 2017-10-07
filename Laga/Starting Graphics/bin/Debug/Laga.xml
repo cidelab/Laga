@@ -17,14 +17,13 @@
             <param name="arrMessages">array of strings</param>
             <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
-        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Double[][],System.String[],System.Char,System.String,System.Boolean)">
+        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Double[][],System.String[],System.String,System.Boolean)">
             <summary>
             Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
             </summary>
             <param name="textBox">the textbox</param>
             <param name="population">the popupation to write</param>
             <param name="prefix">an array of prefixs between chromosomes in the population</param>
-            <param name="inLine">a char to define if you want to print in line: 'i' or under line: any other char.</param>
             <param name="sep">The string to use as a separator between genes in the chromosome</param>
             <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
@@ -48,14 +47,13 @@
             <param name="sep">The string to use as a separator between genes in the chromosome</param>
             <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
-        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Char[][],System.String[],System.Char,System.String,System.Boolean)">
+        <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,System.Char[][],System.String[],System.String,System.Boolean)">
             <summary>
             Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
             </summary>
             <param name="textBox">the textbox</param>
             <param name="population">the popupation to write</param>
             <param name="prefix">an array of prefixs between chromosomes in the population</param>
-            <param name="inLine">a char to define if you want to print in line: 'i' or under line: any other char.</param>
             <param name="sep">The string to use as a separator between genes in the chromosome</param>
             <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
@@ -69,65 +67,55 @@
             <param name="sep">The string to use as a separator between genes in the chromosome</param>
             <param name="clear">in case you want to clean the textbox before to write</param>
         </member>
-        <member name="T:Laga.GeneticAlgorithm.Crossover">
-            <summary>
-            Crossover class
-            </summary>
-        </member>
-        <member name="P:Laga.GeneticAlgorithm.Crossover.IndexParent">
-            <summary>
-            get and set indexes for parents in crossover.
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Crossover.#ctor">
-            <summary>
-            constructor
-            </summary>
-        </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Object[][],System.Single,System.Int32)">
-            <summary>
-            A crossover algorithm performed in a single point of the chromosome.
-            </summary>
-            <param name="population">The population to perform the crossover</param>
-            <param name="percent">Which percent of chromosomes will be croosver</param>
-            <param name="pointCutter">Where the crossover will be executed</param>
-            <returns>object[][]</returns>
+             <summary>
+             Single Point Crossover method
+             </summary>
+             <param name="population">The population to perform the crossover.</param>
+             <param name="percent">The percent to crossover between 0.00 and 1.00</param>
+             <param name="pointCutter">The integer to split the chromosome</param>
+             <returns>Crossover object[][]</returns>
+                        int popLength = population.Length;
+            int[] arrIndex = lt.Mom_Dad(popLength, percent);
+            int iLength = arrIndex.Length;
         </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Double[][],System.Single,System.Int32)">
-            <summary>
-            A crossover algorithm performed in a single point of the chromosome.
-            </summary>
-            <param name="population">The population to perform the crossover</param>
-            <param name="percent">Which percent of chromosomes will be croosver</param>
-            <param name="pointCutter">Where the crossover will be executed</param>
-            <returns>double[][]</returns>
+                    * SinglePointCrossover method.
+                     * Single Method prepared to received any type of class, ideal for combinatorial problems.
+                     * 
+                     * @param population  -> An object type population.
+                     * @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+                     * @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+                     * 
+                     * 
         </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Single[][],System.Single,System.Int32)">
-            <summary>
-            A crossover algorithm performed in a single point of the chromosome.
-            </summary>
-            <param name="population">The population to perform the crossover</param>
-            <param name="percent">Which percent of chromosomes will be croosver</param>
-            <param name="pointCutter">Where the crossover will be executed</param>
-            <returns>float[][]</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Int32[][],System.Single,System.Int32)">
-            <summary>
-            A crossover algorithm performed in a single point of the chromosome.
-            </summary>
-            <param name="population">The population to perform the crossover</param>
-            <param name="percent">Which percent of chromosomes will be croosver</param>
-            <param name="pointCutter">Where the crossover will be executed</param>
-            <returns>int[][]</returns>
+            SinglePointCrossover method.
+            Single Method prepared to recieve any type of class, ideal for combintorial problems.
+            
+            @param population  -> An object type population.
+            @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+            @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+            
+            
         </member>
         <member name="M:Laga.GeneticAlgorithm.Crossover.SinglePointCrossover(System.Char[][],System.Single,System.Int32)">
-            <summary>
-            A crossover algorithm performed in a single point of the chromosome.
-            </summary>
-            <param name="population">The population to perform the crossover</param>
-            <param name="percent">Which percent of chromosomes will be croosver</param>
-            <param name="pointCutter">Where the crossover will be executed</param>
-            <returns>Char[][]</returns>
+            SinglePointCrossover method.
+            Single Method prepared to recieve any type of class, ideal for combintorial problems.
+            
+            @param population  -> An object type population.
+            @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+            @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+            
+            
+            SinglePointCrossover method.
+            Single Method prepared to receive a char type population.
+            
+            @param population  -> An object type population.
+            @param percent     -> Number between 0.0 and 1.0 to represent the percent of crossover in the population.
+            @param pointCutter -> An integer to represent where you want to cut the chromosome for the crossover.
+            
+            
         </member>
         <member name="T:Laga.GeneticAlgorithm.GenrChromosome">
             <summary>
@@ -218,7 +206,7 @@
             <param name="SeedChromosome">The seed chromosome to genr8 the population</param>
             <param name="percent">the mutation percent in the population</param>
             <param name="InOut">true to include the seed chromosome in the population</param>
-            <returns>Population object[][]</returns>
+            <returns>Population object [][]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Double,System.Double)">
             <summary>
@@ -382,16 +370,6 @@
             <param name="lengthPop">the length of the population</param>
             <param name="percent">the percent of mutation</param>
             <returns>array of indexs</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Mutation.CharMutation(System.Char[][],System.Single,System.Int32,System.Int32)">
-            <summary>
-            A Mutation Algorithm
-            </summary>
-            <param name="pop">The population to perform the mutation</param>
-            <param name="ChroPercent">the percent of mutation in the chromosome</param>
-            <param name="start">the start number for the table, inclusive: Eg: 97</param>
-            <param name="end">the end number for the table, inclusive: Eg: 122</param>
-            <returns>char[][]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Object[][],System.Int32)">
              ElitismSelection method.
@@ -821,16 +799,6 @@
             <param name="pt">The point to Test</param>
             <returns>a double</returns>
         </member>
-        <member name="T:Laga.GeneticAlgorithm.RankingSort">
-            <summary>
-            class
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.#ctor">
-            <summary>
-            constructor
-            </summary>
-        </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Object[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
              Sort the individuals in the population by fitness value.
@@ -931,13 +899,15 @@
              
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Int32[],System.Boolean)">
-            <summary>
-            An optimised BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
-            </summary>
-            <param name="population">population to sort</param>
-            <param name="arrResults">Array of fitness in the population. Only 2 flavors are supported: int[] and float[]</param>
-            <param name="minmax">if is true the sort is by min to max, else max to min</param>
-            <returns>automatically the population is sorted. the original population will be modified.</returns>
+            An optimised BidirectionalBubbleSort method.
+             Sort the individuals in the population by fitness value.
+             
+             @param population -> population to sort;
+             @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+             @param minmax 	 -> if is true the sort is by min to max, else max to min.
+             @return automatically the population is sorted updated. the original population will be modified.
+             
+             
         </member>
         <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)">
              ReplaceInheritance method.
@@ -1191,16 +1161,6 @@
             <param name="fileName">string, the file name of the excel file</param>
             <param name="directory">string, the address where to save the excel</param>
         </member>
-        <member name="T:Laga.IO.IOExcelWrite">
-            <summary>
-            use this class to write data in excel
-            </summary>
-        </member>
-        <member name="P:Laga.IO.IOExcelWrite.SheetNum">
-            <summary>
-            get the sheet number 
-            </summary>
-        </member>
         <member name="P:Laga.IO.IOExcelWrite.matrixDataExcel">
             <summary>
             set the data by nested string list format, use this to get the data from excel
@@ -1210,13 +1170,6 @@
             <summary>
             set the data by string list format, use this to get the data from excel
             </summary>
-        </member>
-        <member name="M:Laga.IO.IOExcelWrite.CheckExcelFile(System.String)">
-            <summary>
-            check if the file exists.
-            </summary>
-            <param name="path">the path to the excel file</param>
-            <returns>boolean</returns>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.#ctor(System.String,System.Int32)">
             <summary>
@@ -1238,14 +1191,13 @@
             Sets the basic data to write in excel.
             do not forget call the open and close.
             </summary>
-            <param name="FilePath">adress to the file</param>
+            <param name="FilePath">the direction to the file</param>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet(System.Int32,System.String)">
             <summary>
-            Open excel based on this constructor
+            open excel based on the constructor.
             </summary>
-            <param name="pos">the sheet number</param>
-            <param name="name">the file name</param>
+            <param name="display">if is true, show the excel"</param>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet(System.Int32)">
             <summary>
