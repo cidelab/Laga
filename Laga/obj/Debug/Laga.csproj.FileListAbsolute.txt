@@ -19,4 +19,3 @@ C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Laga\bin\Debug\Laga.p
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Laga\obj\Debug\Laga.csproj.ResolveComReference.cache
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Laga\obj\Debug\Laga.pdb
-C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\Laga\obj\Debug\Laga.csprojResolveAssemblyReference.cache

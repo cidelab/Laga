@@ -7,10 +7,8 @@ namespace Laga.GeneticAlgorithm
 {
     public class LagaTools
     {
-        Random rnd;
         public LagaTools()
         {
-            rnd = new Random((int)DateTime.Now.Millisecond);
         }
 
         /// <summary>
@@ -146,10 +144,10 @@ namespace Laga.GeneticAlgorithm
 
             int[] arrMut = new int[cant];
             Array.Copy(arrInt, arrMut, cant);
-            
-            for(int i = 0; i < cant; i++)
+            Random r = new Random((int)DateTime.Now.Millisecond);
+            for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(rnd.NextDouble() * (cant - i));
+                int index = i + (int)(r.NextDouble() * (cant - i));
                 int temp = arrMut[index];
                 arrMut[index] = arrMut[i];
                 arrMut[i] = temp;
@@ -167,10 +165,10 @@ namespace Laga.GeneticAlgorithm
             int cant = arrObj.Length;
             object[] arrObjMuts = new object[cant];
             Array.Copy(arrObj, arrObjMuts, cant);
-
+            Random r = new Random((int)DateTime.Now.Millisecond);
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(rnd.NextDouble() * (cant - i));
+                int index = i + (int)(r.NextDouble() * (cant - i));
                 
                 //swap
                 object temp = arrObjMuts[index];
@@ -196,9 +194,11 @@ namespace Laga.GeneticAlgorithm
             int cant = (int)(l * percent);
             cant = (cant <= 0) ? cant = 2 : cant;
 
+            Random r = new Random((int)DateTime.Now.Millisecond);
+
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(rnd.NextDouble() * (cant - i));
+                int index = i + (int)(r.NextDouble() * (cant - i));
 
                 //swap
                 object temp = arrObjMuts[index];
@@ -216,7 +216,8 @@ namespace Laga.GeneticAlgorithm
         public char RandomCharBinary(float thershold)
         {
             char t;
-            if (rnd.NextDouble() < thershold)
+            Random r = new Random((int)DateTime.Now.Millisecond);
+            if (r.NextDouble() < thershold)
             {
                 t = '1';
             }
@@ -236,7 +237,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns>char</returns>
         public char RandomChar(int start, int end)
         {
-            return (char)rnd.Next(start, end + 1);
+            Random r = new Random((int)DateTime.Now.Millisecond);
+            return (char)r.Next(start, end + 1);
         }
 
         /// <summary>
@@ -247,11 +249,12 @@ namespace Laga.GeneticAlgorithm
         public void Fishe_Yates<T>(T[] arrData)
         {
             int n = arrData.Length;
+            Random r = new Random((int)DateTime.Now.Millisecond);
             for (int i = 0; i < n; i++)
             {
-                int r = i + (int)(rnd.NextDouble() * (n - i));
-                T t = arrData[r];
-                arrData[r] = arrData[i];
+                int ri = i + (int)(r.NextDouble() * (n - i));
+                T t = arrData[ri];
+                arrData[ri] = arrData[i];
                 arrData[i] = t;
             }
         }
