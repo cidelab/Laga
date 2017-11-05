@@ -292,6 +292,29 @@
             <param name="maxZ">The maximum value for Z coordinate</param>
             <returns> a population of points</returns>
         </member>
+        <member name="T:Laga.GeneticAlgorithm.LagaTools">
+            <summary>
+            A collection of tools to operate on populations and chromosomes.
+            </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.BinaryChromosomeToInteger``1(``0[])">
+            <summary>
+            Convert a binary chromosome to an integer.
+            </summary>
+            <typeparam name="T">chromosome type</typeparam>
+            <param name="chromosome">your chromosome</param>
+            <returns>the integer.</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.ExtractDNA``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Extract part of the DNA from a chromosome. 
+            </summary>
+            <typeparam name="T">any chromosome type</typeparam>
+            <param name="chromosome">the chromosome</param>
+            <param name="index">start the extraction</param>
+            <param name="length">length of the extraction</param>
+            <returns>a piece of the DNA from the original chromosome</returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Char[][])">
             <summary>
             

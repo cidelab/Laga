@@ -5,10 +5,44 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
-    public class LagaTools
+
+    /// <summary>
+    /// A collection of tools to operate on populations and chromosomes.
+    /// </summary>
+    public static class LagaTools
     {
-        public LagaTools()
+
+        /// <summary>
+        /// Convert a binary chromosome to an integer, base of 2.
+        /// </summary>
+        /// <typeparam name="T">chromosome type</typeparam>
+        /// <param name="chromosome">your chromosome</param>
+        /// <returns>the integer.</returns>
+        public static int BinaryChromosomeToInteger<T>(this T[] chromosome)
         {
+            string s = String.Join<T>("", chromosome);
+            if(s == null)
+            {
+                return -1;
+            }
+            else
+            {
+                return Convert.ToInt32(s, 2);
+            }
+        }
+        /// <summary>
+        /// Extract part of the DNA from a chromosome. 
+        /// </summary>
+        /// <typeparam name="T">any chromosome type</typeparam>
+        /// <param name="chromosome">the chromosome</param>
+        /// <param name="index">start the extraction</param>
+        /// <param name="length">length of the extraction</param>
+        /// <returns>a piece of the DNA from the original chromosome</returns>
+        public static T[] ExtractDNA<T>(this T[] chromosome, int index, int length)
+        {
+            T[] result = new T[length];
+            Array.Copy(chromosome, index, result, 0, length);
+            return result;
         }
 
         /// <summary>
@@ -138,13 +172,13 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="arrInt"> the array of integers to shuffle</param>
         /// <returns></returns>
-        public int[] Fisher_Yates(int[] arrInt)
+        public static int[] Fisher_Yates(int[] arrInt)
         {
             int cant = arrInt.Length;
 
             int[] arrMut = new int[cant];
             Array.Copy(arrInt, arrMut, cant);
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < cant; i++)
             {
                 int index = i + (int)(r.NextDouble() * (cant - i));
@@ -160,12 +194,12 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="arrObj">the array of objects to shuffle</param>
         /// <returns></returns>
-        public object[] Fisher_Yates(object[] arrObj)
+        public static object[] Fisher_Yates(object[] arrObj)
         {
             int cant = arrObj.Length;
             object[] arrObjMuts = new object[cant];
             Array.Copy(arrObj, arrObjMuts, cant);
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < cant; i++)
             {
                 int index = i + (int)(r.NextDouble() * (cant - i));
@@ -185,7 +219,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="arrObj">the array of objects to shuffle</param>
         /// <param name="percent">the percent to shuffle</param>
         /// <returns></returns>
-        public object[] Fisher_YatesPercent(object[] arrObj, float percent)
+        public static object[] Fisher_YatesPercent(object[] arrObj, float percent)
         {
             int l = arrObj.Length;
             object[] arrObjMuts = new object[l];
@@ -194,7 +228,7 @@ namespace Laga.GeneticAlgorithm
             int cant = (int)(l * percent);
             cant = (cant <= 0) ? cant = 2 : cant;
 
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
 
             for (int i = 0; i < cant; i++)
             {
@@ -213,10 +247,10 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="thershold">thershold parameter. 0.5 = 50%</param>
         /// <returns></returns>
-        public char RandomCharBinary(float thershold)
+        public static char RandomCharBinary(float thershold)
         {
             char t;
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
             if (r.NextDouble() < thershold)
             {
                 t = '1';
@@ -235,9 +269,9 @@ namespace Laga.GeneticAlgorithm
         /// <param name="start">the start number for the table, inclusive</param>
         /// <param name="end">the end number for the table, inclusive</param>
         /// <returns>char</returns>
-        public char RandomChar(int start, int end)
+        public static char RandomChar(int start, int end)
         {
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
             return (char)r.Next(start, end + 1);
         }
 
@@ -246,10 +280,10 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <typeparam name="T">the type of data</typeparam>
         /// <param name="arrData">the array of data</param>
-        public void Fishe_Yates<T>(T[] arrData)
+        public static void Fishe_Yates<T>(T[] arrData)
         {
             int n = arrData.Length;
-            Random r = new Random((int)DateTime.Now.Millisecond);
+            Random r = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < n; i++)
             {
                 int ri = i + (int)(r.NextDouble() * (n - i));
@@ -266,7 +300,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="max">the maximum value</param>
         /// <param name="percent">the percent of return, if 1f will return all the numbers.</param>
         /// <returns>array of integers if wrong array of 0</returns>
-        public int[] RandomInt(int min, int max, float percent)
+        public static int[] RandomInt(int min, int max, float percent)
         {
             if(min > max) { return new int[] { 0 }; }
 
@@ -290,7 +324,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="lengthPop">the length of the population</param>
         /// <param name="percent">the percent of mutation</param>
         /// <returns>array of indexs</returns>
-        public int[] Mom_Dad(int lengthPop, float percent)
+        public static int[] Mom_Dad(int lengthPop, float percent)
         {
             //numbers and utilities..
             int size = (int)(percent * lengthPop);

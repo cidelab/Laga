@@ -11,7 +11,6 @@ namespace Laga.GeneticAlgorithm
     public class Crossover
     {
         Random rnd;
-        LagaTools lt;
 
         private int[] arrIndex;
 
@@ -33,7 +32,6 @@ namespace Laga.GeneticAlgorithm
         public Crossover()
         {
             rnd = new Random();
-            lt = new LagaTools();
         }
 
         /// <summary>
@@ -46,7 +44,7 @@ namespace Laga.GeneticAlgorithm
         public object[][] SinglePointCrossover(object[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            arrIndex = lt.Mom_Dad(popLength, percent);
+            arrIndex = LagaTools.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length; 
             object[] dad;
             object[] mom;
@@ -112,7 +110,7 @@ namespace Laga.GeneticAlgorithm
         public double[][] SinglePointCrossover(double[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            arrIndex = lt.Mom_Dad(popLength, percent);
+            arrIndex = LagaTools.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length;
 
             double[] dad;
@@ -160,7 +158,7 @@ namespace Laga.GeneticAlgorithm
         public float[][] SinglePointCrossover(float[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            arrIndex = lt.Mom_Dad(popLength, percent);
+            arrIndex = LagaTools.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length;
             float[] dad;
             float[] mom;
@@ -207,7 +205,7 @@ namespace Laga.GeneticAlgorithm
         public int[][] SinglePointCrossover(int[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            arrIndex = lt.Mom_Dad(popLength, percent);
+            arrIndex = LagaTools.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length;
 
             int[] dad;
@@ -255,7 +253,7 @@ namespace Laga.GeneticAlgorithm
         public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
-            arrIndex = lt.Mom_Dad(popLength, percent);
+            arrIndex = LagaTools.Mom_Dad(popLength, percent);
             int iLength = arrIndex.Length;
 
             char[][] inherencePop = new char[iLength][];

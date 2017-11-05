@@ -27,7 +27,6 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
-        private LagaTools lg;
         private Random rnd;
 
         /// <summary>
@@ -36,9 +35,8 @@ namespace Laga.GeneticAlgorithm
         /// <param name="Size">The Size of the Chromosome</param>
         public GenrChromosome(int Size)
         {
-            rnd = new Random((int)DateTime.Now.Millisecond);
+            rnd = new Random(DateTime.Now.Millisecond);
             this.size = Size;
-            lg = new LagaTools();
         }
  
         /// <summary>
@@ -136,7 +134,7 @@ namespace Laga.GeneticAlgorithm
                 chr[count] = i;
                 count++;
             }
-            return lg.Fisher_Yates(chr);
+            return LagaTools.Fisher_Yates(chr);
         }
 
         /// <summary>
@@ -170,7 +168,7 @@ namespace Laga.GeneticAlgorithm
             char[] chr = new char[size];
             
             for (int i = 0; i < size; i++)
-                chr[i] = lg.RandomChar(start, end);
+                chr[i] = LagaTools.RandomChar(start, end);
 
             return chr;
         }

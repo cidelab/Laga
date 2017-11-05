@@ -10,7 +10,6 @@ namespace Laga.GeneticAlgorithm
     /// </summary>
     public class GenrPopulation
     {
-        private LagaTools lgTools;
         private Random rnd;
         private int sizePopulation;
 
@@ -36,8 +35,7 @@ namespace Laga.GeneticAlgorithm
         public GenrPopulation(int SizePopulation)
         {
             sizePopulation = SizePopulation;
-            lgTools = new LagaTools();
-            rnd = new Random((int)DateTime.Now.Millisecond);
+            rnd = new Random(DateTime.Now.Millisecond);
         }
 
         /// <summary>
@@ -60,7 +58,7 @@ namespace Laga.GeneticAlgorithm
                 for (int i = s; i < sizePopulation; ++i)
                 {
                     SeedChromosome = pop[i - 1];
-                    pop[i] = lgTools.Fisher_YatesPercent(SeedChromosome, percent);
+                    pop[i] = LagaTools.Fisher_YatesPercent(SeedChromosome, percent);
                 }
             }
              
@@ -167,7 +165,7 @@ namespace Laga.GeneticAlgorithm
 
                 for (int i = 0; i < sizePopulation; ++i)
                 {
-                    pop[i] = lgTools.Fisher_Yates(chromosome);
+                    pop[i] = LagaTools.Fisher_Yates(chromosome);
                 }
                 return pop;
             }
@@ -245,7 +243,7 @@ namespace Laga.GeneticAlgorithm
                 chromosome = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = lgTools.RandomChar(start, end);
+                    chromosome[j] = LagaTools.RandomChar(start, end);
                 }
                 charPopulation[i] = chromosome;
             }
