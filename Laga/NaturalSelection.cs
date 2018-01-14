@@ -4,8 +4,14 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NaturalSelection
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public NaturalSelection()
         {
 
@@ -22,6 +28,12 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public object[][] Elitism(object[][] srtPopulation, int count)
         {
             //clone the array.
@@ -40,16 +52,23 @@ namespace Laga.GeneticAlgorithm
             return selChromosome;
         }
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return object[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return object[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public object[][] RouletteWheelNonPolinomicMin(object[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -84,17 +103,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return object[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return object[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public object[][] RouletteWheel(object[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -129,23 +156,35 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheelSigmoidal method.
-         * select a number of indiviudals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected thant worst. 
-         * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param sizeRoulette  -> number of the individuals selected.
-         * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
-         * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
-         * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
-         * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
-         * @param s				-> the decay of the curve. 0 < s < 1  (See RouletteWheelSigmoidalEngine.pde).
-         * @return object[][] population.
-         * 
-         * 
-         */
+ * RouletteWheelSigmoidal method.
+ * select a number of indiviudals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected thant worst. 
+ * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param sizeRoulette  -> number of the individuals selected.
+ * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
+ * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
+ * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
+ * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
+ * @param s				-> the decay of the curve. 0 < s < 1  (See RouletteWheelSigmoidalEngine.pde).
+ * @return object[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="sizeRoulette"></param>
+        /// <param name="A1"></param>
+        /// <param name="A2"></param>
+        /// <param name="B1"></param>
+        /// <param name="B2"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public object[][] RouletteWheelSigmoidal(object[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -174,24 +213,34 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in int[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return object[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in int[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return object[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public object[][] TournamentSelection(object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             object[][] TourPop = new object[numbTour][];
@@ -215,24 +264,34 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in float[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return object[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in float[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return object[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public object[][] TournamentSelection(object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             object[][] TourPop = new object[numbTour][];
@@ -318,6 +377,7 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
+
         //////////////////////////DOUBLE/////////////////////////////////////
         /**
          * ElitismSelection method.
@@ -329,6 +389,12 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public double[][] Elitism(double[][] srtPopulation, int count)
         {
             //clone the array.
@@ -341,17 +407,25 @@ namespace Laga.GeneticAlgorithm
             }
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return double[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return double[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public double[][] RouletteWheelNonPolinomicMin(double[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -386,17 +460,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return double[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return double[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public double[][] RouletteWheel(double[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -431,23 +513,35 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheelSigmoidal method.
-         * select a number of indiviudals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected thant worst. 
-         * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param sizeRoulette  -> number of the individuals selected.
-         * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
-         * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
-         * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
-         * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
-         * @param s				-> the decay of the curve. 0 < s < 1 (See RouletteWheelSigmoidalEngine.pde).
-         * @return float[][] population.
-         * 
-         * 
-         */
+ * RouletteWheelSigmoidal method.
+ * select a number of indiviudals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected thant worst. 
+ * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param sizeRoulette  -> number of the individuals selected.
+ * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
+ * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
+ * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
+ * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
+ * @param s				-> the decay of the curve. 0 < s < 1 (See RouletteWheelSigmoidalEngine.pde).
+ * @return float[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="sizeRoulette"></param>
+        /// <param name="A1"></param>
+        /// <param name="A2"></param>
+        /// <param name="B1"></param>
+        /// <param name="B2"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public double[][] RouletteWheelSigmoidal(double[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -476,24 +570,34 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in float[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return double[][] population.
-         * 
-         * 
-         */
+  * TournamentSelection method.
+  * select a number of indiviudals trough a tournament selection.
+  * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+  * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+  * This method return a new population and can be bigger than the original size.
+  * in the TorunamentSelection method is not necessary a sorted population.
+  * 
+  * @param srtPopulation -> a population.
+  * @param resutls		-> the array of results from the evaluation in float[] flavor.
+  * @param numbTour 		-> the quantity of tournaments, any integer.
+  * @param preasure 	 	-> number of individuals in the competition.
+  * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+  * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+  * @return double[][] population.
+  * 
+  * 
+  */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public double[][] TournamentSelection(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             double[][] TourPop = new double[numbTour][];
@@ -517,24 +621,34 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in int[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return double[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in int[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return double[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public double[][] TournamentSelection(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             double[][] TourPop = new double[numbTour][];
@@ -617,6 +731,7 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
+
         //////////////////////////FLOAT/////////////////////////////////////
         /**
          * ElitismSelection method.
@@ -628,6 +743,12 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public float[][] Elitism(float[][] srtPopulation, int count)
         {
             //clone the array.
@@ -642,17 +763,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return float[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return float[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public float[][] RouletteWheel(float[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -687,17 +816,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return float[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return float[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public float[][] RouletteWheel(float[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -732,23 +869,35 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheelSigmoidal method.
-         * select a number of indiviudals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected thant worst. 
-         * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param sizeRoulette  -> number of the individuals selected.
-         * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
-         * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
-         * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
-         * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return float[][] population.
-         * 
-         * 
-         */
+ * RouletteWheelSigmoidal method.
+ * select a number of indiviudals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected thant worst. 
+ * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param sizeRoulette  -> number of the individuals selected.
+ * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
+ * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
+ * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
+ * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return float[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="sizeRoulette"></param>
+        /// <param name="A1"></param>
+        /// <param name="A2"></param>
+        /// <param name="B1"></param>
+        /// <param name="B2"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public float[][] RouletteWheelSigmoidal(float[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -777,24 +926,34 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in float[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return float[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in float[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return float[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public float[][] TournamentSelection(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             float[][] TourPop = new float[numbTour][];
@@ -818,24 +977,34 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in int[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return float[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in int[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return float[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public float[][] TournamentSelection(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             float[][] TourPop = new float[numbTour][];
@@ -929,6 +1098,12 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public int[][] Elitism(int[][] srtPopulation, int count)
         {
             //clone the array.
@@ -949,17 +1124,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return int[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return int[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public int[][] RouletteWheel(int[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -994,7 +1177,8 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
-        /**
+
+                /**
          * RouletteWheel method.
          * select a number of individuals depending of their ranking in the population.
          * the best ranked individuals have more chance to be selected than worst. 
@@ -1005,6 +1189,13 @@ namespace Laga.GeneticAlgorithm
          * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
          * @return int[][] population.
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public int[][] RouletteWheel(int[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -1039,23 +1230,35 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheelSigmoidal method.
-         * select a number of indiviudals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected thant worst. 
-         * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param sizeRoulette  -> number of the individuals selected.
-         * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
-         * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
-         * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
-         * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return int[][] population.
-         * 
-         * 
-         */
+ * RouletteWheelSigmoidal method.
+ * select a number of indiviudals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected thant worst. 
+ * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param sizeRoulette  -> number of the individuals selected.
+ * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
+ * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
+ * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
+ * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return int[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="sizeRoulette"></param>
+        /// <param name="A1"></param>
+        /// <param name="A2"></param>
+        /// <param name="B1"></param>
+        /// <param name="B2"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public int[][] RouletteWheelSigmoidal(int[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -1084,24 +1287,34 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in float[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return int[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in float[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return int[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public int[][] TournamentSelection(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             int[][] TourPop = new int[numbTour][];
@@ -1125,24 +1338,34 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of individuals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the pressure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in int[] flavour.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return int[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of individuals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the pressure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in int[] flavour.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return int[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public int[][] TournamentSelection(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             int[][] TourPop = new int[numbTour][];
@@ -1236,6 +1459,12 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public char[][] Elitism(char[][] srtPopulation, int count)
         {
             count = (count > srtPopulation.Length) ? srtPopulation.Length : count;
@@ -1251,17 +1480,25 @@ namespace Laga.GeneticAlgorithm
 
             return selChromosome;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return char[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return char[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public char[][] RouletteWheel(char[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -1296,17 +1533,25 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheel method.
-         * select a number of individuals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected than worst. 
-         * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param results 		-> the array of results from the evaluation in int[] flavour
-         * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
-         * @return char[][] population.
-         */
+ * RouletteWheel method.
+ * select a number of individuals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected than worst. 
+ * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param results 		-> the array of results from the evaluation in int[] flavour
+ * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
+ * @return char[][] population.
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
         public char[][] RouletteWheel(char[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -1342,23 +1587,35 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * RouletteWheelSigmoidal method.
-         * select a number of indiviudals depending of their ranking in the population.
-         * the best ranked individuals have more chance to be selected thant worst. 
-         * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
-         * 
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param sizeRoulette  -> number of the individuals selected.
-         * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
-         * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
-         * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
-         * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return char[][] population.
-         * 
-         * 
-         */
+ * RouletteWheelSigmoidal method.
+ * select a number of indiviudals depending of their ranking in the population.
+ * the best ranked individuals have more chance to be selected thant worst. 
+ * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
+ * 
+ * @param srtPopulation -> a sorted population by any sort algorithm.
+ * @param sizeRoulette  -> number of the individuals selected.
+ * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
+ * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
+ * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
+ * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return char[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="sizeRoulette"></param>
+        /// <param name="A1"></param>
+        /// <param name="A2"></param>
+        /// <param name="B1"></param>
+        /// <param name="B2"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public char[][] RouletteWheelSigmoidal(char[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -1387,24 +1644,34 @@ namespace Laga.GeneticAlgorithm
 
             return RwheelPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in float[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return char[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in float[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return char[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public char[][] TournamentSelection(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             char[][] TourPop = new char[numbTour][];
@@ -1428,24 +1695,34 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
+
         /**
-         * TournamentSelection method.
-         * select a number of indiviudals trough a tournament selection.
-         * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-         * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-         * This method return a new population and can be bigger than the original size.
-         * in the TorunamentSelection method is not necessary a sorted population.
-         * 
-         * @param srtPopulation -> a population.
-         * @param resutls		-> the array of results from the evaluation in int[] flavor.
-         * @param numbTour 		-> the quantity of tournaments, any integer.
-         * @param preasure 	 	-> number of individuals in the competition.
-         * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-         * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-         * @return char[][] population.
-         * 
-         * 
-         */
+ * TournamentSelection method.
+ * select a number of indiviudals trough a tournament selection.
+ * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+ * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
+ * This method return a new population and can be bigger than the original size.
+ * in the TorunamentSelection method is not necessary a sorted population.
+ * 
+ * @param srtPopulation -> a population.
+ * @param resutls		-> the array of results from the evaluation in int[] flavor.
+ * @param numbTour 		-> the quantity of tournaments, any integer.
+ * @param preasure 	 	-> number of individuals in the competition.
+ * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
+ * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
+ * @return char[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="srtPopulation"></param>
+        /// <param name="results"></param>
+        /// <param name="numbTour"></param>
+        /// <param name="preasure"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public char[][] TournamentSelection(char[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             char[][] TourPop = new char[numbTour][];

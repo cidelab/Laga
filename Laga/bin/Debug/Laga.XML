@@ -299,7 +299,7 @@
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.BinaryChromosomeToInteger``1(``0[])">
             <summary>
-            Convert a binary chromosome to an integer.
+            Convert a binary chromosome to an integer, base of 2.
             </summary>
             <typeparam name="T">chromosome type</typeparam>
             <param name="chromosome">your chromosome</param>
@@ -406,6 +406,97 @@
             <param name="percent">the percent of mutation</param>
             <returns>array of indexs</returns>
         </member>
+        <member name="T:Laga.GeneticAlgorithm.Mutation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.#ctor(System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="MutationRate"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.MutationSwap(System.Object[][],System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="pop"></param>
+            <param name="percentChrom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.MutationSwap(System.Object[],System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="chrom"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.NumbMutation(System.Double[][],System.Double,System.Double,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="pop"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentChrom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.DoubleMutation(System.Double[],System.Single,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="mutatedPop"></param>
+            <param name="percent"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.NumbMutation(System.Single[][],System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="pop"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentChrom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.FloatMutation(System.Single[],System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="mutatedPop"></param>
+            <param name="percent"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.NumbMutation(System.Int32[][],System.Int32,System.Int32,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="pop"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentChrom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.IntMutation(System.Int32[],System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="mutatedPop"></param>
+            <param name="percent"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.BinaryCharMutation(System.Char[][],System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="pop"></param>
+            <param name="ChroPercent"></param>
+            <returns></returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Mutation.CharMutation(System.Char[][],System.Single,System.Int32,System.Int32)">
             <summary>
             A Mutation Algorithm
@@ -415,6 +506,16 @@
             <param name="start">the start number for the table, inclusive: Eg: 97</param>
             <param name="end">the end number for the table, inclusive: Eg: 122</param>
             <returns>char[][]</returns>
+        </member>
+        <member name="T:Laga.GeneticAlgorithm.NaturalSelection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.NaturalSelection.#ctor">
+            <summary>
+            
+            </summary>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Object[][],System.Int32)">
              ElitismSelection method.
@@ -864,6 +965,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Object[][],System.Int32[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -875,6 +982,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Double[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -886,6 +999,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Double[][],System.Int32[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -897,6 +1016,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Single[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -908,6 +1033,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Single[][],System.Int32[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -919,6 +1050,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Int32[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -930,6 +1067,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Int32[][],System.Int32[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -941,6 +1084,12 @@
              @return automatically the population is sorted updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Single[],System.Boolean)">
             An optimised BidirectionalBubbleSort method.
@@ -952,6 +1101,12 @@
              @return automatically the population sorted is updated. the original population will be modified.
              
              
+            <summary>
+            
+            </summary>
+            <param name="population"></param>
+            <param name="arrResults"></param>
+            <param name="minmax"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Int32[],System.Boolean)">
             <summary>

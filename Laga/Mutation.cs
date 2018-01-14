@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace Laga.GeneticAlgorithm
 {
+    /// <summary>
+    /// 
+    /// </summary>
      public class Mutation
     {
         private float popPercent;
@@ -11,12 +14,21 @@ namespace Laga.GeneticAlgorithm
 
         private Random rnd;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="MutationRate"></param>
         public Mutation(float MutationRate)
         {
             popPercent = MutationRate;
             rnd = new Random(DateTime.Now.Millisecond);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="percentChrom"></param>
+        /// <returns></returns>
         public object[][] MutationSwap(object[][] pop, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
@@ -37,6 +49,11 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="chrom"></param>
+        /// <param name="p"></param>
         private void MutationSwap(object[] chrom, float p)
         {
             int size = (int)(chrom.Length * p);
@@ -59,7 +76,14 @@ namespace Laga.GeneticAlgorithm
                 chrom[index2] = temp;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentChrom"></param>
+        /// <returns></returns>
         public double[][] NumbMutation(double[][] pop, double min, double max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
@@ -79,6 +103,13 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mutatedPop"></param>
+        /// <param name="percent"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
         private void DoubleMutation(double[] mutatedPop, float percent, double min, double max)
         {
             int cant = (int)(mutatedPop.Length * percent);
@@ -92,7 +123,14 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = min + rnd.NextDouble() * (max - min);
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentChrom"></param>
+        /// <returns></returns>
         public float[][] NumbMutation(float[][] pop, float min, float max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
@@ -111,6 +149,13 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mutatedPop"></param>
+        /// <param name="percent"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
         private void FloatMutation(float[] mutatedPop, float percent, float min, float max)
         {
             int cant = (int)(mutatedPop.Length * percent);
@@ -123,7 +168,14 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = (float)(min + rnd.NextDouble() * (max - min));
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentChrom"></param>
+        /// <returns></returns>
         public int[][] NumbMutation(int[][] pop, int min, int max, float percentChrom)
         {
             cant = (int)(popPercent * pop.Length);
@@ -143,6 +195,13 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mutatedPop"></param>
+        /// <param name="percent"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
         private void IntMutation(int[] mutatedPop, float percent, float min, float max)
         {
             int cant = (int)(mutatedPop.Length * percent);
@@ -155,7 +214,12 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = (int)(min + rnd.NextDouble() * (max - min));
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="ChroPercent"></param>
+        /// <returns></returns>
         public char[][] BinaryCharMutation(char[][] pop, float ChroPercent)
         {
             SelectChromosomes(pop);

@@ -27,16 +27,22 @@ namespace Laga.GeneticAlgorithm
 
         }
         /**
-	 *An optimised BidirectionalBubbleSort method.
-	 * Sort the individuals in the population by fitness value.
-	 * 
-	 * @param population -> population to sort;
-	 * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-	 * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-	 * @return automatically the population is sorted updated. the original population will be modified.
-	 * 
-	 * 
-	 */
+*An optimised BidirectionalBubbleSort method.
+* Sort the individuals in the population by fitness value.
+* 
+* @param population -> population to sort;
+* @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+* @param minmax 	 -> if is true the sort is by min to max, else max to min.
+* @return automatically the population is sorted updated. the original population will be modified.
+* 
+* 
+*/
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(object[][] population, float[] arrResults, bool minmax)
         {
             int j;
@@ -83,17 +89,24 @@ namespace Laga.GeneticAlgorithm
             objPopulation = population;
             fltArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(object[][] population, int[] arrResults, bool minmax)
         {
             int j;
@@ -140,17 +153,24 @@ namespace Laga.GeneticAlgorithm
             objPopulation = population;
             intArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(double[][] population, float[] arrResults, bool minmax)
         {
             int j;
@@ -163,6 +183,7 @@ namespace Laga.GeneticAlgorithm
                 n--;
 
                 for (j = st; j < n; j++)
+
                 {
                     if (arrResults[j] > arrResults[j + 1])
                     {
@@ -197,17 +218,24 @@ namespace Laga.GeneticAlgorithm
             dblPopulation = population;
             fltArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(double[][] population, int[] arrResults, bool minmax)
         {
             int j;
@@ -256,17 +284,24 @@ namespace Laga.GeneticAlgorithm
             intArrResults = arrResults;
 
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(float[][] population, float[] arrResults, bool minmax)
         {
             int j;
@@ -313,17 +348,24 @@ namespace Laga.GeneticAlgorithm
             fltPopulation = population;
             fltArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(float[][] population, int[] arrResults, bool minmax)
         {
             int j;
@@ -370,17 +412,24 @@ namespace Laga.GeneticAlgorithm
             fltPopulation = population;
             intArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(int[][] population, float[] arrResults, bool minmax)
         {
             int j;
@@ -428,16 +477,22 @@ namespace Laga.GeneticAlgorithm
             fltArrResults = arrResults;
         }
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is true the sort is by min to max, else max to min.
-         * @return automatically the population is sorted updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is true the sort is by min to max, else max to min.
+ * @return automatically the population is sorted updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(int[][] population, int[] arrResults, bool minmax)
         {
             int j;
@@ -484,17 +539,24 @@ namespace Laga.GeneticAlgorithm
             intPopulation = population;
             intArrResults = arrResults;
         }
+
         /**
-         *An optimised BidirectionalBubbleSort method.
-         * Sort the individuals in the population by fitness value.
-         * 
-         * @param population -> population to sort;
-         * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-         * @param minmax 	 -> if is false the sort is by min to max, true max to min.
-         * @return automatically the population sorted is updated. the original population will be modified.
-         * 
-         * 
-         */
+ *An optimised BidirectionalBubbleSort method.
+ * Sort the individuals in the population by fitness value.
+ * 
+ * @param population -> population to sort;
+ * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
+ * @param minmax 	 -> if is false the sort is by min to max, true max to min.
+ * @return automatically the population sorted is updated. the original population will be modified.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="arrResults"></param>
+        /// <param name="minmax"></param>
         public void BidirectionalBubbleSort(char[][] population, float[] arrResults, bool minmax)
         {
             int j;
