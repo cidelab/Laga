@@ -1,24 +1,8 @@
-## Welcome
-# header 1
-## header 2
-### header 3
-[designemergente](http://www.designemergente.org)
-- item 1
-- item 2
-- item 3
-
-1. [Laga framework](https://github.com/cidelab/laga/wiki/Home)
-2. [Getting started](https://github.com/cidelab/Laga/wiki/Getting-Started)
-3. [Genetic Algorithms](https://github.com/cidelab/Laga/wiki/Genetic-Algorithm)
-4. [Graphics](https://github.com/cidelab/Laga/wiki/Graphics)
-5. [IO](https://github.com/cidelab/Laga/wiki/IO)
-
-There are many ways to contribute: Use the framework, Review the code, Contribute with examples and documentation, Help improve this wiki.
-
-<img style="float: right;" src="http://www.designemergente.org/laga/logoLarge.png">
-![](http://www.designemergente.org/laga/logoLarge.png)
+<img style="float: left;" src="http://www.designemergente.org/laga/logoLarge.png">
 
 Laga name comes from “Librería de Algoritmos Genéticos para Arquitectura”.  The concept evolved but the name remains the same. The framework is designed for easy to use. Nevertheless, you will need some programming knowledge to used efficiently and overall understand the concept of genetic algorithms. I’m open to discussing how the structure work and how could be improved. The framework currently has 3 main topics. Genetic Algorithms, Graphics, and Interoperability.
+
+[designemergente](http://www.designemergente.org)
  
 ## Genetic Algorithms
 This section provides all the necessary tools to design and create Genetic Algorithms. The structure is very simple to use. Call the reference <b>using Laga.GeneticAlgorithm;</b>
