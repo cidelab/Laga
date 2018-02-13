@@ -10,7 +10,7 @@ All of these works sets the base of the Evolutionary Computation. In the 80s GAs
 A Genetic Algorithm is an heuristic search method based in the Darwin Natural Selection Theory. And it can be used as a optimization tool.
 </p>
 #### Timeline of some GAs highlights
-[](http://www.designemergente.org/laga/GAs1.jpg)
+![image](http://www.designemergente.org/laga/GAs1.jpg)
 <br/>
 == Biological Bases ==
 The GAs are based in the natural selection.
