@@ -1,4 +1,4 @@
-= Genetic Algorithms (GAs)=
+# Genetic Algorithms (GAs)
 <p align="justify">
 Genetic Algorithms Were invited by John Holland in the 60s and were developed by him, students and colleges of the Michigan University between 1960 and 1970. Holland was the first to propose the crossover and other genetic combinatorial operators. The aim of Holland, was to use the GAs a formal study of the adaptation and evolution mechanism and how can be exported to computational systems. 
 <br/>
