@@ -1,5 +1,4 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-minimal
 title: laga framework
 show_downloads: true
-
-theme: jekyll-theme-minimal
+toc: true
