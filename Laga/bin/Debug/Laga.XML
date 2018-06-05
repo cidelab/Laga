@@ -526,6 +526,12 @@
              @return object[][] population.
              
              
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="count"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelNonPolinomicMin(System.Object[][],System.Int32[],System.Int32)">
             RouletteWheel method.
@@ -537,6 +543,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return object[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Object[][],System.Single[],System.Int32)">
             RouletteWheel method.
@@ -548,6 +561,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return object[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Object[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)" -->
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Object[][],System.Int32[],System.Int32,System.Int32,System.String)">
@@ -567,6 +587,15 @@
             @return object[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Object[][],System.Single[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -585,6 +614,15 @@
             @return object[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Double[][],System.Int32)">
              ElitismSelection method.
@@ -595,6 +633,12 @@
              @return double[][] population.
              
              
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="count"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelNonPolinomicMin(System.Double[][],System.Single[],System.Int32)">
             RouletteWheel method.
@@ -606,6 +650,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return double[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Double[][],System.Int32[],System.Int32)">
             RouletteWheel method.
@@ -617,6 +668,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return double[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Double[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)" -->
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Double[][],System.Single[],System.Int32,System.Int32,System.String)">
@@ -636,6 +694,15 @@
             @return double[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Double[][],System.Int32[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -654,6 +721,15 @@
             @return double[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Single[][],System.Int32)">
              ElitismSelection method.
@@ -664,6 +740,12 @@
              @return float[][] population.
              
              
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="count"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Single[][],System.Single[],System.Int32)">
             RouletteWheel method.
@@ -675,6 +757,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return float[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Single[][],System.Int32[],System.Int32)">
             RouletteWheel method.
@@ -686,6 +775,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return float[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Single[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">
             RouletteWheelSigmoidal method.
@@ -703,6 +799,17 @@
             @return float[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="sizeRoulette"></param>
+            <param name="A1"></param>
+            <param name="A2"></param>
+            <param name="B1"></param>
+            <param name="B2"></param>
+            <param name="s"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Single[][],System.Single[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -721,6 +828,15 @@
             @return float[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Single[][],System.Int32[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -739,6 +855,15 @@
             @return float[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Int32[][],System.Int32)">
              ElitismSelection method.
@@ -749,6 +874,12 @@
              @return int[][] population.
              
              
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="count"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Int32[][],System.Single[],System.Int32)">
             RouletteWheel method.
@@ -760,6 +891,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return int[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Int32[][],System.Int32[],System.Int32)">
             RouletteWheel method.
@@ -771,6 +909,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return int[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Int32[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">
             RouletteWheelSigmoidal method.
@@ -788,6 +933,17 @@
             @return int[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="sizeRoulette"></param>
+            <param name="A1"></param>
+            <param name="A2"></param>
+            <param name="B1"></param>
+            <param name="B2"></param>
+            <param name="s"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Int32[][],System.Single[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -806,6 +962,15 @@
             @return int[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Int32[][],System.Int32[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -824,6 +989,15 @@
             @return int[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.Elitism(System.Char[][],System.Int32)">
              ElitismSelection method.
@@ -834,6 +1008,12 @@
              @return char[][] population.
              
              
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="count"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Char[][],System.Single[],System.Int32)">
             RouletteWheel method.
@@ -845,6 +1025,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return char[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheel(System.Char[][],System.Int32[],System.Int32)">
             RouletteWheel method.
@@ -856,6 +1043,13 @@
             @param results 		-> the array of results from the evaluation in int[] flavour
             @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
             @return char[][] population.
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="maxItem"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Char[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">
             RouletteWheelSigmoidal method.
@@ -873,6 +1067,17 @@
             @return char[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="sizeRoulette"></param>
+            <param name="A1"></param>
+            <param name="A2"></param>
+            <param name="B1"></param>
+            <param name="B2"></param>
+            <param name="s"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Char[][],System.Single[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -891,6 +1096,15 @@
             @return char[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Char[][],System.Int32[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
@@ -909,6 +1123,15 @@
             @return char[][] population.
             
             
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="results"></param>
+            <param name="numbTour"></param>
+            <param name="preasure"></param>
+            <param name="type"></param>
+            <returns></returns>
         </member>
         <member name="T:Laga.GeneticAlgorithm.point">
             <summary>

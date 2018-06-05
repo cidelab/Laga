@@ -15,3 +15,21 @@ C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\PiscoSour\obj\Debug\P
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\PiscoSour\obj\Debug\PiscoSour.pdb
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\PiscoSour\bin\Debug\Laga.xml
 C:\Users\Carlos\Documents\Visual Studio 2017\Projects\laga\PiscoSour\obj\Debug\PiscoSour.csprojResolveAssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.csprojResolveAssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\MainWindow.g.cs
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\App.g.cs
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour_MarkupCompile.cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour_MarkupCompile.lref
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\PiscoSour.exe.config
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\PiscoSour.exe
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\PiscoSour.pdb
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\Laga.dll
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\Laga.pdb
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\bin\Debug\Laga.xml
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\MainWindow.baml
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.g.resources
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.Properties.Resources.resources
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.csproj.GenerateResource.Cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.csproj.CoreCompileInputs.cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.exe
+C:\Users\delab\Documents\GitHub\Laga\Laga\PiscoSour\obj\Debug\PiscoSour.pdb
