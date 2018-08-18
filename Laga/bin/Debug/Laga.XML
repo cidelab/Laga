@@ -143,7 +143,7 @@
             <summary>
             Constructor:
             </summary>
-            <param name="Size">The Size of the Chromosome</param>
+            <param name="Size">The Lengthof the Chromosome</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)">
             <summary>
@@ -152,7 +152,7 @@
             </summary>
             <param name="min">The min value in the chromosome</param>
             <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-            <returns></returns>
+            <returns>double[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single,System.Single)">
             <summary>
@@ -161,7 +161,7 @@
             </summary>
             <param name="min">The min value in the chromosome</param>
             <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-            <returns></returns>
+            <returns>float[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32,System.Int32)">
             <summary>
@@ -170,7 +170,7 @@
             </summary>
             <param name="min">The min value in the chromosome</param>
             <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-            <returns></returns>
+            <returns>int[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary">
             <summary>

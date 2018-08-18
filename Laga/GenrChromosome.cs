@@ -32,7 +32,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Constructor:
         /// </summary>
-        /// <param name="Size">The Size of the Chromosome</param>
+        /// <param name="Size">The Lengthof the Chromosome</param>
         public GenrChromosome(int Size)
         {
             rnd = new Random(DateTime.Now.Millisecond);
@@ -45,7 +45,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="min">The min value in the chromosome</param>
         /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-        /// <returns></returns>
+        /// <returns>double[]</returns>
         public double[] NumberChromosome(double min, double max)
         {
             double[] chr = new double[size];
@@ -64,7 +64,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="min">The min value in the chromosome</param>
         /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-        /// <returns></returns>
+        /// <returns>float[]</returns>
         public float[] NumberChromosome(float min, float max)
         {
             float[] chr = new float[size];
@@ -83,7 +83,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="min">The min value in the chromosome</param>
         /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
-        /// <returns></returns>
+        /// <returns>int[]</returns>
         public int[] NumberChromosome(int min, int max)
         {
             int[] ch = new int[size];
@@ -155,12 +155,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// creates an random char chromosome composed by characters.
+        /// Generates an random char chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
         ///<a href = "http://stackoverflow.com" > here </ a >
-        /// <param name="start">the start number for the table, inclusive</param>
-        /// <param name="end">the end number for the table, inclusive</param>
+        /// <param name="start">the start number in the table, inclusive</param>
+        /// <param name="end">the end number in the table, inclusive</param>
         /// <returns>returns a random list of characters</returns>
         /// 
         public char[] CharChromosome(int start, int end)
@@ -168,7 +168,9 @@ namespace Laga.GeneticAlgorithm
             char[] chr = new char[size];
             
             for (int i = 0; i < size; i++)
-                chr[i] = LagaTools.RandomChar(start, end);
+            {
+                chr[i] = (char)rnd.Next(start, end + 1);
+            }
 
             return chr;
         }
