@@ -231,7 +231,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
-        /// <returns></returns>
+        /// <returns>Population char[][]</returns>
         public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {
             char[] chromosome;
@@ -251,9 +251,9 @@ namespace Laga.GeneticAlgorithm
             return charPopulation;
         }
         /// <summary>
-        /// 
+        /// Genr8 a Random population of points [x,y,z]
         /// </summary>
-        /// <param name="SizeChromosome">The size of the chromosome</param>
+        /// <param name="SizeChromosome">The length of the chromosome</param>
         /// <param name="minX">The minimum value for X coordinate</param>
         /// <param name="maxX">The maximum value for X coordinate</param>
         /// <param name="minY">The minimum value for Y coordinate</param>
