@@ -39,7 +39,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Genr8 a random population based on a chromosome of objects[].
+        /// Genr8 a random population based on a chromosome of objects[]
         /// </summary>
         /// <param name="SeedChromosome">The seed chromosome to genr8 the population</param>
         /// <param name="percent">the mutation percent in the population</param>
@@ -48,20 +48,20 @@ namespace Laga.GeneticAlgorithm
         public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)
         {
             object[][] pop = new object[sizePopulation][];
-
-            int s = 0;
-            if (InOut)
-            {
-                pop[s] = SeedChromosome;
-                s++;
-                          
-                for (int i = s; i < sizePopulation; ++i)
+                  
+                for (int i = 0; i < sizePopulation; ++i)
                 {
-                    SeedChromosome = pop[i - 1];
-                    pop[i] = LagaTools.Fisher_YatesPercent(SeedChromosome, percent);
+                    object[] copyChromosome = (object[])SeedChromosome.Clone();
+
+                if ((i == 0) && (InOut))
+                    {
+                        pop[i] = SeedChromosome;
+                    }
+                    else
+                    {
+                        pop[i] = LagaTools.Fisher_YatesPercent(SeedChromosome, percent);
+                    }
                 }
-            }
-             
 
             return pop;
         }

@@ -197,8 +197,8 @@ namespace Laga.GeneticAlgorithm
         public static object[] Fisher_Yates(object[] arrObj)
         {
             int cant = arrObj.Length;
-            object[] arrObjMuts = new object[cant];
-            Array.Copy(arrObj, arrObjMuts, cant);
+            object[] arrObjMuts = (object[])arrObj.Clone();
+
             Random r = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < cant; i++)
             {
@@ -222,24 +222,35 @@ namespace Laga.GeneticAlgorithm
         public static object[] Fisher_YatesPercent(object[] arrObj, float percent)
         {
             int l = arrObj.Length;
-            object[] arrObjMuts = new object[l];
-            Array.Copy(arrObj, arrObjMuts, l);
+            object[] arrObjMuts = (object[])arrObj.Clone();
 
             int cant = (int)(l * percent);
             cant = (cant <= 0) ? cant = 2 : cant;
 
-            Random r = new Random(DateTime.Now.Millisecond);
+            //Random r = new Random(DateTime.Now.Millisecond);
+            int index;
 
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(r.NextDouble() * (cant - i));
-
+                //index = i + (int)(r.NextDouble() * (cant - i));
+                index = GetRandomNumber(i, cant);
                 //swap
                 object temp = arrObjMuts[index];
                 arrObjMuts[index] = arrObjMuts[i];
                 arrObjMuts[i] = temp;
             }
             return arrObjMuts;
+        }
+
+        //Function to get random number
+        private static readonly Random getrandom = new Random();
+
+        public static int GetRandomNumber(int min, int max)
+        {
+            lock (getrandom) // synchronize
+            {
+                return getrandom.Next(min, max);
+            }
         }
 
         /// <summary>

@@ -90,7 +90,8 @@ namespace Laga.GeneticAlgorithm
 
             for (int i = 0; i < size; i++)
             {
-                ch[i] = rnd.Next(min, max);
+                //ch[i] = rnd.Next(min, max);
+                ch[i] = LagaTools.GetRandomNumber(min, max);
             }
             return ch;
 

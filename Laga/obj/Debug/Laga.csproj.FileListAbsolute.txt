@@ -34,3 +34,4 @@ C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.csproj.ResolveComReference.
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.pdb
+C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
