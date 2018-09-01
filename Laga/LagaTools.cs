@@ -179,9 +179,10 @@ namespace Laga.GeneticAlgorithm
             int[] arrMut = new int[cant];
             Array.Copy(arrInt, arrMut, cant);
             Random r = new Random(DateTime.Now.Millisecond);
+
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(r.NextDouble() * (cant - i));
+                int index = i + (int)(GetRandomNumber() * (cant - i));
                 int temp = arrMut[index];
                 arrMut[index] = arrMut[i];
                 arrMut[i] = temp;
@@ -243,13 +244,20 @@ namespace Laga.GeneticAlgorithm
         }
 
         //Function to get random number
-        private static readonly Random getrandom = new Random();
+        private static readonly Random getrandom = new Random(DateTime.Now.Millisecond);
 
         public static int GetRandomNumber(int min, int max)
         {
             lock (getrandom) // synchronize
             {
                 return getrandom.Next(min, max);
+            }
+        }
+        public static double GetRandomNumber()
+        {
+            lock(getrandom)
+            {
+                return getrandom.NextDouble();
             }
         }
 
@@ -261,8 +269,8 @@ namespace Laga.GeneticAlgorithm
         public static char RandomCharBinary(float thershold)
         {
             char t;
-            Random r = new Random(DateTime.Now.Millisecond);
-            if (r.NextDouble() < thershold)
+
+            if (GetRandomNumber() < thershold)
             {
                 t = '1';
             }
@@ -282,8 +290,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>char</returns>
         public static char RandomChar(int start, int end)
         {
-            Random r = new Random(DateTime.Now.Millisecond);
-            return (char)r.Next(start, end + 1);
+            return (char)GetRandomNumber(start, end + 1);
         }
 
         /// <summary>

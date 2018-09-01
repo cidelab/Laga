@@ -187,7 +187,7 @@ namespace Laga.GeneticAlgorithm
                 chromosome = new int[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    if (rnd.NextDouble() >= 0.5)
+                    if (LagaTools.GetRandomNumber() >= 0.5)
                     {
                         chromosome[j] = 1;
                     }
@@ -216,7 +216,7 @@ namespace Laga.GeneticAlgorithm
                 arrChr = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    arrChr[j] = rnd.NextDouble() >= 0.5 ? '1' : '0';
+                    arrChr[j] = LagaTools.GetRandomNumber() >= 0.5 ? '1' : '0';
                 }
 
                 pop[i] = arrChr;
@@ -237,7 +237,6 @@ namespace Laga.GeneticAlgorithm
             char[] chromosome;
             char[][] charPopulation = new char[sizePopulation][];
 
-            Random rnd = new Random();
             for (int i = 0; i < sizePopulation; ++i)
             {
                 chromosome = new char[sizeChromosome];
