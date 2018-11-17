@@ -35,3 +35,10 @@ C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.ca
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.pdb
 C:\Users\delab\source\repos\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
+C:\Users\Carlos\Source\Repos\Laga\Laga\bin\Debug\Laga.XML
+C:\Users\Carlos\Source\Repos\Laga\Laga\bin\Debug\Laga.dll
+C:\Users\Carlos\Source\Repos\Laga\Laga\bin\Debug\Laga.pdb
+C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csproj.ResolveComReference.cache
+C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.dll
+C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.pdb
