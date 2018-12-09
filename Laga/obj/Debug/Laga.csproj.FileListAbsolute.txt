@@ -42,3 +42,4 @@ C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csproj.ResolveComReference
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.pdb
+C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache

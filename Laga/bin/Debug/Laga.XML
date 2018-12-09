@@ -196,8 +196,7 @@
         <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)" -->
         <member name="T:Laga.GeneticAlgorithm.GenrPopulation">
             <summary>
-            use this class to creates a Population
-            Populations are the base of the Genetic Algorithms.
+            use this class to create a Population
             </summary>
         </member>
         <member name="P:Laga.GeneticAlgorithm.GenrPopulation.SizePop">

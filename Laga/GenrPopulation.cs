@@ -5,8 +5,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// use this class to creates a Population
-    /// Populations are the base of the Genetic Algorithms.
+    /// use this class to create a Population
     /// </summary>
     public class GenrPopulation
     {
