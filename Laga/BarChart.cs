@@ -9,12 +9,19 @@ using System.Windows.Media;
 
 namespace Laga.Graphics
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class BarChart
     {
         private InkCanvas mInk;
         private double w;
         private double h;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="inkCanvas"></param>
         public BarChart(InkCanvas inkCanvas)
         {
             mInk = inkCanvas;

@@ -169,8 +169,8 @@ namespace Laga.GeneticAlgorithm
  * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
  * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
  * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
- * @param s				-> the decay of the curve. 0 < s < 1  (See RouletteWheelSigmoidalEngine.pde).
- * @return object[][] population.
+ * @param s				-> the decay of the curve. 0 < s < 1  (See RouletteWheelSigmoidalEngine.pde)
+ * return object[][] population.
  * 
  * 
  */
@@ -514,33 +514,16 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
- * RouletteWheelSigmoidal method.
- * select a number of indiviudals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected thant worst. 
- * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param sizeRoulette  -> number of the individuals selected.
- * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
- * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
- * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
- * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
- * @param s				-> the decay of the curve. 0 < s < 1 (See RouletteWheelSigmoidalEngine.pde).
- * @return float[][] population.
- * 
- * 
- */
         /// <summary>
-        /// 
+        /// Roulette Wheel Selection
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="sizeRoulette"></param>
-        /// <param name="A1"></param>
-        /// <param name="A2"></param>
-        /// <param name="B1"></param>
-        /// <param name="B2"></param>
-        /// <param name="s"></param>
+        /// <param name="srtPopulation">double[][], a sorted population by any sort algorithm</param>
+        /// <param name="sizeRoulette">int, number of the individuals to select</param>
+        /// <param name="A1">int, the maximum number of individuals in the roulette wheel (aprox)</param>
+        /// <param name="A2">int, the minimum number of individuals in the roulette wheel (aprox)</param>
+        /// <param name="B1">int, the start scope in the population: 1 the selection will start in the second individual</param>
+        /// <param name="B2">int, the scope in the population, if size population, then all individuals will be included</param>
+        /// <param name="s">float, factor decay: between 0 and 1 </param>
         /// <returns></returns>
         public double[][] RouletteWheelSigmoidal(double[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {

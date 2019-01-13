@@ -5,6 +5,9 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Laga.IO
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class IOExcelRead
     {
         private string filePath;
@@ -32,6 +35,9 @@ namespace Laga.IO
 
         }
 
+        /// <summary>
+        /// Get Excel sheet number.
+        /// </summary>
         public int SheetNum
         {
             get
@@ -129,6 +135,11 @@ namespace Laga.IO
 
         #region open and close excel application
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pos"></param>
+        /// <param name="display"></param>
         public void IOWrite_SetActiveSheet(int pos, bool display)
         {
             Excel.Sheets excelSheets = xlBook.Worksheets;
@@ -178,6 +189,9 @@ namespace Laga.IO
             return lstExcelNames; //check the sheetnumber...
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void IORead_OpenExcelApp()
         {
             excelApp = new Excel.Application();

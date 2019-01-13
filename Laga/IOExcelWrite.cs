@@ -230,9 +230,10 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// open excel based on the constructor.
+        /// open excel based on the constructor
         /// </summary>
-        /// <param name="display">if is true, show the excel"</param>
+        /// <param name="display">Show the app</param>
+        /// <param name="sheetNum">open the sheetnumber</param>
         public void IOWrite_OpenExcelApp(bool display, int sheetNum)
         {
             excelApp = new Excel.Application();
@@ -295,7 +296,7 @@ namespace Laga.IO
         /// <summary>
         /// clean all the marshalls and close the excel.
         /// </summary>
-        /// <param name="saveFile">if is true, will save the file</param>
+        /// <param name="Path">string</param>
         public void CloseSaveExcelApp(string Path)
         {
             //clean up

@@ -43,3 +43,4 @@ C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.c
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.pdb
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache

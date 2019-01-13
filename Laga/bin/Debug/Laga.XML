@@ -316,9 +316,9 @@
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Char[][])">
             <summary>
-            
+            Reverse the original Population
             </summary>
-            <param name="charPop"></param>
+            <param name="charPop">char[][]</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Prefix(System.String,System.Int32)">
             <summary>
@@ -326,22 +326,85 @@
             </summary>
             <param name="prefix">string prefix</param>
             <param name="size">the length of prefix to generate</param>
-            <returns>Array of strings</returns>
+            <returns>string[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(Laga.GeneticAlgorithm.point[],System.Int32)">
             <summary>
-            
+            Round the location of a laga point, based on the round number
             </summary>
-            <param name="any"></param>
-            <param name="round"></param>
-            <returns></returns>
+            <param name="any">point[]</param>
+            <param name="round">int</param>
+            <returns>string[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Double[])">
             <summary>
             Parse any Chromosome type to string Array
             </summary>
-            <param name="any">Array</param>
-            <returns>Array of strings</returns>
+            <param name="any">double[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Int32[])">
+            <summary>
+            Parse a list of integers into a list of strings
+            </summary>
+            <param name="any">int[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Single[])">
+            <summary>
+            Parse a list of floats into a list of strings
+            </summary>
+            <param name="any">float[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Char[])">
+            <summary>
+            Parse a list of char to a list of strings
+            </summary>
+            <param name="any">char[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Reverse(System.Single[])">
+            <summary>
+            Reverse the original array of floats.
+            </summary>
+            <param name="arrFloat">float[]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Reverse(System.Int32[])">
+            <summary>
+            Reverse the original array of integers
+            </summary>
+            <param name="arrInt">int[]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Reverse(System.Double[])">
+            <summary>
+            Reverse the original array of doubles
+            </summary>
+            <param name="arrDbl">double[]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Int32[][])">
+            <summary>
+            Reverse Original integer population
+            </summary>
+            <param name="intPop">int[][]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Double[][])">
+            <summary>
+            Reverse original double population
+            </summary>
+            <param name="dblPop">double[][]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Single[][])">
+            <summary>
+            Reverse original float population
+            </summary>
+            <param name="flPop">float[][]</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Object[][])">
+            <summary>
+            Reverse original object population
+            </summary>
+            <param name="objPop">object[][]</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Fisher_Yates(System.Int32[])">
             <summary>
@@ -363,6 +426,20 @@
             </summary>
             <param name="arrObj">the array of objects to shuffle</param>
             <param name="percent">the percent to shuffle</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.GetRandomNumber(System.Int32,System.Int32)">
+            <summary>
+            Random integer number between range
+            </summary>
+            <param name="min">int</param>
+            <param name="max">int</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.GetRandomNumber">
+            <summary>
+            Random number
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.RandomCharBinary(System.Single)">

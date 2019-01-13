@@ -4,8 +4,14 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Replacement
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Replacement()
         {
 
@@ -61,17 +67,13 @@ namespace Laga.GeneticAlgorithm
             return newPopulation;
         }
 
-        /**
-         * ReplaceRandom method.
-         * this replace method create a new population using the mutated inheritance and new random chromsomes.
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param percent 			-> the random level of the new chromosomes. 0 < level < 1.
-         * @param sizePopulation    -> the size of the population.
-         * @return object[][] new population.
-         * 
-         * 
-         */
+        /// <summary>
+        /// Creates a new population using the mutated inheritance and new random chromsomes.
+        /// </summary>
+        /// <param name="sonMutPopulation">Object[][]</param>
+        /// <param name="percent">float</param>
+        /// <param name="sizePopulation">int</param>
+        /// <returns>object[][]</returns>
         public object[][] ReplaceRandom(object[][] sonMutPopulation, float percent, int sizePopulation)
         {
             object[][] newPopulation = new object[sizePopulation][];

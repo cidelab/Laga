@@ -46,9 +46,9 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// Reverse the original Population
         /// </summary>
-        /// <param name="charPop"></param>
+        /// <param name="charPop">char[][]</param>
         public static void ReversePopulation(char[][] charPop)
         {
             char[] arrTempInd;
@@ -66,7 +66,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="prefix">string prefix</param>
         /// <param name="size">the length of prefix to generate</param>
-        /// <returns>Array of strings</returns>
+        /// <returns>string[]</returns>
         public static string[] Prefix(string prefix, int size)
         {
             string[] arrS = new string[size];
@@ -79,11 +79,11 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// Round the location of a laga point, based on the round number
         /// </summary>
-        /// <param name="any"></param>
-        /// <param name="round"></param>
-        /// <returns></returns>
+        /// <param name="any">point[]</param>
+        /// <param name="round">int</param>
+        /// <returns>string[]</returns>
         public static string[] Parse(point[] any, int round)
         {
             string[] arrPtsChromosome = new string[any.Length];
@@ -103,33 +103,51 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Parse any Chromosome type to string Array
         /// </summary>
-        /// <param name="any">Array</param>
-        /// <returns>Array of strings</returns>
+        /// <param name="any">double[]</param>
+        /// <returns>string[]</returns>
         public static string[] Parse(double[] any)
         {
             string[] arrString = Array.ConvertAll(any, new Converter<double, string>(Convert.ToString));
             return arrString;
         }
 
+        /// <summary>
+        /// Parse a list of integers into a list of strings
+        /// </summary>
+        /// <param name="any">int[]</param>
+        /// <returns>string[]</returns>
         public static string[] Parse(int[] any)
         {
             string[] arrString = Array.ConvertAll(any, new Converter<int, string>(Convert.ToString));
             return arrString;
         }
 
+        /// <summary>
+        /// Parse a list of floats into a list of strings
+        /// </summary>
+        /// <param name="any">float[]</param>
+        /// <returns>string[]</returns>
         public static string[] Parse(float[] any)
         {
             string[] arrString = Array.ConvertAll(any, new Converter<float, string>(Convert.ToString));
             return arrString;
         }
 
+        /// <summary>
+        /// Parse a list of char to a list of strings
+        /// </summary>
+        /// <param name="any">char[]</param>
+        /// <returns>string[]</returns>
         public static string[] Parse(char[] any)
         {
             string[] arrString = Array.ConvertAll(any, new Converter<char, string>(Convert.ToString));
             return arrString;
         }
 
-
+        /// <summary>
+        /// Reverse the original array of floats.
+        /// </summary>
+        /// <param name="arrFloat">float[]</param>
         public static void Reverse(float[] arrFloat)
         {
             float temp;
@@ -141,6 +159,10 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
+        /// <summary>
+        /// Reverse the original array of integers
+        /// </summary>
+        /// <param name="arrInt">int[]</param>
         public static void Reverse(int[] arrInt)
         {
             int temp;
@@ -151,6 +173,10 @@ namespace Laga.GeneticAlgorithm
                 arrInt[arrInt.Length - i - 1] = temp;
             }
         }
+        /// <summary>
+        /// Reverse the original array of doubles
+        /// </summary>
+        /// <param name="arrDbl">double[]</param>
         public static void Reverse(double[] arrDbl)
         {
             double temp;
@@ -162,9 +188,25 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
+        /// <summary>
+        /// Reverse Original integer population
+        /// </summary>
+        /// <param name="intPop">int[][]</param>
         public static void ReversePopulation(int[][] intPop) { }
+        /// <summary>
+        /// Reverse original double population
+        /// </summary>
+        /// <param name="dblPop">double[][]</param>
         public static void ReversePopulation(double[][] dblPop) { }
+        /// <summary>
+        /// Reverse original float population
+        /// </summary>
+        /// <param name="flPop">float[][]</param>
         public static void ReversePopulation(float[][] flPop) { }
+        /// <summary>
+        /// Reverse original object population
+        /// </summary>
+        /// <param name="objPop">object[][]</param>
         public static void ReversePopulation(object[][] objPop) { }
 
         /// <summary>
@@ -246,6 +288,12 @@ namespace Laga.GeneticAlgorithm
         //Function to get random number
         private static readonly Random getrandom = new Random(DateTime.Now.Millisecond);
 
+        /// <summary>
+        /// Random integer number between range
+        /// </summary>
+        /// <param name="min">int</param>
+        /// <param name="max">int</param>
+        /// <returns>int</returns>
         public static int GetRandomNumber(int min, int max)
         {
             lock (getrandom) // synchronize
@@ -253,6 +301,10 @@ namespace Laga.GeneticAlgorithm
                 return getrandom.Next(min, max);
             }
         }
+        /// <summary>
+        /// Random number
+        /// </summary>
+        /// <returns></returns>
         public static double GetRandomNumber()
         {
             lock(getrandom)
