@@ -44,3 +44,11 @@ C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.pdb
 C:\Users\Carlos\Source\Repos\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\bin\Debug\Laga.XML
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\bin\Debug\Laga.dll
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\bin\Debug\Laga.pdb
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csproj.ResolveComReference.cache
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.dll
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.pdb

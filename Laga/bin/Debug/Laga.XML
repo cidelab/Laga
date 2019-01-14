@@ -4,6 +4,17 @@
         <name>Laga</name>
     </assembly>
     <members>
+        <member name="T:Laga.Graphics.BarChart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Laga.Graphics.BarChart.#ctor(System.Windows.Controls.InkCanvas)">
+            <summary>
+            
+            </summary>
+            <param name="inkCanvas"></param>
+        </member>
         <member name="T:Laga.Graphics.Notebook">
             <summary>
             Static class to write in textboxes.
@@ -752,7 +763,19 @@
             <param name="maxItem"></param>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Double[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)" -->
+        <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Double[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Roulette Wheel Selection
+            </summary>
+            <param name="srtPopulation">double[][], a sorted population by any sort algorithm</param>
+            <param name="sizeRoulette">int, number of the individuals to select</param>
+            <param name="A1">int, the maximum number of individuals in the roulette wheel (aprox)</param>
+            <param name="A2">int, the minimum number of individuals in the roulette wheel (aprox)</param>
+            <param name="B1">int, the start scope in the population: 1 the selection will start in the second individual</param>
+            <param name="B2">int, the scope in the population, if size population, then all individuals will be included</param>
+            <param name="s">float, factor decay: between 0 and 1 </param>
+            <returns></returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Double[][],System.Single[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
             select a number of indiviudals trough a tournament selection.
@@ -1416,6 +1439,16 @@
             <param name="minmax">if is true the sort is by min to max, else max to min</param>
             <returns>automatically the population is sorted. the original population will be modified.</returns>
         </member>
+        <member name="T:Laga.GeneticAlgorithm.Replacement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Replacement.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)">
              ReplaceInheritance method.
              this replace method is ideal for combinatorial problems with objects types in chromsome.
@@ -1430,7 +1463,15 @@
              
             
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)" -->
+        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)">
+            <summary>
+            Creates a new population using the mutated inheritance and new random chromsomes.
+            </summary>
+            <param name="sonMutPopulation">Object[][]</param>
+            <param name="percent">float</param>
+            <param name="sizePopulation">int</param>
+            <returns>object[][]</returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)">
              ReplaceInheritanceRandom method.
              this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
@@ -1590,9 +1631,19 @@
              
              
         </member>
+        <member name="T:Laga.IO.IOExcelRead">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Laga.IO.IOExcelRead.matrixDataExcel">
             <summary>
             get the data by list format, use this to get the data from excel
+            </summary>
+        </member>
+        <member name="P:Laga.IO.IOExcelRead.SheetNum">
+            <summary>
+            Get Excel sheet number.
             </summary>
         </member>
         <member name="M:Laga.IO.IOExcelRead.#ctor(System.String)">
@@ -1631,6 +1682,13 @@
             </summary>
             <param name="strXlCell">the range to read the excel, format "A1"</param>
         </member>
+        <member name="M:Laga.IO.IOExcelRead.IOWrite_SetActiveSheet(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pos"></param>
+            <param name="display"></param>
+        </member>
         <member name="M:Laga.IO.IOExcelRead.TestExcelOpen">
             <summary>
             Test if excel application is open.
@@ -1641,6 +1699,11 @@
             Open the App
             return all the excelfile names.
             Close the App, release the Marshalls.
+            </summary>
+        </member>
+        <member name="M:Laga.IO.IOExcelRead.IORead_OpenExcelApp">
+            <summary>
+            
             </summary>
         </member>
         <member name="M:Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)">
@@ -1765,9 +1828,10 @@
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean,System.Int32)">
             <summary>
-            open excel based on the constructor.
+            open excel based on the constructor
             </summary>
-            <param name="display">if is true, show the excel"</param>
+            <param name="display">Show the app</param>
+            <param name="sheetNum">open the sheetnumber</param>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean)">
             <summary>
@@ -1779,7 +1843,7 @@
             <summary>
             clean all the marshalls and close the excel.
             </summary>
-            <param name="saveFile">if is true, will save the file</param>
+            <param name="Path">string</param>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.CloseExcelApp(System.Boolean)">
             <summary>
