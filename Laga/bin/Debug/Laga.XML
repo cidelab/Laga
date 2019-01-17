@@ -72,13 +72,14 @@
         </member>
         <member name="M:Laga.Graphics.Notebook.PrintPopulation(System.Windows.Controls.TextBox,Laga.GeneticAlgorithm.point[][],System.String[],System.String,System.Int32,System.Boolean)">
             <summary>
-            Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
+            
             </summary>
-            <param name="textBox">the textbox</param>
-            <param name="population">the popupation to write</param>
-            <param name="prefix">an array of prefixs between chromosomes in the population</param>
-            <param name="sep">The string to use as a separator between genes in the chromosome</param>
-            <param name="clear">in case you want to clean the textbox before to write</param>
+            <param name="textBox"></param>
+            <param name="population"></param>
+            <param name="prefix"></param>
+            <param name="sep"></param>
+            <param name="r"></param>
+            <param name="clear"></param>
         </member>
         <member name="T:Laga.GeneticAlgorithm.Crossover">
             <summary>
@@ -204,7 +205,17 @@
             </summary>
             <returns>a random char list of 1s and 0s</returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)" -->
+        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)">
+             <summary>
+             Generates an random char chromosome composed by characters.
+             See <a href="http://www.asciitable.com/">this link</a> for more information.
+             </summary>
+            <a href = "http://stackoverflow.com" > here </a>
+             <param name="start">the start number in the table, inclusive</param>
+             <param name="end">the end number in the table, inclusive</param>
+             <returns>returns a random list of characters</returns>
+             
+        </member>
         <member name="T:Laga.GeneticAlgorithm.GenrPopulation">
             <summary>
             use this class to create a Population
@@ -656,7 +667,19 @@
             <param name="maxItem"></param>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Object[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)" -->
+        <member name="M:Laga.GeneticAlgorithm.NaturalSelection.RouletteWheelSigmoidal(System.Object[][],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="srtPopulation"></param>
+            <param name="sizeRoulette"></param>
+            <param name="A1"></param>
+            <param name="A2"></param>
+            <param name="B1"></param>
+            <param name="B2"></param>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.NaturalSelection.TournamentSelection(System.Object[][],System.Int32[],System.Int32,System.Int32,System.String)">
             TournamentSelection method.
             select a number of indiviudals trough a tournament selection.
@@ -1734,6 +1757,11 @@
         <member name="T:Laga.IO.IOExcelWrite">
             <summary>
             use this class to write data in excel
+            </summary>
+        </member>
+        <member name="P:Laga.IO.IOExcelWrite.XlRange">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:Laga.IO.IOExcelWrite.SheetNum">

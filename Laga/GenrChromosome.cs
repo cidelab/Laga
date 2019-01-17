@@ -159,7 +159,7 @@ namespace Laga.GeneticAlgorithm
         /// Generates an random char chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
-        ///<a href = "http://stackoverflow.com" > here </ a >
+        ///<a href = "http://stackoverflow.com" > here </a>
         /// <param name="start">the start number in the table, inclusive</param>
         /// <param name="end">the end number in the table, inclusive</param>
         /// <returns>returns a random list of characters</returns>

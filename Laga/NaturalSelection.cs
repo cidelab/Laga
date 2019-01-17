@@ -157,23 +157,6 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
- * RouletteWheelSigmoidal method.
- * select a number of indiviudals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected thant worst. 
- * Although all the individuals has a chance to be selected. the roulette wheel is based in sigmoidal curve, (See RouletteWheelSigmoidalEngine.pde).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param sizeRoulette  -> number of the individuals selected.
- * @param A1			-> the maximum number of individuals in the roulette wheel (aprox).
- * @param A2 			-> the minimum number of individuals in the roulette wheel (aprox).
- * @param B1 	 		-> the start scope in the population, i.e. 1 the selection will start in the second individual
- * @param B2	 		-> the end scope in the population, i.e. the size of the population: the las individuals (worst) will be included.
- * @param s				-> the decay of the curve. 0 < s < 1  (See RouletteWheelSigmoidalEngine.pde)
- * return object[][] population.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>

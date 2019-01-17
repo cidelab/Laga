@@ -15,7 +15,6 @@ namespace Laga.IO
     {
         private string filePath;
         private int sheetNum;
-        private string xlsxRange;
 
         private Excel.Application excelApp;
         private Excel.Workbook xlBook;
@@ -27,6 +26,22 @@ namespace Laga.IO
         private object misValue = System.Reflection.Missing.Value;
 
         #region public properties
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Excel.Range XlRange
+        {
+            set
+            {
+                value = xlRange;
+            }
+            get
+            {
+                return xlRange;
+            }
+        }
+
         /// <summary>
         /// get the sheet number 
         /// </summary>

@@ -232,14 +232,16 @@ namespace Laga.Graphics
                 }
             }
         }
+
         /// <summary>
-        /// Print line by line in a text box the content in a population. For appearence and other properties refer to xaml.
+        /// 
         /// </summary>
-        /// <param name="textBox">the textbox</param>
-        /// <param name="population">the popupation to write</param>
-        /// <param name="prefix">an array of prefixs between chromosomes in the population</param>
-        /// <param name="sep">The string to use as a separator between genes in the chromosome</param>
-        /// <param name="clear">in case you want to clean the textbox before to write</param>
+        /// <param name="textBox"></param>
+        /// <param name="population"></param>
+        /// <param name="prefix"></param>
+        /// <param name="sep"></param>
+        /// <param name="r"></param>
+        /// <param name="clear"></param>
         public static void PrintPopulation(TextBox textBox, point[][] population, string[] prefix, string sep, int r, bool clear)
         {
             if (clear)
