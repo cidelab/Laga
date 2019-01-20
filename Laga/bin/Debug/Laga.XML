@@ -315,7 +315,7 @@
         </member>
         <member name="T:Laga.GeneticAlgorithm.LagaTools">
             <summary>
-            A collection of tools to operate on populations and chromosomes.
+            A collection of methods to operate on Genetic operators.
             </summary>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.BinaryChromosomeToInteger``1(``0[])">
@@ -324,7 +324,7 @@
             </summary>
             <typeparam name="T">chromosome type</typeparam>
             <param name="chromosome">your chromosome</param>
-            <returns>the integer.</returns>
+            <returns>int</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.ExtractDNA``1(``0[],System.Int32,System.Int32)">
             <summary>

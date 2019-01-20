@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
 
     /// <summary>
-    /// A collection of tools to operate on populations and chromosomes.
+    /// A collection of methods to operate on Genetic operators.
     /// </summary>
     public static class LagaTools
     {
@@ -17,7 +15,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <typeparam name="T">chromosome type</typeparam>
         /// <param name="chromosome">your chromosome</param>
-        /// <returns>the integer.</returns>
+        /// <returns>int</returns>
         public static int BinaryChromosomeToInteger<T>(this T[] chromosome)
         {
             string s = String.Join<T>("", chromosome);
@@ -33,11 +31,11 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Extract part of the DNA from a chromosome. 
         /// </summary>
-        /// <typeparam name="T">any chromosome type</typeparam>
+        /// <typeparam name="T">Any chromosome type</typeparam>
         /// <param name="chromosome">the chromosome</param>
         /// <param name="index">start the extraction</param>
         /// <param name="length">length of the extraction</param>
-        /// <returns>a piece of the DNA from the original chromosome</returns>
+        /// <returns>T[] A DNA segment from the original chromosome</returns>
         public static T[] ExtractDNA<T>(this T[] chromosome, int index, int length)
         {
             T[] result = new T[length];
@@ -81,16 +79,16 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Round the location of a laga point, based on the round number
         /// </summary>
-        /// <param name="any">point[]</param>
-        /// <param name="round">int</param>
+        /// <param name="points">The points to round coordinates</param>
+        /// <param name="round">round number coordinates</param>
         /// <returns>string[]</returns>
-        public static string[] Parse(point[] any, int round)
+        public static string[] Parse(point[] points, int round)
         {
-            string[] arrPtsChromosome = new string[any.Length];
+            string[] arrPtsChromosome = new string[points.Length];
             double[] arrdblCoords;
             int i = 0;
 
-            foreach (point p in any)
+            foreach (point p in points)
             {
                 arrdblCoords = new double[] {Math.Round(p.X, round), Math.Round(p.Y, round), Math.Round(p.Z, round)};
                 string[] arrString = Array.ConvertAll(arrdblCoords, new Converter<double, string>(Convert.ToString));

@@ -51,3 +51,4 @@ C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csproj.ResolveComRef
 C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
 C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.dll
 C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.pdb
+C:\Users\delab\Documents\GitHub\Lagalib\Laga\obj\Debug\Laga.csprojAssemblyReference.cache
