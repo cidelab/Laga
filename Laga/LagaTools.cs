@@ -208,9 +208,9 @@ namespace Laga.GeneticAlgorithm
         public static void ReversePopulation(object[][] objPop) { }
 
         /// <summary>
-        /// Fisher-Yates Shuffle Algorithm for an array of integers.
+        /// Fisher-Yates Shuffle Algorithm for array of integers.
         /// </summary>
-        /// <param name="arrInt"> the array of integers to shuffle</param>
+        /// <param name="arrInt">The array of integers to shuffle</param>
         /// <returns></returns>
         public static int[] Fisher_Yates(int[] arrInt)
         {
@@ -228,6 +228,24 @@ namespace Laga.GeneticAlgorithm
                 arrMut[i] = temp;
             }
             return arrMut;
+        }
+
+        /// <summary>
+        /// Experimental Fisher_Yates algorithm to shuffle the original array.
+        /// </summary>
+        /// <typeparam name="T">the type of data</typeparam>
+        /// <param name="arrData">the array of data</param>
+        public static void Fisher_Yates<T>(this T[] arrData)
+        {
+            int n = arrData.Length;
+            Random r = new Random(DateTime.Now.Millisecond);
+            for (int i = 0; i < n; i++)
+            {
+                int ri = i + (int)(r.NextDouble() * (n - i));
+                T t = arrData[ri];
+                arrData[ri] = arrData[i];
+                arrData[i] = t;
+            }
         }
 
         /// <summary>
@@ -343,23 +361,7 @@ namespace Laga.GeneticAlgorithm
             return (char)GetRandomNumber(start, end + 1);
         }
 
-        /// <summary>
-        /// Experimental Fisher_Yates
-        /// </summary>
-        /// <typeparam name="T">the type of data</typeparam>
-        /// <param name="arrData">the array of data</param>
-        public static void Fishe_Yates<T>(T[] arrData)
-        {
-            int n = arrData.Length;
-            Random r = new Random(DateTime.Now.Millisecond);
-            for (int i = 0; i < n; i++)
-            {
-                int ri = i + (int)(r.NextDouble() * (n - i));
-                T t = arrData[ri];
-                arrData[ri] = arrData[i];
-                arrData[i] = t;
-            }
-        }
+
 
         /// <summary>
         /// Return non repetead integers between a min max and percent.

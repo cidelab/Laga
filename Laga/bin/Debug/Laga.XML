@@ -330,11 +330,11 @@
             <summary>
             Extract part of the DNA from a chromosome. 
             </summary>
-            <typeparam name="T">any chromosome type</typeparam>
+            <typeparam name="T">Any chromosome type</typeparam>
             <param name="chromosome">the chromosome</param>
             <param name="index">start the extraction</param>
             <param name="length">length of the extraction</param>
-            <returns>a piece of the DNA from the original chromosome</returns>
+            <returns>T[] A DNA segment from the original chromosome</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.ReversePopulation(System.Char[][])">
             <summary>
@@ -354,8 +354,8 @@
             <summary>
             Round the location of a laga point, based on the round number
             </summary>
-            <param name="any">point[]</param>
-            <param name="round">int</param>
+            <param name="points">The points to round coordinates</param>
+            <param name="round">round number coordinates</param>
             <returns>string[]</returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Parse(System.Double[])">
@@ -430,10 +430,17 @@
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Fisher_Yates(System.Int32[])">
             <summary>
-            Fisher-Yates Shuffle Algorithm for an array of integers.
+            Fisher-Yates Shuffle Algorithm for array of integers.
             </summary>
-            <param name="arrInt"> the array of integers to shuffle</param>
+            <param name="arrInt">The array of integers to shuffle</param>
             <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.LagaTools.Fisher_Yates``1(``0[])">
+            <summary>
+            Experimental Fisher_Yates algorithm to shuffle the original array.
+            </summary>
+            <typeparam name="T">the type of data</typeparam>
+            <param name="arrData">the array of data</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.Fisher_Yates(System.Object[])">
             <summary>
@@ -479,13 +486,6 @@
             <param name="start">the start number for the table, inclusive</param>
             <param name="end">the end number for the table, inclusive</param>
             <returns>char</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.LagaTools.Fishe_Yates``1(``0[])">
-            <summary>
-            Experimental Fisher_Yates
-            </summary>
-            <typeparam name="T">the type of data</typeparam>
-            <param name="arrData">the array of data</param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.LagaTools.RandomInt(System.Int32,System.Int32,System.Single)">
             <summary>
@@ -1756,7 +1756,7 @@
         </member>
         <member name="T:Laga.IO.IOExcelWrite">
             <summary>
-            use this class to write data in excel
+            Write data in excel
             </summary>
         </member>
         <member name="P:Laga.IO.IOExcelWrite.XlRange">
@@ -1769,12 +1769,12 @@
             get the sheet number 
             </summary>
         </member>
-        <member name="P:Laga.IO.IOExcelWrite.matrixDataExcel">
+        <member name="P:Laga.IO.IOExcelWrite.MatrixDataExcel">
             <summary>
             set the data by nested string list format, use this to get the data from excel
             </summary>
         </member>
-        <member name="P:Laga.IO.IOExcelWrite.listDataExcel">
+        <member name="P:Laga.IO.IOExcelWrite.ListDataExcel">
             <summary>
             set the data by string list format, use this to get the data from excel
             </summary>
@@ -1851,23 +1851,23 @@
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp">
             <summary>
-            open excel and display excel.
+            Open an Excel document and display the document.
             </summary>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean,System.Int32)">
             <summary>
-            open excel based on the constructor
+            Open an Excel document based on the constructor.
             </summary>
             <param name="display">Show the app</param>
             <param name="sheetNum">open the sheetnumber</param>
         </member>
         <member name="M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean)">
             <summary>
-            open excel based on the constructor.
+            Open an Excel document based on the constructor.
             </summary>
             <param name="display">if is true, show the excel"</param>
         </member>
-        <member name="M:Laga.IO.IOExcelWrite.CloseSaveExcelApp(System.String)">
+        <member name="M:Laga.IO.IOExcelWrite.SaveCloseExcelApp(System.String)">
             <summary>
             clean all the marshalls and close the excel.
             </summary>

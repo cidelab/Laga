@@ -9,7 +9,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 namespace Laga.IO
 {
     /// <summary>
-    /// use this class to write data in excel
+    /// Write data in excel
     /// </summary>
     public class IOExcelWrite
     {
@@ -28,7 +28,7 @@ namespace Laga.IO
         #region public properties
 
         /// <summary>
-        /// 
+        /// Get and set the excel range.
         /// </summary>
         public Excel.Range XlRange
         {
@@ -52,10 +52,11 @@ namespace Laga.IO
                 return sheetNum;
             }
         }
+
         /// <summary>
-        /// set the data by nested string list format, use this to get the data from excel
+        /// Set a nested list of strings.
         /// </summary>
-        public List<List<string>> matrixDataExcel
+        public List<List<string>> MatrixDataExcel
         {
             set
             {
@@ -64,20 +65,21 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// set the data by string list format, use this to get the data from excel
+        /// Set a nested list of strings.
         /// </summary>
-        public List<string> listDataExcel
+        public List<string> ListDataExcel
         {
             set
             {
                 lstDataExcel = value;
             }
         }
+
         /// <summary>
         /// check if the file exists.
         /// </summary>
         /// <param name="path">the path to the excel file</param>
-        /// <returns>boolean</returns>
+        /// <returns>bool</returns>
         public static bool CheckExcelFile(string path)
         {
             return File.Exists(path);
@@ -121,24 +123,21 @@ namespace Laga.IO
         #endregion
 
         /// <summary>
-        /// Open excel based on this constructor
+        /// Creates and excel sheet to write on.
         /// </summary>
-        /// <param name="pos">the sheet number</param>
-        /// <param name="name">the file name</param>
+        /// <param name="pos">The sheet position number</param>
+        /// <param name="name">The sheet name name</param>
         public void IOWrite_NewExcelSheet(int pos, string name)
         {
-            //var xlSheets = xlWorkBook.Sheets as Excel.Sheets;
-            //var xlNewSheet = (Excel.Worksheet)xlSheets.Add(xlSheets[1], Type.Missing, Type.Missing, Type.Missing);
-            //xlNewSheet.Name = "newsheet";
-
+     
             xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[pos], 1, Excel.XlSheetType.xlWorksheet);
             xlSheet.Name = name;
         }
 
         /// <summary>
-        /// Write in a specific worksheet.
+        /// Activates a specific Excel sheet to write on.
         /// </summary>
-        /// <param name="pos">the position of the excel sheet in the document.</param>
+        /// <param name="pos">The position of the excel sheet in the document.</param>
         public void IOWrite_SetActiveSheet(int pos)
         {
             Excel.Sheets excelSheets = xlBook.Worksheets;
@@ -152,21 +151,20 @@ namespace Laga.IO
         /// Write a single item to Excel...
         /// </summary>
         /// <param name="strItem">the item to write in excel</param>
-        /// <param name="Row">the row position</param>
-        /// <param name="Col">the column position</param>
+        /// <param name="Row">The row position</param>
+        /// <param name="Col">The column position</param>
         public void IOWriteItem(string strItem, int Row, int Col)
         {
             xlSheet.Cells[Row, Col] = strItem;
         }
 
         /// <summary>
-        /// write list to excel. don't worry for the length of the list. 
-        /// it will calculated automatically.
+        /// Write a list of strings in excel. the list length is calculated automatically.
         /// </summary>
-        /// <param name="lstString">the list of strings to write excel</param>
-        /// <param name="Row">the row to start writing</param>
-        /// <param name="Col">the column to start writing</param>
-        /// <param name="dir">the direction where you want to write the excel, 'c' for top-down or 'r' for left-right</param>
+        /// <param name="lstString">The list of strings to write</param>
+        /// <param name="Row">The row position</param>
+        /// <param name="Col">The column position</param>
+        /// <param name="dir">The writing direction, 'c' for top-down or 'r' for left-right</param>
         public void IOWriteList(List<string> lstString, int Row, int Col, char dir)
         {
             if (dir == 'c' || dir == 'r')
@@ -189,13 +187,12 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// writes a nested list into excel. don't worry for the length of the list. 
-        /// it will calculated automatically.
+        /// Write a nested list of strings in excel. The list length is calculated automatically.
         /// </summary>
-        /// <param name="matData">the nested list of strings to write excel</param>
-        /// <param name="Row">the row to start writing</param>
-        /// <param name="Col">the column to start writing</param>
-        /// <param name="swap">if is true will write first the row, if is false will write first the column</param>
+        /// <param name="matData">The nested list of strings to write</param>
+        /// <param name="Row">The row position</param>
+        /// <param name="Col">The column position</param>
+        /// <param name="swap">If true, write first the row, if false write first the column</param>
         public void IOWriteMatrix(List<List<string>> matData, int Row, int Col, bool swap)
         {
             if (matData.Count > 0)
@@ -235,7 +232,7 @@ namespace Laga.IO
 
         #region Methods to Open Excel
         /// <summary>
-        /// open excel and display excel.
+        /// Open an Excel document and display the document.
         /// </summary>
         public void IOWrite_OpenExcelApp()
         {
@@ -245,7 +242,7 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// open excel based on the constructor
+        /// Open an Excel document based on the constructor.
         /// </summary>
         /// <param name="display">Show the app</param>
         /// <param name="sheetNum">open the sheetnumber</param>
@@ -273,7 +270,7 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// open excel based on the constructor.
+        /// Open an Excel document based on the constructor.
         /// </summary>
         /// <param name="display">if is true, show the excel"</param>
         public void IOWrite_OpenExcelApp(bool display)
@@ -309,10 +306,10 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// clean all the marshalls and close the excel.
+        /// Save the Excel file and close safely the Excel application.
         /// </summary>
-        /// <param name="Path">string</param>
-        public void CloseSaveExcelApp(string Path)
+        /// <param name="Path">The file name</param>
+        public void SaveCloseExcelApp(string Path)
         {
             //clean up
             GC.Collect();
@@ -340,9 +337,9 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// clean all the marshalls and close the excel.
+        /// Close safely the Excel application and decide to save or not.
         /// </summary>
-        /// <param name="saveFile">if is true, will save the file</param>
+        /// <param name="saveFile">If true, the Excel file is saved.</param>
         public void CloseExcelApp(bool saveFile)
         {
             //clean up

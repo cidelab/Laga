@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Laga.GeneticAlgorithm;
+using Laga.IO;
 
 namespace tools_examples
 {
@@ -11,15 +12,28 @@ namespace tools_examples
     {
         static void Main(string[] args)
         {
-            point[] points = new point[3];
-            points[0] = new point(0.17452, 0.12315, 0.43423);
-            points[1] = new point(0.56752, 0.48579, 0.56273);
-            points[2] = new point(0.34745, 0.08343, 0.13459);
+            //making random data...
+            List<List<string>> lstString = new List<List<string>>();
+            int jagged;
+            Random rnd = new Random(DateTime.Now.Day);
+            for(int i = 0; i < 20; i++)
+            {
+                List<string> lstJagged = new List<string>();
+                jagged = rnd.Next(10, 50);
+                for(int j = 0; j < jagged; j++)
+                    lstJagged.Add(LagaTools.RandomChar(50, 90).ToString());
 
-            string[] strPtParse = LagaTools.Parse(points, 2);
+                lstString.Add(lstJagged);
+            }
+            //stop making random data...
 
+            IOExcelWrite iOExcelWrite = new IOExcelWrite(true);
+            iOExcelWrite.IOWrite_NewExcelSheet(1, "testing");
+            iOExcelWrite.IOWriteMatrix(lstString, 1, 1, true);
+            iOExcelWrite.SaveCloseExcelApp(@"C:\Users\delab\Documents\test.xlsx");
+            
             Console.ReadLine();
-
+      
         }
     }
 }
