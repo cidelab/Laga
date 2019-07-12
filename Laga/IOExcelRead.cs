@@ -98,7 +98,7 @@ namespace Laga.IO
         /// read the cells range specified in the parameter.
         /// </summary>
         /// <param name="strXlRange">the range to read the excel, format "A1:B2" if is empty ("") will return the whole data in the workbook</param>
-        public void IOReadRange(string strXlRange)
+        public List<List<string>> IOReadRange(string strXlRange)
         {
             xlRange = (strXlRange == "") ? xlSheet.UsedRange : xlSheet.Range[strXlRange];
 
@@ -116,19 +116,21 @@ namespace Laga.IO
                 }
                 dataExcel.Add(lst);
             }
+
+            return dataExcel;
         }
 
         /// <summary>
         /// Read a specific excel cell.
         /// </summary>
         /// <param name="strXlCell">The cell to read in excel, format "A1"</param>
-        public void IOReadCell(string strXlCell)
+        public string IOReadCell(string strXlCell)
         {
             xlRange = xlSheet.Range[strXlCell];
             object obDta = (object)xlRange.Value2;
             string str = (obDta != null) ? obDta.ToString() : "!=";
-            List<string> lst = new List<string>() { str };
-            dataExcel.Add(lst);
+
+            return str;
         }
 
         #endregion
@@ -156,12 +158,12 @@ namespace Laga.IO
         public bool TestExcelOpen()
         {
             bool open = true;
+            Excel.Application exApp;
+            exApp = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
+
             try
             {
-                Excel.Application exApp;
-                exApp = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
-                exApp.Workbooks.get_Item(sheetNum);
-                open = true;
+                exApp.Workbooks.get_Item(1);
             }
             catch
             {
@@ -205,8 +207,7 @@ namespace Laga.IO
         /// <param name="display">if is true, show the excel"</param>
         public void IORead_OpenExcelApp(bool display)
         {
-            excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
+            IORead_OpenExcelApp();
 
             if (display)
             {
@@ -235,7 +236,10 @@ namespace Laga.IO
             GC.Collect();
             GC.WaitForPendingFinalizers();
 
+            if(xlRange != null)
             Marshal.ReleaseComObject(xlRange);  //kill the range..
+
+            if(xlSheet != null)
             Marshal.ReleaseComObject(xlSheet);  //kill the sheet used
 
             excelApp.Quit();

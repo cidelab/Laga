@@ -10,30 +10,19 @@ namespace Laga.GeneticAlgorithm
     public class NaturalSelection
     {
         /// <summary>
-        /// 
+        /// The class to select and operates on populations
         /// </summary>
         public NaturalSelection()
         {
 
         }
 
-        //////////////////////////OBJECT/////////////////////////////////////
-        /**
-         * ElitismSelection method.
-         * select the number of the best individual in the population.
-         *
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param count         -> quantity of individuals selected for the next generation.
-         * @return object[][] population.
-         * 
-         * 
-         */
         /// <summary>
-        /// 
+        /// select the number of the best individual in the population.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="count">The number of individuals to select</param>
+        /// <returns>objec[][]</returns>
         public object[][] Elitism(object[][] srtPopulation, int count)
         {
             //clone the array.
@@ -51,24 +40,104 @@ namespace Laga.GeneticAlgorithm
 
             return selChromosome;
         }
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return object[][] population.
- */
         /// <summary>
-        /// 
+        /// select the number of the best individual in the population.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="count">the number of individuals to select</param>
+        /// <returns>double[][]</returns>
+        public double[][] Elitism(double[][] srtPopulation, int count)
+        {
+            //clone the array.
+            double[][] elitismPop = srtPopulation.Clone() as double[][];
+
+            double[][] RwheelPop = new double[count][];
+            for (int i = 0; i < count; ++i)
+            {
+                RwheelPop[i] = elitismPop[i];
+            }
+            return RwheelPop;
+        }
+
+        /// <summary>
+        /// select the number of the best individual in the population.
+        /// </summary>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="count">The number of individuals to select</param>
+        /// <returns>float[][]</returns>
+        public float[][] Elitism(float[][] srtPopulation, int count)
+        {
+            //clone the array.
+            float[][] elitismPop = srtPopulation.Clone() as float[][];
+
+            float[][] RwheelPop = new float[count][];
+
+            for (int i = 0; i < count; ++i)
+            {
+                RwheelPop[i] = elitismPop[i];
+            }
+
+            return RwheelPop;
+        }
+
+        /// <summary>
+        /// select the number of the best individual in the population.
+        /// </summary>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="count">The number of individuals to select</param>
+        /// <returns>int[][]</returns>
+        public int[][] Elitism(int[][] srtPopulation, int count)
+        {
+            //clone the array.
+            int[][] elitismPop = srtPopulation.Clone() as int[][];
+
+            for (int i = 0; i < srtPopulation.Length; i++)
+            {
+                elitismPop[i] = new int[srtPopulation[i].Length];
+                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
+            }
+
+            int[][] RwheelPop = new int[count][];
+
+            for (int i = 0; i < count; ++i)
+            {
+                RwheelPop[i] = elitismPop[i];
+            }
+
+            return RwheelPop;
+        }
+
+        /// <summary>
+        /// select the number of the best individual in the population.
+        /// </summary>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="count"></param>
+        /// <returns>char[][]</returns>
+        public char[][] Elitism(char[][] srtPopulation, int count)
+        {
+            count = (count > srtPopulation.Length) ? srtPopulation.Length : count;
+
+            //clone the array.
+            char[][] elitismPop = srtPopulation.Clone() as char[][];
+
+            char[][] selChromosome = new char[count][];
+            for (int i = 0; i < count; ++i)
+            {
+                selChromosome[i] = elitismPop[i];
+            }
+
+            return selChromosome;
+        }
+
+        /// <summary>
+        /// select a number of individuals depending of their ranking in the population. 
+        /// The best ranked individuals have more chance to be selected than worst.
+        /// All individuals in the population have the chance to be selected. based in the non-polinomic curve (y = 1 / x)
+        /// </summary>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>object[][]</returns>
         public object[][] RouletteWheelNonPolinomicMin(object[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -104,23 +173,13 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return object[][] population.
- */
+
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
         /// <returns></returns>
         public object[][] RouletteWheel(object[][] srtPopulation, float[] results, int maxItem)
         {
@@ -360,37 +419,6 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
-
-        //////////////////////////DOUBLE/////////////////////////////////////
-        /**
-         * ElitismSelection method.
-         * select the number of the best indiviudals in the population.
-         *
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param count         -> quantity of individuals selected for the next generation.
-         * @return double[][] population.
-         * 
-         * 
-         */
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        public double[][] Elitism(double[][] srtPopulation, int count)
-        {
-            //clone the array.
-            double[][] elitismPop = srtPopulation.Clone() as double[][];
-
-            double[][] RwheelPop = new double[count][];
-            for (int i = 0; i < count; ++i)
-            {
-                RwheelPop[i] = elitismPop[i];
-            }
-            return RwheelPop;
-        }
-
         /**
  * RouletteWheel method.
  * select a number of individuals depending of their ranking in the population.
@@ -444,17 +472,6 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return double[][] population.
- */
         /// <summary>
         /// 
         /// </summary>
@@ -537,33 +554,15 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
-  * TournamentSelection method.
-  * select a number of indiviudals trough a tournament selection.
-  * As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
-  * An interest parameter is the preasure: as bigger value is, best individuals will be selected.
-  * This method return a new population and can be bigger than the original size.
-  * in the TorunamentSelection method is not necessary a sorted population.
-  * 
-  * @param srtPopulation -> a population.
-  * @param resutls		-> the array of results from the evaluation in float[] flavor.
-  * @param numbTour 		-> the quantity of tournaments, any integer.
-  * @param preasure 	 	-> number of individuals in the competition.
-  * @param type	 		-> String value: if is "min" the competition will select as a "winner" the smallest value in the population. other the bigger.
-  * @param s				-> the decay of the curve. (See RouletteWheelSigmoidalEngine.pde).
-  * @return double[][] population.
-  * 
-  * 
-  */
         /// <summary>
-        /// 
+        /// select a number of indiviudals trough a tournament selection.As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">the array of results from the evaluation</param>
+        /// <param name="numbTour">The number of tournaments</param>
+        /// <param name="preasure">number of individuals in the each tournament</param>
+        /// <param name="type">if "min" the TS will select as a "winner" the lowes value in the population. otherwise the highest</param>
+        /// <returns>double[][]</returns>
         public double[][] TournamentSelection(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             double[][] TourPop = new double[numbTour][];
@@ -697,50 +696,6 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
-
-        //////////////////////////FLOAT/////////////////////////////////////
-        /**
-         * ElitismSelection method.
-         * select the number of the best indiviudals in the population.
-         *
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param count         -> quantity of individuals selected for the next generation.
-         * @return float[][] population.
-         * 
-         * 
-         */
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        public float[][] Elitism(float[][] srtPopulation, int count)
-        {
-            //clone the array.
-            float[][] elitismPop = srtPopulation.Clone() as float[][];
-
-            float[][] RwheelPop = new float[count][];
-
-            for (int i = 0; i < count; ++i)
-            {
-                RwheelPop[i] = elitismPop[i];
-            }
-
-            return RwheelPop;
-        }
-
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return float[][] population.
- */
         /// <summary>
         /// 
         /// </summary>
@@ -783,17 +738,6 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return float[][] population.
- */
         /// <summary>
         /// 
         /// </summary>
@@ -1053,55 +997,6 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
-        //////////////////////////INTEGER/////////////////////////////////////
-        /**
-         * ElitismSelection method.
-         * select the number of the best indiviudals in the population.
-         *
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param count         -> quantity of individuals selected for the next generation.
-         * @return int[][] population.
-         * 
-         * 
-         */
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        public int[][] Elitism(int[][] srtPopulation, int count)
-        {
-            //clone the array.
-            int[][] elitismPop = srtPopulation.Clone() as int[][];
-
-            for (int i = 0; i < srtPopulation.Length; i++)
-            {
-                elitismPop[i] = new int[srtPopulation[i].Length];
-                Array.Copy(srtPopulation[i], 0, elitismPop[i], 0, srtPopulation[i].Length);
-            }
-
-            int[][] RwheelPop = new int[count][];
-
-            for (int i = 0; i < count; ++i)
-            {
-                RwheelPop[i] = elitismPop[i];
-            }
-
-            return RwheelPop;
-        }
-
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return int[][] population.
- */
         /// <summary>
         /// 
         /// </summary>
@@ -1355,7 +1250,15 @@ namespace Laga.GeneticAlgorithm
 
             return TourPop;
         }
-        int[] Tournament(int[][] torneo, float[] results, String type)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="torneo"></param>
+        /// <param name="results"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public int[] Tournament(int[][] torneo, float[] results, String type)
         {
             float test = results[0];
             int c = 0;
@@ -1384,7 +1287,15 @@ namespace Laga.GeneticAlgorithm
             winner = torneo[c];
             return winner;
         }
-        int[] Tournament(int[][] torneo, int[] results, String type)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="torneo"></param>
+        /// <param name="results"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public int[] Tournament(int[][] torneo, int[] results, String type)
         {
             int test = results[0];
             int c = 0;
@@ -1414,50 +1325,6 @@ namespace Laga.GeneticAlgorithm
             return winner;
         }
 
-        //////////////////////////CHARACTER///////////////////////////////////
-        /**
-         * ElitismSelection method.
-         * select the number of the best indiviudals in the population.
-         *
-         * @param srtPopulation -> a sorted population by any sort algorithm.
-         * @param count         -> quantity of individuals selected for the next generation.
-         * @return char[][] population.
-         * 
-         * 
-         */
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        public char[][] Elitism(char[][] srtPopulation, int count)
-        {
-            count = (count > srtPopulation.Length) ? srtPopulation.Length : count;
-
-            //clone the array.
-            char[][] elitismPop = srtPopulation.Clone() as char[][];
-
-            char[][] selChromosome = new char[count][];
-            for (int i = 0; i < count; ++i)
-            {
-                selChromosome[i] = elitismPop[i];
-            }
-
-            return selChromosome;
-        }
-
-        /**
- * RouletteWheel method.
- * select a number of individuals depending of their ranking in the population.
- * the best ranked individuals have more chance to be selected than worst. 
- * All individuals in the population have the chance to be selected. This algorithm is based in a non-polinomic curve (y = 1/x).
- * 
- * @param srtPopulation -> a sorted population by any sort algorithm.
- * @param results 		-> the array of results from the evaluation in int[] flavour
- * @param maxItem 		-> the maxItem is the maximum number of selected individuals in the roulette wheel.
- * @return char[][] population.
- */
         /// <summary>
         /// 
         /// </summary>

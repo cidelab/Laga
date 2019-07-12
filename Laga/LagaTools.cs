@@ -190,22 +190,58 @@ namespace Laga.GeneticAlgorithm
         /// Reverse Original integer population
         /// </summary>
         /// <param name="intPop">int[][]</param>
-        public static void ReversePopulation(int[][] intPop) { }
+        public static void ReversePopulation(int[][] intPop)
+        {
+            int[] temp;
+            for (int i = 0; i < intPop.Length / 2; i++)
+            {
+                temp = intPop[i];
+                intPop[i] = intPop[intPop.Length - i - 1];
+                intPop[intPop.Length - i - 1] = temp;
+            }
+        }
         /// <summary>
         /// Reverse original double population
         /// </summary>
         /// <param name="dblPop">double[][]</param>
-        public static void ReversePopulation(double[][] dblPop) { }
+        public static void ReversePopulation(double[][] dblPop)
+        {
+            double[] temp;
+            for (int i = 0; i < dblPop.Length / 2; i++)
+            {
+                temp = dblPop[i];
+                dblPop[i] = dblPop[dblPop.Length - i - 1];
+                dblPop[dblPop.Length - i - 1] = temp;
+            }
+        }
         /// <summary>
         /// Reverse original float population
         /// </summary>
         /// <param name="flPop">float[][]</param>
-        public static void ReversePopulation(float[][] flPop) { }
+        public static void ReversePopulation(float[][] flPop)
+        {
+            float[] temp;
+            for (int i = 0; i < flPop.Length / 2; i++)
+            {
+                temp = flPop[i];
+                flPop[i] = flPop[flPop.Length - i - 1];
+                flPop[flPop.Length - i - 1] = temp;
+            }
+        }
         /// <summary>
         /// Reverse original object population
         /// </summary>
         /// <param name="objPop">object[][]</param>
-        public static void ReversePopulation(object[][] objPop) { }
+        public static void ReversePopulation(object[][] objPop)
+        {
+            object[] temp;
+            for (int i = 0; i < objPop.Length / 2; i++)
+            {
+                temp = objPop[i];
+                objPop[i] = objPop[objPop.Length - i - 1];
+                objPop[objPop.Length - i - 1] = temp;
+            }
+        }
 
         /// <summary>
         /// Fisher-Yates Shuffle Algorithm for array of integers.

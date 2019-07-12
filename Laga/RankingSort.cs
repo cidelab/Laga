@@ -38,11 +38,11 @@ namespace Laga.GeneticAlgorithm
 * 
 */
         /// <summary>
-        /// 
+        /// Sort the individuals in the population by fitness value.
         /// </summary>
-        /// <param name="population"></param>
-        /// <param name="arrResults"></param>
-        /// <param name="minmax"></param>
+        /// <param name="population">population to sort</param>
+        /// <param name="arrResults">Array of fitness in the population. Only two flavors are supported: int[] and float[]</param>
+        /// <param name="minmax">if is true the sort is by min to max, else max to min</param>
         public void BidirectionalBubbleSort(object[][] population, float[] arrResults, bool minmax)
         {
             int j;
