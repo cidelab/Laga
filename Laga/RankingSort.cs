@@ -26,17 +26,7 @@ namespace Laga.GeneticAlgorithm
         {
 
         }
-        /**
-*An optimised BidirectionalBubbleSort method.
-* Sort the individuals in the population by fitness value.
-* 
-* @param population -> population to sort;
-* @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
-* @param minmax 	 -> if is true the sort is by min to max, else max to min.
-* @return automatically the population is sorted updated. the original population will be modified.
-* 
-* 
-*/
+
         /// <summary>
         /// Sort the individuals in the population by fitness value.
         /// </summary>
@@ -90,17 +80,6 @@ namespace Laga.GeneticAlgorithm
             fltArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -154,17 +133,6 @@ namespace Laga.GeneticAlgorithm
             intArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -219,17 +187,6 @@ namespace Laga.GeneticAlgorithm
             fltArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -285,17 +242,6 @@ namespace Laga.GeneticAlgorithm
 
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -349,17 +295,6 @@ namespace Laga.GeneticAlgorithm
             fltArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -413,17 +348,6 @@ namespace Laga.GeneticAlgorithm
             intArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>
@@ -476,17 +400,7 @@ namespace Laga.GeneticAlgorithm
             intPopulation = population;
             fltArrResults = arrResults;
         }
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is true the sort is by min to max, else max to min.
- * @return automatically the population is sorted updated. the original population will be modified.
- * 
- * 
- */
+
         /// <summary>
         /// 
         /// </summary>
@@ -540,17 +454,6 @@ namespace Laga.GeneticAlgorithm
             intArrResults = arrResults;
         }
 
-        /**
- *An optimised BidirectionalBubbleSort method.
- * Sort the individuals in the population by fitness value.
- * 
- * @param population -> population to sort;
- * @param arrResults -> Array of fitness in the population. Only two flavors are supported: int[] and float[].
- * @param minmax 	 -> if is false the sort is by min to max, true max to min.
- * @return automatically the population sorted is updated. the original population will be modified.
- * 
- * 
- */
         /// <summary>
         /// 
         /// </summary>

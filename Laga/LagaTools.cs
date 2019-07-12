@@ -28,6 +28,7 @@ namespace Laga.GeneticAlgorithm
                 return Convert.ToInt32(s, 2);
             }
         }
+
         /// <summary>
         /// Extract part of the DNA from a chromosome. 
         /// </summary>
@@ -125,6 +126,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="any">float[]</param>
         /// <returns>string[]</returns>
+        /// 
         public static string[] Parse(float[] any)
         {
             string[] arrString = Array.ConvertAll(any, new Converter<float, string>(Convert.ToString));
@@ -171,6 +173,7 @@ namespace Laga.GeneticAlgorithm
                 arrInt[arrInt.Length - i - 1] = temp;
             }
         }
+
         /// <summary>
         /// Reverse the original array of doubles
         /// </summary>
@@ -200,6 +203,7 @@ namespace Laga.GeneticAlgorithm
                 intPop[intPop.Length - i - 1] = temp;
             }
         }
+
         /// <summary>
         /// Reverse original double population
         /// </summary>
@@ -214,6 +218,7 @@ namespace Laga.GeneticAlgorithm
                 dblPop[dblPop.Length - i - 1] = temp;
             }
         }
+
         /// <summary>
         /// Reverse original float population
         /// </summary>
@@ -228,6 +233,7 @@ namespace Laga.GeneticAlgorithm
                 flPop[flPop.Length - i - 1] = temp;
             }
         }
+
         /// <summary>
         /// Reverse original object population
         /// </summary>
@@ -248,6 +254,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="arrInt">The array of integers to shuffle</param>
         /// <returns></returns>
+        /// 
         public static int[] Fisher_Yates(int[] arrInt)
         {
             int cant = arrInt.Length;
@@ -353,6 +360,7 @@ namespace Laga.GeneticAlgorithm
                 return getrandom.Next(min, max);
             }
         }
+
         /// <summary>
         /// Random number
         /// </summary>
@@ -396,8 +404,6 @@ namespace Laga.GeneticAlgorithm
         {
             return (char)GetRandomNumber(start, end + 1);
         }
-
-
 
         /// <summary>
         /// Return non repetead integers between a min max and percent.
@@ -450,7 +456,6 @@ namespace Laga.GeneticAlgorithm
 
             return arrIndexSelected;
         }
-
 
     }
 }

@@ -17,22 +17,13 @@ namespace Laga.GeneticAlgorithm
 
         }
 
-        //////////////////////////OBJECTS/////////////////////////////////////
-        /**
-         * ReplaceInheritance method.
-         * this replace method is ideal for combinatorial problems with objects types in chromsome.
-         * and where is not possible generate new data in the replacement population.
-         * The Replace Inheritance use the parents and the mutated Inheritance. becareful...
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param ParentsPopulation -> the parents population.
-         * @param sizePopulation    -> the size of the population.
-         * @return object[][] new population.
-         * 
-         * 
-         *
-         */
-
+        /// <summary>
+        /// This replace method is ideal for combinatorial problems with objects types in chromsome. and where is not possible generate new data in the replacement population.
+        /// </summary>
+        /// <param name="sonMutPopulation">the son mutated population</param>
+        /// <param name="ParentsPopulation">the parents population</param>
+        /// <param name="sizePopulation">the size of the population</param>
+        /// <returns>object[][]</returns>
         public object[][] ReplaceInheritance(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation)
         {
             object[][] newPopulation = new object[sizePopulation][];
@@ -68,7 +59,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Creates a new population using the mutated inheritance and new random chromsomes.
+        /// Creates a new population using the mutated inheritance and new random chromosomes.
         /// </summary>
         /// <param name="sonMutPopulation">Object[][]</param>
         /// <param name="percent">float</param>
@@ -102,21 +93,32 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceInheritanceRandom method.
-         * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-         * individuals will (parents) and how many new ones will be created for the new population.
-         * 
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param ParentsPopulation -> the parents population.
-         * @param sizePopulation    -> the size of the population.
-         * @param min    			-> min value in the chromosome.
-         * @param max    			-> max value in the chromosome.
-         * @param percentInherit    -> percentInherit.
-         * @return object[][] new population.
-         * 
-         * 
-         */
+ * ReplaceInheritanceRandom method.
+ * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+ * individuals will (parents) and how many new ones will be created for the new population.
+ * 
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param ParentsPopulation -> the parents population.
+ * @param sizePopulation    -> the size of the population.
+ * @param min    			-> min value in the chromosome.
+ * @param max    			-> max value in the chromosome.
+ * @param percentInherit    -> percentInherit.
+ * @return object[][] new population.
+ * 
+ * 
+ */
+
+
+
+        /// <summary>
+        /// this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will(parents) and how many new ones will be created for the new population.
+        /// </summary>
+        /// <param name="sonMutPopulation">the son mutated population</param>
+        /// <param name="ParentsPopulation">the parents population</param>
+        /// <param name="sizePopulation">the size of the population</param>
+        /// <param name="percentInherit">percentInherit</param>
+        /// <returns></returns>
         public object[][] ReplaceInheritanceRandom(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation, float percentInherit)
         {
             int resta = sizePopulation - sonMutPopulation.Length;
@@ -177,6 +179,15 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <returns></returns>
         public double[][] ReplaceInheritance(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation)
         {
             double[][] newPopulation = new double[sizePopulation][];
@@ -213,17 +224,26 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceRandom method.
-         * this replace method create a new population using the mutated inheritance and new random chromsomes.
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param sizePopulation    -> the size of the population.
-         * @param min				-> the minimum value in the crhomosome
-         * @param max				-> the maximum value in the chromosome
-         * @return double[][] new population.
-         * 
-         * 
-         */
+ * ReplaceRandom method.
+ * this replace method create a new population using the mutated inheritance and new random chromsomes.
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param sizePopulation    -> the size of the population.
+ * @param min				-> the minimum value in the crhomosome
+ * @param max				-> the maximum value in the chromosome
+ * @return double[][] new population.
+ * 
+ * 
+ */
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public double[][] ReplaceRandom(double[][] sonMutPopulation, int sizePopulation, double min, double max)
         {
             double[][] newPopulation = new double[sizePopulation][];
@@ -256,21 +276,31 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceInheritanceRandom method.
-         * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-         * individuals will (parents) and how many new ones will be created for the new population.
-         * 
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param ParentsPopulation -> the parents population.
-         * @param sizePopulation    -> the size of the population.
-         * @param min    			-> min value in the chromosome.
-         * @param max    			-> max value in the chromosome.
-         * @param percentInherit    -> percentInherit.
-         * @return double[][] new population.
-         * 
-         * 
-         */
+ * ReplaceInheritanceRandom method.
+ * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+ * individuals will (parents) and how many new ones will be created for the new population.
+ * 
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param ParentsPopulation -> the parents population.
+ * @param sizePopulation    -> the size of the population.
+ * @param min    			-> min value in the chromosome.
+ * @param max    			-> max value in the chromosome.
+ * @param percentInherit    -> percentInherit.
+ * @return double[][] new population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentInherit"></param>
+        /// <returns></returns>
         public double[][] ReplaceInheritanceRandom(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation, double min, double max, float percentInherit)
         {
             int resta = sizePopulation - sonMutPopulation.Length;
@@ -334,6 +364,14 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <returns></returns>
         public float[][] ReplaceInheritance(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation)
         {
             float[][] newPopulation = new float[sizePopulation][];
@@ -370,17 +408,25 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceRandom method.
-         * this replace method create a new population using the mutated inheritance and new random chromsomes.
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param sizePopulation    -> the size of the population.
-         * @param min				-> the minimum value in the crhomosome
-         * @param max				-> the maximum value in the chromosome
-         * @return float[][] new population.
-         * 
-         * 
-         */
+ * ReplaceRandom method.
+ * this replace method create a new population using the mutated inheritance and new random chromsomes.
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param sizePopulation    -> the size of the population.
+ * @param min				-> the minimum value in the crhomosome
+ * @param max				-> the maximum value in the chromosome
+ * @return float[][] new population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public float[][] ReplaceRandom(float[][] sonMutPopulation, int sizePopulation, float min, float max)
         {
             float[][] newPopulation = new float[sizePopulation][];
@@ -413,21 +459,31 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceInheritanceRandom method.
-         * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-         * individuals will (parents) and how many new ones will be created for the new population.
-         * 
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param ParentsPopulation -> the parents population.
-         * @param sizePopulation    -> the size of the population.
-         * @param min    			-> min value in the chromosome.
-         * @param max    			-> max value in the chromosome.
-         * @param percentInherit    -> percentInherit.
-         * @return float[][] new population.
-         * 
-         * 
-         */
+ * ReplaceInheritanceRandom method.
+ * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+ * individuals will (parents) and how many new ones will be created for the new population.
+ * 
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param ParentsPopulation -> the parents population.
+ * @param sizePopulation    -> the size of the population.
+ * @param min    			-> min value in the chromosome.
+ * @param max    			-> max value in the chromosome.
+ * @param percentInherit    -> percentInherit.
+ * @return float[][] new population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentInherit"></param>
+        /// <returns></returns>
         public float[][] ReplaceInheritanceRandom(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation, float min, float max, float percentInherit)
         {
             int resta = sizePopulation - sonMutPopulation.Length;
@@ -491,6 +547,13 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <returns></returns>
         public int[][] ReplaceInheritance(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation)
         {
             int[][] newPopulation = new int[sizePopulation][];
@@ -527,17 +590,25 @@ namespace Laga.GeneticAlgorithm
         }
 
         /**
-         * ReplaceRandom method.
-         * this replace method create a new population using the mutated inheritance and new random chromsomes.
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param sizePopulation    -> the size of the population.
-         * @param min				-> the minimum value in the crhomosome
-         * @param max				-> the maximum value in the chromosome
-         * @return int[][] new population.
-         * 
-         * 
-         */
+ * ReplaceRandom method.
+ * this replace method create a new population using the mutated inheritance and new random chromsomes.
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param sizePopulation    -> the size of the population.
+ * @param min				-> the minimum value in the crhomosome
+ * @param max				-> the maximum value in the chromosome
+ * @return int[][] new population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public int[][] ReplaceRandom(int[][] sonMutPopulation, int sizePopulation, int min, int max)
         {
             int[][] newPopulation = new int[sizePopulation][];
@@ -569,22 +640,33 @@ namespace Laga.GeneticAlgorithm
             return newPopulation;
         }
 
+
         /**
-         * ReplaceInheritanceRandom method.
-         * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-         * individuals will (parents) and how many new ones will be created for the new population.
-         * 
-         *
-         * @param sonMutPopulation  -> the son mutated population
-         * @param ParentsPopulation -> the parents population.
-         * @param sizePopulation    -> the size of the population.
-         * @param min    			-> min value in the chromosome.
-         * @param max    			-> max value in the chromosome.
-         * @param percentInherit    -> percentInherit.
-         * @return int[][] new population.
-         * 
-         * 
-         */
+ * ReplaceInheritanceRandom method.
+ * this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+ * individuals will (parents) and how many new ones will be created for the new population.
+ * 
+ *
+ * @param sonMutPopulation  -> the son mutated population
+ * @param ParentsPopulation -> the parents population.
+ * @param sizePopulation    -> the size of the population.
+ * @param min    			-> min value in the chromosome.
+ * @param max    			-> max value in the chromosome.
+ * @param percentInherit    -> percentInherit.
+ * @return int[][] new population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sonMutPopulation"></param>
+        /// <param name="ParentsPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="percentInherit"></param>
+        /// <returns></returns>
         public int[][] ReplaceInheritanceRandom(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation, int min, double max, float percentInherit)
         {
             int resta = sizePopulation - sonMutPopulation.Length;
@@ -644,6 +726,13 @@ namespace Laga.GeneticAlgorithm
          * 
          * 
          */
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="newPartOfPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <returns></returns>
         public char[][] BinaryCharRandomReplace(char[][] newPartOfPopulation, int sizePopulation)
         {
             char[][] newPopulation = new char[sizePopulation][];
@@ -668,14 +757,22 @@ namespace Laga.GeneticAlgorithm
         }
 
         /** CharRandomReplace method.
-         * set a new a population from the selected individuals.
-         *
-         * @param newPartOfPopulation -> selected individuals.
-         * @param sizePopulation      -> the size of the population.
-         * @return char[][] population.
-         * 
-         * 
-         */
+ * set a new a population from the selected individuals.
+ *
+ * @param newPartOfPopulation -> selected individuals.
+ * @param sizePopulation      -> the size of the population.
+ * @return char[][] population.
+ * 
+ * 
+ */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="newPartOfPopulation"></param>
+        /// <param name="sizePopulation"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
         public char[][] CharRandomReplace(char[][] newPartOfPopulation, int sizePopulation, int start, int end)
         {
             char[][] newPopulation = new char[sizePopulation][];

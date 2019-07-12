@@ -176,7 +176,5 @@ namespace Laga.GeneticAlgorithm
             return chr;
         }
 
-
-
     }
 }

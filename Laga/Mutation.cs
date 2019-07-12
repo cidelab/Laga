@@ -23,6 +23,7 @@ namespace Laga.GeneticAlgorithm
             popPercent = MutationRate;
             rnd = new Random(DateTime.Now.Millisecond);
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -49,6 +50,7 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -76,6 +78,7 @@ namespace Laga.GeneticAlgorithm
                 chrom[index2] = temp;
             }
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -103,6 +106,7 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +114,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="percent"></param>
         /// <param name="min"></param>
         /// <param name="max"></param>
+        /// 
         private void DoubleMutation(double[] mutatedPop, float percent, double min, double max)
         {
             int cant = (int)(mutatedPop.Length * percent);
@@ -123,6 +128,7 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = min + rnd.NextDouble() * (max - min);
             }
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -149,6 +155,7 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -168,6 +175,7 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = (float)(min + rnd.NextDouble() * (max - min));
             }
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -195,6 +203,7 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -214,6 +223,7 @@ namespace Laga.GeneticAlgorithm
                 mutatedPop[rndIndex] = (int)(min + rnd.NextDouble() * (max - min));
             }
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -247,6 +257,7 @@ namespace Laga.GeneticAlgorithm
 
             return mutatedPop;
         }
+
         /// <summary>
         /// A Mutation Algorithm
         /// </summary>

@@ -248,6 +248,7 @@ namespace Laga.GeneticAlgorithm
 
             return charPopulation;
         }
+
         /// <summary>
         /// Genr8 a Random population of points [x,y,z]
         /// </summary>
