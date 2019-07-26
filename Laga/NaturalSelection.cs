@@ -113,7 +113,18 @@ namespace Laga.GeneticAlgorithm
         /// <param name="srtPopulation">The sorted population</param>
         /// <param name="count"></param>
         /// <returns>char[][]</returns>
-        /// <code>char[][]</code>
+        /// <example>
+        /// <code>
+        /// GenrPopulation pop = new GenrPopulation(20);
+        /// char[][] charPop = pop.CharPopulation(5, 97, 122);
+        /// float[] rndFitness = Rand.RandomNumbers(20, 0f, 1f);
+        /// RankingSort rs = new RankingSort();
+        /// rs.BidirectionalBubbleSort(charPop, rndFitness, false);
+        /// 
+        /// NaturalSelection ns = new NaturalSelection();
+        /// char[][] nsPop = ns.Elitism(charPop, 5);
+        /// </code>
+        /// </example>
         public char[][] Elitism(char[][] srtPopulation, int count)
         {
             count = (count > srtPopulation.Length) ? srtPopulation.Length : count;
@@ -223,6 +234,18 @@ namespace Laga.GeneticAlgorithm
         /// <param name="results">The result array from the evaluation</param>
         /// <param name="maxItem">Maximum number of selected individuals</param>
         /// <returns>char[][]</returns>
+        /// <example>
+        /// <code>
+        /// GenrPopulation pop = new GenrPopulation(20);
+        /// char[][] charPop = pop.CharPopulation(5, 97, 122);
+        /// float[] rndFitness = Rand.RandomNumbers(20, 0f, 1f);
+        /// RankingSort rs = new RankingSort();
+        /// rs.BidirectionalBubbleSort(charPop, rndFitness, false);
+        /// 
+        /// NaturalSelection ns = new NaturalSelection();
+        /// char[][] nsPop = ns.RouletteWheelNonPolinomicMin(charPop, rndFitness, 10);
+        /// </code>
+        /// </example>
         public char[][] RouletteWheelNonPolinomicMin(char[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -261,12 +284,12 @@ namespace Laga.GeneticAlgorithm
 
         #region RouletteWheel
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
         /// <param name="srtPopulation">The sorted population</param>
         /// <param name="results">The result array from the evaluation</param>
         /// <param name="maxItem">Maximum number of selected individuals</param>
-        /// <returns></returns>
+        /// <returns>object[][]</returns>
         public object[][] RouletteWheel(object[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -303,12 +326,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>double[][]</returns>
         public double[][] RouletteWheel(double[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -345,12 +368,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>float[][]</returns>
         public float[][] RouletteWheel(float[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -387,12 +410,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>float[][]</returns>
         public float[][] RouletteWheel(float[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -429,12 +452,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>int[][]</returns>
         public int[][] RouletteWheel(int[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -471,12 +494,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>char[][]</returns>
         public char[][] RouletteWheel(char[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -513,12 +536,24 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The individual fitness is proportional to the possibilities of being selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>char[][]</returns>
+        /// <example>
+        /// <code>
+        /// GenrPopulation pop = new GenrPopulation(20);
+        /// char[][] charPop = pop.CharPopulation(5, 97, 122);
+        /// float[] rndFitness = Rand.RandomNumbers(20, 0f, 1f);
+        /// RankingSort rs = new RankingSort();
+        /// rs.BidirectionalBubbleSort(charPop, rndFitness, false);
+        /// 
+        /// NaturalSelection ns = new NaturalSelection();
+        /// char[][] nsPop = ns.RouletteWheel(charPop, rndFitness, 5);
+        /// </code>
+        /// </example>
         public char[][] RouletteWheel(char[][] srtPopulation, int[] results, int maxItem)
         {
             //clone the array.
@@ -560,16 +595,16 @@ namespace Laga.GeneticAlgorithm
         #region RouletteWheelSigmoidal
 
         /// <summary>
-        /// 
+        /// A roulette wheel selection distributed on a sigmoid curve 
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="sizeRoulette"></param>
-        /// <param name="A1"></param>
-        /// <param name="A2"></param>
-        /// <param name="B1"></param>
-        /// <param name="B2"></param>
-        /// <param name="s"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="sizeRoulette">Number of individuals selected</param>
+        /// <param name="A1">The maximum number of selected individuals in the roulette wheel</param>
+        /// <param name="A2">The minimum number of selected individuals in the roulette wheel</param>
+        /// <param name="B1">The start index in the population. 1 is the second individual</param>
+        /// <param name="B2">The last index in the population. 5 is the sixth individual</param>
+        /// <param name="s">the factor decay, values between 0.00 and 1.00</param>
+        /// <returns>object[][]</returns>
         public object[][] RouletteWheelSigmoidal(object[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -600,16 +635,16 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Roulette Wheel Selection
+        /// A roulette wheel selection distributed on a sigmoid curve 
         /// </summary>
-        /// <param name="srtPopulation">double[][], a sorted population by any sort algorithm</param>
-        /// <param name="sizeRoulette">int, number of the individuals to select</param>
-        /// <param name="A1">int, the maximum number of individuals in the roulette wheel (aprox)</param>
-        /// <param name="A2">int, the minimum number of individuals in the roulette wheel (aprox)</param>
-        /// <param name="B1">int, the start scope in the population: 1 the selection will start in the second individual</param>
-        /// <param name="B2">int, the scope in the population, if size population, then all individuals will be included</param>
-        /// <param name="s">float, factor decay: between 0 and 1 </param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="sizeRoulette">Number of individuals selected</param>
+        /// <param name="A1">The maximum number of selected individuals in the roulette wheel</param>
+        /// <param name="A2">The minimum number of selected individuals in the roulette wheel</param>
+        /// <param name="B1">The start index in the population. 1 is the second individual</param>
+        /// <param name="B2">The last index in the population. 5 is the sixth individual</param>
+        /// <param name="s">the factor decay, values between 0.00 and 1.00</param>
+        /// <returns>double[][]</returns>
         public double[][] RouletteWheelSigmoidal(double[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -640,16 +675,16 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// A roulette wheel selection distributed on a sigmoid curve 
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="sizeRoulette"></param>
-        /// <param name="A1"></param>
-        /// <param name="A2"></param>
-        /// <param name="B1"></param>
-        /// <param name="B2"></param>
-        /// <param name="s"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="sizeRoulette">Number of individuals selected</param>
+        /// <param name="A1">The maximum number of selected individuals in the roulette wheel</param>
+        /// <param name="A2">The minimum number of selected individuals in the roulette wheel</param>
+        /// <param name="B1">The start index in the population. 1 is the second individual</param>
+        /// <param name="B2">The last index in the population. 5 is the sixth individual</param>
+        /// <param name="s">the factor decay, values between 0.00 and 1.00</param>
+        /// <returns>float[][]</returns>
         public float[][] RouletteWheelSigmoidal(float[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -680,16 +715,16 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// A roulette wheel selection distributed on a sigmoid curve 
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="sizeRoulette"></param>
-        /// <param name="A1"></param>
-        /// <param name="A2"></param>
-        /// <param name="B1"></param>
-        /// <param name="B2"></param>
-        /// <param name="s"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="sizeRoulette">Number of individuals selected</param>
+        /// <param name="A1">The maximum number of selected individuals in the roulette wheel</param>
+        /// <param name="A2">The minimum number of selected individuals in the roulette wheel</param>
+        /// <param name="B1">The start index in the population. 1 is the second individual</param>
+        /// <param name="B2">The last index in the population. 5 is the sixth individual</param>
+        /// <param name="s">the factor decay, values between 0.00 and 1.00</param>
+        /// <returns>char[][]</returns>
         public char[][] RouletteWheelSigmoidal(char[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -720,16 +755,16 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// A roulette wheel selection distributed on a sigmoid curve 
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="sizeRoulette"></param>
-        /// <param name="A1"></param>
-        /// <param name="A2"></param>
-        /// <param name="B1"></param>
-        /// <param name="B2"></param>
-        /// <param name="s"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="sizeRoulette">Number of individuals selected</param>
+        /// <param name="A1">The maximum number of selected individuals in the roulette wheel</param>
+        /// <param name="A2">The minimum number of selected individuals in the roulette wheel</param>
+        /// <param name="B1">The start index in the population. 1 is the second individual</param>
+        /// <param name="B2">The last index in the population. 5 is the sixth individual</param>
+        /// <param name="s">the factor decay, values between 0.00 and 1.00</param>
+        /// <returns>int[][]</returns>
         public int[][] RouletteWheelSigmoidal(int[][] srtPopulation, int sizeRoulette, int A1, int A2, int B1, int B2, float s)
         {
             //clone the array.
@@ -763,14 +798,15 @@ namespace Laga.GeneticAlgorithm
 
         #region TournamentSelection
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public object[][] TournamentSelection(object[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             object[][] TourPop = new object[numbTour][];
@@ -796,14 +832,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public object[][] TournamentSelection(object[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             object[][] TourPop = new object[numbTour][];
@@ -830,14 +867,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// select a number of indiviudals trough a tournament selection.As medieval tournament, the individuals have to compete in a tournament, the best individuals will be selected by the next generation
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
         /// <param name="srtPopulation">The sorted population</param>
-        /// <param name="results">the array of results from the evaluation</param>
-        /// <param name="numbTour">The number of tournaments</param>
-        /// <param name="preasure">number of individuals in the each tournament</param>
-        /// <param name="type">if "min" the TS will select as a "winner" the lowes value in the population. otherwise the highest</param>
-        /// <returns>double[][]</returns>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public double[][] TournamentSelection(double[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             double[][] TourPop = new double[numbTour][];
@@ -863,14 +901,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public double[][] TournamentSelection(double[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             double[][] TourPop = new double[numbTour][];
@@ -896,14 +935,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public float[][] TournamentSelection(float[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             float[][] TourPop = new float[numbTour][];
@@ -929,14 +969,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public float[][] TournamentSelection(float[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             float[][] TourPop = new float[numbTour][];
@@ -962,14 +1003,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public int[][] TournamentSelection(int[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             int[][] TourPop = new int[numbTour][];
@@ -995,14 +1037,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public int[][] TournamentSelection(int[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             int[][] TourPop = new int[numbTour][];
@@ -1028,14 +1071,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public char[][] TournamentSelection(char[][] srtPopulation, float[] results, int numbTour, int preasure, String type)
         {
             char[][] TourPop = new char[numbTour][];
@@ -1061,14 +1105,15 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// As medieval tournament, the individuals have to compete in a tournament, 
+        /// the tournament winner is selected.
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="numbTour"></param>
-        /// <param name="preasure"></param>
-        /// <param name="type"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="numbTour">Number of tournaments</param>
+        /// <param name="preasure">Number of individuals in the tournament</param>
+        /// <param name="type">if is "min" the smallest fitness is selected, otherwise the highest</param>
+        /// <returns>object[][]</returns>
         public char[][] TournamentSelection(char[][] srtPopulation, int[] results, int numbTour, int preasure, String type)
         {
             char[][] TourPop = new char[numbTour][];
