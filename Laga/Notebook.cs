@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using Laga.GeneticAlgorithm;
+using Laga.Geometry;
 
 namespace Laga.Graphics
 {

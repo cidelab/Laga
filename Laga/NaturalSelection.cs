@@ -113,6 +113,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="srtPopulation">The sorted population</param>
         /// <param name="count"></param>
         /// <returns>char[][]</returns>
+        /// <code>char[][]</code>
         public char[][] Elitism(char[][] srtPopulation, int count)
         {
             count = (count > srtPopulation.Length) ? srtPopulation.Length : count;

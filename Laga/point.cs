@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga.Geometry
 {
     /// <summary>
     /// generic point class made by 3 doubles.
