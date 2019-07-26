@@ -133,9 +133,7 @@ namespace Laga.GeneticAlgorithm
 
         #region RouletteWheelNonPolinomicMin
         /// <summary>
-        /// select a number of individuals depending of their ranking in the population. 
-        /// The best ranked individuals have more chance to be selected than worst.
-        /// All individuals in the population have the chance to be selected. based in the non-polinomic curve (y = 1 / x)
+        /// select a number of individuals according to their fitness in the population, based in a non-polinomic curve (y = 1 / x)
         /// </summary>
         /// <param name="srtPopulation">The sorted population</param>
         /// <param name="results">The result array from the evaluation</param>
