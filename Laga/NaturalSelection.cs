@@ -133,7 +133,7 @@ namespace Laga.GeneticAlgorithm
 
         #region RouletteWheelNonPolinomicMin
         /// <summary>
-        /// select a number of individuals according to their fitness in the population, based in a non-polinomic curve (y = 1 / x)
+        /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
         /// <param name="srtPopulation">The sorted population</param>
         /// <param name="results">The result array from the evaluation</param>
@@ -175,12 +175,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
-        /// <param name="srtPopulation"></param>
-        /// <param name="results"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>double[][]</returns>
         public double[][] RouletteWheelNonPolinomicMin(double[][] srtPopulation, float[] results, int maxItem)
         {
             //clone the array.
@@ -210,6 +210,48 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < srtPopulation.Length; i++)
             {
                 RwheelPop[i] = new double[srtPopulation[i].Length];
+                RwheelPop[i] = bigArray[rand.Next(bigArray.Length)];
+            }
+
+            return RwheelPop;
+        }
+
+        /// <summary>
+        /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
+        /// </summary>
+        /// <param name="srtPopulation">The sorted population</param>
+        /// <param name="results">The result array from the evaluation</param>
+        /// <param name="maxItem">Maximum number of selected individuals</param>
+        /// <returns>char[][]</returns>
+        public char[][] RouletteWheelNonPolinomicMin(char[][] srtPopulation, float[] results, int maxItem)
+        {
+            //clone the array.
+            List<char[]> arrRwheelPop = new List<char[]>();
+            int index;
+            float p1 = results[0];
+            float p2;
+            float r;
+
+            for (int i = 0; i < srtPopulation.Length; i++)
+            {
+                p2 = results[i];
+                r = (p1 / p2) * maxItem;
+                index = (int)r;
+                index = index < 1 ? 1 : index;
+                for (int j = 0; j < index; ++j)
+                {
+                    arrRwheelPop.Add(srtPopulation[i]);
+                }
+            }
+            char[][] bigArray = new char[arrRwheelPop.Count][];
+            //bigArray = arrRwheelPop.toArray(bigArray);
+            bigArray = arrRwheelPop.ToArray();
+
+            char[][] RwheelPop = new char[srtPopulation.Length][];
+            Random rand = new Random();
+            for (int i = 0; i < srtPopulation.Length; i++)
+            {
+                RwheelPop[i] = new char[srtPopulation[i].Length];
                 RwheelPop[i] = bigArray[rand.Next(bigArray.Length)];
             }
 
