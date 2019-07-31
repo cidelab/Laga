@@ -250,6 +250,44 @@ namespace Laga.GeneticAlgorithm
         /// <param name="percent">Which percent of chromosomes will be croosver</param>
         /// <param name="pointCutter">Where the crossover will be executed</param>
         /// <returns>Char[][]</returns>
+        /// <example>
+        /// <code>
+        /// GenrPopulation pop = new GenrPopulation(6);
+        /// char[][] charPop = pop.CharPopulation(5, 97, 122);
+        /// float[] rndFitness = Rand.RandomNumbers(6, 0f, 1f);
+        /// 
+        /// sort:
+        /// RankingSort rs = new RankingSort();
+        /// rs.BidirectionalBubbleSort(charPop, rndFitness, false);
+        /// 
+        /// Crossover cs = new Crossover();
+        /// char[][] croossovers = cs.SinglePointCrossover(srtPop, 0.8f, 2);
+        /// 
+        /// result:
+        /// POPULATION:
+        /// vnqaw: 0.6631602
+        /// smzbu: 0.9322885
+        /// cewwe: 0.8222669
+        /// jsxgr: 0.7555377
+        /// ujklr: 0.181477
+        /// uqmvo: 0.6832687
+        /// 
+        /// SORTED POPULATION:
+        /// ujklr: 0.181477
+        /// vnqaw: 0.6631602
+        /// uqmvo: 0.6832687
+        /// jsxgr: 0.7555377
+        /// cewwe: 0.8222669
+        /// smzbu: 0.9322885
+        /// 
+        /// CROSSOVER EXAMPLE: 80%
+        /// smwwe // smzbu - cewwe
+        /// cezbu // cewwe - smzbu
+        /// jsklr // jsxgr - ujklr
+        /// ujxgr // ujklr - jsxgr
+        /// 
+        /// </code>
+        /// </example>
         public char[][] SinglePointCrossover(char[][] population, float percent, int pointCutter)
         {
             int popLength = population.Length;
