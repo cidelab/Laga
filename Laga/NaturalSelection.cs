@@ -16,6 +16,43 @@ namespace Laga.GeneticAlgorithm
         {
 
         }
+
+        #region testing algorithms
+        /// <summary>
+        /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
+        /// </summary>
+        /// <typeparam name="T">Chromosome type</typeparam>
+        /// <param name="population">The Population</param>
+        /// <param name="arrFitness">the Fitness list</param>
+        /// <param name="maxItem">The maximum number of chromosomes selected in the roulette wheel</param>
+        /// <returns>IPopulation</returns>
+        public static Population<T> RouletteWheelNonPolinomicMin<T>(Population<T> population, float[] arrFitness, int maxItem)
+        {
+            //clone the array.
+            Population<T> matingPool = new Population<T>();
+            int index;
+            float p1 = LagaTools.MinMaxValue<float>(arrFitness)[1];//results[0];
+            float p2 = 0;
+            float r;
+
+            for (int i = 0; i < population.Count; i++)
+            {
+
+                p2 = arrFitness[i];
+                r = (p2 / p1) * maxItem;
+                index = (int)r;
+                index = index < 1 ? 1 : index;
+
+                for (int j = 0; j < index; ++j)
+                {
+                    matingPool.Add(population[i]);
+                }
+            }
+
+            return matingPool;
+        }
+        #endregion
+
         #region Elitism
         /// <summary>
         /// select the number of the best individual in the population.
@@ -143,6 +180,9 @@ namespace Laga.GeneticAlgorithm
         #endregion
 
         #region RouletteWheelNonPolinomicMin
+
+
+
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
@@ -155,14 +195,14 @@ namespace Laga.GeneticAlgorithm
             //clone the array.
             List<object> arrRwheelPop = new List<object>();
             int index;
-            float p1 = results[0];
+            float p1 = (float)LagaTools.MinMaxValue<int>(results)[0];//results[0];
             float p2;
             float r;
 
             for (int i = 0; i < srtPopulation.Length; i++)
             {
                 p2 = results[i];
-                r = (p1 / p2) * maxItem;
+                r = (p2 / p1) * maxItem;
                 index = (int)r;
                 index = index < 1 ? 1 : index;
                 for (int j = 0; j < index; ++j)
@@ -185,6 +225,8 @@ namespace Laga.GeneticAlgorithm
             return RwheelPop;
         }
 
+
+
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
@@ -204,7 +246,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < srtPopulation.Length; i++)
             {
                 p2 = results[i];
-                r = (p1 / p2) * maxItem;
+                r = (p2 / p1) * maxItem;
                 index = (int)r;
                 index = index < 1 ? 1 : index;
                 for (int j = 0; j < index; ++j)
@@ -258,7 +300,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < srtPopulation.Length; i++)
             {
                 p2 = results[i];
-                r = (p1 / p2) * maxItem;
+                r = (p2 / p1) * maxItem;
                 index = (int)r;
                 index = index < 1 ? 1 : index;
                 for (int j = 0; j < index; ++j)

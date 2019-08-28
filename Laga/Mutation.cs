@@ -24,6 +24,25 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random(DateTime.Now.Millisecond);
         }
 
+        public static Population<Chromosome> CharMutation(Population<Chromosome> population, float percentChrom, int start, int end)
+        {
+            Random rnd = new Random();
+
+            foreach(Chromosome chr in population)
+            {
+                for(int i = 0; i < chr.Count; i++)
+                {
+                    if (rnd.NextDouble() < percentChrom)
+                    {
+                        chr.SetDNA(i, LagaTools.RandomChar(start, end));
+                    }
+                }
+            }
+
+            return population;
+        }
+
+        #region Mutation
         /// <summary>
         /// 
         /// </summary>
@@ -333,4 +352,6 @@ namespace Laga.GeneticAlgorithm
             }
         }
     }
+
+    #endregion
 }

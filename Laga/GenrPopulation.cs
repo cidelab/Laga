@@ -363,6 +363,7 @@ namespace Laga.GeneticAlgorithm
         /// [][] charPop = pop.BinaryPopulationChr(10);
         ///
         /// result:
+        /// 
         /// Chromosome: 0
         /// - 0, 1, 1, 1, 0, 0, 1, 0, 1, 0,
         /// Chromosome: 1

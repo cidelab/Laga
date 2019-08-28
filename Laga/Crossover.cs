@@ -34,6 +34,51 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random();
         }
 
+        #region testing algorithms
+        public static Population<Chromosome> RandomPointCrossover(Population<Chromosome> matingPool, int populationSize)
+        {
+            Random rnd = new Random();
+            int natSelectionCount = matingPool.Count;
+            Population<Chromosome> popCrossover = new Population<Chromosome>(populationSize);
+ 
+            for (int i = 0; i < populationSize; i ++)
+            {
+                int a = rnd.Next(natSelectionCount);
+                int b = rnd.Next(natSelectionCount);
+
+                Chromosome chrA = matingPool[a];
+                Chromosome chrB = matingPool[b];
+
+                popCrossover.Add(SinglePointCrossover(chrA, chrB, rnd.Next(natSelectionCount)));
+
+            }
+
+            return popCrossover;
+
+        }
+
+        public static Chromosome SinglePointCrossover(Chromosome chromosomeA, Chromosome chromosomeB, int cut)
+        {
+            Chromosome child = new Chromosome();
+
+            for(int i = 0; i < chromosomeA.Count; i++)
+            {
+                if( i > cut)
+                {
+                    child.Add(chromosomeA.GetDNA(i));
+                }
+                else
+                {
+                    child.Add(chromosomeB.GetDNA(i));
+                }
+            }
+
+            return child;
+        }
+        #endregion
+
+        #region Single Point crossover
+
         /// <summary>
         /// A crossover algorithm performed in a single point of the chromosome.
         /// </summary>
@@ -328,7 +373,7 @@ namespace Laga.GeneticAlgorithm
             }
             return inherencePop;
         }
-
+        #endregion
     }
 
 }

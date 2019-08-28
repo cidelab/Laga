@@ -46,6 +46,21 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// Return the Min and Max values from an Array.
+        /// </summary>
+        /// <typeparam name="T">Any number type like: int, double, float...</typeparam>
+        /// <param name="genArray">The array where to extract the values</param>
+        /// <returns>Generic Array</returns>
+        public static T[] MinMaxValue<T>(T[] genArray)
+        {
+            T[] ts = new T[2];
+            ts[0] = genArray.Min<T>();
+            ts[1] = genArray.Max<T>();
+
+            return ts;
+        }
+
+        /// <summary>
         /// Reverse the original Population
         /// </summary>
         /// <param name="charPop">char[][]</param>

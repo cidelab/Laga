@@ -206,9 +206,8 @@ namespace Laga.GeneticAlgorithm
         /// Generates an random char chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
-        ///<a href = "http://stackoverflow.com" > here </a>
         /// <param name="start">the start number in the table, inclusive</param>
-        /// <param name="end">the end number in the table, inclusive</param>
+        /// <param name="end">the end number in the table, exclusive</param>
         /// <returns>returns a random list of characters</returns>
         /// <example>
         /// <code>
@@ -235,7 +234,7 @@ namespace Laga.GeneticAlgorithm
             
             for (int i = 0; i < size; i++)
             {
-                chr[i] = (char)rnd.Next(start, end + 1);
+                chr[i] = (char)rnd.Next(start, end);
             }
 
             return chr;
