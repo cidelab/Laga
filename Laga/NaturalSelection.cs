@@ -17,6 +17,32 @@ namespace Laga.GeneticAlgorithm
 
         }
 
+        public static Population<Chromosome> RouletteWheelNonPolinomicMin(Population<Chromosome> population, int maxItem)
+        {
+            //clone the array.
+            Population<Chromosome> matingPool = new Population<Chromosome>();
+            int index;
+            Chromosome chrMax = population.Higher;
+            float p1 = chrMax.Fitness;
+            float p2 = 0;
+            float r;
+
+            for (int i = 0; i < population.Count; i++)
+            {
+                p2 = population[i].Fitness;
+                r = (p2 / p1) * maxItem;
+                index = (int)r;
+                index = index < 1 ? 1 : index;
+
+                for (int j = 0; j < index; ++j)
+                {
+                    matingPool.Add(population[i]);
+                }
+            }
+
+            return matingPool;
+        }
+
         #region testing algorithms
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)

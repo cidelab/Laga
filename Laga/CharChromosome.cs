@@ -9,6 +9,8 @@ namespace Laga.GeneticAlgorithm
     {
         private int i;
         private int count;
+        private float fitness;
+           
         public int Count
         {
             get
@@ -22,6 +24,18 @@ namespace Laga.GeneticAlgorithm
         public char GetDNA(int index)
         {
             return chromosome[index];
+        }
+
+        public float Fitness
+        {
+            get
+            {
+                return fitness;
+            }
+            set
+            {
+                fitness = value;
+            }
         }
 
         public void SetDNA(int index, char DNA)

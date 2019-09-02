@@ -10,5 +10,8 @@ namespace Laga.GeneticAlgorithm
     {
         int Count { get; }
         void Add(T Get);
+
+        Chromosome Higher { get; }
+        Chromosome Lower { get; }
     }
 }
