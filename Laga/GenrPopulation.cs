@@ -141,6 +141,7 @@ namespace Laga.GeneticAlgorithm
         /// Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
         /// Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
         /// Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32
+        /// 
         /// </code>
         /// </example>
         public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)

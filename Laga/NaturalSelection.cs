@@ -17,26 +17,32 @@ namespace Laga.GeneticAlgorithm
 
         }
 
-        public static Population<Chromosome> RouletteWheelNonPolinomicMin(Population<Chromosome> population, int maxItem)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
+        public static Population RouletteWheelNonPolinomicMin(Population population, int maxItem)
         {
             //clone the array.
-            Population<Chromosome> matingPool = new Population<Chromosome>();
+            Population matingPool = new Population();
             int index;
-            Chromosome chrMax = population.Higher;
+            Chromosome chrMax = population.Higher();
             float p1 = chrMax.Fitness;
             float p2 = 0;
             float r;
 
             for (int i = 0; i < population.Count; i++)
             {
-                p2 = population[i].Fitness;
+                p2 = population.GetChromosome(i).Fitness;
                 r = (p2 / p1) * maxItem;
                 index = (int)r;
                 index = index < 1 ? 1 : index;
 
                 for (int j = 0; j < index; ++j)
                 {
-                    matingPool.Add(population[i]);
+                    matingPool.Add(population.GetChromosome(i));
                 }
             }
 
@@ -52,10 +58,10 @@ namespace Laga.GeneticAlgorithm
         /// <param name="arrFitness">the Fitness list</param>
         /// <param name="maxItem">The maximum number of chromosomes selected in the roulette wheel</param>
         /// <returns>IPopulation</returns>
-        public static Population<T> RouletteWheelNonPolinomicMin<T>(Population<T> population, float[] arrFitness, int maxItem)
+        public static Population RouletteWheelNonPolinomicMin<T>(Population population, float[] arrFitness, int maxItem)
         {
             //clone the array.
-            Population<T> matingPool = new Population<T>();
+            Population matingPool = new Population();
             int index;
             float p1 = LagaTools.MinMaxValue<float>(arrFitness)[1];//results[0];
             float p2 = 0;
@@ -71,7 +77,7 @@ namespace Laga.GeneticAlgorithm
 
                 for (int j = 0; j < index; ++j)
                 {
-                    matingPool.Add(population[i]);
+                    matingPool.Add(population.GetChromosome(i));
                 }
             }
 

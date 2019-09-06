@@ -52,7 +52,6 @@
     <Compile Include="Crossover.cs" />
     <Compile Include="GenrChromosome.cs" />
     <Compile Include="GenrPopulation.cs" />
-    <Compile Include="IPopulation.cs" />
     <Compile Include="IChromosome.cs" />
     <Compile Include="IOExcelRead.cs" />
     <Compile Include="IOExcelWrite.cs" />
@@ -61,7 +60,7 @@
     <Compile Include="NaturalSelection.cs" />
     <Compile Include="Notebook.cs" />
     <Compile Include="point.cs" />
-    <Compile Include="CharChromosome.cs" />
+    <Compile Include="Chromosome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Random.cs" />
     <Compile Include="RankingSort.cs" />

@@ -24,7 +24,15 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random(DateTime.Now.Millisecond);
         }
 
-        public static Population<Chromosome> CharMutation(Population<Chromosome> population, float percentChrom, int start, int end)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="percentChrom"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public static Population CharMutation(Population population, float percentChrom, int start, int end)
         {
             Random rnd = new Random();
 

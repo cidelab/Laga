@@ -35,8 +35,8 @@ namespace Laga.GeneticAlgorithm
         /// <param name="Size">The Lengthof the Chromosome</param>
         public GenrChromosome(int Size)
         {
-            rnd = new Random(DateTime.Now.Millisecond);
             this.size = Size;
+            rnd = new Random(DateTime.Now.Millisecond);
         }
 
         /// <summary>
