@@ -5,12 +5,8 @@ using System.Text;
 
 namespace Laga.GeneticAlgorithm
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public class DNA<T>
+    public class iDNA
     {
-        //T GetDNA(int index);
+   
     }
 }

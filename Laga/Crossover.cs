@@ -65,12 +65,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// Sinngle Point Chrossover
         /// </summary>
-        /// <param name="chromosomeA"></param>
-        /// <param name="chromosomeB"></param>
-        /// <param name="cut"></param>
-        /// <returns></returns>
+        /// <param name="chromosomeA">Parent A</param>
+        /// <param name="chromosomeB">Parent B</param>
+        /// <param name="cut">Cutting location</param>
+        /// <returns>Chromosome</returns>
         public static Chromosome SinglePointCrossover(Chromosome chromosomeA, Chromosome chromosomeB, int cut)
         {
             Chromosome child = new Chromosome();

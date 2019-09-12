@@ -7,13 +7,16 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// 
+    /// Population Class
     /// </summary>
     public class Population : IEnumerable
     {
         private List<Chromosome> population;
         private int count;
 
+        /// <summary>
+        /// The population count
+        /// </summary>
         public int Count
         {
             get
@@ -35,30 +38,54 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         public Chromosome Lower()
         {
-             return population.OrderBy(chr => chr.Fitness).First();
+            return population.OrderBy(chr => chr.Fitness).First();
         }
 
         /// <summary>
-        /// 
+        /// Add a chromsome to the population
         /// </summary>
-        /// <param name="chromo"></param>
-        public void Add(Chromosome chromo)
+        /// <param name="chromosome"></param>
+        public void Add(Chromosome chromosome)
         {
-            population.Add(chromo);
+            population.Add(chromosome);
         }
 
         /// <summary>
-        /// 
+        /// Remove a Chromosome at specific index;
         /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
+        /// <param name="index">The index in the population</param>
+        public void Delete(int index)
+        {
+            population.RemoveAt(index);
+        }
+
+        /// <summary>
+        /// Return a chromosome at specific index.
+        /// </summary>
+        /// <param name="index">The index in the population</param>
+        /// <returns>Chromosome</returns>
         public Chromosome GetChromosome(int index)
         {
             return population[index];
         }
 
         /// <summary>
-        /// 
+        /// Calculate the average fitness in the population
+        /// </summary>
+        /// <returns>float</returns>
+        public float FitnessAverage()
+        {
+            float fltAverage = 0;
+            for(int i = 0; i < population.Count; i++)
+            {
+                fltAverage += population[i].Fitness;
+            }
+
+            return fltAverage / population.Count;
+        }
+
+        /// <summary>
+        /// Build a population by size
         /// </summary>
         /// <param name="sizePopulation"></param>
         public Population(int sizePopulation)
@@ -68,7 +95,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// Builds a clean population
         /// </summary>
         public Population()
         {
@@ -76,7 +103,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// IEnumerator
         /// </summary>
         /// <returns></returns>
         public IEnumerator GetEnumerator()
