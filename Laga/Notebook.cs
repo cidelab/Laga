@@ -15,7 +15,7 @@ namespace Laga.Graphics
     public static class Notebook
     {
         private static string jumpLine = "\r\n";
-
+        
         /// <summary>
         /// Print line by line in a textbox. For appareance and other properties refer to xaml. 
         /// </summary>
