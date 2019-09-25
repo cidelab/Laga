@@ -11,7 +11,7 @@ namespace Laga.GeneticAlgorithm
     public class Chromosome
     {
         private int count;
-        private float fitness;
+        private double fitness;
 
         /// <summary>
         /// The chromosome count
@@ -27,14 +27,14 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// chromosome list
         /// </summary>
-        public List<char> chromosome { get; set; }
+        public List<DNA> chromosome { get; set; }
 
         /// <summary>
         /// Get chromosome DNA at specific index
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public char GetDNA(int index)
+        public DNA GetDNA(int index)
         {
             return chromosome[index];
         }
@@ -42,7 +42,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Get and set the chromosome fitness
         /// </summary>
-        public float Fitness
+        public double Fitness
         {
             get
             {
@@ -59,11 +59,12 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="index">The location in the chromosome</param>
         /// <param name="DNA">The DNA to insert</param>
-        public void InsertDNA(int index, char DNA)
+        public void InsertDNA(int index, DNA dna)
         {
-            chromosome[index] = DNA;
+            chromosome[index] = dna;
         }
 
+        /*
         /// <summary>
         /// A char chromosome, defined by random characters based on the ASCII table
         /// </summary>
@@ -75,7 +76,7 @@ namespace Laga.GeneticAlgorithm
             count = Size;
             chromosome = new GenrChromosome(Size).CharChromosome(Start, End).ToList<char>();
         }
-
+        */
 
         /// <summary>
         /// Build a binary char chromosome
@@ -84,33 +85,42 @@ namespace Laga.GeneticAlgorithm
         public Chromosome(int Size)
         {
             count = Size;
-            chromosome = new GenrChromosome(Size).CharChromosomeBinary().ToList<char>();
+            chromosome = new List<DNA>(Size);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ListDNA"></param>
+        public Chromosome(List<DNA> ListDNA)
+        {
+            chromosome = ListDNA;
+        }
         /// <summary>
         /// and empty builder.
         /// </summary>
         public Chromosome()
         {
-           chromosome = new List<char>();
+            chromosome = new List<DNA>();
         }
 
         /// <summary>
         /// Add DNA to the Chromosome
         /// </summary>
         /// <param name="Dna">the char to add</param>
-        public void Add(char Dna)
+        public void Add(DNA dna)
         {
-            chromosome.Add(Dna);
+            chromosome.Add(dna);
         }
 
         /// <summary>
         /// Converts DNA Chromosome to a String
         /// </summary>
+        /// <param name="sep">separation</param>
         /// <returns>string</returns>
-        public string Chrom2String()
+        public string Chrom2String(string sep)
         {
-            return new string(chromosome.ToArray());
+            return string.Join(sep, chromosome);
         }
 
     }

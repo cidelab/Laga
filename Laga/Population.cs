@@ -73,9 +73,9 @@ namespace Laga.GeneticAlgorithm
         /// Calculate the average fitness in the population
         /// </summary>
         /// <returns>float</returns>
-        public float FitnessAverage()
+        public double FitnessAverage()
         {
-            float fltAverage = 0;
+            double fltAverage = 0;
             for(int i = 0; i < population.Count; i++)
             {
                 fltAverage += population[i].Fitness;

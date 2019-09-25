@@ -29,9 +29,9 @@ namespace Laga.GeneticAlgorithm
             Population matingPool = new Population();
             int index;
             Chromosome chrMax = population.Higher();
-            float p1 = chrMax.Fitness;
-            float p2 = 0;
-            float r;
+            double p1 = chrMax.Fitness;
+            double p2 = 0;
+            double r;
 
             for (int i = 0; i < population.Count; i++)
             {

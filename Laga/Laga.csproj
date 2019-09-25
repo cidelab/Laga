@@ -52,7 +52,6 @@
     <Compile Include="Crossover.cs" />
     <Compile Include="GenrChromosome.cs" />
     <Compile Include="GenrPopulation.cs" />
-    <Compile Include="IChromosome.cs" />
     <Compile Include="IOExcelRead.cs" />
     <Compile Include="IOExcelWrite.cs" />
     <Compile Include="LagaTools.cs" />

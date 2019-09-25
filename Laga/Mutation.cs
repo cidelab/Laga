@@ -42,7 +42,7 @@ namespace Laga.GeneticAlgorithm
                 {
                     if (rnd.NextDouble() < percentChrom)
                     {
-                        chr.InsertDNA(i, LagaTools.RandomChar(start, end));
+                        chr.InsertDNA(i, (DNA)LagaTools.RandomChar(start, end));
                     }
                 }
             }

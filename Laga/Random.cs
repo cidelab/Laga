@@ -27,5 +27,23 @@ namespace Laga.Numbers
 
             return arrN;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="size"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static List<double> RandomNumbers(int size, double min, double max)
+        {
+            Random rnd = new Random();
+
+            double[] arrN = new double[size];
+            for (int i = 0; i < size; i++)
+                arrN[i] = min + (float)rnd.NextDouble() * (max - min);
+
+            return arrN.ToList();
+        }
     }
 }
