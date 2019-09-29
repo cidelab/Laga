@@ -10,6 +10,7 @@ namespace Laga.Numbers
     /// </summary>
     public class Rand
     {
+        private static readonly Random rnd = new Random();
         /// <summary>
         /// Generate random numbers
         /// </summary>
@@ -37,13 +38,11 @@ namespace Laga.Numbers
         /// <returns></returns>
         public static List<double> RandomNumbers(int size, double min, double max)
         {
-            Random rnd = new Random();
-
-            double[] arrN = new double[size];
+            List<double> arrN = new List<double>(size);
             for (int i = 0; i < size; i++)
-                arrN[i] = min + (float)rnd.NextDouble() * (max - min);
+                arrN.Add(min + (float)rnd.NextDouble() * (max - min));
 
-            return arrN.ToList();
+            return arrN;
         }
     }
 }

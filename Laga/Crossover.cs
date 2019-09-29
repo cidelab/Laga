@@ -8,7 +8,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Crossover class
     /// </summary>
-    public class Crossover
+    public class Crossover<T>
     {
         Random rnd;
 

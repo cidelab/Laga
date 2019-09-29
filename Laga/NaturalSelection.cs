@@ -7,7 +7,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// 
     /// </summary>
-    public class NaturalSelection
+    public class NaturalSelection<T>
     {
         /// <summary>
         /// The class to select and operates on populations
@@ -29,6 +29,38 @@ namespace Laga.GeneticAlgorithm
             Population matingPool = new Population();
             int index;
             Chromosome chrMax = population.Higher();
+            double p1 = chrMax.Fitness;
+            double p2 = 0;
+            double r;
+
+            for (int i = 0; i < population.Count; i++)
+            {
+                p2 = population.GetChromosome(i).Fitness;
+                r = (p2 / p1) * maxItem;
+                index = (int)r;
+                index = index < 1 ? 1 : index;
+
+                for (int j = 0; j < index; ++j)
+                {
+                    matingPool.Add(population.GetChromosome(i));
+                }
+            }
+
+            return matingPool;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="population"></param>
+        /// <param name="maxItem"></param>
+        /// <returns></returns>
+        public static Population2<T> RouletteWheelNonPolinomicMin(Population2<T> population, int maxItem)
+        {
+            //clone the array.
+            Population2<T> matingPool = new Population2<T>();
+            int index;
+            Chromosome2<T> chrMax = population.Higher();
             double p1 = chrMax.Fitness;
             double p2 = 0;
             double r;

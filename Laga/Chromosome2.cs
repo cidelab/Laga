@@ -11,6 +11,8 @@ namespace Laga.GeneticAlgorithm
     public class Chromosome2<T>
     {
 
+        private double fitness;
+
         public int Count
         {
             get
@@ -31,10 +33,31 @@ namespace Laga.GeneticAlgorithm
             chromosome2 = new List<T>(size);
         }
 
-        public Chromosome2(List<T> lsTDNA)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ListDna"></param>
+        public Chromosome2(List<T> ListDna)
         {
-            chromosome2 = lsTDNA;
+            chromosome2 = ListDna;
         }
+
+        /// <summary>
+        /// Get and set the chromosome fitness
+        /// </summary>
+        public double Fitness
+        {
+            get
+            {
+                return fitness;
+            }
+            set
+            {
+                fitness = value;
+            }
+        }
+
+ 
 
         /// <summary>
         /// Get Dna Chromosome at specific index
