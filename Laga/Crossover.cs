@@ -34,6 +34,46 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="matingPool"></param>
+        /// <param name="PopSize"></param>
+        /// <param name="cut"></param>
+        /// <returns></returns>
+        public static Population2<T> SinglePointCrossover(Population2<T> matingPool, int PopSize, int cut)
+        {
+
+            Population2<T> selectedPop = new Population2<T>();
+            Chromosome2<T> crA, crB;
+            Chromosome2<T> child = new Chromosome2<T>();
+            Random rnd = new Random();
+
+            for (int i = 0; i < PopSize; i++)
+            {
+                crA = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
+                crB = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
+
+                for (int j = 0; j < crA.Count; j++)
+                {
+                    if (j > cut)
+                    {
+                        child.Add(crA.GetDNA(j));
+                    }
+                    else
+                    {
+                        child.Add(crB.GetDNA(j));
+                    }
+                }
+            }
+
+
+
+            return selectedPop;
+
+        }
+
         #region testing algorithms
         /// <summary>
         /// 

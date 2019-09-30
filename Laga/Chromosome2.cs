@@ -43,6 +43,14 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public Chromosome2()
+        {
+            chromosome2 = new List<T>();
+        }
+
+        /// <summary>
         /// Get and set the chromosome fitness
         /// </summary>
         public double Fitness

@@ -6,7 +6,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// 
     /// </summary>
-     public class Mutation
+     public class Mutation<T>
     {
         private float popPercent;
         private int cant;
@@ -48,6 +48,39 @@ namespace Laga.GeneticAlgorithm
             }
 
             return population;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Population"></param>
+        /// <param name="MutationRate"></param>
+        /// <param name="Thershold"></param>
+        /// <returns></returns>
+        public static Population2<T> Number(Population2<T> Population, float MutationRate, double Thershold)
+        {
+            Random rnd = new Random();
+            double v;
+            double min = 0;
+
+            for (int i = 0; i < Population.Count; ++i) //loop para 
+            {
+                if(rnd.NextDouble() < MutationRate)
+                {
+                    Chromosome2<T> chromosome = Population.GetChromosome(i);
+
+                    for(int j = 0; j < chromosome.Count; j++)
+                    {
+                        v = Convert.ToDouble(chromosome.GetDNA(j));
+                        v = v / Thershold;
+                        chromosome.InsertDNA(j, typeof(T).Equals(typeof(double))); ///error!!!
+                    }
+
+                }
+            }
+
+            return Population;
+
         }
 
         #region Mutation
