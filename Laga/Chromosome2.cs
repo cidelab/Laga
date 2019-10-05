@@ -8,7 +8,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// IDNA
     /// </summary>
-    public class Chromosome2<T>
+    public class Chromosome2<T> : IChromosome<T>
     {
 
         private double fitness;
@@ -101,7 +101,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="sep">separation</param>
         /// <returns>string</returns>
-        public string Chrom2String(string sep)
+        public string Chr2Str(string sep)
         {
             return string.Join(sep, chromosome2);
         }
