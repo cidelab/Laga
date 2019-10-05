@@ -54,10 +54,10 @@ namespace Laga.GeneticAlgorithm
             {
                 crA = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
                 crB = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
-
+                child = new Chromosome2<T>();
                 for (int j = 0; j < crA.Count; j++)
                 {
-                    if (j > cut)
+                    if (j >= cut)
                     {
                         child.Add(crA.GetDNA(j));
                     }
@@ -66,12 +66,9 @@ namespace Laga.GeneticAlgorithm
                         child.Add(crB.GetDNA(j));
                     }
                 }
+                selectedPop.Add(child);
             }
-
-
-
             return selectedPop;
-
         }
 
         #region testing algorithms
@@ -81,20 +78,20 @@ namespace Laga.GeneticAlgorithm
         /// <param name="matingPool"></param>
         /// <param name="populationSize"></param>
         /// <returns></returns>
-        public static Population RandomPointCrossover(Population matingPool, int populationSize)
+        public static Population2<T> RandomPointCrossover(Population2<T> matingPool, int populationSize)
         {
             Random rnd = new Random();
             int natSelectionCount = matingPool.Count;
             int ChromosomeCut = matingPool.GetChromosome(0).Count;
-            Population popCrossover = new Population(populationSize);
+            Population2<T> popCrossover = new Population2<T>(populationSize);
  
             for (int i = 0; i < populationSize; i ++)
             {
                 int a = rnd.Next(natSelectionCount);
                 int b = rnd.Next(natSelectionCount);
 
-                Chromosome chrA = matingPool.GetChromosome(a);
-                Chromosome chrB = matingPool.GetChromosome(b);
+                Chromosome2<T> chrA = matingPool.GetChromosome(a);
+                Chromosome2<T> chrB = matingPool.GetChromosome(b);
 
                 popCrossover.Add(SinglePointCrossover(chrA, chrB, rnd.Next(ChromosomeCut)));
 
@@ -111,9 +108,9 @@ namespace Laga.GeneticAlgorithm
         /// <param name="chromosomeB">Parent B</param>
         /// <param name="cut">Cutting location</param>
         /// <returns>Chromosome</returns>
-        public static Chromosome SinglePointCrossover(Chromosome chromosomeA, Chromosome chromosomeB, int cut)
+        public static Chromosome2<T> SinglePointCrossover(Chromosome2<T> chromosomeA, Chromosome2<T> chromosomeB, int cut)
         {
-            Chromosome child = new Chromosome();
+            Chromosome2<T> child = new Chromosome2<T>();
 
             for(int i = 0; i < chromosomeA.Count; i++)
             {

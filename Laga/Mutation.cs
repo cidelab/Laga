@@ -6,7 +6,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// 
     /// </summary>
-     public class Mutation<T>
+     public class Mutation
     {
         private float popPercent;
         private int cant;
@@ -32,7 +32,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
-        public static Population CharMutation(Population population, float percentChrom, int start, int end)
+        public static Population2<char> CharMutation(Population2<char> population, float percentChrom, int start, int end)
         {
             Random rnd = new Random();
 
@@ -41,45 +41,43 @@ namespace Laga.GeneticAlgorithm
                 for(int i = 0; i < chr.Count; i++)
                 {
                     if (rnd.NextDouble() < percentChrom)
-                    {
+                    {        
                         chr.InsertDNA(i, (DNA)LagaTools.RandomChar(start, end));
                     }
                 }
             }
-
             return population;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="Population"></param>
+        /// <param name="population"></param>
         /// <param name="MutationRate"></param>
-        /// <param name="Thershold"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
         /// <returns></returns>
-        public static Population2<T> Number(Population2<T> Population, float MutationRate, double Thershold)
+        public static Population2<double> Number(Population2<double> population, float MutationRate, double min, double max)
         {
             Random rnd = new Random();
             double v;
-            double min = 0;
 
-            for (int i = 0; i < Population.Count; ++i) //loop para 
+            for (int i = 0; i < population.Count; ++i) //loop para 
             {
                 if(rnd.NextDouble() < MutationRate)
                 {
-                    Chromosome2<T> chromosome = Population.GetChromosome(i);
+                    Chromosome2<double> chromosome = population.GetChromosome(i);
 
                     for(int j = 0; j < chromosome.Count; j++)
                     {
-                        v = Convert.ToDouble(chromosome.GetDNA(j));
-                        v = v / Thershold;
-                        chromosome.InsertDNA(j, typeof(T).Equals(typeof(double))); ///error!!!
+                        v = min + rnd.NextDouble() * (max - min);
+                        chromosome.InsertDNA(j, v);
                     }
 
                 }
             }
 
-            return Population;
+            return population;
 
         }
 

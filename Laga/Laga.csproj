@@ -50,6 +50,7 @@
     <Compile Include="Chromosome2.cs" />
     <Compile Include="DNA.cs" />
     <Compile Include="IChromosome.cs" />
+    <Compile Include="Maths.cs" />
     <Compile Include="Population.cs" />
     <Compile Include="Crossover.cs" />
     <Compile Include="GenrChromosome.cs" />

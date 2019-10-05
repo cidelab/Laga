@@ -8,7 +8,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// IDNA
     /// </summary>
-    public class Chromosome2<T> : IChromosome<T>
+    public class Chromosome2<T>
     {
 
         private double fitness;
