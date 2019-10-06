@@ -36,13 +36,13 @@ namespace Laga.GeneticAlgorithm
         {
             Random rnd = new Random();
 
-            foreach(Chromosome chr in population)
+            foreach(Chromosome2<Char> chr in population)
             {
                 for(int i = 0; i < chr.Count; i++)
                 {
                     if (rnd.NextDouble() < percentChrom)
                     {        
-                        chr.InsertDNA(i, (DNA)LagaTools.RandomChar(start, end));
+                        chr.InsertDNA(i, LagaTools.RandomChar(start, end));
                     }
                 }
             }
@@ -62,23 +62,18 @@ namespace Laga.GeneticAlgorithm
             Random rnd = new Random();
             double v;
 
-            for (int i = 0; i < population.Count; ++i) //loop para 
+            foreach(Chromosome2<double> chr in population)
             {
-                if(rnd.NextDouble() < MutationRate)
+                if (rnd.NextDouble() < MutationRate)
                 {
-                    Chromosome2<double> chromosome = population.GetChromosome(i);
-
-                    for(int j = 0; j < chromosome.Count; j++)
+                    for (int j = 0; j < chr.Count; j++)
                     {
                         v = min + rnd.NextDouble() * (max - min);
-                        chromosome.InsertDNA(j, v);
+                        chr.InsertDNA(j, v);
                     }
-
                 }
             }
-
             return population;
-
         }
 
         #region Mutation
