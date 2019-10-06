@@ -32,11 +32,11 @@ namespace Laga.GeneticAlgorithm
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
-        public static Population2<char> CharMutation(Population2<char> population, float percentChrom, int start, int end)
+        public static Population<char> CharMutation(Population<char> population, float percentChrom, int start, int end)
         {
             Random rnd = new Random();
 
-            foreach(Chromosome2<Char> chr in population)
+            foreach(Chromosome<Char> chr in population)
             {
                 for(int i = 0; i < chr.Count; i++)
                 {
@@ -57,12 +57,12 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <returns></returns>
-        public static Population2<double> Number(Population2<double> population, float MutationRate, double min, double max)
+        public static Population<double> Number(Population<double> population, float MutationRate, double min, double max)
         {
             Random rnd = new Random();
             double v;
 
-            foreach(Chromosome2<double> chr in population)
+            foreach(Chromosome<double> chr in population)
             {
                 if (rnd.NextDouble() < MutationRate)
                 {

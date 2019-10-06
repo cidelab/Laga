@@ -17,18 +17,19 @@ namespace Laga.GeneticAlgorithm
 
         }
 
+        /*
         /// <summary>
         /// 
         /// </summary>
         /// <param name="population"></param>
         /// <param name="maxItem"></param>
         /// <returns></returns>
-        public static Population RouletteWheelNonPolinomicMin(Population population, int maxItem)
+        public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, int maxItem)
         {
             //clone the array.
-            Population matingPool = new Population();
+            Population<T> matingPool = new Population();
             int index;
-            Chromosome chrMax = population.Higher();
+            Chromosome<T> chrMax = population.Higher();
             double p1 = chrMax.Fitness;
             double p2 = 0;
             double r;
@@ -47,7 +48,7 @@ namespace Laga.GeneticAlgorithm
             }
 
             return matingPool;
-        }
+        }*/
 
         /// <summary>
         /// 
@@ -55,12 +56,12 @@ namespace Laga.GeneticAlgorithm
         /// <param name="population"></param>
         /// <param name="maxItem"></param>
         /// <returns></returns>
-        public static Population2<T> RouletteWheelNonPolinomicMin(Population2<T> population, int maxItem)
+        public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, int maxItem)
         {
             //clone the array.
-            Population2<T> matingPool = new Population2<T>();
+            Population<T> matingPool = new Population<T>();
             int index;
-            Chromosome2<T> chrMax = population.Higher();
+            Chromosome<T> chrMax = population.Higher();
             double p1 = chrMax.Fitness;
             double p2 = 0;
             double r;
@@ -82,6 +83,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         #region testing algorithms
+        /*
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
@@ -114,7 +116,7 @@ namespace Laga.GeneticAlgorithm
             }
 
             return matingPool;
-        }
+        }*/
         #endregion
 
         #region Elitism

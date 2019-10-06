@@ -7,15 +7,33 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Population Class
+    /// 
     /// </summary>
-    public class Population : IEnumerable
+    /// <typeparam name="T"></typeparam>
+    public class Population<T> : IEnumerable
     {
-        private List<Chromosome> population;
-        private int count;
 
         /// <summary>
-        /// The population count
+        /// 
+        /// </summary>
+        /// <param name="SizePopulation"></param>
+        public Population(int SizePopulation)
+        {
+            population = new List<Chromosome<T>>(SizePopulation);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public Population()
+        {
+            population = new List<Chromosome<T>>();
+        }
+
+        private List<Chromosome<T>> population;
+
+        /// <summary>
+        /// 
         /// </summary>
         public int Count
         {
@@ -28,55 +46,57 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Return the Higher Ranked Chromosome based on the fitness evaluation
         /// </summary>
-        public Chromosome Higher()
+        /// <returns></returns>
+        public Chromosome<T> Higher()
         {
             return population.OrderBy(chr => chr.Fitness).Last();
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="chromosome2"></param>
+        public void Add(Chromosome<T> chromosome2)
+        {
+            population.Add(chromosome2);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="index"></param>
+        public void Delete(int index)
+        {
+            population.RemoveAt(index);
+        }
+        /// <summary>
         /// Return the Lower ranked chromosome based on the fitness evaluation
         /// </summary>
-        public Chromosome Lower()
+        /// <returns></returns>
+        public Chromosome<T> Lower()
         {
             return population.OrderBy(chr => chr.Fitness).First();
         }
 
         /// <summary>
-        /// Add a chromsome to the population
+        /// 
         /// </summary>
-        /// <param name="chromosome"></param>
-        public void Add(Chromosome chromosome)
-        {
-            population.Add(chromosome);
-        }
-
-        /// <summary>
-        /// Remove a Chromosome at specific index;
-        /// </summary>
-        /// <param name="index">The index in the population</param>
-        public void Delete(int index)
-        {
-            population.RemoveAt(index);
-        }
-
-        /// <summary>
-        /// Return a chromosome at specific index.
-        /// </summary>
-        /// <param name="index">The index in the population</param>
-        /// <returns>Chromosome</returns>
-        public Chromosome GetChromosome(int index)
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public Chromosome<T> GetChromosome(int index)
         {
             return population[index];
         }
 
         /// <summary>
-        /// Calculate the average fitness in the population
+        /// 
         /// </summary>
-        /// <returns>float</returns>
-        public double FitnessAverage()
+        /// <returns></returns>
+       public double FitnessAverage()
         {
             double fltAverage = 0;
-            for(int i = 0; i < population.Count; i++)
+            for (int i = 0; i < population.Count; i++)
             {
                 fltAverage += population[i].Fitness;
             }
@@ -84,23 +104,6 @@ namespace Laga.GeneticAlgorithm
             return fltAverage / population.Count;
         }
 
-        /// <summary>
-        /// Build a population by size
-        /// </summary>
-        /// <param name="sizePopulation"></param>
-        public Population(int sizePopulation)
-        {
-            count = sizePopulation;
-            population = new List<Chromosome>(sizePopulation);
-        }
-
-        /// <summary>
-        /// Builds a clean population
-        /// </summary>
-        public Population()
-        {
-            population = new List<Chromosome>();
-        }
 
         /// <summary>
         /// IEnumerator
