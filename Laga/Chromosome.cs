@@ -65,8 +65,6 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
- 
-
         /// <summary>
         /// Get Dna Chromosome at specific index
         /// </summary>
