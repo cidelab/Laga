@@ -13,6 +13,9 @@ namespace Laga.GeneticAlgorithm
 
         private double fitness;
 
+        /// <summary>
+        /// The size of the chromosome
+        /// </summary>
         public int Count
         {
             get
@@ -79,7 +82,7 @@ namespace Laga.GeneticAlgorithm
         /// Insert DNA in a chromosome at specific Location
         /// </summary>
         /// <param name="index">The location in the chromosome</param>
-        /// <param name="DNA">The DNA to insert</para
+        /// <param name="DNA">The DNA to insert</param>
         public void InsertDNA(int index, T DNA)
         {
             chromosome[index] = DNA;

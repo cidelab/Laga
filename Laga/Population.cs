@@ -55,7 +55,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">The type for chromosome</typeparam>
         /// <param name="chromosome2"></param>
         public void Add(Chromosome<T> chromosome2)
         {

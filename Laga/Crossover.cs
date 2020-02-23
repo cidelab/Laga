@@ -37,7 +37,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">The choromsome type</typeparam>
         /// <param name="matingPool"></param>
         /// <param name="PopSize"></param>
         /// <param name="cut"></param>

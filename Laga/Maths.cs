@@ -9,10 +9,10 @@ namespace Laga.Numbers
     {
 
         /// <summary>
-        /// 
+        /// Degrees to Radians
         /// </summary>
         /// <param name="degrees"></param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double Deg2Rad(double degrees)
         {
             double radians = (Math.PI / 180.0) * degrees;
@@ -20,10 +20,10 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// 
+        /// Radians to Degree
         /// </summary>
         /// <param name="radians"></param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double Rad2Deg(double radians)
         {
             double degrees = (180.0 / Math.PI) * radians;
