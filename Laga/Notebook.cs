@@ -243,7 +243,7 @@ namespace Laga.Graphics
         /// <param name="sep"></param>
         /// <param name="r"></param>
         /// <param name="clear"></param>
-        public static void PrintPopulation(TextBox textBox, point[][] population, string[] prefix, string sep, int r, bool clear)
+        public static void PrintPopulation(TextBox textBox, Geometry.Vector[][] population, string[] prefix, string sep, int r, bool clear)
         {
             if (clear)
             {
@@ -258,19 +258,19 @@ namespace Laga.Graphics
 
             if (prefix.Length == population.Length)
             {
-                foreach (point[] chromosome in population)
+                foreach (Geometry.Vector[] chromosome in population)
                 {
                     textBox.AppendText(prefix[i] + jumpLine);
                     i++;
-                    chroMessage = String.Join(sep, LagaTools.Parse(chromosome, r));
+                    chroMessage = string.Join(sep, LagaTools.Parse(chromosome, r));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
             else
             {
-                foreach (point[] chromosome in population)
+                foreach (Geometry.Vector[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, LagaTools.Parse(chromosome, r));
+                    chroMessage = string.Join(sep, LagaTools.Parse(chromosome, r));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
