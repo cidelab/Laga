@@ -100,6 +100,16 @@ namespace Laga.Geometry
         }
 
         /// <summary>
+        /// Calculate the dot Product of 2 Vectors.
+        /// </summary>
+        /// <param name="vec">The Vector for the operation</param>
+        /// <returns>Vector</returns>
+        public double Dot(Vector vec)
+        {
+            return X * vec.X + Y * vec.Y + Z * vec.Z;
+        }
+
+        /// <summary>
         /// Calculate the vector in the middle of 2 vectors.
         /// </summary>
         /// <param name="vecA">First vector</param>
@@ -166,14 +176,6 @@ namespace Laga.Geometry
             return new Vector(X * factor, Y * factor, Z * factor);
         }
 
-        /// <summary>
-        /// Calculate the dot Product of 2 Vectors.
-        /// </summary>
-        /// <param name="vec">The Vector for the operation</param>
-        /// <returns>Vector</returns>
-        public double Dot(Vector vec)
-        {
-            return X * vec.X + Y * vec.Y + Z * vec.Z;
-        }
+
     }
 }
