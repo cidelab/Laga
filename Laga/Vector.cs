@@ -11,7 +11,6 @@ namespace Laga.Geometry
     /// </summary>
      public class Vector
     {
-
         private double Xcord = 0;
         private double Ycord = 0;
         private double Zcord = 0;
@@ -115,7 +114,7 @@ namespace Laga.Geometry
         /// <param name="vecA">First vector</param>
         /// <param name="vecB">Second vector</param>
         /// <returns>Vector</returns>
-        public Vector MidVector(Vector vecA, Vector vecB)
+        public static Vector MidVector(Vector vecA, Vector vecB)
         {
             return new Vector((vecA.X + vecB.X) / 2, (vecA.Y + vecB.Y) / 2, (vecA.Z + vecB.Z) / 2);
         }
@@ -126,7 +125,7 @@ namespace Laga.Geometry
         /// <param name="vecA">First vector</param>
         /// <param name="vecB">Second vector</param>
         /// <returns>Vector</returns>
-        public Vector CrossProduct(Vector vecA, Vector vecB)
+        public static Vector CrossProduct(Vector vecA, Vector vecB)
         {
             double x, y, z;
             x = vecA.Y * vecB.Z - vecB.Y * vecA.Z;
@@ -149,21 +148,23 @@ namespace Laga.Geometry
         /// <summary>
         /// Vector addition
         /// </summary>
-        /// <param name="vec">The vector to add</param>
+        /// <param name="vecA"></param>
+        /// <param name="vecB"></param>
         /// <returns>Vector</returns>
-        public Vector Addition(Vector vec)
+        public static Vector Addition(Vector vecA, Vector vecB)
         {
-            return new Vector(X + vec.X, Y + vec.Y, Z + vec.Z);
+            return new Vector(vecA.X + vecB.X, vecA.Y + vecB.Y, vecA.Z + vecB.Z);
         }
 
-        /// <summary>
-        /// Substract 2 vectors
-        /// </summary>
-        /// <param name="vec">The vector to subtract</param>
-        /// <returns>Vector</returns>
-        public Vector Subtract(Vector vec)
+       /// <summary>
+       /// Subtracts vecA to VecB
+       /// </summary>
+       /// <param name="vecA"></param>
+       /// <param name="vecB"></param>
+       /// <returns>Vector</returns>
+        public static Vector Subtract(Vector vecA, Vector vecB)
         {
-            return new Vector(X - vec.X, Y - vec.Y, Z - vec.Z);
+            return new Vector(vecA.X - vecB.X, vecA.Y - vecB.Y, vecA.Z - vecB.Z);
         }
 
         /// <summary>
@@ -175,7 +176,6 @@ namespace Laga.Geometry
         {
             return new Vector(X * factor, Y * factor, Z * factor);
         }
-
 
     }
 }
