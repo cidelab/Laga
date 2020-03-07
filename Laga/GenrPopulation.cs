@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Laga.Geometry;
+using LagaUnity;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -468,17 +468,17 @@ namespace Laga.GeneticAlgorithm
         /// - (79.54, 62.78, 7.36), (84.51, 83.64, 69.42), (1.99, 8.09, 38.65), (84.64, 44.09, 78.47),
         /// </code>
         /// </example>
-        public Vector[][] PointPopulation(int SizeChromosome, double minX, double maxX, double minY, double maxY, double minZ, double maxZ)
+        public Point[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
         {
-            Vector[] chromosome;
-            Vector[][] popPoints = new Vector[sizePopulation][];
+            Point[] chromosome;
+            Point[][] popPoints = new Point[sizePopulation][];
 
             for (int i = 0; i < sizePopulation; i++)
             {
-                chromosome = new Vector[SizeChromosome];
+                chromosome = new Point[SizeChromosome];
                 for (int j = 0; j < SizeChromosome; j++)
                 {
-                    chromosome[j] = new Vector(minX + rnd.NextDouble() * (maxX - minX), minY + rnd.NextDouble() * (maxY - minY), minZ + rnd.NextDouble() * (maxZ - minZ));
+                    chromosome[j] = new Point(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
                 }
 
                 popPoints[i] = chromosome;
