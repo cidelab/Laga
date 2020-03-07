@@ -13,7 +13,7 @@ namespace LagaUnity
         private Point pb;
 
         /// <summary>
-        /// 
+        /// First point in the Line
         /// </summary>
         public Point PointA
         {
@@ -28,7 +28,7 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// 
+        /// Second Point in the Line
         /// </summary>
         public Point PointB
         {
@@ -43,10 +43,10 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// 
+        /// Construct a laga line object by 2 points.
         /// </summary>
-        /// <param name="pointA"></param>
-        /// <param name="pointB"></param>
+        /// <param name="pointA">First Point</param>
+        /// <param name="pointB">Second Point</param>
         public Line(Point pointA, Point pointB)
         {
             pa = pointA;
@@ -54,16 +54,16 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// 
+        /// Returns the Line mid point.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Laga Point</returns>
         public Point MidPoint()
         {
             return new Point((pa.X + pb.X) / 2, (pa.Y + pb.Y) / 2, (pa.Z + pa.Z) / 2);
         }
 
         /// <summary>
-        ///  Line point coordinates
+        ///  Overrides ToString() Line point coordinates
         /// </summary>
         /// <returns>string</returns>
         public override string ToString()
@@ -72,10 +72,10 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// 
+        /// Draw a Line
         /// </summary>
-        /// <param name="width"></param>
-        /// <param name="color"></param>
+        /// <param name="width">Line width</param>
+        /// <param name="color">Color line</param>
         public void Draw(float width, Color color)
         {
             DrawLine(pa, pb, width, color);
@@ -84,10 +84,10 @@ namespace LagaUnity
         /// <summary>
         /// Draw a line
         /// </summary>
-        /// <param name="pointA">The first point</param>
-        /// <param name="pointB"></param>
-        /// <param name="width"></param>
-        /// <param name="color"></param>
+        /// <param name="pointA">First point</param>
+        /// <param name="pointB">Second Point</param>
+        /// <param name="width">Line Width</param>
+        /// <param name="color">Color Line</param>
         static public void DrawLine(Point pointA, Point pointB, float width, Color color)
         {
             GameObject line = new GameObject("Line " + pointA.ToString() + " - " + pointB.ToString());
