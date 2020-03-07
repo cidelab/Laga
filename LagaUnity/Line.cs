@@ -54,7 +54,7 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// Returns the Line mid point.
+        /// Returns the mid point.
         /// </summary>
         /// <returns>Laga Point</returns>
         public Point MidPoint()
@@ -72,7 +72,7 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// Draw a Line
+        /// Draw a Unity Line
         /// </summary>
         /// <param name="width">Line width</param>
         /// <param name="color">Color line</param>
@@ -82,7 +82,7 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// Draw a line
+        /// Draw a Unity line
         /// </summary>
         /// <param name="pointA">First point</param>
         /// <param name="pointB">Second Point</param>
