@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using Laga.Geometry;
+using LagaUnity;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -99,13 +99,13 @@ namespace Laga.GeneticAlgorithm
         /// <param name="points">The points to round coordinates</param>
         /// <param name="round">round number coordinates</param>
         /// <returns>string[]</returns>
-        public static string[] Parse(Vector[] points, int round)
+        public static string[] Parse(Point[] points, int round)
         {
             string[] arrPtsChromosome = new string[points.Length];
             double[] arrdblCoords;
             int i = 0;
 
-            foreach (Vector p in points)
+            foreach (Point p in points)
             {
                 arrdblCoords = new double[] {Math.Round(p.X, round), Math.Round(p.Y, round), Math.Round(p.Z, round)};
                 string[] arrString = Array.ConvertAll(arrdblCoords, new Converter<double, string>(Convert.ToString));

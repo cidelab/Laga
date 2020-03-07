@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using Laga.GeneticAlgorithm;
-using Laga.Geometry;
+using LagaUnity;
 
 namespace Laga.Graphics
 {
@@ -228,7 +228,7 @@ namespace Laga.Graphics
             {
                 foreach (char[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, LagaTools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -243,7 +243,7 @@ namespace Laga.Graphics
         /// <param name="sep"></param>
         /// <param name="r"></param>
         /// <param name="clear"></param>
-        public static void PrintPopulation(TextBox textBox, Geometry.Vector[][] population, string[] prefix, string sep, int r, bool clear)
+        public static void PrintPopulation(TextBox textBox, LagaUnity.Point[][] population, string[] prefix, string sep, int r, bool clear)
         {
             if (clear)
             {
@@ -258,7 +258,7 @@ namespace Laga.Graphics
 
             if (prefix.Length == population.Length)
             {
-                foreach (Geometry.Vector[] chromosome in population)
+                foreach (LagaUnity.Point[] chromosome in population)
                 {
                     textBox.AppendText(prefix[i] + jumpLine);
                     i++;
@@ -268,7 +268,7 @@ namespace Laga.Graphics
             }
             else
             {
-                foreach (Geometry.Vector[] chromosome in population)
+                foreach (LagaUnity.Point[] chromosome in population)
                 {
                     chroMessage = string.Join(sep, LagaTools.Parse(chromosome, r));
                     textBox.AppendText(chroMessage + jumpLine);
