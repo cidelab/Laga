@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Random Walker Colors </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Random Walker Colors ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="random-walker-colors">Random Walker Colors</h1>
+
+<h2 id="definition">Definition</h2>
+<p>In this exercise, 500 walkers are defined by random trajectories. The walker paths are represented by colors.</p>
+<br>
+<h2 id="model">Model</h2>
+<p>The algorithm is very simple and consist to pass the information from one point to another in order to create a pseudo random direction.</p>
+<pre><code class="lang-C#">
+//set a new random point
+ptB.X = ptB.X + (Random.value - 0.5f) * 0.2f;
+ptB.Y = ptB.Y + (Random.value - 0.5f) * 0.2f;
+
+//add the X and Y coordinate data to the existent point to define a new point: ptC
+ptC.X = ptA.X + ptB.X;
+ptC.Y = ptA.Y + ptB.Y;
+
+</code></pre>
+<br>
+<h2 id="code">Code</h2>
+<p>The same code runs 500 times per each walker. the result is similar to a nest that change color in relation to the distance to the screen centre.</p>
+<br>
+<pre><code class="lang-C#">
+using UnityEngine;
+using LagaUnity;
+
+public class drawlines : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        for (int j = 0; j &lt; 500; j++)
+        {
+            ptA = new Point(Random.Range(-50, 50), Random.Range(-50, 50), -1);
+            ptB = new Point(Random.value - step, Random.value - step, -1);
+            ptC = new Point(0, 0, -1);
+
+            for (int i = 0; i &lt; 100; i++)
+            {
+                ptB.X = ptB.X + (Random.value - 0.5f) * 0.2f;
+                ptB.Y = ptB.Y + (Random.value - 0.5f) * 0.2f;
+
+                ptC.X = ptA.X + ptB.X;
+                ptC.Y = ptA.Y + ptB.Y;
+
+                pos = Mathf.Abs(map(ptA.DistanceTo(new Point(0,0,0)), 0, 160, 0.0f, 1.0f));
+                clr = new  Color(0.2f*pos, 0.1f/pos, pos);
+
+                Line.DrawLine(ptA, ptC, 0.5f, clr);
+
+                ptA.X = ptC.X;  
+                ptA.Y = ptC.Y;
+            }
+        }
+
+        float map(float s, float a1, float a2, float b1, float b2)
+        {
+            return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
+        }
+    }
+}
+</code></pre>
+<br>
+<h2 id="results">Results</h2>
+<p><img src="../images/randWalker1.jpg" alt="">
+Parameters:
+<code>clr = new Color(0.2f*pos, 0.1f/pos, pos)</code></p>
+<br>
+<p><img src="../images/randWalker2.jpg" alt="">
+Parameters:
+<code>clr = new Color(0.2f * pos, 0.05f / pos, pos)</code></p>
+<br>
+<p><img src="../images/randWalker3.jpg" alt="">
+Parameters:
+<code>clr = new Color(0.8f * pos, Mathf.Sin(100*pos), pos);</code></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Made by <strong>designemergente</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
