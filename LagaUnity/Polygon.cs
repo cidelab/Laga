@@ -65,6 +65,8 @@ namespace LagaUnity
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
             lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
             lineRenderer.material.color = color;
+            lineRenderer.numCornerVertices = 5;
+            lineRenderer.numCapVertices = 5;
             lineRenderer.positionCount = lstPts.Count;
             lineRenderer.loop = loop;
 
