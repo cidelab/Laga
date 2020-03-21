@@ -55,11 +55,11 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparam name="T">The type for chromosome</typeparam>
-        /// <param name="chromosome2"></param>
-        public void Add(Chromosome<T> chromosome2)
+        /// <typeparamref name="T">The type for chromosome</typeparamref>
+        /// <param name="chromosome"></param>
+        public void Add(Chromosome<T> chromosome)
         {
-            population.Add(chromosome2);
+            population.Add(chromosome);
         }
 
         /// <summary>

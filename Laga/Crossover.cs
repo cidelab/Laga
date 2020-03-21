@@ -22,7 +22,7 @@ namespace Laga.GeneticAlgorithm
             get => arrIndex;
             set
             {
-                value = arrIndex;
+                arrIndex = value;
             }
         }
 
@@ -37,7 +37,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparam name="T">The choromsome type</typeparam>
+        /// <typeparamref name="T">The choromsome type</typeparamref>
         /// <param name="matingPool"></param>
         /// <param name="PopSize"></param>
         /// <param name="cut"></param>
