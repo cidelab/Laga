@@ -14,10 +14,11 @@ namespace Laga.IO
     public class IODataFolder
     {
         private string pathFolder = "";
-        private List<string> lstfileNames;
+        private string[] lstPathFileNames;
+        private List<string> lstFileNames;
 
         /// <summary>
-        /// 
+        /// The Roof folder with the files
         /// </summary>
         public string RootFolder
         {
@@ -37,58 +38,53 @@ namespace Laga.IO
                 pathFolder = value; 
             }
         }
+
         /// <summary>
-        /// 
+        /// The List of file names including the path
         /// </summary>
-        public List<string> ListFileNames
+        public string[] ListPathFileNames
         {
             get
             {
-                if (lstfileNames.Count > 0)
-                {
-                    return lstfileNames;
-                }
-                else
-                {
-                    return new List<string>();
-                }
+                return lstPathFileNames;
             }
         }
 
         /// <summary>
-        /// 
+        /// The Object to extract data from the folder
         /// </summary>
-        /// <param name="PathFolder"></param>
+        /// <param name="PathFolder">The folders path to analize</param>
         public IODataFolder(string PathFolder)
         {
-            pathFolder = PathFolder; 
+            pathFolder = PathFolder;
+            if (Directory.Exists(pathFolder))
+            {
+                lstPathFileNames = Directory.GetFiles(pathFolder);
+                
+                lstFileNames = new List<string>();
+
+                foreach (string s in lstPathFileNames)
+                    lstFileNames.Add(Path.GetFileName(s));
+            }
         }
 
         /// <summary>
-        /// 
+        /// The List of files according to the specified extension
         /// </summary>
         /// <param name="extension">The extension file to filter: ".txt"</param>
-        /// <returns></returns>
-        public List<string> ReadFolderData(string extension)
+        /// <returns>List</returns>
+        public List<string> ReadSelectiveData(string extension)
         {
             List<string> strFiles = new List<string>();
 
-            if (Directory.Exists(pathFolder))
+            foreach (string strFileName in lstPathFileNames)
             {
-                lstfileNames = Directory.GetFiles(pathFolder).ToList();
-
-                foreach (string strFileName in lstfileNames)
+                if (extension == Path.GetExtension(strFileName))
                 {
-                    if (extension == Path.GetExtension(strFileName))
-                    {
-                        strFiles.Add(strFileName);
-                    }
+                    strFiles.Add(strFileName);
                 }
             }
-
             return strFiles;
         }
-
-
     }
 }

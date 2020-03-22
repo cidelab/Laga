@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="BarChart.cs" />
     <Compile Include="Chromosome.cs" />
-    <Compile Include="IOTextRead.cs" />
+    <Compile Include="IOTextData.cs" />
     <Compile Include="Maths.cs" />
     <Compile Include="Crossover.cs" />
     <Compile Include="GenrChromosome.cs" />
