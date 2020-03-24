@@ -18,6 +18,56 @@ namespace Laga.IO
         private Encoding sourceEncoding;
         private StreamReader streamReader;
 
+        private string GetEncodingString(EncodingType encoding)
+        {
+            switch (encoding)
+            {
+                case EncodingType.UTF7:
+                    return "_UTF7";
+                case EncodingType.UTF8:
+                    return "_UTF8";
+                case EncodingType.ASCII:
+                    return "_ASCII";
+                case EncodingType.Unicode:
+                    return "_Unicode";
+                default:
+                    return "_Default";
+            }
+        }
+        private Encoding GetEncoding(EncodingType encoding)
+        {
+            switch (encoding)
+            {
+                case EncodingType.UTF7:
+                    return Encoding.UTF7;
+                case EncodingType.UTF8:
+                    return Encoding.UTF8;
+                case EncodingType.ASCII:
+                    return Encoding.ASCII;
+                case EncodingType.Unicode:
+                    return Encoding.Unicode;
+                default:
+                    return Encoding.Default;
+            }
+        }
+        private Encoding GetSourceEncoding(string fileName)
+        {
+            // Read the BOM
+            var bom = new byte[4];
+            using (var file = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+            {
+                file.Read(bom, 0, 4);
+            }
+
+            // Analyze the BOM
+            if (bom[0] == 0x2b && bom[1] == 0x2f && bom[2] == 0x76) return Encoding.UTF7;
+            if (bom[0] == 0xef && bom[1] == 0xbb && bom[2] == 0xbf) return Encoding.UTF8;
+            if (bom[0] == 0xff && bom[1] == 0xfe) return Encoding.Unicode; //UTF-16LE
+            if (bom[0] == 0xfe && bom[1] == 0xff) return Encoding.BigEndianUnicode; //UTF-16BE
+            if (bom[0] == 0 && bom[1] == 0 && bom[2] == 0xfe && bom[3] == 0xff) return Encoding.UTF32;
+            return Encoding.Default;
+        }
+
         /// <summary>
         /// Get the Encoding Source from the Text File
         /// </summary>
@@ -54,86 +104,6 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="TextFileName"></param>
-        /// <param name="encoding"></param>
-        public IOTextData(string TextFileName)
-        {
-            textFileName = TextFileName;
-            streamReader = new StreamReader(TextFileName);
-            sourceEncoding = GetEncoding(textFileName);
-        }
-
-        private Encoding GetEncoding(string fileName)
-        {
-            // Read the BOM
-            var bom = new byte[4];
-            using (var file = new FileStream(fileName, FileMode.Open, FileAccess.Read))
-            {
-                file.Read(bom, 0, 4);
-            }
-
-            // Analyze the BOM
-            if (bom[0] == 0x2b && bom[1] == 0x2f && bom[2] == 0x76) return Encoding.UTF7;
-            if (bom[0] == 0xef && bom[1] == 0xbb && bom[2] == 0xbf) return Encoding.UTF8;
-            if (bom[0] == 0xff && bom[1] == 0xfe) return Encoding.Unicode; //UTF-16LE
-            if (bom[0] == 0xfe && bom[1] == 0xff) return Encoding.BigEndianUnicode; //UTF-16BE
-            if (bom[0] == 0 && bom[1] == 0 && bom[2] == 0xfe && bom[3] == 0xff) return Encoding.UTF32;
-            return Encoding.Default;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="FileName"></param>
-        /// <param name="PathToFolder"></param>
-        /// <param name="sourceEncoding"></param>
-        /// <param name="destEncoding"></param>
-        public static void ConvertFileEncoding(string FileName, string PathToFolder,
-                                                 Encoding sourceEncoding, Encoding destEncoding)
-        {
-            // If the destination's parent doesn't exist, create it.
-            String parent = Path.GetDirectoryName(Path.GetFullPath(PathToFolder));
-            if (!Directory.Exists(parent))
-            {
-                Directory.CreateDirectory(parent);
-            }
-
-            // If the source and destination encodings are the same, just copy the file.
-            if (sourceEncoding == destEncoding)
-            {
-                File.Copy(FileName, PathToFolder, true);
-                return;
-            }
-
-            // Convert the file.
-            String tempName = null;
-            try
-            {
-                tempName = Path.GetTempFileName();
-                using (StreamReader sr = new StreamReader(FileName, sourceEncoding, false))
-                {
-                    using (StreamWriter sw = new StreamWriter(tempName, false, destEncoding))
-                    {
-                        int charsRead;
-                        char[] buffer = new char[128 * 1024];
-                        while ((charsRead = sr.ReadBlock(buffer, 0, buffer.Length)) > 0)
-                        {
-                            sw.Write(buffer, 0, charsRead);
-                        }
-                    }
-                }
-                //File.Delete(destPath);
-                File.Move(tempName, PathToFolder);
-            }
-            finally
-            {
-                File.Delete(tempName);
-            }
-        }
-
-        /// <summary>
         /// Encoding types Supported
         /// </summary>
         public enum EncodingType
@@ -159,22 +129,109 @@ namespace Laga.IO
             /// </summary>
             Default
         }
-        
-        private Encoding GetEncoding(EncodingType encoding)
+
+        /// <summary>
+        /// Construct the class to operate txt files.
+        /// </summary>
+        /// <param name="TextFileName">The text file name</param>
+        public IOTextData(string TextFileName)
         {
-            switch(encoding)
+            textFileName = TextFileName;
+            streamReader = new StreamReader(TextFileName);
+            sourceEncoding = GetSourceEncoding(textFileName);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="FileName"></param>
+        /// <param name="encodingType"></param>
+        public string ConvertFileEncoding(string FileName, EncodingType encodingType)
+        {
+            Encoding destEncoding = GetEncoding(encodingType);
+            string strEncode = GetEncodingString(encodingType);
+
+            string directory = Path.GetDirectoryName(FileName);
+            string fileName = Path.GetFileNameWithoutExtension(FileName);
+            string PathFolder = Path.Combine(new string[] { directory, "Rep" + strEncode ,fileName + strEncode + ".txt" });
+            string nPathFolder = Path.GetDirectoryName(PathFolder);
+
+            // If the destination's parent doesn't exist, create it.
+            string parent = Path.GetDirectoryName(Path.GetFullPath(PathFolder));
+            if (!Directory.Exists(parent))
             {
-                case EncodingType.UTF7:
-                    return Encoding.UTF7;
-                case EncodingType.UTF8:
-                    return Encoding.UTF8;
-                case EncodingType.ASCII:
-                    return Encoding.ASCII;
-                case EncodingType.Unicode:
-                    return Encoding.Unicode;
-                default:
-                    return Encoding.Default;
+                Directory.CreateDirectory(parent);
             }
+
+            // If the source and destination encodings are the same, just copy the file.
+            if (sourceEncoding == destEncoding)
+            {
+                File.Copy(FileName, PathFolder, true);
+                return nPathFolder;
+            }
+
+            // Convert the file.
+            String tempName = null;
+            try
+            {
+                tempName = Path.GetTempFileName();
+                using (StreamReader sr = new StreamReader(FileName, sourceEncoding, false))
+                {
+                    using (StreamWriter sw = new StreamWriter(tempName, false, destEncoding))
+                    {
+                        int charsRead;
+                        char[] buffer = new char[128 * 1024];
+                        while ((charsRead = sr.ReadBlock(buffer, 0, buffer.Length)) > 0)
+                        {
+                            sw.Write(buffer, 0, charsRead);
+                        }
+                    }
+                }
+                //File.Delete(destPath);
+                File.Move(tempName, PathFolder);
+            }
+            finally
+            {
+                File.Delete(tempName);
+            }
+
+            return nPathFolder;
+        }
+
+        /// <summary>
+        /// Return the n most frequently occuring words in the string
+        /// </summary>      
+        /// <param name="strMessage">the string</param>
+        /// <param name="N">Number to return</param>
+        /// <returns>Dictionary</returns>
+        public static List<string> CountWords(string strMessage, int N)
+        {
+            string[] arrWords = GetWords(strMessage);
+            Dictionary<string, int> dicCountWords = new Dictionary<string, int>();
+
+            foreach(string s in arrWords)
+            {
+                if(dicCountWords.ContainsKey(s))
+                {
+                    dicCountWords[s] += 1;
+                }
+                else
+                {
+                    dicCountWords[s] = 1;
+                }
+            }
+
+            //sort the occurrencies in descending order
+            var list = dicCountWords.Keys.ToList();
+            list.Sort();
+
+            List<string> lstString = new List<string>();
+            foreach(var key in list)
+            {
+                lstString.AddRange(new string[] { key, dicCountWords[key].ToString() });
+            }
+
+            return lstString;
         }
 
         /// <summary>
@@ -209,5 +266,49 @@ namespace Laga.IO
 
                 return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
+
+        /// <summary>
+        /// Remove strings according to a specific Length
+        /// </summary>
+        /// <param name="strMessages">the Array of strings to make the operations</param>
+        /// <param name="Length">The minimum string length</param>
+        /// <returns>string[]</returns>
+        public static string[] RemoveByLength(string[] strMessages, int Length)
+        {
+            List<string> lstStrMessage = new List<string>();
+            
+            foreach(string str in strMessages)
+            {
+                if(str.Length > Length)
+                {
+                    lstStrMessage.Add(str);
+                }
+            }
+            return lstStrMessage.ToArray();
+        }
+
+        /// <summary>
+        /// Remove the words according to a specific length from a string
+        /// </summary>
+        /// <param name="strMessage">The string to make the operation</param>
+        /// <param name="Length">The minimum word length in the string</param>
+        /// <param name="separator">A string to specify how combine the new string chain. eg: " "</param>
+        /// <returns>string</returns>
+        public static string RemoveByLength(string strMessage, int Length, string separator)
+        {
+            string[] strMessages = GetWords(strMessage);
+            List<string> lstStr = new List<string>();
+
+            foreach (string str in strMessages)
+            {
+                if (str.Length > Length)
+                {
+                    lstStr.Add(str);
+                }
+            }
+            return string.Join(separator, lstStr);
+        }
+
+
     }
 }
