@@ -202,9 +202,9 @@ namespace Laga.IO
         /// Return the n most frequently occuring words in the string
         /// </summary>      
         /// <param name="strMessage">the string</param>
-        /// <param name="N">Number to return</param>
+        /// <param name="topN">Top N Numbers to return</param>
         /// <returns>Dictionary</returns>
-        public static List<string> CountWords(string strMessage, int N)
+        public static Dictionary<string, int> CountWordsTopN(string strMessage, int topN)
         {
             string[] arrWords = GetWords(strMessage);
             Dictionary<string, int> dicCountWords = new Dictionary<string, int>();
@@ -222,16 +222,20 @@ namespace Laga.IO
             }
 
             //sort the occurrencies in descending order
-            var list = dicCountWords.Keys.ToList();
-            list.Sort();
+            var items = from pair in dicCountWords
+                        orderby pair.Key ascending
+                        select pair;
 
-            List<string> lstString = new List<string>();
-            foreach(var key in list)
-            {
-                lstString.AddRange(new string[] { key, dicCountWords[key].ToString() });
-            }
+            Dictionary<string, int> sortDic = new Dictionary<string, int>(dicCountWords.Count);
+            
+            foreach (KeyValuePair<string, int> pair in items)
+                sortDic.Add(pair.Key, pair.Value);
 
-            return lstString;
+            var topItemsCount = sortDic.OrderByDescending(entry => entry.Value)
+                                .Take(topN)
+                                .ToDictionary(pair => pair.Key, pair => pair.Value);
+
+            return topItemsCount;
         }
 
         /// <summary>
