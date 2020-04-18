@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
+using Microsoft.Office.Interop;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Laga.IO
@@ -19,7 +20,7 @@ namespace Laga.IO
         private Excel.Worksheet xlSheet;
         private Excel.Range xlRange;
 
-        private List<List<string>> dataExcel = new List<List<string>>();
+        private List<List<string>> dataExcel;
 
         #region public properties
 
@@ -101,6 +102,8 @@ namespace Laga.IO
         public List<List<string>> IOReadRange(string strXlRange)
         {
             xlRange = (strXlRange == "") ? xlSheet.UsedRange : xlSheet.Range[strXlRange];
+
+            dataExcel = new List<List<string>>();
 
             object[,] cellValues = (object[,])xlRange.Value2;
             List<string> lst;
