@@ -6,7 +6,7 @@ using LagaUnity;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// use this class to create a Population
+    /// Generate basic populations
     /// </summary>
     public class GenrPopulation
     {

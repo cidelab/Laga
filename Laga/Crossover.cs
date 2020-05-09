@@ -6,7 +6,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Crossover class
+    /// Different crossover type operations
     /// </summary>
     public class Crossover<T>
     {

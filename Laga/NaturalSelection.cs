@@ -5,7 +5,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// 
+    /// Natural selection class
     /// </summary>
     public class NaturalSelection<T>
     {

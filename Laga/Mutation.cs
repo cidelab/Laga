@@ -4,7 +4,7 @@ using System.Linq;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// 
+    /// Apply Mutations on the Population
     /// </summary>
      public class Mutation
     {

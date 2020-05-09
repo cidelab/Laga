@@ -6,7 +6,7 @@ namespace Laga.GeneticAlgorithm
 {
 
     /// <summary>
-    /// A collection of methods to operate on Genetic operators.
+    /// A collection of methods to operate on Genetic operators and lists.
     /// </summary>
     public static class LagaTools
     {

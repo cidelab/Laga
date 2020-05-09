@@ -6,7 +6,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Chromosome
+    /// Create and manipulate Chromosomes
     /// </summary>
     public class Chromosome<T>
     {

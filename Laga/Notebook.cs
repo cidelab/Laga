@@ -10,7 +10,7 @@ using LagaUnity;
 namespace Laga.Graphics
 {
     /// <summary>
-    /// Static class to write in textboxes.
+    /// To print messages on a textbox.
     /// </summary>
     public static class Notebook
     {

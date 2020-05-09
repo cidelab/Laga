@@ -10,7 +10,7 @@ using System.Windows.Media;
 namespace Laga.Graphics
 {
     /// <summary>
-    /// 
+    /// Graph Genetic algorithm performance.
     /// </summary>
     public class BarChart
     {

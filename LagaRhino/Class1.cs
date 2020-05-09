@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Basic Linear algebra operations
+    /// </summary>
     public class LinearAlgebra
     {
     }
