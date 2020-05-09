@@ -7,7 +7,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 namespace Laga.IO
 {
     /// <summary>
-    /// 
+    /// Read excel files
     /// </summary>
     public class IOExcelRead
     {

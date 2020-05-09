@@ -9,7 +9,7 @@ using Laga.GeneticAlgorithm;
 namespace Laga.IO
 { 
     /// <summary>
-    /// Get Data from a folder
+    /// Get Data files information from a folder directory
     /// </summary>
     public class IODataFolder
     {
