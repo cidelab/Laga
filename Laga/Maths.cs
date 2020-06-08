@@ -5,7 +5,10 @@ using System.Text;
 
 namespace Laga.Numbers
 {
-    class Maths
+    /// <summary>
+    /// Mathematics and statistics operations
+    /// </summary>
+    public class Maths
     {
 
         /// <summary>

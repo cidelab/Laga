@@ -7,7 +7,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// 
+    /// Create and Manipulate Populations
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class Population<T> : IEnumerable

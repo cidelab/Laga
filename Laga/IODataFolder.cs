@@ -9,13 +9,13 @@ using Laga.GeneticAlgorithm;
 namespace Laga.IO
 { 
     /// <summary>
-    /// Get Data from a folder
+    /// Get Data files information from a folder directory
     /// </summary>
     public class IODataFolder
     {
         private string pathFolder = "";
-        private string[] lstPathFileNames;
-        private List<string> lstFileNames;
+        private readonly string[] lstPathFileNames;
+        private string[] lstFileNames;
 
         /// <summary>
         /// The Roof folder with the files
@@ -51,6 +51,17 @@ namespace Laga.IO
         }
 
         /// <summary>
+        /// The list of file names without extension
+        /// </summary>
+        public string[] ListFileNames
+        {
+            get
+            {
+                return lstFileNames;
+            }
+        }
+
+        /// <summary>
         /// The Object to extract data from the folder
         /// </summary>
         /// <param name="PathFolder">The folders path to analize</param>
@@ -60,11 +71,15 @@ namespace Laga.IO
             if (Directory.Exists(pathFolder))
             {
                 lstPathFileNames = Directory.GetFiles(pathFolder);
-                
-                lstFileNames = new List<string>();
+            
+                lstFileNames = new string[lstPathFileNames.Length];
 
+                int c = 0;
                 foreach (string s in lstPathFileNames)
-                    lstFileNames.Add(Path.GetFileName(s));
+                {
+                    lstFileNames[c] = Path.GetFileNameWithoutExtension(s);
+                    c++;
+                }
             }
         }
 

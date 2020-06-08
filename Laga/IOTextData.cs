@@ -142,10 +142,10 @@ namespace Laga.IO
         }
 
         /// <summary>
-        /// 
+        /// Convert a file from one Encoding type to another encoding type
         /// </summary>
-        /// <param name="FileName"></param>
-        /// <param name="encodingType"></param>
+        /// <param name="FileName">the full file name to convert</param>
+        /// <param name="encodingType">the Encoding type</param>
         public string ConvertFileEncoding(string FileName, EncodingType encodingType)
         {
             Encoding destEncoding = GetEncoding(encodingType);
@@ -196,6 +196,29 @@ namespace Laga.IO
             }
 
             return nPathFolder;
+        }
+
+        /// <summary>
+        /// Creates a text file based on a list of strings
+        /// </summary>
+        /// <param name="strList">the content for the file</param>
+        /// <param name="directory">the path to the directory to save the file</param>
+        /// <param name="fileName">name of the txt file</param>
+        /// <returns>bool</returns>
+        public static bool CreateFile(List<string> strList, string directory, string fileName)
+        {
+            bool b = false;
+            string PathFolder = Path.Combine(new string[] { directory, fileName + ".txt" });
+
+            using (StreamWriter sw = File.CreateText(PathFolder))
+            {
+                foreach (string s in strList)
+                    sw.WriteLine(s);
+
+                b = true;
+            }
+
+            return b;
         }
 
         /// <summary>
@@ -312,7 +335,6 @@ namespace Laga.IO
             }
             return string.Join(separator, lstStr);
         }
-
 
     }
 }

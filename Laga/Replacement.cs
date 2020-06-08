@@ -5,12 +5,12 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// 
+    /// To replace old populations with new populations
     /// </summary>
     public class Replacement
     {
         /// <summary>
-        /// 
+        ///  Replacement class
         /// </summary>
         public Replacement()
         {

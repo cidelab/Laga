@@ -5,7 +5,7 @@ using System.Text;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// class
+    /// To sort chromosomes in populations according to fitness evaluation.
     /// </summary>
     public class RankingSort
     {
