@@ -74,7 +74,10 @@ namespace LagaRhino
             return lstDeepCopy;
         }
 
-
+        public static Point3d[] SortPointsByZ(Point3d[] arrPts)
+        {
+            return arrPts.OrderBy(item => item.Z).ToArray();
+        }
 
     }
 }
