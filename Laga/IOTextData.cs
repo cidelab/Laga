@@ -273,6 +273,16 @@ namespace Laga.IO
         }
 
         /// <summary>
+        /// Remove the digits from a string
+        /// </summary>
+        /// <param name="strMessage">The string to remove the digits</param>
+        /// <returns>string</returns>
+        public static string RemoveNumbers(string strMessage)
+        {
+            return new String(strMessage.Where(c => c != '-' && (c < '0' || c > '9')).ToArray());
+        }
+
+        /// <summary>
         /// Remove Diacritcs from string
         /// </summary>
         /// <param name="strMessage">The string to clean</param>
