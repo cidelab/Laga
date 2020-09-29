@@ -26,5 +26,36 @@ namespace LagaRhino
 
             return arrPts;
         }
+
+        /// <summary>
+        /// Align Perpendicular frames in the Curve
+        /// </summary>
+        /// <param name="crv">the curve in the analysis</param>
+        /// <param name="t">the t param on the curve</param>
+        /// <returns></returns>
+        public static Plane PlaneCorrectOnCurveByParam(Curve crv, double t)
+        {
+            crv.PerpendicularFrameAt(t, out Plane pl);
+
+            //check the direction of the plane
+            Point3d plOrigin = pl.Origin;
+            Vector3d vecX = pl.XAxis;
+            Point3d testPt = plOrigin + vecX;
+
+            double dist = Point3d.Origin.DistanceTo(testPt);
+            double dist2 = Point3d.Origin.DistanceTo(plOrigin);
+
+            if (dist > dist2)
+            {
+                vecX.Reverse();
+                Point3d ptX, ptY;
+                ptX = pl.Origin + vecX;
+                ptY = pl.Origin + pl.YAxis;
+
+                pl = new Plane(pl.Origin, ptX, ptY);
+            }
+
+            return pl;
+        }
     }
 }
