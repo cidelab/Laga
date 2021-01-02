@@ -1,16 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using LagaUnity;
 
 namespace Laga.GeneticAlgorithm
 {
-
     /// <summary>
     /// A collection of methods to operate on Genetic operators and lists.
     /// </summary>
-    public static class LagaTools
+    public static class Tools
     {
+       /// <summary>
+       /// Creates a report based on a list of data.
+       /// </summary>
+       /// <param name="listValues">the Values used to create the report</param>
+       /// <returns>List<string></string></returns>
+        public static List<string> DataReport<T>(List<T> listValues)
+        {
+            listValues.Sort();
+            var result = listValues.GroupBy(d => d).ToList();
 
+            List<string> lstDtaFormat = new List<string>();
+
+            int size;
+            T CV;
+
+            for (int i = 0; i < result.Count; i++)
+            {
+                size = result[i].Count();
+                CV = result[i].ElementAt(0);
+
+                lstDtaFormat.Add(CV.ToString() + ", " + size.ToString());
+            }
+
+            return lstDtaFormat;
+        }
         /// <summary>
         /// Convert a binary chromosome to an integer, base of 2.
         /// </summary>

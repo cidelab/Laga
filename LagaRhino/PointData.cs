@@ -61,6 +61,7 @@ namespace LagaRhino
             return Q;
         }
 
+
         public static List<Curve> DeepCopy(List<Curve> lstToCopy)
         {
             List<Curve> lstDeepCopy = new List<Curve>();
@@ -74,10 +75,69 @@ namespace LagaRhino
             return lstDeepCopy;
         }
 
+        /// <summary>
+        /// Sort points by Z coordinate
+        /// </summary>
+        /// <param name="arrPts">The points to sort</param>
+        /// <returns>point3d[]</returns>
         public static Point3d[] SortPointsByZ(Point3d[] arrPts)
         {
             return arrPts.OrderBy(item => item.Z).ToArray();
         }
 
+        /// <summary>
+        /// Sort points by the coordinate X and then by the coordinate Y.
+        /// </summary>
+        /// <param name="arrPts">The points to sort</param>
+        /// <returns>point3d[]</returns>
+        public static Point3d[] SortPointsByXY(Point3d[] arrPts)
+        {
+            return arrPts.OrderBy(item => item.X)
+                         .ThenBy(item => item.Y).ToArray();
+
+        }
+        /// <summary>
+        /// Sort the Z point coordinate
+        /// </summary>
+        /// <param name="arrPts">The points to evaluate</param>
+        /// <returns>double[]</returns>
+        public static double[] SortCoordinateZ(Point3d[] arrPts)
+        {
+            return arrPts.Select(pt => pt.Z).OrderBy(Z => Z).ToArray();
+        }
+
+        /// <summary>
+        /// WIP, create an interpolate point matrix between 2 points.
+        /// The method does not control exceptions for the point positions.
+        /// </summary>
+        /// <param name="ptStart">The start point, bottom left</param>
+        /// <param name="ptEnd">The end point, top right</param>
+        /// <param name="span">the aproximate point separation</param>
+        /// <returns>List<Point3d>()</Point3d></returns>
+        public static List<Point3d> TwoPointsInterpolation(Point3d ptStart, Point3d ptEnd, double span)
+        {
+            List<Point3d> ptList = new List<Point3d>();
+
+            Point3d pt_2 = new Point3d(ptEnd.X, ptStart.Y, ptStart.Z);
+            Point3d pt_4 = new Point3d(ptStart.X, ptEnd.Y, ptStart.Z);
+            int u = (int)(ptStart.DistanceTo(pt_2) / span);
+            int v = (int)(ptStart.DistanceTo(pt_4) / span);
+            double xSize = ptStart.DistanceTo(pt_2) / u;
+            double ySize = ptStart.DistanceTo(pt_4) / v;
+
+            Point3d pt;
+
+            for (int i = 0; i <= u; i++)
+            {
+                for (int j = 0; j <= v; j++)
+                {
+                    pt = new Point3d(ptStart.X + (i * xSize), ptStart.Y + (j * ySize), ptStart.Z);
+                    ptList.Add(pt);
+                }
+            }
+
+            return ptList;
+
+        }
     }
 }

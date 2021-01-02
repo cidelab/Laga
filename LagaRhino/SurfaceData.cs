@@ -9,7 +9,6 @@ namespace LagaRhino
 {
     public class SurfaceData
     {
-
         /// <summary>
         /// Build a vertical planar surface from a LineCurve axis.
         /// </summary>

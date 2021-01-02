@@ -68,7 +68,7 @@ namespace Laga.Graphics
                 {
                     foreach (double[] chromosome in population)
                     {
-                        chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                        chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                         textBox.AppendText(prefix[i] + chroMessage + jumpLine);
                         i++;
                     }
@@ -80,7 +80,7 @@ namespace Laga.Graphics
                         textBox.AppendText(prefix[i] + jumpLine);
                         i++;
 
-                        chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                        chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                         textBox.AppendText(chroMessage + jumpLine);
                     }
                 }
@@ -89,7 +89,7 @@ namespace Laga.Graphics
             {
                 foreach (double[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -123,7 +123,7 @@ namespace Laga.Graphics
                     textBox.AppendText(prefix[i] + jumpLine);
                     i++;
 
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -131,7 +131,7 @@ namespace Laga.Graphics
             {
                 foreach (float[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -165,7 +165,7 @@ namespace Laga.Graphics
                     textBox.AppendText(prefix[i] + jumpLine);
                     i++;
 
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -173,7 +173,7 @@ namespace Laga.Graphics
             {
                 foreach (int[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -207,7 +207,7 @@ namespace Laga.Graphics
                 {
                     foreach (char[] chromosome in population)
                     {
-                        chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                        chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                         textBox.AppendText(prefix[i] + chroMessage + jumpLine);
                         i++;
                     }
@@ -219,7 +219,7 @@ namespace Laga.Graphics
                         textBox.AppendText(prefix[i] + jumpLine);
                         i++;
 
-                        chroMessage = String.Join(sep, GeneticAlgorithm.LagaTools.Parse(chromosome));
+                        chroMessage = String.Join(sep, GeneticAlgorithm.Tools.Parse(chromosome));
                         textBox.AppendText(chroMessage + jumpLine);
                     }
                 }
@@ -228,7 +228,7 @@ namespace Laga.Graphics
             {
                 foreach (char[] chromosome in population)
                 {
-                    chroMessage = String.Join(sep, LagaTools.Parse(chromosome));
+                    chroMessage = String.Join(sep, Tools.Parse(chromosome));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -262,7 +262,7 @@ namespace Laga.Graphics
                 {
                     textBox.AppendText(prefix[i] + jumpLine);
                     i++;
-                    chroMessage = string.Join(sep, LagaTools.Parse(chromosome, r));
+                    chroMessage = string.Join(sep, Tools.Parse(chromosome, r));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }
@@ -270,7 +270,7 @@ namespace Laga.Graphics
             {
                 foreach (LagaUnity.Point[] chromosome in population)
                 {
-                    chroMessage = string.Join(sep, LagaTools.Parse(chromosome, r));
+                    chroMessage = string.Join(sep, Tools.Parse(chromosome, r));
                     textBox.AppendText(chroMessage + jumpLine);
                 }
             }

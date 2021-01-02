@@ -12,6 +12,12 @@ namespace LagaRhino
     {
         private static Interval param = new Interval(0, 1);
 
+        /// <summary>
+        /// Apply the same t parameter to a list of curves to return an array of points
+        /// </summary>
+        /// <param name="lstCrvs">The list of curves</param>
+        /// <param name="t">t param</param>
+        /// <returns></returns>
         public static Point3d[] GetPointFromCurves(List<Curve> lstCrvs, double t)
         {
             Point3d[] arrPts = new Point3d[lstCrvs.Count];
@@ -25,6 +31,24 @@ namespace LagaRhino
             }
 
             return arrPts;
+        }
+
+        /// <summary>
+        /// Makes a deep copy from a list of curves.
+        /// </summary>
+        /// <param name="lstToCopy">The list to copy</param>
+        /// <returns>List</Curve></returns>
+        public static List<Curve> DeepCopyListCurve(List<Curve> lstToCopy)
+        {
+            List<Curve> lstDeepCopy = new List<Curve>();
+            Curve deepCrv = null;
+            foreach (Curve c in lstToCopy)
+            {
+                deepCrv = (Curve)c.Duplicate();
+                lstDeepCopy.Add(deepCrv);
+            }
+
+            return lstDeepCopy;
         }
 
         /// <summary>
