@@ -158,7 +158,7 @@ namespace Laga.GeneticAlgorithm
                     }
                     else
                     {
-                        pop[i] = LagaTools.Fisher_YatesPercent(SeedChromosome, percent);
+                        pop[i] = Tools.Fisher_YatesPercent(SeedChromosome, percent);
                     }
                 }
 
@@ -300,7 +300,7 @@ namespace Laga.GeneticAlgorithm
 
                 for (int i = 0; i < sizePopulation; ++i)
                 {
-                    pop[i] = LagaTools.Fisher_Yates(chromosome);
+                    pop[i] = Tools.Fisher_Yates(chromosome);
                 }
                 return pop;
             }
@@ -340,7 +340,7 @@ namespace Laga.GeneticAlgorithm
                 chromosome = new int[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    if (LagaTools.GetRandomNumber() >= 0.5)
+                    if (Tools.GetRandomNumber() >= 0.5)
                     {
                         chromosome[j] = 1;
                     }
@@ -386,7 +386,7 @@ namespace Laga.GeneticAlgorithm
                 arrChr = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    arrChr[j] = LagaTools.GetRandomNumber() >= 0.5 ? '1' : '0';
+                    arrChr[j] = Tools.GetRandomNumber() >= 0.5 ? '1' : '0';
                 }
 
                 pop[i] = arrChr;
@@ -431,7 +431,7 @@ namespace Laga.GeneticAlgorithm
                 chromosome = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = LagaTools.RandomChar(start, end);
+                    chromosome[j] = Tools.RandomChar(start, end);
                 }
                 charPopulation[i] = chromosome;
             }

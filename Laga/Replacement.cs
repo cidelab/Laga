@@ -84,7 +84,7 @@ namespace Laga.GeneticAlgorithm
             int c = 0;
             for (int i = sonMutPopulation.Length; i < sizePopulation; ++i)
             {
-                newPopulation[i] = LagaTools.Fisher_YatesPercent(newPopulation1[c], percent);   //fisher_yates_Percent(newPopulation1[c], percent);
+                newPopulation[i] = Tools.Fisher_YatesPercent(newPopulation1[c], percent);   //fisher_yates_Percent(newPopulation1[c], percent);
                 c++;
                 if (c == newPopulation1.Length) c = 0;
             }
@@ -159,7 +159,7 @@ namespace Laga.GeneticAlgorithm
 
             for (int i = c; i < sizePopulation; i++)
             {
-                newPopulation[i] = LagaTools.Fisher_Yates(ParentsPopulation[0]); //) fisher_yates(ParentsPopulation[0]);
+                newPopulation[i] = Tools.Fisher_Yates(ParentsPopulation[0]); //) fisher_yates(ParentsPopulation[0]);
             }
 
             return newPopulation;
@@ -749,7 +749,7 @@ namespace Laga.GeneticAlgorithm
                 charRand = new char[newPartOfPopulation[0].Length];
                 for (int j = 0; j < newPartOfPopulation[0].Length; ++j)
                 {
-                    charRand[j] = LagaTools.RandomCharBinary(1);
+                    charRand[j] = Tools.RandomCharBinary(1);
                 }
                 newPopulation[i] = charRand;
             }
@@ -789,7 +789,7 @@ namespace Laga.GeneticAlgorithm
                 charRand = new char[newPartOfPopulation[0].Length];
                 for (int j = 0; j < newPartOfPopulation[0].Length; ++j)
                 {
-                    charRand[j] = LagaTools.RandomChar(start, end);
+                    charRand[j] = Tools.RandomChar(start, end);
                 }
                 newPopulation[i] = charRand;
             }

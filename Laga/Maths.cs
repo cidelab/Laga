@@ -12,6 +12,17 @@ namespace Laga.Numbers
     {
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="lstData"></param>
+        /// <returns></returns>
+        public static List<T> NumberDistinct<T>(List<T> lstData)
+        {
+            return lstData.Distinct().ToList();
+        }
+
+        /// <summary>
         /// Degrees to Radians
         /// </summary>
         /// <param name="degrees"></param>

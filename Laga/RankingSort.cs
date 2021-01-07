@@ -72,8 +72,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             objPopulation = population;
@@ -125,8 +125,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             objPopulation = population;
@@ -179,8 +179,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             dblPopulation = population;
@@ -233,8 +233,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             dblPopulation = population;
@@ -287,8 +287,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             fltPopulation = population;
@@ -340,8 +340,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             fltPopulation = population;
@@ -393,8 +393,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             intPopulation = population;
@@ -446,8 +446,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             intPopulation = population;
@@ -499,8 +499,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
             srtPopulation = population;
             fltArrResults = arrResults;
@@ -552,8 +552,8 @@ namespace Laga.GeneticAlgorithm
 
             if (minmax)
             {
-                LagaTools.Reverse(arrResults);
-                LagaTools.ReversePopulation(population);
+                Tools.Reverse(arrResults);
+                Tools.ReversePopulation(population);
             }
 
             srtPopulation = population;

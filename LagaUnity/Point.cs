@@ -5,7 +5,6 @@ namespace LagaUnity
 {
     public class Point
     {
-
         private float x;
         private float y;
         private float z;
@@ -69,6 +68,26 @@ namespace LagaUnity
         }
 
         /// <summary>
+        /// Construct the Laga Point through Unity Vector3
+        /// </summary>
+        /// <param name="vector"></param>
+        public Point(Vector3 vector)
+        {
+            x = vector.x;
+            y = vector.y;
+            z = vector.z;
+        }
+
+        /// <summary>
+        /// Transform a Laga Point to Unity Vector
+        /// </summary>
+        /// <returns></returns>
+        public Vector3 ToVector3()
+        {
+            return new Vector3(x, y, z);
+        }
+
+        /// <summary>
         /// Override string method, Print point coordinates
         /// </summary>
         /// <returns>string</returns>
@@ -95,7 +114,6 @@ namespace LagaUnity
         public float DistanceTo(Point pointB)
         {
             return (float)Math.Sqrt(Math.Pow((X - pointB.X), 2) + Math.Pow((Y - pointB.Y), 2) + Math.Pow((Z - pointB.Z), 2));
-
         }
 
         /// <summary>
@@ -117,5 +135,42 @@ namespace LagaUnity
             lineRenderer.endWidth = width;
         }
 
+        /// <summary>
+        /// Normalize a Point
+        /// </summary>
+        /// <param name="vector">the Vector to normalize</param>
+        /// <returns></returns>
+        static public Point GetNormal(Point vector)
+        {
+            Point pt = new Point(0, 0, 0);
+            float dist = pt.DistanceTo(vector);
+            return new Point(vector.X /= dist, vector.Y /= dist, vector.Z /= dist);
+        }
+
+        static public float Dot(Point vec1, Point vec2 )
+        {
+            return (vec1.x * vec2.x + vec1.y * vec2.y + vec1.z * vec2.z);
+        }
+
+        static public float Angle(Point vec1, Point vec2)
+        {
+            Point ptO = new Point(0, 0, 0);
+            float dotDivide = Dot(vec1, vec2) / (ptO.DistanceTo(vec1) * ptO.DistanceTo(vec2));
+            return (float)Math.Acos(dotDivide);
+        }
+
+        static public Point Rotate(Point vector, float angle)
+        {
+            float xV = (float)(vector.x * Math.Cos(angle) - vector.y * Math.Sin(angle));
+            float yV = (float)(vector.x * Math.Sin(angle) + vector.y * Math.Cos(angle));
+            return new Point(xV, yV, 0);
+        }
+        static public Point CrossProduct(Point vec1, Point vec2)
+        {
+            float xMult = vec1.y * vec2.z - vec1.z * vec2.y;
+            float yMult = vec1.z * vec2.x - vec1.x * vec2.z;
+            float zMult = vec1.X * vec2.Y - vec1.y * vec2.x;
+            return new Point(xMult, yMult, zMult);
+        }
     }
 }

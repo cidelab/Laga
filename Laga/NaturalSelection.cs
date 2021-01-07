@@ -261,7 +261,7 @@ namespace Laga.GeneticAlgorithm
             //clone the array.
             List<object> arrRwheelPop = new List<object>();
             int index;
-            float p1 = (float)LagaTools.MinMaxValue<int>(results)[0];//results[0];
+            float p1 = (float)Tools.MinMaxValue<int>(results)[0];//results[0];
             float p2;
             float r;
 

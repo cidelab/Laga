@@ -110,7 +110,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < size; i++)
             {
                 //ch[i] = rnd.Next(min, max);
-                ch[i] = LagaTools.GetRandomNumber(min, max);
+                ch[i] = Tools.GetRandomNumber(min, max);
             }
             return ch;
 
@@ -173,7 +173,7 @@ namespace Laga.GeneticAlgorithm
                 chr[count] = i;
                 count++;
             }
-            return LagaTools.Fisher_Yates(chr);
+            return Tools.Fisher_Yates(chr);
         }
 
         /// <summary>

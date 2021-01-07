@@ -42,7 +42,7 @@ namespace Laga.GeneticAlgorithm
                 {
                     if (rnd.NextDouble() < percentChrom)
                     {        
-                        chr.InsertDNA(i, LagaTools.RandomChar(start, end));
+                        chr.InsertDNA(i, Tools.RandomChar(start, end));
                     }
                 }
             }
@@ -94,7 +94,7 @@ namespace Laga.GeneticAlgorithm
             //random list...
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
-            arrindex = LagaTools.Fisher_Yates(arrindex); // fisher_yate(arrindex);
+            arrindex = Tools.Fisher_Yates(arrindex); // fisher_yate(arrindex);
 
             for (int i = 0; i < cant; ++i) //loop para 
             {
@@ -150,7 +150,7 @@ namespace Laga.GeneticAlgorithm
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
-            arrindex = LagaTools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
+            arrindex = Tools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
 
             for (int i = 0; i < cant; ++i) //loop para 
             {
@@ -199,7 +199,7 @@ namespace Laga.GeneticAlgorithm
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
-            arrindex = LagaTools.Fisher_Yates(arrindex); 
+            arrindex = Tools.Fisher_Yates(arrindex); 
 
             for (int i = 0; i < cant; ++i) 
             {
@@ -247,7 +247,7 @@ namespace Laga.GeneticAlgorithm
 
             int[] arrindex = new int[pop.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
-            arrindex = LagaTools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
+            arrindex = Tools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
 
             for (int i = 0; i < cant; ++i) //loop para 
             {
@@ -297,7 +297,7 @@ namespace Laga.GeneticAlgorithm
             char gen, mutGen;
             for (int i = 0; i < cant; ++i) //the loop for the population
             {
-                arrPointer = LagaTools.RandomInt(0, pop[i].Length, ChroPercent);
+                arrPointer = Tools.RandomInt(0, pop[i].Length, ChroPercent);
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     gen = mutatedPop[arrIndex[i]][arrPointer[j]];
@@ -335,7 +335,7 @@ namespace Laga.GeneticAlgorithm
             {
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
-                    rndChar = LagaTools.RandomChar(start, end); // RandomChar();
+                    rndChar = Tools.RandomChar(start, end); // RandomChar();
                     pointer = rnd.Next(pop[i].Length);
                     mutatedPop[arrIndex[i]][pointer] = rndChar;
                 }
