@@ -61,7 +61,11 @@ namespace LagaRhino
             return Q;
         }
 
-
+        /// <summary>
+        /// Crates a DeepCopy from the existing list of curves
+        /// </summary>
+        /// <param name="lstToCopy">The curves to perform the deep copy</param>
+        /// <returns>List<Curve></Curve></returns>
         public static List<Curve> DeepCopy(List<Curve> lstToCopy)
         {
             List<Curve> lstDeepCopy = new List<Curve>();
@@ -82,7 +86,26 @@ namespace LagaRhino
         /// <returns>point3d[]</returns>
         public static Point3d[] SortPointsByZ(Point3d[] arrPts)
         {
-            return arrPts.OrderBy(item => item.Z).ToArray();
+            return arrPts.OrderBy(p => p.Z).ToArray();
+        }
+
+        public static List<Point3d[]> GroupByZ(Point3d[] arrPts)
+        {
+            List<Point3d[]> lstArrGroup = new List<Point3d[]>();
+            try
+            {
+                var groupedResult = arrPts.GroupBy(p => p.Z);
+
+                foreach (var zGroup in groupedResult)
+                {
+                    lstArrGroup.Add(zGroup.ToArray());
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return lstArrGroup;
         }
 
         /// <summary>

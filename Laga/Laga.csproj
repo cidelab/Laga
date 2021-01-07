@@ -65,6 +65,7 @@
     <Compile Include="RankingSort.cs" />
     <Compile Include="IODataFolder.cs" />
     <Compile Include="Replacement.cs" />
+    <Compile Include="Vector.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
