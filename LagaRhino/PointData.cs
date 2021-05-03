@@ -91,6 +91,8 @@ namespace LagaRhino
 
         public static List<Point3d[]> GroupByZ(Point3d[] arrPts)
         {
+            arrPts = arrPts.OrderBy(p => p.Z).ToArray();
+
             List<Point3d[]> lstArrGroup = new List<Point3d[]>();
             try
             {
@@ -105,6 +107,8 @@ namespace LagaRhino
             {
                 return null;
             }
+
+
             return lstArrGroup;
         }
 
