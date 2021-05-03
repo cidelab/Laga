@@ -54,6 +54,7 @@
     <Compile Include="GenrPopulation.cs" />
     <Compile Include="IOExcelRead.cs" />
     <Compile Include="IOExcelWrite.cs" />
+    <Compile Include="Line.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="Mutation.cs" />
     <Compile Include="NaturalSelection.cs" />
