@@ -89,6 +89,11 @@ namespace LagaRhino
             return arrPts.OrderBy(p => p.Z).ToArray();
         }
 
+        /// <summary>
+        /// Group points by Z values.
+        /// </summary>
+        /// <param name="arrPts">the array of points to group</param>
+        /// <returns>List<Point3d[]></Point3d></returns>
         public static List<Point3d[]> GroupByZ(Point3d[] arrPts)
         {
             arrPts = arrPts.OrderBy(p => p.Z).ToArray();
