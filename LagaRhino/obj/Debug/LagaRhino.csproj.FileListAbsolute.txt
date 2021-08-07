@@ -1,0 +1,6 @@
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.csproj.CoreCompileInputs.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.csprojAssemblyReference.cache

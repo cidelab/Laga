@@ -1,0 +1,3002 @@
+id: LagaUnity
+language: CSharp
+name:
+  Default: LagaUnity
+qualifiedName:
+  Default: LagaUnity
+type: Assembly
+modifiers: {}
+items:
+- id: LagaUnity
+  commentId: N:LagaUnity
+  language: CSharp
+  name:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  nameWithType:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  qualifiedName:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  type: Namespace
+  assemblies:
+  - LagaUnity
+  modifiers: {}
+  items:
+  - id: LagaUnity.Line
+    commentId: T:LagaUnity.Line
+    language: CSharp
+    name:
+      CSharp: Line
+      VB: Line
+    nameWithType:
+      CSharp: Line
+      VB: Line
+    qualifiedName:
+      CSharp: LagaUnity.Line
+      VB: LagaUnity.Line
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Line
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+      startLine: 9
+    syntax:
+      content:
+        CSharp: public class Line
+        VB: Public Class Line
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: LagaUnity.Line.PointA
+      commentId: P:LagaUnity.Line.PointA
+      language: CSharp
+      name:
+        CSharp: PointA
+        VB: PointA
+      nameWithType:
+        CSharp: Line.PointA
+        VB: Line.PointA
+      qualifiedName:
+        CSharp: LagaUnity.Line.PointA
+        VB: LagaUnity.Line.PointA
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: PointA
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 17
+      summary: "\nFirst point in the Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Point PointA { get; set; }
+          VB: Public Property PointA As Point
+        parameters: []
+        return:
+          type: LagaUnity.Point
+      overload: LagaUnity.Line.PointA*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Line.PointB
+      commentId: P:LagaUnity.Line.PointB
+      language: CSharp
+      name:
+        CSharp: PointB
+        VB: PointB
+      nameWithType:
+        CSharp: Line.PointB
+        VB: Line.PointB
+      qualifiedName:
+        CSharp: LagaUnity.Line.PointB
+        VB: LagaUnity.Line.PointB
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: PointB
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 32
+      summary: "\nSecond Point in the Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Point PointB { get; set; }
+          VB: Public Property PointB As Point
+        parameters: []
+        return:
+          type: LagaUnity.Point
+      overload: LagaUnity.Line.PointB*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Line.#ctor(LagaUnity.Point,LagaUnity.Point)
+      commentId: M:LagaUnity.Line.#ctor(LagaUnity.Point,LagaUnity.Point)
+      language: CSharp
+      name:
+        CSharp: Line(Point, Point)
+        VB: Line(Point, Point)
+      nameWithType:
+        CSharp: Line.Line(Point, Point)
+        VB: Line.Line(Point, Point)
+      qualifiedName:
+        CSharp: LagaUnity.Line.Line(LagaUnity.Point, LagaUnity.Point)
+        VB: LagaUnity.Line.Line(LagaUnity.Point, LagaUnity.Point)
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 49
+      summary: "\nConstruct a laga line object by 2 points.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Line(Point pointA, Point pointB)
+          VB: Public Sub New(pointA As Point, pointB As Point)
+        parameters:
+        - id: pointA
+          type: LagaUnity.Point
+          description: First Point
+        - id: pointB
+          type: LagaUnity.Point
+          description: Second Point
+      overload: LagaUnity.Line.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.MidPoint
+      commentId: M:LagaUnity.Line.MidPoint
+      language: CSharp
+      name:
+        CSharp: MidPoint()
+        VB: MidPoint()
+      nameWithType:
+        CSharp: Line.MidPoint()
+        VB: Line.MidPoint()
+      qualifiedName:
+        CSharp: LagaUnity.Line.MidPoint()
+        VB: LagaUnity.Line.MidPoint()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: MidPoint
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 59
+      summary: "\nReturns the mid point.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Point MidPoint()
+          VB: Public Function MidPoint As Point
+        return:
+          type: LagaUnity.Point
+          description: Laga Point
+      overload: LagaUnity.Line.MidPoint*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.ToString
+      commentId: M:LagaUnity.Line.ToString
+      language: CSharp
+      name:
+        CSharp: ToString()
+        VB: ToString()
+      nameWithType:
+        CSharp: Line.ToString()
+        VB: Line.ToString()
+      qualifiedName:
+        CSharp: LagaUnity.Line.ToString()
+        VB: LagaUnity.Line.ToString()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: ToString
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 68
+      summary: "\nOverrides ToString() Line point coordinates\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override string ToString()
+          VB: Public Overrides Function ToString As String
+        return:
+          type: System.String
+          description: string
+      overload: LagaUnity.Line.ToString*
+      overridden: System.Object.ToString
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: Draw(Single, Color)
+        VB: Draw(Single, Color)
+      nameWithType:
+        CSharp: Line.Draw(Single, Color)
+        VB: Line.Draw(Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+        VB: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Draw
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 78
+      summary: "\nDraw a Unity Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Draw(float width, Color color)
+          VB: Public Sub Draw(width As Single, color As Color)
+        parameters:
+        - id: width
+          type: System.Single
+          description: Line width
+        - id: color
+          type: UnityEngine.Color
+          description: Color line
+      overload: LagaUnity.Line.Draw*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.DrawLine(LagaUnity.Point,LagaUnity.Point,System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Line.DrawLine(LagaUnity.Point,LagaUnity.Point,System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: DrawLine(Point, Point, Single, Color)
+        VB: DrawLine(Point, Point, Single, Color)
+      nameWithType:
+        CSharp: Line.DrawLine(Point, Point, Single, Color)
+        VB: Line.DrawLine(Point, Point, Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Line.DrawLine(LagaUnity.Point, LagaUnity.Point, System.Single, UnityEngine.Color)
+        VB: LagaUnity.Line.DrawLine(LagaUnity.Point, LagaUnity.Point, System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DrawLine
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 90
+      summary: "\nDraw a Unity line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void DrawLine(Point pointA, Point pointB, float width, Color color)
+          VB: Public Shared Sub DrawLine(pointA As Point, pointB As Point, width As Single, color As Color)
+        parameters:
+        - id: pointA
+          type: LagaUnity.Point
+          description: First point
+        - id: pointB
+          type: LagaUnity.Point
+          description: Second Point
+        - id: width
+          type: System.Single
+          description: Line Width
+        - id: color
+          type: UnityEngine.Color
+          description: Color Line
+      overload: LagaUnity.Line.DrawLine*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: LagaUnity.Point
+    commentId: T:LagaUnity.Point
+    language: CSharp
+    name:
+      CSharp: Point
+      VB: Point
+    nameWithType:
+      CSharp: Point
+      VB: Point
+    qualifiedName:
+      CSharp: LagaUnity.Point
+      VB: LagaUnity.Point
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Point
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+      startLine: 5
+    syntax:
+      content:
+        CSharp: public class Point
+        VB: Public Class Point
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: LagaUnity.Point.X
+      commentId: P:LagaUnity.Point.X
+      language: CSharp
+      name:
+        CSharp: X
+        VB: X
+      nameWithType:
+        CSharp: Point.X
+        VB: Point.X
+      qualifiedName:
+        CSharp: LagaUnity.Point.X
+        VB: LagaUnity.Point.X
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: X
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 15
+      summary: "\nThe X coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float X { get; set; }
+          VB: Public Property X As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: LagaUnity.Point.X*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Point.Y
+      commentId: P:LagaUnity.Point.Y
+      language: CSharp
+      name:
+        CSharp: Y
+        VB: Y
+      nameWithType:
+        CSharp: Point.Y
+        VB: Point.Y
+      qualifiedName:
+        CSharp: LagaUnity.Point.Y
+        VB: LagaUnity.Point.Y
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Y
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 30
+      summary: "\nThe Y coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Y { get; set; }
+          VB: Public Property Y As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: LagaUnity.Point.Y*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Point.Z
+      commentId: P:LagaUnity.Point.Z
+      language: CSharp
+      name:
+        CSharp: Z
+        VB: Z
+      nameWithType:
+        CSharp: Point.Z
+        VB: Point.Z
+      qualifiedName:
+        CSharp: LagaUnity.Point.Z
+        VB: LagaUnity.Point.Z
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Z
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 45
+      summary: "\nThe Z coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Z { get; set; }
+          VB: Public Property Z As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: LagaUnity.Point.Z*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Point.#ctor(System.Single,System.Single,System.Single)
+      commentId: M:LagaUnity.Point.#ctor(System.Single,System.Single,System.Single)
+      language: CSharp
+      name:
+        CSharp: Point(Single, Single, Single)
+        VB: Point(Single, Single, Single)
+      nameWithType:
+        CSharp: Point.Point(Single, Single, Single)
+        VB: Point.Point(Single, Single, Single)
+      qualifiedName:
+        CSharp: LagaUnity.Point.Point(System.Single, System.Single, System.Single)
+        VB: LagaUnity.Point.Point(System.Single, System.Single, System.Single)
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 63
+      summary: "\nBuild a laga point object by 3 coordinates.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Point(float X, float Y, float Z)
+          VB: Public Sub New(X As Single, Y As Single, Z As Single)
+        parameters:
+        - id: X
+          type: System.Single
+          description: X coordinate
+        - id: Y
+          type: System.Single
+          description: Y coordinate
+        - id: Z
+          type: System.Single
+          description: z coordinate
+      overload: LagaUnity.Point.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Point.ToString
+      commentId: M:LagaUnity.Point.ToString
+      language: CSharp
+      name:
+        CSharp: ToString()
+        VB: ToString()
+      nameWithType:
+        CSharp: Point.ToString()
+        VB: Point.ToString()
+      qualifiedName:
+        CSharp: LagaUnity.Point.ToString()
+        VB: LagaUnity.Point.ToString()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: ToString
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 74
+      summary: "\nOverride string method, Print point coordinates\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override string ToString()
+          VB: Public Overrides Function ToString As String
+        return:
+          type: System.String
+          description: string
+      overload: LagaUnity.Point.ToString*
+      overridden: System.Object.ToString
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: LagaUnity.Point.Draw(System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Point.Draw(System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: Draw(Single, Color)
+        VB: Draw(Single, Color)
+      nameWithType:
+        CSharp: Point.Draw(Single, Color)
+        VB: Point.Draw(Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Point.Draw(System.Single, UnityEngine.Color)
+        VB: LagaUnity.Point.Draw(System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Draw
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 84
+      summary: "\nDraw the point\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Draw(float width, Color color)
+          VB: Public Sub Draw(width As Single, color As Color)
+        parameters:
+        - id: width
+          type: System.Single
+          description: width for the point, 2.0
+        - id: color
+          type: UnityEngine.Color
+          description: the color&apos;s point to draw
+      overload: LagaUnity.Point.Draw*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Point.DistanceTo(LagaUnity.Point)
+      commentId: M:LagaUnity.Point.DistanceTo(LagaUnity.Point)
+      language: CSharp
+      name:
+        CSharp: DistanceTo(Point)
+        VB: DistanceTo(Point)
+      nameWithType:
+        CSharp: Point.DistanceTo(Point)
+        VB: Point.DistanceTo(Point)
+      qualifiedName:
+        CSharp: LagaUnity.Point.DistanceTo(LagaUnity.Point)
+        VB: LagaUnity.Point.DistanceTo(LagaUnity.Point)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DistanceTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 94
+      summary: "\nCalculate the distance to the second point.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float DistanceTo(Point pointB)
+          VB: Public Function DistanceTo(pointB As Point) As Single
+        parameters:
+        - id: pointB
+          type: LagaUnity.Point
+          description: ''
+        return:
+          type: System.Single
+          description: ''
+      overload: LagaUnity.Point.DistanceTo*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Point.DrawPoint(LagaUnity.Point,System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Point.DrawPoint(LagaUnity.Point,System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: DrawPoint(Point, Single, Color)
+        VB: DrawPoint(Point, Single, Color)
+      nameWithType:
+        CSharp: Point.DrawPoint(Point, Single, Color)
+        VB: Point.DrawPoint(Point, Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Point.DrawPoint(LagaUnity.Point, System.Single, UnityEngine.Color)
+        VB: LagaUnity.Point.DrawPoint(LagaUnity.Point, System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DrawPoint
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Point.cs
+        startLine: 106
+      summary: "\nDraw a point\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void DrawPoint(Point point, float width, Color color)
+          VB: Public Shared Sub DrawPoint(point As Point, width As Single, color As Color)
+        parameters:
+        - id: point
+          type: LagaUnity.Point
+          description: ''
+        - id: width
+          type: System.Single
+          description: ''
+        - id: color
+          type: UnityEngine.Color
+          description: ''
+      overload: LagaUnity.Point.DrawPoint*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: LagaUnity.Polygon
+    commentId: T:LagaUnity.Polygon
+    language: CSharp
+    name:
+      CSharp: Polygon
+      VB: Polygon
+    nameWithType:
+      CSharp: Polygon
+      VB: Polygon
+    qualifiedName:
+      CSharp: LagaUnity.Polygon
+      VB: LagaUnity.Polygon
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Polygon
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+      startLine: 10
+    syntax:
+      content:
+        CSharp: 'public class Polygon : ICollection<Point>, IEnumerable<Point>, IEnumerable'
+        VB: >-
+          Public Class Polygon
+
+              Implements ICollection(Of Point), IEnumerable(Of Point), IEnumerable
+    inheritance:
+    - System.Object
+    implements:
+    - System.Collections.Generic.ICollection{LagaUnity.Point}
+    - System.Collections.Generic.IEnumerable{LagaUnity.Point}
+    - System.Collections.IEnumerable
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: LagaUnity.Polygon.Count
+      commentId: P:LagaUnity.Polygon.Count
+      language: CSharp
+      name:
+        CSharp: Count
+        VB: Count
+      nameWithType:
+        CSharp: Polygon.Count
+        VB: Polygon.Count
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Count
+        VB: LagaUnity.Polygon.Count
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Count
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 14
+      syntax:
+        content:
+          CSharp: public int Count { get; }
+          VB: Public ReadOnly Property Count As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: LagaUnity.Polygon.Count*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.Count
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.IsReadOnly
+      commentId: P:LagaUnity.Polygon.IsReadOnly
+      language: CSharp
+      name:
+        CSharp: IsReadOnly
+        VB: IsReadOnly
+      nameWithType:
+        CSharp: Polygon.IsReadOnly
+        VB: Polygon.IsReadOnly
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.IsReadOnly
+        VB: LagaUnity.Polygon.IsReadOnly
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: IsReadOnly
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 16
+      syntax:
+        content:
+          CSharp: public bool IsReadOnly { get; }
+          VB: Public ReadOnly Property IsReadOnly As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: LagaUnity.Polygon.IsReadOnly*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.IsReadOnly
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.Add(LagaUnity.Point)
+      commentId: M:LagaUnity.Polygon.Add(LagaUnity.Point)
+      language: CSharp
+      name:
+        CSharp: Add(Point)
+        VB: Add(Point)
+      nameWithType:
+        CSharp: Polygon.Add(Point)
+        VB: Polygon.Add(Point)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Add(LagaUnity.Point)
+        VB: LagaUnity.Polygon.Add(LagaUnity.Point)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Add
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 18
+      syntax:
+        content:
+          CSharp: public void Add(Point point)
+          VB: Public Sub Add(point As Point)
+        parameters:
+        - id: point
+          type: LagaUnity.Point
+      overload: LagaUnity.Polygon.Add*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.Add(LagaUnity.Point)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Clear
+      commentId: M:LagaUnity.Polygon.Clear
+      language: CSharp
+      name:
+        CSharp: Clear()
+        VB: Clear()
+      nameWithType:
+        CSharp: Polygon.Clear()
+        VB: Polygon.Clear()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Clear()
+        VB: LagaUnity.Polygon.Clear()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Clear
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 23
+      syntax:
+        content:
+          CSharp: public void Clear()
+          VB: Public Sub Clear
+      overload: LagaUnity.Polygon.Clear*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.Clear
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Contains(LagaUnity.Point)
+      commentId: M:LagaUnity.Polygon.Contains(LagaUnity.Point)
+      language: CSharp
+      name:
+        CSharp: Contains(Point)
+        VB: Contains(Point)
+      nameWithType:
+        CSharp: Polygon.Contains(Point)
+        VB: Polygon.Contains(Point)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Contains(LagaUnity.Point)
+        VB: LagaUnity.Polygon.Contains(LagaUnity.Point)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Contains
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 28
+      syntax:
+        content:
+          CSharp: public bool Contains(Point point)
+          VB: Public Function Contains(point As Point) As Boolean
+        parameters:
+        - id: point
+          type: LagaUnity.Point
+        return:
+          type: System.Boolean
+      overload: LagaUnity.Polygon.Contains*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.Contains(LagaUnity.Point)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.CopyTo(LagaUnity.Point[],System.Int32)
+      commentId: M:LagaUnity.Polygon.CopyTo(LagaUnity.Point[],System.Int32)
+      language: CSharp
+      name:
+        CSharp: CopyTo(Point[], Int32)
+        VB: CopyTo(Point(), Int32)
+      nameWithType:
+        CSharp: Polygon.CopyTo(Point[], Int32)
+        VB: Polygon.CopyTo(Point(), Int32)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.CopyTo(LagaUnity.Point[], System.Int32)
+        VB: LagaUnity.Polygon.CopyTo(LagaUnity.Point(), System.Int32)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: CopyTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 33
+      syntax:
+        content:
+          CSharp: public void CopyTo(Point[] array, int arrayIndex)
+          VB: Public Sub CopyTo(array As Point(), arrayIndex As Integer)
+        parameters:
+        - id: array
+          type: LagaUnity.Point[]
+        - id: arrayIndex
+          type: System.Int32
+      overload: LagaUnity.Polygon.CopyTo*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.CopyTo(LagaUnity.Point[],System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.GetEnumerator
+      commentId: M:LagaUnity.Polygon.GetEnumerator
+      language: CSharp
+      name:
+        CSharp: GetEnumerator()
+        VB: GetEnumerator()
+      nameWithType:
+        CSharp: Polygon.GetEnumerator()
+        VB: Polygon.GetEnumerator()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.GetEnumerator()
+        VB: LagaUnity.Polygon.GetEnumerator()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: GetEnumerator
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 38
+      syntax:
+        content:
+          CSharp: public IEnumerator<Point> GetEnumerator()
+          VB: Public Function GetEnumerator As IEnumerator(Of Point)
+        return:
+          type: System.Collections.Generic.IEnumerator{LagaUnity.Point}
+      overload: LagaUnity.Polygon.GetEnumerator*
+      implements:
+      - System.Collections.Generic.IEnumerable{LagaUnity.Point}.GetEnumerator
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Remove(LagaUnity.Point)
+      commentId: M:LagaUnity.Polygon.Remove(LagaUnity.Point)
+      language: CSharp
+      name:
+        CSharp: Remove(Point)
+        VB: Remove(Point)
+      nameWithType:
+        CSharp: Polygon.Remove(Point)
+        VB: Polygon.Remove(Point)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Remove(LagaUnity.Point)
+        VB: LagaUnity.Polygon.Remove(LagaUnity.Point)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Remove
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 43
+      syntax:
+        content:
+          CSharp: public bool Remove(Point point)
+          VB: Public Function Remove(point As Point) As Boolean
+        parameters:
+        - id: point
+          type: LagaUnity.Point
+        return:
+          type: System.Boolean
+      overload: LagaUnity.Polygon.Remove*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Point}.Remove(LagaUnity.Point)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - isEii: true
+      id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+      commentId: M:LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+      language: CSharp
+      name:
+        CSharp: IEnumerable.GetEnumerator()
+        VB: System.Collections.IEnumerable.GetEnumerator()
+      nameWithType:
+        CSharp: Polygon.IEnumerable.GetEnumerator()
+        VB: Polygon.System.Collections.IEnumerable.GetEnumerator()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator()
+        VB: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: System.Collections.IEnumerable.GetEnumerator
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 48
+      syntax:
+        content:
+          CSharp: IEnumerator IEnumerable.GetEnumerator()
+          VB: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+        return:
+          type: System.Collections.IEnumerator
+      overload: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+      implements:
+      - System.Collections.IEnumerable.GetEnumerator
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: LagaUnity.Polygon.#ctor(System.Collections.Generic.List{LagaUnity.Point})
+      commentId: M:LagaUnity.Polygon.#ctor(System.Collections.Generic.List{LagaUnity.Point})
+      language: CSharp
+      name:
+        CSharp: Polygon(List<Point>)
+        VB: Polygon(List(Of Point))
+      nameWithType:
+        CSharp: Polygon.Polygon(List<Point>)
+        VB: Polygon.Polygon(List(Of Point))
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Polygon(System.Collections.Generic.List<LagaUnity.Point>)
+        VB: LagaUnity.Polygon.Polygon(System.Collections.Generic.List(Of LagaUnity.Point))
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 55
+      syntax:
+        content:
+          CSharp: public Polygon(List<Point> ListPoints)
+          VB: Public Sub New(ListPoints As List(Of Point))
+        parameters:
+        - id: ListPoints
+          type: System.Collections.Generic.List{LagaUnity.Point}
+      overload: LagaUnity.Polygon.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.DrawPolygon(System.Single,UnityEngine.Color,System.Boolean)
+      commentId: M:LagaUnity.Polygon.DrawPolygon(System.Single,UnityEngine.Color,System.Boolean)
+      language: CSharp
+      name:
+        CSharp: DrawPolygon(Single, Color, Boolean)
+        VB: DrawPolygon(Single, Color, Boolean)
+      nameWithType:
+        CSharp: Polygon.DrawPolygon(Single, Color, Boolean)
+        VB: Polygon.DrawPolygon(Single, Color, Boolean)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.DrawPolygon(System.Single, UnityEngine.Color, System.Boolean)
+        VB: LagaUnity.Polygon.DrawPolygon(System.Single, UnityEngine.Color, System.Boolean)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DrawPolygon
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 60
+      syntax:
+        content:
+          CSharp: public void DrawPolygon(float width, Color color, bool loop)
+          VB: Public Sub DrawPolygon(width As Single, color As Color, loop As Boolean)
+        parameters:
+        - id: width
+          type: System.Single
+        - id: color
+          type: UnityEngine.Color
+        - id: loop
+          type: System.Boolean
+      overload: LagaUnity.Polygon.DrawPolygon*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Length
+      commentId: P:LagaUnity.Polygon.Length
+      language: CSharp
+      name:
+        CSharp: Length
+        VB: Length
+      nameWithType:
+        CSharp: Polygon.Length
+        VB: Polygon.Length
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Length
+        VB: LagaUnity.Polygon.Length
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Length
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 80
+      syntax:
+        content:
+          CSharp: public float Length { get; }
+          VB: Public ReadOnly Property Length As Single
+        parameters: []
+        return:
+          type: System.Single
+      overload: LagaUnity.Polygon.Length*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.SegmentAt(System.Int32)
+      commentId: M:LagaUnity.Polygon.SegmentAt(System.Int32)
+      language: CSharp
+      name:
+        CSharp: SegmentAt(Int32)
+        VB: SegmentAt(Int32)
+      nameWithType:
+        CSharp: Polygon.SegmentAt(Int32)
+        VB: Polygon.SegmentAt(Int32)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.SegmentAt(System.Int32)
+        VB: LagaUnity.Polygon.SegmentAt(System.Int32)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: SegmentAt
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 97
+      syntax:
+        content:
+          CSharp: public Line SegmentAt(int index)
+          VB: Public Function SegmentAt(index As Integer) As Line
+        parameters:
+        - id: index
+          type: System.Int32
+        return:
+          type: LagaUnity.Line
+      overload: LagaUnity.Polygon.SegmentAt*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.SortPolygonPoints
+      commentId: M:LagaUnity.Polygon.SortPolygonPoints
+      language: CSharp
+      name:
+        CSharp: SortPolygonPoints()
+        VB: SortPolygonPoints()
+      nameWithType:
+        CSharp: Polygon.SortPolygonPoints()
+        VB: Polygon.SortPolygonPoints()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.SortPolygonPoints()
+        VB: LagaUnity.Polygon.SortPolygonPoints()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: SortPolygonPoints
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 105
+      syntax:
+        content:
+          CSharp: public Polygon SortPolygonPoints()
+          VB: Public Function SortPolygonPoints As Polygon
+        return:
+          type: LagaUnity.Polygon
+      overload: LagaUnity.Polygon.SortPolygonPoints*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  LagaUnity:
+    name:
+      CSharp:
+      - name: LagaUnity
+        nameWithType: LagaUnity
+        qualifiedName: LagaUnity
+      VB:
+      - name: LagaUnity
+        nameWithType: LagaUnity
+        qualifiedName: LagaUnity
+    isDefinition: true
+    commentId: N:LagaUnity
+  LagaUnity.Point:
+    name:
+      CSharp:
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      VB:
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Point
+  LagaUnity.Line.PointA*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.PointA*
+        name: PointA
+        nameWithType: Line.PointA
+        qualifiedName: LagaUnity.Line.PointA
+      VB:
+      - id: LagaUnity.Line.PointA*
+        name: PointA
+        nameWithType: Line.PointA
+        qualifiedName: LagaUnity.Line.PointA
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.PointA
+  LagaUnity.Line.PointB*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.PointB*
+        name: PointB
+        nameWithType: Line.PointB
+        qualifiedName: LagaUnity.Line.PointB
+      VB:
+      - id: LagaUnity.Line.PointB*
+        name: PointB
+        nameWithType: Line.PointB
+        qualifiedName: LagaUnity.Line.PointB
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.PointB
+  LagaUnity.Line.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.#ctor*
+        name: Line
+        nameWithType: Line.Line
+        qualifiedName: LagaUnity.Line.Line
+      VB:
+      - id: LagaUnity.Line.#ctor*
+        name: Line
+        nameWithType: Line.Line
+        qualifiedName: LagaUnity.Line.Line
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.#ctor
+  LagaUnity.Line.MidPoint*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.MidPoint*
+        name: MidPoint
+        nameWithType: Line.MidPoint
+        qualifiedName: LagaUnity.Line.MidPoint
+      VB:
+      - id: LagaUnity.Line.MidPoint*
+        name: MidPoint
+        nameWithType: Line.MidPoint
+        qualifiedName: LagaUnity.Line.MidPoint
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.MidPoint
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  LagaUnity.Line.ToString*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.ToString*
+        name: ToString
+        nameWithType: Line.ToString
+        qualifiedName: LagaUnity.Line.ToString
+      VB:
+      - id: LagaUnity.Line.ToString*
+        name: ToString
+        nameWithType: Line.ToString
+        qualifiedName: LagaUnity.Line.ToString
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.ToString
+  System.Single:
+    name:
+      CSharp:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      VB:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Single
+  UnityEngine:
+    name:
+      CSharp:
+      - name: UnityEngine
+        nameWithType: UnityEngine
+        qualifiedName: UnityEngine
+        isExternal: true
+      VB:
+      - name: UnityEngine
+        nameWithType: UnityEngine
+        qualifiedName: UnityEngine
+    isDefinition: true
+    commentId: N:UnityEngine
+  UnityEngine.Color:
+    name:
+      CSharp:
+      - id: UnityEngine.Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: UnityEngine.Color
+        isExternal: true
+      VB:
+      - id: UnityEngine.Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: UnityEngine.Color
+        isExternal: true
+    isDefinition: true
+    parent: UnityEngine
+    commentId: T:UnityEngine.Color
+  LagaUnity.Line.Draw*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.Draw*
+        name: Draw
+        nameWithType: Line.Draw
+        qualifiedName: LagaUnity.Line.Draw
+      VB:
+      - id: LagaUnity.Line.Draw*
+        name: Draw
+        nameWithType: Line.Draw
+        qualifiedName: LagaUnity.Line.Draw
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.Draw
+  LagaUnity.Line.DrawLine*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.DrawLine*
+        name: DrawLine
+        nameWithType: Line.DrawLine
+        qualifiedName: LagaUnity.Line.DrawLine
+      VB:
+      - id: LagaUnity.Line.DrawLine*
+        name: DrawLine
+        nameWithType: Line.DrawLine
+        qualifiedName: LagaUnity.Line.DrawLine
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.DrawLine
+  LagaUnity.Line:
+    name:
+      CSharp:
+      - id: LagaUnity.Line
+        name: Line
+        nameWithType: Line
+        qualifiedName: LagaUnity.Line
+      VB:
+      - id: LagaUnity.Line
+        name: Line
+        nameWithType: Line
+        qualifiedName: LagaUnity.Line
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Line
+  LagaUnity.Point.X*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.X*
+        name: X
+        nameWithType: Point.X
+        qualifiedName: LagaUnity.Point.X
+      VB:
+      - id: LagaUnity.Point.X*
+        name: X
+        nameWithType: Point.X
+        qualifiedName: LagaUnity.Point.X
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.X
+  LagaUnity.Point.Y*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.Y*
+        name: Y
+        nameWithType: Point.Y
+        qualifiedName: LagaUnity.Point.Y
+      VB:
+      - id: LagaUnity.Point.Y*
+        name: Y
+        nameWithType: Point.Y
+        qualifiedName: LagaUnity.Point.Y
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.Y
+  LagaUnity.Point.Z*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.Z*
+        name: Z
+        nameWithType: Point.Z
+        qualifiedName: LagaUnity.Point.Z
+      VB:
+      - id: LagaUnity.Point.Z*
+        name: Z
+        nameWithType: Point.Z
+        qualifiedName: LagaUnity.Point.Z
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.Z
+  LagaUnity.Point.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.#ctor*
+        name: Point
+        nameWithType: Point.Point
+        qualifiedName: LagaUnity.Point.Point
+      VB:
+      - id: LagaUnity.Point.#ctor*
+        name: Point
+        nameWithType: Point.Point
+        qualifiedName: LagaUnity.Point.Point
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.#ctor
+  LagaUnity.Point.ToString*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.ToString*
+        name: ToString
+        nameWithType: Point.ToString
+        qualifiedName: LagaUnity.Point.ToString
+      VB:
+      - id: LagaUnity.Point.ToString*
+        name: ToString
+        nameWithType: Point.ToString
+        qualifiedName: LagaUnity.Point.ToString
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.ToString
+  LagaUnity.Point.Draw*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.Draw*
+        name: Draw
+        nameWithType: Point.Draw
+        qualifiedName: LagaUnity.Point.Draw
+      VB:
+      - id: LagaUnity.Point.Draw*
+        name: Draw
+        nameWithType: Point.Draw
+        qualifiedName: LagaUnity.Point.Draw
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.Draw
+  LagaUnity.Point.DistanceTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.DistanceTo*
+        name: DistanceTo
+        nameWithType: Point.DistanceTo
+        qualifiedName: LagaUnity.Point.DistanceTo
+      VB:
+      - id: LagaUnity.Point.DistanceTo*
+        name: DistanceTo
+        nameWithType: Point.DistanceTo
+        qualifiedName: LagaUnity.Point.DistanceTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.DistanceTo
+  LagaUnity.Point.DrawPoint*:
+    name:
+      CSharp:
+      - id: LagaUnity.Point.DrawPoint*
+        name: DrawPoint
+        nameWithType: Point.DrawPoint
+        qualifiedName: LagaUnity.Point.DrawPoint
+      VB:
+      - id: LagaUnity.Point.DrawPoint*
+        name: DrawPoint
+        nameWithType: Point.DrawPoint
+        qualifiedName: LagaUnity.Point.DrawPoint
+    isDefinition: true
+    commentId: Overload:LagaUnity.Point.DrawPoint
+  System.Collections.Generic.ICollection`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.ICollection`1
+  System.Collections.Generic:
+    name:
+      CSharp:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+        isExternal: true
+      VB:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+    isDefinition: true
+    commentId: N:System.Collections.Generic
+  System.Collections.Generic.ICollection{LagaUnity.Point}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.ICollection{LagaUnity.Point}
+  System.Collections.Generic.IEnumerable`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.IEnumerable`1
+  System.Collections.Generic.IEnumerable{LagaUnity.Point}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerable`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.IEnumerable{LagaUnity.Point}
+  System.Collections:
+    name:
+      CSharp:
+      - name: System.Collections
+        nameWithType: System.Collections
+        qualifiedName: System.Collections
+        isExternal: true
+      VB:
+      - name: System.Collections
+        nameWithType: System.Collections
+        qualifiedName: System.Collections
+    isDefinition: true
+    commentId: N:System.Collections
+  System.Collections.IEnumerable:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerable
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.IEnumerable
+        isExternal: true
+      VB:
+      - id: System.Collections.IEnumerable
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.IEnumerable
+        isExternal: true
+    isDefinition: true
+    parent: System.Collections
+    commentId: T:System.Collections.IEnumerable
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  LagaUnity.Polygon.Count*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Count*
+        name: Count
+        nameWithType: Polygon.Count
+        qualifiedName: LagaUnity.Polygon.Count
+      VB:
+      - id: LagaUnity.Polygon.Count*
+        name: Count
+        nameWithType: Polygon.Count
+        qualifiedName: LagaUnity.Polygon.Count
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Count
+  System.Collections.Generic.ICollection`1.Count:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection<T>.Count
+        qualifiedName: System.Collections.Generic.ICollection<T>.Count
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection(Of T).Count
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Count
+        isExternal: true
+    isDefinition: true
+    commentId: P:System.Collections.Generic.ICollection`1.Count
+  System.Collections.Generic.ICollection{LagaUnity.Point}.Count:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection<Point>.Count
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.Count
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection(Of Point).Count
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).Count
+        isExternal: true
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Count
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: P:System.Collections.Generic.ICollection{LagaUnity.Point}.Count
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  LagaUnity.Polygon.IsReadOnly*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.IsReadOnly*
+        name: IsReadOnly
+        nameWithType: Polygon.IsReadOnly
+        qualifiedName: LagaUnity.Polygon.IsReadOnly
+      VB:
+      - id: LagaUnity.Polygon.IsReadOnly*
+        name: IsReadOnly
+        nameWithType: Polygon.IsReadOnly
+        qualifiedName: LagaUnity.Polygon.IsReadOnly
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.IsReadOnly
+  System.Collections.Generic.ICollection`1.IsReadOnly:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection<T>.IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection<T>.IsReadOnly
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection(Of T).IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection(Of T).IsReadOnly
+        isExternal: true
+    isDefinition: true
+    commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  System.Collections.Generic.ICollection{LagaUnity.Point}.IsReadOnly:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection<Point>.IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.IsReadOnly
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection(Of Point).IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).IsReadOnly
+        isExternal: true
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.IsReadOnly
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: P:System.Collections.Generic.ICollection{LagaUnity.Point}.IsReadOnly
+  LagaUnity.Polygon.Add*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Add*
+        name: Add
+        nameWithType: Polygon.Add
+        qualifiedName: LagaUnity.Polygon.Add
+      VB:
+      - id: LagaUnity.Polygon.Add*
+        name: Add
+        nameWithType: Polygon.Add
+        qualifiedName: LagaUnity.Polygon.Add
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Add
+  System.Collections.Generic.ICollection`1.Add(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection<T>.Add
+        qualifiedName: System.Collections.Generic.ICollection<T>.Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection(Of T).Add
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Point}.Add(LagaUnity.Point):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection<Point>.Add
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection(Of Point).Add
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Add(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Point}.Add(LagaUnity.Point)
+  LagaUnity.Polygon.Clear*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Clear*
+        name: Clear
+        nameWithType: Polygon.Clear
+        qualifiedName: LagaUnity.Polygon.Clear
+      VB:
+      - id: LagaUnity.Polygon.Clear*
+        name: Clear
+        nameWithType: Polygon.Clear
+        qualifiedName: LagaUnity.Polygon.Clear
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Clear
+  System.Collections.Generic.ICollection`1.Clear:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection<T>.Clear
+        qualifiedName: System.Collections.Generic.ICollection<T>.Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection(Of T).Clear
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Clear
+  System.Collections.Generic.ICollection{LagaUnity.Point}.Clear:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection<Point>.Clear
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection(Of Point).Clear
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Clear
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Point}.Clear
+  LagaUnity.Polygon.Contains*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Contains*
+        name: Contains
+        nameWithType: Polygon.Contains
+        qualifiedName: LagaUnity.Polygon.Contains
+      VB:
+      - id: LagaUnity.Polygon.Contains*
+        name: Contains
+        nameWithType: Polygon.Contains
+        qualifiedName: LagaUnity.Polygon.Contains
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Contains
+  System.Collections.Generic.ICollection`1.Contains(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection<T>.Contains
+        qualifiedName: System.Collections.Generic.ICollection<T>.Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection(Of T).Contains
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Point}.Contains(LagaUnity.Point):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection<Point>.Contains
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection(Of Point).Contains
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Contains(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Point}.Contains(LagaUnity.Point)
+  LagaUnity.Point[]:
+    name:
+      CSharp:
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  LagaUnity.Polygon.CopyTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.CopyTo*
+        name: CopyTo
+        nameWithType: Polygon.CopyTo
+        qualifiedName: LagaUnity.Polygon.CopyTo
+      VB:
+      - id: LagaUnity.Polygon.CopyTo*
+        name: CopyTo
+        nameWithType: Polygon.CopyTo
+        qualifiedName: LagaUnity.Polygon.CopyTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.CopyTo
+  System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection<T>.CopyTo
+        qualifiedName: System.Collections.Generic.ICollection<T>.CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection(Of T).CopyTo
+        qualifiedName: System.Collections.Generic.ICollection(Of T).CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  System.Collections.Generic.ICollection{LagaUnity.Point}.CopyTo(LagaUnity.Point[],System.Int32):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection<Point>.CopyTo
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection(Of Point).CopyTo
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Point}.CopyTo(LagaUnity.Point[],System.Int32)
+  System.Collections.Generic.IEnumerator`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.IEnumerator`1
+  System.Collections.Generic.IEnumerator{LagaUnity.Point}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerator`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.IEnumerator{LagaUnity.Point}
+  LagaUnity.Polygon.GetEnumerator*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.GetEnumerator*
+        name: GetEnumerator
+        nameWithType: Polygon.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.GetEnumerator
+      VB:
+      - id: LagaUnity.Polygon.GetEnumerator*
+        name: GetEnumerator
+        nameWithType: Polygon.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.GetEnumerator
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.GetEnumerator
+  System.Collections.Generic.IEnumerable`1.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable<T>.GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable(Of T).GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  System.Collections.Generic.IEnumerable{LagaUnity.Point}.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable<Point>.GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable<LagaUnity.Point>.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable(Of Point).GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable(Of LagaUnity.Point).GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    parent: System.Collections.Generic.IEnumerable{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.IEnumerable{LagaUnity.Point}.GetEnumerator
+  LagaUnity.Polygon.Remove*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Remove*
+        name: Remove
+        nameWithType: Polygon.Remove
+        qualifiedName: LagaUnity.Polygon.Remove
+      VB:
+      - id: LagaUnity.Polygon.Remove*
+        name: Remove
+        nameWithType: Polygon.Remove
+        qualifiedName: LagaUnity.Polygon.Remove
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Remove
+  System.Collections.Generic.ICollection`1.Remove(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection<T>.Remove
+        qualifiedName: System.Collections.Generic.ICollection<T>.Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection(Of T).Remove
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Point}.Remove(LagaUnity.Point):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection<Point>.Remove
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Point>.Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection(Of Point).Remove
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Point).Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Remove(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Point}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Point}.Remove(LagaUnity.Point)
+  System.Collections.IEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.IEnumerator
+        isExternal: true
+      VB:
+      - id: System.Collections.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.IEnumerator
+        isExternal: true
+    isDefinition: true
+    parent: System.Collections
+    commentId: T:System.Collections.IEnumerator
+  LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+        name: IEnumerable.GetEnumerator
+        nameWithType: Polygon.IEnumerable.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator
+      VB:
+      - id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+        name: System.Collections.IEnumerable.GetEnumerator
+        nameWithType: Polygon.System.Collections.IEnumerable.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+  System.Collections.IEnumerable.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerable.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable.GetEnumerator
+        qualifiedName: System.Collections.IEnumerable.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.IEnumerable.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable.GetEnumerator
+        qualifiedName: System.Collections.IEnumerable.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Collections.IEnumerable
+    commentId: M:System.Collections.IEnumerable.GetEnumerator
+  System.Collections.Generic.List`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.List`1
+  System.Collections.Generic.List{LagaUnity.Point}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Point
+        name: Point
+        nameWithType: Point
+        qualifiedName: LagaUnity.Point
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{LagaUnity.Point}
+  LagaUnity.Polygon.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.#ctor*
+        name: Polygon
+        nameWithType: Polygon.Polygon
+        qualifiedName: LagaUnity.Polygon.Polygon
+      VB:
+      - id: LagaUnity.Polygon.#ctor*
+        name: Polygon
+        nameWithType: Polygon.Polygon
+        qualifiedName: LagaUnity.Polygon.Polygon
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.#ctor
+  LagaUnity.Polygon.DrawPolygon*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.DrawPolygon*
+        name: DrawPolygon
+        nameWithType: Polygon.DrawPolygon
+        qualifiedName: LagaUnity.Polygon.DrawPolygon
+      VB:
+      - id: LagaUnity.Polygon.DrawPolygon*
+        name: DrawPolygon
+        nameWithType: Polygon.DrawPolygon
+        qualifiedName: LagaUnity.Polygon.DrawPolygon
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.DrawPolygon
+  LagaUnity.Polygon.Length*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Length*
+        name: Length
+        nameWithType: Polygon.Length
+        qualifiedName: LagaUnity.Polygon.Length
+      VB:
+      - id: LagaUnity.Polygon.Length*
+        name: Length
+        nameWithType: Polygon.Length
+        qualifiedName: LagaUnity.Polygon.Length
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Length
+  LagaUnity.Polygon.SegmentAt*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.SegmentAt*
+        name: SegmentAt
+        nameWithType: Polygon.SegmentAt
+        qualifiedName: LagaUnity.Polygon.SegmentAt
+      VB:
+      - id: LagaUnity.Polygon.SegmentAt*
+        name: SegmentAt
+        nameWithType: Polygon.SegmentAt
+        qualifiedName: LagaUnity.Polygon.SegmentAt
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.SegmentAt
+  LagaUnity.Polygon:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon
+        name: Polygon
+        nameWithType: Polygon
+        qualifiedName: LagaUnity.Polygon
+      VB:
+      - id: LagaUnity.Polygon
+        name: Polygon
+        nameWithType: Polygon
+        qualifiedName: LagaUnity.Polygon
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Polygon
+  LagaUnity.Polygon.SortPolygonPoints*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.SortPolygonPoints*
+        name: SortPolygonPoints
+        nameWithType: Polygon.SortPolygonPoints
+        qualifiedName: LagaUnity.Polygon.SortPolygonPoints
+      VB:
+      - id: LagaUnity.Polygon.SortPolygonPoints*
+        name: SortPolygonPoints
+        nameWithType: Polygon.SortPolygonPoints
+        qualifiedName: LagaUnity.Polygon.SortPolygonPoints
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.SortPolygonPoints

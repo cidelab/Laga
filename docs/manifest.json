@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Chromosome-1.html",
-          "hash": "STqvrfQWTjOAad+2D2ZIDA=="
+          "hash": "W25IdpMWRiWToQdX/SchBQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Crossover-1.html",
-          "hash": "RCowmAwjwP/f97vnBmI16A=="
+          "hash": "Ve6cumjyWB1hvRC2iXxDfg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrChromosome.html",
-          "hash": "qvT+nm7XT6YX2MRmHJ5dfQ=="
+          "hash": "t7Vp2HFrwAqieCYhOkBNTA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.html",
-          "hash": "Bh13mQLAPU5Emt9p+sbvqA=="
+          "hash": "NoILSnYo1uOh2RSogBCeGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.LagaTools.html",
-          "hash": "NoRSJt5+j6Fxf8+nwqiBCQ=="
+          "hash": "oNFwiGYdl0ETPWSKCr73ZA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Mutation.html",
-          "hash": "2Tv1vL+yLwBkU/peTL3mKg=="
+          "hash": "0gyhBtBSzZxfBL+fc/hkjQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.NaturalSelection-1.html",
-          "hash": "/5rKyZ9A6T/isjz7l7GfOQ=="
+          "hash": "lB6tYsi57o+YLAMq9I+FkQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Population-1.html",
-          "hash": "/Xqt41K4xrvJomF9uUgtQA=="
+          "hash": "a6Jpzb8DCyEGekkvP7wi+g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.RankingSort.html",
-          "hash": "QWZougRscofdxMPSKfvKFA=="
+          "hash": "NtfL3G5Ia2/w8HyWsQVePw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Replacement.html",
-          "hash": "1V6z4yDTey0OGmI3IW4q3g=="
+          "hash": "QzEfwj6AwlaPpBaXNcoaVQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.html",
-          "hash": "h+t8+7dQaMFquwAeelFiLQ=="
+          "hash": "eahmYRw6B4AqfCbasduOXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Graphics.BarChart.html",
-          "hash": "VQGMaxWAEryTKxdPWcpFnw=="
+          "hash": "gIRYhxBMwjhLsvoWGCoCbw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Graphics.Notebook.html",
-          "hash": "3CjjQEjvFkKBx9hfbl0sLg=="
+          "hash": "mROCbijLjLLjJHA5PgKntQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Graphics.html",
-          "hash": "LvIyazDsl5Sxkz3Ji/3M6g=="
+          "hash": "wTNKF9MLSELAGirboUrFcA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IODataFolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IODataFolder.html",
+          "hash": "1WoeBeWZrQ0j4bmatmV1cA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.IOExcelRead.html",
-          "hash": "pNPPQeE8P1EqFTl6t9pLPA=="
+          "hash": "PI5M+prOQRWbajy53QquKw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +204,31 @@
           "hash": "dp/abk+9WLV+DWHjevZfdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOTextData.EncodingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOTextData.EncodingType.html",
+          "hash": "KhPOwT5lgcVHc8e5baEyCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOTextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOTextData.html",
+          "hash": "IWyHC2/O0wpn8FkyM/buWg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +237,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.html",
-          "hash": "unZ5Oo025AvY37qD+UMXfg=="
+          "hash": "AG0z8+MUuZNVlLE3MqeMyw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.Maths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.Maths.html",
+          "hash": "z7Z0NVG+0LuWztfhHud5YQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +264,7 @@
           "hash": "dQj8hewY3ReZBUt6x+D0Ew=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +273,34 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.html",
-          "hash": "cqSlI2n5HNMuTE2U5s48MQ=="
+          "hash": "6VRwJTeefS6ivSa976BCGA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.LinearAlgebra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.LinearAlgebra.html",
+          "hash": "6B15dsq/rjzRNb3BgxFeGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.html",
+          "hash": "37DhW/vgCabV1e/LnHQRDA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -240,7 +312,7 @@
           "hash": "Hz3LVYiWFgYFHhEasbRVAQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -252,7 +324,7 @@
           "hash": "ypgc8LywtbTFsuXwakcFqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -264,7 +336,7 @@
           "hash": "LHx9qM/sJJmxQ84mWxVFeA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -276,7 +348,7 @@
           "hash": "njK76EsRd6mJb2drcuGXVQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -288,7 +360,7 @@
           "hash": "a+qmluEK3GYRlhiUIthU8w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "clZpcIXV+NWJopbCXEBTgg=="
+          "hash": "0ZPb8hlFcONOBaua+rohQA=="
         }
       },
       "is_incremental": false,
@@ -790,7 +862,7 @@
           "hash": "0L+PO9t9b+P6K21fL7JXxA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -815,16 +887,16 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
@@ -833,13 +905,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 16,
-          "skipped_file_count": 15
+          "skipped_file_count": 16
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 23,
-          "skipped_file_count": 23
+          "total_file_count": 29,
+          "skipped_file_count": 15
         }
       }
     },

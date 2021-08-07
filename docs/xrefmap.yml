@@ -1923,6 +1923,77 @@ references:
   commentId: N:Laga.IO
   fullName: Laga.IO
   nameWithType: Laga.IO
+- uid: Laga.IO.IODataFolder
+  name: IODataFolder
+  href: api/Laga.IO.IODataFolder.html
+  commentId: T:Laga.IO.IODataFolder
+  fullName: Laga.IO.IODataFolder
+  nameWithType: IODataFolder
+- uid: Laga.IO.IODataFolder.#ctor(System.String)
+  name: IODataFolder(String)
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder__ctor_System_String_
+  commentId: M:Laga.IO.IODataFolder.#ctor(System.String)
+  fullName: Laga.IO.IODataFolder.IODataFolder(System.String)
+  nameWithType: IODataFolder.IODataFolder(String)
+- uid: Laga.IO.IODataFolder.#ctor*
+  name: IODataFolder
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder__ctor_
+  commentId: Overload:Laga.IO.IODataFolder.#ctor
+  isSpec: "True"
+  fullName: Laga.IO.IODataFolder.IODataFolder
+  nameWithType: IODataFolder.IODataFolder
+- uid: Laga.IO.IODataFolder.ListFileNames
+  name: ListFileNames
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListFileNames
+  commentId: P:Laga.IO.IODataFolder.ListFileNames
+  fullName: Laga.IO.IODataFolder.ListFileNames
+  nameWithType: IODataFolder.ListFileNames
+- uid: Laga.IO.IODataFolder.ListFileNames*
+  name: ListFileNames
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListFileNames_
+  commentId: Overload:Laga.IO.IODataFolder.ListFileNames
+  isSpec: "True"
+  fullName: Laga.IO.IODataFolder.ListFileNames
+  nameWithType: IODataFolder.ListFileNames
+- uid: Laga.IO.IODataFolder.ListPathFileNames
+  name: ListPathFileNames
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListPathFileNames
+  commentId: P:Laga.IO.IODataFolder.ListPathFileNames
+  fullName: Laga.IO.IODataFolder.ListPathFileNames
+  nameWithType: IODataFolder.ListPathFileNames
+- uid: Laga.IO.IODataFolder.ListPathFileNames*
+  name: ListPathFileNames
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListPathFileNames_
+  commentId: Overload:Laga.IO.IODataFolder.ListPathFileNames
+  isSpec: "True"
+  fullName: Laga.IO.IODataFolder.ListPathFileNames
+  nameWithType: IODataFolder.ListPathFileNames
+- uid: Laga.IO.IODataFolder.ReadSelectiveData(System.String)
+  name: ReadSelectiveData(String)
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ReadSelectiveData_System_String_
+  commentId: M:Laga.IO.IODataFolder.ReadSelectiveData(System.String)
+  fullName: Laga.IO.IODataFolder.ReadSelectiveData(System.String)
+  nameWithType: IODataFolder.ReadSelectiveData(String)
+- uid: Laga.IO.IODataFolder.ReadSelectiveData*
+  name: ReadSelectiveData
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ReadSelectiveData_
+  commentId: Overload:Laga.IO.IODataFolder.ReadSelectiveData
+  isSpec: "True"
+  fullName: Laga.IO.IODataFolder.ReadSelectiveData
+  nameWithType: IODataFolder.ReadSelectiveData
+- uid: Laga.IO.IODataFolder.RootFolder
+  name: RootFolder
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_RootFolder
+  commentId: P:Laga.IO.IODataFolder.RootFolder
+  fullName: Laga.IO.IODataFolder.RootFolder
+  nameWithType: IODataFolder.RootFolder
+- uid: Laga.IO.IODataFolder.RootFolder*
+  name: RootFolder
+  href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_RootFolder_
+  commentId: Overload:Laga.IO.IODataFolder.RootFolder
+  isSpec: "True"
+  fullName: Laga.IO.IODataFolder.RootFolder
+  nameWithType: IODataFolder.RootFolder
 - uid: Laga.IO.IOExcelRead
   name: IOExcelRead
   href: api/Laga.IO.IOExcelRead.html
@@ -2307,12 +2378,228 @@ references:
   isSpec: "True"
   fullName: Laga.IO.IOExcelWrite.XlRange
   nameWithType: IOExcelWrite.XlRange
+- uid: Laga.IO.IOTextData
+  name: IOTextData
+  href: api/Laga.IO.IOTextData.html
+  commentId: T:Laga.IO.IOTextData
+  fullName: Laga.IO.IOTextData
+  nameWithType: IOTextData
+- uid: Laga.IO.IOTextData.#ctor(System.String)
+  name: IOTextData(String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData__ctor_System_String_
+  commentId: M:Laga.IO.IOTextData.#ctor(System.String)
+  fullName: Laga.IO.IOTextData.IOTextData(System.String)
+  nameWithType: IOTextData.IOTextData(String)
+- uid: Laga.IO.IOTextData.#ctor*
+  name: IOTextData
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData__ctor_
+  commentId: Overload:Laga.IO.IOTextData.#ctor
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.IOTextData
+  nameWithType: IOTextData.IOTextData
+- uid: Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  name: ConvertFileEncoding(String, IOTextData.EncodingType)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_ConvertFileEncoding_System_String_Laga_IO_IOTextData_EncodingType_
+  commentId: M:Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  fullName: Laga.IO.IOTextData.ConvertFileEncoding(System.String, Laga.IO.IOTextData.EncodingType)
+  nameWithType: IOTextData.ConvertFileEncoding(String, IOTextData.EncodingType)
+- uid: Laga.IO.IOTextData.ConvertFileEncoding*
+  name: ConvertFileEncoding
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_ConvertFileEncoding_
+  commentId: Overload:Laga.IO.IOTextData.ConvertFileEncoding
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.ConvertFileEncoding
+  nameWithType: IOTextData.ConvertFileEncoding
+- uid: Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
+  name: CountWordsTopN(String, Int32)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CountWordsTopN_System_String_System_Int32_
+  commentId: M:Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
+  fullName: Laga.IO.IOTextData.CountWordsTopN(System.String, System.Int32)
+  nameWithType: IOTextData.CountWordsTopN(String, Int32)
+- uid: Laga.IO.IOTextData.CountWordsTopN*
+  name: CountWordsTopN
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CountWordsTopN_
+  commentId: Overload:Laga.IO.IOTextData.CountWordsTopN
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.CountWordsTopN
+  nameWithType: IOTextData.CountWordsTopN
+- uid: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  name: CreateFile(List<String>, String, String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CreateFile_System_Collections_Generic_List_System_String__System_String_System_String_
+  commentId: M:Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  name.vb: CreateFile(List(Of String), String, String)
+  fullName: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List<System.String>, System.String, System.String)
+  fullName.vb: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List(Of System.String), System.String, System.String)
+  nameWithType: IOTextData.CreateFile(List<String>, String, String)
+  nameWithType.vb: IOTextData.CreateFile(List(Of String), String, String)
+- uid: Laga.IO.IOTextData.CreateFile*
+  name: CreateFile
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CreateFile_
+  commentId: Overload:Laga.IO.IOTextData.CreateFile
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.CreateFile
+  nameWithType: IOTextData.CreateFile
+- uid: Laga.IO.IOTextData.DataText
+  name: DataText
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataText
+  commentId: P:Laga.IO.IOTextData.DataText
+  fullName: Laga.IO.IOTextData.DataText
+  nameWithType: IOTextData.DataText
+- uid: Laga.IO.IOTextData.DataText*
+  name: DataText
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataText_
+  commentId: Overload:Laga.IO.IOTextData.DataText
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.DataText
+  nameWithType: IOTextData.DataText
+- uid: Laga.IO.IOTextData.DataTextLine
+  name: DataTextLine
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataTextLine
+  commentId: P:Laga.IO.IOTextData.DataTextLine
+  fullName: Laga.IO.IOTextData.DataTextLine
+  nameWithType: IOTextData.DataTextLine
+- uid: Laga.IO.IOTextData.DataTextLine*
+  name: DataTextLine
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataTextLine_
+  commentId: Overload:Laga.IO.IOTextData.DataTextLine
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.DataTextLine
+  nameWithType: IOTextData.DataTextLine
+- uid: Laga.IO.IOTextData.EncodingType
+  name: IOTextData.EncodingType
+  href: api/Laga.IO.IOTextData.EncodingType.html
+  commentId: T:Laga.IO.IOTextData.EncodingType
+  fullName: Laga.IO.IOTextData.EncodingType
+  nameWithType: IOTextData.EncodingType
+- uid: Laga.IO.IOTextData.EncodingType.ASCII
+  name: ASCII
+  href: api/Laga.IO.IOTextData.EncodingType.html#Laga_IO_IOTextData_EncodingType_ASCII
+  commentId: F:Laga.IO.IOTextData.EncodingType.ASCII
+  fullName: Laga.IO.IOTextData.EncodingType.ASCII
+  nameWithType: IOTextData.EncodingType.ASCII
+- uid: Laga.IO.IOTextData.EncodingType.Default
+  name: Default
+  href: api/Laga.IO.IOTextData.EncodingType.html#Laga_IO_IOTextData_EncodingType_Default
+  commentId: F:Laga.IO.IOTextData.EncodingType.Default
+  fullName: Laga.IO.IOTextData.EncodingType.Default
+  nameWithType: IOTextData.EncodingType.Default
+- uid: Laga.IO.IOTextData.EncodingType.Unicode
+  name: Unicode
+  href: api/Laga.IO.IOTextData.EncodingType.html#Laga_IO_IOTextData_EncodingType_Unicode
+  commentId: F:Laga.IO.IOTextData.EncodingType.Unicode
+  fullName: Laga.IO.IOTextData.EncodingType.Unicode
+  nameWithType: IOTextData.EncodingType.Unicode
+- uid: Laga.IO.IOTextData.EncodingType.UTF7
+  name: UTF7
+  href: api/Laga.IO.IOTextData.EncodingType.html#Laga_IO_IOTextData_EncodingType_UTF7
+  commentId: F:Laga.IO.IOTextData.EncodingType.UTF7
+  fullName: Laga.IO.IOTextData.EncodingType.UTF7
+  nameWithType: IOTextData.EncodingType.UTF7
+- uid: Laga.IO.IOTextData.EncodingType.UTF8
+  name: UTF8
+  href: api/Laga.IO.IOTextData.EncodingType.html#Laga_IO_IOTextData_EncodingType_UTF8
+  commentId: F:Laga.IO.IOTextData.EncodingType.UTF8
+  fullName: Laga.IO.IOTextData.EncodingType.UTF8
+  nameWithType: IOTextData.EncodingType.UTF8
+- uid: Laga.IO.IOTextData.GetWords(System.String)
+  name: GetWords(String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_GetWords_System_String_
+  commentId: M:Laga.IO.IOTextData.GetWords(System.String)
+  fullName: Laga.IO.IOTextData.GetWords(System.String)
+  nameWithType: IOTextData.GetWords(String)
+- uid: Laga.IO.IOTextData.GetWords*
+  name: GetWords
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_GetWords_
+  commentId: Overload:Laga.IO.IOTextData.GetWords
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.GetWords
+  nameWithType: IOTextData.GetWords
+- uid: Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
+  name: RemoveByLength(String, Int32, String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByLength_System_String_System_Int32_System_String_
+  commentId: M:Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
+  fullName: Laga.IO.IOTextData.RemoveByLength(System.String, System.Int32, System.String)
+  nameWithType: IOTextData.RemoveByLength(String, Int32, String)
+- uid: Laga.IO.IOTextData.RemoveByLength(System.String[],System.Int32)
+  name: RemoveByLength(String[], Int32)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByLength_System_String___System_Int32_
+  commentId: M:Laga.IO.IOTextData.RemoveByLength(System.String[],System.Int32)
+  name.vb: RemoveByLength(String(), Int32)
+  fullName: Laga.IO.IOTextData.RemoveByLength(System.String[], System.Int32)
+  fullName.vb: Laga.IO.IOTextData.RemoveByLength(System.String(), System.Int32)
+  nameWithType: IOTextData.RemoveByLength(String[], Int32)
+  nameWithType.vb: IOTextData.RemoveByLength(String(), Int32)
+- uid: Laga.IO.IOTextData.RemoveByLength*
+  name: RemoveByLength
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByLength_
+  commentId: Overload:Laga.IO.IOTextData.RemoveByLength
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.RemoveByLength
+  nameWithType: IOTextData.RemoveByLength
+- uid: Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  name: RemoveDiacritics(String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveDiacritics_System_String_
+  commentId: M:Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  fullName: Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  nameWithType: IOTextData.RemoveDiacritics(String)
+- uid: Laga.IO.IOTextData.RemoveDiacritics*
+  name: RemoveDiacritics
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveDiacritics_
+  commentId: Overload:Laga.IO.IOTextData.RemoveDiacritics
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.RemoveDiacritics
+  nameWithType: IOTextData.RemoveDiacritics
+- uid: Laga.IO.IOTextData.SourceEncoding
+  name: SourceEncoding
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_SourceEncoding
+  commentId: P:Laga.IO.IOTextData.SourceEncoding
+  fullName: Laga.IO.IOTextData.SourceEncoding
+  nameWithType: IOTextData.SourceEncoding
+- uid: Laga.IO.IOTextData.SourceEncoding*
+  name: SourceEncoding
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_SourceEncoding_
+  commentId: Overload:Laga.IO.IOTextData.SourceEncoding
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.SourceEncoding
+  nameWithType: IOTextData.SourceEncoding
 - uid: Laga.Numbers
   name: Laga.Numbers
   href: api/Laga.Numbers.html
   commentId: N:Laga.Numbers
   fullName: Laga.Numbers
   nameWithType: Laga.Numbers
+- uid: Laga.Numbers.Maths
+  name: Maths
+  href: api/Laga.Numbers.Maths.html
+  commentId: T:Laga.Numbers.Maths
+  fullName: Laga.Numbers.Maths
+  nameWithType: Maths
+- uid: Laga.Numbers.Maths.Deg2Rad(System.Double)
+  name: Deg2Rad(Double)
+  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Deg2Rad_System_Double_
+  commentId: M:Laga.Numbers.Maths.Deg2Rad(System.Double)
+  fullName: Laga.Numbers.Maths.Deg2Rad(System.Double)
+  nameWithType: Maths.Deg2Rad(Double)
+- uid: Laga.Numbers.Maths.Deg2Rad*
+  name: Deg2Rad
+  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Deg2Rad_
+  commentId: Overload:Laga.Numbers.Maths.Deg2Rad
+  isSpec: "True"
+  fullName: Laga.Numbers.Maths.Deg2Rad
+  nameWithType: Maths.Deg2Rad
+- uid: Laga.Numbers.Maths.Rad2Deg(System.Double)
+  name: Rad2Deg(Double)
+  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Rad2Deg_System_Double_
+  commentId: M:Laga.Numbers.Maths.Rad2Deg(System.Double)
+  fullName: Laga.Numbers.Maths.Rad2Deg(System.Double)
+  nameWithType: Maths.Rad2Deg(Double)
+- uid: Laga.Numbers.Maths.Rad2Deg*
+  name: Rad2Deg
+  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Rad2Deg_
+  commentId: Overload:Laga.Numbers.Maths.Rad2Deg
+  isSpec: "True"
+  fullName: Laga.Numbers.Maths.Rad2Deg
+  nameWithType: Maths.Rad2Deg
 - uid: Laga.Numbers.Rand
   name: Rand
   href: api/Laga.Numbers.Rand.html
@@ -2338,6 +2625,18 @@ references:
   isSpec: "True"
   fullName: Laga.Numbers.Rand.RandomNumbers
   nameWithType: Rand.RandomNumbers
+- uid: LagaRhino
+  name: LagaRhino
+  href: api/LagaRhino.html
+  commentId: N:LagaRhino
+  fullName: LagaRhino
+  nameWithType: LagaRhino
+- uid: LagaRhino.LinearAlgebra
+  name: LinearAlgebra
+  href: api/LagaRhino.LinearAlgebra.html
+  commentId: T:LagaRhino.LinearAlgebra
+  fullName: LagaRhino.LinearAlgebra
+  nameWithType: LinearAlgebra
 - uid: LagaUnity
   name: LagaUnity
   href: api/LagaUnity.html
