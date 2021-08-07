@@ -1246,7 +1246,13 @@ namespace Laga.GeneticAlgorithm
             return TourPop;
         }
 
-
+        /// <summary>
+        ///  mthod for the tournament
+        /// </summary>
+        /// <param name="torneo">the tournament for data</param>
+        /// <param name="results">the results from the evaluation</param>
+        /// <param name="type">if min</param>
+        /// <returns>object[]</returns>
         private object[] Tournament(object[][] torneo, float[] results, String type)
         {
             float test = results[0];
