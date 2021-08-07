@@ -51,11 +51,11 @@ namespace Laga.GeneticAlgorithm
         }*/
 
         /// <summary>
-        /// 
+        /// Roulette Wheel
         /// </summary>
-        /// <param name="population"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
+        /// <param name="population">Popultion</param>
+        /// <param name="maxItem">Maximum size in the roulette</param>
+        /// <returns>Population</returns>
         public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, int maxItem)
         {
             //clone the array.

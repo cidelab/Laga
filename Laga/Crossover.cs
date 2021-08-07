@@ -77,7 +77,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="matingPool"></param>
         /// <param name="populationSize"></param>
-        /// <returns></returns>
+        /// <returns>Population<T></returns>
         public static Population<T> RandomPointCrossover(Population<T> matingPool, int populationSize)
         {
             Random rnd = new Random();
@@ -102,12 +102,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Sinngle Point Chrossover
+        /// Sinngle Point Chrossover at specific location
         /// </summary>
         /// <param name="chromosomeA">Parent A</param>
         /// <param name="chromosomeB">Parent B</param>
         /// <param name="cut">Cutting location</param>
-        /// <returns>Chromosome</returns>
+        /// <returns>Chromosome<T></returns>
         public static Chromosome<T> SinglePointCrossover(Chromosome<T> chromosomeA, Chromosome<T> chromosomeB, int cut)
         {
             Chromosome<T> child = new Chromosome<T>();

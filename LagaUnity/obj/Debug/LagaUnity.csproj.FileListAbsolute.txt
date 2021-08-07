@@ -1,14 +1,7 @@
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.dll
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.pdb
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\UnityEngine.dll
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\UnityEngine.xml
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CoreCompileInputs.cache
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CopyComplete
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.dll
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.pdb
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.dll
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.pdb
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CoreCompileInputs.cache
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CopyComplete
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.dll
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CoreCompileInputs.cache

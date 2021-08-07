@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laga", "Laga\Laga.csproj", "{1FDF55C1-FBF7-47C5-8ECB-E2AAE5C19B98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{398BB21B-0DD6-439C-B908-52D9A961604F} = {398BB21B-0DD6-439C-B908-52D9A961604F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagaUnity", "LagaUnity\LagaUnity.csproj", "{81F90E90-12A2-4264-A4E6-2FDAC430E3AD}"
 EndProject
