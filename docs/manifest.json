@@ -84,7 +84,7 @@
           "hash": "7/rvHA1bHbZIKB0Jb2WDvKOGSMxsaJg8+Y4pnC3YjTU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "DxuqR3ojzUfEJUXuJpKt9aiV3V+j54X0a0CRIbtJ9jI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -384,7 +384,7 @@
           "hash": "BKQu9c0uwmSO8IPE/OzuWzBB/g4S1fVkuSx9tiTuqe4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -396,7 +396,7 @@
           "hash": "dR2Mn4UiNG26lloHrTkBDXXKSKeJTV2imP93Oof+GzM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -408,7 +408,7 @@
           "hash": "N00W2j1ZpzDZVq/forNEkPcmh6E2yAsb3vgs4BVRORU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -949,13 +949,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 15,
-          "skipped_file_count": 14
+          "skipped_file_count": 15
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 33,
-          "skipped_file_count": 33
+          "skipped_file_count": 31
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
