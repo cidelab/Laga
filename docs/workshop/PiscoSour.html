@@ -8,7 +8,7 @@
     <title>String combinatorial Problem </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="String combinatorial Problem ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,13 +70,10 @@
 <h1 id="string-combinatorial-problem">String combinatorial Problem</h1>
 
 <h2 id="definition">Definition</h2>
-<p>The problem consist in <em>evolve</em> a random string into a particular target string. For this exercise the target is: <strong>pneumonoultramicroscopicsilicovolcanoconiosis</strong>, that refers to a lung disease contracted from the inhalation of very fine silica particles. The word contains 45 characters and if one of the largest english words.</p>
-<br>
+<p>The problem consist in evolve a random string into a particular target string. For this exercise the target is: <strong>pneumonoultramicroscopicsilicovolcanoconiosis</strong>, that refers to a lung disease contracted from the inhalation of very fine silica particles. The word contains 45 characters and if one of the largest english words.</p>
 <h2 id="model">Model</h2>
-<p>There are only a finite number of characters in the ASCII table available for the problem: 26 in total. The length of the word is 45, therefore the search space is big as <strong>26^45</strong>, which means <strong>4.71846E+63</strong> possible combinations.</p>
-<p>To understand how big is the space search, this is the number in decimal notation: <strong>4718464138887780000000000000000000000000000000000000000000000000.00</strong></p>
-<p>The cost to evaluate each possible solution is not practical at all.
-Compare each possible combination against the target at 1/1000 sec would take <strong>149,621,516,326,984,000,000,000,000,000,000,000,000,000,000,000,000,000</strong> years.</p>
+<p>There are only a finite number of characters in the ASCII table available for the problem: 26 in total. The length of the word is 45, therefore the search space is big as <strong>26^45</strong>, which means <strong>4.71846E+63</strong> possible combinations. To understand how big is the space search, this is the number in decimal notation: <strong>4718464138887780000000000000000000000000000000000000000000000000.00</strong></p>
+<p>The cost to evaluate each possible solution is not practical at all. Compare each possible combination against the target at 1/1000 sec would take <strong>149,621,516,326,984,000,000,000,000,000,000,000,000,000,000,000,000,000</strong> years.</p>
 <p>The Genetic Algorithm start by making random strings (chromosome). Each string is evaluated against the fitness function to determine how far from the string target is. The chromosome evaluation based in character comparison is fine for short phrases, because the difference between 4 and 3 right characters in a 5 length word is the 80% and 60% respectively. Nevertheless, the same approach is problematic for long phrases. In the current exercise the difference between 44 and 43 right characters is 97.77% and 95.55%.</p>
 <p>For a 5 length word the difference between 2 characters is 20%. In the other hand the difference between 2 characters in a 45 length word is 2.21%. The difference takes special importance when the GA is close to convergence and the population is quite homogeneity. Not handle this issue could send the population to a local maximum, return false results and not find the correct answer.</p>
 <h4 id="2-possible-functions">2 possible functions:</h4>
@@ -86,7 +83,6 @@ Compare each possible combination against the target at 1/1000 sec would take <s
 <blockquote>
 <p>fitness = (float)c / (float)target.Length; // where c is the number of right characters</p>
 </blockquote>
-<br>
 <h2 id="architecture">Architecture</h2>
 <p>In the following table we will breakdown the problem in steps. We are going to understand what kind of algorithms we need, and general comments.</p>
 <table>
@@ -136,18 +132,15 @@ Compare each possible combination against the target at 1/1000 sec would take <s
 </tbody>
 </table>
 <p>Now, we have all the necessary ingredients to build our GA and defined what we need from each of them.</p>
-<br>
 <h2 id="code">Code</h2>
-<p>Here we will define the methods to implement the GA.  The first method initialize the population and define the architecture for the Genetic Algorithm. The second method performs the evaluation and the third method print the results in a windows console.</p>
-<br>
+<p>Here we will define the methods to implement the GA. The first method initialize the population and define the architecture for the Genetic Algorithm. The second method performs the evaluation and the third method print the results in a windows console.</p>
 <p>The population and the string target are defined.</p>
-<pre><code class="lang-C#">private static int sizePop = 200;
+<pre><code>private static int sizePop = 200;
 private static string target = &quot;pneumonoultramicroscopicsilicovolcanoconiosis&quot;;
 private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
 </code></pre>
-<br>
 <p>The for loop fill up the population with the chromosomes. The do-while loop it's the genetic algorithm itself: Evaluate, Natural selection, Crossover and Mutation.</p>
-<pre><code class="lang-C#">static void Main(string[] args)
+<pre><code>static void Main(string[] args)
 {
     GenrChromosome genrChromosome = new GenrChromosome(target.Length);
     for(int i = 0; i &lt; sizePop; i++)
@@ -176,9 +169,8 @@ private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
     Console.ReadLine();
 }
 </code></pre>
-<br>
 <p>This function calculate the fitness for each chromosome.</p>
-<pre><code class="lang-C#">private static void Evaluation()
+<pre><code>private static void Evaluation()
 {
     int c = 0;
     int le = target.Length;
@@ -195,11 +187,9 @@ private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
         chromosome.Fitness = c / target.Length;
     }
 }
-
 </code></pre>
-<br>
 <p>This function prints the results in a windows console</p>
-<pre><code class="lang-C#">private static void PrintData(Chromosome best, int genCount, float mut, float ave)
+<pre><code>private static void PrintData(Chromosome best, int genCount, float mut, float ave)
 {
     Console.SetCursorPosition(0, 1);
     Console.Write(&quot; Best individual: &quot;);
@@ -212,13 +202,12 @@ private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
     Console.WriteLine(&quot; Mutation Rate: &quot; + mut.ToString());
 }
 </code></pre>
-<br>
 <h2 id="results">Results</h2>
 <p>The GA is able to find the hidden target with a 200 size population in around 29 secs.</p>
 <ul>
 <li>This exercise is based in the chapter 18: Optimization Methods from the book: &quot;Numerical Methods,Algorithms and Tools in C#&quot;, Waldemar Dos Passos, 2010, Taylor and Francis. ISBN 978-0-8493-7479-1</li>
-<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/StringCombinatorialProblem">String combinatorial Problem</a></li>
-<li>The video below, is an example result of the GA executed:</li>
+<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/StringCombinatorialProblem">String combinatorial Problem</a>
+The video below, is an example result of the GA executed:</li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yBTNBVblpa8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </article>
@@ -231,7 +220,8 @@ private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -246,7 +236,7 @@ private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Made by <strong>designemergente</strong></span>
+            <span>Powered by <strong>DESIGNEMERGNTE.COM</strong></span>
           </div>
         </div>
       </footer>

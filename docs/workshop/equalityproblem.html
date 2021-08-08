@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Simple Math equality problem </title>
+    <title>Math Equality Problem </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Simple Math equality problem ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="title" content="Math Equality Problem ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,15 +67,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="simple-math-equality-problem">Simple Math equality problem</h1>
+<h1 id="math-equality-problem">Math Equality Problem</h1>
 
 <h2 id="definition">Definition</h2>
 <p>We have the following equation: A2 + B3 + C4 = 60. The objective consist in to find the integers values for A, B and C to balance the equation. Which values we can set in A, B and C to get 60?</p>
-<br>
 <h2 id="model">Model</h2>
 <p>In order to tackle any optimization problem, first we need to create a mathematical model to analyse and define the problem. The model, will help us to understand how far or close are we from the objective. Which is minimize the value function F(x) = A2 + B3 + C4. It's a very simple problem.</p>
-<br>
-<br>
 <h2 id="architecture">Architecture</h2>
 <p>In the following table we will breakdown the problem in steps. We are going to understand what kind of algorithms we need, and general comments.</p>
 <table>
@@ -135,10 +132,9 @@
 </tbody>
 </table>
 <p>Now, we have all the necessary ingredients to build our GA and defined what we need from each of them.</p>
-<br>
 <h2 id="code">Code</h2>
-<p>Here we will define the main classes and methods to operate the GA.  The first chuck of code defines the population size, and the chromosome size and some variables to store the results and population. the second chunk initialize all the GA operators from Laga: GenrPopulation(), RankingSort(), NaturalSelection(), Crossover() and Mutation(). The third chunk is for save the selected chromosomes, the inheritance and the mutated inheritance.</p>
-<pre><code class="lang-C#">private static int popSize = 20; //population size...
+<p>Here we will define the main classes and methods to operate the GA. The first chuck of code defines the population size, and the chromosome size and some variables to store the results and population. the second chunk initialize all the GA operators from Laga: GenrPopulation(), RankingSort(), NaturalSelection(), Crossover() and Mutation(). The third chunk is for save the selected chromosomes, the inheritance and the mutated inheritance.</p>
+<pre><code>private static int popSize = 20; //population size...
 private static int chromeSize = 15; //chromosome size....
 private static int[] result; //to store the results of the evaluation.
 private static char[][] charPop;
@@ -163,82 +159,76 @@ Stopwatch sw = new Stopwatch();
 sw.Start();
 </code></pre>
 <p>With the following method we will define the fitness.</p>
-<pre><code class="lang-C#">        private static int Fitness(char[] arrChr)
-        {
-            int[] arrD = TransformData(arrChr);
-            int res = 2 * arrD[0] + 3 * arrD[1] + 4 * arrD[2];
-            return Math.Abs(res - 60); //we want to go closer to 0 here.
-        }
+<pre><code>private static int Fitness(char[] arrChr)
+{
+  int[] arrD = TransformData(arrChr);
+  int res = 2 * arrD[0] + 3 * arrD[1] + 4 * arrD[2];
+  return Math.Abs(res - 60); //we want to go closer to 0 here.
+}
 </code></pre>
-<br>
-<p>With the following method we will transform the chars to integers.
-First we extract the Information from the chromosome and then we transform that binary information into integers</p>
-<pre><code class="lang-C#">        private static int[] TransformData(char[] arrChr)
-        {
-            char[] firstNum = LagaTools.ExtractDNA(arrChr, 0, 5);
-            char[] secondNum = LagaTools.ExtractDNA(arrChr, 5, 5);
-            char[] thirdNum = LagaTools.ExtractDNA(arrChr, 10, 5);
+<p>With the following method we will transform the chars to integers. First we extract the Information from the chromosome and then we transform that binary information into integers</p>
+<pre><code>private static int[] TransformData(char[] arrChr)
+{
+  char[] firstNum = LagaTools.ExtractDNA(arrChr, 0, 5);
+  char[] secondNum = LagaTools.ExtractDNA(arrChr, 5, 5);
+  char[] thirdNum = LagaTools.ExtractDNA(arrChr, 10, 5);
 
-            int a = LagaTools.BinaryChromosomeToInteger(firstNum);
-            int b = LagaTools.BinaryChromosomeToInteger(secondNum);
-            int c = LagaTools.BinaryChromosomeToInteger(thirdNum);
+  int a = LagaTools.BinaryChromosomeToInteger(firstNum);
+  int b = LagaTools.BinaryChromosomeToInteger(secondNum);
+  int c = LagaTools.BinaryChromosomeToInteger(thirdNum);
 
-            return new int[] {a, b, c};
-        }
+return new int[] {a, b, c};
+}
 </code></pre>
-<br>
-<p>Here es where we replace the old population with the one.</p>
-<pre><code class="lang-C#">        private static char[][] CreateTheNewPopulation(char[][] theOldPop, char[][] sonPop)
-        {
-            Random rnd = new Random();
-            int index;
-            int scope = theOldPop.Length;
-            for (int i = 0; i &lt; sonPop.Length; ++i)
-            {
-                index = rnd.Next(scope);//rnd.nextInt(scope);
+<p>Here es where we replace the old population with the one.
+private static char[][] CreateTheNewPopulation(char[][] theOldPop, char[][] sonPop)</p>
+<pre><code>{
+  Random rnd = new Random();
+  int index;
+  int scope = theOldPop.Length;
+  for (int i = 0; i &lt; sonPop.Length; ++i)
+  {
+    index = rnd.Next(scope);//rnd.nextInt(scope);
 
-                theOldPop[index] = new char[sonPop[i].Length];
-                Array.Copy(sonPop[i], 0, theOldPop[index], 0, sonPop[i].Length);
-            }
-            return theOldPop;
-        }
+    theOldPop[index] = new char[sonPop[i].Length];
+    Array.Copy(sonPop[i], 0, theOldPop[index], 0, sonPop[i].Length);
+  }
+  return theOldPop;
+}
 </code></pre>
-<br>
-<p>Finally the GA loop, where all the methods comes to play.
-We check the fitness, we sort, we transform the data and print in the console the top ranked solution,
-apply the selection, crossover, mutation and new population. At the end we have the stop condition.</p>
-<pre><code class="lang-C#">            do
-            {
-                for (int i = 0; i &lt; popSize; i++)
-                    result[i] = Fitness(charPop[i]);
+<p>Finally the GA loop, where all the methods comes to play. We check the fitness, we sort, we transform the data and print in the console the top ranked solution, apply the selection, crossover, mutation and new population. At the end we have the stop condition.</p>
+<pre><code>do
+{
+  for (int i = 0; i &lt; popSize; i++)
+  result[i] = Fitness(charPop[i]);
 
-                sr.BidirectionalBubbleSort(charPop, result, false);
-                eval = result[0];
+  sr.BidirectionalBubbleSort(charPop, result, false);
+  eval = result[0];
 
-                int[] arrD = TransformData(charPop[0]);
-                string message = String.Format(&quot;iter:{0} -&gt; 2*{1} + 3*{2} + 4*{3} = {4} // target: 60&quot;, c, arrD[0], arrD[1], arrD[2], eval);
-                Console.WriteLine(message);
-                c++;
+  int[] arrD = TransformData(charPop[0]);
+  string message = String.Format(&quot;iter:{0} -&gt; 2*{1} + 3*{2} + 4*{3} = {4} // target: 60&quot;, c, arrD[0], arrD[1], arrD[2], eval);
+  Console.WriteLine(message);
+  c++;
 
-                selChro = roulette.RouletteWheel(charPop, result, popSize);
-                sonPop = cross.SinglePointCrossover(selChro, 0.2f, 7);
-                mutPop = mut.BinaryCharMutation(charPop, 0.02f);
-                charPop = CreateTheNewPopulation(selChro, mutPop);
-                
-            } while (eval != 0);
-            sw.Stop();
-            Console.WriteLine(&quot;Elapsed={0}&quot;, sw.Elapsed);
-            Console.ReadLine();
+  selChro = roulette.RouletteWheel(charPop, result, popSize);
+  sonPop = cross.SinglePointCrossover(selChro, 0.2f, 7);
+  mutPop = mut.BinaryCharMutation(charPop, 0.02f);
+  charPop = CreateTheNewPopulation(selChro, mutPop);
+
+} while (eval != 0);
+
+sw.Stop();
+Console.WriteLine(&quot;Elapsed={0}&quot;, sw.Elapsed);
+Console.ReadLine();
 </code></pre>
-<br>
 <h2 id="results">Results</h2>
 <p>The GA was able to resolve the balance equation proposing different number combinations for the parameters A, B and C. In almost all tests, the GA also converged in short period of time.</p>
 <ul>
 <li>This experiment is based on the following paper: &quot;Genetic Algorithm for Solving Simple Mathematical Equality Problem&quot;, Denny Hermawanto, Indonesian Institute of Sciences (LIPI), INDONESIA.</li>
-<li>To download the experiment from: <a href="https://github.com/design4Eco/Lagalib/tree/Examples/mathFunctionOptimization">Simple Math equality problem</a></li>
-<li>The image below, shows an example result of the GA executed:</li>
+<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/mathFunctionOptimization">Math equality problem</a></li>
+<li>The image below, shows an example result of the GA executed:
+<img src="../images/Equal.png" alt=""></li>
 </ul>
-<p><img src="../images/Equal.png" alt=""></p>
 </article>
           </div>
           
@@ -249,7 +239,8 @@ apply the selection, crossover, mutation and new population. At the end we have 
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -264,7 +255,7 @@ apply the selection, crossover, mutation and new population. At the end we have 
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Made by <strong>designemergente</strong></span>
+            <span>Powered by <strong>DESIGNEMERGNTE.COM</strong></span>
           </div>
         </div>
       </footer>

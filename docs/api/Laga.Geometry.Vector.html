@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Vector
    ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
   
   <h1 id="Laga_Geometry_Vector" data-uid="Laga.Geometry.Vector" class="text-break">Class Vector
   </h1>
-  <div class="markdown level0 summary"><p>Vector class made by 3 doubles, Use this class indistinct for vector and points.</p>
+  <div class="markdown level0 summary"><p>Clase Vector</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,9 +83,6 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -116,13 +113,13 @@
   
   
   <a id="Laga_Geometry_Vector__ctor_" data-uid="Laga.Geometry.Vector.#ctor*"></a>
-  <h4 id="Laga_Geometry_Vector__ctor_System_Double_System_Double_System_Double_" data-uid="Laga.Geometry.Vector.#ctor(System.Double,System.Double,System.Double)">Vector(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>Constructor a 3d Vector</p>
+  <h4 id="Laga_Geometry_Vector__ctor_System_Double_System_Double_" data-uid="Laga.Geometry.Vector.#ctor(System.Double,System.Double)">Vector(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Crea vector 2D</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector(double dblX, double dblY, double dblZ)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector(double X, double Y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,21 +133,53 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dblX</span></td>
-        <td><p>X coordinate</p>
+        <td><span class="parametername">X</span></td>
+        <td><p>Coordenada X</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dblY</span></td>
-        <td><p>Y coordinate</p>
+        <td><span class="parametername">Y</span></td>
+        <td><p>Coordenada Y</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector__ctor_" data-uid="Laga.Geometry.Vector.#ctor*"></a>
+  <h4 id="Laga_Geometry_Vector__ctor_System_Double_System_Double_System_Double_" data-uid="Laga.Geometry.Vector.#ctor(System.Double,System.Double,System.Double)">Vector(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Crea Vector 3D</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector(double X, double Y, double Z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">X</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dblZ</span></td>
-        <td><p>Z coordinate</p>
-</td>
+        <td><span class="parametername">Y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Z</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -158,35 +187,9 @@
   </h3>
   
   
-  <a id="Laga_Geometry_Vector_Length_" data-uid="Laga.Geometry.Vector.Length*"></a>
-  <h4 id="Laga_Geometry_Vector_Length" data-uid="Laga.Geometry.Vector.Length">Length</h4>
-  <div class="markdown level1 summary"><p>Return the vector length (magnitude).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Laga_Geometry_Vector_X_" data-uid="Laga.Geometry.Vector.X*"></a>
   <h4 id="Laga_Geometry_Vector_X" data-uid="Laga.Geometry.Vector.X">X</h4>
-  <div class="markdown level1 summary"><p>get set X coordiante</p>
+  <div class="markdown level1 summary"><p>Coordenada X Nuevo</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -212,7 +215,7 @@
   
   <a id="Laga_Geometry_Vector_Y_" data-uid="Laga.Geometry.Vector.Y*"></a>
   <h4 id="Laga_Geometry_Vector_Y" data-uid="Laga.Geometry.Vector.Y">Y</h4>
-  <div class="markdown level1 summary"><p>get set Y coordinate</p>
+  <div class="markdown level1 summary"><p>Coordenada Y Nuevo</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -238,7 +241,7 @@
   
   <a id="Laga_Geometry_Vector_Z_" data-uid="Laga.Geometry.Vector.Z*"></a>
   <h4 id="Laga_Geometry_Vector_Z" data-uid="Laga.Geometry.Vector.Z">Z</h4>
-  <div class="markdown level1 summary"><p>get set Z coordinate</p>
+  <div class="markdown level1 summary"><p>Coordenada Z Nuevo</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -264,14 +267,14 @@
   </h3>
   
   
-  <a id="Laga_Geometry_Vector_Addition_" data-uid="Laga.Geometry.Vector.Addition*"></a>
-  <h4 id="Laga_Geometry_Vector_Addition_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.Addition(Laga.Geometry.Vector,Laga.Geometry.Vector)">Addition(Vector, Vector)</h4>
-  <div class="markdown level1 summary"><p>Vector addition</p>
+  <a id="Laga_Geometry_Vector_Angle_" data-uid="Laga.Geometry.Vector.Angle*"></a>
+  <h4 id="Laga_Geometry_Vector_Angle_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.Angle(Laga.Geometry.Vector,Laga.Geometry.Vector)">Angle(Vector, Vector)</h4>
+  <div class="markdown level1 summary"><p>Calcula el angulo entre 2 vectores</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector Addition(Vector vecA, Vector vecB)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double Angle(Vector vectorA, Vector vectorB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,13 +288,105 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecA</span></td>
-        <td></td>
+        <td><span class="parametername">vectorA</span></td>
+        <td><p>Vector A</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecB</span></td>
-        <td></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector B</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>double</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_ComponentOrthogonalTo_" data-uid="Laga.Geometry.Vector.ComponentOrthogonalTo*"></a>
+  <h4 id="Laga_Geometry_Vector_ComponentOrthogonalTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.ComponentOrthogonalTo(Laga.Geometry.Vector)">ComponentOrthogonalTo(Vector)</h4>
+  <div class="markdown level1 summary"><p>Crea el componente ortogonal al vector base B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector ComponentOrthogonalTo(Vector vectorB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector base</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><p>Vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_ComponentProjectTo_" data-uid="Laga.Geometry.Vector.ComponentProjectTo*"></a>
+  <h4 id="Laga_Geometry_Vector_ComponentProjectTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.ComponentProjectTo(Laga.Geometry.Vector)">ComponentProjectTo(Vector)</h4>
+  <div class="markdown level1 summary"><p>Proyecta el vector sobre el vector base B</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector ComponentProjectTo(Vector vectorB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector base</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -315,12 +410,12 @@
   
   <a id="Laga_Geometry_Vector_CrossProduct_" data-uid="Laga.Geometry.Vector.CrossProduct*"></a>
   <h4 id="Laga_Geometry_Vector_CrossProduct_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.CrossProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)">CrossProduct(Vector, Vector)</h4>
-  <div class="markdown level1 summary"><p>Returns the perpendicular vector to the other 2 Vectors.</p>
+  <div class="markdown level1 summary"><p>Cross Product entre vectores, retorna un vector perpendicular a los 2 vectores</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector CrossProduct(Vector vecA, Vector vecB)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector CrossProduct(Vector vectorA, Vector vectorB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -334,14 +429,14 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecA</span></td>
-        <td><p>First vector</p>
+        <td><span class="parametername">vectorA</span></td>
+        <td><p>Vector A</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecB</span></td>
-        <td><p>Second vector</p>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector B</p>
 </td>
       </tr>
     </tbody>
@@ -366,12 +461,12 @@
   
   <a id="Laga_Geometry_Vector_DistanceTo_" data-uid="Laga.Geometry.Vector.DistanceTo*"></a>
   <h4 id="Laga_Geometry_Vector_DistanceTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.DistanceTo(Laga.Geometry.Vector)">DistanceTo(Vector)</h4>
-  <div class="markdown level1 summary"><p>Get the distance between 2 vectors.</p>
+  <div class="markdown level1 summary"><p>Distancia entre vectores</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double DistanceTo(Vector vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public double DistanceTo(Vector vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -385,8 +480,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vec</span></td>
-        <td><p>The point to Test</p>
+        <td><span class="parametername">vector</span></td>
+        <td><p>vector a calcular la distancia</p>
 </td>
       </tr>
     </tbody>
@@ -402,21 +497,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><p>a double</p>
+        <td><p>double</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Laga_Geometry_Vector_Dot_" data-uid="Laga.Geometry.Vector.Dot*"></a>
-  <h4 id="Laga_Geometry_Vector_Dot_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.Dot(Laga.Geometry.Vector)">Dot(Vector)</h4>
-  <div class="markdown level1 summary"><p>Calculate the dot Product of 2 Vectors.</p>
+  <a id="Laga_Geometry_Vector_DotProduct_" data-uid="Laga.Geometry.Vector.DotProduct*"></a>
+  <h4 id="Laga_Geometry_Vector_DotProduct_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.DotProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)">DotProduct(Vector, Vector)</h4>
+  <div class="markdown level1 summary"><p>Calcula el dot product entre 2 vectores</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Dot(Vector vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double DotProduct(Vector vectorA, Vector vectorB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -430,8 +525,14 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vec</span></td>
-        <td><p>The Vector for the operation</p>
+        <td><span class="parametername">vectorA</span></td>
+        <td><p>Vector A</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector B</p>
 </td>
       </tr>
     </tbody>
@@ -447,21 +548,20 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><p>Vector</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Laga_Geometry_Vector_MidVector_" data-uid="Laga.Geometry.Vector.MidVector*"></a>
-  <h4 id="Laga_Geometry_Vector_MidVector_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.MidVector(Laga.Geometry.Vector,Laga.Geometry.Vector)">MidVector(Vector, Vector)</h4>
-  <div class="markdown level1 summary"><p>Calculate the vector in the middle of 2 vectors.</p>
+  <a id="Laga_Geometry_Vector_EqualTo_" data-uid="Laga.Geometry.Vector.EqualTo*"></a>
+  <h4 id="Laga_Geometry_Vector_EqualTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.EqualTo(Laga.Geometry.Vector)">EqualTo(Vector)</h4>
+  <div class="markdown level1 summary"><p>Compara dos vectores si son iguales</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector MidVector(Vector vecA, Vector vecB)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool EqualTo(Vector vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -475,14 +575,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecA</span></td>
-        <td><p>First vector</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecB</span></td>
-        <td><p>Second vector</p>
+        <td><span class="parametername">vector</span></td>
+        <td><p>vector a comparar</p>
 </td>
       </tr>
     </tbody>
@@ -497,8 +591,155 @@
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_IsOrthogonalTo_" data-uid="Laga.Geometry.Vector.IsOrthogonalTo*"></a>
+  <h4 id="Laga_Geometry_Vector_IsOrthogonalTo_Laga_Geometry_Vector_System_Double_" data-uid="Laga.Geometry.Vector.IsOrthogonalTo(Laga.Geometry.Vector,System.Double)">IsOrthogonalTo(Vector, Double)</h4>
+  <div class="markdown level1 summary"><p>Comprueba si el vector es ortogonal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOrthogonalTo(Vector vector, double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><p>Vector</p>
+        <td><span class="parametername">vector</span></td>
+        <td><p>El vector a comparar</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>Tolerancia en el calculo valor: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_IsParallelTo_" data-uid="Laga.Geometry.Vector.IsParallelTo*"></a>
+  <h4 id="Laga_Geometry_Vector_IsParallelTo_Laga_Geometry_Vector_System_Double_" data-uid="Laga.Geometry.Vector.IsParallelTo(Laga.Geometry.Vector,System.Double)">IsParallelTo(Vector, Double)</h4>
+  <div class="markdown level1 summary"><p>Comprueba si el vector es paralelo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParallelTo(Vector vector, double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>El vector a comparar</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>Tolerancia en el calculo valor: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_IsVectorCero_" data-uid="Laga.Geometry.Vector.IsVectorCero*"></a>
+  <h4 id="Laga_Geometry_Vector_IsVectorCero_System_Double_" data-uid="Laga.Geometry.Vector.IsVectorCero(System.Double)">IsVectorCero(Double)</h4>
+  <div class="markdown level1 summary"><p>Comprueba si es vector cero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVectorCero(double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p>Tolerancia en el calculo valor: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>bool</p>
 </td>
       </tr>
     </tbody>
@@ -507,13 +748,122 @@
   
   <a id="Laga_Geometry_Vector_Normalize_" data-uid="Laga.Geometry.Vector.Normalize*"></a>
   <h4 id="Laga_Geometry_Vector_Normalize" data-uid="Laga.Geometry.Vector.Normalize">Normalize()</h4>
-  <div class="markdown level1 summary"><p>Normalize the Vector Lenght</p>
+  <div class="markdown level1 summary"><p>Normaliza el vector</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector Normalize()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
   </div>
+  
+  
+  <a id="Laga_Geometry_Vector_OrthogonalTo_" data-uid="Laga.Geometry.Vector.OrthogonalTo*"></a>
+  <h4 id="Laga_Geometry_Vector_OrthogonalTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.OrthogonalTo(Laga.Geometry.Vector)">OrthogonalTo(Vector)</h4>
+  <div class="markdown level1 summary"><p>Nuevo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector OrthogonalTo(Vector vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Vector_ToString_" data-uid="Laga.Geometry.Vector.ToString*"></a>
+  <h4 id="Laga_Geometry_Vector_ToString" data-uid="Laga.Geometry.Vector.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Sobre escribe ToString()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Laga_Geometry_Vector_op_Addition_" data-uid="Laga.Geometry.Vector.op_Addition*"></a>
+  <h4 id="Laga_Geometry_Vector_op_Addition_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.op_Addition(Laga.Geometry.Vector,Laga.Geometry.Vector)">Addition(Vector, Vector)</h4>
+  <div class="markdown level1 summary"><p>Suma de vectores</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector operator +(Vector vectorA, Vector vectorB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vectorA</span></td>
+        <td><p>Vector A</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector B</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -532,14 +882,14 @@
   </table>
   
   
-  <a id="Laga_Geometry_Vector_Scale_" data-uid="Laga.Geometry.Vector.Scale*"></a>
-  <h4 id="Laga_Geometry_Vector_Scale_System_Double_" data-uid="Laga.Geometry.Vector.Scale(System.Double)">Scale(Double)</h4>
-  <div class="markdown level1 summary"><p>Scale a vector by a scalar</p>
+  <a id="Laga_Geometry_Vector_op_Multiply_" data-uid="Laga.Geometry.Vector.op_Multiply*"></a>
+  <h4 id="Laga_Geometry_Vector_op_Multiply_Laga_Geometry_Vector_System_Double_" data-uid="Laga.Geometry.Vector.op_Multiply(Laga.Geometry.Vector,System.Double)">Multiply(Vector, Double)</h4>
+  <div class="markdown level1 summary"><p>Multuplicacion escalar</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector Scale(double factor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector operator *(Vector vector, double scale)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -552,9 +902,15 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Vector a escalar</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">factor</span></td>
-        <td><p>the scalar to scale the vector</p>
+        <td><span class="parametername">scale</span></td>
+        <td><p>escala</p>
 </td>
       </tr>
     </tbody>
@@ -570,20 +926,21 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td></td>
+        <td><p>Vector</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Laga_Geometry_Vector_Subtract_" data-uid="Laga.Geometry.Vector.Subtract*"></a>
-  <h4 id="Laga_Geometry_Vector_Subtract_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.Subtract(Laga.Geometry.Vector,Laga.Geometry.Vector)">Subtract(Vector, Vector)</h4>
-  <div class="markdown level1 summary"><p>Subtracts vecA to VecB</p>
+  <a id="Laga_Geometry_Vector_op_Subtraction_" data-uid="Laga.Geometry.Vector.op_Subtraction*"></a>
+  <h4 id="Laga_Geometry_Vector_op_Subtraction_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Vector.op_Subtraction(Laga.Geometry.Vector,Laga.Geometry.Vector)">Subtraction(Vector, Vector)</h4>
+  <div class="markdown level1 summary"><p>Resta de vectores</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector Subtract(Vector vecA, Vector vecB)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector operator -(Vector vectorA, Vector vectorB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -597,13 +954,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecA</span></td>
-        <td></td>
+        <td><span class="parametername">vectorA</span></td>
+        <td><p>Vector A</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
-        <td><span class="parametername">vecB</span></td>
-        <td></td>
+        <td><span class="parametername">vectorB</span></td>
+        <td><p>Vector B</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -633,7 +992,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -648,7 +1008,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Made by <strong>designemergente</strong></span>
+            <span>Powered by <strong>DESIGNEMERGNTE.COM</strong></span>
           </div>
         </div>
       </footer>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Point
    ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -150,6 +150,34 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="LagaUnity_Point__ctor_" data-uid="LagaUnity.Point.#ctor*"></a>
+  <h4 id="LagaUnity_Point__ctor_Vector3_" data-uid="LagaUnity.Point.#ctor(Vector3)">Point(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Construct the Laga Point through Unity Vector3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point(Vector3 vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">vector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -234,6 +262,100 @@
   </h3>
   
   
+  <a id="LagaUnity_Point_Angle_" data-uid="LagaUnity.Point.Angle*"></a>
+  <h4 id="LagaUnity_Point_Angle_LagaUnity_Point_LagaUnity_Point_" data-uid="LagaUnity.Point.Angle(LagaUnity.Point,LagaUnity.Point)">Angle(Point, Point)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Angle(Point vec1, Point vec2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Point_CrossProduct_" data-uid="LagaUnity.Point.CrossProduct*"></a>
+  <h4 id="LagaUnity_Point_CrossProduct_LagaUnity_Point_LagaUnity_Point_" data-uid="LagaUnity.Point.CrossProduct(LagaUnity.Point,LagaUnity.Point)">CrossProduct(Point, Point)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point CrossProduct(Point vec1, Point vec2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="LagaUnity_Point_DistanceTo_" data-uid="LagaUnity.Point.DistanceTo*"></a>
   <h4 id="LagaUnity_Point_DistanceTo_LagaUnity_Point_" data-uid="LagaUnity.Point.DistanceTo(LagaUnity.Point)">DistanceTo(Point)</h4>
   <div class="markdown level1 summary"><p>Calculate the distance to the second point.</p>
@@ -277,8 +399,55 @@
   </table>
   
   
+  <a id="LagaUnity_Point_Dot_" data-uid="LagaUnity.Point.Dot*"></a>
+  <h4 id="LagaUnity_Point_Dot_LagaUnity_Point_LagaUnity_Point_" data-uid="LagaUnity.Point.Dot(LagaUnity.Point,LagaUnity.Point)">Dot(Point, Point)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Dot(Point vec1, Point vec2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vec2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="LagaUnity_Point_Draw_" data-uid="LagaUnity.Point.Draw*"></a>
-  <h4 id="LagaUnity_Point_Draw_System_Single_UnityEngine_Color_" data-uid="LagaUnity.Point.Draw(System.Single,UnityEngine.Color)">Draw(Single, Color)</h4>
+  <h4 id="LagaUnity_Point_Draw_System_Single_Color_" data-uid="LagaUnity.Point.Draw(System.Single,Color)">Draw(Single, Color)</h4>
   <div class="markdown level1 summary"><p>Draw the point</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -303,7 +472,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="xref">Color</span></td>
         <td><span class="parametername">color</span></td>
         <td><p>the color's point to draw</p>
 </td>
@@ -313,7 +482,7 @@
   
   
   <a id="LagaUnity_Point_DrawPoint_" data-uid="LagaUnity.Point.DrawPoint*"></a>
-  <h4 id="LagaUnity_Point_DrawPoint_LagaUnity_Point_System_Single_UnityEngine_Color_" data-uid="LagaUnity.Point.DrawPoint(LagaUnity.Point,System.Single,UnityEngine.Color)">DrawPoint(Point, Single, Color)</h4>
+  <h4 id="LagaUnity_Point_DrawPoint_LagaUnity_Point_System_Single_Color_" data-uid="LagaUnity.Point.DrawPoint(LagaUnity.Point,System.Single,Color)">DrawPoint(Point, Single, Color)</h4>
   <div class="markdown level1 summary"><p>Draw a point</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -342,8 +511,99 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="xref">Color</span></td>
         <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Point_GetNormal_" data-uid="LagaUnity.Point.GetNormal*"></a>
+  <h4 id="LagaUnity_Point_GetNormal_LagaUnity_Point_" data-uid="LagaUnity.Point.GetNormal(LagaUnity.Point)">GetNormal(Point)</h4>
+  <div class="markdown level1 summary"><p>Normalize a Point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point GetNormal(Point vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>the Vector to normalize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Point_Rotate_" data-uid="LagaUnity.Point.Rotate*"></a>
+  <h4 id="LagaUnity_Point_Rotate_LagaUnity_Point_System_Single_" data-uid="LagaUnity.Point.Rotate(LagaUnity.Point,System.Single)">Rotate(Point, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point Rotate(Point vector, float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Point.html">Point</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -377,6 +637,32 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="LagaUnity_Point_ToVector3_" data-uid="LagaUnity.Point.ToVector3*"></a>
+  <h4 id="LagaUnity_Point_ToVector3" data-uid="LagaUnity.Point.ToVector3">ToVector3()</h4>
+  <div class="markdown level1 summary"><p>Transform a Laga Point to Unity Vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ToVector3()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -387,7 +673,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -402,7 +689,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Made by <strong>designemergente</strong></span>
+            <span>Powered by <strong>DESIGNEMERGNTE.COM</strong></span>
           </div>
         </div>
       </footer>

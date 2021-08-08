@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Random Walker Colors </title>
+    <title>Random Walker in Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Random Walker Colors ">
-    <meta name="generator" content="docfx 2.46.0.0">
+    <meta name="title" content="Random Walker in Unity ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,29 +67,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="random-walker-colors">Random Walker Colors</h1>
+<h1 id="random-walker-in-unity">Random Walker in Unity</h1>
 
 <h2 id="definition">Definition</h2>
 <p>In this exercise, 500 walkers are defined by random trajectories. The walker paths are represented by colors.</p>
-<br>
 <h2 id="model">Model</h2>
 <p>The algorithm is very simple and consist to pass the information from one point to another in order to create a pseudo random direction.</p>
-<pre><code class="lang-C#">
-//set a new random point
+<pre><code class="lang-c#">// Creates a new random point
 ptB.X = ptB.X + (Random.value - 0.5f) * 0.2f;
 ptB.Y = ptB.Y + (Random.value - 0.5f) * 0.2f;
 
-//add the X and Y coordinate data to the existent point to define a new point: ptC
+// Add the X and Y coordinates data to the existent point to define the new point ptC
 ptC.X = ptA.X + ptB.X;
 ptC.Y = ptA.Y + ptB.Y;
-
 </code></pre>
-<br>
 <h2 id="code">Code</h2>
 <p>The same code runs 500 times per each walker. the result is similar to a nest that change color in relation to the distance to the screen centre.</p>
-<br>
-<pre><code class="lang-C#">
-using UnityEngine;
+<pre><code>using UnityEngine;
 using LagaUnity;
 
 public class drawlines : MonoBehaviour
@@ -128,19 +122,13 @@ public class drawlines : MonoBehaviour
     }
 }
 </code></pre>
-<br>
 <h2 id="results">Results</h2>
 <p><img src="../images/randWalker1.jpg" alt="">
-Parameters:
-<code>clr = new Color(0.2f*pos, 0.1f/pos, pos)</code></p>
-<br>
+Parameters: <code>clr = new Color(0.2f*pos, 0.1f/pos, pos)</code></p>
 <p><img src="../images/randWalker2.jpg" alt="">
-Parameters:
-<code>clr = new Color(0.2f * pos, 0.05f / pos, pos)</code></p>
-<br>
+Parameters: <code>clr = new Color(0.2f * pos, 0.05f / pos, pos)</code></p>
 <p><img src="../images/randWalker3.jpg" alt="">
-Parameters:
-<code>clr = new Color(0.8f * pos, Mathf.Sin(100*pos), pos);</code></p>
+Parameters: <code>clr = new Color(0.8f * pos, Mathf.Sin(100*pos), pos);</code></p>
 </article>
           </div>
           
@@ -151,7 +139,8 @@ Parameters:
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -166,7 +155,7 @@ Parameters:
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Made by <strong>designemergente</strong></span>
+            <span>Powered by <strong>DESIGNEMERGNTE.COM</strong></span>
           </div>
         </div>
       </footer>
