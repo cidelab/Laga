@@ -55,6 +55,7 @@
     <Compile Include="IOExcelRead.cs" />
     <Compile Include="IOExcelWrite.cs" />
     <Compile Include="Line.cs" />
+    <Compile Include="Plane.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="Mutation.cs" />
     <Compile Include="NaturalSelection.cs" />

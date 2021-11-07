@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Laga.Geometry
 {
+    /// <summary>
+    /// Line class and operations
+    /// </summary>
     public class Line
     {
         private Vector startPt;
         private Vector endPt;
         private Vector dir;
         private double tParam;
+        private double length;
 
+        /// <summary>
+        /// Line base point
+        /// </summary>
         public Vector StartPoint
         {
             get
@@ -20,6 +27,10 @@ namespace Laga.Geometry
                 return startPt;
             }
         }
+
+        /// <summary>
+        /// Line end point
+        /// </summary>
         public Vector EndPoint
         {
             get
@@ -27,6 +38,10 @@ namespace Laga.Geometry
                 return endPt;
             }
         }
+
+        /// <summary>
+        /// Line vector
+        /// </summary>
         public Vector Direction
         {
             get
@@ -35,21 +50,63 @@ namespace Laga.Geometry
             }
         }
 
+        /// <summary>
+        /// line length
+        /// </summary>
+        public double Length
+        {
+            get
+            {
+                return length;
+            }
+        }
+
+        /// <summary>
+        /// Line by start point, direction and length
+        /// </summary>
+        /// <param name="StartPoint">start point</param>
+        /// <param name="Direction">Vector</param>
+        /// <param name="t">Parameter</param>
         public Line(Vector StartPoint, Vector Direction, double t)
         {
             startPt = StartPoint;
             dir = Direction;
             endPt = startPt + dir;
             tParam = t;
+            len();
         }
 
+        /// <summary>
+        /// Line by start point and end point
+        /// </summary>
+        /// <param name="StartPoint">start point</param>
+        /// <param name="EndPoint">end point</param>
         public Line(Vector StartPoint, Vector EndPoint)
         {
             startPt = StartPoint;
             endPt = EndPoint;
             dir = EndPoint - StartPoint;
+            len();
         }
 
+        /// <summary>
+        /// Empty Line object
+        /// </summary>
+        public Line()
+        {
+        }
+
+        private void len()
+        {
+            length = endPt.DistanceTo(startPt);
+        }
+
+        /// <summary>
+        /// Test if 2 lines are parallel
+        /// </summary>
+        /// <param name="line">line to test</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
+        /// <returns>bool</returns>
         public bool IsParallelTo(Line line, double tolerance = 1e-3)
         {
             Vector vec1 = line.dir;
@@ -57,6 +114,13 @@ namespace Laga.Geometry
 
             return vec1.IsParallelTo(vec2, tolerance);
         }
+
+        /// <summary>
+        /// Test if 2 lines are coincident
+        /// </summary>
+        /// <param name="line">Line to test</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
+        /// <returns>bool</returns>
         public bool IsCoincidentTo(Line line, double tolerance = 1e-3)
         {
             if (this.IsParallelTo(line, tolerance))
@@ -70,6 +134,12 @@ namespace Laga.Geometry
                 return false;
             }
         }
+
+        /// <summary>
+        /// Point by parameter in the line
+        /// </summary>
+        /// <param name="t">Parameter</param>
+        /// <returns>Vector</returns>
         public Vector PointAt(double t)
         {
             double x = startPt.X + dir.X * t;
@@ -79,6 +149,13 @@ namespace Laga.Geometry
             return new Vector(x, y, z);
         }
 
+        /// <summary>
+        /// Line intersection by tolerance
+        /// </summary>
+        /// <param name="line">Line to test</param>
+        /// <param name="intersection">ref Point intersection</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
+        /// <returns>bool</returns>
         public bool IntersectTo(Line line, ref Vector intersection, double tolerance = 1e-3)
         {
             double A = this.startPt.Y - this.endPt.Y;
@@ -103,7 +180,13 @@ namespace Laga.Geometry
                 return true;
             }
         }
-
+        /// <summary>
+        /// Find the closest points between lines
+        /// </summary>
+        /// <param name="line">Line to test</param>
+        /// <param name="pointA">ref closest point A</param>
+        /// <param name="pointB">ref closest point B</param>
+        /// <returns>bool</returns>
         public bool ClosestTo(Line line, ref Vector pointA, ref Vector pointB)
         {
             if (!this.IsParallelTo(line) && !this.IsCoincidentTo(line))
@@ -134,10 +217,13 @@ namespace Laga.Geometry
             }
         }
 
+        /// <summary>
+        /// Print line length data
+        /// </summary>
+        /// <returns>string</returns>
         public override string ToString()
         {
-            return "line: S" + startPt.ToString() + "-E" + endPt.ToString();
+            return "Line: " + length.ToString();
         }
-
     }
 }

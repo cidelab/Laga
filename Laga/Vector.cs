@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 namespace Laga.Geometry
 {
     /// <summary>
-    /// Clase Vector
+    /// Vector class and operations
     /// </summary>
     public class Vector
     {
-        //Propiedades del vector, coordenadas X,Y,Z
+        //Geometry Vector properties X,Y,Z
         private double x;
         private double y;
         private double z;
 
         /// <summary>
-        /// Coordenada X Nuevo
+        /// X coordinate
         /// </summary> 
         public double X
         {
@@ -32,7 +32,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Coordenada Y Nuevo
+        /// Y Coordinate
         /// </summary>
         public double Y
         {
@@ -47,7 +47,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Coordenada Z Nuevo
+        /// Z Coordinate
         /// </summary>
         public double Z
         {
@@ -62,10 +62,10 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Crea vector 2D
+        /// Create a 2D vector in XY plane 
         /// </summary>
-        /// <param name="X">Coordenada X</param>
-        /// <param name="Y">Coordenada Y</param>
+        /// <param name="X">X coordinate</param>
+        /// <param name="Y">Y coordinate</param>
         public Vector(double X, double Y)
         {
             x = X;
@@ -74,11 +74,11 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Crea Vector 3D
+        /// Create a 3D Vector
         /// </summary>
-        /// <param name="X"></param>
-        /// <param name="Y"></param>
-        /// <param name="Z"></param>
+        /// <param name="X">X coordinate</param>
+        /// <param name="Y">Y coordinate</param>
+        /// <param name="Z">Z coordinate</param>
         public Vector(double X, double Y, double Z)
         {
             x = X;
@@ -86,12 +86,21 @@ namespace Laga.Geometry
             z = Z;
         }
 
+        /// <summary>
+        /// Creates the vector zero
+        /// </summary>
+        public Vector()
+        {
+            x = 0;
+            y = 0;
+            z = 0;
+        }
 
         /// <summary>
-        /// Nuevo
+        /// Creates a orthogonal vector
         /// </summary>
-        /// <param name="vector"></param>
-        /// <returns></returns>
+        /// <param name="vector">Vector</param>
+        /// <returns>Vector</returns>
         public static Vector OrthogonalTo(Vector vector)
         {
             if (vector.z == 0)
@@ -105,7 +114,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Cross Product entre vectores, retorna un vector perpendicular a los 2 vectores
+        /// Cross Product
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
@@ -120,7 +129,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Proyecta el vector sobre el vector base B
+        /// Project to vector base B
         /// </summary>
         /// <param name="vectorB">Vector base</param>
         /// <returns>Vector</returns>
@@ -133,7 +142,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Crea el componente ortogonal al vector base B
+        /// Creates the orthogonal component to vector base B
         /// </summary>
         /// <param name="vectorB">Vector base</param>
         /// <returns>Vector</returns>
@@ -144,9 +153,9 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Comprueba si es vector cero
+        /// Test if is vector zero
         /// </summary>
-        /// <param name="tolerance">Tolerancia en el calculo valor: 1e-3</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
         /// <returns>bool</returns>
         public bool IsVectorCero(double tolerance = 1e-3)
         {
@@ -154,10 +163,10 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Comprueba si el vector es ortogonal
+        /// Test if vector is orthogonal
         /// </summary>
-        /// <param name="vector">El vector a comparar</param>
-        /// <param name="tolerance">Tolerancia en el calculo valor: 1e-3</param>
+        /// <param name="vector">Vector to test</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
         /// <returns>bool</returns>
         public bool IsOrthogonalTo(Vector vector, double tolerance = 1e-3)
         {
@@ -165,10 +174,10 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Comprueba si el vector es paralelo
+        /// Test if 2 vectors are parallel
         /// </summary>
-        /// <param name="vector">El vector a comparar</param>
-        /// <param name="tolerance">Tolerancia en el calculo valor: 1e-3</param>
+        /// <param name="vector">The vector to test</param>
+        /// <param name="tolerance">Default tolerance: 1e-3</param>
         /// <returns>bool</returns>
         public bool IsParallelTo(Vector vector, double tolerance = 1e-3)
         {
@@ -180,18 +189,18 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Calcula el dot product entre 2 vectores
+        /// Dot product
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double DotProduct(Vector vectorA, Vector vectorB)
         {
             return (vectorA.x * vectorB.x + vectorA.y * vectorB.y + vectorA.z * vectorB.z);
         }
 
         /// <summary>
-        /// Calcula el angulo entre 2 vectores
+        /// Angle
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
@@ -208,9 +217,9 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Distancia entre vectores
+        /// Distance
         /// </summary>
-        /// <param name="vector">vector a calcular la distancia</param>
+        /// <param name="vector">vector to test</param>
         /// <returns>double</returns>
         public double DistanceTo(Vector vector)
         {
@@ -220,7 +229,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Normaliza el vector
+        /// Normalize the vector to 1
         /// </summary>
         public void Normalize()
         {
@@ -229,7 +238,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Suma de vectores
+        /// Addition
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
@@ -243,7 +252,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Resta de vectores
+        /// Substraction
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
@@ -257,21 +266,21 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Multuplicacion escalar
+        /// Scale multuplication
         /// </summary>
-        /// <param name="vector">Vector a escalar</param>
-        /// <param name="scale">escala</param>
+        /// <param name="vector">Vector to scale</param>
+        /// <param name="factor">factor</param>
         /// <returns>Vector</returns>
-        public static Vector operator *(Vector vector, double scale)
+        public static Vector operator *(Vector vector, double factor)
         {
-            double xc = vector.x * scale;
-            double yc = vector.y * scale;
-            double zc = vector.z * scale;
+            double xc = vector.x * factor;
+            double yc = vector.y * factor;
+            double zc = vector.z * factor;
             return new Vector(xc, yc, zc);
         }
 
         /// <summary>
-        /// Sobre escribe ToString()
+        /// Print vector data
         /// </summary>
         /// <returns>string</returns>
         public override string ToString()
@@ -280,9 +289,9 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Compara dos vectores si son iguales
+        /// test if 2 vectors are equal
         /// </summary>
-        /// <param name="vector">vector a comparar</param>
+        /// <param name="vector">Vector to test</param>
         /// <returns>bool</returns>
         public bool EqualTo(Vector vector)
         {
