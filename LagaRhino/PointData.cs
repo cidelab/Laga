@@ -7,6 +7,9 @@ using Rhino.Geometry;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Point data
+    /// </summary>
     public class PointData
     {
         /// <summary>
@@ -93,7 +96,7 @@ namespace LagaRhino
         /// Group points by Z values.
         /// </summary>
         /// <param name="arrPts">the array of points to group</param>
-        /// <returns>List<Point3d[]></Point3d></returns>
+        /// <returns>a List of group points by the Z coordinate</returns>
         public static List<Point3d[]> GroupByZ(Point3d[] arrPts)
         {
             arrPts = arrPts.OrderBy(p => p.Z).ToArray();

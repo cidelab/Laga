@@ -7,6 +7,9 @@ using Rhino.Geometry;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Line curve data
+    /// </summary>
     public class LineCurveData
     {
      

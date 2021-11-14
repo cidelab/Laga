@@ -8,6 +8,9 @@ using Rhino.Geometry;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Curve data
+    /// </summary>
     public class CurveData
     {
         private static Interval param = new Interval(0, 1);
@@ -37,7 +40,7 @@ namespace LagaRhino
         /// Makes a deep copy from a list of curves.
         /// </summary>
         /// <param name="lstToCopy">The list to copy</param>
-        /// <returns>List</Curve></returns>
+        /// <returns>List of Curves</returns>
         public static List<Curve> DeepCopyListCurve(List<Curve> lstToCopy)
         {
             List<Curve> lstDeepCopy = new List<Curve>();

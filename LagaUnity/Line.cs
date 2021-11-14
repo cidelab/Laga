@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
+
 namespace LagaUnity
 {
-    public class Line
+    /// <summary>
+    /// Draw a line in Unity
+    /// </summary>
+    public class ULine
     {
-        private Point pa;
-        private Point pb;
+        #region
+        /*
+        private UPoint pa;
+        private UPoint pb;
 
         /// <summary>
         /// First point in the Line
@@ -47,7 +53,7 @@ namespace LagaUnity
         /// </summary>
         /// <param name="pointA">First Point</param>
         /// <param name="pointB">Second Point</param>
-        public Line(Point pointA, Point pointB)
+        public ULine(Point pointA, Point pointB)
         {
             pa = pointA;
             pb = pointB;
@@ -100,5 +106,7 @@ namespace LagaUnity
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
         }
+        */
+        #endregion
     }
 }

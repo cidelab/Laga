@@ -4,4 +4,10 @@ C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhin
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.pdb
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.dll
 C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.xml
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\bin\Debug\LagaRhino.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.csproj.AssemblyReference.cache
 C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.csproj.CoreCompileInputs.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaRhino\obj\Debug\LagaRhino.pdb

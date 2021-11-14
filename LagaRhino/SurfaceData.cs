@@ -7,6 +7,9 @@ using Rhino.Geometry;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Surface data
+    /// </summary>
     public class SurfaceData
     {
         /// <summary>

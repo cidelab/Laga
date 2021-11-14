@@ -7,7 +7,10 @@ using Rhino.Geometry;
 
 namespace LagaRhino
 {
-    public class PlaneData
+/// <summary>
+/// Plane data
+/// </summary>
+public class PlaneData
     {
 
     }

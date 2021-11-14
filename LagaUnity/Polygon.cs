@@ -8,9 +8,13 @@ using UnityEngine;
 
 namespace LagaUnity
 {
-    public class Polygon : ICollection<Point>
+    /// <summary>
+    /// Polygon class
+    /// </summary>
+    public class Polygon // : ICollection<UPoint>
     {
-
+        #region
+        /*
         #region implements
         public int Count => lstPts.Count;
 
@@ -95,17 +99,19 @@ namespace LagaUnity
             }
         }
 
-        public Line SegmentAt(int index)
+        public ULine SegmentAt(int index)
         {
             if (index < 0) { return null; }
             if (index >= Count - 1) { return null; }
 
-            return new Line(lstPts[index], lstPts[index + 1]);
+            return new ULine(lstPts[index], lstPts[index + 1]);
         }
 
         public Polygon SortPolygonPoints()
         {
            return new Polygon(lstPts.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
         }
+        */
+        #endregion
     }
 }

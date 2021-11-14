@@ -1,9 +1,13 @@
 ﻿using System;
 using UnityEngine;
+using Laga;
 
 namespace LagaUnity
 {
-    public class Point
+    /// <summary>
+    /// Unity Point
+    /// </summary>
+    public class UPoint : Laga.Geometry.Vector
     {
         private float x;
         private float y;
@@ -12,7 +16,7 @@ namespace LagaUnity
         /// <summary>
         /// The X coordinate
         /// </summary>
-        public float X
+        public float XCoord
         {
             get
             {
@@ -27,7 +31,7 @@ namespace LagaUnity
         /// <summary>
         /// The Y coordinate
         /// </summary>
-        public float Y
+        public float YCoord
         {
             get
             {
@@ -42,7 +46,7 @@ namespace LagaUnity
         /// <summary>
         /// The Z coordinate
         /// </summary>
-        public float Z
+        public float ZCoord
         {
             get
             {
@@ -60,7 +64,7 @@ namespace LagaUnity
         /// <param name="X">X coordinate</param>
         /// <param name="Y">Y coordinate</param>
         /// <param name="Z">z coordinate</param>
-        public Point(float X, float Y, float Z)
+        public UPoint(float X, float Y, float Z)
         {
             x = X;
             y = Y;
@@ -71,7 +75,7 @@ namespace LagaUnity
         /// Construct the Laga Point through Unity Vector3
         /// </summary>
         /// <param name="vector"></param>
-        public Point(Vector3 vector)
+        public UPoint(Vector3 vector)
         {
             x = vector.x;
             y = vector.y;
@@ -110,10 +114,12 @@ namespace LagaUnity
         /// Calculate the distance to the second point.
         /// </summary>
         /// <param name="pointB"></param>
-        /// <returns></returns>
-        public float DistanceTo(Point pointB)
+        /// <returns>float</returns>
+        public float DistanceTo(UPoint pointB)
         {
-            return (float)Math.Sqrt(Math.Pow((X - pointB.X), 2) + Math.Pow((Y - pointB.Y), 2) + Math.Pow((Z - pointB.Z), 2));
+            double d = this.DistanceTo(pointB);
+            return (float)d;
+            //return (float)Math.Sqrt(Math.Pow((X - pointB.X), 2) + Math.Pow((Y - pointB.Y), 2) + Math.Pow((Z - pointB.Z), 2));
         }
 
         /// <summary>
@@ -122,7 +128,7 @@ namespace LagaUnity
         /// <param name="point"></param>
         /// <param name="width"></param>
         /// <param name="color"></param>
-        static public void DrawPoint(Point point, float width, Color color)
+        static public void DrawPoint(UPoint point, float width, Color color)
         {
             GameObject line = new GameObject("Point " + point.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
@@ -134,7 +140,8 @@ namespace LagaUnity
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
         }
-
+        #region
+        /*
         /// <summary>
         /// Normalize a Point
         /// </summary>
@@ -172,5 +179,7 @@ namespace LagaUnity
             float zMult = vec1.X * vec2.Y - vec1.y * vec2.x;
             return new Point(xMult, yMult, zMult);
         }
+        */
+        #endregion
     }
 }

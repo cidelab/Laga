@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using LagaUnity;
+using Laga.Geometry;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -82,7 +83,7 @@ namespace Laga.GeneticAlgorithm
         /// GenrChromosome dtaChrome = new GenrChromosome(agentTrace.Length); 
         ///
         /// in this loop we creates the chromosome.
-        /// for(int i = 0; i <agentTrace.Length; i++)
+        /// for(int i = 0; i &lt; agentTrace.Length ; i++)
         /// {
         ///     agent = new Agent();
         ///     dtaChrome.SizeChrom = 4;
@@ -468,17 +469,17 @@ namespace Laga.GeneticAlgorithm
         /// - (79.54, 62.78, 7.36), (84.51, 83.64, 69.42), (1.99, 8.09, 38.65), (84.64, 44.09, 78.47),
         /// </code>
         /// </example>
-        public Point[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
+        public Vector[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
         {
-            Point[] chromosome;
-            Point[][] popPoints = new Point[sizePopulation][];
+            Vector[] chromosome;
+            Vector[][] popPoints = new Vector[sizePopulation][];
 
             for (int i = 0; i < sizePopulation; i++)
             {
-                chromosome = new Point[SizeChromosome];
+                chromosome = new Vector[SizeChromosome];
                 for (int j = 0; j < SizeChromosome; j++)
                 {
-                    chromosome[j] = new Point(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
+                    chromosome[j] = new Vector(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
                 }
 
                 popPoints[i] = chromosome;
