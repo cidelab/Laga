@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Line.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="vec.cs" />
     <Compile Include="Polygon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

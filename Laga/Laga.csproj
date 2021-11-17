@@ -97,12 +97,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LagaUnity\LagaUnity.csproj">
-      <Project>{81f90e90-12a2-4264-a4e6-2fdac430e3ad}</Project>
-      <Name>LagaUnity</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
