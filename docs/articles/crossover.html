@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Crossover </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Crossover ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="crossover">Crossover</h1>
+
+<p>Once the natural selection is completed and the individuals are selected, the next genetic operator, is the crossover. In this step, the algorithm imitate the natural sexual reproduction to create offsprings to inherence parents properties and characteristics. The crossover imitates the DNA recombination of parents in the sexual reproduction.</p>
+<p>Crossover operates between generations and it is used in the 90% of selected individuals. All crossover methods operate in two different ways. The first method is called destructive strategy and consist that the offspring replace the parents. The non-destructive method check if the offspring has a higher fitness value than parents. If is false the offspring is rejected and will not replace the parents, otherwise yes.</p>
+<p>The idea behind the crossover operator is the inheritance. If the parents have a high fitness, It's expect an offspring with a high fitness too. Both parents share the chromosomes to the offspring.</p>
+<p>There are many types of the crossover operators. These are the most used:</p>
+<h4 id="single-point-crossover">Single Point Crossover</h4>
+<p>The single point crossover takes two individuals. Then, split each chromosome in two parts and interchange the genes to create two new chromosomes. The split point can be generated randomly or at specific point.</p>
+<p><img src="../images/crossover1.jpg" alt=""></p>
+<br>
+<h4 id="two-points-crossover">Two Points Crossover</h4>
+<p>This method is very similar to the single point crossover. Nevertheless, in this case the chromosomes is divided in three parts.</p>
+<p><img src="../images/crossover2.jpg" alt=""></p>
+<br>
+<h4 id="uniform-crossover">Uniform Crossover</h4>
+<p>In the uniform crossover the offspring genes have the same probabilities to come from one parent or the other. This technique implies to generate a random binary list <code>(1, 0, 1, 1, 0, 1, 0, 0, 1)</code> to test if the gene will be inhered from the parent 1 or 2. In order to generate the second offspring the rule is inverted.</p>
+<p><img src="../images/crossover3.jpg" alt=""></p>
+<br>
+<p>In the case of complex chromosomes, i.e. composed by a mix of integers and real numbers, it's possible to define other types of crossover algorithms. Combinatorial problems, can be complex in order to avoid duplicate genes. The crossover genetic operator is essential in the GA implementation because is in charge to explore very fast in the search space. Also, this operator is responsible of the properties of the GA and determine the implications of the evolution population.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

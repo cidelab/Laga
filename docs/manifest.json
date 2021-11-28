@@ -1,0 +1,1005 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/delab/Documents/GitHub/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Chromosome-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Chromosome-1.html",
+          "hash": "G0CZEoz7G2xrf4/AVXJ3/9Of0J6n3DtkCFLRwuUDMP4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Crossover-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Crossover-1.html",
+          "hash": "6IdjgwWJuJ+WcPVBvSdsCkrYNVwXwAkXWIVpXGJcaSM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.GenrChromosome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.GenrChromosome.html",
+          "hash": "3CAP0M9E96dqSPzSKdU2wUtuxxy6khfsUfb9HifQb+s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.html",
+          "hash": "jLVbJTd7SwfdreWq6vPVByvXSNkQwKHeMxcjc9cXb/Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Mutation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Mutation.html",
+          "hash": "QBRUuOnZ8zSv9yiC7Ub62cL9Gfp+Pg5+7NokV4t9WOc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.NaturalSelection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.NaturalSelection-1.html",
+          "hash": "76+CJzQwyD8a8S7haqESkEzRt5GArsCbNHK7YWtCs/g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Population-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Population-1.html",
+          "hash": "T+nxdgrlOvwIDkvXn4hR7dMbB7iRWzeoEAtOc1+FKu8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.RankingSort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.RankingSort.html",
+          "hash": "/rUrtNMN8YZDAvKqt3WP+/lc4sX5Yx8EGmU7G2nEQf4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Replacement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Replacement.html",
+          "hash": "wblYmNKnzoIQ28V+RogcK6NvukhrWJctWRgpKJCc5Eo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.Tools.html",
+          "hash": "O+i8+D4jgYamTuS/nEhgH0TeqidbS2UlumZ4VLlb1N0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.html",
+          "hash": "0os7SoNnqG6TshuGaIcC/Keqb/9upis1WmHljZ4or/I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.Line.html",
+          "hash": "4EquCRVibzgivU251pb5MS60bqRvSxGB4yJD2010KdI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.Plane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.Plane.html",
+          "hash": "zbUfTgsXjNG0WISoLouKBkAhguyFggPddLJyEUlpySc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.Vector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.Vector.html",
+          "hash": "MSc1QfotLL8Nsq793IEvUifythr5eF0WkfOeyWhAZKw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.html",
+          "hash": "ZoORj6BNdiiKePKsSdcV+wSMca+CRKM60BJQS+DXSVU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IODataFolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IODataFolder.html",
+          "hash": "vmCOQBP/AikvduTgIJHk23EWqrEtiL3k2LyJc1gP76k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOExcelRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOExcelRead.html",
+          "hash": "cep7hTHSuQiYd3RoGPqlKkBZT39g50w+2TrIHNyf2vY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOExcelWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOExcelWrite.html",
+          "hash": "7uwQ8YOptG8srrCV+QcobuEKnHBYGXGPVJkOsuLoYGw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOTextData.EncodingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOTextData.EncodingType.html",
+          "hash": "M3oAqYqAzoqUmDLm5bhHRb88vamFMLGJDnDnR5txAtc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOTextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOTextData.html",
+          "hash": "2i8NkxcKP/eCh4sKZzOFvThzxqkJE+8pBVFr8xu43xY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.html",
+          "hash": "858Cj++X0fbFhkHgiE8skAnATemNRm6LsbRnxp5VBc4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.Maths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.Maths.html",
+          "hash": "CxvChrPN3GARXThodqWfxdT1zSANUZG6s2BKR/Eej+4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.Rand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.Rand.html",
+          "hash": "7rFm73UOqo3zm47VVs48tAbgwfHABGH3yUrccImCWw8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.html",
+          "hash": "543agPY2Sp/DDdkSE+QpK6foWjqHRBzcnxJljONS8rA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.CurveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.CurveData.html",
+          "hash": "f5kX31WoZyKWgN2TiDmhQBjTCyRi9P9ONoAQ/lg+iC0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.LineCurveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.LineCurveData.html",
+          "hash": "ovfau1L3TIzZs4smpMuE1NPSetOAlpWMd70GVjJtQsE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.PlaneData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.PlaneData.html",
+          "hash": "4r3vKClVMIQIPfdpyXLsEef0DoBeO89yBpukOKDWIrw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.PointData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.PointData.html",
+          "hash": "m1S8Tm+Wz5+snLH8CsA9CkxKW8M2g4NhbddBSMYk/WM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.SurfaceData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.SurfaceData.html",
+          "hash": "z7mqxQUtMRh+Eeg/WfFHfZgCuMirIDNLh1cLKcH88ww="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.html",
+          "hash": "lZ8QtZH4Oe15BIqrUdseWRUh01IV7YjlMLhoo6UYeCU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaUnity.Lne.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaUnity.Lne.html",
+          "hash": "6jOiTrWjSYN1PIeiDbtZ3T+60xxRRXPKdC4wWrpBQUQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaUnity.Polygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaUnity.Polygon.html",
+          "hash": "ZIVXRt3oz+eEOExBsq/COHTG/x+h2jR2JJuppBI1/CE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaUnity.Vec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaUnity.Vec.html",
+          "hash": "rXiGtU/LfMwo4dpgAE4Ya0IgIEliil3UuWikkPuxjOU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaUnity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaUnity.html",
+          "hash": "rU45eo+91qW5RNVodV4BR7qw1Tm6d1pwx9Bprd5P+BA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "XvFsz+xHrGjSGDauyQKpxXjK2A2x89uc3G+Go65mf/A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "jVF4WNuCn2OiBjl/aaM1P6CbCBSylDouS+d3QbXQtEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/crossover.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/crossover.html",
+          "hash": "7UOSljyMv5XrX7GttV35pGb2vRUkQ6/IRQE66xM1PwA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/fitness.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/fitness.html",
+          "hash": "PMFWzTv5N2qle09ekgQ8T1OTrHLmQ4obUcdOcZUnQ3Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/gas.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/gas.html",
+          "hash": "1pPHaPw9gTeVKbuY3odpiSICtnhzxO3/0Fp4/u65n4w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/genes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/genes.html",
+          "hash": "cB/kiWYtpoESiFSG4rgcSmFGZrIbAc51xB3HRCH0KnU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/mutation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/mutation.html",
+          "hash": "8EtjznH0YY1snptYEfri11y6onxCpcSsMO16HBuJmLU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/natselection.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/natselection.html",
+          "hash": "vwjhpQap94P0l5YrV/wMMu8PCEYCV5UK5KPeCdqCE7w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/replacement.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/replacement.html",
+          "hash": "aarfmoryLm90OGfus744UkYsAAms04sj74Jbjo9a6FE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "MrY5VJAWOqz4zE6rg9haj+7Ie66t+XevaBteIGzxpi8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Equal.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Equal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Excel-Test.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Excel-Test.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Excel-Test.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Excel-Test.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/GAs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/GAs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaLogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaUML2020.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaUML2020.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaUML2021.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaUML2021.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaWelcome.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaWelcome.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Math2-spacesearch.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Math2-spacesearch.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/chromosome.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/chromosome.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/crossover1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/crossover1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/crossover2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/crossover2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/crossover3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/crossover3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lagamission.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/lagamission.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/legexample.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/legexample.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/legfamily2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/legfamily2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mutation.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/mutation.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/natSelection.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/natSelection.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/natSelection2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/natSelection2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/natSelection3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/natSelection3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/natSelection4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/natSelection4.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/randWalker1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/randWalker1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/randWalker2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/randWalker2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/randWalker3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/randWalker3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/spiral 3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spiral 3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/spiral1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spiral1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/spiral2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spiral2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/spiral3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spiral3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "jvY2aDLzzJO4zpo/CENnUfiUCp1t/3z5xr/2B7bPMqQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "zBa3hoxMuJaw0FAypc/TfjZhSdX1sd1rlyjw4WL/BSo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/equalityproblem.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/equalityproblem.html",
+          "hash": "EBbK7mJCqkWrO4Ex4DWRE0nhv6qXBr9InceCkHkP5ks="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/intro.html",
+          "hash": "BeBPOxWgmepG6vyoAOlvVavl/GKKtYcTDs2F9AuSYC4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/maths2.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/maths2.html",
+          "hash": "xLighOW7JBcFZ+y06I/ukvBG947g3PR3us2wquB6fgs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/piscosour.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/piscosour.html",
+          "hash": "k3AW5SyMK10iPSZH51dRwLGoX495KLPEp3qaPyEHaa4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/randwalker.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/randwalker.html",
+          "hash": "EqXF7QtNytBQ/GUkN/YNAelOmddaSsW3Sn3GP2k2m28="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/spirals.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/spirals.html",
+          "hash": "BEC9cS8NGqejFC23npf4GLQiw6ZGdMgddw31BdDLImM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "workshop/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/toc.html",
+          "hash": "2z9+R1+GcVilW7FJ8785LkbaJ2AacdWv5u+i5Wmk3+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
+          "skipped_file_count": 15
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 34,
+          "skipped_file_count": 34
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

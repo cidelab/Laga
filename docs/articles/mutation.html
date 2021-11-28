@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mutation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Mutation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mutation">Mutation</h1>
+
+<p>The mutation consist in a random modification in the chromosome. There are 2 reasons to apply mutation. First, to increase the fitness value probability and second, to include a bigger search area in the space search, during the optimization process.</p>
+<p>The mutation modifies in a random way some genes in the chromosome and usually is applied to the offspring. In the same way as occurs in the nature, the idea behind mutation is to include some error in the genes. In the cells division and mitosis the RNA make some errors in the DNA duplication. The errors might not have an impact in the living organism, But for the individual in the genetic algorithm it could means an increase in the fitness ranking.</p>
+<p>Typically mutation is applied to the 1% percent of the new population, because the inheritance gained from the previous generation its important to keep it in order to converge in good solutions. If the mutation is too big, the inheritance is lost and basically the algorithm just produce random individuals without sense (the intelligence gets lost).</p>
+<p>The most common mutation operator is the random replacement, consist in vary randomly a gene in the chromosome. If the chromosome is binary it is possible to swap a 1 by 0 or vice versa. Another possibilityIt is to multiply a gen by a random value between min and max values.</p>
+<p><img src="../images/mutation.jpg" alt=""></p>
+<p>The mutation only varies around 1% in the chromosome. The mutation operator implemented in the GA, will depends of the space search (the problem to resolve), conditions, and the chromosome type.</p>
+<p>The crossover operator is in charge for the fast search, while the mutation is in charge to look in all nooks in the space search. the subtle balance between both operators is a key to succeed in design robust genetic algorithms. The mutation operator is essential at the beginning of the generations, to cover as much space possible, and when the population begin to converge in order to keep the balance of the individuals in the right spots in the space search.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

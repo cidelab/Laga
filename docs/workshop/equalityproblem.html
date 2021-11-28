@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Math Equality Problem </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Math Equality Problem ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="math-equality-problem">Math Equality Problem</h1>
+
+<h2 id="definition">Definition</h2>
+<p>We have the following equation: A2 + B3 + C4 = 60. The objective consist in to find the integers values for A, B and C to balance the equation. Which values we can set in A, B and C to get 60?</p>
+<h2 id="model">Model</h2>
+<p>In order to tackle any optimization problem, first we need to create a mathematical model to analyse and define the problem. The model, will help us to understand how far or close are we from the objective. Which is minimize the value function F(x) = A2 + B3 + C4. It's a very simple problem.</p>
+<h2 id="architecture">Architecture</h2>
+<p>In the following table we will breakdown the problem in steps. We are going to understand what kind of algorithms we need, and general comments.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Algorithm</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generate a population</td>
+<td>GenrPopulation class</td>
+<td>We are going to create a population of 1s and 0s and the convert that chars in integer values.</td>
+</tr>
+<tr>
+<td>Evaluate the individuals</td>
+<td>Fitness method</td>
+<td>Define a Fitness method to test how well the GAs is doing it's work.</td>
+</tr>
+<tr>
+<td>Sort the individuals in the population</td>
+<td>BidirectionalBubbleSort class</td>
+<td>We need to sort the individuals in the population to understand which individuals are closer to the results and which not. This step is essential to select the best individuals.</td>
+</tr>
+<tr>
+<td>Select the top ranked individuals</td>
+<td>NaturalSelection class</td>
+<td>We are going to use this class and the RouletteWheel method to select the most individuals in the population</td>
+</tr>
+<tr>
+<td>Crossover the selected individuals</td>
+<td>Crossover class</td>
+<td>In this step, we are going to find 2 parents and apply crossover to create inherence. a child.</td>
+</tr>
+<tr>
+<td>Apply Mutation to the inheritance</td>
+<td>Mutation class</td>
+<td>we apply the mutation to the inheritance in order to keep the space of search open.</td>
+</tr>
+<tr>
+<td>Replacement</td>
+<td>CreateTheNewPopulation()</td>
+<td>A method to replace the old population for a new population, which will consist in the inheritance mutated and the selected individuals in the population (the parents)</td>
+</tr>
+<tr>
+<td>Display data</td>
+<td>ConvertData method</td>
+<td>Since we are working with a population of chars, at some point we are going to translate all of these 1s and 0s to integer numbers.</td>
+</tr>
+<tr>
+<td>Repeat up to find a solution</td>
+<td>do while {}</td>
+<td>We need a loop to repeat all the steps up to met some condition. For this case up to balance the equation.</td>
+</tr>
+</tbody>
+</table>
+<p>Now, we have all the necessary ingredients to build our GA and defined what we need from each of them.</p>
+<h2 id="code">Code</h2>
+<p>Here we will define the main classes and methods to operate the GA. The first chuck of code defines the population size, and the chromosome size and some variables to store the results and population. the second chunk initialize all the GA operators from Laga: GenrPopulation(), RankingSort(), NaturalSelection(), Crossover() and Mutation(). The third chunk is for save the selected chromosomes, the inheritance and the mutated inheritance.</p>
+<pre><code>private static int popSize = 20; //population size...
+private static int chromeSize = 15; //chromosome size....
+private static int[] result; //to store the results of the evaluation.
+private static char[][] charPop;
+
+GenrPopulation genPop = new GenrPopulation(popSize);
+charPop = genPop.BinaryPopulationChr(chromeSize);
+RankingSort sr = new RankingSort();
+NaturalSelection roulette = new NaturalSelection();
+Crossover cross = new Crossover();
+Mutation mut = new Mutation(0.01f);
+
+result = new int[popSize];
+int eval = 0;
+
+char[][] selChro;
+char[][] sonPop;
+char[][] mutPop;
+
+int c = 1;
+
+Stopwatch sw = new Stopwatch();
+sw.Start();
+</code></pre>
+<p>With the following method we will define the fitness.</p>
+<pre><code>private static int Fitness(char[] arrChr)
+{
+  int[] arrD = TransformData(arrChr);
+  int res = 2 * arrD[0] + 3 * arrD[1] + 4 * arrD[2];
+  return Math.Abs(res - 60); //we want to go closer to 0 here.
+}
+</code></pre>
+<p>With the following method we will transform the chars to integers. First we extract the Information from the chromosome and then we transform that binary information into integers</p>
+<pre><code>private static int[] TransformData(char[] arrChr)
+{
+  char[] firstNum = LagaTools.ExtractDNA(arrChr, 0, 5);
+  char[] secondNum = LagaTools.ExtractDNA(arrChr, 5, 5);
+  char[] thirdNum = LagaTools.ExtractDNA(arrChr, 10, 5);
+
+  int a = LagaTools.BinaryChromosomeToInteger(firstNum);
+  int b = LagaTools.BinaryChromosomeToInteger(secondNum);
+  int c = LagaTools.BinaryChromosomeToInteger(thirdNum);
+
+return new int[] {a, b, c};
+}
+</code></pre>
+<p>Here es where we replace the old population with the one.
+private static char[][] CreateTheNewPopulation(char[][] theOldPop, char[][] sonPop)</p>
+<pre><code>{
+  Random rnd = new Random();
+  int index;
+  int scope = theOldPop.Length;
+  for (int i = 0; i &lt; sonPop.Length; ++i)
+  {
+    index = rnd.Next(scope);//rnd.nextInt(scope);
+
+    theOldPop[index] = new char[sonPop[i].Length];
+    Array.Copy(sonPop[i], 0, theOldPop[index], 0, sonPop[i].Length);
+  }
+  return theOldPop;
+}
+</code></pre>
+<p>Finally the GA loop, where all the methods comes to play. We check the fitness, we sort, we transform the data and print in the console the top ranked solution, apply the selection, crossover, mutation and new population. At the end we have the stop condition.</p>
+<pre><code>do
+{
+  for (int i = 0; i &lt; popSize; i++)
+  result[i] = Fitness(charPop[i]);
+
+  sr.BidirectionalBubbleSort(charPop, result, false);
+  eval = result[0];
+
+  int[] arrD = TransformData(charPop[0]);
+  string message = String.Format(&quot;iter:{0} -&gt; 2*{1} + 3*{2} + 4*{3} = {4} // target: 60&quot;, c, arrD[0], arrD[1], arrD[2], eval);
+  Console.WriteLine(message);
+  c++;
+
+  selChro = roulette.RouletteWheel(charPop, result, popSize);
+  sonPop = cross.SinglePointCrossover(selChro, 0.2f, 7);
+  mutPop = mut.BinaryCharMutation(charPop, 0.02f);
+  charPop = CreateTheNewPopulation(selChro, mutPop);
+
+} while (eval != 0);
+
+sw.Stop();
+Console.WriteLine(&quot;Elapsed={0}&quot;, sw.Elapsed);
+Console.ReadLine();
+</code></pre>
+<h2 id="results">Results</h2>
+<p>The GA was able to resolve the balance equation proposing different number combinations for the parameters A, B and C. In almost all tests, the GA also converged in short period of time.</p>
+<ul>
+<li>This experiment is based on the following paper: &quot;Genetic Algorithm for Solving Simple Mathematical Equality Problem&quot;, Denny Hermawanto, Indonesian Institute of Sciences (LIPI), INDONESIA.</li>
+<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/mathFunctionOptimization">Math equality problem</a></li>
+<li>The image below, shows an example result of the GA executed:
+<img src="../images/Equal.png" alt=""></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

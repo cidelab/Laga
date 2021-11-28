@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Function Optimization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Function Optimization ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="function-optimization">Function Optimization</h1>
+
+<h2 id="definition">Definition</h2>
+<p>This is a simple case of applying a genetic algorithm to optimize a function in order to find the highest value return. The problem consist into maximize a function by systematically choosing double values from a set.</p>
+<h2 id="model">Model</h2>
+<p>What are the values for the parameters x and y to find the highest value for the function F(x, y). the set of numbers is composed by double between 0 and 1 with 15 decimals: <code>0.000000000000000</code>, If we round the values to 3 decimals the problem it becomes more easy, because we are looking for the parameters x and y: <code>0.500000000000000</code></p>
+<p>The function to optimize as follow.</p>
+<blockquote>
+<p>F(x,y) = 15 * x * y * (1 - x) * (1 - y) * Sin(PI * x) * Sin(PI * y)</p>
+</blockquote>
+<p>The space search is represented by the following diagram. The maximum values
+<img src="../images/Math2-spacesearch.jpg" alt=""></p>
+<h2 id="fitness-function">Fitness Function</h2>
+<p>Fitness function description. Since we only have 2 parameters, the chromosome is composed by 2 DNAs. One for the parameter x and one for the parameter y.</p>
+<pre><code>x = cr.GetDNA(0);
+y = cr.GetDNA(1);
+cr.Fitness = 15 * x * y * (1 - x) * (1 - y) * Math.Sin(Math.PI * x) * Math.Sin(Math.PI * y);
+</code></pre>
+<h2 id="architecture">Architecture</h2>
+<p>In the following table we will breakdown the problem in steps. We are going to understand what kind of algorithms we need, and general comments.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Algorithm</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generate a population</td>
+<td>Population class</td>
+<td>Is composed by Chromosome objects</td>
+</tr>
+<tr>
+<td>Evaluate the individuals</td>
+<td>Fitness method</td>
+<td>Define a Fitness method to test how well the GAs is doing it's work.</td>
+</tr>
+<tr>
+<td>Select the top ranked individuals</td>
+<td>NaturalSelection class</td>
+<td>We are going to use this class and the RouletteWheel method to select the most individuals in the population</td>
+</tr>
+<tr>
+<td>Crossover the selected individuals</td>
+<td>Crossover class</td>
+<td>In this step, we are going to find 2 parents and apply crossover to create inherence. a child.</td>
+</tr>
+<tr>
+<td>Apply Mutation to the inheritance</td>
+<td>Mutation class</td>
+<td>The mutation will be applied to an small amount of chromosomes in the population, nevertheless for this case the mutation will generate a complete new DNA.</td>
+</tr>
+<tr>
+<td>Print data</td>
+<td>PrintData()</td>
+<td>Display the GA progress to understand the behavior.</td>
+</tr>
+<tr>
+<td>Repeat up to find a solution</td>
+<td>do while {}</td>
+<td>We need a loop to repeat all the steps up to met some condition.</td>
+</tr>
+</tbody>
+</table>
+<p>Now, we have all the necessary ingredients to build our GA and defined what we need from each of them.</p>
+<h2 id="code">Code</h2>
+<p>Here we will define the methods to implement the GA. The first method initialize the population and define the architecture for the Genetic Algorithm. The second method performs the evaluation and the third method print the results in a windows console.</p>
+<p>The population and the string target are defined.</p>
+<pre><code>private static int popSize = 100;
+private static Population&lt;double&gt; pop = new Population&lt;double&gt;(popSize);
+</code></pre>
+<p>The for loop fill up the population with the chromosomes. The do-while loop it's the genetic algorithm itself: Evaluate, Natural selection, Crossover and Mutation.</p>
+<pre><code>static void Main(string[] args)
+{
+    float mutRate = 0.025f;
+    double best;
+    int c = 1;
+    double target = 0.93749;
+
+    for (int i = 0; i &lt; popSize; i++)
+        pop.Add(new Chromosome&lt;double&gt;(Rand.RandomNumbers(2, 0.0, 1.0)));
+
+    do
+    {
+        Evaluation();
+        best = pop.Higher().Fitness;
+
+        PrintData(pop.Higher(), c, mutRate, pop.FitnessAverage(), target);
+
+        Population&lt;double&gt; matPool = NaturalSelection&lt;double&gt;.RouletteWheelNonPolinomicMin(pop, 30);
+        pop = Crossover&lt;double&gt;.SinglePointCrossover(matPool, popSize, 1);
+        pop = Mutation.Number(pop, mutRate, 0.0, 1.00);
+
+        c++;
+    } while (best &lt;= target);
+
+    Console.ReadLine();
+}
+</code></pre>
+<p>This function calculate the fitness for each chromosome.</p>
+<pre><code>private static void Evaluation()
+{
+    double x, y;
+    foreach (Chromosome&lt;double&gt; cr in pop)
+        {
+            x = cr.GetDNA(0);
+            y = cr.GetDNA(1);
+            cr.Fitness = 15 * x * y * (1 - x) * (1 - y) * Math.Sin(Math.PI * x) * Math.Sin(Math.PI * y);
+        }
+}
+</code></pre>
+<p>This function prints the results in a windows console</p>
+<pre><code>private static void PrintData(Chromosome&lt;double&gt; best, int genCount, float mut, double ave, double th)
+{
+    Console.SetCursorPosition(0, 1);
+    Console.Write(&quot; Best individual: &quot;);
+    Console.WriteLine($&quot; Param X: {best.GetDNA(0).ToString()}, Param Y: {best.GetDNA(1).ToString()}&quot;);
+    Console.WriteLine(&quot; &quot;);
+    Console.WriteLine(&quot; ////////////// GA data&quot;);
+    Console.WriteLine(&quot; Generation: &quot; + genCount.ToString());
+    Console.WriteLine(&quot; Target: &quot; + th.ToString());
+    Console.WriteLine(&quot; Highest fitness: &quot; + best.Fitness.ToString());
+    Console.WriteLine(&quot; Average fitness: &quot; + ave.ToString());
+    Console.WriteLine($&quot; Difference: {best.Fitness - th} &quot;);
+    Console.WriteLine(&quot; Mutation Rate: &quot; + mut.ToString());
+}
+</code></pre>
+<h2 id="results">Results</h2>
+<p>The GA is able to find the hidden target with a 200 size population in around 29 secs.</p>
+<ul>
+<li>This exercise is based in the chapter 18: Optimization Methods from the book: &quot;Numerical Methods,Algorithms and Tools in C#&quot;, Waldemar Dos Passos, 2010, Taylor and Francis. ISBN 978-0-8493-7479-1</li>
+<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/mathFunctionOptimization">Function Optimization</a></li>
+<li>The video below, is an example result of the GA executed:</li>
+</ul>
+<p>The GA implementation video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X2YBAHIavdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pPk0Sze2e7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

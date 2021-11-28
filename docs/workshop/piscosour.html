@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>String combinatorial Problem </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="String combinatorial Problem ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="string-combinatorial-problem">String combinatorial Problem</h1>
+
+<h2 id="definition">Definition</h2>
+<p>The problem consist in evolve a random string into a particular target string. For this exercise the target is: <strong>pneumonoultramicroscopicsilicovolcanoconiosis</strong>, that refers to a lung disease contracted from the inhalation of very fine silica particles. The word contains 45 characters and if one of the largest english words.</p>
+<h2 id="model">Model</h2>
+<p>There are only a finite number of characters in the ASCII table available for the problem: 26 in total. The length of the word is 45, therefore the search space is big as <strong>26^45</strong>, which means <strong>4.71846E+63</strong> possible combinations. To understand how big is the space search, this is the number in decimal notation: <strong>4718464138887780000000000000000000000000000000000000000000000000.00</strong></p>
+<p>The cost to evaluate each possible solution is not practical at all. Compare each possible combination against the target at 1/1000 sec would take <strong>149,621,516,326,984,000,000,000,000,000,000,000,000,000,000,000,000,000</strong> years.</p>
+<p>The Genetic Algorithm start by making random strings (chromosome). Each string is evaluated against the fitness function to determine how far from the string target is. The chromosome evaluation based in character comparison is fine for short phrases, because the difference between 4 and 3 right characters in a 5 length word is the 80% and 60% respectively. Nevertheless, the same approach is problematic for long phrases. In the current exercise the difference between 44 and 43 right characters is 97.77% and 95.55%.</p>
+<p>For a 5 length word the difference between 2 characters is 20%. In the other hand the difference between 2 characters in a 45 length word is 2.21%. The difference takes special importance when the GA is close to convergence and the population is quite homogeneity. Not handle this issue could send the population to a local maximum, return false results and not find the correct answer.</p>
+<h4 id="2-possible-functions">2 possible functions:</h4>
+<blockquote>
+<p>fitness += Abs(DNA[i] - target[i])</p>
+</blockquote>
+<blockquote>
+<p>fitness = (float)c / (float)target.Length; // where c is the number of right characters</p>
+</blockquote>
+<h2 id="architecture">Architecture</h2>
+<p>In the following table we will breakdown the problem in steps. We are going to understand what kind of algorithms we need, and general comments.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Algorithm</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generate a population</td>
+<td>Population class</td>
+<td>Is composed by Chromosome objects</td>
+</tr>
+<tr>
+<td>Evaluate the individuals</td>
+<td>Fitness method</td>
+<td>Define a Fitness method to test how well the GAs is doing it's work.</td>
+</tr>
+<tr>
+<td>Select the top ranked individuals</td>
+<td>NaturalSelection class</td>
+<td>We are going to use this class and the RouletteWheel method to select the most individuals in the population</td>
+</tr>
+<tr>
+<td>Crossover the selected individuals</td>
+<td>Crossover class</td>
+<td>In this step, we are going to find 2 parents and apply crossover to create inherence. a child.</td>
+</tr>
+<tr>
+<td>Apply Mutation to the inheritance</td>
+<td>Mutation class</td>
+<td>we apply the mutation to the inheritance in order to keep the space of search open. This class will also work for to replace the old population.</td>
+</tr>
+<tr>
+<td>Print data</td>
+<td>PrintData()</td>
+<td>Display the GA progress to understand the behavior.</td>
+</tr>
+<tr>
+<td>Repeat up to find a solution</td>
+<td>do while {}</td>
+<td>We need a loop to repeat all the steps up to met some condition.</td>
+</tr>
+</tbody>
+</table>
+<p>Now, we have all the necessary ingredients to build our GA and defined what we need from each of them.</p>
+<h2 id="code">Code</h2>
+<p>Here we will define the methods to implement the GA. The first method initialize the population and define the architecture for the Genetic Algorithm. The second method performs the evaluation and the third method print the results in a windows console.</p>
+<p>The population and the string target are defined.</p>
+<pre><code>private static int sizePop = 200;
+private static string target = &quot;pneumonoultramicroscopicsilicovolcanoconiosis&quot;;
+private static Population&lt;char&gt; pop = new Population&lt;char&gt;(sizePop);
+</code></pre>
+<p>The for loop fill up the population with the chromosomes. The do-while loop it's the genetic algorithm itself: Evaluate, Natural selection, Crossover and Mutation.</p>
+<pre><code>static void Main(string[] args)
+{
+    GenrChromosome genrChromosome = new GenrChromosome(target.Length);
+    for(int i = 0; i &lt; sizePop; i++)
+    {
+        Chromosome&lt;char&gt; chr = new Chromosome&lt;char&gt;(genrChromosome.CharChromosome(97, 122).ToList());
+        pop.Add(chr);
+    }
+
+    int count = 0;
+    float mutRate = 0.0015f;
+    Chromosome best;
+
+    do
+    {
+        Evaluation();
+        best = pop.Higher();
+        PrintData(best, count, mutRate, pop.FitnessAverage());
+
+        Population&lt;char&gt; nPop = NaturalSelection&lt;char&gt;.RouletteWheelNonPolinomicMin(pop, 60);
+        Population&lt;char&gt; cPop = Crossover&lt;char&gt;.RandomPointCrossover(nPop, sizePop);
+        pop = Mutation.CharMutation(cPop, mutRate, 97, 122);
+
+        count++;
+    } while (best.Fitness &lt; 0.999);
+
+    Console.ReadLine();
+}
+</code></pre>
+<p>This function calculate the fitness for each chromosome.</p>
+<pre><code>private static void Evaluation()
+{
+    int c = 0;
+    int le = target.Length;
+    for (int i = 0; i &lt; sizePop; i++)
+    {
+        c = 0;
+        Chromosome&lt;char&gt; chromosome = pop.GetChromosome(i);
+
+        for (int j = 0; j &lt; chromosome.Count; ++j)
+        {
+            if (chromosome.GetDNA(j) == target[j])
+            c++;
+        }
+        chromosome.Fitness = c / target.Length;
+    }
+}
+</code></pre>
+<p>This function prints the results in a windows console</p>
+<pre><code>private static void PrintData(Chromosome best, int genCount, float mut, float ave)
+{
+    Console.SetCursorPosition(0, 1);
+    Console.Write(&quot; Best individual: &quot;);
+    Console.WriteLine(best.Chr2Str(&quot;&quot;));
+    Console.WriteLine(&quot; &quot;);
+    Console.WriteLine(&quot; ////////////// GA data&quot;);
+    Console.WriteLine(&quot; Generation: &quot; + genCount.ToString());
+    Console.WriteLine(&quot; Highest fitness: &quot; + Math.Round(best.Fitness, 3).ToString());
+    Console.WriteLine(&quot; Average fitness: &quot; + Math.Round(ave, 3).ToString());
+    Console.WriteLine(&quot; Mutation Rate: &quot; + mut.ToString());
+}
+</code></pre>
+<h2 id="results">Results</h2>
+<p>The GA is able to find the hidden target with a 200 size population in around 29 secs.</p>
+<ul>
+<li>This exercise is based in the chapter 18: Optimization Methods from the book: &quot;Numerical Methods,Algorithms and Tools in C#&quot;, Waldemar Dos Passos, 2010, Taylor and Francis. ISBN 978-0-8493-7479-1</li>
+<li>To download the experiment from: <a href="https://github.com/cidelab/Laga/tree/Examples/StringCombinatorialProblem">String combinatorial Problem</a>
+The video below, is an example result of the GA executed:</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yBTNBVblpa8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
