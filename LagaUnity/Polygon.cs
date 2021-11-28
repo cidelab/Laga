@@ -11,107 +11,160 @@ namespace LagaUnity
     /// <summary>
     /// Polygon class
     /// </summary>
-    public class Polygon // : ICollection<UPoint>
+    public class Polygon : ICollection<Vec>
     {
-        #region
-        /*
-        #region implements
-        public int Count => lstPts.Count;
+        /// <summary>
+        /// Polygon lenght
+        /// </summary>
+        public int Count => lstVectorPolygon.Count;
 
+        /// <summary>
+        /// IsReadOnly boolean
+        /// </summary>
         public bool IsReadOnly => throw new NotImplementedException();
 
-        public void Add(Point point)
+        /// <summary>
+        /// Add a Vector to the poylgon
+        /// </summary>
+        /// <param name="vec">The Vector to add in the list</param>
+        public void Add(Vec vec)
         {
-            lstPts.Add(point);
+            lstVectorPolygon.Add(vec);
         }
 
+        /// <summary>
+        /// Clear all data in the polygon
+        /// </summary>
         public void Clear()
         {
-            lstPts.Clear();
+            lstVectorPolygon.Clear();
         }
 
-        public bool Contains(Point point)
+        /// <summary>
+        /// Check if the vec is in the polygon
+        /// </summary>
+        /// <param name="vec"></param>
+        /// <returns>True if the vector belongs to the polygon</returns>
+        public bool Contains(Vec vec)
         {
-            return lstPts.Contains(point);
+            return lstVectorPolygon.Contains(vec);
         }
 
-        public void CopyTo(Point[] array, int arrayIndex)
+        /// <summary>
+        /// Not implemented yet
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="arrayIndex"></param>
+        /// <exception cref="NotImplementedException"></exception>
+        public void CopyTo(Vec[] array, int arrayIndex)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerator<Point> GetEnumerator()
+        /// <summary>
+        /// Not implemented yet.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public IEnumerator<Vec> GetEnumerator()
         {
             throw new NotImplementedException();
         }
 
-        public bool Remove(Point point)
+        /// <summary>
+        /// Remove a vec from the polygon
+        /// </summary>
+        /// <param name="vec">the Vector to remove</param>
+        /// <returns>true if all went ok</returns>
+        public bool Remove(Vec vec)
         {
-            return lstPts.Remove(point);
+            return lstVectorPolygon.Remove(vec);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             throw new NotImplementedException();
         }
-        #endregion
 
-        List<Point> lstPts;
-        public Polygon(List<Point> ListPoints)
+        private List<Vec> lstVectorPolygon;
+        /// <summary>
+        /// Polygon constructor by a list of vectors
+        /// </summary>
+        /// <param name="VectorList">the list of vectors</param>
+        public Polygon(List<Vec> VectorList)
         {
-            lstPts = ListPoints;
+            lstVectorPolygon = VectorList;
         }
 
+        /// <summary>
+        /// Draw all the segments in the polygon
+        /// </summary>
+        /// <param name="width">The width of the segment</param>
+        /// <param name="color">The Color</param>
+        /// <param name="loop">True if closed, false is not</param>
         public void DrawPolygon(float width, Color color, bool loop)
         {
 
-            GameObject line = new GameObject("Polygon " + lstPts[0].ToString());
+            GameObject line = new GameObject("Polygon " + lstVectorPolygon[0].ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
             lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
             lineRenderer.material.color = color;
             lineRenderer.numCornerVertices = 5;
             lineRenderer.numCapVertices = 5;
-            lineRenderer.positionCount = lstPts.Count;
+            lineRenderer.positionCount = lstVectorPolygon.Count;
             lineRenderer.loop = loop;
 
-            for(int i =0; i < lstPts.Count; i++)
-                lineRenderer.SetPosition(i, new Vector3(lstPts[i].X, lstPts[i].Y, lstPts[i].Z));
+            for(int i = 0; i < lstVectorPolygon.Count; i++)
+                lineRenderer.SetPosition(i, new Vector3((float)lstVectorPolygon[i].X, (float)lstVectorPolygon[i].Y, (float)lstVectorPolygon[i].Z));
             
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
 
         }
 
+        /// <summary>
+        /// The length of the polygon
+        /// </summary>
         public float Length
         {
             get
             {
-                if (lstPts.Count < 2) { return 0.0f; }
+                if (lstVectorPolygon.Count < 2) { return 0.0f; }
 
                 float L = 0.0f;
 
-                for (int i = 0; i < (lstPts.Count - 1); i++)
+                for (int i = 0; i < (lstVectorPolygon.Count - 1); i++)
                 {
-                    L += lstPts[i].DistanceTo(lstPts[i + 1]);
+                    L += (float)lstVectorPolygon[i].DistanceTo(lstVectorPolygon[i + 1]);
                 }
 
                 return L;
             }
         }
 
-        public ULine SegmentAt(int index)
+        /// <summary>
+        /// Draw a specific segment in the polygon
+        /// </summary>
+        /// <param name="index">the segment index in the polygon, if out of range is null</param>
+        /// <returns>The segment as Line</returns>
+        public Lne SegmentAt(int index)
         {
             if (index < 0) { return null; }
             if (index >= Count - 1) { return null; }
 
-            return new ULine(lstPts[index], lstPts[index + 1]);
+            return new Lne(lstVectorPolygon[index], lstVectorPolygon[index + 1]);
         }
 
+        /// <summary>
+        /// Sort the points in the polygon
+        /// </summary>
+        /// <returns>Sorted list of vectors in the polygon by X, then Y</returns>
         public Polygon SortPolygonPoints()
         {
-           return new Polygon(lstPts.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
+           return new Polygon(lstVectorPolygon.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
         }
-        */
-        #endregion
+        
+       
+
     }
 }

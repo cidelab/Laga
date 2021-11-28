@@ -49,8 +49,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Line.cs" />
-    <Compile Include="vec.cs" />
+    <Compile Include="Lne.cs" />
+    <Compile Include="Vec.cs" />
     <Compile Include="Polygon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

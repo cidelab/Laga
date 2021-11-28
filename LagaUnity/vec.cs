@@ -7,7 +7,7 @@ namespace LagaUnity
     /// <summary>
     /// Unity Point
     /// </summary>
-    public class vec : Laga.Geometry.Vector
+    public class Vec : Laga.Geometry.Vector
     {
         private float x;
         private float y;
@@ -19,16 +19,11 @@ namespace LagaUnity
         /// <param name="Xcoord">X coordinate</param>
         /// <param name="Ycoord">Y coordinate</param>
         /// <param name="Zcoord">z coordinate</param>
-        public vec(float Xcoord, float Ycoord, float Zcoord)
+        public Vec(float Xcoord, float Ycoord, float Zcoord)
         {
             x = Xcoord;
             y = Ycoord;
             z = Zcoord;
-            cast();
-        }
-
-        private void cast()
-        {
             X = x;
             Y = y;
             Z = z;
@@ -38,7 +33,7 @@ namespace LagaUnity
         /// Construct the Laga Point through Unity Vector3
         /// </summary>
         /// <param name="vector"></param>
-        public vec(Vector3 vector)
+        public Vec(Vector3 vector)
         {
             x = vector.x;
             y = vector.y;
@@ -46,18 +41,13 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// Transform a Laga Point to Unity Vector
+        /// Cast Laga Vector to Unity Vector
         /// </summary>
         /// <returns></returns>
         public Vector3 ToVector3()
         {
             return new Vector3(x, y, z);
         }
-
-        //public override string ToString()
-        //{
-          //  return "(" + x + "," + y + "," + z + ")";
-        //}
 
         /// <summary>
         /// Draw the point
@@ -69,20 +59,13 @@ namespace LagaUnity
             DrawPoint(this, width, color);
         }
 
-        //public float DistanceTo(UVector pointB)
-        //{
-           // double d = this.DistanceTo(pointB);
-         //   return (float)d;
-            //return (float)Math.Sqrt(Math.Pow((X - pointB.X), 2) + Math.Pow((Y - pointB.Y), 2) + Math.Pow((Z - pointB.Z), 2));
-        //}
-
         /// <summary>
         /// Draw a point
         /// </summary>
-        /// <param name="point"></param>
-        /// <param name="width"></param>
-        /// <param name="color"></param>
-        static public void DrawPoint(vec point, float width, Color color)
+        /// <param name="point">The vector to display</param>
+        /// <param name="width">The width of the point</param>
+        /// <param name="color">The color to display</param>
+        static public void DrawPoint(Vec point, float width, Color color)
         {
             GameObject line = new GameObject(point.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
