@@ -1,13 +1,13 @@
 ﻿using System;
 using UnityEngine;
-using Laga;
+using Laga.Geometry;
 
 namespace LagaUnity
 {
     /// <summary>
     /// Unity Point
     /// </summary>
-    public class Vec : Laga.Geometry.Vector
+    public class Vec : Vector
     {
         private float x;
         private float y;
