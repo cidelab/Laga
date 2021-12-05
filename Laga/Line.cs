@@ -26,6 +26,7 @@ namespace Laga.Geometry
             {
                 return startPt;
             }
+            set { startPt = value; }
         }
 
         /// <summary>
@@ -37,6 +38,7 @@ namespace Laga.Geometry
             {
                 return endPt;
             }
+            set { endPt = value; }
         }
 
         /// <summary>

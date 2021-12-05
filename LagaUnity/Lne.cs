@@ -55,6 +55,8 @@ namespace LagaUnity
         {
             pa = pointA;
             pb = pointB;
+            StartPoint = pointA;
+            EndPoint = pointB;
         }
 
         /// <summary>
@@ -87,8 +89,10 @@ namespace LagaUnity
         {
             GameObject line = new GameObject("Line " + pointA.ToString() + " - " + pointB.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
-            lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
-            lineRenderer.material.color = color;
+            lineRenderer.material = new Material(Shader.Find("Unlit/Color"))
+            {
+                color = color
+            };
             lineRenderer.positionCount = 2;
             lineRenderer.SetPosition(0, pointA.ToVector3());
             lineRenderer.SetPosition(1, pointB.ToVector3());

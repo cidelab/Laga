@@ -117,8 +117,10 @@ namespace LagaUnity
 
             GameObject line = new GameObject("Polygon " + lstVectorPolygon[0].ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
-            lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
-            lineRenderer.material.color = color;
+            lineRenderer.material = new Material(Shader.Find("Unlit/Color"))
+            {
+                color = color
+            };
             lineRenderer.numCornerVertices = 5;
             lineRenderer.numCapVertices = 5;
             lineRenderer.positionCount = lstVectorPolygon.Count;
@@ -145,10 +147,9 @@ namespace LagaUnity
 
             lstVectorPolygon.Add(lstVectorPolygon[0]);
             float area = 0;
-            float width = 0;
             for (int i = 0; i < size; i++)
             {
-                width = (float)(lstVectorPolygon[ i + 1].X - lstVectorPolygon[ i ].X);
+                float width = (float)(lstVectorPolygon[i + 1].X - lstVectorPolygon[i].X);
                 area += width * (float)(lstVectorPolygon[i + 1].Y + lstVectorPolygon[i].Y);
             }
             lstVectorPolygon.RemoveAt(size);

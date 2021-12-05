@@ -69,8 +69,10 @@ namespace LagaUnity
         {
             GameObject line = new GameObject(point.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
-            lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
-            lineRenderer.material.color = color;
+            lineRenderer.material = new Material(Shader.Find("Unlit/Color"))
+            {
+                color = color
+            };
             lineRenderer.positionCount = 2;
             lineRenderer.SetPosition(0, new Vector3(point.x - width / 3.0f, point.y - width / 3.0f, point.z));
             lineRenderer.SetPosition(1, new Vector3(point.x + width / 3.0f, point.y + width / 3.0f, point.z));
