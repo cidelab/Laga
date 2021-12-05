@@ -83,17 +83,19 @@ namespace LagaUnity
         /// <param name="pointB">Second Point</param>
         /// <param name="width">Line Width</param>
         /// <param name="color">Color Line</param>
-        static public void DrawLine(Vec pointA, Vec pointB, float width, Color color)
+        static public LineRenderer DrawLine(Vec pointA, Vec pointB, float width, Color color)
         {
             GameObject line = new GameObject("Line " + pointA.ToString() + " - " + pointB.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
             lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
             lineRenderer.material.color = color;
             lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, new Vector3((float)pointA.X, (float)pointA.Y, (float)pointA.Z));
-            lineRenderer.SetPosition(1, new Vector3((float)pointB.X, (float)pointB.Y, (float)pointB.Z));
+            lineRenderer.SetPosition(0, pointA.ToVector3());
+            lineRenderer.SetPosition(1, pointB.ToVector3());
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
+
+            return lineRenderer;
         }
     }
 }
