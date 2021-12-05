@@ -129,6 +129,24 @@ namespace Laga.Geometry
         }
 
         /// <summary>
+        /// Return the cross product length
+        /// | B x BC | = |AB| * |BC| * Sin(theta)
+        /// </summary>
+        /// <param name="vectorA">Vector A</param>
+        /// <param name="vectorB">Vector B</param>
+        /// <param name="vectorC">Vector C</param>
+        /// <returns>Z coordinate of the cross product</returns>
+        public static double CrossProductLength(Vector vectorA, Vector vectorB, Vector vectorC)
+        {
+            double ABx = vectorA.x - vectorB.x;
+            double ABy = vectorA.y - vectorB.y;
+            double BCx = vectorC.x - vectorB.x;
+            double BCy = vectorC.y - vectorB.y;
+
+            return (ABx * BCy - ABy * BCx);
+        }
+
+        /// <summary>
         /// Project to vector base B
         /// </summary>
         /// <param name="vectorB">Vector base</param>
@@ -200,6 +218,23 @@ namespace Laga.Geometry
         }
 
         /// <summary>
+        /// Dot Product AB · BC
+        /// </summary>
+        /// <param name="vectorA"></param>
+        /// <param name="vectorB"></param>
+        /// <param name="vectorC"></param>
+        /// <returns></returns>
+        public static double DotProduct(Vector vectorA, Vector vectorB, Vector vectorC)
+        {
+            double ABx = vectorA.x - vectorB.x;
+            double ABy = vectorA.y - vectorB.y;
+            double BCx = vectorC.x - vectorB.x;
+            double BCy = vectorC.y - vectorB.y;
+
+            return (ABx * BCx + ABy * BCy);
+        }
+
+        /// <summary>
         /// Angle
         /// </summary>
         /// <param name="vectorA">Vector A</param>
@@ -214,6 +249,25 @@ namespace Laga.Geometry
             double div = dot / (magA * magB);
             div = (div < -1.0) ? -1.0 : (div > 1.0) ? 1.0 : div;
             return Math.Acos(div); // radianes.
+        }
+
+        /// <summary>
+        /// ABC angle between PI and -PI
+        /// </summary>
+        /// <param name="vectorA">Vector A</param>
+        /// <param name="vectorB">Vector B</param>
+        /// <param name="vectorC">Vector C</param>
+        /// <returns>double</returns>
+        public static double Angle(Vector vectorA, Vector vectorB, Vector vectorC)
+        {
+            //dot
+            double dot = DotProduct(vectorA, vectorB, vectorC);
+
+            //crossLength 
+            double crossPL = CrossProductLength(vectorA, vectorB, vectorC);
+
+            //angle
+            return Math.Atan2(crossPL, dot);
         }
 
         /// <summary>

@@ -32,7 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Laga">
+    <Reference Include="Laga, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Laga\bin\Debug\Laga.dll</HintPath>
     </Reference>
     <Reference Include="System" />

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Laga.Geometry;
 
 namespace LagaUnity
 {
@@ -87,13 +88,22 @@ namespace LagaUnity
         }
 
         private List<Vec> lstVectorPolygon;
+
         /// <summary>
-        /// Polygon constructor by a list of vectors
+        /// get the list of vectors in the polygon
+        /// </summary>
+        public List<Vec> VectorList
+        {
+            get { return lstVectorPolygon; }
+        }
+
+        /// <summary>
+        /// Polygon constructor by a list / array of vectors
         /// </summary>
         /// <param name="VectorList">the list of vectors</param>
-        public Polygon(List<Vec> VectorList)
+        public Polygon(IEnumerable<Vec> VectorList)
         {
-            lstVectorPolygon = VectorList;
+            lstVectorPolygon = VectorList.ToList<Vec>();
         }
 
         /// <summary>
@@ -123,6 +133,30 @@ namespace LagaUnity
         }
 
         /// <summary>
+        /// Calculate the area of the polygon
+        /// </summary>
+        /// <returns>the area in float flavor</returns>
+        /// <exception cref="Exception"></exception>
+        public float Area()
+        {
+            int size = lstVectorPolygon.Count;
+            if (size < 3)
+            { throw new Exception("you need more vertices"); }
+
+            lstVectorPolygon.Add(lstVectorPolygon[0]);
+            float area = 0;
+            float width = 0;
+            for (int i = 0; i < size; i++)
+            {
+                width = (float)(lstVectorPolygon[ i + 1].X - lstVectorPolygon[ i ].X);
+                area += width * (float)(lstVectorPolygon[i + 1].Y + lstVectorPolygon[i].Y);
+            }
+            lstVectorPolygon.RemoveAt(size);
+
+            return Math.Abs(area);
+        }
+
+        /// <summary>
         /// The length of the polygon
         /// </summary>
         public float Length
@@ -140,6 +174,39 @@ namespace LagaUnity
 
                 return L;
             }
+        }
+        
+        
+        /// <summary>
+        /// Check if the polygon is Convex
+        /// </summary>
+        /// <param name="vecs">The points in the polygon</param>
+        /// <returns>true if convex</returns>
+        /// <exception cref="Exception"></exception>
+        public static bool IsConvex(IEnumerable<Vec> vecs)
+        {
+            List<Vec> lstPts = vecs.ToList();
+
+            int size = lstPts.Count;
+            if (size < 3)
+                throw new Exception("You need at least 3 vertices");
+
+            lstPts.Add(lstPts[0]);
+            lstPts.Add(lstPts[1]);
+
+            int sign = Math.Sign(Vector.Angle(lstPts[0], lstPts[1], lstPts[2]));
+            bool isConvex = true;
+
+            for(int i = 0; i < size; i++)
+            {
+                if(Math.Sign(Vector.Angle(lstPts[i], lstPts[i + 1], lstPts[ i + 2])) != sign)
+                {
+                    isConvex = false;
+                    break;
+                }    
+            }
+
+            return isConvex;
         }
 
         /// <summary>
