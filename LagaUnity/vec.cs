@@ -7,7 +7,7 @@ namespace LagaUnity
     /// <summary>
     /// Unity Point
     /// </summary>
-    public class Vec : Vector
+    public class Vec : Vector3d
     {
         private float x;
         private float y;

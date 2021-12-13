@@ -11,10 +11,10 @@ namespace Laga.Geometry
     /// </summary>
     public class Plane
     {
-        private Vector origin;
-        private Vector vecX;
-        private Vector vecY;
-        private Vector norm;
+        private Vector3d origin;
+        private Vector3d vecX;
+        private Vector3d vecY;
+        private Vector3d norm;
         private double det;
 
         private double A;
@@ -48,7 +48,7 @@ namespace Laga.Geometry
         /// <summary>
         /// Plane origin
         /// </summary>
-        public Vector Origin
+        public Vector3d Origin
         {
             get
             {
@@ -59,7 +59,7 @@ namespace Laga.Geometry
         /// <summary>
         /// Vector normal
         /// </summary>
-        public Vector Norm
+        public Vector3d Norm
         {
             get
             {
@@ -70,7 +70,7 @@ namespace Laga.Geometry
         /// <summary>
         /// Vector U (X direction)
         /// </summary>
-        public Vector VectorU
+        public Vector3d VectorU
         {
             get { return vecX; }
         }
@@ -78,7 +78,7 @@ namespace Laga.Geometry
         /// <summary>
         /// Vector V (Y direction)
         /// </summary>
-        public Vector VectorV
+        public Vector3d VectorV
         {
             get { return vecY; }
         }
@@ -97,12 +97,12 @@ namespace Laga.Geometry
         /// <param name="OriginPoint">Point in the plane, considered the origin point</param>
         /// <param name="VectorU">First vector in the plane (U)</param>
         /// <param name="VectorV">Second vector in the plane (V)</param>
-        public Plane(Vector OriginPoint, Vector VectorU, Vector VectorV)
+        public Plane(Vector3d OriginPoint, Vector3d VectorU, Vector3d VectorV)
         {
             origin = OriginPoint;
             vecX = VectorU - OriginPoint;
             vecY = VectorV - OriginPoint;
-            norm = Vector.CrossProduct(vecX, vecY);
+            norm = Vector3d.CrossProduct(vecX, vecY);
             norm.Normalize();
             determinant();
         }
@@ -116,7 +116,7 @@ namespace Laga.Geometry
         /// <param name="D">Constant D</param>
         public Plane(double Ax, double By, double Cz, double D)
         {
-            norm = new Vector(Ax, By, Cz);
+            norm = new Vector3d(Ax, By, Cz);
             norm.Normalize();
 
             A = Ax;
@@ -125,12 +125,12 @@ namespace Laga.Geometry
             consD = D;
 
             double abc = (Ax * Ax) + (By * By) + (Cz * Cz);
-            origin = new Vector((Ax * -D) / abc, (By * -D) / abc, (Cz * -D) / abc);
+            origin = new Vector3d((Ax * -D) / abc, (By * -D) / abc, (Cz * -D) / abc);
 
-            vecX = new Vector(Cz - By, Ax - Cz, By - Ax);
+            vecX = new Vector3d(Cz - By, Ax - Cz, By - Ax);
             vecX.Normalize();
 
-            vecY = new Vector((Ax * (By + Cz)) - (By * By) - (Cz * Cz),
+            vecY = new Vector3d((Ax * (By + Cz)) - (By * By) - (Cz * Cz),
                               (By * (Ax + Cz)) - (Ax * Ax) - (Cz * Cz),
                               (Cz * (Ax + By)) - (Ax * Ax) - (By * By));
             vecY.Normalize();
@@ -143,13 +143,13 @@ namespace Laga.Geometry
         /// </summary>
         /// <param name="VectorPX">Vector from plane origin to a point X in the plane</param>
         /// <param name="VectorNormal">Normal vector to plane</param>
-        public Plane(Vector VectorPX, Vector VectorNormal)
+        public Plane(Vector3d VectorPX, Vector3d VectorNormal)
         {
             norm = VectorNormal;
             norm.Normalize();
             origin = VectorPX.ComponentProjectTo(VectorNormal);
             vecX = VectorPX;
-            vecY = Vector.CrossProduct(VectorNormal, VectorPX);
+            vecY = Vector3d.CrossProduct(VectorNormal, VectorPX);
             determinant();
         }
 
@@ -172,7 +172,7 @@ namespace Laga.Geometry
         /// </summary>
         /// <param name="point">point to test</param>
         /// <returns>double</returns>
-        public double DistanceTo(Vector point)
+        public double DistanceTo(Vector3d point)
         {
             double d = (norm.X * point.X) + (norm.Y * point.Y) + (norm.Z * point.Z) + det;
             return d / Math.Sqrt(norm.X * norm.X + norm.Y * norm.Y + norm.Z * norm.Z);
@@ -184,12 +184,12 @@ namespace Laga.Geometry
         /// <param name="U">U parameter</param>
         /// <param name="V">V parameter</param>
         /// <returns>Vector</returns>
-        public Vector PointAt(double U, double V)
+        public Vector3d PointAt(double U, double V)
         {
             double x = origin.X + vecX.X * U + vecY.X * V;
             double y = origin.Y + vecX.Y * U + vecY.Y * V;
             double z = origin.Z + vecX.Z * U + vecY.Z * V;
-            return new Vector(x, y, z);
+            return new Vector3d(x, y, z);
         }
 
         /// <summary>
@@ -200,8 +200,8 @@ namespace Laga.Geometry
         /// <returns>bool</returns>
         public bool IsParallelTo(Plane plane, double tolerance = 1e-3)
         {
-            Vector vec1 = plane.norm;
-            Vector vec2 = this.norm;
+            Vector3d vec1 = plane.norm;
+            Vector3d vec2 = this.norm;
 
             return vec1.IsParallelTo(vec2, tolerance);
         }
@@ -216,7 +216,7 @@ namespace Laga.Geometry
         {
             if (this.IsParallelTo(plane, tolerance))
             {
-                Vector vCon = plane.origin - this.origin;
+                Vector3d vCon = plane.origin - this.origin;
                 return vCon.IsOrthogonalTo(this.norm, tolerance) && vCon.IsOrthogonalTo(plane.norm, tolerance);
             }
             else
@@ -231,13 +231,13 @@ namespace Laga.Geometry
         /// <param name="line">Line</param>
         /// <param name="intersection">ref Vector Intersection</param>
         /// <returns>bool</returns>
-        public bool IntersectTo(Line line, ref Vector intersection)
+        public bool IntersectTo(Line line, ref Vector3d intersection)
         {
             try
             {
-                Vector diff = line.EndPoint - this.origin;
-                double dotA = Vector.DotProduct(diff, this.norm);
-                double dotB = Vector.DotProduct(line.Direction, this.norm);
+                Vector3d diff = line.EndPoint - this.origin;
+                double dotA = Vector3d.DotProduct(diff, this.norm);
+                double dotB = Vector3d.DotProduct(line.Direction, this.norm);
                 double t = dotA / dotB;
                 intersection = line.EndPoint - line.Direction * t;
                 return true;
@@ -261,18 +261,18 @@ namespace Laga.Geometry
         {
             if (!this.IsParallelTo(plane, tolerance) && !this.IsCoincidentTo(plane, tolerance))
             {
-                Vector vecOrigin = new Vector();
-                Vector p3_norm = Vector.CrossProduct(this.norm, plane.norm);
+                Vector3d vecOrigin = new Vector3d();
+                Vector3d p3_norm = Vector3d.CrossProduct(this.norm, plane.norm);
                 double det = p3_norm.DistanceTo(vecOrigin) * p3_norm.DistanceTo(vecOrigin);
 
-                Vector v1 = Vector.CrossProduct(p3_norm, plane.norm);
-                Vector v2 = Vector.CrossProduct(this.norm, p3_norm);
+                Vector3d v1 = Vector3d.CrossProduct(p3_norm, plane.norm);
+                Vector3d v2 = Vector3d.CrossProduct(this.norm, p3_norm);
 
                 double d1 = this.DistanceTo(vecOrigin);
                 double d2 = plane.DistanceTo(vecOrigin);
 
-                Vector ptL = (v1 * d1) + (v2 * d2);
-                intersection = new Line(new Vector(ptL.X / det, ptL.Y / det, ptL.Z / det), p3_norm, 1.00);
+                Vector3d ptL = (v1 * d1) + (v2 * d2);
+                intersection = new Line(new Vector3d(ptL.X / det, ptL.Y / det, ptL.Z / det), p3_norm, 1.00);
                 return true;
             }
             else

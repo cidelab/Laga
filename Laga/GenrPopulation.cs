@@ -468,17 +468,17 @@ namespace Laga.GeneticAlgorithm
         /// - (79.54, 62.78, 7.36), (84.51, 83.64, 69.42), (1.99, 8.09, 38.65), (84.64, 44.09, 78.47),
         /// </code>
         /// </example>
-        public Vector[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
+        public Vector3d[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
         {
-            Vector[] chromosome;
-            Vector[][] popPoints = new Vector[sizePopulation][];
+            Vector3d[] chromosome;
+            Vector3d[][] popPoints = new Vector3d[sizePopulation][];
 
             for (int i = 0; i < sizePopulation; i++)
             {
-                chromosome = new Vector[SizeChromosome];
+                chromosome = new Vector3d[SizeChromosome];
                 for (int j = 0; j < SizeChromosome; j++)
                 {
-                    chromosome[j] = new Vector(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
+                    chromosome[j] = new Vector3d(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
                 }
 
                 popPoints[i] = chromosome;

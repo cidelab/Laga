@@ -54,6 +54,7 @@
     <Compile Include="Vec.cs" />
     <Compile Include="Polygon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vectorf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

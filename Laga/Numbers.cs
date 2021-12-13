@@ -8,9 +8,27 @@ namespace Laga.Numbers
     /// <summary>
     /// Mathematics and statistics operations
     /// </summary>
-    public class Maths
+    public class Numbers
     {
-
+        /// <summary>
+        /// 3X + 1 sequence
+        /// From the book: The modern C# Challenge
+        /// </summary>
+        /// <param name="Sequence">the number to begin the sequence</param>
+        public static List<int> ThreeXplusOne(int Sequence)
+        {
+            List<int> lstH = new List<int>();
+            while( Sequence != 1)
+            {
+                lstH.Add(Sequence);
+                if (Sequence % 2 == 0)
+                    Sequence = Sequence / 2;
+                else
+                    Sequence = 3 * Sequence + 1;
+            }
+            lstH.Add(1);
+            return lstH;
+        }
         /// <summary>
         /// 
         /// </summary>

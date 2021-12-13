@@ -14,6 +14,7 @@ namespace LagaUnity
     /// </summary>
     public class Polygon : ICollection<Vec>
     {
+        #region
         /// <summary>
         /// Polygon lenght
         /// </summary>
@@ -87,7 +88,22 @@ namespace LagaUnity
             throw new NotImplementedException();
         }
 
+        #endregion
+
+        private LineRenderer lineRenderer;
+        private GameObject line;
         private List<Vec> lstVectorPolygon;
+
+        /// <summary>
+        /// Polygon constructor by a list / array of vectors
+        /// </summary>
+        /// <param name="VectorList">the list of vectors</param>
+        public Polygon(IEnumerable<Vec> VectorList)
+        {
+            lstVectorPolygon = VectorList.ToList<Vec>();
+            line = new GameObject("Polygon :" + lstVectorPolygon[0].ToString());
+            lineRenderer = line.AddComponent<LineRenderer>();
+        }
 
         /// <summary>
         /// get the list of vectors in the polygon
@@ -98,15 +114,6 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// Polygon constructor by a list / array of vectors
-        /// </summary>
-        /// <param name="VectorList">the list of vectors</param>
-        public Polygon(IEnumerable<Vec> VectorList)
-        {
-            lstVectorPolygon = VectorList.ToList<Vec>();
-        }
-
-        /// <summary>
         /// Draw all the segments in the polygon
         /// </summary>
         /// <param name="width">The width of the segment</param>
@@ -114,9 +121,6 @@ namespace LagaUnity
         /// <param name="loop">True if closed, false is not</param>
         public void DrawPolygon(float width, Color color, bool loop)
         {
-
-            GameObject line = new GameObject("Polygon " + lstVectorPolygon[0].ToString());
-            LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
             lineRenderer.material = new Material(Shader.Find("Unlit/Color"))
             {
                 color = color
@@ -131,7 +135,15 @@ namespace LagaUnity
             
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
+        }
 
+        /// <summary>
+        /// Update the polygon drawing
+        /// </summary>
+        public void UpdateDraw()
+        {
+            for (int i = 0; i < lstVectorPolygon.Count; i++)
+                lineRenderer.SetPosition(i, new Vector3((float)lstVectorPolygon[i].X, (float)lstVectorPolygon[i].Y, (float)lstVectorPolygon[i].Z));
         }
 
         /// <summary>
@@ -176,8 +188,27 @@ namespace LagaUnity
                 return L;
             }
         }
-        
-        
+
+        /// <summary>
+        /// Centroid
+        /// </summary>
+        /// <returns></returns>
+        public Vec Centroid()
+        {
+            float x = 0;
+            float y = 0;
+            float z = 0;
+
+            foreach (var item in lstVectorPolygon)
+            {
+                x += (float)item.X;
+                y += (float)item.Y;
+                z += (float)item.Z;
+            }
+
+            return new Vec(x / Length, y / Length, z / Length);
+        }
+
         /// <summary>
         /// Check if the polygon is Convex
         /// </summary>
@@ -195,12 +226,12 @@ namespace LagaUnity
             lstPts.Add(lstPts[0]);
             lstPts.Add(lstPts[1]);
 
-            int sign = Math.Sign(Vector.Angle(lstPts[0], lstPts[1], lstPts[2]));
+            int sign = Math.Sign(Vector3d.Angle(lstPts[0], lstPts[1], lstPts[2]));
             bool isConvex = true;
 
             for(int i = 0; i < size; i++)
             {
-                if(Math.Sign(Vector.Angle(lstPts[i], lstPts[i + 1], lstPts[ i + 2])) != sign)
+                if(Math.Sign(Vector3d.Angle(lstPts[i], lstPts[i + 1], lstPts[ i + 2])) != sign)
                 {
                     isConvex = false;
                     break;
