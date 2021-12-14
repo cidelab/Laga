@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\LagaUnity.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\LagaUnity.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrawGeometry.cs" />
     <Compile Include="Lne.cs" />
     <Compile Include="Vec.cs" />
     <Compile Include="Polygon.cs" />

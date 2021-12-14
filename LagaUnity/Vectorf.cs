@@ -3,12 +3,24 @@ using UnityEngine;
 
 namespace LagaUnity
 {
-    internal struct Vectorf
+    /// <summary>
+    /// Vector struct
+    /// </summary>
+    public struct Vectorf
     {
         //Geometry Vector properties X,Y,Z
-        float X;
-        float Y;
-        float Z;
+        /// <summary>
+        /// X coordinate
+        /// </summary>
+        public float X;
+        /// <summary>
+        /// Y coordinate
+        /// </summary>
+        public float Y;
+        /// <summary>
+        /// Z coordinate
+        /// </summary>
+        public float Z;
 
         /// <summary>
         /// Create a Vectorf
@@ -23,6 +35,20 @@ namespace LagaUnity
             this.Z = Z;
         }
 
+        /// <summary>
+        /// Cast Vectorf to Vector3
+        /// </summary>
+        /// <returns></returns>
+        public Vector3 ToVector3
+        {
+            get { return new Vector3(X, Y, Z); }
+        }
+
+        /// <summary>
+        /// Creates a orthogonal vector
+        /// </summary>
+        /// <param name="vector">Vector</param>
+        /// <returns>Vector</returns>
         public static Vectorf OrthogonalTo(Vectorf vector)
         {
             if (vector.Z == 0)
@@ -35,6 +61,12 @@ namespace LagaUnity
             }
         }
 
+        /// <summary>
+        /// Vector CrossProduct operation
+        /// </summary>
+        /// <param name="vectorA">vector A</param>
+        /// <param name="vectorB">vector B</param>
+        /// <returns>The vector</returns>
         public static Vectorf CrossProduct(Vectorf vectorA, Vectorf vectorB)
         {
             float x = vectorA.Y * vectorB.Z - vectorA.Z * vectorB.Y;
@@ -52,12 +84,12 @@ namespace LagaUnity
         /// <param name="vectorB">Vector B</param>
         /// <param name="vectorC">Vector C</param>
         /// <returns>Z coordinate of the cross product</returns>
-        public static double CrossProductLength(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+        public static float CrossProductLength(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
         {
-            double ABx = vectorA.X - vectorB.X;
-            double ABy = vectorA.Y - vectorB.Y;
-            double BCx = vectorC.X - vectorB.X;
-            double BCy = vectorC.Y - vectorB.Y;
+            float ABx = vectorA.X - vectorB.X;
+            float ABy = vectorA.Y - vectorB.Y;
+            float BCx = vectorC.X - vectorB.X;
+            float BCy = vectorC.Y - vectorB.Y;
 
             return (ABx * BCy - ABy * BCx);
         }
@@ -110,7 +142,7 @@ namespace LagaUnity
         /// </summary>
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
-        /// <returns>double</returns>
+        /// <returns>float</returns>
         public static float Angle(Vectorf vectorA, Vectorf vectorB)
         {
             float dot = DotProduct(vectorA, vectorB);
@@ -170,7 +202,7 @@ namespace LagaUnity
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "vec [" + X + ", " + Y + ", " + Z + "] ";
+            return "vecf [" + X + ", " + Y + ", " + Z + "] ";
         }
     }
 }
