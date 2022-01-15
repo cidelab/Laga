@@ -46,6 +46,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Box.cs" />
     <Compile Include="Chromosome.cs" />
     <Compile Include="IOTextData.cs" />
     <Compile Include="Function.cs" />
