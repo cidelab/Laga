@@ -10,11 +10,11 @@ C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\Laga.pdb
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\Laga.xml
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.dll
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\bin\Debug\LagaUnity.pdb
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.AssemblyReference.cache
-C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CoreCompileInputs.cache
 C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\LagaUnity.xml
 C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\LagaUnity.dll
 C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\LagaUnity.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.AssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CoreCompileInputs.cache
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.csproj.CopyComplete
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.dll
 C:\Users\delab\Documents\GitHub\Laga\LagaUnity\obj\Debug\LagaUnity.pdb

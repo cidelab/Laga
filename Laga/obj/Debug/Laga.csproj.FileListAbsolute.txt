@@ -13,11 +13,11 @@ C:\Users\delab\OneDrive - HOK\Documents\GitHub\Laga\Laga\obj\Debug\Laga.pdb
 C:\Users\delab\Documents\GitHub\Laga\Laga\bin\Debug\Laga.XML
 C:\Users\delab\Documents\GitHub\Laga\Laga\bin\Debug\Laga.dll
 C:\Users\delab\Documents\GitHub\Laga\Laga\bin\Debug\Laga.pdb
+C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.XML
+C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.dll
+C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.pdb
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.csproj.AssemblyReference.cache
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.csproj.ResolveComReference.cache
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.csproj.CoreCompileInputs.cache
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.dll
 C:\Users\delab\Documents\GitHub\Laga\Laga\obj\Debug\Laga.pdb
-C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.XML
-C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.dll
-C:\Users\delab\Documents\02 - Unity 3D\00 - Projects\My project\Assets\Scripts\Laga.pdb

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using Laga.Geometry;
 
 namespace LagaUnity
 {
@@ -121,29 +120,7 @@ namespace LagaUnity
             get { return lstVectorPolygon; }
         }
 
-        /// <summary>
-        /// Draw all the segments in the polygon
-        /// </summary>
-        /// <param name="width">The width of the segment</param>
-        /// <param name="color">The Color</param>
-        /// <param name="loop">True if closed, false is not</param>
-        public void DrawPolygon(float width, Color color, bool loop)
-        {
-            lineRenderer.material = new Material(Shader.Find("Unlit/Color"))
-            {
-                color = color
-            };
-            lineRenderer.numCornerVertices = 5;
-            lineRenderer.numCapVertices = 5;
-            lineRenderer.positionCount = lstVectorPolygon.Count;
-            lineRenderer.loop = loop;
 
-            for(int i = 0; i < lstVectorPolygon.Count; i++)
-                lineRenderer.SetPosition(i, new Vector3((float)lstVectorPolygon[i].X, (float)lstVectorPolygon[i].Y, (float)lstVectorPolygon[i].Z));
-            
-            lineRenderer.startWidth = width;
-            lineRenderer.endWidth = width;
-        }
 
         /// <summary>
         /// Update the polygon drawing
@@ -151,7 +128,7 @@ namespace LagaUnity
         public void UpdateDraw()
         {
             for (int i = 0; i < lstVectorPolygon.Count; i++)
-                lineRenderer.SetPosition(i, new Vector3((float)lstVectorPolygon[i].X, (float)lstVectorPolygon[i].Y, (float)lstVectorPolygon[i].Z));
+                lineRenderer.SetPosition(i, new Vector3(lstVectorPolygon[i].X, lstVectorPolygon[i].Y, lstVectorPolygon[i].Z));
         }
 
         /// <summary>
@@ -167,10 +144,11 @@ namespace LagaUnity
 
             lstVectorPolygon.Add(lstVectorPolygon[0]);
             float area = 0;
+            float width;
             for (int i = 0; i < size; i++)
             {
-                float width = (float)(lstVectorPolygon[i + 1].X - lstVectorPolygon[i].X);
-                area += width * (float)(lstVectorPolygon[i + 1].Y + lstVectorPolygon[i].Y);
+                width = lstVectorPolygon[i + 1].X - lstVectorPolygon[i].X;
+                area += width * (lstVectorPolygon[i + 1].Y + lstVectorPolygon[i].Y) / 2f;
             }
             lstVectorPolygon.RemoveAt(size);
 
@@ -178,43 +156,45 @@ namespace LagaUnity
         }
 
         /// <summary>
-        /// The length of the polygon
+        /// Get the length of Polygon
         /// </summary>
-        public float Length
+        /// <returns>the length</returns>
+        public float Length()
         {
-            get
+            float len = 0.0f;
+            if (lstVectorPolygon.Count < 2) 
+            { 
+                return len; 
+            }
+            else
             {
-                if (lstVectorPolygon.Count < 2) { return 0.0f; }
-
-                float L = 0.0f;
-
-                for (int i = 0; i < (lstVectorPolygon.Count - 1); i++)
+                for (int i = 0; i < lstVectorPolygon.Count - 1; i++)
                 {
-                    L += (float)lstVectorPolygon[i].DistanceTo(lstVectorPolygon[i + 1]);
+                    len += lstVectorPolygon[i].DistanceTo(lstVectorPolygon[i + 1]);
                 }
-
-                return L;
+                len += lstVectorPolygon[Count - 1].DistanceTo(lstVectorPolygon[0]);
+                return len;
             }
         }
 
         /// <summary>
-        /// Centroid
+        /// Average center point
         /// </summary>
-        /// <returns></returns>
-        public Vectorf Centroid()
+        /// <returns>Vectorf</returns>
+        public Vectorf Center()
         {
             float x = 0;
             float y = 0;
             float z = 0;
-
-            foreach (var item in lstVectorPolygon)
+            float l = Count;
+            foreach(Vectorf v in lstVectorPolygon)
             {
-                x += (float)item.X;
-                y += (float)item.Y;
-                z += (float)item.Z;
+                x += v.X;
+                y += v.Y;
+                z += v.Z;
             }
 
-            return new Vectorf(x / Length, y / Length, z / Length);
+            return new Vectorf(x / l, y / l, z / l);
         }
 
         /// <summary>
