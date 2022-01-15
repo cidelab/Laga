@@ -12,7 +12,7 @@ namespace LagaUnity
     /// <summary>
     /// Polygon class
     /// </summary>
-    public class Polygon : ICollection<Vec>
+    public class Polygon : ICollection<Vectorf>
     {
         #region
         /// <summary>
@@ -28,10 +28,10 @@ namespace LagaUnity
         /// <summary>
         /// Add a Vector to the poylgon
         /// </summary>
-        /// <param name="vec">The Vector to add in the list</param>
-        public void Add(Vec vec)
+        /// <param name="vector">The Vector to add in the list</param>
+        public void Add(Vectorf vector)
         {
-            lstVectorPolygon.Add(vec);
+            lstVectorPolygon.Add(vector);
         }
 
         /// <summary>
@@ -45,42 +45,50 @@ namespace LagaUnity
         /// <summary>
         /// Check if the vec is in the polygon
         /// </summary>
-        /// <param name="vec"></param>
+        /// <param name="vector"></param>
         /// <returns>True if the vector belongs to the polygon</returns>
-        public bool Contains(Vec vec)
+        public bool Contains(Vectorf vector)
         {
-            return lstVectorPolygon.Contains(vec);
+            return lstVectorPolygon.Contains(vector);
         }
 
         /// <summary>
-        /// Not implemented yet
+        /// Copy the vectors of the polygon to a new array.
         /// </summary>
-        /// <param name="array"></param>
-        /// <param name="arrayIndex"></param>
-        /// <exception cref="NotImplementedException"></exception>
-        public void CopyTo(Vec[] array, int arrayIndex)
+        /// <param name="array">The array to copy</param>
+        /// <param name="arrayIndex">Index to start the array</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        public void CopyTo(Vectorf[] array, int arrayIndex)
         {
-            throw new NotImplementedException();
+            if(array == null)
+            throw new ArgumentNullException("array");
+            if (arrayIndex < 0)
+                throw new ArgumentOutOfRangeException("arrayIndex");
+            if (array.Length - arrayIndex < Count)
+                throw new ArgumentException("not enough elements after index in the destination array");
+            
+            lstVectorPolygon.CopyTo(array, arrayIndex);
         }
 
         /// <summary>
-        /// Not implemented yet.
+        /// Enumerator can be used to read the data in the collection, but cannot be used to modify the collection.
         /// </summary>
         /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
-        public IEnumerator<Vec> GetEnumerator()
+        public IEnumerator<Vectorf> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return (IEnumerator<Vectorf>)GetEnumerator();
         }
 
         /// <summary>
-        /// Remove a vec from the polygon
+        /// Remove a vector from the polygon
         /// </summary>
-        /// <param name="vec">the Vector to remove</param>
+        /// <param name="vector">the Vector to remove</param>
         /// <returns>true if all went ok</returns>
-        public bool Remove(Vec vec)
+        public bool Remove(Vectorf vector)
         {
-            return lstVectorPolygon.Remove(vec);
+            return lstVectorPolygon.Remove(vector);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -92,15 +100,15 @@ namespace LagaUnity
 
         private LineRenderer lineRenderer;
         private GameObject line;
-        private List<Vec> lstVectorPolygon;
+        private List<Vectorf> lstVectorPolygon;
 
         /// <summary>
         /// Polygon constructor by a list / array of vectors
         /// </summary>
         /// <param name="VectorList">the list of vectors</param>
-        public Polygon(IEnumerable<Vec> VectorList)
+        public Polygon(IEnumerable<Vectorf> VectorList)
         {
-            lstVectorPolygon = VectorList.ToList<Vec>();
+            lstVectorPolygon = VectorList.ToList<Vectorf>();
             line = new GameObject("Polygon :" + lstVectorPolygon[0].ToString());
             lineRenderer = line.AddComponent<LineRenderer>();
         }
@@ -108,7 +116,7 @@ namespace LagaUnity
         /// <summary>
         /// get the list of vectors in the polygon
         /// </summary>
-        public List<Vec> VectorList
+        public List<Vectorf> VectorList
         {
             get { return lstVectorPolygon; }
         }
@@ -193,7 +201,7 @@ namespace LagaUnity
         /// Centroid
         /// </summary>
         /// <returns></returns>
-        public Vec Centroid()
+        public Vectorf Centroid()
         {
             float x = 0;
             float y = 0;
@@ -206,18 +214,17 @@ namespace LagaUnity
                 z += (float)item.Z;
             }
 
-            return new Vec(x / Length, y / Length, z / Length);
+            return new Vectorf(x / Length, y / Length, z / Length);
         }
 
         /// <summary>
-        /// Check if the polygon is Convex
+        /// Check if polygon is convex
         /// </summary>
-        /// <param name="vecs">The points in the polygon</param>
-        /// <returns>true if convex</returns>
+        /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static bool IsConvex(IEnumerable<Vec> vecs)
+        public bool IsConvex()
         {
-            List<Vec> lstPts = vecs.ToList();
+            List<Vectorf> lstPts = lstVectorPolygon;
 
             int size = lstPts.Count;
             if (size < 3)
@@ -226,12 +233,12 @@ namespace LagaUnity
             lstPts.Add(lstPts[0]);
             lstPts.Add(lstPts[1]);
 
-            int sign = Math.Sign(Vector3d.Angle(lstPts[0], lstPts[1], lstPts[2]));
+            int sign = Math.Sign(Vectorf.Angle(lstPts[0], lstPts[1], lstPts[2]));
             bool isConvex = true;
 
             for(int i = 0; i < size; i++)
             {
-                if(Math.Sign(Vector3d.Angle(lstPts[i], lstPts[i + 1], lstPts[ i + 2])) != sign)
+                if(Math.Sign(Vectorf.Angle(lstPts[i], lstPts[i + 1], lstPts[ i + 2])) != sign)
                 {
                     isConvex = false;
                     break;
@@ -246,12 +253,12 @@ namespace LagaUnity
         /// </summary>
         /// <param name="index">the segment index in the polygon, if out of range is null</param>
         /// <returns>The segment as Line</returns>
-        public Lne SegmentAt(int index)
+        public Line SegmentAt(int index)
         {
             if (index < 0) { return null; }
             if (index >= Count - 1) { return null; }
 
-            return new Lne(lstVectorPolygon[index], lstVectorPolygon[index + 1]);
+            return new Line(lstVectorPolygon[index], lstVectorPolygon[index + 1]);
         }
 
         /// <summary>
@@ -262,8 +269,7 @@ namespace LagaUnity
         {
            return new Polygon(lstVectorPolygon.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
         }
-        
-       
 
+     
     }
 }

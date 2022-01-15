@@ -51,8 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DrawGeometry.cs" />
-    <Compile Include="Lne.cs" />
-    <Compile Include="Vec.cs" />
+    <Compile Include="Line.cs" />
     <Compile Include="Polygon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vectorf.cs" />

@@ -123,13 +123,13 @@ namespace Laga.GeneticAlgorithm
         /// <param name="points">The points to round coordinates</param>
         /// <param name="round">round number coordinates</param>
         /// <returns>string[]</returns>
-        public static string[] Parse(Vector3d[] points, int round)
+        public static string[] Parse(Vectord[] points, int round)
         {
             string[] arrPtsChromosome = new string[points.Length];
             double[] arrdblCoords;
             int i = 0;
 
-            foreach (Vector3d p in points)
+            foreach (Vectord p in points)
             {
                 arrdblCoords = new double[] {Math.Round(p.X, round), Math.Round(p.Y, round), Math.Round(p.Z, round)};
                 string[] arrString = Array.ConvertAll(arrdblCoords, new Converter<double, string>(Convert.ToString));

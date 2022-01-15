@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Chromosome.cs" />
     <Compile Include="IOTextData.cs" />
-    <Compile Include="Numbers.cs" />
+    <Compile Include="Function.cs" />
     <Compile Include="Crossover.cs" />
     <Compile Include="GenrChromosome.cs" />
     <Compile Include="GenrPopulation.cs" />
@@ -65,7 +65,7 @@
     <Compile Include="RankingSort.cs" />
     <Compile Include="IODataFolder.cs" />
     <Compile Include="Replacement.cs" />
-    <Compile Include="Vector3d.cs" />
+    <Compile Include="Vectord.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">

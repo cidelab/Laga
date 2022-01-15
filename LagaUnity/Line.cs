@@ -11,15 +11,15 @@ namespace LagaUnity
     /// <summary>
     /// Draw a line in Unity
     /// </summary>
-    public class Lne : Laga.Geometry.Line
+    public class Line : Laga.Geometry.Line
     {
-        private Vec pa;
-        private Vec pb;
+        private Vectorf pa;
+        private Vectorf pb;
 
         /// <summary>
         /// First point in the Line
         /// </summary>
-        public Vec PointA
+        public Vectorf PointA
         {
             get
             {
@@ -34,7 +34,7 @@ namespace LagaUnity
         /// <summary>
         /// Second Point in the Line
         /// </summary>
-        public Vec PointB
+        public Vectorf PointB
         {
             get
             {
@@ -51,21 +51,21 @@ namespace LagaUnity
         /// </summary>
         /// <param name="pointA">First Point</param>
         /// <param name="pointB">Second Point</param>
-        public Lne(Vec pointA, Vec pointB)
+        public Line(Vectorf pointA, Vectorf pointB)
         {
             pa = pointA;
             pb = pointB;
-            StartPoint = pointA;
-            EndPoint = pointB;
+            //StartPoint = pointA;
+            //EndPoint = pointB;
         }
 
         /// <summary>
         /// Returns the mid point.
         /// </summary>
         /// <returns>Laga Point</returns>
-        public Vec MidPoint()
+        public Vectorf MidPoint()
         {
-            return new Vec((float)(pa.X + pb.X) / 2, (float)(pa.Y + pb.Y) / 2, (float)(pa.Z + pa.Z) / 2);
+            return new Vectorf((pa.X + pb.X) / 2, (pa.Y + pb.Y) / 2, (pa.Z + pa.Z) / 2);
         }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace LagaUnity
         /// <param name="pointB">Second Point</param>
         /// <param name="width">Line Width</param>
         /// <param name="color">Color Line</param>
-        static public LineRenderer DrawLine(Vec pointA, Vec pointB, float width, Color color)
+        static public LineRenderer DrawLine(Vectorf pointA, Vectorf pointB, float width, Color color)
         {
             GameObject line = new GameObject("Line " + pointA.ToString() + " - " + pointB.ToString());
             LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
@@ -94,8 +94,8 @@ namespace LagaUnity
                 color = color
             };
             lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, pointA.ToVector3());
-            lineRenderer.SetPosition(1, pointB.ToVector3());
+            lineRenderer.SetPosition(0, pointA.ToVector3);
+            lineRenderer.SetPosition(1, pointB.ToVector3);
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
 

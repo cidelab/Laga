@@ -14,6 +14,11 @@ namespace LagaUnity
     {
 
         private LineRenderer lnRender;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="LineRender"></param>
         public DrawGeometry(LineRenderer LineRender)
         {
             this.lnRender = LineRender;

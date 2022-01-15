@@ -138,6 +138,23 @@ namespace LagaUnity
         }
 
         /// <summary>
+        /// Dot Product AB · BC
+        /// </summary>
+        /// <param name="vectorA"></param>
+        /// <param name="vectorB"></param>
+        /// <param name="vectorC"></param>
+        /// <returns></returns>
+        public static float DotProduct(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+        {
+            float ABx = vectorA.X - vectorB.X;
+            float ABy = vectorA.Y - vectorB.Y;
+            float BCx = vectorC.X - vectorB.Y;
+            float BCy = vectorC.Y - vectorB.Y;
+
+            return (ABx * BCx + ABy * BCy);
+        }
+
+        /// <summary>
         /// Angle
         /// </summary>
         /// <param name="vectorA">Vector A</param>
@@ -152,6 +169,25 @@ namespace LagaUnity
             float div = dot / (magA * magB);
             div = (div < -1.0f) ? -1.0f : (div > 1.0f) ? 1.0f : div;
             return (float)Math.Acos(div); // radianes.
+        }
+
+        /// <summary>
+        /// ABC angle between PI and -PI
+        /// </summary>
+        /// <param name="vectorA">Vector A</param>
+        /// <param name="vectorB">Vector B</param>
+        /// <param name="vectorC">Vector C</param>
+        /// <returns>double</returns>
+        public static float Angle(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+        {
+            //dot
+            float dot = DotProduct(vectorA, vectorB, vectorC);
+
+            //crossLength 
+            float crossPL = CrossProductLength(vectorA, vectorB, vectorC);
+
+            //angle
+            return (float)Math.Atan2(crossPL, dot);
         }
 
         /// <summary>
