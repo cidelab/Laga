@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/delab/Documents/GitHub/docs",
+  "source_base_path": "C:/Users/delab/Documents/github/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -12,7 +12,7 @@
           "hash": "G0CZEoz7G2xrf4/AVXJ3/9Of0J6n3DtkCFLRwuUDMP4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "6IdjgwWJuJ+WcPVBvSdsCkrYNVwXwAkXWIVpXGJcaSM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "3CAP0M9E96dqSPzSKdU2wUtuxxy6khfsUfb9HifQb+s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.html",
-          "hash": "jLVbJTd7SwfdreWq6vPVByvXSNkQwKHeMxcjc9cXb/Q="
+          "hash": "CvQwV6wpXVfdIAFZ8h0GKaEyxpDFw4f7VHD2wQeFOVE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "QBRUuOnZ8zSv9yiC7Ub62cL9Gfp+Pg5+7NokV4t9WOc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "76+CJzQwyD8a8S7haqESkEzRt5GArsCbNHK7YWtCs/g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "T+nxdgrlOvwIDkvXn4hR7dMbB7iRWzeoEAtOc1+FKu8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "/rUrtNMN8YZDAvKqt3WP+/lc4sX5Yx8EGmU7G2nEQf4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "wblYmNKnzoIQ28V+RogcK6NvukhrWJctWRgpKJCc5Eo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Tools.html",
-          "hash": "O+i8+D4jgYamTuS/nEhgH0TeqidbS2UlumZ4VLlb1N0="
+          "hash": "llF+yqh2PeVNEjeQl20+JoF9Q6kCZSLGnNnQGBw9iHg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,19 @@
           "hash": "0os7SoNnqG6TshuGaIcC/Keqb/9upis1WmHljZ4or/I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.Box.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.Box.html",
+          "hash": "YMPE9VIP+EiwH+5T/+4TcdEkINA4UQSG1+oGVAjM3y8="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.Line.html",
-          "hash": "4EquCRVibzgivU251pb5MS60bqRvSxGB4yJD2010KdI="
+          "hash": "p7pfYliuEE4w0YDP6VeiGqpvPd67P8KCy5IeyxRig50="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,22 +165,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.Plane.html",
-          "hash": "zbUfTgsXjNG0WISoLouKBkAhguyFggPddLJyEUlpySc="
+          "hash": "tQcl6KThxbkKzK1QJ/UscTQI9oAan5MYvtrrFweRqig="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.Geometry.Vector.yml",
+      "source_relative_path": "api/Laga.Geometry.Vectord.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.Geometry.Vector.html",
-          "hash": "MSc1QfotLL8Nsq793IEvUifythr5eF0WkfOeyWhAZKw="
+          "relative_path": "api/Laga.Geometry.Vectord.html",
+          "hash": "xnyRZ0poh7/I5fBPxzi7GLrvbpE21Df9HqkulTnsjC4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.html",
-          "hash": "ZoORj6BNdiiKePKsSdcV+wSMca+CRKM60BJQS+DXSVU="
+          "hash": "7y+ooFGaFOwAf3+dHFlPTHv5FWrTHMUyWjstjcVODgQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +204,7 @@
           "hash": "vmCOQBP/AikvduTgIJHk23EWqrEtiL3k2LyJc1gP76k="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,7 +216,7 @@
           "hash": "cep7hTHSuQiYd3RoGPqlKkBZT39g50w+2TrIHNyf2vY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +228,7 @@
           "hash": "7uwQ8YOptG8srrCV+QcobuEKnHBYGXGPVJkOsuLoYGw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -228,7 +240,7 @@
           "hash": "M3oAqYqAzoqUmDLm5bhHRb88vamFMLGJDnDnR5txAtc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -240,7 +252,7 @@
           "hash": "2i8NkxcKP/eCh4sKZzOFvThzxqkJE+8pBVFr8xu43xY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -252,19 +264,19 @@
           "hash": "858Cj++X0fbFhkHgiE8skAnATemNRm6LsbRnxp5VBc4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.Numbers.Maths.yml",
+      "source_relative_path": "api/Laga.Numbers.Function.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.Numbers.Maths.html",
-          "hash": "CxvChrPN3GARXThodqWfxdT1zSANUZG6s2BKR/Eej+4="
+          "relative_path": "api/Laga.Numbers.Function.html",
+          "hash": "Iu/vKugcpxgR5EbAo/7zq3As5pWetBQOCzxNgCYr8x0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -276,7 +288,7 @@
           "hash": "7rFm73UOqo3zm47VVs48tAbgwfHABGH3yUrccImCWw8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.html",
-          "hash": "543agPY2Sp/DDdkSE+QpK6foWjqHRBzcnxJljONS8rA="
+          "hash": "qDWaGNOkd6uyIfPLpGGOXI1OqN5w3qy1tuVs5qu1vxY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +312,7 @@
           "hash": "f5kX31WoZyKWgN2TiDmhQBjTCyRi9P9ONoAQ/lg+iC0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -312,7 +324,7 @@
           "hash": "ovfau1L3TIzZs4smpMuE1NPSetOAlpWMd70GVjJtQsE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -324,7 +336,7 @@
           "hash": "4r3vKClVMIQIPfdpyXLsEef0DoBeO89yBpukOKDWIrw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -336,7 +348,7 @@
           "hash": "m1S8Tm+Wz5+snLH8CsA9CkxKW8M2g4NhbddBSMYk/WM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -348,7 +360,7 @@
           "hash": "z7mqxQUtMRh+Eeg/WfFHfZgCuMirIDNLh1cLKcH88ww="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -360,19 +372,31 @@
           "hash": "lZ8QtZH4Oe15BIqrUdseWRUh01IV7YjlMLhoo6UYeCU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Lne.yml",
+      "source_relative_path": "api/LagaUnity.Draw.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaUnity.Lne.html",
-          "hash": "6jOiTrWjSYN1PIeiDbtZ3T+60xxRRXPKdC4wWrpBQUQ="
+          "relative_path": "api/LagaUnity.Draw.html",
+          "hash": "+XHWt7ZhtSI1TeD4grAggF0KseBSkeDhNGtbp6ETkhE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaUnity.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaUnity.Line.html",
+          "hash": "4wV5U5+eXwm+/zVzgBWlwMOPthhyo7pT+0+f9hcGJWo="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,22 +405,22 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaUnity.Polygon.html",
-          "hash": "ZIVXRt3oz+eEOExBsq/COHTG/x+h2jR2JJuppBI1/CE="
+          "hash": "lEz/dp2XHqgpvZkMpcBibeMgDoKDESDVHDYm4DXIE5s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Vec.yml",
+      "source_relative_path": "api/LagaUnity.Vectorf.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaUnity.Vec.html",
-          "hash": "rXiGtU/LfMwo4dpgAE4Ya0IgIEliil3UuWikkPuxjOU="
+          "relative_path": "api/LagaUnity.Vectorf.html",
+          "hash": "ObbAe/IPubx6cHyrJ/7SUPdB1PIlGxXAMhP9QkUxeyk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaUnity.html",
-          "hash": "rU45eo+91qW5RNVodV4BR7qw1Tm6d1pwx9Bprd5P+BA="
+          "hash": "bUryfBL5YATtw7ZqJRG/n0aMQJupt9ZD7OdBc2xrGCY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -420,7 +444,7 @@
           "hash": "XvFsz+xHrGjSGDauyQKpxXjK2A2x89uc3G+Go65mf/A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "jVF4WNuCn2OiBjl/aaM1P6CbCBSylDouS+d3QbXQtEI="
+          "hash": "JLYPlA0XRsNmhX56VNNCI8xexqI7h2RkDJqJMwhs8iY="
         }
       },
       "is_incremental": false,
@@ -966,8 +990,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 34,
-          "skipped_file_count": 34
+          "total_file_count": 36,
+          "skipped_file_count": 3
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

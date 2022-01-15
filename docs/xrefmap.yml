@@ -1644,15 +1644,15 @@ references:
   isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Tools.Mom_Dad
   nameWithType: Tools.Mom_Dad
-- uid: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)
-  name: Parse(Vector[], Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vector___System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)
-  name.vb: Parse(Vector(), Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[], System.Int32)
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector(), System.Int32)
-  nameWithType: Tools.Parse(Vector[], Int32)
-  nameWithType.vb: Tools.Parse(Vector(), Int32)
+- uid: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)
+  name: Parse(Vectord[], Int32)
+  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vectord___System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)
+  name.vb: Parse(Vectord(), Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord(), System.Int32)
+  nameWithType: Tools.Parse(Vectord[], Int32)
+  nameWithType.vb: Tools.Parse(Vectord(), Int32)
 - uid: Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
   name: Parse(Char[])
   href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_System_Char___
@@ -1840,6 +1840,12 @@ references:
   commentId: N:Laga.Geometry
   fullName: Laga.Geometry
   nameWithType: Laga.Geometry
+- uid: Laga.Geometry.Box
+  name: Box
+  href: api/Laga.Geometry.Box.html
+  commentId: T:Laga.Geometry.Box
+  fullName: Laga.Geometry.Box
+  nameWithType: Box
 - uid: Laga.Geometry.Line
   name: Line
   href: api/Laga.Geometry.Line.html
@@ -1852,18 +1858,18 @@ references:
   commentId: M:Laga.Geometry.Line.#ctor
   fullName: Laga.Geometry.Line.Line()
   nameWithType: Line.Line()
-- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Line(Vector, Vector)
-  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Line.Line(Vector, Vector)
-- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector,System.Double)
-  name: Line(Vector, Vector, Double)
-  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_System_Double_
-  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector,System.Double)
-  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vector, Laga.Geometry.Vector, System.Double)
-  nameWithType: Line.Line(Vector, Vector, Double)
+- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Line(Vectord, Vectord)
+  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Line.Line(Vectord, Vectord)
+- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)
+  name: Line(Vectord, Vectord, Double)
+  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_System_Double_
+  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)
+  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vectord, Laga.Geometry.Vectord, System.Double)
+  nameWithType: Line.Line(Vectord, Vectord, Double)
 - uid: Laga.Geometry.Line.#ctor*
   name: Line
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_
@@ -1871,15 +1877,15 @@ references:
   isSpec: "True"
   fullName: Laga.Geometry.Line.Line
   nameWithType: Line.Line
-- uid: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vector@,Laga.Geometry.Vector@)
-  name: ClosestTo(Line, ref Vector, ref Vector)
-  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_ClosestTo_Laga_Geometry_Line_Laga_Geometry_Vector__Laga_Geometry_Vector__
-  commentId: M:Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vector@,Laga.Geometry.Vector@)
-  name.vb: ClosestTo(Line, ByRef Vector, ByRef Vector)
-  fullName: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ref Laga.Geometry.Vector, ref Laga.Geometry.Vector)
-  fullName.vb: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vector, ByRef Laga.Geometry.Vector)
-  nameWithType: Line.ClosestTo(Line, ref Vector, ref Vector)
-  nameWithType.vb: Line.ClosestTo(Line, ByRef Vector, ByRef Vector)
+- uid: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  name: ClosestTo(Line, ref Vectord, ref Vectord)
+  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_ClosestTo_Laga_Geometry_Line_Laga_Geometry_Vectord__Laga_Geometry_Vectord__
+  commentId: M:Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  name.vb: ClosestTo(Line, ByRef Vectord, ByRef Vectord)
+  fullName: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ref Laga.Geometry.Vectord, ref Laga.Geometry.Vectord)
+  fullName.vb: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vectord, ByRef Laga.Geometry.Vectord)
+  nameWithType: Line.ClosestTo(Line, ref Vectord, ref Vectord)
+  nameWithType.vb: Line.ClosestTo(Line, ByRef Vectord, ByRef Vectord)
 - uid: Laga.Geometry.Line.ClosestTo*
   name: ClosestTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_ClosestTo_
@@ -1913,15 +1919,15 @@ references:
   isSpec: "True"
   fullName: Laga.Geometry.Line.EndPoint
   nameWithType: Line.EndPoint
-- uid: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@,System.Double)
-  name: IntersectTo(Line, ref Vector, Double)
-  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vector__System_Double_
-  commentId: M:Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@,System.Double)
-  name.vb: IntersectTo(Line, ByRef Vector, Double)
-  fullName: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ref Laga.Geometry.Vector, System.Double)
-  fullName.vb: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vector, System.Double)
-  nameWithType: Line.IntersectTo(Line, ref Vector, Double)
-  nameWithType.vb: Line.IntersectTo(Line, ByRef Vector, Double)
+- uid: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  name: IntersectTo(Line, ref Vectord, Double)
+  href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vectord__System_Double_
+  commentId: M:Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  name.vb: IntersectTo(Line, ByRef Vectord, Double)
+  fullName: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ref Laga.Geometry.Vectord, System.Double)
+  fullName.vb: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vectord, System.Double)
+  nameWithType: Line.IntersectTo(Line, ref Vectord, Double)
+  nameWithType.vb: Line.IntersectTo(Line, ByRef Vectord, Double)
 - uid: Laga.Geometry.Line.IntersectTo*
   name: IntersectTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IntersectTo_
@@ -2013,18 +2019,18 @@ references:
   commentId: T:Laga.Geometry.Plane
   fullName: Laga.Geometry.Plane
   nameWithType: Plane
-- uid: Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Plane(Vector, Vector)
-  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Plane.Plane(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Plane.Plane(Vector, Vector)
-- uid: Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Plane(Vector, Vector, Vector)
-  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Plane.Plane(Laga.Geometry.Vector, Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Plane.Plane(Vector, Vector, Vector)
+- uid: Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Plane(Vectord, Vectord)
+  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Plane.Plane(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Plane.Plane(Vectord, Vectord)
+- uid: Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Plane(Vectord, Vectord, Vectord)
+  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Plane.Plane(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Plane.Plane(Vectord, Vectord, Vectord)
 - uid: Laga.Geometry.Plane.#ctor(System.Double,System.Double,System.Double,System.Double)
   name: Plane(Double, Double, Double, Double)
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_System_Double_System_Double_System_Double_System_Double_
@@ -2090,12 +2096,12 @@ references:
   isSpec: "True"
   fullName: Laga.Geometry.Plane.Cz
   nameWithType: Plane.Cz
-- uid: Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vector)
-  name: DistanceTo(Vector)
-  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_DistanceTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vector)
-  nameWithType: Plane.DistanceTo(Vector)
+- uid: Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vectord)
+  name: DistanceTo(Vectord)
+  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_DistanceTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vectord)
+  nameWithType: Plane.DistanceTo(Vectord)
 - uid: Laga.Geometry.Plane.DistanceTo*
   name: DistanceTo
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_DistanceTo_
@@ -2103,15 +2109,15 @@ references:
   isSpec: "True"
   fullName: Laga.Geometry.Plane.DistanceTo
   nameWithType: Plane.DistanceTo
-- uid: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@)
-  name: IntersectTo(Line, ref Vector)
-  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vector__
-  commentId: M:Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@)
-  name.vb: IntersectTo(Line, ByRef Vector)
-  fullName: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line, ref Laga.Geometry.Vector)
-  fullName.vb: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vector)
-  nameWithType: Plane.IntersectTo(Line, ref Vector)
-  nameWithType.vb: Plane.IntersectTo(Line, ByRef Vector)
+- uid: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@)
+  name: IntersectTo(Line, ref Vectord)
+  href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vectord__
+  commentId: M:Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@)
+  name.vb: IntersectTo(Line, ByRef Vectord)
+  fullName: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line, ref Laga.Geometry.Vectord)
+  fullName.vb: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vectord)
+  nameWithType: Plane.IntersectTo(Line, ref Vectord)
+  nameWithType.vb: Plane.IntersectTo(Line, ByRef Vectord)
 - uid: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Plane,Laga.Geometry.Line@,System.Double)
   name: IntersectTo(Plane, ref Line, Double)
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Plane_Laga_Geometry_Line__System_Double_
@@ -2232,284 +2238,309 @@ references:
   isSpec: "True"
   fullName: Laga.Geometry.Plane.VectorV
   nameWithType: Plane.VectorV
-- uid: Laga.Geometry.Vector
-  name: Vector
-  href: api/Laga.Geometry.Vector.html
-  commentId: T:Laga.Geometry.Vector
-  fullName: Laga.Geometry.Vector
-  nameWithType: Vector
-- uid: Laga.Geometry.Vector.#ctor
-  name: Vector()
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector__ctor
-  commentId: M:Laga.Geometry.Vector.#ctor
-  fullName: Laga.Geometry.Vector.Vector()
-  nameWithType: Vector.Vector()
-- uid: Laga.Geometry.Vector.#ctor(System.Double,System.Double)
-  name: Vector(Double, Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector__ctor_System_Double_System_Double_
-  commentId: M:Laga.Geometry.Vector.#ctor(System.Double,System.Double)
-  fullName: Laga.Geometry.Vector.Vector(System.Double, System.Double)
-  nameWithType: Vector.Vector(Double, Double)
-- uid: Laga.Geometry.Vector.#ctor(System.Double,System.Double,System.Double)
-  name: Vector(Double, Double, Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector__ctor_System_Double_System_Double_System_Double_
-  commentId: M:Laga.Geometry.Vector.#ctor(System.Double,System.Double,System.Double)
-  fullName: Laga.Geometry.Vector.Vector(System.Double, System.Double, System.Double)
-  nameWithType: Vector.Vector(Double, Double, Double)
-- uid: Laga.Geometry.Vector.#ctor*
-  name: Vector
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector__ctor_
-  commentId: Overload:Laga.Geometry.Vector.#ctor
+- uid: Laga.Geometry.Vectord
+  name: Vectord
+  href: api/Laga.Geometry.Vectord.html
+  commentId: T:Laga.Geometry.Vectord
+  fullName: Laga.Geometry.Vectord
+  nameWithType: Vectord
+- uid: Laga.Geometry.Vectord.#ctor
+  name: Vectord()
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord__ctor
+  commentId: M:Laga.Geometry.Vectord.#ctor
+  fullName: Laga.Geometry.Vectord.Vectord()
+  nameWithType: Vectord.Vectord()
+- uid: Laga.Geometry.Vectord.#ctor(System.Double,System.Double)
+  name: Vectord(Double, Double)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord__ctor_System_Double_System_Double_
+  commentId: M:Laga.Geometry.Vectord.#ctor(System.Double,System.Double)
+  fullName: Laga.Geometry.Vectord.Vectord(System.Double, System.Double)
+  nameWithType: Vectord.Vectord(Double, Double)
+- uid: Laga.Geometry.Vectord.#ctor(System.Double,System.Double,System.Double)
+  name: Vectord(Double, Double, Double)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord__ctor_System_Double_System_Double_System_Double_
+  commentId: M:Laga.Geometry.Vectord.#ctor(System.Double,System.Double,System.Double)
+  fullName: Laga.Geometry.Vectord.Vectord(System.Double, System.Double, System.Double)
+  nameWithType: Vectord.Vectord(Double, Double, Double)
+- uid: Laga.Geometry.Vectord.#ctor*
+  name: Vectord
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord__ctor_
+  commentId: Overload:Laga.Geometry.Vectord.#ctor
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Vector
-  nameWithType: Vector.Vector
-- uid: Laga.Geometry.Vector.Angle(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Angle(Vector, Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Angle_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.Angle(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.Angle(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Vector.Angle(Vector, Vector)
-- uid: Laga.Geometry.Vector.Angle*
+  fullName: Laga.Geometry.Vectord.Vectord
+  nameWithType: Vectord.Vectord
+- uid: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Angle(Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Angle_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.Angle(Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Angle(Vectord, Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Angle_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.Angle(Vectord, Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.Angle*
   name: Angle
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Angle_
-  commentId: Overload:Laga.Geometry.Vector.Angle
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Angle_
+  commentId: Overload:Laga.Geometry.Vectord.Angle
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Angle
-  nameWithType: Vector.Angle
-- uid: Laga.Geometry.Vector.ComponentOrthogonalTo(Laga.Geometry.Vector)
-  name: ComponentOrthogonalTo(Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentOrthogonalTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.ComponentOrthogonalTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.ComponentOrthogonalTo(Laga.Geometry.Vector)
-  nameWithType: Vector.ComponentOrthogonalTo(Vector)
-- uid: Laga.Geometry.Vector.ComponentOrthogonalTo*
+  fullName: Laga.Geometry.Vectord.Angle
+  nameWithType: Vectord.Angle
+- uid: Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  name: ComponentOrthogonalTo(Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ComponentOrthogonalTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  nameWithType: Vectord.ComponentOrthogonalTo(Vectord)
+- uid: Laga.Geometry.Vectord.ComponentOrthogonalTo*
   name: ComponentOrthogonalTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentOrthogonalTo_
-  commentId: Overload:Laga.Geometry.Vector.ComponentOrthogonalTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ComponentOrthogonalTo_
+  commentId: Overload:Laga.Geometry.Vectord.ComponentOrthogonalTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.ComponentOrthogonalTo
-  nameWithType: Vector.ComponentOrthogonalTo
-- uid: Laga.Geometry.Vector.ComponentProjectTo(Laga.Geometry.Vector)
-  name: ComponentProjectTo(Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentProjectTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.ComponentProjectTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.ComponentProjectTo(Laga.Geometry.Vector)
-  nameWithType: Vector.ComponentProjectTo(Vector)
-- uid: Laga.Geometry.Vector.ComponentProjectTo*
+  fullName: Laga.Geometry.Vectord.ComponentOrthogonalTo
+  nameWithType: Vectord.ComponentOrthogonalTo
+- uid: Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  name: ComponentProjectTo(Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ComponentProjectTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  nameWithType: Vectord.ComponentProjectTo(Vectord)
+- uid: Laga.Geometry.Vectord.ComponentProjectTo*
   name: ComponentProjectTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentProjectTo_
-  commentId: Overload:Laga.Geometry.Vector.ComponentProjectTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ComponentProjectTo_
+  commentId: Overload:Laga.Geometry.Vectord.ComponentProjectTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.ComponentProjectTo
-  nameWithType: Vector.ComponentProjectTo
-- uid: Laga.Geometry.Vector.CrossProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: CrossProduct(Vector, Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_CrossProduct_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.CrossProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.CrossProduct(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Vector.CrossProduct(Vector, Vector)
-- uid: Laga.Geometry.Vector.CrossProduct*
+  fullName: Laga.Geometry.Vectord.ComponentProjectTo
+  nameWithType: Vectord.ComponentProjectTo
+- uid: Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: CrossProduct(Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_CrossProduct_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.CrossProduct(Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.CrossProduct*
   name: CrossProduct
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_CrossProduct_
-  commentId: Overload:Laga.Geometry.Vector.CrossProduct
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_CrossProduct_
+  commentId: Overload:Laga.Geometry.Vectord.CrossProduct
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.CrossProduct
-  nameWithType: Vector.CrossProduct
-- uid: Laga.Geometry.Vector.DistanceTo(Laga.Geometry.Vector)
-  name: DistanceTo(Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DistanceTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.DistanceTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.DistanceTo(Laga.Geometry.Vector)
-  nameWithType: Vector.DistanceTo(Vector)
-- uid: Laga.Geometry.Vector.DistanceTo*
+  fullName: Laga.Geometry.Vectord.CrossProduct
+  nameWithType: Vectord.CrossProduct
+- uid: Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: CrossProductLength(Vectord, Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_CrossProductLength_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.CrossProductLength(Vectord, Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.CrossProductLength*
+  name: CrossProductLength
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_CrossProductLength_
+  commentId: Overload:Laga.Geometry.Vectord.CrossProductLength
+  isSpec: "True"
+  fullName: Laga.Geometry.Vectord.CrossProductLength
+  nameWithType: Vectord.CrossProductLength
+- uid: Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  name: DistanceTo(Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_DistanceTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  nameWithType: Vectord.DistanceTo(Vectord)
+- uid: Laga.Geometry.Vectord.DistanceTo*
   name: DistanceTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DistanceTo_
-  commentId: Overload:Laga.Geometry.Vector.DistanceTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_DistanceTo_
+  commentId: Overload:Laga.Geometry.Vectord.DistanceTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.DistanceTo
-  nameWithType: Vector.DistanceTo
-- uid: Laga.Geometry.Vector.DotProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: DotProduct(Vector, Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DotProduct_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.DotProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.DotProduct(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Vector.DotProduct(Vector, Vector)
-- uid: Laga.Geometry.Vector.DotProduct*
+  fullName: Laga.Geometry.Vectord.DistanceTo
+  nameWithType: Vectord.DistanceTo
+- uid: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: DotProduct(Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_DotProduct_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.DotProduct(Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: DotProduct(Vectord, Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_DotProduct_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.DotProduct(Vectord, Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.DotProduct*
   name: DotProduct
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DotProduct_
-  commentId: Overload:Laga.Geometry.Vector.DotProduct
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_DotProduct_
+  commentId: Overload:Laga.Geometry.Vectord.DotProduct
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.DotProduct
-  nameWithType: Vector.DotProduct
-- uid: Laga.Geometry.Vector.EqualTo(Laga.Geometry.Vector)
-  name: EqualTo(Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_EqualTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.EqualTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.EqualTo(Laga.Geometry.Vector)
-  nameWithType: Vector.EqualTo(Vector)
-- uid: Laga.Geometry.Vector.EqualTo*
+  fullName: Laga.Geometry.Vectord.DotProduct
+  nameWithType: Vectord.DotProduct
+- uid: Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  name: EqualTo(Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_EqualTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  nameWithType: Vectord.EqualTo(Vectord)
+- uid: Laga.Geometry.Vectord.EqualTo*
   name: EqualTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_EqualTo_
-  commentId: Overload:Laga.Geometry.Vector.EqualTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_EqualTo_
+  commentId: Overload:Laga.Geometry.Vectord.EqualTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.EqualTo
-  nameWithType: Vector.EqualTo
-- uid: Laga.Geometry.Vector.IsOrthogonalTo(Laga.Geometry.Vector,System.Double)
-  name: IsOrthogonalTo(Vector, Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsOrthogonalTo_Laga_Geometry_Vector_System_Double_
-  commentId: M:Laga.Geometry.Vector.IsOrthogonalTo(Laga.Geometry.Vector,System.Double)
-  fullName: Laga.Geometry.Vector.IsOrthogonalTo(Laga.Geometry.Vector, System.Double)
-  nameWithType: Vector.IsOrthogonalTo(Vector, Double)
-- uid: Laga.Geometry.Vector.IsOrthogonalTo*
+  fullName: Laga.Geometry.Vectord.EqualTo
+  nameWithType: Vectord.EqualTo
+- uid: Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  name: IsOrthogonalTo(Vectord, Double)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsOrthogonalTo_Laga_Geometry_Vectord_System_Double_
+  commentId: M:Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  fullName: Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord, System.Double)
+  nameWithType: Vectord.IsOrthogonalTo(Vectord, Double)
+- uid: Laga.Geometry.Vectord.IsOrthogonalTo*
   name: IsOrthogonalTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsOrthogonalTo_
-  commentId: Overload:Laga.Geometry.Vector.IsOrthogonalTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsOrthogonalTo_
+  commentId: Overload:Laga.Geometry.Vectord.IsOrthogonalTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.IsOrthogonalTo
-  nameWithType: Vector.IsOrthogonalTo
-- uid: Laga.Geometry.Vector.IsParallelTo(Laga.Geometry.Vector,System.Double)
-  name: IsParallelTo(Vector, Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsParallelTo_Laga_Geometry_Vector_System_Double_
-  commentId: M:Laga.Geometry.Vector.IsParallelTo(Laga.Geometry.Vector,System.Double)
-  fullName: Laga.Geometry.Vector.IsParallelTo(Laga.Geometry.Vector, System.Double)
-  nameWithType: Vector.IsParallelTo(Vector, Double)
-- uid: Laga.Geometry.Vector.IsParallelTo*
+  fullName: Laga.Geometry.Vectord.IsOrthogonalTo
+  nameWithType: Vectord.IsOrthogonalTo
+- uid: Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  name: IsParallelTo(Vectord, Double)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsParallelTo_Laga_Geometry_Vectord_System_Double_
+  commentId: M:Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  fullName: Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord, System.Double)
+  nameWithType: Vectord.IsParallelTo(Vectord, Double)
+- uid: Laga.Geometry.Vectord.IsParallelTo*
   name: IsParallelTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsParallelTo_
-  commentId: Overload:Laga.Geometry.Vector.IsParallelTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsParallelTo_
+  commentId: Overload:Laga.Geometry.Vectord.IsParallelTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.IsParallelTo
-  nameWithType: Vector.IsParallelTo
-- uid: Laga.Geometry.Vector.IsVectorCero(System.Double)
+  fullName: Laga.Geometry.Vectord.IsParallelTo
+  nameWithType: Vectord.IsParallelTo
+- uid: Laga.Geometry.Vectord.IsVectorCero(System.Double)
   name: IsVectorCero(Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsVectorCero_System_Double_
-  commentId: M:Laga.Geometry.Vector.IsVectorCero(System.Double)
-  fullName: Laga.Geometry.Vector.IsVectorCero(System.Double)
-  nameWithType: Vector.IsVectorCero(Double)
-- uid: Laga.Geometry.Vector.IsVectorCero*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsVectorCero_System_Double_
+  commentId: M:Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  fullName: Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  nameWithType: Vectord.IsVectorCero(Double)
+- uid: Laga.Geometry.Vectord.IsVectorCero*
   name: IsVectorCero
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsVectorCero_
-  commentId: Overload:Laga.Geometry.Vector.IsVectorCero
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_IsVectorCero_
+  commentId: Overload:Laga.Geometry.Vectord.IsVectorCero
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.IsVectorCero
-  nameWithType: Vector.IsVectorCero
-- uid: Laga.Geometry.Vector.Normalize
+  fullName: Laga.Geometry.Vectord.IsVectorCero
+  nameWithType: Vectord.IsVectorCero
+- uid: Laga.Geometry.Vectord.Normalize
   name: Normalize()
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Normalize
-  commentId: M:Laga.Geometry.Vector.Normalize
-  fullName: Laga.Geometry.Vector.Normalize()
-  nameWithType: Vector.Normalize()
-- uid: Laga.Geometry.Vector.Normalize*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Normalize
+  commentId: M:Laga.Geometry.Vectord.Normalize
+  fullName: Laga.Geometry.Vectord.Normalize()
+  nameWithType: Vectord.Normalize()
+- uid: Laga.Geometry.Vectord.Normalize*
   name: Normalize
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Normalize_
-  commentId: Overload:Laga.Geometry.Vector.Normalize
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Normalize_
+  commentId: Overload:Laga.Geometry.Vectord.Normalize
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Normalize
-  nameWithType: Vector.Normalize
-- uid: Laga.Geometry.Vector.op_Addition(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Addition(Vector, Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Addition_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.op_Addition(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.Addition(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Vector.Addition(Vector, Vector)
-- uid: Laga.Geometry.Vector.op_Addition*
+  fullName: Laga.Geometry.Vectord.Normalize
+  nameWithType: Vectord.Normalize
+- uid: Laga.Geometry.Vectord.op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Addition(Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Addition_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.Addition(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.Addition(Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.op_Addition*
   name: Addition
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Addition_
-  commentId: Overload:Laga.Geometry.Vector.op_Addition
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Addition_
+  commentId: Overload:Laga.Geometry.Vectord.op_Addition
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Addition
-  nameWithType: Vector.Addition
-- uid: Laga.Geometry.Vector.op_Multiply(Laga.Geometry.Vector,System.Double)
-  name: Multiply(Vector, Double)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Multiply_Laga_Geometry_Vector_System_Double_
-  commentId: M:Laga.Geometry.Vector.op_Multiply(Laga.Geometry.Vector,System.Double)
-  fullName: Laga.Geometry.Vector.Multiply(Laga.Geometry.Vector, System.Double)
-  nameWithType: Vector.Multiply(Vector, Double)
-- uid: Laga.Geometry.Vector.op_Multiply*
+  fullName: Laga.Geometry.Vectord.Addition
+  nameWithType: Vectord.Addition
+- uid: Laga.Geometry.Vectord.op_Multiply(Laga.Geometry.Vectord,System.Double)
+  name: Multiply(Vectord, Double)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Multiply_Laga_Geometry_Vectord_System_Double_
+  commentId: M:Laga.Geometry.Vectord.op_Multiply(Laga.Geometry.Vectord,System.Double)
+  fullName: Laga.Geometry.Vectord.Multiply(Laga.Geometry.Vectord, System.Double)
+  nameWithType: Vectord.Multiply(Vectord, Double)
+- uid: Laga.Geometry.Vectord.op_Multiply*
   name: Multiply
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Multiply_
-  commentId: Overload:Laga.Geometry.Vector.op_Multiply
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Multiply_
+  commentId: Overload:Laga.Geometry.Vectord.op_Multiply
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Multiply
-  nameWithType: Vector.Multiply
-- uid: Laga.Geometry.Vector.op_Subtraction(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  name: Subtraction(Vector, Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Subtraction_Laga_Geometry_Vector_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.op_Subtraction(Laga.Geometry.Vector,Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.Subtraction(Laga.Geometry.Vector, Laga.Geometry.Vector)
-  nameWithType: Vector.Subtraction(Vector, Vector)
-- uid: Laga.Geometry.Vector.op_Subtraction*
+  fullName: Laga.Geometry.Vectord.Multiply
+  nameWithType: Vectord.Multiply
+- uid: Laga.Geometry.Vectord.op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  name: Subtraction(Vectord, Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Subtraction_Laga_Geometry_Vectord_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.Subtraction(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  nameWithType: Vectord.Subtraction(Vectord, Vectord)
+- uid: Laga.Geometry.Vectord.op_Subtraction*
   name: Subtraction
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Subtraction_
-  commentId: Overload:Laga.Geometry.Vector.op_Subtraction
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_op_Subtraction_
+  commentId: Overload:Laga.Geometry.Vectord.op_Subtraction
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Subtraction
-  nameWithType: Vector.Subtraction
-- uid: Laga.Geometry.Vector.OrthogonalTo(Laga.Geometry.Vector)
-  name: OrthogonalTo(Vector)
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_OrthogonalTo_Laga_Geometry_Vector_
-  commentId: M:Laga.Geometry.Vector.OrthogonalTo(Laga.Geometry.Vector)
-  fullName: Laga.Geometry.Vector.OrthogonalTo(Laga.Geometry.Vector)
-  nameWithType: Vector.OrthogonalTo(Vector)
-- uid: Laga.Geometry.Vector.OrthogonalTo*
+  fullName: Laga.Geometry.Vectord.Subtraction
+  nameWithType: Vectord.Subtraction
+- uid: Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  name: OrthogonalTo(Vectord)
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_OrthogonalTo_Laga_Geometry_Vectord_
+  commentId: M:Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  fullName: Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  nameWithType: Vectord.OrthogonalTo(Vectord)
+- uid: Laga.Geometry.Vectord.OrthogonalTo*
   name: OrthogonalTo
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_OrthogonalTo_
-  commentId: Overload:Laga.Geometry.Vector.OrthogonalTo
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_OrthogonalTo_
+  commentId: Overload:Laga.Geometry.Vectord.OrthogonalTo
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.OrthogonalTo
-  nameWithType: Vector.OrthogonalTo
-- uid: Laga.Geometry.Vector.ToString
+  fullName: Laga.Geometry.Vectord.OrthogonalTo
+  nameWithType: Vectord.OrthogonalTo
+- uid: Laga.Geometry.Vectord.ToString
   name: ToString()
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ToString
-  commentId: M:Laga.Geometry.Vector.ToString
-  fullName: Laga.Geometry.Vector.ToString()
-  nameWithType: Vector.ToString()
-- uid: Laga.Geometry.Vector.ToString*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ToString
+  commentId: M:Laga.Geometry.Vectord.ToString
+  fullName: Laga.Geometry.Vectord.ToString()
+  nameWithType: Vectord.ToString()
+- uid: Laga.Geometry.Vectord.ToString*
   name: ToString
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ToString_
-  commentId: Overload:Laga.Geometry.Vector.ToString
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_ToString_
+  commentId: Overload:Laga.Geometry.Vectord.ToString
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.ToString
-  nameWithType: Vector.ToString
-- uid: Laga.Geometry.Vector.X
+  fullName: Laga.Geometry.Vectord.ToString
+  nameWithType: Vectord.ToString
+- uid: Laga.Geometry.Vectord.X
   name: X
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_X
-  commentId: P:Laga.Geometry.Vector.X
-  fullName: Laga.Geometry.Vector.X
-  nameWithType: Vector.X
-- uid: Laga.Geometry.Vector.X*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_X
+  commentId: P:Laga.Geometry.Vectord.X
+  fullName: Laga.Geometry.Vectord.X
+  nameWithType: Vectord.X
+- uid: Laga.Geometry.Vectord.X*
   name: X
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_X_
-  commentId: Overload:Laga.Geometry.Vector.X
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_X_
+  commentId: Overload:Laga.Geometry.Vectord.X
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.X
-  nameWithType: Vector.X
-- uid: Laga.Geometry.Vector.Y
+  fullName: Laga.Geometry.Vectord.X
+  nameWithType: Vectord.X
+- uid: Laga.Geometry.Vectord.Y
   name: Y
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Y
-  commentId: P:Laga.Geometry.Vector.Y
-  fullName: Laga.Geometry.Vector.Y
-  nameWithType: Vector.Y
-- uid: Laga.Geometry.Vector.Y*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Y
+  commentId: P:Laga.Geometry.Vectord.Y
+  fullName: Laga.Geometry.Vectord.Y
+  nameWithType: Vectord.Y
+- uid: Laga.Geometry.Vectord.Y*
   name: Y
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Y_
-  commentId: Overload:Laga.Geometry.Vector.Y
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Y_
+  commentId: Overload:Laga.Geometry.Vectord.Y
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Y
-  nameWithType: Vector.Y
-- uid: Laga.Geometry.Vector.Z
+  fullName: Laga.Geometry.Vectord.Y
+  nameWithType: Vectord.Y
+- uid: Laga.Geometry.Vectord.Z
   name: Z
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Z
-  commentId: P:Laga.Geometry.Vector.Z
-  fullName: Laga.Geometry.Vector.Z
-  nameWithType: Vector.Z
-- uid: Laga.Geometry.Vector.Z*
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Z
+  commentId: P:Laga.Geometry.Vectord.Z
+  fullName: Laga.Geometry.Vectord.Z
+  nameWithType: Vectord.Z
+- uid: Laga.Geometry.Vectord.Z*
   name: Z
-  href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Z_
-  commentId: Overload:Laga.Geometry.Vector.Z
+  href: api/Laga.Geometry.Vectord.html#Laga_Geometry_Vectord_Z_
+  commentId: Overload:Laga.Geometry.Vectord.Z
   isSpec: "True"
-  fullName: Laga.Geometry.Vector.Z
-  nameWithType: Vector.Z
+  fullName: Laga.Geometry.Vectord.Z
+  nameWithType: Vectord.Z
 - uid: Laga.IO
   name: Laga.IO
   href: api/Laga.IO.html
@@ -3174,54 +3205,92 @@ references:
   commentId: N:Laga.Numbers
   fullName: Laga.Numbers
   nameWithType: Laga.Numbers
-- uid: Laga.Numbers.Maths
-  name: Maths
-  href: api/Laga.Numbers.Maths.html
-  commentId: T:Laga.Numbers.Maths
-  fullName: Laga.Numbers.Maths
-  nameWithType: Maths
-- uid: Laga.Numbers.Maths.Deg2Rad(System.Double)
+- uid: Laga.Numbers.Function
+  name: Function
+  href: api/Laga.Numbers.Function.html
+  commentId: T:Laga.Numbers.Function
+  fullName: Laga.Numbers.Function
+  nameWithType: Function
+- uid: Laga.Numbers.Function.Deg2Rad(System.Double)
   name: Deg2Rad(Double)
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Deg2Rad_System_Double_
-  commentId: M:Laga.Numbers.Maths.Deg2Rad(System.Double)
-  fullName: Laga.Numbers.Maths.Deg2Rad(System.Double)
-  nameWithType: Maths.Deg2Rad(Double)
-- uid: Laga.Numbers.Maths.Deg2Rad*
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Deg2Rad_System_Double_
+  commentId: M:Laga.Numbers.Function.Deg2Rad(System.Double)
+  fullName: Laga.Numbers.Function.Deg2Rad(System.Double)
+  nameWithType: Function.Deg2Rad(Double)
+- uid: Laga.Numbers.Function.Deg2Rad*
   name: Deg2Rad
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Deg2Rad_
-  commentId: Overload:Laga.Numbers.Maths.Deg2Rad
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Deg2Rad_
+  commentId: Overload:Laga.Numbers.Function.Deg2Rad
   isSpec: "True"
-  fullName: Laga.Numbers.Maths.Deg2Rad
-  nameWithType: Maths.Deg2Rad
-- uid: Laga.Numbers.Maths.NumberDistinct*
+  fullName: Laga.Numbers.Function.Deg2Rad
+  nameWithType: Function.Deg2Rad
+- uid: Laga.Numbers.Function.NumberDistinct*
   name: NumberDistinct
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_NumberDistinct_
-  commentId: Overload:Laga.Numbers.Maths.NumberDistinct
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_NumberDistinct_
+  commentId: Overload:Laga.Numbers.Function.NumberDistinct
   isSpec: "True"
-  fullName: Laga.Numbers.Maths.NumberDistinct
-  nameWithType: Maths.NumberDistinct
-- uid: Laga.Numbers.Maths.NumberDistinct``1(System.Collections.Generic.List{``0})
+  fullName: Laga.Numbers.Function.NumberDistinct
+  nameWithType: Function.NumberDistinct
+- uid: Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
   name: NumberDistinct<T>(List<T>)
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_NumberDistinct__1_System_Collections_Generic_List___0__
-  commentId: M:Laga.Numbers.Maths.NumberDistinct``1(System.Collections.Generic.List{``0})
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_NumberDistinct__1_System_Collections_Generic_List___0__
+  commentId: M:Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
   name.vb: NumberDistinct(Of T)(List(Of T))
-  fullName: Laga.Numbers.Maths.NumberDistinct<T>(System.Collections.Generic.List<T>)
-  fullName.vb: Laga.Numbers.Maths.NumberDistinct(Of T)(System.Collections.Generic.List(Of T))
-  nameWithType: Maths.NumberDistinct<T>(List<T>)
-  nameWithType.vb: Maths.NumberDistinct(Of T)(List(Of T))
-- uid: Laga.Numbers.Maths.Rad2Deg(System.Double)
+  fullName: Laga.Numbers.Function.NumberDistinct<T>(System.Collections.Generic.List<T>)
+  fullName.vb: Laga.Numbers.Function.NumberDistinct(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: Function.NumberDistinct<T>(List<T>)
+  nameWithType.vb: Function.NumberDistinct(Of T)(List(Of T))
+- uid: Laga.Numbers.Function.Rad2Deg(System.Double)
   name: Rad2Deg(Double)
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Rad2Deg_System_Double_
-  commentId: M:Laga.Numbers.Maths.Rad2Deg(System.Double)
-  fullName: Laga.Numbers.Maths.Rad2Deg(System.Double)
-  nameWithType: Maths.Rad2Deg(Double)
-- uid: Laga.Numbers.Maths.Rad2Deg*
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Rad2Deg_System_Double_
+  commentId: M:Laga.Numbers.Function.Rad2Deg(System.Double)
+  fullName: Laga.Numbers.Function.Rad2Deg(System.Double)
+  nameWithType: Function.Rad2Deg(Double)
+- uid: Laga.Numbers.Function.Rad2Deg*
   name: Rad2Deg
-  href: api/Laga.Numbers.Maths.html#Laga_Numbers_Maths_Rad2Deg_
-  commentId: Overload:Laga.Numbers.Maths.Rad2Deg
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Rad2Deg_
+  commentId: Overload:Laga.Numbers.Function.Rad2Deg
   isSpec: "True"
-  fullName: Laga.Numbers.Maths.Rad2Deg
-  nameWithType: Maths.Rad2Deg
+  fullName: Laga.Numbers.Function.Rad2Deg
+  nameWithType: Function.Rad2Deg
+- uid: Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: Sigmoid(Double, Double, Double, Double, Double, Double)
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: Function.Sigmoid(Double, Double, Double, Double, Double, Double)
+- uid: Laga.Numbers.Function.Sigmoid(System.Single)
+  name: Sigmoid(Single)
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_System_Single_
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Single)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Single)
+  nameWithType: Function.Sigmoid(Single)
+- uid: Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: Sigmoid(Single, Single, Single, Single, Single, Single)
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Function.Sigmoid(Single, Single, Single, Single, Single, Single)
+- uid: Laga.Numbers.Function.Sigmoid*
+  name: Sigmoid
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_
+  commentId: Overload:Laga.Numbers.Function.Sigmoid
+  isSpec: "True"
+  fullName: Laga.Numbers.Function.Sigmoid
+  nameWithType: Function.Sigmoid
+- uid: Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  name: ThreeXplusOne(Int32)
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_ThreeXplusOne_System_Int32_
+  commentId: M:Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  fullName: Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  nameWithType: Function.ThreeXplusOne(Int32)
+- uid: Laga.Numbers.Function.ThreeXplusOne*
+  name: ThreeXplusOne
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_ThreeXplusOne_
+  commentId: Overload:Laga.Numbers.Function.ThreeXplusOne
+  isSpec: "True"
+  fullName: Laga.Numbers.Function.ThreeXplusOne
+  nameWithType: Function.ThreeXplusOne
 - uid: Laga.Numbers.Rand
   name: Rand
   href: api/Laga.Numbers.Rand.html
@@ -3479,105 +3548,137 @@ references:
   commentId: N:LagaUnity
   fullName: LagaUnity
   nameWithType: LagaUnity
-- uid: LagaUnity.Lne
-  name: Lne
-  href: api/LagaUnity.Lne.html
-  commentId: T:LagaUnity.Lne
-  fullName: LagaUnity.Lne
-  nameWithType: Lne
-- uid: LagaUnity.Lne.#ctor(LagaUnity.Vec,LagaUnity.Vec)
-  name: Lne(Vec, Vec)
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne__ctor_LagaUnity_Vec_LagaUnity_Vec_
-  commentId: M:LagaUnity.Lne.#ctor(LagaUnity.Vec,LagaUnity.Vec)
-  fullName: LagaUnity.Lne.Lne(LagaUnity.Vec, LagaUnity.Vec)
-  nameWithType: Lne.Lne(Vec, Vec)
-- uid: LagaUnity.Lne.#ctor*
-  name: Lne
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne__ctor_
-  commentId: Overload:LagaUnity.Lne.#ctor
-  isSpec: "True"
-  fullName: LagaUnity.Lne.Lne
-  nameWithType: Lne.Lne
-- uid: LagaUnity.Lne.Draw(System.Single,UnityEngine.Color)
-  name: Draw(Single, Color)
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_Draw_System_Single_UnityEngine_Color_
-  commentId: M:LagaUnity.Lne.Draw(System.Single,UnityEngine.Color)
-  fullName: LagaUnity.Lne.Draw(System.Single, UnityEngine.Color)
-  nameWithType: Lne.Draw(Single, Color)
-- uid: LagaUnity.Lne.Draw*
+- uid: LagaUnity.Draw
   name: Draw
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_Draw_
-  commentId: Overload:LagaUnity.Lne.Draw
+  href: api/LagaUnity.Draw.html
+  commentId: T:LagaUnity.Draw
+  fullName: LagaUnity.Draw
+  nameWithType: Draw
+- uid: LagaUnity.Draw.Line(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  name: Line(Vectorf, Vectorf, Single, Color)
+  href: api/LagaUnity.Draw.html#LagaUnity_Draw_Line_LagaUnity_Vectorf_LagaUnity_Vectorf_System_Single_UnityEngine_Color_
+  commentId: M:LagaUnity.Draw.Line(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  fullName: LagaUnity.Draw.Line(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+  nameWithType: Draw.Line(Vectorf, Vectorf, Single, Color)
+- uid: LagaUnity.Draw.Line*
+  name: Line
+  href: api/LagaUnity.Draw.html#LagaUnity_Draw_Line_
+  commentId: Overload:LagaUnity.Draw.Line
   isSpec: "True"
-  fullName: LagaUnity.Lne.Draw
-  nameWithType: Lne.Draw
-- uid: LagaUnity.Lne.DrawLine(LagaUnity.Vec,LagaUnity.Vec,System.Single,UnityEngine.Color)
-  name: DrawLine(Vec, Vec, Single, Color)
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_DrawLine_LagaUnity_Vec_LagaUnity_Vec_System_Single_UnityEngine_Color_
-  commentId: M:LagaUnity.Lne.DrawLine(LagaUnity.Vec,LagaUnity.Vec,System.Single,UnityEngine.Color)
-  fullName: LagaUnity.Lne.DrawLine(LagaUnity.Vec, LagaUnity.Vec, System.Single, UnityEngine.Color)
-  nameWithType: Lne.DrawLine(Vec, Vec, Single, Color)
-- uid: LagaUnity.Lne.DrawLine*
+  fullName: LagaUnity.Draw.Line
+  nameWithType: Draw.Line
+- uid: LagaUnity.Draw.Point(LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  name: Point(Vectorf, Single, Color)
+  href: api/LagaUnity.Draw.html#LagaUnity_Draw_Point_LagaUnity_Vectorf_System_Single_UnityEngine_Color_
+  commentId: M:LagaUnity.Draw.Point(LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  fullName: LagaUnity.Draw.Point(LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+  nameWithType: Draw.Point(Vectorf, Single, Color)
+- uid: LagaUnity.Draw.Point*
+  name: Point
+  href: api/LagaUnity.Draw.html#LagaUnity_Draw_Point_
+  commentId: Overload:LagaUnity.Draw.Point
+  isSpec: "True"
+  fullName: LagaUnity.Draw.Point
+  nameWithType: Draw.Point
+- uid: LagaUnity.Line
+  name: Line
+  href: api/LagaUnity.Line.html
+  commentId: T:LagaUnity.Line
+  fullName: LagaUnity.Line
+  nameWithType: Line
+- uid: LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: Line(Vectorf, Vectorf)
+  href: api/LagaUnity.Line.html#LagaUnity_Line__ctor_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Line.Line(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Line.Line(Vectorf, Vectorf)
+- uid: LagaUnity.Line.#ctor*
+  name: Line
+  href: api/LagaUnity.Line.html#LagaUnity_Line__ctor_
+  commentId: Overload:LagaUnity.Line.#ctor
+  isSpec: "True"
+  fullName: LagaUnity.Line.Line
+  nameWithType: Line.Line
+- uid: LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+  name: Draw(Single, Color)
+  href: api/LagaUnity.Line.html#LagaUnity_Line_Draw_System_Single_UnityEngine_Color_
+  commentId: M:LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+  fullName: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+  nameWithType: Line.Draw(Single, Color)
+- uid: LagaUnity.Line.Draw*
+  name: Draw
+  href: api/LagaUnity.Line.html#LagaUnity_Line_Draw_
+  commentId: Overload:LagaUnity.Line.Draw
+  isSpec: "True"
+  fullName: LagaUnity.Line.Draw
+  nameWithType: Line.Draw
+- uid: LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  name: DrawLine(Vectorf, Vectorf, Single, Color)
+  href: api/LagaUnity.Line.html#LagaUnity_Line_DrawLine_LagaUnity_Vectorf_LagaUnity_Vectorf_System_Single_UnityEngine_Color_
+  commentId: M:LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  fullName: LagaUnity.Line.DrawLine(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+  nameWithType: Line.DrawLine(Vectorf, Vectorf, Single, Color)
+- uid: LagaUnity.Line.DrawLine*
   name: DrawLine
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_DrawLine_
-  commentId: Overload:LagaUnity.Lne.DrawLine
+  href: api/LagaUnity.Line.html#LagaUnity_Line_DrawLine_
+  commentId: Overload:LagaUnity.Line.DrawLine
   isSpec: "True"
-  fullName: LagaUnity.Lne.DrawLine
-  nameWithType: Lne.DrawLine
-- uid: LagaUnity.Lne.MidPoint
+  fullName: LagaUnity.Line.DrawLine
+  nameWithType: Line.DrawLine
+- uid: LagaUnity.Line.MidPoint
   name: MidPoint()
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_MidPoint
-  commentId: M:LagaUnity.Lne.MidPoint
-  fullName: LagaUnity.Lne.MidPoint()
-  nameWithType: Lne.MidPoint()
-- uid: LagaUnity.Lne.MidPoint*
+  href: api/LagaUnity.Line.html#LagaUnity_Line_MidPoint
+  commentId: M:LagaUnity.Line.MidPoint
+  fullName: LagaUnity.Line.MidPoint()
+  nameWithType: Line.MidPoint()
+- uid: LagaUnity.Line.MidPoint*
   name: MidPoint
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_MidPoint_
-  commentId: Overload:LagaUnity.Lne.MidPoint
+  href: api/LagaUnity.Line.html#LagaUnity_Line_MidPoint_
+  commentId: Overload:LagaUnity.Line.MidPoint
   isSpec: "True"
-  fullName: LagaUnity.Lne.MidPoint
-  nameWithType: Lne.MidPoint
-- uid: LagaUnity.Lne.PointA
+  fullName: LagaUnity.Line.MidPoint
+  nameWithType: Line.MidPoint
+- uid: LagaUnity.Line.PointA
   name: PointA
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_PointA
-  commentId: P:LagaUnity.Lne.PointA
-  fullName: LagaUnity.Lne.PointA
-  nameWithType: Lne.PointA
-- uid: LagaUnity.Lne.PointA*
+  href: api/LagaUnity.Line.html#LagaUnity_Line_PointA
+  commentId: P:LagaUnity.Line.PointA
+  fullName: LagaUnity.Line.PointA
+  nameWithType: Line.PointA
+- uid: LagaUnity.Line.PointA*
   name: PointA
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_PointA_
-  commentId: Overload:LagaUnity.Lne.PointA
+  href: api/LagaUnity.Line.html#LagaUnity_Line_PointA_
+  commentId: Overload:LagaUnity.Line.PointA
   isSpec: "True"
-  fullName: LagaUnity.Lne.PointA
-  nameWithType: Lne.PointA
-- uid: LagaUnity.Lne.PointB
+  fullName: LagaUnity.Line.PointA
+  nameWithType: Line.PointA
+- uid: LagaUnity.Line.PointB
   name: PointB
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_PointB
-  commentId: P:LagaUnity.Lne.PointB
-  fullName: LagaUnity.Lne.PointB
-  nameWithType: Lne.PointB
-- uid: LagaUnity.Lne.PointB*
+  href: api/LagaUnity.Line.html#LagaUnity_Line_PointB
+  commentId: P:LagaUnity.Line.PointB
+  fullName: LagaUnity.Line.PointB
+  nameWithType: Line.PointB
+- uid: LagaUnity.Line.PointB*
   name: PointB
-  href: api/LagaUnity.Lne.html#LagaUnity_Lne_PointB_
-  commentId: Overload:LagaUnity.Lne.PointB
+  href: api/LagaUnity.Line.html#LagaUnity_Line_PointB_
+  commentId: Overload:LagaUnity.Line.PointB
   isSpec: "True"
-  fullName: LagaUnity.Lne.PointB
-  nameWithType: Lne.PointB
+  fullName: LagaUnity.Line.PointB
+  nameWithType: Line.PointB
 - uid: LagaUnity.Polygon
   name: Polygon
   href: api/LagaUnity.Polygon.html
   commentId: T:LagaUnity.Polygon
   fullName: LagaUnity.Polygon
   nameWithType: Polygon
-- uid: LagaUnity.Polygon.#ctor(System.Collections.Generic.List{LagaUnity.Vec})
-  name: Polygon(List<Vec>)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon__ctor_System_Collections_Generic_List_LagaUnity_Vec__
-  commentId: M:LagaUnity.Polygon.#ctor(System.Collections.Generic.List{LagaUnity.Vec})
-  name.vb: Polygon(List(Of Vec))
-  fullName: LagaUnity.Polygon.Polygon(System.Collections.Generic.List<LagaUnity.Vec>)
-  fullName.vb: LagaUnity.Polygon.Polygon(System.Collections.Generic.List(Of LagaUnity.Vec))
-  nameWithType: Polygon.Polygon(List<Vec>)
-  nameWithType.vb: Polygon.Polygon(List(Of Vec))
+- uid: LagaUnity.Polygon.#ctor(System.Collections.Generic.IEnumerable{LagaUnity.Vectorf})
+  name: Polygon(IEnumerable<Vectorf>)
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon__ctor_System_Collections_Generic_IEnumerable_LagaUnity_Vectorf__
+  commentId: M:LagaUnity.Polygon.#ctor(System.Collections.Generic.IEnumerable{LagaUnity.Vectorf})
+  name.vb: Polygon(IEnumerable(Of Vectorf))
+  fullName: LagaUnity.Polygon.Polygon(System.Collections.Generic.IEnumerable<LagaUnity.Vectorf>)
+  fullName.vb: LagaUnity.Polygon.Polygon(System.Collections.Generic.IEnumerable(Of LagaUnity.Vectorf))
+  nameWithType: Polygon.Polygon(IEnumerable<Vectorf>)
+  nameWithType.vb: Polygon.Polygon(IEnumerable(Of Vectorf))
 - uid: LagaUnity.Polygon.#ctor*
   name: Polygon
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon__ctor_
@@ -3585,12 +3686,12 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Polygon
   nameWithType: Polygon.Polygon
-- uid: LagaUnity.Polygon.Add(LagaUnity.Vec)
-  name: Add(Vec)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Add_LagaUnity_Vec_
-  commentId: M:LagaUnity.Polygon.Add(LagaUnity.Vec)
-  fullName: LagaUnity.Polygon.Add(LagaUnity.Vec)
-  nameWithType: Polygon.Add(Vec)
+- uid: LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+  name: Add(Vectorf)
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Add_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+  fullName: LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+  nameWithType: Polygon.Add(Vectorf)
 - uid: LagaUnity.Polygon.Add*
   name: Add
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Add_
@@ -3598,6 +3699,32 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Add
   nameWithType: Polygon.Add
+- uid: LagaUnity.Polygon.Area
+  name: Area()
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Area
+  commentId: M:LagaUnity.Polygon.Area
+  fullName: LagaUnity.Polygon.Area()
+  nameWithType: Polygon.Area()
+- uid: LagaUnity.Polygon.Area*
+  name: Area
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Area_
+  commentId: Overload:LagaUnity.Polygon.Area
+  isSpec: "True"
+  fullName: LagaUnity.Polygon.Area
+  nameWithType: Polygon.Area
+- uid: LagaUnity.Polygon.Center
+  name: Center()
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Center
+  commentId: M:LagaUnity.Polygon.Center
+  fullName: LagaUnity.Polygon.Center()
+  nameWithType: Polygon.Center()
+- uid: LagaUnity.Polygon.Center*
+  name: Center
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Center_
+  commentId: Overload:LagaUnity.Polygon.Center
+  isSpec: "True"
+  fullName: LagaUnity.Polygon.Center
+  nameWithType: Polygon.Center
 - uid: LagaUnity.Polygon.Clear
   name: Clear()
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Clear
@@ -3611,12 +3738,12 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Clear
   nameWithType: Polygon.Clear
-- uid: LagaUnity.Polygon.Contains(LagaUnity.Vec)
-  name: Contains(Vec)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Contains_LagaUnity_Vec_
-  commentId: M:LagaUnity.Polygon.Contains(LagaUnity.Vec)
-  fullName: LagaUnity.Polygon.Contains(LagaUnity.Vec)
-  nameWithType: Polygon.Contains(Vec)
+- uid: LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+  name: Contains(Vectorf)
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Contains_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+  fullName: LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+  nameWithType: Polygon.Contains(Vectorf)
 - uid: LagaUnity.Polygon.Contains*
   name: Contains
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Contains_
@@ -3624,15 +3751,15 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Contains
   nameWithType: Polygon.Contains
-- uid: LagaUnity.Polygon.CopyTo(LagaUnity.Vec[],System.Int32)
-  name: CopyTo(Vec[], Int32)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_CopyTo_LagaUnity_Vec___System_Int32_
-  commentId: M:LagaUnity.Polygon.CopyTo(LagaUnity.Vec[],System.Int32)
-  name.vb: CopyTo(Vec(), Int32)
-  fullName: LagaUnity.Polygon.CopyTo(LagaUnity.Vec[], System.Int32)
-  fullName.vb: LagaUnity.Polygon.CopyTo(LagaUnity.Vec(), System.Int32)
-  nameWithType: Polygon.CopyTo(Vec[], Int32)
-  nameWithType.vb: Polygon.CopyTo(Vec(), Int32)
+- uid: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[],System.Int32)
+  name: CopyTo(Vectorf[], Int32)
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_CopyTo_LagaUnity_Vectorf___System_Int32_
+  commentId: M:LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[],System.Int32)
+  name.vb: CopyTo(Vectorf(), Int32)
+  fullName: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[], System.Int32)
+  fullName.vb: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf(), System.Int32)
+  nameWithType: Polygon.CopyTo(Vectorf[], Int32)
+  nameWithType.vb: Polygon.CopyTo(Vectorf(), Int32)
 - uid: LagaUnity.Polygon.CopyTo*
   name: CopyTo
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_CopyTo_
@@ -3653,19 +3780,6 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Count
   nameWithType: Polygon.Count
-- uid: LagaUnity.Polygon.DrawPolygon(System.Single,UnityEngine.Color,System.Boolean)
-  name: DrawPolygon(Single, Color, Boolean)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_DrawPolygon_System_Single_UnityEngine_Color_System_Boolean_
-  commentId: M:LagaUnity.Polygon.DrawPolygon(System.Single,UnityEngine.Color,System.Boolean)
-  fullName: LagaUnity.Polygon.DrawPolygon(System.Single, UnityEngine.Color, System.Boolean)
-  nameWithType: Polygon.DrawPolygon(Single, Color, Boolean)
-- uid: LagaUnity.Polygon.DrawPolygon*
-  name: DrawPolygon
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_DrawPolygon_
-  commentId: Overload:LagaUnity.Polygon.DrawPolygon
-  isSpec: "True"
-  fullName: LagaUnity.Polygon.DrawPolygon
-  nameWithType: Polygon.DrawPolygon
 - uid: LagaUnity.Polygon.GetEnumerator
   name: GetEnumerator()
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_GetEnumerator
@@ -3679,6 +3793,19 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.GetEnumerator
   nameWithType: Polygon.GetEnumerator
+- uid: LagaUnity.Polygon.IsConvex
+  name: IsConvex()
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_IsConvex
+  commentId: M:LagaUnity.Polygon.IsConvex
+  fullName: LagaUnity.Polygon.IsConvex()
+  nameWithType: Polygon.IsConvex()
+- uid: LagaUnity.Polygon.IsConvex*
+  name: IsConvex
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_IsConvex_
+  commentId: Overload:LagaUnity.Polygon.IsConvex
+  isSpec: "True"
+  fullName: LagaUnity.Polygon.IsConvex
+  nameWithType: Polygon.IsConvex
 - uid: LagaUnity.Polygon.IsReadOnly
   name: IsReadOnly
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_IsReadOnly
@@ -3693,11 +3820,11 @@ references:
   fullName: LagaUnity.Polygon.IsReadOnly
   nameWithType: Polygon.IsReadOnly
 - uid: LagaUnity.Polygon.Length
-  name: Length
+  name: Length()
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Length
-  commentId: P:LagaUnity.Polygon.Length
-  fullName: LagaUnity.Polygon.Length
-  nameWithType: Polygon.Length
+  commentId: M:LagaUnity.Polygon.Length
+  fullName: LagaUnity.Polygon.Length()
+  nameWithType: Polygon.Length()
 - uid: LagaUnity.Polygon.Length*
   name: Length
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Length_
@@ -3705,12 +3832,12 @@ references:
   isSpec: "True"
   fullName: LagaUnity.Polygon.Length
   nameWithType: Polygon.Length
-- uid: LagaUnity.Polygon.Remove(LagaUnity.Vec)
-  name: Remove(Vec)
-  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Remove_LagaUnity_Vec_
-  commentId: M:LagaUnity.Polygon.Remove(LagaUnity.Vec)
-  fullName: LagaUnity.Polygon.Remove(LagaUnity.Vec)
-  nameWithType: Polygon.Remove(Vec)
+- uid: LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+  name: Remove(Vectorf)
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Remove_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+  fullName: LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+  nameWithType: Polygon.Remove(Vectorf)
 - uid: LagaUnity.Polygon.Remove*
   name: Remove
   href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_Remove_
@@ -3761,67 +3888,247 @@ references:
   fullName: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator
   nameWithType: Polygon.IEnumerable.GetEnumerator
   nameWithType.vb: Polygon.System.Collections.IEnumerable.GetEnumerator
-- uid: LagaUnity.Vec
-  name: Vec
-  href: api/LagaUnity.Vec.html
-  commentId: T:LagaUnity.Vec
-  fullName: LagaUnity.Vec
-  nameWithType: Vec
-- uid: LagaUnity.Vec.#ctor(System.Single,System.Single,System.Single)
-  name: Vec(Single, Single, Single)
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec__ctor_System_Single_System_Single_System_Single_
-  commentId: M:LagaUnity.Vec.#ctor(System.Single,System.Single,System.Single)
-  fullName: LagaUnity.Vec.Vec(System.Single, System.Single, System.Single)
-  nameWithType: Vec.Vec(Single, Single, Single)
-- uid: LagaUnity.Vec.#ctor(UnityEngine.Vector3)
-  name: Vec(Vector3)
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec__ctor_UnityEngine_Vector3_
-  commentId: M:LagaUnity.Vec.#ctor(UnityEngine.Vector3)
-  fullName: LagaUnity.Vec.Vec(UnityEngine.Vector3)
-  nameWithType: Vec.Vec(Vector3)
-- uid: LagaUnity.Vec.#ctor*
-  name: Vec
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec__ctor_
-  commentId: Overload:LagaUnity.Vec.#ctor
+- uid: LagaUnity.Polygon.UpdateDraw
+  name: UpdateDraw()
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_UpdateDraw
+  commentId: M:LagaUnity.Polygon.UpdateDraw
+  fullName: LagaUnity.Polygon.UpdateDraw()
+  nameWithType: Polygon.UpdateDraw()
+- uid: LagaUnity.Polygon.UpdateDraw*
+  name: UpdateDraw
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_UpdateDraw_
+  commentId: Overload:LagaUnity.Polygon.UpdateDraw
   isSpec: "True"
-  fullName: LagaUnity.Vec.Vec
-  nameWithType: Vec.Vec
-- uid: LagaUnity.Vec.Draw(System.Single,UnityEngine.Color)
-  name: Draw(Single, Color)
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_Draw_System_Single_UnityEngine_Color_
-  commentId: M:LagaUnity.Vec.Draw(System.Single,UnityEngine.Color)
-  fullName: LagaUnity.Vec.Draw(System.Single, UnityEngine.Color)
-  nameWithType: Vec.Draw(Single, Color)
-- uid: LagaUnity.Vec.Draw*
-  name: Draw
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_Draw_
-  commentId: Overload:LagaUnity.Vec.Draw
+  fullName: LagaUnity.Polygon.UpdateDraw
+  nameWithType: Polygon.UpdateDraw
+- uid: LagaUnity.Polygon.VectorList
+  name: VectorList
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_VectorList
+  commentId: P:LagaUnity.Polygon.VectorList
+  fullName: LagaUnity.Polygon.VectorList
+  nameWithType: Polygon.VectorList
+- uid: LagaUnity.Polygon.VectorList*
+  name: VectorList
+  href: api/LagaUnity.Polygon.html#LagaUnity_Polygon_VectorList_
+  commentId: Overload:LagaUnity.Polygon.VectorList
   isSpec: "True"
-  fullName: LagaUnity.Vec.Draw
-  nameWithType: Vec.Draw
-- uid: LagaUnity.Vec.DrawPoint(LagaUnity.Vec,System.Single,UnityEngine.Color)
-  name: DrawPoint(Vec, Single, Color)
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_DrawPoint_LagaUnity_Vec_System_Single_UnityEngine_Color_
-  commentId: M:LagaUnity.Vec.DrawPoint(LagaUnity.Vec,System.Single,UnityEngine.Color)
-  fullName: LagaUnity.Vec.DrawPoint(LagaUnity.Vec, System.Single, UnityEngine.Color)
-  nameWithType: Vec.DrawPoint(Vec, Single, Color)
-- uid: LagaUnity.Vec.DrawPoint*
-  name: DrawPoint
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_DrawPoint_
-  commentId: Overload:LagaUnity.Vec.DrawPoint
+  fullName: LagaUnity.Polygon.VectorList
+  nameWithType: Polygon.VectorList
+- uid: LagaUnity.Vectorf
+  name: Vectorf
+  href: api/LagaUnity.Vectorf.html
+  commentId: T:LagaUnity.Vectorf
+  fullName: LagaUnity.Vectorf
+  nameWithType: Vectorf
+- uid: LagaUnity.Vectorf.#ctor(System.Single,System.Single,System.Single)
+  name: Vectorf(Single, Single, Single)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf__ctor_System_Single_System_Single_System_Single_
+  commentId: M:LagaUnity.Vectorf.#ctor(System.Single,System.Single,System.Single)
+  fullName: LagaUnity.Vectorf.Vectorf(System.Single, System.Single, System.Single)
+  nameWithType: Vectorf.Vectorf(Single, Single, Single)
+- uid: LagaUnity.Vectorf.#ctor*
+  name: Vectorf
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf__ctor_
+  commentId: Overload:LagaUnity.Vectorf.#ctor
   isSpec: "True"
-  fullName: LagaUnity.Vec.DrawPoint
-  nameWithType: Vec.DrawPoint
-- uid: LagaUnity.Vec.ToVector3
-  name: ToVector3()
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_ToVector3
-  commentId: M:LagaUnity.Vec.ToVector3
-  fullName: LagaUnity.Vec.ToVector3()
-  nameWithType: Vec.ToVector3()
-- uid: LagaUnity.Vec.ToVector3*
+  fullName: LagaUnity.Vectorf.Vectorf
+  nameWithType: Vectorf.Vectorf
+- uid: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: Angle(Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Angle_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.Angle(Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: Angle(Vectorf, Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Angle_LagaUnity_Vectorf_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.Angle(Vectorf, Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.Angle*
+  name: Angle
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Angle_
+  commentId: Overload:LagaUnity.Vectorf.Angle
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.Angle
+  nameWithType: Vectorf.Angle
+- uid: LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+  name: ComponentProjectTo(Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ComponentProjectTo_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+  nameWithType: Vectorf.ComponentProjectTo(Vectorf)
+- uid: LagaUnity.Vectorf.ComponentProjectTo*
+  name: ComponentProjectTo
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ComponentProjectTo_
+  commentId: Overload:LagaUnity.Vectorf.ComponentProjectTo
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.ComponentProjectTo
+  nameWithType: Vectorf.ComponentProjectTo
+- uid: LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: CrossProduct(Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_CrossProduct_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.CrossProduct(Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.CrossProduct*
+  name: CrossProduct
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_CrossProduct_
+  commentId: Overload:LagaUnity.Vectorf.CrossProduct
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.CrossProduct
+  nameWithType: Vectorf.CrossProduct
+- uid: LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: CrossProductLength(Vectorf, Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_CrossProductLength_LagaUnity_Vectorf_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.CrossProductLength(Vectorf, Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.CrossProductLength*
+  name: CrossProductLength
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_CrossProductLength_
+  commentId: Overload:LagaUnity.Vectorf.CrossProductLength
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.CrossProductLength
+  nameWithType: Vectorf.CrossProductLength
+- uid: LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+  name: DistanceTo(Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_DistanceTo_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+  nameWithType: Vectorf.DistanceTo(Vectorf)
+- uid: LagaUnity.Vectorf.DistanceTo*
+  name: DistanceTo
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_DistanceTo_
+  commentId: Overload:LagaUnity.Vectorf.DistanceTo
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.DistanceTo
+  nameWithType: Vectorf.DistanceTo
+- uid: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: DotProduct(Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_DotProduct_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.DotProduct(Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: DotProduct(Vectorf, Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_DotProduct_LagaUnity_Vectorf_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.DotProduct(Vectorf, Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.DotProduct*
+  name: DotProduct
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_DotProduct_
+  commentId: Overload:LagaUnity.Vectorf.DotProduct
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.DotProduct
+  nameWithType: Vectorf.DotProduct
+- uid: LagaUnity.Vectorf.Normalize
+  name: Normalize()
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Normalize
+  commentId: M:LagaUnity.Vectorf.Normalize
+  fullName: LagaUnity.Vectorf.Normalize()
+  nameWithType: Vectorf.Normalize()
+- uid: LagaUnity.Vectorf.Normalize*
+  name: Normalize
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Normalize_
+  commentId: Overload:LagaUnity.Vectorf.Normalize
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.Normalize
+  nameWithType: Vectorf.Normalize
+- uid: LagaUnity.Vectorf.op_Addition(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: Addition(Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Addition_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.op_Addition(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.Addition(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.Addition(Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.op_Addition*
+  name: Addition
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Addition_
+  commentId: Overload:LagaUnity.Vectorf.op_Addition
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.Addition
+  nameWithType: Vectorf.Addition
+- uid: LagaUnity.Vectorf.op_Multiply(LagaUnity.Vectorf,System.Single)
+  name: Multiply(Vectorf, Single)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Multiply_LagaUnity_Vectorf_System_Single_
+  commentId: M:LagaUnity.Vectorf.op_Multiply(LagaUnity.Vectorf,System.Single)
+  fullName: LagaUnity.Vectorf.Multiply(LagaUnity.Vectorf, System.Single)
+  nameWithType: Vectorf.Multiply(Vectorf, Single)
+- uid: LagaUnity.Vectorf.op_Multiply*
+  name: Multiply
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Multiply_
+  commentId: Overload:LagaUnity.Vectorf.op_Multiply
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.Multiply
+  nameWithType: Vectorf.Multiply
+- uid: LagaUnity.Vectorf.op_Subtraction(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  name: Subtraction(Vectorf, Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Subtraction_LagaUnity_Vectorf_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.op_Subtraction(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.Subtraction(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  nameWithType: Vectorf.Subtraction(Vectorf, Vectorf)
+- uid: LagaUnity.Vectorf.op_Subtraction*
+  name: Subtraction
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_op_Subtraction_
+  commentId: Overload:LagaUnity.Vectorf.op_Subtraction
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.Subtraction
+  nameWithType: Vectorf.Subtraction
+- uid: LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+  name: OrthogonalTo(Vectorf)
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_OrthogonalTo_LagaUnity_Vectorf_
+  commentId: M:LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+  fullName: LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+  nameWithType: Vectorf.OrthogonalTo(Vectorf)
+- uid: LagaUnity.Vectorf.OrthogonalTo*
+  name: OrthogonalTo
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_OrthogonalTo_
+  commentId: Overload:LagaUnity.Vectorf.OrthogonalTo
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.OrthogonalTo
+  nameWithType: Vectorf.OrthogonalTo
+- uid: LagaUnity.Vectorf.ToString
+  name: ToString()
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ToString
+  commentId: M:LagaUnity.Vectorf.ToString
+  fullName: LagaUnity.Vectorf.ToString()
+  nameWithType: Vectorf.ToString()
+- uid: LagaUnity.Vectorf.ToString*
+  name: ToString
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ToString_
+  commentId: Overload:LagaUnity.Vectorf.ToString
+  isSpec: "True"
+  fullName: LagaUnity.Vectorf.ToString
+  nameWithType: Vectorf.ToString
+- uid: LagaUnity.Vectorf.ToVector3
   name: ToVector3
-  href: api/LagaUnity.Vec.html#LagaUnity_Vec_ToVector3_
-  commentId: Overload:LagaUnity.Vec.ToVector3
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ToVector3
+  commentId: P:LagaUnity.Vectorf.ToVector3
+  fullName: LagaUnity.Vectorf.ToVector3
+  nameWithType: Vectorf.ToVector3
+- uid: LagaUnity.Vectorf.ToVector3*
+  name: ToVector3
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_ToVector3_
+  commentId: Overload:LagaUnity.Vectorf.ToVector3
   isSpec: "True"
-  fullName: LagaUnity.Vec.ToVector3
-  nameWithType: Vec.ToVector3
+  fullName: LagaUnity.Vectorf.ToVector3
+  nameWithType: Vectorf.ToVector3
+- uid: LagaUnity.Vectorf.X
+  name: X
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_X
+  commentId: F:LagaUnity.Vectorf.X
+  fullName: LagaUnity.Vectorf.X
+  nameWithType: Vectorf.X
+- uid: LagaUnity.Vectorf.Y
+  name: Y
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Y
+  commentId: F:LagaUnity.Vectorf.Y
+  fullName: LagaUnity.Vectorf.Y
+  nameWithType: Vectorf.Y
+- uid: LagaUnity.Vectorf.Z
+  name: Z
+  href: api/LagaUnity.Vectorf.html#LagaUnity_Vectorf_Z
+  commentId: F:LagaUnity.Vectorf.Z
+  fullName: LagaUnity.Vectorf.Z
+  nameWithType: Vectorf.Z

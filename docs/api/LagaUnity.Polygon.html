@@ -83,8 +83,8 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="LagaUnity.Vec.html">Vec</a>&gt;</div>
-    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LagaUnity.Vec.html">Vec</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -115,20 +115,20 @@
   <h6><strong>Assembly</strong>: LagaUnity.dll</h6>
   <h5 id="LagaUnity_Polygon_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Polygon : ICollection&lt;Vec&gt;, IEnumerable&lt;Vec&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Polygon : ICollection&lt;Vectorf&gt;, IEnumerable&lt;Vectorf&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="LagaUnity_Polygon__ctor_" data-uid="LagaUnity.Polygon.#ctor*"></a>
-  <h4 id="LagaUnity_Polygon__ctor_System_Collections_Generic_List_LagaUnity_Vec__" data-uid="LagaUnity.Polygon.#ctor(System.Collections.Generic.List{LagaUnity.Vec})">Polygon(List&lt;Vec&gt;)</h4>
-  <div class="markdown level1 summary"><p>Polygon constructor by a list of vectors</p>
+  <h4 id="LagaUnity_Polygon__ctor_System_Collections_Generic_IEnumerable_LagaUnity_Vectorf__" data-uid="LagaUnity.Polygon.#ctor(System.Collections.Generic.IEnumerable{LagaUnity.Vectorf})">Polygon(IEnumerable&lt;Vectorf&gt;)</h4>
+  <div class="markdown level1 summary"><p>Polygon constructor by a list / array of vectors</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Polygon(List&lt;Vec&gt; VectorList)</code></pre>
+    <pre><code class="lang-csharp hljs">public Polygon(IEnumerable&lt;Vectorf&gt; VectorList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="LagaUnity.Vec.html">Vec</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>&gt;</td>
         <td><span class="parametername">VectorList</span></td>
         <td><p>the list of vectors</p>
 </td>
@@ -204,14 +204,14 @@
   </table>
   
   
-  <a id="LagaUnity_Polygon_Length_" data-uid="LagaUnity.Polygon.Length*"></a>
-  <h4 id="LagaUnity_Polygon_Length" data-uid="LagaUnity.Polygon.Length">Length</h4>
-  <div class="markdown level1 summary"><p>The length of the polygon</p>
+  <a id="LagaUnity_Polygon_VectorList_" data-uid="LagaUnity.Polygon.VectorList*"></a>
+  <h4 id="LagaUnity_Polygon_VectorList" data-uid="LagaUnity.Polygon.VectorList">VectorList</h4>
+  <div class="markdown level1 summary"><p>get the list of vectors in the polygon</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Length { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;Vectorf&gt; VectorList { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,7 +223,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -233,13 +233,13 @@
   
   
   <a id="LagaUnity_Polygon_Add_" data-uid="LagaUnity.Polygon.Add*"></a>
-  <h4 id="LagaUnity_Polygon_Add_LagaUnity_Vec_" data-uid="LagaUnity.Polygon.Add(LagaUnity.Vec)">Add(Vec)</h4>
+  <h4 id="LagaUnity_Polygon_Add_LagaUnity_Vectorf_" data-uid="LagaUnity.Polygon.Add(LagaUnity.Vectorf)">Add(Vectorf)</h4>
   <div class="markdown level1 summary"><p>Add a Vector to the poylgon</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(Vec vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Add(Vectorf vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -252,9 +252,78 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LagaUnity.Vec.html">Vec</a></td>
-        <td><span class="parametername">vec</span></td>
+        <td><a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a></td>
+        <td><span class="parametername">vector</span></td>
         <td><p>The Vector to add in the list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Polygon_Area_" data-uid="LagaUnity.Polygon.Area*"></a>
+  <h4 id="LagaUnity_Polygon_Area" data-uid="LagaUnity.Polygon.Area">Area()</h4>
+  <div class="markdown level1 summary"><p>Calculate the area of the polygon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Area()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>the area in float flavor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Polygon_Center_" data-uid="LagaUnity.Polygon.Center*"></a>
+  <h4 id="LagaUnity_Polygon_Center" data-uid="LagaUnity.Polygon.Center">Center()</h4>
+  <div class="markdown level1 summary"><p>Average center point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectorf Center()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a></td>
+        <td><p>Vectorf</p>
 </td>
       </tr>
     </tbody>
@@ -273,13 +342,13 @@
   
   
   <a id="LagaUnity_Polygon_Contains_" data-uid="LagaUnity.Polygon.Contains*"></a>
-  <h4 id="LagaUnity_Polygon_Contains_LagaUnity_Vec_" data-uid="LagaUnity.Polygon.Contains(LagaUnity.Vec)">Contains(Vec)</h4>
+  <h4 id="LagaUnity_Polygon_Contains_LagaUnity_Vectorf_" data-uid="LagaUnity.Polygon.Contains(LagaUnity.Vectorf)">Contains(Vectorf)</h4>
   <div class="markdown level1 summary"><p>Check if the vec is in the polygon</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Contains(Vec vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Contains(Vectorf vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -292,8 +361,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LagaUnity.Vec.html">Vec</a></td>
-        <td><span class="parametername">vec</span></td>
+        <td><a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a></td>
+        <td><span class="parametername">vector</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -317,13 +386,13 @@
   
   
   <a id="LagaUnity_Polygon_CopyTo_" data-uid="LagaUnity.Polygon.CopyTo*"></a>
-  <h4 id="LagaUnity_Polygon_CopyTo_LagaUnity_Vec___System_Int32_" data-uid="LagaUnity.Polygon.CopyTo(LagaUnity.Vec[],System.Int32)">CopyTo(Vec[], Int32)</h4>
-  <div class="markdown level1 summary"><p>Not implemented yet</p>
+  <h4 id="LagaUnity_Polygon_CopyTo_LagaUnity_Vectorf___System_Int32_" data-uid="LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[],System.Int32)">CopyTo(Vectorf[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Copy the vectors of the polygon to a new array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CopyTo(Vec[] array, int arrayIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CopyTo(Vectorf[] array, int arrayIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -336,14 +405,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LagaUnity.Vec.html">Vec</a>[]</td>
+        <td><a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>[]</td>
         <td><span class="parametername">array</span></td>
-        <td></td>
+        <td><p>The array to copy</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">arrayIndex</span></td>
-        <td></td>
+        <td><p>Index to start the array</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -357,49 +428,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotImplementedException</span></td>
+        <td><span class="xref">System.ArgumentNullException</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="LagaUnity_Polygon_DrawPolygon_" data-uid="LagaUnity.Polygon.DrawPolygon*"></a>
-  <h4 id="LagaUnity_Polygon_DrawPolygon_System_Single_UnityEngine_Color_System_Boolean_" data-uid="LagaUnity.Polygon.DrawPolygon(System.Single,UnityEngine.Color,System.Boolean)">DrawPolygon(Single, Color, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Draw all the segments in the polygon</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DrawPolygon(float width, Color color, bool loop)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>The width of the segment</p>
-</td>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
-        <td><span class="parametername">color</span></td>
-        <td><p>The Color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">loop</span></td>
-        <td><p>True if closed, false is not</p>
-</td>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -407,12 +445,12 @@
   
   <a id="LagaUnity_Polygon_GetEnumerator_" data-uid="LagaUnity.Polygon.GetEnumerator*"></a>
   <h4 id="LagaUnity_Polygon_GetEnumerator" data-uid="LagaUnity.Polygon.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Not implemented yet.</p>
+  <div class="markdown level1 summary"><p>Enumerator can be used to read the data in the collection, but cannot be used to modify the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Vec&gt; GetEnumerator()</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Vectorf&gt; GetEnumerator()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -424,7 +462,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="LagaUnity.Vec.html">Vec</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Polygon_IsConvex_" data-uid="LagaUnity.Polygon.IsConvex*"></a>
+  <h4 id="LagaUnity_Polygon_IsConvex" data-uid="LagaUnity.Polygon.IsConvex">IsConvex()</h4>
+  <div class="markdown level1 summary"><p>Check if polygon is convex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConvex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -439,21 +503,48 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotImplementedException</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="LagaUnity_Polygon_Remove_" data-uid="LagaUnity.Polygon.Remove*"></a>
-  <h4 id="LagaUnity_Polygon_Remove_LagaUnity_Vec_" data-uid="LagaUnity.Polygon.Remove(LagaUnity.Vec)">Remove(Vec)</h4>
-  <div class="markdown level1 summary"><p>Remove a vec from the polygon</p>
+  <a id="LagaUnity_Polygon_Length_" data-uid="LagaUnity.Polygon.Length*"></a>
+  <h4 id="LagaUnity_Polygon_Length" data-uid="LagaUnity.Polygon.Length">Length()</h4>
+  <div class="markdown level1 summary"><p>Get the length of Polygon</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Remove(Vec vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public float Length()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>the length</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaUnity_Polygon_Remove_" data-uid="LagaUnity.Polygon.Remove*"></a>
+  <h4 id="LagaUnity_Polygon_Remove_LagaUnity_Vectorf_" data-uid="LagaUnity.Polygon.Remove(LagaUnity.Vectorf)">Remove(Vectorf)</h4>
+  <div class="markdown level1 summary"><p>Remove a vector from the polygon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(Vectorf vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -466,8 +557,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LagaUnity.Vec.html">Vec</a></td>
-        <td><span class="parametername">vec</span></td>
+        <td><a class="xref" href="LagaUnity.Vectorf.html">Vectorf</a></td>
+        <td><span class="parametername">vector</span></td>
         <td><p>the Vector to remove</p>
 </td>
       </tr>
@@ -498,7 +589,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Lne SegmentAt(int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public Line SegmentAt(int index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -528,7 +619,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LagaUnity.Lne.html">Lne</a></td>
+        <td><a class="xref" href="LagaUnity.Line.html">Line</a></td>
         <td><p>The segment as Line</p>
 </td>
       </tr>
@@ -561,6 +652,17 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="LagaUnity_Polygon_UpdateDraw_" data-uid="LagaUnity.Polygon.UpdateDraw*"></a>
+  <h4 id="LagaUnity_Polygon_UpdateDraw" data-uid="LagaUnity.Polygon.UpdateDraw">UpdateDraw()</h4>
+  <div class="markdown level1 summary"><p>Update the polygon drawing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDraw()</code></pre>
+  </div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   
