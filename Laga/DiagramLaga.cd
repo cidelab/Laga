@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Laga.Geometry.Box" Collapsed="true">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.Geometry.Line" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgACIAAACIQQAAEAGCAAAJCAAAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.Geometry.Plane" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAgCIAAAAAQIAC0AAAAgAIAIAAAAAAIAABgoQsAQAE=</HashCode>
+      <FileName>Plane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.Geometry.Vectord" Collapsed="true">
+    <Position X="9" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARIAAEAAACACEcAEAAAAAAAgABAAAAEBgAUAgYEE=</HashCode>
+      <FileName>Vectord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Chromosome&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgABEAIAAAAAAAAAAAAAQAEAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Chromosome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Crossover&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAAAIAAAAAAAAIAABAAAAAAAAAAA=</HashCode>
+      <FileName>Crossover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.GenrChromosome" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEQAAAAAAAAAAAAIAAAAAAAAACAIAAAgABAAAAAAA=</HashCode>
+      <FileName>GenrChromosome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.GenrPopulation" Collapsed="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEQAAAABAAgAAAAAAAQAAEAAAAkAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenrPopulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Mutation" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAgBAAAARAEAAAAAgAAAIIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Mutation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.NaturalSelection&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAABAAADAAEAAAAAAI=</HashCode>
+      <FileName>NaturalSelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Population&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAABgAABAAAAAAAAQAAAEAAAAAAAAAAABCAAA=</HashCode>
+      <FileName>Population.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.RankingSort" Collapsed="true">
+    <Position X="3.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBBAAEAAAAAAAAAgEAAAAAIAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>RankingSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Replacement" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAABAAAAAAA=</HashCode>
+      <FileName>Replacement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.GeneticAlgorithm.Tools" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAABAwAGAAgAAAAACAAAAAMgCAAgKAAAAAAA=</HashCode>
+      <FileName>Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.Numbers.Function" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAIAAAAAAAAAAAgAAAAAAAAAEAAAAAIA=</HashCode>
+      <FileName>Function.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.Numbers.Rand" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Random.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.IO.IODataFolder" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAACIAAAAIABAAAAAIEAAAAAA=</HashCode>
+      <FileName>IODataFolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.IO.IOExcelRead" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAAgACAAAAAgAAAAEAAIIAQAAAEMAAEAAABAAAEQA=</HashCode>
+      <FileName>IOExcelRead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.IO.IOExcelWrite" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAABAQAgAAAgAACAEIAAIAQAgQAEAIEAACBAAAAUg=</HashCode>
+      <FileName>IOExcelWrite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laga.IO.IOTextData" Collapsed="true">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAIAgQAAAAAAAACBQUACAQEAEAABAAAAAAAABAACI=</HashCode>
+      <FileName>IOTextData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

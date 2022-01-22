@@ -54,5 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SurfaceData.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramRhino.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -56,5 +56,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vectorf.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramLagaUnity.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

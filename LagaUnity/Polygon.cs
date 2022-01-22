@@ -249,7 +249,5 @@ namespace LagaUnity
         {
            return new Polygon(lstVectorPolygon.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
         }
-
-     
     }
 }
