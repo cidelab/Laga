@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Laga.Geometry
 {
+    /// <summary>
+    /// Box class
+    /// </summary>
     public class Box
     {
     }
