@@ -26,13 +26,6 @@
       <FileName>Plane.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Laga.Geometry.Vectord" Collapsed="true">
-    <Position X="9" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAARIAAEAAACACEcAEAAAAAAAgABAAAAEBgAUAgYEE=</HashCode>
-      <FileName>Vectord.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Laga.GeneticAlgorithm.Chromosome&lt;T&gt;" Collapsed="true">
     <Position X="3.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>

@@ -5,7 +5,7 @@ namespace Laga.Geometry
     /// <summary>
     /// Vector class and operations
     /// </summary>
-    public class Vectord
+    public struct Vectord
     {
         //Geometry Vector properties X,Y,Z
         private double x;
@@ -85,11 +85,11 @@ namespace Laga.Geometry
         /// <summary>
         /// Creates the vector zero
         /// </summary>
-        public Vectord()
+        public Vectord(Vectord vector)
         {
-            x = 0;
-            y = 0;
-            z = 0;
+            x = vector.X;
+            y = vector.Y;
+            z = vector.Z;
         }
 
         /// <summary>
