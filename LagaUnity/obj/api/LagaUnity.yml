@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: LagaUnity
+  commentId: N:LagaUnity
+  id: LagaUnity
+  children:
+  - LagaUnity.Draw
+  - LagaUnity.Line
+  - LagaUnity.Polygon
+  - LagaUnity.Vectorf
+  langs:
+  - csharp
+  - vb
+  name: LagaUnity
+  nameWithType: LagaUnity
+  fullName: LagaUnity
+  type: Namespace
+  assemblies:
+  - LagaUnity
+references:
+- uid: LagaUnity.Draw
+  commentId: T:LagaUnity.Draw
+  name: Draw
+  nameWithType: Draw
+  fullName: LagaUnity.Draw
+- uid: LagaUnity.Line
+  commentId: T:LagaUnity.Line
+  parent: LagaUnity
+  name: Line
+  nameWithType: Line
+  fullName: LagaUnity.Line
+- uid: LagaUnity.Polygon
+  commentId: T:LagaUnity.Polygon
+  parent: LagaUnity
+  name: Polygon
+  nameWithType: Polygon
+  fullName: LagaUnity.Polygon
+- uid: LagaUnity.Vectorf
+  commentId: T:LagaUnity.Vectorf
+  parent: LagaUnity
+  name: Vectorf
+  nameWithType: Vectorf
+  fullName: LagaUnity.Vectorf
+- uid: LagaUnity
+  commentId: N:LagaUnity
+  name: LagaUnity
+  nameWithType: LagaUnity
+  fullName: LagaUnity

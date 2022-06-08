@@ -1,0 +1,1415 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.Geometry.Vectord
+  commentId: T:Laga.Geometry.Vectord
+  id: Vectord
+  parent: Laga.Geometry
+  children:
+  - Laga.Geometry.Vectord.#ctor
+  - Laga.Geometry.Vectord.#ctor(System.Double,System.Double)
+  - Laga.Geometry.Vectord.#ctor(System.Double,System.Double,System.Double)
+  - Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  - Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  - Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  - Laga.Geometry.Vectord.Normalize
+  - Laga.Geometry.Vectord.op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.op_Multiply(Laga.Geometry.Vectord,System.Double)
+  - Laga.Geometry.Vectord.op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  - Laga.Geometry.Vectord.ToString
+  - Laga.Geometry.Vectord.X
+  - Laga.Geometry.Vectord.Y
+  - Laga.Geometry.Vectord.Z
+  langs:
+  - csharp
+  - vb
+  name: Vectord
+  nameWithType: Vectord
+  fullName: Laga.Geometry.Vectord
+  type: Class
+  source:
+    id: Vectord
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 7
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nVector class and operations\n"
+  example: []
+  syntax:
+    content: public class Vectord
+    content.vb: Public Class Vectord
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.Geometry.Vectord.X
+  commentId: P:Laga.Geometry.Vectord.X
+  id: X
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Vectord.X
+  fullName: Laga.Geometry.Vectord.X
+  type: Property
+  source:
+    id: X
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 17
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nX coordinate\n"
+  example: []
+  syntax:
+    content: public double X { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property X As Double
+  overload: Laga.Geometry.Vectord.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.Y
+  commentId: P:Laga.Geometry.Vectord.Y
+  id: Y
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Vectord.Y
+  fullName: Laga.Geometry.Vectord.Y
+  type: Property
+  source:
+    id: Y
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 32
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nY Coordinate\n"
+  example: []
+  syntax:
+    content: public double Y { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Y As Double
+  overload: Laga.Geometry.Vectord.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.Z
+  commentId: P:Laga.Geometry.Vectord.Z
+  id: Z
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: Vectord.Z
+  fullName: Laga.Geometry.Vectord.Z
+  type: Property
+  source:
+    id: Z
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 47
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nZ Coordinate\n"
+  example: []
+  syntax:
+    content: public double Z { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Z As Double
+  overload: Laga.Geometry.Vectord.Z*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.#ctor(System.Double,System.Double)
+  commentId: M:Laga.Geometry.Vectord.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Vectord(Double, Double)
+  nameWithType: Vectord.Vectord(Double, Double)
+  fullName: Laga.Geometry.Vectord.Vectord(System.Double, System.Double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 64
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCreate a 2D vector in XY plane \n"
+  example: []
+  syntax:
+    content: public Vectord(double X, double Y)
+    parameters:
+    - id: X
+      type: System.Double
+      description: X coordinate
+    - id: Y
+      type: System.Double
+      description: Y coordinate
+    content.vb: Public Sub New(X As Double, Y As Double)
+  overload: Laga.Geometry.Vectord.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:Laga.Geometry.Vectord.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Vectord(Double, Double, Double)
+  nameWithType: Vectord.Vectord(Double, Double, Double)
+  fullName: Laga.Geometry.Vectord.Vectord(System.Double, System.Double, System.Double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 77
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCreate a 3D Vector\n"
+  example: []
+  syntax:
+    content: public Vectord(double X, double Y, double Z)
+    parameters:
+    - id: X
+      type: System.Double
+      description: X coordinate
+    - id: Y
+      type: System.Double
+      description: Y coordinate
+    - id: Z
+      type: System.Double
+      description: Z coordinate
+    content.vb: Public Sub New(X As Double, Y As Double, Z As Double)
+  overload: Laga.Geometry.Vectord.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.#ctor
+  commentId: M:Laga.Geometry.Vectord.#ctor
+  id: '#ctor'
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Vectord()
+  nameWithType: Vectord.Vectord()
+  fullName: Laga.Geometry.Vectord.Vectord()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 87
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCreates the vector zero\n"
+  example: []
+  syntax:
+    content: public Vectord()
+    content.vb: Public Sub New
+  overload: Laga.Geometry.Vectord.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  id: OrthogonalTo(Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: OrthogonalTo(Vectord)
+  nameWithType: Vectord.OrthogonalTo(Vectord)
+  fullName: Laga.Geometry.Vectord.OrthogonalTo(Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: OrthogonalTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 99
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCreates a orthogonal vector\n"
+  example: []
+  syntax:
+    content: public static Vectord OrthogonalTo(Vectord vector)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: Vector
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Shared Function OrthogonalTo(vector As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.OrthogonalTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: CrossProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: CrossProduct(Vectord, Vectord)
+  nameWithType: Vectord.CrossProduct(Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.CrossProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: CrossProduct
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 117
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCross Product\n"
+  example: []
+  syntax:
+    content: public static Vectord CrossProduct(Vectord vectorA, Vectord vectorB)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Shared Function CrossProduct(vectorA As Vectord, vectorB As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.CrossProduct*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: CrossProductLength(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: CrossProductLength(Vectord, Vectord, Vectord)
+  nameWithType: Vectord.CrossProductLength(Vectord, Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.CrossProductLength(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: CrossProductLength
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 134
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nReturn the cross product length\n| B x BC | = |AB| * |BC| * Sin(theta)\n"
+  example: []
+  syntax:
+    content: public static double CrossProductLength(Vectord vectorA, Vectord vectorB, Vectord vectorC)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    - id: vectorC
+      type: Laga.Geometry.Vectord
+      description: Vector C
+    return:
+      type: System.Double
+      description: Z coordinate of the cross product
+    content.vb: Public Shared Function CrossProductLength(vectorA As Vectord, vectorB As Vectord, vectorC As Vectord) As Double
+  overload: Laga.Geometry.Vectord.CrossProductLength*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  id: ComponentProjectTo(Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: ComponentProjectTo(Vectord)
+  nameWithType: Vectord.ComponentProjectTo(Vectord)
+  fullName: Laga.Geometry.Vectord.ComponentProjectTo(Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: ComponentProjectTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 149
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nProject to vector base B\n"
+  example: []
+  syntax:
+    content: public Vectord ComponentProjectTo(Vectord vectorB)
+    parameters:
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector base
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Function ComponentProjectTo(vectorB As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.ComponentProjectTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  id: ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: ComponentOrthogonalTo(Vectord)
+  nameWithType: Vectord.ComponentOrthogonalTo(Vectord)
+  fullName: Laga.Geometry.Vectord.ComponentOrthogonalTo(Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: ComponentOrthogonalTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 162
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nCreates the orthogonal component to vector base B\n"
+  example: []
+  syntax:
+    content: public Vectord ComponentOrthogonalTo(Vectord vectorB)
+    parameters:
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector base
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Function ComponentOrthogonalTo(vectorB As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.ComponentOrthogonalTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  commentId: M:Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  id: IsVectorCero(System.Double)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: IsVectorCero(Double)
+  nameWithType: Vectord.IsVectorCero(Double)
+  fullName: Laga.Geometry.Vectord.IsVectorCero(System.Double)
+  type: Method
+  source:
+    id: IsVectorCero
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 173
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nTest if is vector zero\n"
+  example: []
+  syntax:
+    content: public bool IsVectorCero(double tolerance = 0.001)
+    parameters:
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IsVectorCero(tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Vectord.IsVectorCero*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  commentId: M:Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  id: IsOrthogonalTo(Laga.Geometry.Vectord,System.Double)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: IsOrthogonalTo(Vectord, Double)
+  nameWithType: Vectord.IsOrthogonalTo(Vectord, Double)
+  fullName: Laga.Geometry.Vectord.IsOrthogonalTo(Laga.Geometry.Vectord, System.Double)
+  type: Method
+  source:
+    id: IsOrthogonalTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 184
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nTest if vector is orthogonal\n"
+  example: []
+  syntax:
+    content: public bool IsOrthogonalTo(Vectord vector, double tolerance = 0.001)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: Vector to test
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IsOrthogonalTo(vector As Vectord, tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Vectord.IsOrthogonalTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  commentId: M:Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  id: IsParallelTo(Laga.Geometry.Vectord,System.Double)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: IsParallelTo(Vectord, Double)
+  nameWithType: Vectord.IsParallelTo(Vectord, Double)
+  fullName: Laga.Geometry.Vectord.IsParallelTo(Laga.Geometry.Vectord, System.Double)
+  type: Method
+  source:
+    id: IsParallelTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 195
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nTest if 2 vectors are parallel\n"
+  example: []
+  syntax:
+    content: public bool IsParallelTo(Vectord vector, double tolerance = 0.001)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: The vector to test
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IsParallelTo(vector As Vectord, tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Vectord.IsParallelTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: DotProduct(Vectord, Vectord)
+  nameWithType: Vectord.DotProduct(Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: DotProduct
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 210
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nDot product\n"
+  example: []
+  syntax:
+    content: public static double DotProduct(Vectord vectorA, Vectord vectorB)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Shared Function DotProduct(vectorA As Vectord, vectorB As Vectord) As Double
+  overload: Laga.Geometry.Vectord.DotProduct*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: DotProduct(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: DotProduct(Vectord, Vectord, Vectord)
+  nameWithType: Vectord.DotProduct(Vectord, Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.DotProduct(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: DotProduct
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 222
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nDot Product AB · BC\n"
+  example: []
+  syntax:
+    content: public static double DotProduct(Vectord vectorA, Vectord vectorB, Vectord vectorC)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: ''
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: ''
+    - id: vectorC
+      type: Laga.Geometry.Vectord
+      description: ''
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function DotProduct(vectorA As Vectord, vectorB As Vectord, vectorC As Vectord) As Double
+  overload: Laga.Geometry.Vectord.DotProduct*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Angle(Vectord, Vectord)
+  nameWithType: Vectord.Angle(Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: Angle
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 238
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nAngle\n"
+  example: []
+  syntax:
+    content: public static double Angle(Vectord vectorA, Vectord vectorB)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Shared Function Angle(vectorA As Vectord, vectorB As Vectord) As Double
+  overload: Laga.Geometry.Vectord.Angle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: Angle(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Angle(Vectord, Vectord, Vectord)
+  nameWithType: Vectord.Angle(Vectord, Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.Angle(Laga.Geometry.Vectord, Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: Angle
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 256
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nABC angle between PI and -PI\n"
+  example: []
+  syntax:
+    content: public static double Angle(Vectord vectorA, Vectord vectorB, Vectord vectorC)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    - id: vectorC
+      type: Laga.Geometry.Vectord
+      description: Vector C
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Shared Function Angle(vectorA As Vectord, vectorB As Vectord, vectorC As Vectord) As Double
+  overload: Laga.Geometry.Vectord.Angle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  id: DistanceTo(Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: DistanceTo(Vectord)
+  nameWithType: Vectord.DistanceTo(Vectord)
+  fullName: Laga.Geometry.Vectord.DistanceTo(Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: DistanceTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 273
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nDistance\n"
+  example: []
+  syntax:
+    content: public double DistanceTo(Vectord vector)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: vector to test
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Function DistanceTo(vector As Vectord) As Double
+  overload: Laga.Geometry.Vectord.DistanceTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.Normalize
+  commentId: M:Laga.Geometry.Vectord.Normalize
+  id: Normalize
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: Vectord.Normalize()
+  fullName: Laga.Geometry.Vectord.Normalize()
+  type: Method
+  source:
+    id: Normalize
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 283
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nNormalize the vector to 1\n"
+  example: []
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize
+  overload: Laga.Geometry.Vectord.Normalize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Vectord.op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: op_Addition(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Addition(Vectord, Vectord)
+  nameWithType: Vectord.Addition(Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.Addition(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Operator
+  source:
+    id: op_Addition
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 295
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nAddition\n"
+  example: []
+  syntax:
+    content: public static Vectord operator +(Vectord vectorA, Vectord vectorB)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Shared Operator +(vectorA As Vectord, vectorB As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: op_Subtraction(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(Vectord, Vectord)
+  nameWithType: Vectord.Subtraction(Vectord, Vectord)
+  fullName: Laga.Geometry.Vectord.Subtraction(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Operator
+  source:
+    id: op_Subtraction
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 309
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nSubstraction\n"
+  example: []
+  syntax:
+    content: public static Vectord operator -(Vectord vectorA, Vectord vectorB)
+    parameters:
+    - id: vectorA
+      type: Laga.Geometry.Vectord
+      description: Vector A
+    - id: vectorB
+      type: Laga.Geometry.Vectord
+      description: Vector B
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Shared Operator -(vectorA As Vectord, vectorB As Vectord) As Vectord
+  overload: Laga.Geometry.Vectord.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.op_Multiply(Laga.Geometry.Vectord,System.Double)
+  commentId: M:Laga.Geometry.Vectord.op_Multiply(Laga.Geometry.Vectord,System.Double)
+  id: op_Multiply(Laga.Geometry.Vectord,System.Double)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Vectord, Double)
+  nameWithType: Vectord.Multiply(Vectord, Double)
+  fullName: Laga.Geometry.Vectord.Multiply(Laga.Geometry.Vectord, System.Double)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 323
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nScale multuplication\n"
+  example: []
+  syntax:
+    content: public static Vectord operator *(Vectord vector, double factor)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: Vector to scale
+    - id: factor
+      type: System.Double
+      description: factor
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Shared Operator *(vector As Vectord, factor As Double) As Vectord
+  overload: Laga.Geometry.Vectord.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Geometry.Vectord.ToString
+  commentId: M:Laga.Geometry.Vectord.ToString
+  id: ToString
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Vectord.ToString()
+  fullName: Laga.Geometry.Vectord.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 335
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nPrint vector data\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Laga.Geometry.Vectord.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  id: EqualTo(Laga.Geometry.Vectord)
+  parent: Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: EqualTo(Vectord)
+  nameWithType: Vectord.EqualTo(Vectord)
+  fullName: Laga.Geometry.Vectord.EqualTo(Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: EqualTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Vectord.cs
+    startLine: 345
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\ntest if 2 vectors are equal\n"
+  example: []
+  syntax:
+    content: public bool EqualTo(Vectord vector)
+    parameters:
+    - id: vector
+      type: Laga.Geometry.Vectord
+      description: Vector to test
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function EqualTo(vector As Vectord) As Boolean
+  overload: Laga.Geometry.Vectord.EqualTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Laga.Geometry
+  commentId: N:Laga.Geometry
+  name: Laga.Geometry
+  nameWithType: Laga.Geometry
+  fullName: Laga.Geometry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.Geometry.Vectord.X*
+  commentId: Overload:Laga.Geometry.Vectord.X
+  name: X
+  nameWithType: Vectord.X
+  fullName: Laga.Geometry.Vectord.X
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Laga.Geometry.Vectord.Y*
+  commentId: Overload:Laga.Geometry.Vectord.Y
+  name: Y
+  nameWithType: Vectord.Y
+  fullName: Laga.Geometry.Vectord.Y
+- uid: Laga.Geometry.Vectord.Z*
+  commentId: Overload:Laga.Geometry.Vectord.Z
+  name: Z
+  nameWithType: Vectord.Z
+  fullName: Laga.Geometry.Vectord.Z
+- uid: Laga.Geometry.Vectord.#ctor*
+  commentId: Overload:Laga.Geometry.Vectord.#ctor
+  name: Vectord
+  nameWithType: Vectord.Vectord
+  fullName: Laga.Geometry.Vectord.Vectord
+- uid: Laga.Geometry.Vectord.OrthogonalTo*
+  commentId: Overload:Laga.Geometry.Vectord.OrthogonalTo
+  name: OrthogonalTo
+  nameWithType: Vectord.OrthogonalTo
+  fullName: Laga.Geometry.Vectord.OrthogonalTo
+- uid: Laga.Geometry.Vectord
+  commentId: T:Laga.Geometry.Vectord
+  parent: Laga.Geometry
+  name: Vectord
+  nameWithType: Vectord
+  fullName: Laga.Geometry.Vectord
+- uid: Laga.Geometry.Vectord.CrossProduct*
+  commentId: Overload:Laga.Geometry.Vectord.CrossProduct
+  name: CrossProduct
+  nameWithType: Vectord.CrossProduct
+  fullName: Laga.Geometry.Vectord.CrossProduct
+- uid: Laga.Geometry.Vectord.CrossProductLength*
+  commentId: Overload:Laga.Geometry.Vectord.CrossProductLength
+  name: CrossProductLength
+  nameWithType: Vectord.CrossProductLength
+  fullName: Laga.Geometry.Vectord.CrossProductLength
+- uid: Laga.Geometry.Vectord.ComponentProjectTo*
+  commentId: Overload:Laga.Geometry.Vectord.ComponentProjectTo
+  name: ComponentProjectTo
+  nameWithType: Vectord.ComponentProjectTo
+  fullName: Laga.Geometry.Vectord.ComponentProjectTo
+- uid: Laga.Geometry.Vectord.ComponentOrthogonalTo*
+  commentId: Overload:Laga.Geometry.Vectord.ComponentOrthogonalTo
+  name: ComponentOrthogonalTo
+  nameWithType: Vectord.ComponentOrthogonalTo
+  fullName: Laga.Geometry.Vectord.ComponentOrthogonalTo
+- uid: Laga.Geometry.Vectord.IsVectorCero*
+  commentId: Overload:Laga.Geometry.Vectord.IsVectorCero
+  name: IsVectorCero
+  nameWithType: Vectord.IsVectorCero
+  fullName: Laga.Geometry.Vectord.IsVectorCero
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Laga.Geometry.Vectord.IsOrthogonalTo*
+  commentId: Overload:Laga.Geometry.Vectord.IsOrthogonalTo
+  name: IsOrthogonalTo
+  nameWithType: Vectord.IsOrthogonalTo
+  fullName: Laga.Geometry.Vectord.IsOrthogonalTo
+- uid: Laga.Geometry.Vectord.IsParallelTo*
+  commentId: Overload:Laga.Geometry.Vectord.IsParallelTo
+  name: IsParallelTo
+  nameWithType: Vectord.IsParallelTo
+  fullName: Laga.Geometry.Vectord.IsParallelTo
+- uid: Laga.Geometry.Vectord.DotProduct*
+  commentId: Overload:Laga.Geometry.Vectord.DotProduct
+  name: DotProduct
+  nameWithType: Vectord.DotProduct
+  fullName: Laga.Geometry.Vectord.DotProduct
+- uid: Laga.Geometry.Vectord.Angle*
+  commentId: Overload:Laga.Geometry.Vectord.Angle
+  name: Angle
+  nameWithType: Vectord.Angle
+  fullName: Laga.Geometry.Vectord.Angle
+- uid: Laga.Geometry.Vectord.DistanceTo*
+  commentId: Overload:Laga.Geometry.Vectord.DistanceTo
+  name: DistanceTo
+  nameWithType: Vectord.DistanceTo
+  fullName: Laga.Geometry.Vectord.DistanceTo
+- uid: Laga.Geometry.Vectord.Normalize*
+  commentId: Overload:Laga.Geometry.Vectord.Normalize
+  name: Normalize
+  nameWithType: Vectord.Normalize
+  fullName: Laga.Geometry.Vectord.Normalize
+- uid: Laga.Geometry.Vectord.op_Addition*
+  commentId: Overload:Laga.Geometry.Vectord.op_Addition
+  name: Addition
+  nameWithType: Vectord.Addition
+  fullName: Laga.Geometry.Vectord.Addition
+- uid: Laga.Geometry.Vectord.op_Subtraction*
+  commentId: Overload:Laga.Geometry.Vectord.op_Subtraction
+  name: Subtraction
+  nameWithType: Vectord.Subtraction
+  fullName: Laga.Geometry.Vectord.Subtraction
+- uid: Laga.Geometry.Vectord.op_Multiply*
+  commentId: Overload:Laga.Geometry.Vectord.op_Multiply
+  name: Multiply
+  nameWithType: Vectord.Multiply
+  fullName: Laga.Geometry.Vectord.Multiply
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.Geometry.Vectord.ToString*
+  commentId: Overload:Laga.Geometry.Vectord.ToString
+  name: ToString
+  nameWithType: Vectord.ToString
+  fullName: Laga.Geometry.Vectord.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.Geometry.Vectord.EqualTo*
+  commentId: Overload:Laga.Geometry.Vectord.EqualTo
+  name: EqualTo
+  nameWithType: Vectord.EqualTo
+  fullName: Laga.Geometry.Vectord.EqualTo

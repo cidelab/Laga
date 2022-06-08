@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: LagaUnity.Line
+  commentId: T:LagaUnity.Line
+  id: Line
+  parent: LagaUnity
+  children:
+  - LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  - LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+  - LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  - LagaUnity.Line.MidPoint
+  - LagaUnity.Line.PointA
+  - LagaUnity.Line.PointB
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: Line
+  fullName: LagaUnity.Line
+  type: Class
+  source:
+    id: Line
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 13
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nDraw a line in Unity\n"
+  example: []
+  syntax:
+    content: 'public class Line : Laga.Geometry.Line'
+    content.vb: >-
+      Public Class Line
+          Inherits Laga.Geometry.Line
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: LagaUnity.Line.PointA
+  commentId: P:LagaUnity.Line.PointA
+  id: PointA
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: PointA
+  nameWithType: Line.PointA
+  fullName: LagaUnity.Line.PointA
+  type: Property
+  source:
+    id: PointA
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 21
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nFirst point in the Line\n"
+  example: []
+  syntax:
+    content: public Vectorf PointA { get; set; }
+    parameters: []
+    return:
+      type: LagaUnity.Vectorf
+    content.vb: Public Property PointA As Vectorf
+  overload: LagaUnity.Line.PointA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LagaUnity.Line.PointB
+  commentId: P:LagaUnity.Line.PointB
+  id: PointB
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: PointB
+  nameWithType: Line.PointB
+  fullName: LagaUnity.Line.PointB
+  type: Property
+  source:
+    id: PointB
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 36
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nSecond Point in the Line\n"
+  example: []
+  syntax:
+    content: public Vectorf PointB { get; set; }
+    parameters: []
+    return:
+      type: LagaUnity.Vectorf
+    content.vb: Public Property PointB As Vectorf
+  overload: LagaUnity.Line.PointB*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  commentId: M:LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+  id: '#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)'
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: Line(Vectorf, Vectorf)
+  nameWithType: Line.Line(Vectorf, Vectorf)
+  fullName: LagaUnity.Line.Line(LagaUnity.Vectorf, LagaUnity.Vectorf)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 53
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nConstruct a laga line object by 2 points.\n"
+  example: []
+  syntax:
+    content: public Line(Vectorf pointA, Vectorf pointB)
+    parameters:
+    - id: pointA
+      type: LagaUnity.Vectorf
+      description: First Point
+    - id: pointB
+      type: LagaUnity.Vectorf
+      description: Second Point
+    content.vb: Public Sub New(pointA As Vectorf, pointB As Vectorf)
+  overload: LagaUnity.Line.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LagaUnity.Line.MidPoint
+  commentId: M:LagaUnity.Line.MidPoint
+  id: MidPoint
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: MidPoint()
+  nameWithType: Line.MidPoint()
+  fullName: LagaUnity.Line.MidPoint()
+  type: Method
+  source:
+    id: MidPoint
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 65
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nReturns the mid point.\n"
+  example: []
+  syntax:
+    content: public Vectorf MidPoint()
+    return:
+      type: LagaUnity.Vectorf
+      description: Laga Point
+    content.vb: Public Function MidPoint As Vectorf
+  overload: LagaUnity.Line.MidPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+  commentId: M:LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+  id: Draw(System.Single,UnityEngine.Color)
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: Draw(Single, Color)
+  nameWithType: Line.Draw(Single, Color)
+  fullName: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+  type: Method
+  source:
+    id: Draw
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 75
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nDraw a Unity Line\n"
+  example: []
+  syntax:
+    content: public void Draw(float width, Color color)
+    parameters:
+    - id: width
+      type: System.Single
+      description: Line width
+    - id: color
+      type: UnityEngine.Color
+      description: Color line
+    content.vb: Public Sub Draw(width As Single, color As Color)
+  overload: LagaUnity.Line.Draw*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  commentId: M:LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  id: DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+  parent: LagaUnity.Line
+  langs:
+  - csharp
+  - vb
+  name: DrawLine(Vectorf, Vectorf, Single, Color)
+  nameWithType: Line.DrawLine(Vectorf, Vectorf, Single, Color)
+  fullName: LagaUnity.Line.DrawLine(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+  type: Method
+  source:
+    id: DrawLine
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+    startLine: 87
+  assemblies:
+  - LagaUnity
+  namespace: LagaUnity
+  summary: "\nDraw a Unity line\n"
+  example: []
+  syntax:
+    content: public static LineRenderer DrawLine(Vectorf pointA, Vectorf pointB, float width, Color color)
+    parameters:
+    - id: pointA
+      type: LagaUnity.Vectorf
+      description: First point
+    - id: pointB
+      type: LagaUnity.Vectorf
+      description: Second Point
+    - id: width
+      type: System.Single
+      description: Line Width
+    - id: color
+      type: UnityEngine.Color
+      description: Color Line
+    return:
+      type: UnityEngine.LineRenderer
+    content.vb: Public Shared Function DrawLine(pointA As Vectorf, pointB As Vectorf, width As Single, color As Color) As LineRenderer
+  overload: LagaUnity.Line.DrawLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: LagaUnity
+  commentId: N:LagaUnity
+  name: LagaUnity
+  nameWithType: LagaUnity
+  fullName: LagaUnity
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LagaUnity.Line.PointA*
+  commentId: Overload:LagaUnity.Line.PointA
+  name: PointA
+  nameWithType: Line.PointA
+  fullName: LagaUnity.Line.PointA
+- uid: LagaUnity.Vectorf
+  commentId: T:LagaUnity.Vectorf
+  parent: LagaUnity
+  name: Vectorf
+  nameWithType: Vectorf
+  fullName: LagaUnity.Vectorf
+- uid: LagaUnity.Line.PointB*
+  commentId: Overload:LagaUnity.Line.PointB
+  name: PointB
+  nameWithType: Line.PointB
+  fullName: LagaUnity.Line.PointB
+- uid: LagaUnity.Line.#ctor*
+  commentId: Overload:LagaUnity.Line.#ctor
+  name: Line
+  nameWithType: Line.Line
+  fullName: LagaUnity.Line.Line
+- uid: LagaUnity.Line.MidPoint*
+  commentId: Overload:LagaUnity.Line.MidPoint
+  name: MidPoint
+  nameWithType: Line.MidPoint
+  fullName: LagaUnity.Line.MidPoint
+- uid: LagaUnity.Line.Draw*
+  commentId: Overload:LagaUnity.Line.Draw
+  name: Draw
+  nameWithType: Line.Draw
+  fullName: LagaUnity.Line.Draw
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: LagaUnity.Line.DrawLine*
+  commentId: Overload:LagaUnity.Line.DrawLine
+  name: DrawLine
+  nameWithType: Line.DrawLine
+  fullName: LagaUnity.Line.DrawLine
+- uid: UnityEngine.LineRenderer
+  commentId: T:UnityEngine.LineRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: LineRenderer
+  nameWithType: LineRenderer
+  fullName: UnityEngine.LineRenderer

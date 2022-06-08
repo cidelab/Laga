@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.Geometry
+  commentId: N:Laga.Geometry
+  id: Laga.Geometry
+  children:
+  - Laga.Geometry.Box
+  - Laga.Geometry.Line
+  - Laga.Geometry.Plane
+  - Laga.Geometry.Vectord
+  langs:
+  - csharp
+  - vb
+  name: Laga.Geometry
+  nameWithType: Laga.Geometry
+  fullName: Laga.Geometry
+  type: Namespace
+  assemblies:
+  - Laga
+references:
+- uid: Laga.Geometry.Box
+  commentId: T:Laga.Geometry.Box
+  name: Box
+  nameWithType: Box
+  fullName: Laga.Geometry.Box
+- uid: Laga.Geometry.Line
+  commentId: T:Laga.Geometry.Line
+  parent: Laga.Geometry
+  name: Line
+  nameWithType: Line
+  fullName: Laga.Geometry.Line
+- uid: Laga.Geometry.Plane
+  commentId: T:Laga.Geometry.Plane
+  parent: Laga.Geometry
+  name: Plane
+  nameWithType: Plane
+  fullName: Laga.Geometry.Plane
+- uid: Laga.Geometry.Vectord
+  commentId: T:Laga.Geometry.Vectord
+  parent: Laga.Geometry
+  name: Vectord
+  nameWithType: Vectord
+  fullName: Laga.Geometry.Vectord
+- uid: Laga.Geometry
+  commentId: N:Laga.Geometry
+  name: Laga.Geometry
+  nameWithType: Laga.Geometry
+  fullName: Laga.Geometry

@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: LagaRhino.PointData
+  commentId: T:LagaRhino.PointData
+  id: PointData
+  parent: LagaRhino
+  children:
+  - LagaRhino.PointData.DeepCopy(System.Collections.Generic.List{Rhino.Geometry.Curve})
+  - LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
+  - LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
+  - LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d[])
+  - LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
+  - LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
+  - LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)
+  - LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: PointData
+  nameWithType: PointData
+  fullName: LagaRhino.PointData
+  type: Class
+  source:
+    id: PointData
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 12
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nPoint data\n"
+  example: []
+  syntax:
+    content: public class PointData
+    content.vb: Public Class PointData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)
+  commentId: M:LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)
+  id: SortPointsQuadrant(Rhino.Geometry.Point3d)
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: SortPointsQuadrant(Point3d)
+  nameWithType: PointData.SortPointsQuadrant(Point3d)
+  fullName: LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)
+  type: Method
+  source:
+    id: SortPointsQuadrant
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 19
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nreturn the points sorted according to scrum Quadrants\n"
+  example: []
+  syntax:
+    content: public static Point3d[] SortPointsQuadrant(Point3d pt)
+    parameters:
+    - id: pt
+      type: Rhino.Geometry.Point3d
+      description: ''
+    return:
+      type: Rhino.Geometry.Point3d[]
+      description: Point3d[]
+    content.vb: Public Shared Function SortPointsQuadrant(pt As Point3d) As Point3d()
+  overload: LagaRhino.PointData.SortPointsQuadrant*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
+  commentId: M:LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
+  id: PointQuadrant(Rhino.Geometry.Point3d)
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: PointQuadrant(Point3d)
+  nameWithType: PointData.PointQuadrant(Point3d)
+  fullName: LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
+  type: Method
+  source:
+    id: PointQuadrant
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 40
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\ndetermine in which quadrant is the point. 0:++, 1:+-, 2:--, 3:-+.\n"
+  example: []
+  syntax:
+    content: public static int PointQuadrant(Point3d pt)
+    parameters:
+    - id: pt
+      type: Rhino.Geometry.Point3d
+      description: ''
+    return:
+      type: System.Int32
+      description: int
+    content.vb: Public Shared Function PointQuadrant(pt As Point3d) As Integer
+  overload: LagaRhino.PointData.PointQuadrant*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: LagaRhino.PointData.DeepCopy(System.Collections.Generic.List{Rhino.Geometry.Curve})
+  commentId: M:LagaRhino.PointData.DeepCopy(System.Collections.Generic.List{Rhino.Geometry.Curve})
+  id: DeepCopy(System.Collections.Generic.List{Rhino.Geometry.Curve})
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy(List<Curve>)
+  nameWithType: PointData.DeepCopy(List<Curve>)
+  fullName: LagaRhino.PointData.DeepCopy(System.Collections.Generic.List<Rhino.Geometry.Curve>)
+  type: Method
+  source:
+    id: DeepCopy
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 71
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nCrates a DeepCopy from the existing list of curves\n"
+  example: []
+  syntax:
+    content: public static List<Curve> DeepCopy(List<Curve> lstToCopy)
+    parameters:
+    - id: lstToCopy
+      type: System.Collections.Generic.List{Rhino.Geometry.Curve}
+      description: The curves to perform the deep copy
+    return:
+      type: System.Collections.Generic.List{Rhino.Geometry.Curve}
+      description: List<Curve></Curve>
+    content.vb: Public Shared Function DeepCopy(lstToCopy As List(Of Curve)) As List(Of Curve)
+  overload: LagaRhino.PointData.DeepCopy*
+  nameWithType.vb: PointData.DeepCopy(List(Of Curve))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: LagaRhino.PointData.DeepCopy(System.Collections.Generic.List(Of Rhino.Geometry.Curve))
+  name.vb: DeepCopy(List(Of Curve))
+- uid: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
+  commentId: M:LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
+  id: SortPointsByZ(Rhino.Geometry.Point3d[])
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: SortPointsByZ(Point3d[])
+  nameWithType: PointData.SortPointsByZ(Point3d[])
+  fullName: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
+  type: Method
+  source:
+    id: SortPointsByZ
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 89
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nSort points by Z coordinate\n"
+  example: []
+  syntax:
+    content: public static Point3d[] SortPointsByZ(Point3d[] arrPts)
+    parameters:
+    - id: arrPts
+      type: Rhino.Geometry.Point3d[]
+      description: The points to sort
+    return:
+      type: Rhino.Geometry.Point3d[]
+      description: point3d[]
+    content.vb: Public Shared Function SortPointsByZ(arrPts As Point3d()) As Point3d()
+  overload: LagaRhino.PointData.SortPointsByZ*
+  nameWithType.vb: PointData.SortPointsByZ(Point3d())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d())
+  name.vb: SortPointsByZ(Point3d())
+- uid: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
+  commentId: M:LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
+  id: GroupByZ(Rhino.Geometry.Point3d[])
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: GroupByZ(Point3d[])
+  nameWithType: PointData.GroupByZ(Point3d[])
+  fullName: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
+  type: Method
+  source:
+    id: GroupByZ
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 99
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nGroup points by Z values.\n"
+  example: []
+  syntax:
+    content: public static List<Point3d[]> GroupByZ(Point3d[] arrPts)
+    parameters:
+    - id: arrPts
+      type: Rhino.Geometry.Point3d[]
+      description: the array of points to group
+    return:
+      type: System.Collections.Generic.List{Rhino.Geometry.Point3d[]}
+      description: a List of group points by the Z coordinate
+    content.vb: Public Shared Function GroupByZ(arrPts As Point3d()) As List(Of Point3d())
+  overload: LagaRhino.PointData.GroupByZ*
+  nameWithType.vb: PointData.GroupByZ(Point3d())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d())
+  name.vb: GroupByZ(Point3d())
+- uid: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
+  commentId: M:LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
+  id: SortPointsByXY(Rhino.Geometry.Point3d[])
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: SortPointsByXY(Point3d[])
+  nameWithType: PointData.SortPointsByXY(Point3d[])
+  fullName: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
+  type: Method
+  source:
+    id: SortPointsByXY
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 127
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nSort points by the coordinate X and then by the coordinate Y.\n"
+  example: []
+  syntax:
+    content: public static Point3d[] SortPointsByXY(Point3d[] arrPts)
+    parameters:
+    - id: arrPts
+      type: Rhino.Geometry.Point3d[]
+      description: The points to sort
+    return:
+      type: Rhino.Geometry.Point3d[]
+      description: point3d[]
+    content.vb: Public Shared Function SortPointsByXY(arrPts As Point3d()) As Point3d()
+  overload: LagaRhino.PointData.SortPointsByXY*
+  nameWithType.vb: PointData.SortPointsByXY(Point3d())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d())
+  name.vb: SortPointsByXY(Point3d())
+- uid: LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d[])
+  commentId: M:LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d[])
+  id: SortCoordinateZ(Rhino.Geometry.Point3d[])
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: SortCoordinateZ(Point3d[])
+  nameWithType: PointData.SortCoordinateZ(Point3d[])
+  fullName: LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d[])
+  type: Method
+  source:
+    id: SortCoordinateZ
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 138
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nSort the Z point coordinate\n"
+  example: []
+  syntax:
+    content: public static double[] SortCoordinateZ(Point3d[] arrPts)
+    parameters:
+    - id: arrPts
+      type: Rhino.Geometry.Point3d[]
+      description: The points to evaluate
+    return:
+      type: System.Double[]
+      description: double[]
+    content.vb: Public Shared Function SortCoordinateZ(arrPts As Point3d()) As Double()
+  overload: LagaRhino.PointData.SortCoordinateZ*
+  nameWithType.vb: PointData.SortCoordinateZ(Point3d())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d())
+  name.vb: SortCoordinateZ(Point3d())
+- uid: LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
+  commentId: M:LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
+  id: TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
+  parent: LagaRhino.PointData
+  langs:
+  - csharp
+  - vb
+  name: TwoPointsInterpolation(Point3d, Point3d, Double)
+  nameWithType: PointData.TwoPointsInterpolation(Point3d, Point3d, Double)
+  fullName: LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Double)
+  type: Method
+  source:
+    id: TwoPointsInterpolation
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaRhino\PointData.cs
+    startLine: 151
+  assemblies:
+  - LagaRhino
+  namespace: LagaRhino
+  summary: "\nWIP, create an interpolate point matrix between 2 points.\nThe method does not control exceptions for the point positions.\n"
+  example: []
+  syntax:
+    content: public static List<Point3d> TwoPointsInterpolation(Point3d ptStart, Point3d ptEnd, double span)
+    parameters:
+    - id: ptStart
+      type: Rhino.Geometry.Point3d
+      description: The start point, bottom left
+    - id: ptEnd
+      type: Rhino.Geometry.Point3d
+      description: The end point, top right
+    - id: span
+      type: System.Double
+      description: the aproximate point separation
+    return:
+      type: System.Collections.Generic.List{Rhino.Geometry.Point3d}
+      description: List<Point3d>()</Point3d>
+    content.vb: Public Shared Function TwoPointsInterpolation(ptStart As Point3d, ptEnd As Point3d, span As Double) As List(Of Point3d)
+  overload: LagaRhino.PointData.TwoPointsInterpolation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: LagaRhino
+  commentId: N:LagaRhino
+  name: LagaRhino
+  nameWithType: LagaRhino
+  fullName: LagaRhino
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LagaRhino.PointData.SortPointsQuadrant*
+  commentId: Overload:LagaRhino.PointData.SortPointsQuadrant
+  name: SortPointsQuadrant
+  nameWithType: PointData.SortPointsQuadrant
+  fullName: LagaRhino.PointData.SortPointsQuadrant
+- uid: Rhino.Geometry.Point3d
+  commentId: T:Rhino.Geometry.Point3d
+  parent: Rhino.Geometry
+  isExternal: true
+  name: Point3d
+  nameWithType: Point3d
+  fullName: Rhino.Geometry.Point3d
+- uid: Rhino.Geometry.Point3d[]
+  isExternal: true
+  name: Point3d[]
+  nameWithType: Point3d[]
+  fullName: Rhino.Geometry.Point3d[]
+  nameWithType.vb: Point3d()
+  fullName.vb: Rhino.Geometry.Point3d()
+  name.vb: Point3d()
+  spec.csharp:
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Rhino.Geometry
+  commentId: N:Rhino.Geometry
+  isExternal: true
+  name: Rhino.Geometry
+  nameWithType: Rhino.Geometry
+  fullName: Rhino.Geometry
+- uid: LagaRhino.PointData.PointQuadrant*
+  commentId: Overload:LagaRhino.PointData.PointQuadrant
+  name: PointQuadrant
+  nameWithType: PointData.PointQuadrant
+  fullName: LagaRhino.PointData.PointQuadrant
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: LagaRhino.PointData.DeepCopy*
+  commentId: Overload:LagaRhino.PointData.DeepCopy
+  name: DeepCopy
+  nameWithType: PointData.DeepCopy
+  fullName: LagaRhino.PointData.DeepCopy
+- uid: System.Collections.Generic.List{Rhino.Geometry.Curve}
+  commentId: T:System.Collections.Generic.List{Rhino.Geometry.Curve}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Curve>
+  nameWithType: List<Curve>
+  fullName: System.Collections.Generic.List<Rhino.Geometry.Curve>
+  nameWithType.vb: List(Of Curve)
+  fullName.vb: System.Collections.Generic.List(Of Rhino.Geometry.Curve)
+  name.vb: List(Of Curve)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Rhino.Geometry.Curve
+    name: Curve
+    nameWithType: Curve
+    fullName: Rhino.Geometry.Curve
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Rhino.Geometry.Curve
+    name: Curve
+    nameWithType: Curve
+    fullName: Rhino.Geometry.Curve
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: LagaRhino.PointData.SortPointsByZ*
+  commentId: Overload:LagaRhino.PointData.SortPointsByZ
+  name: SortPointsByZ
+  nameWithType: PointData.SortPointsByZ
+  fullName: LagaRhino.PointData.SortPointsByZ
+- uid: LagaRhino.PointData.GroupByZ*
+  commentId: Overload:LagaRhino.PointData.GroupByZ
+  name: GroupByZ
+  nameWithType: PointData.GroupByZ
+  fullName: LagaRhino.PointData.GroupByZ
+- uid: System.Collections.Generic.List{Rhino.Geometry.Point3d[]}
+  commentId: T:System.Collections.Generic.List{Rhino.Geometry.Point3d[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Point3d[]>
+  nameWithType: List<Point3d[]>
+  fullName: System.Collections.Generic.List<Rhino.Geometry.Point3d[]>
+  nameWithType.vb: List(Of Point3d())
+  fullName.vb: System.Collections.Generic.List(Of Rhino.Geometry.Point3d())
+  name.vb: List(Of Point3d())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: LagaRhino.PointData.SortPointsByXY*
+  commentId: Overload:LagaRhino.PointData.SortPointsByXY
+  name: SortPointsByXY
+  nameWithType: PointData.SortPointsByXY
+  fullName: LagaRhino.PointData.SortPointsByXY
+- uid: LagaRhino.PointData.SortCoordinateZ*
+  commentId: Overload:LagaRhino.PointData.SortCoordinateZ
+  name: SortCoordinateZ
+  nameWithType: PointData.SortCoordinateZ
+  fullName: LagaRhino.PointData.SortCoordinateZ
+- uid: System.Double[]
+  isExternal: true
+  name: Double[]
+  nameWithType: Double[]
+  fullName: System.Double[]
+  nameWithType.vb: Double()
+  fullName.vb: System.Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: LagaRhino.PointData.TwoPointsInterpolation*
+  commentId: Overload:LagaRhino.PointData.TwoPointsInterpolation
+  name: TwoPointsInterpolation
+  nameWithType: PointData.TwoPointsInterpolation
+  fullName: LagaRhino.PointData.TwoPointsInterpolation
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Collections.Generic.List{Rhino.Geometry.Point3d}
+  commentId: T:System.Collections.Generic.List{Rhino.Geometry.Point3d}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Point3d>
+  nameWithType: List<Point3d>
+  fullName: System.Collections.Generic.List<Rhino.Geometry.Point3d>
+  nameWithType.vb: List(Of Point3d)
+  fullName.vb: System.Collections.Generic.List(Of Rhino.Geometry.Point3d)
+  name.vb: List(Of Point3d)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Rhino.Geometry.Point3d
+    name: Point3d
+    nameWithType: Point3d
+    fullName: Rhino.Geometry.Point3d
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

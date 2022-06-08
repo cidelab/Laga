@@ -1,0 +1,1249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm.Replacement
+  commentId: T:Laga.GeneticAlgorithm.Replacement
+  id: Replacement
+  parent: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.Replacement.#ctor
+  - Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  - Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Replacement
+  nameWithType: Replacement
+  fullName: Laga.GeneticAlgorithm.Replacement
+  type: Class
+  source:
+    id: Replacement
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 9
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nTo replace old populations with new populations\n"
+  example: []
+  syntax:
+    content: public class Replacement
+    content.vb: Public Class Replacement
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.GeneticAlgorithm.Replacement.#ctor
+  commentId: M:Laga.GeneticAlgorithm.Replacement.#ctor
+  id: '#ctor'
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: Replacement()
+  nameWithType: Replacement.Replacement()
+  fullName: Laga.GeneticAlgorithm.Replacement.Replacement()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 14
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReplacement class\n"
+  example: []
+  syntax:
+    content: public Replacement()
+    content.vb: Public Sub New
+  overload: Laga.GeneticAlgorithm.Replacement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  id: ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritance(Object[][], Object[][], Int32)
+  nameWithType: Replacement.ReplaceInheritance(Object[][], Object[][], Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][], System.Object[][], System.Int32)
+  type: Method
+  source:
+    id: ReplaceInheritance
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 26
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nThis replace method is ideal for combinatorial problems with objects types in chromsome. and where is not possible generate new data in the replacement population.\n"
+  example: []
+  syntax:
+    content: public object[][] ReplaceInheritance(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Object[][]
+      description: the son mutated population
+    - id: ParentsPopulation
+      type: System.Object[][]
+      description: the parents population
+    - id: sizePopulation
+      type: System.Int32
+      description: the size of the population
+    return:
+      type: System.Object[][]
+      description: object[][]
+    content.vb: Public Function ReplaceInheritance(sonMutPopulation As Object()(), ParentsPopulation As Object()(), sizePopulation As Integer) As Object()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  nameWithType.vb: Replacement.ReplaceInheritance(Object()(), Object()(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object()(), System.Object()(), System.Int32)
+  name.vb: ReplaceInheritance(Object()(), Object()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  id: ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceRandom(Object[][], Single, Int32)
+  nameWithType: Replacement.ReplaceRandom(Object[][], Single, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][], System.Single, System.Int32)
+  type: Method
+  source:
+    id: ReplaceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 67
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nCreates a new population using the mutated inheritance and new random chromosomes.\n"
+  example: []
+  syntax:
+    content: public object[][] ReplaceRandom(object[][] sonMutPopulation, float percent, int sizePopulation)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Object[][]
+      description: Object[][]
+    - id: percent
+      type: System.Single
+      description: float
+    - id: sizePopulation
+      type: System.Int32
+      description: int
+    return:
+      type: System.Object[][]
+      description: object[][]
+    content.vb: Public Function ReplaceRandom(sonMutPopulation As Object()(), percent As Single, sizePopulation As Integer) As Object()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  nameWithType.vb: Replacement.ReplaceRandom(Object()(), Single, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object()(), System.Single, System.Int32)
+  name.vb: ReplaceRandom(Object()(), Single, Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  id: ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritanceRandom(Object[][], Object[][], Int32, Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Object[][], Object[][], Int32, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][], System.Object[][], System.Int32, System.Single)
+  type: Method
+  source:
+    id: ReplaceInheritanceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 121
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nthis replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will(parents) and how many new ones will be created for the new population.\n"
+  example: []
+  syntax:
+    content: public object[][] ReplaceInheritanceRandom(object[][] sonMutPopulation, object[][] ParentsPopulation, int sizePopulation, float percentInherit)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Object[][]
+      description: the son mutated population
+    - id: ParentsPopulation
+      type: System.Object[][]
+      description: the parents population
+    - id: sizePopulation
+      type: System.Int32
+      description: the size of the population
+    - id: percentInherit
+      type: System.Single
+      description: percentInherit
+    return:
+      type: System.Object[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritanceRandom(sonMutPopulation As Object()(), ParentsPopulation As Object()(), sizePopulation As Integer, percentInherit As Single) As Object()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Object()(), Object()(), Int32, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object()(), System.Object()(), System.Int32, System.Single)
+  name.vb: ReplaceInheritanceRandom(Object()(), Object()(), Int32, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  id: ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritance(Double[][], Double[][], Int32)
+  nameWithType: Replacement.ReplaceInheritance(Double[][], Double[][], Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][], System.Double[][], System.Int32)
+  type: Method
+  source:
+    id: ReplaceInheritance
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 190
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public double[][] ReplaceInheritance(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Double[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Double[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Double[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritance(sonMutPopulation As Double()(), ParentsPopulation As Double()(), sizePopulation As Integer) As Double()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  nameWithType.vb: Replacement.ReplaceInheritance(Double()(), Double()(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double()(), System.Double()(), System.Int32)
+  name.vb: ReplaceInheritance(Double()(), Double()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  id: ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceRandom(Double[][], Int32, Double, Double)
+  nameWithType: Replacement.ReplaceRandom(Double[][], Int32, Double, Double)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][], System.Int32, System.Double, System.Double)
+  type: Method
+  source:
+    id: ReplaceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 246
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public double[][] ReplaceRandom(double[][] sonMutPopulation, int sizePopulation, double min, double max)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Double[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Double
+      description: ''
+    - id: max
+      type: System.Double
+      description: ''
+    return:
+      type: System.Double[][]
+      description: ''
+    content.vb: Public Function ReplaceRandom(sonMutPopulation As Double()(), sizePopulation As Integer, min As Double, max As Double) As Double()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  nameWithType.vb: Replacement.ReplaceRandom(Double()(), Int32, Double, Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double()(), System.Int32, System.Double, System.Double)
+  name.vb: ReplaceRandom(Double()(), Int32, Double, Double)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  id: ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritanceRandom(Double[][], Double[][], Int32, Double, Double, Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Double[][], Double[][], Int32, Double, Double, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][], System.Double[][], System.Int32, System.Double, System.Double, System.Single)
+  type: Method
+  source:
+    id: ReplaceInheritanceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 303
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public double[][] ReplaceInheritanceRandom(double[][] sonMutPopulation, double[][] ParentsPopulation, int sizePopulation, double min, double max, float percentInherit)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Double[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Double[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Double
+      description: ''
+    - id: max
+      type: System.Double
+      description: ''
+    - id: percentInherit
+      type: System.Single
+      description: ''
+    return:
+      type: System.Double[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritanceRandom(sonMutPopulation As Double()(), ParentsPopulation As Double()(), sizePopulation As Integer, min As Double, max As Double, percentInherit As Single) As Double()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Double()(), Double()(), Int32, Double, Double, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double()(), System.Double()(), System.Int32, System.Double, System.Double, System.Single)
+  name.vb: ReplaceInheritanceRandom(Double()(), Double()(), Int32, Double, Double, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  id: ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritance(Single[][], Single[][], Int32)
+  nameWithType: Replacement.ReplaceInheritance(Single[][], Single[][], Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][], System.Single[][], System.Int32)
+  type: Method
+  source:
+    id: ReplaceInheritance
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 374
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float[][] ReplaceInheritance(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Single[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Single[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Single[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritance(sonMutPopulation As Single()(), ParentsPopulation As Single()(), sizePopulation As Integer) As Single()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  nameWithType.vb: Replacement.ReplaceInheritance(Single()(), Single()(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single()(), System.Single()(), System.Int32)
+  name.vb: ReplaceInheritance(Single()(), Single()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  id: ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceRandom(Single[][], Int32, Single, Single)
+  nameWithType: Replacement.ReplaceRandom(Single[][], Int32, Single, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][], System.Int32, System.Single, System.Single)
+  type: Method
+  source:
+    id: ReplaceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 429
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float[][] ReplaceRandom(float[][] sonMutPopulation, int sizePopulation, float min, float max)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Single[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Single
+      description: ''
+    - id: max
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single[][]
+      description: ''
+    content.vb: Public Function ReplaceRandom(sonMutPopulation As Single()(), sizePopulation As Integer, min As Single, max As Single) As Single()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  nameWithType.vb: Replacement.ReplaceRandom(Single()(), Int32, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single()(), System.Int32, System.Single, System.Single)
+  name.vb: ReplaceRandom(Single()(), Int32, Single, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  id: ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritanceRandom(Single[][], Single[][], Int32, Single, Single, Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Single[][], Single[][], Int32, Single, Single, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][], System.Single[][], System.Int32, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: ReplaceInheritanceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 486
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float[][] ReplaceInheritanceRandom(float[][] sonMutPopulation, float[][] ParentsPopulation, int sizePopulation, float min, float max, float percentInherit)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Single[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Single[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Single
+      description: ''
+    - id: max
+      type: System.Single
+      description: ''
+    - id: percentInherit
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritanceRandom(sonMutPopulation As Single()(), ParentsPopulation As Single()(), sizePopulation As Integer, min As Single, max As Single, percentInherit As Single) As Single()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Single()(), Single()(), Int32, Single, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single()(), System.Single()(), System.Int32, System.Single, System.Single, System.Single)
+  name.vb: ReplaceInheritanceRandom(Single()(), Single()(), Int32, Single, Single, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  id: ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritance(Int32[][], Int32[][], Int32)
+  nameWithType: Replacement.ReplaceInheritance(Int32[][], Int32[][], Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][], System.Int32[][], System.Int32)
+  type: Method
+  source:
+    id: ReplaceInheritance
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 556
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int[][] ReplaceInheritance(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Int32[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Int32[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritance(sonMutPopulation As Integer()(), ParentsPopulation As Integer()(), sizePopulation As Integer) As Integer()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  nameWithType.vb: Replacement.ReplaceInheritance(Int32()(), Int32()(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32()(), System.Int32()(), System.Int32)
+  name.vb: ReplaceInheritance(Int32()(), Int32()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  id: ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceRandom(Int32[][], Int32, Int32, Int32)
+  nameWithType: Replacement.ReplaceRandom(Int32[][], Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][], System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ReplaceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 611
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int[][] ReplaceRandom(int[][] sonMutPopulation, int sizePopulation, int min, int max)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Int32[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Int32
+      description: ''
+    - id: max
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32[][]
+      description: ''
+    content.vb: Public Function ReplaceRandom(sonMutPopulation As Integer()(), sizePopulation As Integer, min As Integer, max As Integer) As Integer()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  nameWithType.vb: Replacement.ReplaceRandom(Int32()(), Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32()(), System.Int32, System.Int32, System.Int32)
+  name.vb: ReplaceRandom(Int32()(), Int32, Int32, Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  id: ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceInheritanceRandom(Int32[][], Int32[][], Int32, Int32, Double, Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Int32[][], Int32[][], Int32, Int32, Double, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][], System.Int32[][], System.Int32, System.Int32, System.Double, System.Single)
+  type: Method
+  source:
+    id: ReplaceInheritanceRandom
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 669
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int[][] ReplaceInheritanceRandom(int[][] sonMutPopulation, int[][] ParentsPopulation, int sizePopulation, int min, double max, float percentInherit)
+    parameters:
+    - id: sonMutPopulation
+      type: System.Int32[][]
+      description: ''
+    - id: ParentsPopulation
+      type: System.Int32[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: min
+      type: System.Int32
+      description: ''
+    - id: max
+      type: System.Double
+      description: ''
+    - id: percentInherit
+      type: System.Single
+      description: ''
+    return:
+      type: System.Int32[][]
+      description: ''
+    content.vb: Public Function ReplaceInheritanceRandom(sonMutPopulation As Integer()(), ParentsPopulation As Integer()(), sizePopulation As Integer, min As Integer, max As Double, percentInherit As Single) As Integer()()
+  overload: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Int32()(), Int32()(), Int32, Int32, Double, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32()(), System.Int32()(), System.Int32, System.Int32, System.Double, System.Single)
+  name.vb: ReplaceInheritanceRandom(Int32()(), Int32()(), Int32, Int32, Double, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)
+  id: BinaryCharRandomReplace(System.Char[][],System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: BinaryCharRandomReplace(Char[][], Int32)
+  nameWithType: Replacement.BinaryCharRandomReplace(Char[][], Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][], System.Int32)
+  type: Method
+  source:
+    id: BinaryCharRandomReplace
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 735
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public char[][] BinaryCharRandomReplace(char[][] newPartOfPopulation, int sizePopulation)
+    parameters:
+    - id: newPartOfPopulation
+      type: System.Char[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Char[][]
+      description: ''
+    content.vb: Public Function BinaryCharRandomReplace(newPartOfPopulation As Char()(), sizePopulation As Integer) As Char()()
+  overload: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace*
+  nameWithType.vb: Replacement.BinaryCharRandomReplace(Char()(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char()(), System.Int32)
+  name.vb: BinaryCharRandomReplace(Char()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  id: CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.Replacement
+  langs:
+  - csharp
+  - vb
+  name: CharRandomReplace(Char[][], Int32, Int32, Int32)
+  nameWithType: Replacement.CharRandomReplace(Char[][], Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][], System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: CharRandomReplace
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Replacement.cs
+    startLine: 775
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public char[][] CharRandomReplace(char[][] newPartOfPopulation, int sizePopulation, int start, int end)
+    parameters:
+    - id: newPartOfPopulation
+      type: System.Char[][]
+      description: ''
+    - id: sizePopulation
+      type: System.Int32
+      description: ''
+    - id: start
+      type: System.Int32
+      description: ''
+    - id: end
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Char[][]
+      description: ''
+    content.vb: Public Function CharRandomReplace(newPartOfPopulation As Char()(), sizePopulation As Integer, start As Integer, end As Integer) As Char()()
+  overload: Laga.GeneticAlgorithm.Replacement.CharRandomReplace*
+  nameWithType.vb: Replacement.CharRandomReplace(Char()(), Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char()(), System.Int32, System.Int32, System.Int32)
+  name.vb: CharRandomReplace(Char()(), Int32, Int32, Int32)
+references:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.GeneticAlgorithm.Replacement.#ctor*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.#ctor
+  name: Replacement
+  nameWithType: Replacement.Replacement
+  fullName: Laga.GeneticAlgorithm.Replacement.Replacement
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance
+  name: ReplaceInheritance
+  nameWithType: Replacement.ReplaceInheritance
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance
+- uid: System.Object[][]
+  isExternal: true
+  name: Object[][]
+  nameWithType: Object[][]
+  fullName: System.Object[][]
+  nameWithType.vb: Object()()
+  fullName.vb: System.Object()()
+  name.vb: Object()()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceRandom
+  name: ReplaceRandom
+  nameWithType: Replacement.ReplaceRandom
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom
+  name: ReplaceInheritanceRandom
+  nameWithType: Replacement.ReplaceInheritanceRandom
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom
+- uid: System.Double[][]
+  isExternal: true
+  name: Double[][]
+  nameWithType: Double[][]
+  fullName: System.Double[][]
+  nameWithType.vb: Double()()
+  fullName.vb: System.Double()()
+  name.vb: Double()()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Single[][]
+  isExternal: true
+  name: Single[][]
+  nameWithType: Single[][]
+  fullName: System.Single[][]
+  nameWithType.vb: Single()()
+  fullName.vb: System.Single()()
+  name.vb: Single()()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[][]
+  isExternal: true
+  name: Int32[][]
+  nameWithType: Int32[][]
+  fullName: System.Int32[][]
+  nameWithType.vb: Int32()()
+  fullName.vb: System.Int32()()
+  name.vb: Int32()()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace
+  name: BinaryCharRandomReplace
+  nameWithType: Replacement.BinaryCharRandomReplace
+  fullName: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace
+- uid: System.Char[][]
+  isExternal: true
+  name: Char[][]
+  nameWithType: Char[][]
+  fullName: System.Char[][]
+  nameWithType.vb: Char()()
+  fullName.vb: System.Char()()
+  name.vb: Char()()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Replacement.CharRandomReplace*
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.CharRandomReplace
+  name: CharRandomReplace
+  nameWithType: Replacement.CharRandomReplace
+  fullName: Laga.GeneticAlgorithm.Replacement.CharRandomReplace

@@ -1,0 +1,1073 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.IO.IOExcelRead
+  commentId: T:Laga.IO.IOExcelRead
+  id: IOExcelRead
+  parent: Laga.IO
+  children:
+  - Laga.IO.IOExcelRead.#ctor(System.String)
+  - Laga.IO.IOExcelRead.#ctor(System.String,System.Int32)
+  - Laga.IO.IOExcelRead.#ctor(System.String,System.Int32,System.String)
+  - Laga.IO.IOExcelRead.CloseExcelApp
+  - Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  - Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean,System.String,System.String)
+  - Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  - Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  - Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  - Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32,System.Boolean)
+  - Laga.IO.IOExcelRead.IOReadCell(System.String)
+  - Laga.IO.IOExcelRead.IOReadRange(System.String)
+  - Laga.IO.IOExcelRead.MatrixDataExcel
+  - Laga.IO.IOExcelRead.SheetNum
+  - Laga.IO.IOExcelRead.TestExcelOpen
+  langs:
+  - csharp
+  - vb
+  name: IOExcelRead
+  nameWithType: IOExcelRead
+  fullName: Laga.IO.IOExcelRead
+  type: Class
+  source:
+    id: IOExcelRead
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 11
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRead excel files\n"
+  example: []
+  syntax:
+    content: public class IOExcelRead
+    content.vb: Public Class IOExcelRead
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.IO.IOExcelRead.MatrixDataExcel
+  commentId: P:Laga.IO.IOExcelRead.MatrixDataExcel
+  id: MatrixDataExcel
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: MatrixDataExcel
+  nameWithType: IOExcelRead.MatrixDataExcel
+  fullName: Laga.IO.IOExcelRead.MatrixDataExcel
+  type: Property
+  source:
+    id: MatrixDataExcel
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 29
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nget the data by list format, use this to get the data from excel\n"
+  example: []
+  syntax:
+    content: public List<List<string>> MatrixDataExcel { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+    content.vb: Public ReadOnly Property MatrixDataExcel As List(Of List(Of String))
+  overload: Laga.IO.IOExcelRead.MatrixDataExcel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOExcelRead.SheetNum
+  commentId: P:Laga.IO.IOExcelRead.SheetNum
+  id: SheetNum
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: SheetNum
+  nameWithType: IOExcelRead.SheetNum
+  fullName: Laga.IO.IOExcelRead.SheetNum
+  type: Property
+  source:
+    id: SheetNum
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 41
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet Excel sheet number.\n"
+  example: []
+  syntax:
+    content: public int SheetNum { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property SheetNum As Integer
+  overload: Laga.IO.IOExcelRead.SheetNum*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOExcelRead.#ctor(System.String)
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IOExcelRead(String)
+  nameWithType: IOExcelRead.IOExcelRead(String)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 57
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nThe simpliest constructor\n"
+  example: []
+  syntax:
+    content: public IOExcelRead(string FilePath)
+    parameters:
+    - id: FilePath
+      type: System.String
+      description: string, the path to the file
+    content.vb: Public Sub New(FilePath As String)
+  overload: Laga.IO.IOExcelRead.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.#ctor(System.String,System.Int32)
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IOExcelRead(String, Int32)
+  nameWithType: IOExcelRead.IOExcelRead(String, Int32)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 69
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nConstructor for IOExcel most flexible constructor.\ntherfore you have to deal with all operations:\nopen, read or write and close.\n"
+  example: []
+  syntax:
+    content: public IOExcelRead(string FilePath, int SheetNumber)
+    parameters:
+    - id: FilePath
+      type: System.String
+      description: String, the Path to the file
+    - id: SheetNumber
+      type: System.Int32
+      description: Integer, the index sheet in the excel book
+    content.vb: Public Sub New(FilePath As String, SheetNumber As Integer)
+  overload: Laga.IO.IOExcelRead.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.#ctor(System.String,System.Int32,System.String)
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String,System.Int32,System.String)
+  id: '#ctor(System.String,System.Int32,System.String)'
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IOExcelRead(String, Int32, String)
+  nameWithType: IOExcelRead.IOExcelRead(String, Int32, String)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 82
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nSimple constructor to read data straightforward from excel\nthe simpliest and faster option\n"
+  example: []
+  syntax:
+    content: public IOExcelRead(string FilePath, int SheetNumber, string XlsxRange)
+    parameters:
+    - id: FilePath
+      type: System.String
+      description: string, the Path to the file
+    - id: SheetNumber
+      type: System.Int32
+      description: integer, the index sheet in the excel book
+    - id: XlsxRange
+      type: System.String
+      description: string, the excel range to read the data
+    content.vb: Public Sub New(FilePath As String, SheetNumber As Integer, XlsxRange As String)
+  overload: Laga.IO.IOExcelRead.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IOReadRange(System.String)
+  commentId: M:Laga.IO.IOExcelRead.IOReadRange(System.String)
+  id: IOReadRange(System.String)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IOReadRange(String)
+  nameWithType: IOExcelRead.IOReadRange(String)
+  fullName: Laga.IO.IOExcelRead.IOReadRange(System.String)
+  type: Method
+  source:
+    id: IOReadRange
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 101
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nread the cells range specified in the parameter.\n"
+  example: []
+  syntax:
+    content: public List<List<string>> IOReadRange(string strXlRange)
+    parameters:
+    - id: strXlRange
+      type: System.String
+      description: the range to read the excel, format &quot;A1:B2&quot; if is empty (&quot;&quot;) will return the whole data in the workbook
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+    content.vb: Public Function IOReadRange(strXlRange As String) As List(Of List(Of String))
+  overload: Laga.IO.IOExcelRead.IOReadRange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IOReadCell(System.String)
+  commentId: M:Laga.IO.IOExcelRead.IOReadCell(System.String)
+  id: IOReadCell(System.String)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IOReadCell(String)
+  nameWithType: IOExcelRead.IOReadCell(String)
+  fullName: Laga.IO.IOExcelRead.IOReadCell(System.String)
+  type: Method
+  source:
+    id: IOReadCell
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 129
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRead a specific excel cell.\n"
+  example: []
+  syntax:
+    content: public string IOReadCell(string strXlCell)
+    parameters:
+    - id: strXlCell
+      type: System.String
+      description: The cell to read in excel, format &quot;A1&quot;
+    return:
+      type: System.String
+    content.vb: Public Function IOReadCell(strXlCell As String) As String
+  overload: Laga.IO.IOExcelRead.IOReadCell*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32,System.Boolean)
+  commentId: M:Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32,System.Boolean)
+  id: IORead_SetActiveSheet(System.Int32,System.Boolean)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IORead_SetActiveSheet(Int32, Boolean)
+  nameWithType: IOExcelRead.IORead_SetActiveSheet(Int32, Boolean)
+  fullName: Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: IORead_SetActiveSheet
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 147
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nActivates a specific Excel sheet to read.\n"
+  example: []
+  syntax:
+    content: public void IORead_SetActiveSheet(int pos, bool display)
+    parameters:
+    - id: pos
+      type: System.Int32
+      description: The position of the excel sheet in the document.
+    - id: display
+      type: System.Boolean
+      description: decide to visualize the excel sheet.
+    content.vb: Public Sub IORead_SetActiveSheet(pos As Integer, display As Boolean)
+  overload: Laga.IO.IOExcelRead.IORead_SetActiveSheet*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.TestExcelOpen
+  commentId: M:Laga.IO.IOExcelRead.TestExcelOpen
+  id: TestExcelOpen
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: TestExcelOpen()
+  nameWithType: IOExcelRead.TestExcelOpen()
+  fullName: Laga.IO.IOExcelRead.TestExcelOpen()
+  type: Method
+  source:
+    id: TestExcelOpen
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 160
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nTest if excel application is open.\n"
+  example: []
+  syntax:
+    content: public bool TestExcelOpen()
+    return:
+      type: System.Boolean
+    content.vb: Public Function TestExcelOpen As Boolean
+  overload: Laga.IO.IOExcelRead.TestExcelOpen*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  commentId: M:Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  id: IORead_ExcelWorksheetNames
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IORead_ExcelWorksheetNames()
+  nameWithType: IOExcelRead.IORead_ExcelWorksheetNames()
+  fullName: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames()
+  type: Method
+  source:
+    id: IORead_ExcelWorksheetNames
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 182
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nOpen the App\nreturn all the excel sheet names.\nClose the App, release the Marshalls.\n"
+  example: []
+  syntax:
+    content: public List<string> IORead_ExcelWorksheetNames()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function IORead_ExcelWorksheetNames As List(Of String)
+  overload: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  commentId: M:Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  id: IORead_OpenExcelApp
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IORead_OpenExcelApp()
+  nameWithType: IOExcelRead.IORead_OpenExcelApp()
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp()
+  type: Method
+  source:
+    id: IORead_OpenExcelApp
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 199
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nOpen excel app based on the constructor.\n"
+  example: []
+  syntax:
+    content: public void IORead_OpenExcelApp()
+    content.vb: Public Sub IORead_OpenExcelApp
+  overload: Laga.IO.IOExcelRead.IORead_OpenExcelApp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  commentId: M:Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  id: IORead_OpenExcelApp(System.Boolean)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: IORead_OpenExcelApp(Boolean)
+  nameWithType: IOExcelRead.IORead_OpenExcelApp(Boolean)
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  type: Method
+  source:
+    id: IORead_OpenExcelApp
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 210
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nOpen excel app based on the constructor.\n"
+  example: []
+  syntax:
+    content: public void IORead_OpenExcelApp(bool display)
+    parameters:
+    - id: display
+      type: System.Boolean
+      description: if is true, show the excel&quot;
+    content.vb: Public Sub IORead_OpenExcelApp(display As Boolean)
+  overload: Laga.IO.IOExcelRead.IORead_OpenExcelApp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.CloseExcelApp
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp
+  id: CloseExcelApp
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: CloseExcelApp()
+  nameWithType: IOExcelRead.CloseExcelApp()
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp()
+  type: Method
+  source:
+    id: CloseExcelApp
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 235
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nClean all the marshalls and kill excel.\n"
+  example: []
+  syntax:
+    content: public void CloseExcelApp()
+    content.vb: Public Sub CloseExcelApp
+  overload: Laga.IO.IOExcelRead.CloseExcelApp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  id: CloseExcelApp(System.Boolean)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: CloseExcelApp(Boolean)
+  nameWithType: IOExcelRead.CloseExcelApp(Boolean)
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  type: Method
+  source:
+    id: CloseExcelApp
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 255
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nclean all the marshalls and close - save the excel.\n"
+  example: []
+  syntax:
+    content: public void CloseExcelApp(bool saveFile)
+    parameters:
+    - id: saveFile
+      type: System.Boolean
+      description: if is true, will save the file
+    content.vb: Public Sub CloseExcelApp(saveFile As Boolean)
+  overload: Laga.IO.IOExcelRead.CloseExcelApp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean,System.String,System.String)
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean,System.String,System.String)
+  id: CloseExcelApp(System.Boolean,System.String,System.String)
+  parent: Laga.IO.IOExcelRead
+  langs:
+  - csharp
+  - vb
+  name: CloseExcelApp(Boolean, String, String)
+  nameWithType: IOExcelRead.CloseExcelApp(Boolean, String, String)
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean, System.String, System.String)
+  type: Method
+  source:
+    id: CloseExcelApp
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\IOExcelRead.cs
+    startLine: 287
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nsave and close the excel.\n"
+  example: []
+  syntax:
+    content: public void CloseExcelApp(bool saveFile, string fileName, string directory)
+    parameters:
+    - id: saveFile
+      type: System.Boolean
+      description: if is true, will save the file
+    - id: fileName
+      type: System.String
+      description: string, the file name of the excel file
+    - id: directory
+      type: System.String
+      description: string, the address where to save the excel
+    content.vb: Public Sub CloseExcelApp(saveFile As Boolean, fileName As String, directory As String)
+  overload: Laga.IO.IOExcelRead.CloseExcelApp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.IO.IOExcelRead.MatrixDataExcel*
+  commentId: Overload:Laga.IO.IOExcelRead.MatrixDataExcel
+  name: MatrixDataExcel
+  nameWithType: IOExcelRead.MatrixDataExcel
+  fullName: Laga.IO.IOExcelRead.MatrixDataExcel
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<String>>
+  nameWithType: List<List<String>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<System.String>>
+  nameWithType.vb: List(Of List(Of String))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String))
+  name.vb: List(Of List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Laga.IO.IOExcelRead.SheetNum*
+  commentId: Overload:Laga.IO.IOExcelRead.SheetNum
+  name: SheetNum
+  nameWithType: IOExcelRead.SheetNum
+  fullName: Laga.IO.IOExcelRead.SheetNum
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.IO.IOExcelRead.#ctor*
+  commentId: Overload:Laga.IO.IOExcelRead.#ctor
+  name: IOExcelRead
+  nameWithType: IOExcelRead.IOExcelRead
+  fullName: Laga.IO.IOExcelRead.IOExcelRead
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.IO.IOExcelRead.IOReadRange*
+  commentId: Overload:Laga.IO.IOExcelRead.IOReadRange
+  name: IOReadRange
+  nameWithType: IOExcelRead.IOReadRange
+  fullName: Laga.IO.IOExcelRead.IOReadRange
+- uid: Laga.IO.IOExcelRead.IOReadCell*
+  commentId: Overload:Laga.IO.IOExcelRead.IOReadCell
+  name: IOReadCell
+  nameWithType: IOExcelRead.IOReadCell
+  fullName: Laga.IO.IOExcelRead.IOReadCell
+- uid: Laga.IO.IOExcelRead.IORead_SetActiveSheet*
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_SetActiveSheet
+  name: IORead_SetActiveSheet
+  nameWithType: IOExcelRead.IORead_SetActiveSheet
+  fullName: Laga.IO.IOExcelRead.IORead_SetActiveSheet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Laga.IO.IOExcelRead.TestExcelOpen*
+  commentId: Overload:Laga.IO.IOExcelRead.TestExcelOpen
+  name: TestExcelOpen
+  nameWithType: IOExcelRead.TestExcelOpen
+  fullName: Laga.IO.IOExcelRead.TestExcelOpen
+- uid: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames*
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  name: IORead_ExcelWorksheetNames
+  nameWithType: IOExcelRead.IORead_ExcelWorksheetNames
+  fullName: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp*
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  name: IORead_OpenExcelApp
+  nameWithType: IOExcelRead.IORead_OpenExcelApp
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp
+- uid: Laga.IO.IOExcelRead.CloseExcelApp*
+  commentId: Overload:Laga.IO.IOExcelRead.CloseExcelApp
+  name: CloseExcelApp
+  nameWithType: IOExcelRead.CloseExcelApp
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp

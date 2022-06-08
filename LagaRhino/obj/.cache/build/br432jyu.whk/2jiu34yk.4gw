@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Shoebox
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Shoebox
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LagaRhino.Shoebox">
+  
+  
+  <h1 id="LagaRhino_Shoebox" data-uid="LagaRhino.Shoebox" class="text-break">Class Shoebox
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Shoebox</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Rhino.Runtime.CommonObject</span></div>
+    <div class="level2"><span class="xref">Rhino.Geometry.GeometryBase</span></div>
+    <div class="level3"><span class="xref">Rhino.Geometry.Brep</span></div>
+    <div class="level4"><span class="xref">Shoebox</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.TryConvertBrep(Rhino.Geometry.GeometryBase)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsBox()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsBox(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.ChangeSeam(Rhino.Geometry.BrepFace, System.Int32, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CopyTrimCurves(Rhino.Geometry.BrepFace, Rhino.Geometry.Surface, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBaseballSphere(Rhino.Geometry.Point3d, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateDevelopableLoft(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Boolean, System.Boolean, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateDevelopableLoft(Rhino.Geometry.NurbsCurve, Rhino.Geometry.NurbsCurve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Point2d&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromMesh(Rhino.Geometry.Mesh, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromBox(Rhino.Geometry.BoundingBox)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromBox(Rhino.Geometry.Box)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromBox(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Point3d&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromCylinder(Rhino.Geometry.Cylinder, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSphere(Rhino.Geometry.Sphere)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateQuadSphere(Rhino.Geometry.Sphere)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromCone(Rhino.Geometry.Cone, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromRevSurface(Rhino.Geometry.RevSurface, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSurface(Rhino.Geometry.Surface)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateTrimmedPlane(Rhino.Geometry.Plane, Rhino.Geometry.Curve)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateTrimmedPlane(Rhino.Geometry.Plane, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(Rhino.Geometry.Curve)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(Rhino.Geometry.Curve, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateTrimmedSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Surface)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateTrimmedSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Surface, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromCornerPoints(Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromCornerPoints(Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateEdgeSurface(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(Rhino.Collections.CurveList)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarBreps(Rhino.Collections.CurveList, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromOffsetFace(Rhino.Geometry.BrepFace, System.Double, System.Double, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateSolid(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeSurfaces(Rhino.Geometry.Surface, Rhino.Geometry.Surface, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeSurfaces(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeSurfaces(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double, System.Double, Rhino.Geometry.Point2d, Rhino.Geometry.Point2d, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePatch(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.GeometryBase&gt;, Rhino.Geometry.Surface, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePatch(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.GeometryBase&gt;, System.Int32, System.Int32, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePatch(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.GeometryBase&gt;, Rhino.Geometry.Surface, System.Int32, System.Int32, System.Boolean, System.Boolean, System.Double, System.Double, System.Double, System.Boolean[], System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePipe(Rhino.Geometry.Curve, System.Double, System.Boolean, Rhino.Geometry.PipeCapMode, System.Boolean, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePipe(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Boolean, Rhino.Geometry.PipeCapMode, System.Boolean, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateThickPipe(Rhino.Geometry.Curve, System.Double, System.Double, System.Boolean, Rhino.Geometry.PipeCapMode, System.Boolean, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateThickPipe(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Boolean, Rhino.Geometry.PipeCapMode, System.Boolean, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.SweepFrame, Rhino.Geometry.Vector3d, System.Boolean, Rhino.Geometry.SweepBlend, Rhino.Geometry.SweepMiter, System.Double, Rhino.Geometry.SweepRebuild, System.Int32, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweepSegmented(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweepSegmented(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweepSegmented(Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.SweepFrame, Rhino.Geometry.Vector3d, System.Boolean, Rhino.Geometry.SweepBlend, Rhino.Geometry.SweepMiter, System.Double, Rhino.Geometry.SweepRebuild, System.Int32, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweep(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Boolean, System.Double, Rhino.Geometry.SweepRebuild, System.Int32, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromSweepInParts(Rhino.Geometry.Curve, Rhino.Geometry.Curve, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Point2d&gt;, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromTaperedExtrude(Rhino.Geometry.Curve, System.Double, Rhino.Geometry.Vector3d, Rhino.Geometry.Point3d, System.Double, Rhino.Geometry.ExtrudeCornerType, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromTaperedExtrude(Rhino.Geometry.Curve, System.Double, Rhino.Geometry.Vector3d, Rhino.Geometry.Point3d, System.Double, Rhino.Geometry.ExtrudeCornerType)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromTaperedExtrudeWithRef(Rhino.Geometry.Curve, Rhino.Geometry.Vector3d, System.Double, System.Double, Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBlendSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.BrepEdge, Rhino.Geometry.Interval, System.Boolean, Rhino.Geometry.BlendContinuity, Rhino.Geometry.BrepFace, Rhino.Geometry.BrepEdge, Rhino.Geometry.Interval, System.Boolean, Rhino.Geometry.BlendContinuity)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBlendShape(Rhino.Geometry.BrepFace, Rhino.Geometry.BrepEdge, System.Double, System.Boolean, Rhino.Geometry.BlendContinuity, Rhino.Geometry.BrepFace, Rhino.Geometry.BrepEdge, System.Double, System.Boolean, Rhino.Geometry.BlendContinuity)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFilletSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFilletSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, System.Boolean, System.Boolean, System.Double, Rhino.Geometry.Brep[], Rhino.Geometry.Brep[])</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateChamferSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateChamferSurface(Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, Rhino.Geometry.BrepFace, Rhino.Geometry.Point2d, System.Double, System.Boolean, System.Boolean, System.Double, Rhino.Geometry.Brep[], Rhino.Geometry.Brep[])</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFilletEdges(Rhino.Geometry.Brep, System.Collections.Generic.IEnumerable&lt;System.Int32&gt;, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, System.Collections.Generic.IEnumerable&lt;System.Double&gt;, Rhino.Geometry.BlendType, Rhino.Geometry.RailType, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateOffsetBrep(Rhino.Geometry.Brep, System.Double, System.Boolean, System.Boolean, System.Double, Rhino.Geometry.Brep[], Rhino.Geometry.Brep[])</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateOffsetBrep(Rhino.Geometry.Brep, System.Double, System.Boolean, System.Boolean, System.Boolean, System.Double, Rhino.Geometry.Brep[], Rhino.Geometry.Brep[])</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.RemoveFins()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromJoinedEdges(Rhino.Geometry.Brep, System.Int32, Rhino.Geometry.Brep, System.Int32, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromLoft(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.LoftType, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromLoftRebuild(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.LoftType, System.Boolean, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromLoftRefit(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.LoftType, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateFromLoft(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Boolean, System.Boolean, Rhino.Geometry.BrepTrim, Rhino.Geometry.BrepTrim, Rhino.Geometry.LoftType, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarUnion(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarUnion(Rhino.Geometry.Brep, Rhino.Geometry.Brep, Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarDifference(Rhino.Geometry.Brep, Rhino.Geometry.Brep, Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreatePlanarIntersection(Rhino.Geometry.Brep, Rhino.Geometry.Brep, Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanUnion(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanUnion(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanIntersection(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanIntersection(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanIntersection(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanIntersection(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanDifference(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanDifference(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanDifference(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanDifference(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanSplit(Rhino.Geometry.Brep, Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateBooleanSplit(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateShell(Rhino.Geometry.Brep, System.Collections.Generic.IEnumerable&lt;System.Int32&gt;, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.JoinBreps(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeBreps(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateContourCurves(Rhino.Geometry.Brep, Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateContourCurves(Rhino.Geometry.Brep, Rhino.Geometry.Plane)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CreateCurvatureAnalysisMesh(Rhino.Geometry.Brep, Rhino.ApplicationSettings.CurvatureAnalysisSettingsState)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DestroyRegionTopology()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetRegions()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Duplicate()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateBrep()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateSubBrep(System.Collections.Generic.IEnumerable&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateEdgeCurves()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateEdgeCurves(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateNakedEdgeCurves(System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetConnectedComponents()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetWireframe(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.DuplicateVertices()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Flip()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsDuplicate(Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsValidTopology(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsValidGeometry(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsValidTolerancesAndFlags(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.ClosestPoint(Rhino.Geometry.Point3d)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.ClosestPoint(Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, Rhino.Geometry.ComponentIndex, System.Double, System.Double, System.Double, Rhino.Geometry.Vector3d)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.FindCoincidentBrepComponents(Rhino.Geometry.Point3d, System.Double, System.Int32[], System.Int32[], System.Int32[])</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsPointInside(Rhino.Geometry.Point3d, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetPointInside(System.Double, Rhino.Geometry.Point3d)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CapPlanarHoles(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Join(Rhino.Geometry.Brep, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.JoinNakedEdges(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeCoplanarFaces(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MergeCoplanarFaces(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Split(Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Split(Rhino.Geometry.Brep, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Split(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Brep&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Split(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.Curve&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Split(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.GeometryBase&gt;, Rhino.Geometry.Vector3d, System.Boolean, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Trim(Rhino.Geometry.Brep, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Trim(Rhino.Geometry.Plane, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.UnjoinEdges(System.Collections.Generic.IEnumerable&lt;System.Int32&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.JoinEdges(System.Int32, System.Int32, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.TransformComponent(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.ComponentIndex&gt;, Rhino.Geometry.Transform, System.Double, System.Double, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetArea()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetArea(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetVolume()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.GetVolume(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.AddTrimCurve(Rhino.Geometry.Curve)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.AddEdgeCurve(Rhino.Geometry.Curve)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.AddSurface(Rhino.Geometry.Surface)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Append(Rhino.Geometry.Brep)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.SetVertices()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.SetTrimIsoFlags()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.SetTolerancesBoxesAndFlags()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.SetTolerancesBoxesAndFlags(System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.RebuildTrimsForV2(Rhino.Geometry.BrepFace, Rhino.Geometry.NurbsSurface)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.MakeValidForV2()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Compact()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Repair(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.RemoveHoles(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.RemoveHoles(System.Collections.Generic.IEnumerable&lt;Rhino.Geometry.ComponentIndex&gt;, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedFaces()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedLoops()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedTrims()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedEdges()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedVertices()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnused3dCurves()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnused2dCurves()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.CullUnusedSurfaces()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Standardize()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Vertices</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Surfaces</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Edges</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Trims</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Loops</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Faces</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Curves2D</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.Curves3D</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsSolid</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.SolidOrientation</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsManifold</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.IsSurface</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.Brep.HasRegionTopology</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.OnSwitchToNonConst()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.DuplicateShallow()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Transform(Rhino.Geometry.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Translate(Rhino.Geometry.Vector3d)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Translate(System.Double, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Scale(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Rotate(System.Double, Rhino.Geometry.Vector3d, Rhino.Geometry.Point3d)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.MemoryEstimate()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetBoundingBox(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetBoundingBox(Rhino.Geometry.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetBoundingBox(Rhino.Geometry.Plane)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetBoundingBox(Rhino.Geometry.Plane, Rhino.Geometry.Box)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.MakeDeformable()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.ComponentIndex()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.SetUserString(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetUserString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GetUserStrings()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.NonConstOperation()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GeometryEquals(Rhino.Geometry.GeometryBase, Rhino.Geometry.GeometryBase)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.GeometryReferenceEquals(Rhino.Geometry.GeometryBase, Rhino.Geometry.GeometryBase)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.IsDocumentControlled</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.ObjectType</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.IsDeformable</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.HasBrepForm</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Geometry.GeometryBase.UserStringCount</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.EnsurePrivateCopy()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.ConstructConstObject(System.Object, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.IsValidWithLog(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.FromBase64String(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.FromJSON(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.FromJSON(System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.ToJSON(Rhino.FileIO.SerializationOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.PerformCorruptionTesting</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.HasUserData</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.UserData</span>
+    </div>
+    <div>
+      <span class="xref">Rhino.Runtime.CommonObject.UserDictionary</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LagaRhino.html">LagaRhino</a></h6>
+  <h6><strong>Assembly</strong>: LagaRhino.dll</h6>
+  <h5 id="LagaRhino_Shoebox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Shoebox : Brep, IDisposable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="LagaRhino_Shoebox__ctor_" data-uid="LagaRhino.Shoebox.#ctor*"></a>
+  <h4 id="LagaRhino_Shoebox__ctor_Rhino_Geometry_Point3d_System_Double_System_Double_System_Double_" data-uid="LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double)">Shoebox(Point3d, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Shoebox by length, width and height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shoebox(Point3d point, double length = 10, double width = 10, double height = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Base point location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Length</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Width</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Height</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_Shoebox__ctor_" data-uid="LagaRhino.Shoebox.#ctor*"></a>
+  <h4 id="LagaRhino_Shoebox__ctor_Rhino_Geometry_Point3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">Shoebox(Point3d, Double, Double, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Shoebox with the free Z top points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shoebox(Point3d point, double length = 10, double width = 10, double eHeight = 5, double fHeight = 10, double gHeight = 15, double hHeight = 20)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Base point location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Length</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Width</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">eHeight</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Z parameter for e point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">fHeight</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Z parameter for f point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">gHeight</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Z parameter for g point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">hHeight</span></td>
+        <td><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="1">Z parameter for h point</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="LagaRhino_Shoebox_Heigth_" data-uid="LagaRhino.Shoebox.Heigth*"></a>
+  <h4 id="LagaRhino_Shoebox_Heigth" data-uid="LagaRhino.Shoebox.Heigth">Heigth</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Height Shoebox property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Heigth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_Shoebox_Length_" data-uid="LagaRhino.Shoebox.Length*"></a>
+  <h4 id="LagaRhino_Shoebox_Length" data-uid="LagaRhino.Shoebox.Length">Length</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Length Shoebox Property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_Shoebox_ShoeBox_" data-uid="LagaRhino.Shoebox.ShoeBox*"></a>
+  <h4 id="LagaRhino_Shoebox_ShoeBox" data-uid="LagaRhino.Shoebox.ShoeBox">ShoeBox</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Get the ShoeBox geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Brep ShoeBox { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rhino.Geometry.Brep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_Shoebox_Width_" data-uid="LagaRhino.Shoebox.Width*"></a>
+  <h4 id="LagaRhino_Shoebox_Width" data-uid="LagaRhino.Shoebox.Width">Width</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/LagaRhino.Shoebox.yml" sourcestartlinenumber="2">Width Shoebox property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4082 @@
+id: LagaUnity
+language: CSharp
+name:
+  Default: LagaUnity
+qualifiedName:
+  Default: LagaUnity
+type: Assembly
+modifiers: {}
+items:
+- id: LagaUnity
+  commentId: N:LagaUnity
+  language: CSharp
+  name:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  nameWithType:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  qualifiedName:
+    CSharp: LagaUnity
+    VB: LagaUnity
+  type: Namespace
+  assemblies:
+  - LagaUnity
+  modifiers: {}
+  items:
+  - id: LagaUnity.Draw
+    commentId: T:LagaUnity.Draw
+    language: CSharp
+    name:
+      CSharp: Draw
+      VB: Draw
+    nameWithType:
+      CSharp: Draw
+      VB: Draw
+    qualifiedName:
+      CSharp: LagaUnity.Draw
+      VB: LagaUnity.Draw
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Draw
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Draw.cs
+      startLine: 13
+    summary: "\nBasic class for drawing geometry\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public static class Draw
+        VB: Public Module Draw
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: LagaUnity.Draw.Point(LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Draw.Point(LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: Point(Vectorf, Single, Color)
+        VB: Point(Vectorf, Single, Color)
+      nameWithType:
+        CSharp: Draw.Point(Vectorf, Single, Color)
+        VB: Draw.Point(Vectorf, Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Draw.Point(LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+        VB: LagaUnity.Draw.Point(LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Point
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Draw.cs
+        startLine: 22
+      summary: "\nDraw a Vector\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static LineRenderer Point(Vectorf point, float width, Color color)
+          VB: Public Shared Function Point(point As Vectorf, width As Single, color As Color) As LineRenderer
+        parameters:
+        - id: point
+          type: LagaUnity.Vectorf
+          description: The vector to display
+        - id: width
+          type: System.Single
+          description: The width of the point
+        - id: color
+          type: UnityEngine.Color
+          description: The color to display
+        return:
+          type: UnityEngine.LineRenderer
+      overload: LagaUnity.Draw.Point*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Draw.Line(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Draw.Line(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: Line(Vectorf, Vectorf, Single, Color)
+        VB: Line(Vectorf, Vectorf, Single, Color)
+      nameWithType:
+        CSharp: Draw.Line(Vectorf, Vectorf, Single, Color)
+        VB: Draw.Line(Vectorf, Vectorf, Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Draw.Line(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+        VB: LagaUnity.Draw.Line(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Line
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Draw.cs
+        startLine: 46
+      summary: "\nDraw a Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static LineRenderer Line(Vectorf pointA, Vectorf pointB, float width, Color color)
+          VB: Public Shared Function Line(pointA As Vectorf, pointB As Vectorf, width As Single, color As Color) As LineRenderer
+        parameters:
+        - id: pointA
+          type: LagaUnity.Vectorf
+          description: First point
+        - id: pointB
+          type: LagaUnity.Vectorf
+          description: Second Point
+        - id: width
+          type: System.Single
+          description: Line Width
+        - id: color
+          type: UnityEngine.Color
+          description: Color Line
+        return:
+          type: UnityEngine.LineRenderer
+      overload: LagaUnity.Draw.Line*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: LagaUnity.Line
+    commentId: T:LagaUnity.Line
+    language: CSharp
+    name:
+      CSharp: Line
+      VB: Line
+    nameWithType:
+      CSharp: Line
+      VB: Line
+    qualifiedName:
+      CSharp: LagaUnity.Line
+      VB: LagaUnity.Line
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Line
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+      startLine: 13
+    summary: "\nDraw a line in Unity\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Line : Laga.Geometry.Line'
+        VB: >-
+          Public Class Line
+
+              Inherits Laga.Geometry.Line
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: LagaUnity.Line.PointA
+      commentId: P:LagaUnity.Line.PointA
+      language: CSharp
+      name:
+        CSharp: PointA
+        VB: PointA
+      nameWithType:
+        CSharp: Line.PointA
+        VB: Line.PointA
+      qualifiedName:
+        CSharp: LagaUnity.Line.PointA
+        VB: LagaUnity.Line.PointA
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: PointA
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 21
+      summary: "\nFirst point in the Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf PointA { get; set; }
+          VB: Public Property PointA As Vectorf
+        parameters: []
+        return:
+          type: LagaUnity.Vectorf
+      overload: LagaUnity.Line.PointA*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Line.PointB
+      commentId: P:LagaUnity.Line.PointB
+      language: CSharp
+      name:
+        CSharp: PointB
+        VB: PointB
+      nameWithType:
+        CSharp: Line.PointB
+        VB: Line.PointB
+      qualifiedName:
+        CSharp: LagaUnity.Line.PointB
+        VB: LagaUnity.Line.PointB
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: PointB
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 36
+      summary: "\nSecond Point in the Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf PointB { get; set; }
+          VB: Public Property PointB As Vectorf
+        parameters: []
+        return:
+          type: LagaUnity.Vectorf
+      overload: LagaUnity.Line.PointB*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Line.#ctor(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Line(Vectorf, Vectorf)
+        VB: Line(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Line.Line(Vectorf, Vectorf)
+        VB: Line.Line(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Line.Line(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Line.Line(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 53
+      summary: "\nConstruct a laga line object by 2 points.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Line(Vectorf pointA, Vectorf pointB)
+          VB: Public Sub New(pointA As Vectorf, pointB As Vectorf)
+        parameters:
+        - id: pointA
+          type: LagaUnity.Vectorf
+          description: First Point
+        - id: pointB
+          type: LagaUnity.Vectorf
+          description: Second Point
+      overload: LagaUnity.Line.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.MidPoint
+      commentId: M:LagaUnity.Line.MidPoint
+      language: CSharp
+      name:
+        CSharp: MidPoint()
+        VB: MidPoint()
+      nameWithType:
+        CSharp: Line.MidPoint()
+        VB: Line.MidPoint()
+      qualifiedName:
+        CSharp: LagaUnity.Line.MidPoint()
+        VB: LagaUnity.Line.MidPoint()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: MidPoint
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 65
+      summary: "\nReturns the mid point.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf MidPoint()
+          VB: Public Function MidPoint As Vectorf
+        return:
+          type: LagaUnity.Vectorf
+          description: Laga Point
+      overload: LagaUnity.Line.MidPoint*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Line.Draw(System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: Draw(Single, Color)
+        VB: Draw(Single, Color)
+      nameWithType:
+        CSharp: Line.Draw(Single, Color)
+        VB: Line.Draw(Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+        VB: LagaUnity.Line.Draw(System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Draw
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 75
+      summary: "\nDraw a Unity Line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Draw(float width, Color color)
+          VB: Public Sub Draw(width As Single, color As Color)
+        parameters:
+        - id: width
+          type: System.Single
+          description: Line width
+        - id: color
+          type: UnityEngine.Color
+          description: Color line
+      overload: LagaUnity.Line.Draw*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      commentId: M:LagaUnity.Line.DrawLine(LagaUnity.Vectorf,LagaUnity.Vectorf,System.Single,UnityEngine.Color)
+      language: CSharp
+      name:
+        CSharp: DrawLine(Vectorf, Vectorf, Single, Color)
+        VB: DrawLine(Vectorf, Vectorf, Single, Color)
+      nameWithType:
+        CSharp: Line.DrawLine(Vectorf, Vectorf, Single, Color)
+        VB: Line.DrawLine(Vectorf, Vectorf, Single, Color)
+      qualifiedName:
+        CSharp: LagaUnity.Line.DrawLine(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+        VB: LagaUnity.Line.DrawLine(LagaUnity.Vectorf, LagaUnity.Vectorf, System.Single, UnityEngine.Color)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DrawLine
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Line.cs
+        startLine: 87
+      summary: "\nDraw a Unity line\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static LineRenderer DrawLine(Vectorf pointA, Vectorf pointB, float width, Color color)
+          VB: Public Shared Function DrawLine(pointA As Vectorf, pointB As Vectorf, width As Single, color As Color) As LineRenderer
+        parameters:
+        - id: pointA
+          type: LagaUnity.Vectorf
+          description: First point
+        - id: pointB
+          type: LagaUnity.Vectorf
+          description: Second Point
+        - id: width
+          type: System.Single
+          description: Line Width
+        - id: color
+          type: UnityEngine.Color
+          description: Color Line
+        return:
+          type: UnityEngine.LineRenderer
+      overload: LagaUnity.Line.DrawLine*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: LagaUnity.Polygon
+    commentId: T:LagaUnity.Polygon
+    language: CSharp
+    name:
+      CSharp: Polygon
+      VB: Polygon
+    nameWithType:
+      CSharp: Polygon
+      VB: Polygon
+    qualifiedName:
+      CSharp: LagaUnity.Polygon
+      VB: LagaUnity.Polygon
+    type: Class
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Polygon
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+      startLine: 13
+    summary: "\nPolygon class\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Polygon : ICollection<Vectorf>, IEnumerable<Vectorf>, IEnumerable'
+        VB: >-
+          Public Class Polygon
+
+              Implements ICollection(Of Vectorf), IEnumerable(Of Vectorf), IEnumerable
+    inheritance:
+    - System.Object
+    implements:
+    - System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    - System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}
+    - System.Collections.IEnumerable
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: LagaUnity.Polygon.Count
+      commentId: P:LagaUnity.Polygon.Count
+      language: CSharp
+      name:
+        CSharp: Count
+        VB: Count
+      nameWithType:
+        CSharp: Polygon.Count
+        VB: Polygon.Count
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Count
+        VB: LagaUnity.Polygon.Count
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Count
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 19
+      summary: "\nPolygon lenght\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int Count { get; }
+          VB: Public ReadOnly Property Count As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: LagaUnity.Polygon.Count*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Count
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.IsReadOnly
+      commentId: P:LagaUnity.Polygon.IsReadOnly
+      language: CSharp
+      name:
+        CSharp: IsReadOnly
+        VB: IsReadOnly
+      nameWithType:
+        CSharp: Polygon.IsReadOnly
+        VB: Polygon.IsReadOnly
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.IsReadOnly
+        VB: LagaUnity.Polygon.IsReadOnly
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: IsReadOnly
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 24
+      summary: "\nIsReadOnly boolean\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool IsReadOnly { get; }
+          VB: Public ReadOnly Property IsReadOnly As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: LagaUnity.Polygon.IsReadOnly*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.IsReadOnly
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Add(Vectorf)
+        VB: Add(Vectorf)
+      nameWithType:
+        CSharp: Polygon.Add(Vectorf)
+        VB: Polygon.Add(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+        VB: LagaUnity.Polygon.Add(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Add
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 30
+      summary: "\nAdd a Vector to the poylgon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Add(Vectorf vector)
+          VB: Public Sub Add(vector As Vectorf)
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: The Vector to add in the list
+      overload: LagaUnity.Polygon.Add*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Add(LagaUnity.Vectorf)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Clear
+      commentId: M:LagaUnity.Polygon.Clear
+      language: CSharp
+      name:
+        CSharp: Clear()
+        VB: Clear()
+      nameWithType:
+        CSharp: Polygon.Clear()
+        VB: Polygon.Clear()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Clear()
+        VB: LagaUnity.Polygon.Clear()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Clear
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 38
+      summary: "\nClear all data in the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Clear()
+          VB: Public Sub Clear
+      overload: LagaUnity.Polygon.Clear*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Clear
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Contains(Vectorf)
+        VB: Contains(Vectorf)
+      nameWithType:
+        CSharp: Polygon.Contains(Vectorf)
+        VB: Polygon.Contains(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+        VB: LagaUnity.Polygon.Contains(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Contains
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 48
+      summary: "\nCheck if the vec is in the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool Contains(Vectorf vector)
+          VB: Public Function Contains(vector As Vectorf) As Boolean
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: ''
+        return:
+          type: System.Boolean
+          description: True if the vector belongs to the polygon
+      overload: LagaUnity.Polygon.Contains*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Contains(LagaUnity.Vectorf)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[],System.Int32)
+      commentId: M:LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[],System.Int32)
+      language: CSharp
+      name:
+        CSharp: CopyTo(Vectorf[], Int32)
+        VB: CopyTo(Vectorf(), Int32)
+      nameWithType:
+        CSharp: Polygon.CopyTo(Vectorf[], Int32)
+        VB: Polygon.CopyTo(Vectorf(), Int32)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf[], System.Int32)
+        VB: LagaUnity.Polygon.CopyTo(LagaUnity.Vectorf(), System.Int32)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: CopyTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 61
+      summary: "\nCopy the vectors of the polygon to a new array.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void CopyTo(Vectorf[] array, int arrayIndex)
+          VB: Public Sub CopyTo(array As Vectorf(), arrayIndex As Integer)
+        parameters:
+        - id: array
+          type: LagaUnity.Vectorf[]
+          description: The array to copy
+        - id: arrayIndex
+          type: System.Int32
+          description: Index to start the array
+      overload: LagaUnity.Polygon.CopyTo*
+      exceptions:
+      - type: System.ArgumentNullException
+        commentId: T:System.ArgumentNullException
+      - type: System.ArgumentOutOfRangeException
+        commentId: T:System.ArgumentOutOfRangeException
+      - type: System.ArgumentException
+        commentId: T:System.ArgumentException
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.CopyTo(LagaUnity.Vectorf[],System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+      references:
+        System.ArgumentNullException: 
+        System.ArgumentOutOfRangeException: 
+        System.ArgumentException: 
+    - id: LagaUnity.Polygon.GetEnumerator
+      commentId: M:LagaUnity.Polygon.GetEnumerator
+      language: CSharp
+      name:
+        CSharp: GetEnumerator()
+        VB: GetEnumerator()
+      nameWithType:
+        CSharp: Polygon.GetEnumerator()
+        VB: Polygon.GetEnumerator()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.GetEnumerator()
+        VB: LagaUnity.Polygon.GetEnumerator()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: GetEnumerator
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 77
+      summary: "\nEnumerator can be used to read the data in the collection, but cannot be used to modify the collection.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public IEnumerator<Vectorf> GetEnumerator()
+          VB: Public Function GetEnumerator As IEnumerator(Of Vectorf)
+        return:
+          type: System.Collections.Generic.IEnumerator{LagaUnity.Vectorf}
+          description: ''
+      overload: LagaUnity.Polygon.GetEnumerator*
+      implements:
+      - System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}.GetEnumerator
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Remove(Vectorf)
+        VB: Remove(Vectorf)
+      nameWithType:
+        CSharp: Polygon.Remove(Vectorf)
+        VB: Polygon.Remove(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+        VB: LagaUnity.Polygon.Remove(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Remove
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 87
+      summary: "\nRemove a vector from the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool Remove(Vectorf vector)
+          VB: Public Function Remove(vector As Vectorf) As Boolean
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: the Vector to remove
+        return:
+          type: System.Boolean
+          description: true if all went ok
+      overload: LagaUnity.Polygon.Remove*
+      implements:
+      - System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Remove(LagaUnity.Vectorf)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - isEii: true
+      id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+      commentId: M:LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+      language: CSharp
+      name:
+        CSharp: IEnumerable.GetEnumerator()
+        VB: System.Collections.IEnumerable.GetEnumerator()
+      nameWithType:
+        CSharp: Polygon.IEnumerable.GetEnumerator()
+        VB: Polygon.System.Collections.IEnumerable.GetEnumerator()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator()
+        VB: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: System.Collections.IEnumerable.GetEnumerator
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 92
+      syntax:
+        content:
+          CSharp: IEnumerator IEnumerable.GetEnumerator()
+          VB: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+        return:
+          type: System.Collections.IEnumerator
+      overload: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+      implements:
+      - System.Collections.IEnumerable.GetEnumerator
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: LagaUnity.Polygon.#ctor(System.Collections.Generic.IEnumerable{LagaUnity.Vectorf})
+      commentId: M:LagaUnity.Polygon.#ctor(System.Collections.Generic.IEnumerable{LagaUnity.Vectorf})
+      language: CSharp
+      name:
+        CSharp: Polygon(IEnumerable<Vectorf>)
+        VB: Polygon(IEnumerable(Of Vectorf))
+      nameWithType:
+        CSharp: Polygon.Polygon(IEnumerable<Vectorf>)
+        VB: Polygon.Polygon(IEnumerable(Of Vectorf))
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Polygon(System.Collections.Generic.IEnumerable<LagaUnity.Vectorf>)
+        VB: LagaUnity.Polygon.Polygon(System.Collections.Generic.IEnumerable(Of LagaUnity.Vectorf))
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 107
+      summary: "\nPolygon constructor by a list / array of vectors\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Polygon(IEnumerable<Vectorf> VectorList)
+          VB: Public Sub New(VectorList As IEnumerable(Of Vectorf))
+        parameters:
+        - id: VectorList
+          type: System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}
+          description: the list of vectors
+      overload: LagaUnity.Polygon.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.VectorList
+      commentId: P:LagaUnity.Polygon.VectorList
+      language: CSharp
+      name:
+        CSharp: VectorList
+        VB: VectorList
+      nameWithType:
+        CSharp: Polygon.VectorList
+        VB: Polygon.VectorList
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.VectorList
+        VB: LagaUnity.Polygon.VectorList
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: VectorList
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 117
+      summary: "\nget the list of vectors in the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public List<Vectorf> VectorList { get; }
+          VB: Public ReadOnly Property VectorList As List(Of Vectorf)
+        parameters: []
+        return:
+          type: System.Collections.Generic.List{LagaUnity.Vectorf}
+      overload: LagaUnity.Polygon.VectorList*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Polygon.UpdateDraw
+      commentId: M:LagaUnity.Polygon.UpdateDraw
+      language: CSharp
+      name:
+        CSharp: UpdateDraw()
+        VB: UpdateDraw()
+      nameWithType:
+        CSharp: Polygon.UpdateDraw()
+        VB: Polygon.UpdateDraw()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.UpdateDraw()
+        VB: LagaUnity.Polygon.UpdateDraw()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: UpdateDraw
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 127
+      summary: "\nUpdate the polygon drawing\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void UpdateDraw()
+          VB: Public Sub UpdateDraw
+      overload: LagaUnity.Polygon.UpdateDraw*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Area
+      commentId: M:LagaUnity.Polygon.Area
+      language: CSharp
+      name:
+        CSharp: Area()
+        VB: Area()
+      nameWithType:
+        CSharp: Polygon.Area()
+        VB: Polygon.Area()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Area()
+        VB: LagaUnity.Polygon.Area()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Area
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 138
+      summary: "\nCalculate the area of the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Area()
+          VB: Public Function Area As Single
+        return:
+          type: System.Single
+          description: the area in float flavor
+      overload: LagaUnity.Polygon.Area*
+      exceptions:
+      - type: System.Exception
+        commentId: T:System.Exception
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+      references:
+        System.Exception: 
+    - id: LagaUnity.Polygon.Length
+      commentId: M:LagaUnity.Polygon.Length
+      language: CSharp
+      name:
+        CSharp: Length()
+        VB: Length()
+      nameWithType:
+        CSharp: Polygon.Length()
+        VB: Polygon.Length()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Length()
+        VB: LagaUnity.Polygon.Length()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Length
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 161
+      summary: "\nGet the length of Polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Length()
+          VB: Public Function Length As Single
+        return:
+          type: System.Single
+          description: the length
+      overload: LagaUnity.Polygon.Length*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.Center
+      commentId: M:LagaUnity.Polygon.Center
+      language: CSharp
+      name:
+        CSharp: Center()
+        VB: Center()
+      nameWithType:
+        CSharp: Polygon.Center()
+        VB: Polygon.Center()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.Center()
+        VB: LagaUnity.Polygon.Center()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Center
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 183
+      summary: "\nAverage center point\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf Center()
+          VB: Public Function Center As Vectorf
+        return:
+          type: LagaUnity.Vectorf
+          description: Vectorf
+      overload: LagaUnity.Polygon.Center*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.IsConvex
+      commentId: M:LagaUnity.Polygon.IsConvex
+      language: CSharp
+      name:
+        CSharp: IsConvex()
+        VB: IsConvex()
+      nameWithType:
+        CSharp: Polygon.IsConvex()
+        VB: Polygon.IsConvex()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.IsConvex()
+        VB: LagaUnity.Polygon.IsConvex()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: IsConvex
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 204
+      summary: "\nCheck if polygon is convex\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool IsConvex()
+          VB: Public Function IsConvex As Boolean
+        return:
+          type: System.Boolean
+          description: ''
+      overload: LagaUnity.Polygon.IsConvex*
+      exceptions:
+      - type: System.Exception
+        commentId: T:System.Exception
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+      references:
+        System.Exception: 
+    - id: LagaUnity.Polygon.SegmentAt(System.Int32)
+      commentId: M:LagaUnity.Polygon.SegmentAt(System.Int32)
+      language: CSharp
+      name:
+        CSharp: SegmentAt(Int32)
+        VB: SegmentAt(Int32)
+      nameWithType:
+        CSharp: Polygon.SegmentAt(Int32)
+        VB: Polygon.SegmentAt(Int32)
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.SegmentAt(System.Int32)
+        VB: LagaUnity.Polygon.SegmentAt(System.Int32)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: SegmentAt
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 235
+      summary: "\nDraw a specific segment in the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Line SegmentAt(int index)
+          VB: Public Function SegmentAt(index As Integer) As Line
+        parameters:
+        - id: index
+          type: System.Int32
+          description: the segment index in the polygon, if out of range is null
+        return:
+          type: LagaUnity.Line
+          description: The segment as Line
+      overload: LagaUnity.Polygon.SegmentAt*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Polygon.SortPolygonPoints
+      commentId: M:LagaUnity.Polygon.SortPolygonPoints
+      language: CSharp
+      name:
+        CSharp: SortPolygonPoints()
+        VB: SortPolygonPoints()
+      nameWithType:
+        CSharp: Polygon.SortPolygonPoints()
+        VB: Polygon.SortPolygonPoints()
+      qualifiedName:
+        CSharp: LagaUnity.Polygon.SortPolygonPoints()
+        VB: LagaUnity.Polygon.SortPolygonPoints()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: SortPolygonPoints
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Polygon.cs
+        startLine: 247
+      summary: "\nSort the points in the polygon\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Polygon SortPolygonPoints()
+          VB: Public Function SortPolygonPoints As Polygon
+        return:
+          type: LagaUnity.Polygon
+          description: Sorted list of vectors in the polygon by X, then Y
+      overload: LagaUnity.Polygon.SortPolygonPoints*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: LagaUnity.Vectorf
+    commentId: T:LagaUnity.Vectorf
+    language: CSharp
+    name:
+      CSharp: Vectorf
+      VB: Vectorf
+    nameWithType:
+      CSharp: Vectorf
+      VB: Vectorf
+    qualifiedName:
+      CSharp: LagaUnity.Vectorf
+      VB: LagaUnity.Vectorf
+    type: Struct
+    assemblies:
+    - LagaUnity
+    namespace: LagaUnity
+    source:
+      id: Vectorf
+      path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+      startLine: 8
+    summary: "\nVector struct\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public struct Vectorf
+        VB: Public Structure Vectorf
+    inheritedMembers:
+    - System.ValueType.Equals(System.Object)
+    - System.ValueType.GetHashCode
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetType
+    modifiers:
+      CSharp:
+      - public
+      - struct
+      VB:
+      - Public
+      - Structure
+    items:
+    - id: LagaUnity.Vectorf.X
+      commentId: F:LagaUnity.Vectorf.X
+      language: CSharp
+      name:
+        CSharp: X
+        VB: X
+      nameWithType:
+        CSharp: Vectorf.X
+        VB: Vectorf.X
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.X
+        VB: LagaUnity.Vectorf.X
+      type: Field
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: X
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 14
+      summary: "\nX coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float X
+          VB: Public X As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.Y
+      commentId: F:LagaUnity.Vectorf.Y
+      language: CSharp
+      name:
+        CSharp: Y
+        VB: Y
+      nameWithType:
+        CSharp: Vectorf.Y
+        VB: Vectorf.Y
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Y
+        VB: LagaUnity.Vectorf.Y
+      type: Field
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Y
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 18
+      summary: "\nY coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Y
+          VB: Public Y As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.Z
+      commentId: F:LagaUnity.Vectorf.Z
+      language: CSharp
+      name:
+        CSharp: Z
+        VB: Z
+      nameWithType:
+        CSharp: Vectorf.Z
+        VB: Vectorf.Z
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Z
+        VB: LagaUnity.Vectorf.Z
+      type: Field
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Z
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 22
+      summary: "\nZ coordinate\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float Z
+          VB: Public Z As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.#ctor(System.Single,System.Single,System.Single)
+      commentId: M:LagaUnity.Vectorf.#ctor(System.Single,System.Single,System.Single)
+      language: CSharp
+      name:
+        CSharp: Vectorf(Single, Single, Single)
+        VB: Vectorf(Single, Single, Single)
+      nameWithType:
+        CSharp: Vectorf.Vectorf(Single, Single, Single)
+        VB: Vectorf.Vectorf(Single, Single, Single)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Vectorf(System.Single, System.Single, System.Single)
+        VB: LagaUnity.Vectorf.Vectorf(System.Single, System.Single, System.Single)
+      type: Constructor
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: .ctor
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 30
+      summary: "\nCreate a Vectorf\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf(float X, float Y, float Z)
+          VB: Public Sub New(X As Single, Y As Single, Z As Single)
+        parameters:
+        - id: X
+          type: System.Single
+          description: X coordinate
+        - id: Y
+          type: System.Single
+          description: Y coordinate
+        - id: Z
+          type: System.Single
+          description: Z coordinate
+      overload: LagaUnity.Vectorf.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.ToVector3
+      commentId: P:LagaUnity.Vectorf.ToVector3
+      language: CSharp
+      name:
+        CSharp: ToVector3
+        VB: ToVector3
+      nameWithType:
+        CSharp: Vectorf.ToVector3
+        VB: Vectorf.ToVector3
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.ToVector3
+        VB: LagaUnity.Vectorf.ToVector3
+      type: Property
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: ToVector3
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 41
+      summary: "\nCast Vectorf to Vector3\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public readonly Vector3 ToVector3 { get; }
+          VB: Public ReadOnly Property ToVector3 As Vector3
+        parameters: []
+        return:
+          type: UnityEngine.Vector3
+          description: ''
+      overload: LagaUnity.Vectorf.ToVector3*
+      modifiers:
+        CSharp:
+        - public
+        - readonly
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: OrthogonalTo(Vectorf)
+        VB: OrthogonalTo(Vectorf)
+      nameWithType:
+        CSharp: Vectorf.OrthogonalTo(Vectorf)
+        VB: Vectorf.OrthogonalTo(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.OrthogonalTo(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: OrthogonalTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 51
+      summary: "\nCreates a orthogonal vector\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Vectorf OrthogonalTo(Vectorf vector)
+          VB: Public Shared Function OrthogonalTo(vector As Vectorf) As Vectorf
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: Vector
+        return:
+          type: LagaUnity.Vectorf
+          description: Vector
+      overload: LagaUnity.Vectorf.OrthogonalTo*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: CrossProduct(Vectorf, Vectorf)
+        VB: CrossProduct(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.CrossProduct(Vectorf, Vectorf)
+        VB: Vectorf.CrossProduct(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.CrossProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: CrossProduct
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 69
+      summary: "\nVector CrossProduct operation\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Vectorf CrossProduct(Vectorf vectorA, Vectorf vectorB)
+          VB: Public Shared Function CrossProduct(vectorA As Vectorf, vectorB As Vectorf) As Vectorf
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: vector B
+        return:
+          type: LagaUnity.Vectorf
+          description: The vector
+      overload: LagaUnity.Vectorf.CrossProduct*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: CrossProductLength(Vectorf, Vectorf, Vectorf)
+        VB: CrossProductLength(Vectorf, Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.CrossProductLength(Vectorf, Vectorf, Vectorf)
+        VB: Vectorf.CrossProductLength(Vectorf, Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.CrossProductLength(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: CrossProductLength
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 86
+      summary: "\nReturn the cross product length\n| B x BC | = |AB| * |BC| * Sin(theta)\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static float CrossProductLength(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+          VB: Public Shared Function CrossProductLength(vectorA As Vectorf, vectorB As Vectorf, vectorC As Vectorf) As Single
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        - id: vectorC
+          type: LagaUnity.Vectorf
+          description: Vector C
+        return:
+          type: System.Single
+          description: Z coordinate of the cross product
+      overload: LagaUnity.Vectorf.CrossProductLength*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: ComponentProjectTo(Vectorf)
+        VB: ComponentProjectTo(Vectorf)
+      nameWithType:
+        CSharp: Vectorf.ComponentProjectTo(Vectorf)
+        VB: Vectorf.ComponentProjectTo(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.ComponentProjectTo(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: ComponentProjectTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 101
+      summary: "\nProject to vector base B\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Vectorf ComponentProjectTo(Vectorf vectorB)
+          VB: Public Function ComponentProjectTo(vectorB As Vectorf) As Vectorf
+        parameters:
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector base
+        return:
+          type: LagaUnity.Vectorf
+          description: Vector
+      overload: LagaUnity.Vectorf.ComponentProjectTo*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: DistanceTo(Vectorf)
+        VB: DistanceTo(Vectorf)
+      nameWithType:
+        CSharp: Vectorf.DistanceTo(Vectorf)
+        VB: Vectorf.DistanceTo(Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.DistanceTo(LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DistanceTo
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 114
+      summary: "\nDistance\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public float DistanceTo(Vectorf vector)
+          VB: Public Function DistanceTo(vector As Vectorf) As Single
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: vector to test
+        return:
+          type: System.Single
+          description: float
+      overload: LagaUnity.Vectorf.DistanceTo*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.Normalize
+      commentId: M:LagaUnity.Vectorf.Normalize
+      language: CSharp
+      name:
+        CSharp: Normalize()
+        VB: Normalize()
+      nameWithType:
+        CSharp: Vectorf.Normalize()
+        VB: Vectorf.Normalize()
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Normalize()
+        VB: LagaUnity.Vectorf.Normalize()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Normalize
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 122
+      summary: "\nNormalize the vector to 1\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Normalize()
+          VB: Public Sub Normalize
+      overload: LagaUnity.Vectorf.Normalize*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: DotProduct(Vectorf, Vectorf)
+        VB: DotProduct(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.DotProduct(Vectorf, Vectorf)
+        VB: Vectorf.DotProduct(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DotProduct
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 134
+      summary: "\nDot product\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static float DotProduct(Vectorf vectorA, Vectorf vectorB)
+          VB: Public Shared Function DotProduct(vectorA As Vectorf, vectorB As Vectorf) As Single
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        return:
+          type: System.Single
+          description: float
+      overload: LagaUnity.Vectorf.DotProduct*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: DotProduct(Vectorf, Vectorf, Vectorf)
+        VB: DotProduct(Vectorf, Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.DotProduct(Vectorf, Vectorf, Vectorf)
+        VB: Vectorf.DotProduct(Vectorf, Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.DotProduct(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: DotProduct
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 146
+      summary: "\nDot Product AB · BC\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static float DotProduct(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+          VB: Public Shared Function DotProduct(vectorA As Vectorf, vectorB As Vectorf, vectorC As Vectorf) As Single
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: ''
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: ''
+        - id: vectorC
+          type: LagaUnity.Vectorf
+          description: ''
+        return:
+          type: System.Single
+          description: ''
+      overload: LagaUnity.Vectorf.DotProduct*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Angle(Vectorf, Vectorf)
+        VB: Angle(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.Angle(Vectorf, Vectorf)
+        VB: Vectorf.Angle(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Angle
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 162
+      summary: "\nAngle\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static float Angle(Vectorf vectorA, Vectorf vectorB)
+          VB: Public Shared Function Angle(vectorA As Vectorf, vectorB As Vectorf) As Single
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        return:
+          type: System.Single
+          description: float
+      overload: LagaUnity.Vectorf.Angle*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.Angle(LagaUnity.Vectorf,LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Angle(Vectorf, Vectorf, Vectorf)
+        VB: Angle(Vectorf, Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.Angle(Vectorf, Vectorf, Vectorf)
+        VB: Vectorf.Angle(Vectorf, Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.Angle(LagaUnity.Vectorf, LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: Angle
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 180
+      summary: "\nABC angle between PI and -PI\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static float Angle(Vectorf vectorA, Vectorf vectorB, Vectorf vectorC)
+          VB: Public Shared Function Angle(vectorA As Vectorf, vectorB As Vectorf, vectorC As Vectorf) As Single
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        - id: vectorC
+          type: LagaUnity.Vectorf
+          description: Vector C
+        return:
+          type: System.Single
+          description: double
+      overload: LagaUnity.Vectorf.Angle*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.op_Addition(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.op_Addition(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Addition(Vectorf, Vectorf)
+        VB: Addition(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.Addition(Vectorf, Vectorf)
+        VB: Vectorf.Addition(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Addition(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.Addition(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Operator
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: op_Addition
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 198
+      summary: "\nAddition\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Vectorf operator +(Vectorf vectorA, Vectorf vectorB)
+          VB: Public Shared Operator +(vectorA As Vectorf, vectorB As Vectorf) As Vectorf
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        return:
+          type: LagaUnity.Vectorf
+          description: Vector
+      overload: LagaUnity.Vectorf.op_Addition*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.op_Subtraction(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      commentId: M:LagaUnity.Vectorf.op_Subtraction(LagaUnity.Vectorf,LagaUnity.Vectorf)
+      language: CSharp
+      name:
+        CSharp: Subtraction(Vectorf, Vectorf)
+        VB: Subtraction(Vectorf, Vectorf)
+      nameWithType:
+        CSharp: Vectorf.Subtraction(Vectorf, Vectorf)
+        VB: Vectorf.Subtraction(Vectorf, Vectorf)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Subtraction(LagaUnity.Vectorf, LagaUnity.Vectorf)
+        VB: LagaUnity.Vectorf.Subtraction(LagaUnity.Vectorf, LagaUnity.Vectorf)
+      type: Operator
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: op_Subtraction
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 212
+      summary: "\nSubstraction\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Vectorf operator -(Vectorf vectorA, Vectorf vectorB)
+          VB: Public Shared Operator -(vectorA As Vectorf, vectorB As Vectorf) As Vectorf
+        parameters:
+        - id: vectorA
+          type: LagaUnity.Vectorf
+          description: Vector A
+        - id: vectorB
+          type: LagaUnity.Vectorf
+          description: Vector B
+        return:
+          type: LagaUnity.Vectorf
+          description: Vector
+      overload: LagaUnity.Vectorf.op_Subtraction*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.op_Multiply(LagaUnity.Vectorf,System.Single)
+      commentId: M:LagaUnity.Vectorf.op_Multiply(LagaUnity.Vectorf,System.Single)
+      language: CSharp
+      name:
+        CSharp: Multiply(Vectorf, Single)
+        VB: Multiply(Vectorf, Single)
+      nameWithType:
+        CSharp: Vectorf.Multiply(Vectorf, Single)
+        VB: Vectorf.Multiply(Vectorf, Single)
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.Multiply(LagaUnity.Vectorf, System.Single)
+        VB: LagaUnity.Vectorf.Multiply(LagaUnity.Vectorf, System.Single)
+      type: Operator
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: op_Multiply
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 226
+      summary: "\nScale multuplication\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static Vectorf operator *(Vectorf vector, float factor)
+          VB: Public Shared Operator *(vector As Vectorf, factor As Single) As Vectorf
+        parameters:
+        - id: vector
+          type: LagaUnity.Vectorf
+          description: Vector to scale
+        - id: factor
+          type: System.Single
+          description: factor
+        return:
+          type: LagaUnity.Vectorf
+          description: Vector
+      overload: LagaUnity.Vectorf.op_Multiply*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: LagaUnity.Vectorf.ToString
+      commentId: M:LagaUnity.Vectorf.ToString
+      language: CSharp
+      name:
+        CSharp: ToString()
+        VB: ToString()
+      nameWithType:
+        CSharp: Vectorf.ToString()
+        VB: Vectorf.ToString()
+      qualifiedName:
+        CSharp: LagaUnity.Vectorf.ToString()
+        VB: LagaUnity.Vectorf.ToString()
+      type: Method
+      assemblies:
+      - LagaUnity
+      namespace: LagaUnity
+      source:
+        id: ToString
+        path: C:\Users\delab\Documents\GitHub\Laga\LagaUnity\Vectorf.cs
+        startLine: 238
+      summary: "\nPrint vector data\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override string ToString()
+          VB: Public Overrides Function ToString As String
+        return:
+          type: System.String
+          description: string
+      overload: LagaUnity.Vectorf.ToString*
+      overridden: System.ValueType.ToString
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  UnityEngine:
+    name:
+      CSharp:
+      - name: UnityEngine
+        nameWithType: UnityEngine
+        qualifiedName: UnityEngine
+        isExternal: true
+      VB:
+      - name: UnityEngine
+        nameWithType: UnityEngine
+        qualifiedName: UnityEngine
+    isDefinition: true
+    commentId: N:UnityEngine
+  UnityEngine.LineRenderer:
+    name:
+      CSharp:
+      - id: UnityEngine.LineRenderer
+        name: LineRenderer
+        nameWithType: LineRenderer
+        qualifiedName: UnityEngine.LineRenderer
+        isExternal: true
+      VB:
+      - id: UnityEngine.LineRenderer
+        name: LineRenderer
+        nameWithType: LineRenderer
+        qualifiedName: UnityEngine.LineRenderer
+        isExternal: true
+    isDefinition: true
+    parent: UnityEngine
+    commentId: T:UnityEngine.LineRenderer
+  LagaUnity:
+    name:
+      CSharp:
+      - name: LagaUnity
+        nameWithType: LagaUnity
+        qualifiedName: LagaUnity
+      VB:
+      - name: LagaUnity
+        nameWithType: LagaUnity
+        qualifiedName: LagaUnity
+    isDefinition: true
+    commentId: N:LagaUnity
+  LagaUnity.Vectorf:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      VB:
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Vectorf
+  System.Single:
+    name:
+      CSharp:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      VB:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Single
+  UnityEngine.Color:
+    name:
+      CSharp:
+      - id: UnityEngine.Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: UnityEngine.Color
+        isExternal: true
+      VB:
+      - id: UnityEngine.Color
+        name: Color
+        nameWithType: Color
+        qualifiedName: UnityEngine.Color
+        isExternal: true
+    isDefinition: true
+    parent: UnityEngine
+    commentId: T:UnityEngine.Color
+  LagaUnity.Draw.Point*:
+    name:
+      CSharp:
+      - id: LagaUnity.Draw.Point*
+        name: Point
+        nameWithType: Draw.Point
+        qualifiedName: LagaUnity.Draw.Point
+      VB:
+      - id: LagaUnity.Draw.Point*
+        name: Point
+        nameWithType: Draw.Point
+        qualifiedName: LagaUnity.Draw.Point
+    isDefinition: true
+    commentId: Overload:LagaUnity.Draw.Point
+  LagaUnity.Draw.Line*:
+    name:
+      CSharp:
+      - id: LagaUnity.Draw.Line*
+        name: Line
+        nameWithType: Draw.Line
+        qualifiedName: LagaUnity.Draw.Line
+      VB:
+      - id: LagaUnity.Draw.Line*
+        name: Line
+        nameWithType: Draw.Line
+        qualifiedName: LagaUnity.Draw.Line
+    isDefinition: true
+    commentId: Overload:LagaUnity.Draw.Line
+  LagaUnity.Draw:
+    name:
+      CSharp:
+      - id: LagaUnity.Draw
+        name: Draw
+        nameWithType: Draw
+        qualifiedName: LagaUnity.Draw
+      VB:
+      - id: LagaUnity.Draw
+        name: Draw
+        nameWithType: Draw
+        qualifiedName: LagaUnity.Draw
+    isDefinition: true
+    commentId: T:LagaUnity.Draw
+  LagaUnity.Line.PointA*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.PointA*
+        name: PointA
+        nameWithType: Line.PointA
+        qualifiedName: LagaUnity.Line.PointA
+      VB:
+      - id: LagaUnity.Line.PointA*
+        name: PointA
+        nameWithType: Line.PointA
+        qualifiedName: LagaUnity.Line.PointA
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.PointA
+  LagaUnity.Line.PointB*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.PointB*
+        name: PointB
+        nameWithType: Line.PointB
+        qualifiedName: LagaUnity.Line.PointB
+      VB:
+      - id: LagaUnity.Line.PointB*
+        name: PointB
+        nameWithType: Line.PointB
+        qualifiedName: LagaUnity.Line.PointB
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.PointB
+  LagaUnity.Line.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.#ctor*
+        name: Line
+        nameWithType: Line.Line
+        qualifiedName: LagaUnity.Line.Line
+      VB:
+      - id: LagaUnity.Line.#ctor*
+        name: Line
+        nameWithType: Line.Line
+        qualifiedName: LagaUnity.Line.Line
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.#ctor
+  LagaUnity.Line.MidPoint*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.MidPoint*
+        name: MidPoint
+        nameWithType: Line.MidPoint
+        qualifiedName: LagaUnity.Line.MidPoint
+      VB:
+      - id: LagaUnity.Line.MidPoint*
+        name: MidPoint
+        nameWithType: Line.MidPoint
+        qualifiedName: LagaUnity.Line.MidPoint
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.MidPoint
+  LagaUnity.Line.Draw*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.Draw*
+        name: Draw
+        nameWithType: Line.Draw
+        qualifiedName: LagaUnity.Line.Draw
+      VB:
+      - id: LagaUnity.Line.Draw*
+        name: Draw
+        nameWithType: Line.Draw
+        qualifiedName: LagaUnity.Line.Draw
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.Draw
+  LagaUnity.Line.DrawLine*:
+    name:
+      CSharp:
+      - id: LagaUnity.Line.DrawLine*
+        name: DrawLine
+        nameWithType: Line.DrawLine
+        qualifiedName: LagaUnity.Line.DrawLine
+      VB:
+      - id: LagaUnity.Line.DrawLine*
+        name: DrawLine
+        nameWithType: Line.DrawLine
+        qualifiedName: LagaUnity.Line.DrawLine
+    isDefinition: true
+    commentId: Overload:LagaUnity.Line.DrawLine
+  LagaUnity.Line:
+    name:
+      CSharp:
+      - id: LagaUnity.Line
+        name: Line
+        nameWithType: Line
+        qualifiedName: LagaUnity.Line
+      VB:
+      - id: LagaUnity.Line
+        name: Line
+        nameWithType: Line
+        qualifiedName: LagaUnity.Line
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Line
+  System.Collections.Generic.ICollection`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.ICollection`1
+  System.Collections.Generic:
+    name:
+      CSharp:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+        isExternal: true
+      VB:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+    isDefinition: true
+    commentId: N:System.Collections.Generic
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.ICollection`1
+        name: ICollection
+        nameWithType: ICollection
+        qualifiedName: System.Collections.Generic.ICollection
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+  System.Collections.Generic.IEnumerable`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.IEnumerable`1
+  System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerable`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}
+  System.Collections:
+    name:
+      CSharp:
+      - name: System.Collections
+        nameWithType: System.Collections
+        qualifiedName: System.Collections
+        isExternal: true
+      VB:
+      - name: System.Collections
+        nameWithType: System.Collections
+        qualifiedName: System.Collections
+    isDefinition: true
+    commentId: N:System.Collections
+  System.Collections.IEnumerable:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerable
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.IEnumerable
+        isExternal: true
+      VB:
+      - id: System.Collections.IEnumerable
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.IEnumerable
+        isExternal: true
+    isDefinition: true
+    parent: System.Collections
+    commentId: T:System.Collections.IEnumerable
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  LagaUnity.Polygon.Count*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Count*
+        name: Count
+        nameWithType: Polygon.Count
+        qualifiedName: LagaUnity.Polygon.Count
+      VB:
+      - id: LagaUnity.Polygon.Count*
+        name: Count
+        nameWithType: Polygon.Count
+        qualifiedName: LagaUnity.Polygon.Count
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Count
+  System.Collections.Generic.ICollection`1.Count:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection<T>.Count
+        qualifiedName: System.Collections.Generic.ICollection<T>.Count
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection(Of T).Count
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Count
+        isExternal: true
+    isDefinition: true
+    commentId: P:System.Collections.Generic.ICollection`1.Count
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Count:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection<Vectorf>.Count
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.Count
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Count
+        name: Count
+        nameWithType: ICollection(Of Vectorf).Count
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).Count
+        isExternal: true
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Count
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: P:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Count
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  LagaUnity.Polygon.IsReadOnly*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.IsReadOnly*
+        name: IsReadOnly
+        nameWithType: Polygon.IsReadOnly
+        qualifiedName: LagaUnity.Polygon.IsReadOnly
+      VB:
+      - id: LagaUnity.Polygon.IsReadOnly*
+        name: IsReadOnly
+        nameWithType: Polygon.IsReadOnly
+        qualifiedName: LagaUnity.Polygon.IsReadOnly
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.IsReadOnly
+  System.Collections.Generic.ICollection`1.IsReadOnly:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection<T>.IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection<T>.IsReadOnly
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection(Of T).IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection(Of T).IsReadOnly
+        isExternal: true
+    isDefinition: true
+    commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.IsReadOnly:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection<Vectorf>.IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.IsReadOnly
+        isExternal: true
+      VB:
+      - id: System.Collections.Generic.ICollection`1.IsReadOnly
+        name: IsReadOnly
+        nameWithType: ICollection(Of Vectorf).IsReadOnly
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).IsReadOnly
+        isExternal: true
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.IsReadOnly
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: P:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.IsReadOnly
+  LagaUnity.Polygon.Add*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Add*
+        name: Add
+        nameWithType: Polygon.Add
+        qualifiedName: LagaUnity.Polygon.Add
+      VB:
+      - id: LagaUnity.Polygon.Add*
+        name: Add
+        nameWithType: Polygon.Add
+        qualifiedName: LagaUnity.Polygon.Add
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Add
+  System.Collections.Generic.ICollection`1.Add(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection<T>.Add
+        qualifiedName: System.Collections.Generic.ICollection<T>.Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection(Of T).Add
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Add(LagaUnity.Vectorf):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection<Vectorf>.Add
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Add(`0)
+        name: Add
+        nameWithType: ICollection(Of Vectorf).Add
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).Add
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Add(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Add(LagaUnity.Vectorf)
+  LagaUnity.Polygon.Clear*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Clear*
+        name: Clear
+        nameWithType: Polygon.Clear
+        qualifiedName: LagaUnity.Polygon.Clear
+      VB:
+      - id: LagaUnity.Polygon.Clear*
+        name: Clear
+        nameWithType: Polygon.Clear
+        qualifiedName: LagaUnity.Polygon.Clear
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Clear
+  System.Collections.Generic.ICollection`1.Clear:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection<T>.Clear
+        qualifiedName: System.Collections.Generic.ICollection<T>.Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection(Of T).Clear
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Clear
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Clear:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection<Vectorf>.Clear
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Clear
+        name: Clear
+        nameWithType: ICollection(Of Vectorf).Clear
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).Clear
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Clear
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Clear
+  LagaUnity.Polygon.Contains*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Contains*
+        name: Contains
+        nameWithType: Polygon.Contains
+        qualifiedName: LagaUnity.Polygon.Contains
+      VB:
+      - id: LagaUnity.Polygon.Contains*
+        name: Contains
+        nameWithType: Polygon.Contains
+        qualifiedName: LagaUnity.Polygon.Contains
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Contains
+  System.Collections.Generic.ICollection`1.Contains(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection<T>.Contains
+        qualifiedName: System.Collections.Generic.ICollection<T>.Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection(Of T).Contains
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Contains(LagaUnity.Vectorf):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection<Vectorf>.Contains
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Contains(`0)
+        name: Contains
+        nameWithType: ICollection(Of Vectorf).Contains
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).Contains
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Contains(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Contains(LagaUnity.Vectorf)
+  System.ArgumentNullException:
+    commentId: T:System.ArgumentNullException
+  System.ArgumentOutOfRangeException:
+    commentId: T:System.ArgumentOutOfRangeException
+  System.ArgumentException:
+    commentId: T:System.ArgumentException
+  LagaUnity.Vectorf[]:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  LagaUnity.Polygon.CopyTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.CopyTo*
+        name: CopyTo
+        nameWithType: Polygon.CopyTo
+        qualifiedName: LagaUnity.Polygon.CopyTo
+      VB:
+      - id: LagaUnity.Polygon.CopyTo*
+        name: CopyTo
+        nameWithType: Polygon.CopyTo
+        qualifiedName: LagaUnity.Polygon.CopyTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.CopyTo
+  System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection<T>.CopyTo
+        qualifiedName: System.Collections.Generic.ICollection<T>.CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection(Of T).CopyTo
+        qualifiedName: System.Collections.Generic.ICollection(Of T).CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.CopyTo(LagaUnity.Vectorf[],System.Int32):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection<Vectorf>.CopyTo
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+        name: CopyTo
+        nameWithType: ICollection(Of Vectorf).CopyTo
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).CopyTo
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.CopyTo(LagaUnity.Vectorf[],System.Int32)
+  System.Collections.Generic.IEnumerator`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.IEnumerator`1
+  System.Collections.Generic.IEnumerator{LagaUnity.Vectorf}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.IEnumerator`1
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerator
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerator`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.IEnumerator{LagaUnity.Vectorf}
+  LagaUnity.Polygon.GetEnumerator*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.GetEnumerator*
+        name: GetEnumerator
+        nameWithType: Polygon.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.GetEnumerator
+      VB:
+      - id: LagaUnity.Polygon.GetEnumerator*
+        name: GetEnumerator
+        nameWithType: Polygon.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.GetEnumerator
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.GetEnumerator
+  System.Collections.Generic.IEnumerable`1.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable<T>.GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable(Of T).GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable<Vectorf>.GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable<LagaUnity.Vectorf>.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.IEnumerable`1.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable(Of Vectorf).GetEnumerator
+        qualifiedName: System.Collections.Generic.IEnumerable(Of LagaUnity.Vectorf).GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    parent: System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.IEnumerable{LagaUnity.Vectorf}.GetEnumerator
+  LagaUnity.Polygon.Remove*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Remove*
+        name: Remove
+        nameWithType: Polygon.Remove
+        qualifiedName: LagaUnity.Polygon.Remove
+      VB:
+      - id: LagaUnity.Polygon.Remove*
+        name: Remove
+        nameWithType: Polygon.Remove
+        qualifiedName: LagaUnity.Polygon.Remove
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Remove
+  System.Collections.Generic.ICollection`1.Remove(`0):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection<T>.Remove
+        qualifiedName: System.Collections.Generic.ICollection<T>.Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection(Of T).Remove
+        qualifiedName: System.Collections.Generic.ICollection(Of T).Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Remove(LagaUnity.Vectorf):
+    name:
+      CSharp:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection<Vectorf>.Remove
+        qualifiedName: System.Collections.Generic.ICollection<LagaUnity.Vectorf>.Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.Generic.ICollection`1.Remove(`0)
+        name: Remove
+        nameWithType: ICollection(Of Vectorf).Remove
+        qualifiedName: System.Collections.Generic.ICollection(Of LagaUnity.Vectorf).Remove
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.ICollection`1.Remove(`0)
+    parent: System.Collections.Generic.ICollection{LagaUnity.Vectorf}
+    commentId: M:System.Collections.Generic.ICollection{LagaUnity.Vectorf}.Remove(LagaUnity.Vectorf)
+  System.Collections.IEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.IEnumerator
+        isExternal: true
+      VB:
+      - id: System.Collections.IEnumerator
+        name: IEnumerator
+        nameWithType: IEnumerator
+        qualifiedName: System.Collections.IEnumerator
+        isExternal: true
+    isDefinition: true
+    parent: System.Collections
+    commentId: T:System.Collections.IEnumerator
+  LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+        name: IEnumerable.GetEnumerator
+        nameWithType: Polygon.IEnumerable.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator
+      VB:
+      - id: LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator*
+        name: System.Collections.IEnumerable.GetEnumerator
+        nameWithType: Polygon.System.Collections.IEnumerable.GetEnumerator
+        qualifiedName: LagaUnity.Polygon.System.Collections.IEnumerable.GetEnumerator
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.System#Collections#IEnumerable#GetEnumerator
+  System.Collections.IEnumerable.GetEnumerator:
+    name:
+      CSharp:
+      - id: System.Collections.IEnumerable.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable.GetEnumerator
+        qualifiedName: System.Collections.IEnumerable.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Collections.IEnumerable.GetEnumerator
+        name: GetEnumerator
+        nameWithType: IEnumerable.GetEnumerator
+        qualifiedName: System.Collections.IEnumerable.GetEnumerator
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Collections.IEnumerable
+    commentId: M:System.Collections.IEnumerable.GetEnumerator
+  LagaUnity.Polygon.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.#ctor*
+        name: Polygon
+        nameWithType: Polygon.Polygon
+        qualifiedName: LagaUnity.Polygon.Polygon
+      VB:
+      - id: LagaUnity.Polygon.#ctor*
+        name: Polygon
+        nameWithType: Polygon.Polygon
+        qualifiedName: LagaUnity.Polygon.Polygon
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.#ctor
+  System.Collections.Generic.List`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.List`1
+  System.Collections.Generic.List{LagaUnity.Vectorf}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: LagaUnity.Vectorf
+        name: Vectorf
+        nameWithType: Vectorf
+        qualifiedName: LagaUnity.Vectorf
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{LagaUnity.Vectorf}
+  LagaUnity.Polygon.VectorList*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.VectorList*
+        name: VectorList
+        nameWithType: Polygon.VectorList
+        qualifiedName: LagaUnity.Polygon.VectorList
+      VB:
+      - id: LagaUnity.Polygon.VectorList*
+        name: VectorList
+        nameWithType: Polygon.VectorList
+        qualifiedName: LagaUnity.Polygon.VectorList
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.VectorList
+  LagaUnity.Polygon.UpdateDraw*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.UpdateDraw*
+        name: UpdateDraw
+        nameWithType: Polygon.UpdateDraw
+        qualifiedName: LagaUnity.Polygon.UpdateDraw
+      VB:
+      - id: LagaUnity.Polygon.UpdateDraw*
+        name: UpdateDraw
+        nameWithType: Polygon.UpdateDraw
+        qualifiedName: LagaUnity.Polygon.UpdateDraw
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.UpdateDraw
+  System.Exception:
+    commentId: T:System.Exception
+  LagaUnity.Polygon.Area*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Area*
+        name: Area
+        nameWithType: Polygon.Area
+        qualifiedName: LagaUnity.Polygon.Area
+      VB:
+      - id: LagaUnity.Polygon.Area*
+        name: Area
+        nameWithType: Polygon.Area
+        qualifiedName: LagaUnity.Polygon.Area
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Area
+  LagaUnity.Polygon.Length*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Length*
+        name: Length
+        nameWithType: Polygon.Length
+        qualifiedName: LagaUnity.Polygon.Length
+      VB:
+      - id: LagaUnity.Polygon.Length*
+        name: Length
+        nameWithType: Polygon.Length
+        qualifiedName: LagaUnity.Polygon.Length
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Length
+  LagaUnity.Polygon.Center*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.Center*
+        name: Center
+        nameWithType: Polygon.Center
+        qualifiedName: LagaUnity.Polygon.Center
+      VB:
+      - id: LagaUnity.Polygon.Center*
+        name: Center
+        nameWithType: Polygon.Center
+        qualifiedName: LagaUnity.Polygon.Center
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.Center
+  LagaUnity.Polygon.IsConvex*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.IsConvex*
+        name: IsConvex
+        nameWithType: Polygon.IsConvex
+        qualifiedName: LagaUnity.Polygon.IsConvex
+      VB:
+      - id: LagaUnity.Polygon.IsConvex*
+        name: IsConvex
+        nameWithType: Polygon.IsConvex
+        qualifiedName: LagaUnity.Polygon.IsConvex
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.IsConvex
+  LagaUnity.Polygon.SegmentAt*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.SegmentAt*
+        name: SegmentAt
+        nameWithType: Polygon.SegmentAt
+        qualifiedName: LagaUnity.Polygon.SegmentAt
+      VB:
+      - id: LagaUnity.Polygon.SegmentAt*
+        name: SegmentAt
+        nameWithType: Polygon.SegmentAt
+        qualifiedName: LagaUnity.Polygon.SegmentAt
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.SegmentAt
+  LagaUnity.Polygon:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon
+        name: Polygon
+        nameWithType: Polygon
+        qualifiedName: LagaUnity.Polygon
+      VB:
+      - id: LagaUnity.Polygon
+        name: Polygon
+        nameWithType: Polygon
+        qualifiedName: LagaUnity.Polygon
+    isDefinition: true
+    parent: LagaUnity
+    commentId: T:LagaUnity.Polygon
+  LagaUnity.Polygon.SortPolygonPoints*:
+    name:
+      CSharp:
+      - id: LagaUnity.Polygon.SortPolygonPoints*
+        name: SortPolygonPoints
+        nameWithType: Polygon.SortPolygonPoints
+        qualifiedName: LagaUnity.Polygon.SortPolygonPoints
+      VB:
+      - id: LagaUnity.Polygon.SortPolygonPoints*
+        name: SortPolygonPoints
+        nameWithType: Polygon.SortPolygonPoints
+        qualifiedName: LagaUnity.Polygon.SortPolygonPoints
+    isDefinition: true
+    commentId: Overload:LagaUnity.Polygon.SortPolygonPoints
+  System.ValueType:
+    name:
+      CSharp:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+      VB:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.ValueType
+  System.ValueType.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.Equals(System.Object)
+  System.ValueType.GetHashCode:
+    name:
+      CSharp:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.GetHashCode
+  LagaUnity.Vectorf.#ctor*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.#ctor*
+        name: Vectorf
+        nameWithType: Vectorf.Vectorf
+        qualifiedName: LagaUnity.Vectorf.Vectorf
+      VB:
+      - id: LagaUnity.Vectorf.#ctor*
+        name: Vectorf
+        nameWithType: Vectorf.Vectorf
+        qualifiedName: LagaUnity.Vectorf.Vectorf
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.#ctor
+  UnityEngine.Vector3:
+    name:
+      CSharp:
+      - id: UnityEngine.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: UnityEngine.Vector3
+        isExternal: true
+      VB:
+      - id: UnityEngine.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: UnityEngine.Vector3
+        isExternal: true
+    isDefinition: true
+    parent: UnityEngine
+    commentId: T:UnityEngine.Vector3
+  LagaUnity.Vectorf.ToVector3*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.ToVector3*
+        name: ToVector3
+        nameWithType: Vectorf.ToVector3
+        qualifiedName: LagaUnity.Vectorf.ToVector3
+      VB:
+      - id: LagaUnity.Vectorf.ToVector3*
+        name: ToVector3
+        nameWithType: Vectorf.ToVector3
+        qualifiedName: LagaUnity.Vectorf.ToVector3
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.ToVector3
+  LagaUnity.Vectorf.OrthogonalTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.OrthogonalTo*
+        name: OrthogonalTo
+        nameWithType: Vectorf.OrthogonalTo
+        qualifiedName: LagaUnity.Vectorf.OrthogonalTo
+      VB:
+      - id: LagaUnity.Vectorf.OrthogonalTo*
+        name: OrthogonalTo
+        nameWithType: Vectorf.OrthogonalTo
+        qualifiedName: LagaUnity.Vectorf.OrthogonalTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.OrthogonalTo
+  LagaUnity.Vectorf.CrossProduct*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.CrossProduct*
+        name: CrossProduct
+        nameWithType: Vectorf.CrossProduct
+        qualifiedName: LagaUnity.Vectorf.CrossProduct
+      VB:
+      - id: LagaUnity.Vectorf.CrossProduct*
+        name: CrossProduct
+        nameWithType: Vectorf.CrossProduct
+        qualifiedName: LagaUnity.Vectorf.CrossProduct
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.CrossProduct
+  LagaUnity.Vectorf.CrossProductLength*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.CrossProductLength*
+        name: CrossProductLength
+        nameWithType: Vectorf.CrossProductLength
+        qualifiedName: LagaUnity.Vectorf.CrossProductLength
+      VB:
+      - id: LagaUnity.Vectorf.CrossProductLength*
+        name: CrossProductLength
+        nameWithType: Vectorf.CrossProductLength
+        qualifiedName: LagaUnity.Vectorf.CrossProductLength
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.CrossProductLength
+  LagaUnity.Vectorf.ComponentProjectTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.ComponentProjectTo*
+        name: ComponentProjectTo
+        nameWithType: Vectorf.ComponentProjectTo
+        qualifiedName: LagaUnity.Vectorf.ComponentProjectTo
+      VB:
+      - id: LagaUnity.Vectorf.ComponentProjectTo*
+        name: ComponentProjectTo
+        nameWithType: Vectorf.ComponentProjectTo
+        qualifiedName: LagaUnity.Vectorf.ComponentProjectTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.ComponentProjectTo
+  LagaUnity.Vectorf.DistanceTo*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.DistanceTo*
+        name: DistanceTo
+        nameWithType: Vectorf.DistanceTo
+        qualifiedName: LagaUnity.Vectorf.DistanceTo
+      VB:
+      - id: LagaUnity.Vectorf.DistanceTo*
+        name: DistanceTo
+        nameWithType: Vectorf.DistanceTo
+        qualifiedName: LagaUnity.Vectorf.DistanceTo
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.DistanceTo
+  LagaUnity.Vectorf.Normalize*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.Normalize*
+        name: Normalize
+        nameWithType: Vectorf.Normalize
+        qualifiedName: LagaUnity.Vectorf.Normalize
+      VB:
+      - id: LagaUnity.Vectorf.Normalize*
+        name: Normalize
+        nameWithType: Vectorf.Normalize
+        qualifiedName: LagaUnity.Vectorf.Normalize
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.Normalize
+  LagaUnity.Vectorf.DotProduct*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.DotProduct*
+        name: DotProduct
+        nameWithType: Vectorf.DotProduct
+        qualifiedName: LagaUnity.Vectorf.DotProduct
+      VB:
+      - id: LagaUnity.Vectorf.DotProduct*
+        name: DotProduct
+        nameWithType: Vectorf.DotProduct
+        qualifiedName: LagaUnity.Vectorf.DotProduct
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.DotProduct
+  LagaUnity.Vectorf.Angle*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.Angle*
+        name: Angle
+        nameWithType: Vectorf.Angle
+        qualifiedName: LagaUnity.Vectorf.Angle
+      VB:
+      - id: LagaUnity.Vectorf.Angle*
+        name: Angle
+        nameWithType: Vectorf.Angle
+        qualifiedName: LagaUnity.Vectorf.Angle
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.Angle
+  LagaUnity.Vectorf.op_Addition*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.op_Addition*
+        name: Addition
+        nameWithType: Vectorf.Addition
+        qualifiedName: LagaUnity.Vectorf.Addition
+      VB:
+      - id: LagaUnity.Vectorf.op_Addition*
+        name: Addition
+        nameWithType: Vectorf.Addition
+        qualifiedName: LagaUnity.Vectorf.Addition
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.op_Addition
+  LagaUnity.Vectorf.op_Subtraction*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.op_Subtraction*
+        name: Subtraction
+        nameWithType: Vectorf.Subtraction
+        qualifiedName: LagaUnity.Vectorf.Subtraction
+      VB:
+      - id: LagaUnity.Vectorf.op_Subtraction*
+        name: Subtraction
+        nameWithType: Vectorf.Subtraction
+        qualifiedName: LagaUnity.Vectorf.Subtraction
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.op_Subtraction
+  LagaUnity.Vectorf.op_Multiply*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.op_Multiply*
+        name: Multiply
+        nameWithType: Vectorf.Multiply
+        qualifiedName: LagaUnity.Vectorf.Multiply
+      VB:
+      - id: LagaUnity.Vectorf.op_Multiply*
+        name: Multiply
+        nameWithType: Vectorf.Multiply
+        qualifiedName: LagaUnity.Vectorf.Multiply
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.op_Multiply
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  System.ValueType.ToString:
+    name:
+      CSharp:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.ToString
+  LagaUnity.Vectorf.ToString*:
+    name:
+      CSharp:
+      - id: LagaUnity.Vectorf.ToString*
+        name: ToString
+        nameWithType: Vectorf.ToString
+        qualifiedName: LagaUnity.Vectorf.ToString
+      VB:
+      - id: LagaUnity.Vectorf.ToString*
+        name: ToString
+        nameWithType: Vectorf.ToString
+        qualifiedName: LagaUnity.Vectorf.ToString
+    isDefinition: true
+    commentId: Overload:LagaUnity.Vectorf.ToString

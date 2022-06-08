@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.Geometry.Line
+  commentId: T:Laga.Geometry.Line
+  id: Line
+  parent: Laga.Geometry
+  children:
+  - Laga.Geometry.Line.#ctor
+  - Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  - Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)
+  - Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  - Laga.Geometry.Line.Direction
+  - Laga.Geometry.Line.EndPoint
+  - Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  - Laga.Geometry.Line.IsCoincidentTo(Laga.Geometry.Line,System.Double)
+  - Laga.Geometry.Line.IsParallelTo(Laga.Geometry.Line,System.Double)
+  - Laga.Geometry.Line.Length
+  - Laga.Geometry.Line.PointAt(System.Double)
+  - Laga.Geometry.Line.StartPoint
+  - Laga.Geometry.Line.ToString
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: Line
+  fullName: Laga.Geometry.Line
+  type: Class
+  source:
+    id: Line
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 11
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine class and operations\n"
+  example: []
+  syntax:
+    content: public class Line
+    content.vb: Public Class Line
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.Geometry.Line.StartPoint
+  commentId: P:Laga.Geometry.Line.StartPoint
+  id: StartPoint
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: StartPoint
+  nameWithType: Line.StartPoint
+  fullName: Laga.Geometry.Line.StartPoint
+  type: Property
+  source:
+    id: StartPoint
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 22
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine base point\n"
+  example: []
+  syntax:
+    content: public Vectord StartPoint { get; set; }
+    parameters: []
+    return:
+      type: Laga.Geometry.Vectord
+    content.vb: Public Property StartPoint As Vectord
+  overload: Laga.Geometry.Line.StartPoint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.EndPoint
+  commentId: P:Laga.Geometry.Line.EndPoint
+  id: EndPoint
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: EndPoint
+  nameWithType: Line.EndPoint
+  fullName: Laga.Geometry.Line.EndPoint
+  type: Property
+  source:
+    id: EndPoint
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 34
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine end point\n"
+  example: []
+  syntax:
+    content: public Vectord EndPoint { get; set; }
+    parameters: []
+    return:
+      type: Laga.Geometry.Vectord
+    content.vb: Public Property EndPoint As Vectord
+  overload: Laga.Geometry.Line.EndPoint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.Direction
+  commentId: P:Laga.Geometry.Line.Direction
+  id: Direction
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: Line.Direction
+  fullName: Laga.Geometry.Line.Direction
+  type: Property
+  source:
+    id: Direction
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 46
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine vector\n"
+  example: []
+  syntax:
+    content: public Vectord Direction { get; }
+    parameters: []
+    return:
+      type: Laga.Geometry.Vectord
+    content.vb: Public ReadOnly Property Direction As Vectord
+  overload: Laga.Geometry.Line.Direction*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.Geometry.Line.Length
+  commentId: P:Laga.Geometry.Line.Length
+  id: Length
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: Line.Length
+  fullName: Laga.Geometry.Line.Length
+  type: Property
+  source:
+    id: Length
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 57
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nline length\n"
+  example: []
+  syntax:
+    content: public double Length { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Length As Double
+  overload: Laga.Geometry.Line.Length*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)
+  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)
+  id: '#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,System.Double)'
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: Line(Vectord, Vectord, Double)
+  nameWithType: Line.Line(Vectord, Vectord, Double)
+  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vectord, Laga.Geometry.Vectord, System.Double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 71
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine by start point, direction and length\n"
+  example: []
+  syntax:
+    content: public Line(Vectord StartPoint, Vectord Direction, double t)
+    parameters:
+    - id: StartPoint
+      type: Laga.Geometry.Vectord
+      description: start point
+    - id: Direction
+      type: Laga.Geometry.Vectord
+      description: Vector
+    - id: t
+      type: System.Double
+      description: Parameter
+    content.vb: Public Sub New(StartPoint As Vectord, Direction As Vectord, t As Double)
+  overload: Laga.Geometry.Line.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  commentId: M:Laga.Geometry.Line.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)
+  id: '#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)'
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: Line(Vectord, Vectord)
+  nameWithType: Line.Line(Vectord, Vectord)
+  fullName: Laga.Geometry.Line.Line(Laga.Geometry.Vectord, Laga.Geometry.Vectord)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 85
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine by start point and end point\n"
+  example: []
+  syntax:
+    content: public Line(Vectord StartPoint, Vectord EndPoint)
+    parameters:
+    - id: StartPoint
+      type: Laga.Geometry.Vectord
+      description: start point
+    - id: EndPoint
+      type: Laga.Geometry.Vectord
+      description: end point
+    content.vb: Public Sub New(StartPoint As Vectord, EndPoint As Vectord)
+  overload: Laga.Geometry.Line.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.#ctor
+  commentId: M:Laga.Geometry.Line.#ctor
+  id: '#ctor'
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: Line()
+  nameWithType: Line.Line()
+  fullName: Laga.Geometry.Line.Line()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 96
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nEmpty Line object\n"
+  example: []
+  syntax:
+    content: public Line()
+    content.vb: Public Sub New
+  overload: Laga.Geometry.Line.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.IsParallelTo(Laga.Geometry.Line,System.Double)
+  commentId: M:Laga.Geometry.Line.IsParallelTo(Laga.Geometry.Line,System.Double)
+  id: IsParallelTo(Laga.Geometry.Line,System.Double)
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: IsParallelTo(Line, Double)
+  nameWithType: Line.IsParallelTo(Line, Double)
+  fullName: Laga.Geometry.Line.IsParallelTo(Laga.Geometry.Line, System.Double)
+  type: Method
+  source:
+    id: IsParallelTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 111
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nTest if 2 lines are parallel\n"
+  example: []
+  syntax:
+    content: public bool IsParallelTo(Line line, double tolerance = 0.001)
+    parameters:
+    - id: line
+      type: Laga.Geometry.Line
+      description: line to test
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IsParallelTo(line As Line, tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Line.IsParallelTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.IsCoincidentTo(Laga.Geometry.Line,System.Double)
+  commentId: M:Laga.Geometry.Line.IsCoincidentTo(Laga.Geometry.Line,System.Double)
+  id: IsCoincidentTo(Laga.Geometry.Line,System.Double)
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: IsCoincidentTo(Line, Double)
+  nameWithType: Line.IsCoincidentTo(Line, Double)
+  fullName: Laga.Geometry.Line.IsCoincidentTo(Laga.Geometry.Line, System.Double)
+  type: Method
+  source:
+    id: IsCoincidentTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 125
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nTest if 2 lines are coincident\n"
+  example: []
+  syntax:
+    content: public bool IsCoincidentTo(Line line, double tolerance = 0.001)
+    parameters:
+    - id: line
+      type: Laga.Geometry.Line
+      description: Line to test
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IsCoincidentTo(line As Line, tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Line.IsCoincidentTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.PointAt(System.Double)
+  commentId: M:Laga.Geometry.Line.PointAt(System.Double)
+  id: PointAt(System.Double)
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: PointAt(Double)
+  nameWithType: Line.PointAt(Double)
+  fullName: Laga.Geometry.Line.PointAt(System.Double)
+  type: Method
+  source:
+    id: PointAt
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 144
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nPoint by parameter in the line\n"
+  example: []
+  syntax:
+    content: public Vectord PointAt(double t)
+    parameters:
+    - id: t
+      type: System.Double
+      description: Parameter
+    return:
+      type: Laga.Geometry.Vectord
+      description: Vector
+    content.vb: Public Function PointAt(t As Double) As Vectord
+  overload: Laga.Geometry.Line.PointAt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  commentId: M:Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  id: IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,System.Double)
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: IntersectTo(Line, ref Vectord, Double)
+  nameWithType: Line.IntersectTo(Line, ref Vectord, Double)
+  fullName: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ref Laga.Geometry.Vectord, System.Double)
+  type: Method
+  source:
+    id: IntersectTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 160
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nLine intersection by tolerance\n"
+  example: []
+  syntax:
+    content: public bool IntersectTo(Line line, ref Vectord intersection, double tolerance = 0.001)
+    parameters:
+    - id: line
+      type: Laga.Geometry.Line
+      description: Line to test
+    - id: intersection
+      type: Laga.Geometry.Vectord
+      description: ref Point intersection
+    - id: tolerance
+      type: System.Double
+      description: 'Default tolerance: 1e-3'
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function IntersectTo(line As Line, ByRef intersection As Vectord, tolerance As Double = 0.001) As Boolean
+  overload: Laga.Geometry.Line.IntersectTo*
+  nameWithType.vb: Line.IntersectTo(Line, ByRef Vectord, Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vectord, System.Double)
+  name.vb: IntersectTo(Line, ByRef Vectord, Double)
+- uid: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  commentId: M:Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  id: ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vectord@,Laga.Geometry.Vectord@)
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: ClosestTo(Line, ref Vectord, ref Vectord)
+  nameWithType: Line.ClosestTo(Line, ref Vectord, ref Vectord)
+  fullName: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ref Laga.Geometry.Vectord, ref Laga.Geometry.Vectord)
+  type: Method
+  source:
+    id: ClosestTo
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 191
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nFind the closest points between lines\n"
+  example: []
+  syntax:
+    content: public bool ClosestTo(Line line, ref Vectord pointA, ref Vectord pointB)
+    parameters:
+    - id: line
+      type: Laga.Geometry.Line
+      description: Line to test
+    - id: pointA
+      type: Laga.Geometry.Vectord
+      description: ref closest point A
+    - id: pointB
+      type: Laga.Geometry.Vectord
+      description: ref closest point B
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Function ClosestTo(line As Line, ByRef pointA As Vectord, ByRef pointB As Vectord) As Boolean
+  overload: Laga.Geometry.Line.ClosestTo*
+  nameWithType.vb: Line.ClosestTo(Line, ByRef Vectord, ByRef Vectord)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line, ByRef Laga.Geometry.Vectord, ByRef Laga.Geometry.Vectord)
+  name.vb: ClosestTo(Line, ByRef Vectord, ByRef Vectord)
+- uid: Laga.Geometry.Line.ToString
+  commentId: M:Laga.Geometry.Line.ToString
+  id: ToString
+  parent: Laga.Geometry.Line
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Line.ToString()
+  fullName: Laga.Geometry.Line.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Line.cs
+    startLine: 225
+  assemblies:
+  - Laga
+  namespace: Laga.Geometry
+  summary: "\nPrint line length data\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Laga.Geometry.Line.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Laga.Geometry
+  commentId: N:Laga.Geometry
+  name: Laga.Geometry
+  nameWithType: Laga.Geometry
+  fullName: Laga.Geometry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.Geometry.Line.StartPoint*
+  commentId: Overload:Laga.Geometry.Line.StartPoint
+  name: StartPoint
+  nameWithType: Line.StartPoint
+  fullName: Laga.Geometry.Line.StartPoint
+- uid: Laga.Geometry.Vectord
+  commentId: T:Laga.Geometry.Vectord
+  parent: Laga.Geometry
+  name: Vectord
+  nameWithType: Vectord
+  fullName: Laga.Geometry.Vectord
+- uid: Laga.Geometry.Line.EndPoint*
+  commentId: Overload:Laga.Geometry.Line.EndPoint
+  name: EndPoint
+  nameWithType: Line.EndPoint
+  fullName: Laga.Geometry.Line.EndPoint
+- uid: Laga.Geometry.Line.Direction*
+  commentId: Overload:Laga.Geometry.Line.Direction
+  name: Direction
+  nameWithType: Line.Direction
+  fullName: Laga.Geometry.Line.Direction
+- uid: Laga.Geometry.Line.Length*
+  commentId: Overload:Laga.Geometry.Line.Length
+  name: Length
+  nameWithType: Line.Length
+  fullName: Laga.Geometry.Line.Length
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Laga.Geometry.Line.#ctor*
+  commentId: Overload:Laga.Geometry.Line.#ctor
+  name: Line
+  nameWithType: Line.Line
+  fullName: Laga.Geometry.Line.Line
+- uid: Laga.Geometry.Line.IsParallelTo*
+  commentId: Overload:Laga.Geometry.Line.IsParallelTo
+  name: IsParallelTo
+  nameWithType: Line.IsParallelTo
+  fullName: Laga.Geometry.Line.IsParallelTo
+- uid: Laga.Geometry.Line
+  commentId: T:Laga.Geometry.Line
+  parent: Laga.Geometry
+  name: Line
+  nameWithType: Line
+  fullName: Laga.Geometry.Line
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Laga.Geometry.Line.IsCoincidentTo*
+  commentId: Overload:Laga.Geometry.Line.IsCoincidentTo
+  name: IsCoincidentTo
+  nameWithType: Line.IsCoincidentTo
+  fullName: Laga.Geometry.Line.IsCoincidentTo
+- uid: Laga.Geometry.Line.PointAt*
+  commentId: Overload:Laga.Geometry.Line.PointAt
+  name: PointAt
+  nameWithType: Line.PointAt
+  fullName: Laga.Geometry.Line.PointAt
+- uid: Laga.Geometry.Line.IntersectTo*
+  commentId: Overload:Laga.Geometry.Line.IntersectTo
+  name: IntersectTo
+  nameWithType: Line.IntersectTo
+  fullName: Laga.Geometry.Line.IntersectTo
+- uid: Laga.Geometry.Line.ClosestTo*
+  commentId: Overload:Laga.Geometry.Line.ClosestTo
+  name: ClosestTo
+  nameWithType: Line.ClosestTo
+  fullName: Laga.Geometry.Line.ClosestTo
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.Geometry.Line.ToString*
+  commentId: Overload:Laga.Geometry.Line.ToString
+  name: ToString
+  nameWithType: Line.ToString
+  fullName: Laga.Geometry.Line.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

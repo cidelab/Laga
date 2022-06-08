@@ -1,0 +1,2094 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm.Tools
+  commentId: T:Laga.GeneticAlgorithm.Tools
+  id: Tools
+  parent: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])
+  - Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})
+  - Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
+  - Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
+  - Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])
+  - Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)
+  - Laga.GeneticAlgorithm.Tools.GetRandomNumber
+  - Laga.GeneticAlgorithm.Tools.GetRandomNumber(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])
+  - Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)
+  - Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)
+  - Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
+  - Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
+  - Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
+  - Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
+  - Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)
+  - Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
+  - Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)
+  - Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
+  - Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
+  - Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
+  - Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
+  - Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
+  - Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
+  - Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
+  - Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
+  langs:
+  - csharp
+  - vb
+  name: Tools
+  nameWithType: Tools
+  fullName: Laga.GeneticAlgorithm.Tools
+  type: Class
+  source:
+    id: Tools
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 10
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nA collection of methods to operate on Genetic operators and lists.\n"
+  example: []
+  syntax:
+    content: public static class Tools
+    content.vb: Public Module Tools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})
+  commentId: M:Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})
+  id: DataReport``1(System.Collections.Generic.List{``0})
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: DataReport<T>(List<T>)
+  nameWithType: Tools.DataReport<T>(List<T>)
+  fullName: Laga.GeneticAlgorithm.Tools.DataReport<T>(System.Collections.Generic.List<T>)
+  type: Method
+  source:
+    id: DataReport
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 17
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nCreates a report based on a list of data.\n"
+  example: []
+  syntax:
+    content: public static List<string> DataReport<T>(List<T> listValues)
+    parameters:
+    - id: listValues
+      type: System.Collections.Generic.List{{T}}
+      description: the Values used to create the report
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: List<string></string>
+    content.vb: Public Shared Function DataReport(Of T)(listValues As List(Of T)) As List(Of String)
+  overload: Laga.GeneticAlgorithm.Tools.DataReport*
+  nameWithType.vb: Tools.DataReport(Of T)(List(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.DataReport(Of T)(System.Collections.Generic.List(Of T))
+  name.vb: DataReport(Of T)(List(Of T))
+- uid: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])
+  id: BinaryChromosomeToInteger``1(``0[])
+  isExtensionMethod: true
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: BinaryChromosomeToInteger<T>(T[])
+  nameWithType: Tools.BinaryChromosomeToInteger<T>(T[])
+  fullName: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger<T>(T[])
+  type: Method
+  source:
+    id: BinaryChromosomeToInteger
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 43
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nConvert a binary chromosome to an integer, base of 2.\n"
+  example: []
+  syntax:
+    content: public static int BinaryChromosomeToInteger<T>(this T[] chromosome)
+    parameters:
+    - id: chromosome
+      type: '{T}[]'
+      description: your chromosome
+    typeParameters:
+    - id: T
+      description: chromosome type
+    return:
+      type: System.Int32
+      description: int
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BinaryChromosomeToInteger(Of T)(chromosome As T()) As Integer
+  overload: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger*
+  nameWithType.vb: Tools.BinaryChromosomeToInteger(Of T)(T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger(Of T)(T())
+  name.vb: BinaryChromosomeToInteger(Of T)(T())
+- uid: Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
+  id: ExtractDNA``1(``0[],System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ExtractDNA<T>(T[], Int32, Int32)
+  nameWithType: Tools.ExtractDNA<T>(T[], Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.ExtractDNA<T>(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ExtractDNA
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 64
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nExtract part of the DNA from a chromosome. \n"
+  example: []
+  syntax:
+    content: public static T[] ExtractDNA<T>(this T[] chromosome, int index, int length)
+    parameters:
+    - id: chromosome
+      type: '{T}[]'
+      description: the chromosome
+    - id: index
+      type: System.Int32
+      description: start the extraction
+    - id: length
+      type: System.Int32
+      description: length of the extraction
+    typeParameters:
+    - id: T
+      description: Any chromosome type
+    return:
+      type: '{T}[]'
+      description: T[] A DNA segment from the original chromosome
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExtractDNA(Of T)(chromosome As T(), index As Integer, length As Integer) As T()
+  overload: Laga.GeneticAlgorithm.Tools.ExtractDNA*
+  nameWithType.vb: Tools.ExtractDNA(Of T)(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ExtractDNA(Of T)(T(), System.Int32, System.Int32)
+  name.vb: ExtractDNA(Of T)(T(), Int32, Int32)
+- uid: Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])
+  id: MinMaxValue``1(``0[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: MinMaxValue<T>(T[])
+  nameWithType: Tools.MinMaxValue<T>(T[])
+  fullName: Laga.GeneticAlgorithm.Tools.MinMaxValue<T>(T[])
+  type: Method
+  source:
+    id: MinMaxValue
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 77
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReturn the Min and Max values from an Array.\n"
+  example: []
+  syntax:
+    content: public static T[] MinMaxValue<T>(T[] genArray)
+    parameters:
+    - id: genArray
+      type: '{T}[]'
+      description: The array where to extract the values
+    typeParameters:
+    - id: T
+      description: 'Any number type like: int, double, float...'
+    return:
+      type: '{T}[]'
+      description: Generic Array
+    content.vb: Public Shared Function MinMaxValue(Of T)(genArray As T()) As T()
+  overload: Laga.GeneticAlgorithm.Tools.MinMaxValue*
+  nameWithType.vb: Tools.MinMaxValue(Of T)(T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.MinMaxValue(Of T)(T())
+  name.vb: MinMaxValue(Of T)(T())
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
+  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
+  id: ReversePopulation(System.Char[][])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ReversePopulation(Char[][])
+  nameWithType: Tools.ReversePopulation(Char[][])
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
+  type: Method
+  source:
+    id: ReversePopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 90
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse the original Population\n"
+  example: []
+  syntax:
+    content: public static void ReversePopulation(char[][] charPop)
+    parameters:
+    - id: charPop
+      type: System.Char[][]
+      description: char[][]
+    content.vb: Public Shared Sub ReversePopulation(charPop As Char()())
+  overload: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  nameWithType.vb: Tools.ReversePopulation(Char()())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char()())
+  name.vb: ReversePopulation(Char()())
+- uid: Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)
+  id: Prefix(System.String,System.Int32)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Prefix(String, Int32)
+  nameWithType: Tools.Prefix(String, Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.Prefix(System.String, System.Int32)
+  type: Method
+  source:
+    id: Prefix
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 108
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerate prefixs.\n"
+  example: []
+  syntax:
+    content: public static string[] Prefix(string prefix, int size)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: string prefix
+    - id: size
+      type: System.Int32
+      description: the length of prefix to generate
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Prefix(prefix As String, size As Integer) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Prefix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)
+  id: Parse(Laga.Geometry.Vectord[],System.Int32)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Parse(Vectord[], Int32)
+  nameWithType: Tools.Parse(Vectord[], Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[], System.Int32)
+  type: Method
+  source:
+    id: Parse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 125
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nRound the location of a laga point, based on the round number\n"
+  example: []
+  syntax:
+    content: public static string[] Parse(Vectord[] points, int round)
+    parameters:
+    - id: points
+      type: Laga.Geometry.Vectord[]
+      description: The points to round coordinates
+    - id: round
+      type: System.Int32
+      description: round number coordinates
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Parse(points As Vectord(), round As Integer) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Parse*
+  nameWithType.vb: Tools.Parse(Vectord(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord(), System.Int32)
+  name.vb: Parse(Vectord(), Int32)
+- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
+  id: Parse(System.Double[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Parse(Double[])
+  nameWithType: Tools.Parse(Double[])
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
+  type: Method
+  source:
+    id: Parse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 146
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nParse any Chromosome type to string Array\n"
+  example: []
+  syntax:
+    content: public static string[] Parse(double[] any)
+    parameters:
+    - id: any
+      type: System.Double[]
+      description: double[]
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Parse(any As Double()) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Parse*
+  nameWithType.vb: Tools.Parse(Double())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Double())
+  name.vb: Parse(Double())
+- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
+  id: Parse(System.Int32[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Parse(Int32[])
+  nameWithType: Tools.Parse(Int32[])
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
+  type: Method
+  source:
+    id: Parse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 157
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nParse a list of integers into a list of strings\n"
+  example: []
+  syntax:
+    content: public static string[] Parse(int[] any)
+    parameters:
+    - id: any
+      type: System.Int32[]
+      description: int[]
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Parse(any As Integer()) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Parse*
+  nameWithType.vb: Tools.Parse(Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Int32())
+  name.vb: Parse(Int32())
+- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
+  id: Parse(System.Single[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Parse(Single[])
+  nameWithType: Tools.Parse(Single[])
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
+  type: Method
+  source:
+    id: Parse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 169
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nParse a list of floats into a list of strings\n"
+  example: []
+  syntax:
+    content: public static string[] Parse(float[] any)
+    parameters:
+    - id: any
+      type: System.Single[]
+      description: float[]
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Parse(any As Single()) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Parse*
+  nameWithType.vb: Tools.Parse(Single())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Single())
+  name.vb: Parse(Single())
+- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
+  id: Parse(System.Char[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Parse(Char[])
+  nameWithType: Tools.Parse(Char[])
+  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
+  type: Method
+  source:
+    id: Parse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 180
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nParse a list of char to a list of strings\n"
+  example: []
+  syntax:
+    content: public static string[] Parse(char[] any)
+    parameters:
+    - id: any
+      type: System.Char[]
+      description: char[]
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function Parse(any As Char()) As String()
+  overload: Laga.GeneticAlgorithm.Tools.Parse*
+  nameWithType.vb: Tools.Parse(Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Char())
+  name.vb: Parse(Char())
+- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
+  id: Reverse(System.Single[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Reverse(Single[])
+  nameWithType: Tools.Reverse(Single[])
+  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
+  type: Method
+  source:
+    id: Reverse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 190
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse the original array of floats.\n"
+  example: []
+  syntax:
+    content: public static void Reverse(float[] arrFloat)
+    parameters:
+    - id: arrFloat
+      type: System.Single[]
+      description: float[]
+    content.vb: Public Shared Sub Reverse(arrFloat As Single())
+  overload: Laga.GeneticAlgorithm.Tools.Reverse*
+  nameWithType.vb: Tools.Reverse(Single())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Single())
+  name.vb: Reverse(Single())
+- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
+  id: Reverse(System.Int32[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Reverse(Int32[])
+  nameWithType: Tools.Reverse(Int32[])
+  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
+  type: Method
+  source:
+    id: Reverse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 205
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse the original array of integers\n"
+  example: []
+  syntax:
+    content: public static void Reverse(int[] arrInt)
+    parameters:
+    - id: arrInt
+      type: System.Int32[]
+      description: int[]
+    content.vb: Public Shared Sub Reverse(arrInt As Integer())
+  overload: Laga.GeneticAlgorithm.Tools.Reverse*
+  nameWithType.vb: Tools.Reverse(Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32())
+  name.vb: Reverse(Int32())
+- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
+  id: Reverse(System.Double[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Reverse(Double[])
+  nameWithType: Tools.Reverse(Double[])
+  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
+  type: Method
+  source:
+    id: Reverse
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 220
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse the original array of doubles\n"
+  example: []
+  syntax:
+    content: public static void Reverse(double[] arrDbl)
+    parameters:
+    - id: arrDbl
+      type: System.Double[]
+      description: double[]
+    content.vb: Public Shared Sub Reverse(arrDbl As Double())
+  overload: Laga.GeneticAlgorithm.Tools.Reverse*
+  nameWithType.vb: Tools.Reverse(Double())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Double())
+  name.vb: Reverse(Double())
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
+  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
+  id: ReversePopulation(System.Int32[][])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ReversePopulation(Int32[][])
+  nameWithType: Tools.ReversePopulation(Int32[][])
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
+  type: Method
+  source:
+    id: ReversePopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 235
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse Original integer population\n"
+  example: []
+  syntax:
+    content: public static void ReversePopulation(int[][] intPop)
+    parameters:
+    - id: intPop
+      type: System.Int32[][]
+      description: int[][]
+    content.vb: Public Shared Sub ReversePopulation(intPop As Integer()())
+  overload: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  nameWithType.vb: Tools.ReversePopulation(Int32()())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32()())
+  name.vb: ReversePopulation(Int32()())
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
+  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
+  id: ReversePopulation(System.Double[][])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ReversePopulation(Double[][])
+  nameWithType: Tools.ReversePopulation(Double[][])
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
+  type: Method
+  source:
+    id: ReversePopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 250
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse original double population\n"
+  example: []
+  syntax:
+    content: public static void ReversePopulation(double[][] dblPop)
+    parameters:
+    - id: dblPop
+      type: System.Double[][]
+      description: double[][]
+    content.vb: Public Shared Sub ReversePopulation(dblPop As Double()())
+  overload: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  nameWithType.vb: Tools.ReversePopulation(Double()())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double()())
+  name.vb: ReversePopulation(Double()())
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
+  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
+  id: ReversePopulation(System.Single[][])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ReversePopulation(Single[][])
+  nameWithType: Tools.ReversePopulation(Single[][])
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
+  type: Method
+  source:
+    id: ReversePopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 265
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse original float population\n"
+  example: []
+  syntax:
+    content: public static void ReversePopulation(float[][] flPop)
+    parameters:
+    - id: flPop
+      type: System.Single[][]
+      description: float[][]
+    content.vb: Public Shared Sub ReversePopulation(flPop As Single()())
+  overload: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  nameWithType.vb: Tools.ReversePopulation(Single()())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single()())
+  name.vb: ReversePopulation(Single()())
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
+  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
+  id: ReversePopulation(System.Object[][])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: ReversePopulation(Object[][])
+  nameWithType: Tools.ReversePopulation(Object[][])
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
+  type: Method
+  source:
+    id: ReversePopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 280
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReverse original object population\n"
+  example: []
+  syntax:
+    content: public static void ReversePopulation(object[][] objPop)
+    parameters:
+    - id: objPop
+      type: System.Object[][]
+      description: object[][]
+    content.vb: Public Shared Sub ReversePopulation(objPop As Object()())
+  overload: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  nameWithType.vb: Tools.ReversePopulation(Object()())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object()())
+  name.vb: ReversePopulation(Object()())
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
+  id: Fisher_Yates(System.Int32[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Fisher_Yates(Int32[])
+  nameWithType: Tools.Fisher_Yates(Int32[])
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
+  type: Method
+  source:
+    id: Fisher_Yates
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 297
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nFisher-Yates Shuffle Algorithm for array of integers.\n"
+  example: []
+  syntax:
+    content: public static int[] Fisher_Yates(int[] arrInt)
+    parameters:
+    - id: arrInt
+      type: System.Int32[]
+      description: The array of integers to shuffle
+    return:
+      type: System.Int32[]
+      description: ''
+    content.vb: Public Shared Function Fisher_Yates(arrInt As Integer()) As Integer()
+  overload: Laga.GeneticAlgorithm.Tools.Fisher_Yates*
+  nameWithType.vb: Tools.Fisher_Yates(Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32())
+  name.vb: Fisher_Yates(Int32())
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])
+  id: Fisher_Yates``1(``0[])
+  isExtensionMethod: true
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Fisher_Yates<T>(T[])
+  nameWithType: Tools.Fisher_Yates<T>(T[])
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates<T>(T[])
+  type: Method
+  source:
+    id: Fisher_Yates
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 320
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nExperimental Fisher_Yates algorithm to shuffle the original array.\n"
+  example: []
+  syntax:
+    content: public static void Fisher_Yates<T>(this T[] arrData)
+    parameters:
+    - id: arrData
+      type: '{T}[]'
+      description: the array of data
+    typeParameters:
+    - id: T
+      description: the type of data
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Fisher_Yates(Of T)(arrData As T())
+  overload: Laga.GeneticAlgorithm.Tools.Fisher_Yates*
+  nameWithType.vb: Tools.Fisher_Yates(Of T)(T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(Of T)(T())
+  name.vb: Fisher_Yates(Of T)(T())
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
+  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
+  id: Fisher_Yates(System.Object[])
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Fisher_Yates(Object[])
+  nameWithType: Tools.Fisher_Yates(Object[])
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
+  type: Method
+  source:
+    id: Fisher_Yates
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 338
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nFisher-Yates Shuffle Algorithm for an array of objects.\n"
+  example: []
+  syntax:
+    content: public static object[] Fisher_Yates(object[] arrObj)
+    parameters:
+    - id: arrObj
+      type: System.Object[]
+      description: the array of objects to shuffle
+    return:
+      type: System.Object[]
+      description: ''
+    content.vb: Public Shared Function Fisher_Yates(arrObj As Object()) As Object()
+  overload: Laga.GeneticAlgorithm.Tools.Fisher_Yates*
+  nameWithType.vb: Tools.Fisher_Yates(Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object())
+  name.vb: Fisher_Yates(Object())
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)
+  id: Fisher_YatesPercent(System.Object[],System.Single)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Fisher_YatesPercent(Object[], Single)
+  nameWithType: Tools.Fisher_YatesPercent(Object[], Single)
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[], System.Single)
+  type: Method
+  source:
+    id: Fisher_YatesPercent
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 363
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nFisher-Yates Shuffle Algorithm for an array of objects.\n"
+  example: []
+  syntax:
+    content: public static object[] Fisher_YatesPercent(object[] arrObj, float percent)
+    parameters:
+    - id: arrObj
+      type: System.Object[]
+      description: the array of objects to shuffle
+    - id: percent
+      type: System.Single
+      description: the percent to shuffle
+    return:
+      type: System.Object[]
+      description: ''
+    content.vb: Public Shared Function Fisher_YatesPercent(arrObj As Object(), percent As Single) As Object()
+  overload: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent*
+  nameWithType.vb: Tools.Fisher_YatesPercent(Object(), Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object(), System.Single)
+  name.vb: Fisher_YatesPercent(Object(), Single)
+- uid: Laga.GeneticAlgorithm.Tools.GetRandomNumber(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Tools.GetRandomNumber(System.Int32,System.Int32)
+  id: GetRandomNumber(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: GetRandomNumber(Int32, Int32)
+  nameWithType: Tools.GetRandomNumber(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.GetRandomNumber(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetRandomNumber
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 395
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nRandom integer number between range\n"
+  example: []
+  syntax:
+    content: public static int GetRandomNumber(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: int
+    - id: max
+      type: System.Int32
+      description: int
+    return:
+      type: System.Int32
+      description: int
+    content.vb: Public Shared Function GetRandomNumber(min As Integer, max As Integer) As Integer
+  overload: Laga.GeneticAlgorithm.Tools.GetRandomNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.GetRandomNumber
+  commentId: M:Laga.GeneticAlgorithm.Tools.GetRandomNumber
+  id: GetRandomNumber
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: GetRandomNumber()
+  nameWithType: Tools.GetRandomNumber()
+  fullName: Laga.GeneticAlgorithm.Tools.GetRandomNumber()
+  type: Method
+  source:
+    id: GetRandomNumber
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 407
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nRandom number\n"
+  example: []
+  syntax:
+    content: public static double GetRandomNumber()
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Shared Function GetRandomNumber As Double
+  overload: Laga.GeneticAlgorithm.Tools.GetRandomNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
+  id: RandomCharBinary(System.Single)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: RandomCharBinary(Single)
+  nameWithType: Tools.RandomCharBinary(Single)
+  fullName: Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
+  type: Method
+  source:
+    id: RandomCharBinary
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 420
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReturns a Char in the format 0 or 1\n"
+  example: []
+  syntax:
+    content: public static char RandomCharBinary(float thershold = 0.5F)
+    parameters:
+    - id: thershold
+      type: System.Single
+      description: thershold parameter. 0.5 = 50%
+    return:
+      type: System.Char
+      description: ''
+    content.vb: Public Shared Function RandomCharBinary(thershold As Single = 0.5F) As Char
+  overload: Laga.GeneticAlgorithm.Tools.RandomCharBinary*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)
+  id: RandomChar(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: RandomChar(Int32, Int32)
+  nameWithType: Tools.RandomChar(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: RandomChar
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 442
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerate a random char.\nbased on this link: http://www.asciitable.com/\n"
+  example: []
+  syntax:
+    content: public static char RandomChar(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: the start number for the table, inclusive
+    - id: end
+      type: System.Int32
+      description: the end number for the table, inclusive
+    return:
+      type: System.Char
+      description: char
+    content.vb: Public Shared Function RandomChar(start As Integer, end As Integer) As Char
+  overload: Laga.GeneticAlgorithm.Tools.RandomChar*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)
+  id: RandomInt(System.Int32,System.Int32,System.Single)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: RandomInt(Int32, Int32, Single)
+  nameWithType: Tools.RandomInt(Int32, Int32, Single)
+  fullName: Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32, System.Int32, System.Single)
+  type: Method
+  source:
+    id: RandomInt
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 454
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nReturn non repetead integers between a min max and percent.\n"
+  example: []
+  syntax:
+    content: public static int[] RandomInt(int min, int max, float percent = 1F)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: the minimum value
+    - id: max
+      type: System.Int32
+      description: the maximum value
+    - id: percent
+      type: System.Single
+      description: the percent of return, if 1f will return all the numbers.
+    return:
+      type: System.Int32[]
+      description: array of integers if wrong array of 0
+    content.vb: Public Shared Function RandomInt(min As Integer, max As Integer, percent As Single = 1F) As Integer()
+  overload: Laga.GeneticAlgorithm.Tools.RandomInt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)
+  id: Mom_Dad(System.Int32,System.Single)
+  parent: Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Mom_Dad(Int32, Single)
+  nameWithType: Tools.Mom_Dad(Int32, Single)
+  fullName: Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32, System.Single)
+  type: Method
+  source:
+    id: Mom_Dad
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Tools.cs
+    startLine: 478
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nNon repeated indexs.\n"
+  example: []
+  syntax:
+    content: public static int[] Mom_Dad(int lengthPop, float percent = 0.5F)
+    parameters:
+    - id: lengthPop
+      type: System.Int32
+      description: the length of the population
+    - id: percent
+      type: System.Single
+      description: the percent of mutation
+    return:
+      type: System.Int32[]
+      description: array of indexs
+    content.vb: Public Shared Function Mom_Dad(lengthPop As Integer, percent As Single = 0.5F) As Integer()
+  overload: Laga.GeneticAlgorithm.Tools.Mom_Dad*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.GeneticAlgorithm.Tools.DataReport*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.DataReport
+  name: DataReport
+  nameWithType: Tools.DataReport
+  fullName: Laga.GeneticAlgorithm.Tools.DataReport
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger
+  name: BinaryChromosomeToInteger
+  nameWithType: Tools.BinaryChromosomeToInteger
+  fullName: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.GeneticAlgorithm.Tools.ExtractDNA*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.ExtractDNA
+  name: ExtractDNA
+  nameWithType: Tools.ExtractDNA
+  fullName: Laga.GeneticAlgorithm.Tools.ExtractDNA
+- uid: Laga.GeneticAlgorithm.Tools.MinMaxValue*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.MinMaxValue
+  name: MinMaxValue
+  nameWithType: Tools.MinMaxValue
+  fullName: Laga.GeneticAlgorithm.Tools.MinMaxValue
+- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.ReversePopulation
+  name: ReversePopulation
+  nameWithType: Tools.ReversePopulation
+  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation
+- uid: System.Char[][]
+  isExternal: true
+  name: Char[][]
+  nameWithType: Char[][]
+  fullName: System.Char[][]
+  nameWithType.vb: Char()()
+  fullName.vb: System.Char()()
+  name.vb: Char()()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Tools.Prefix*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Prefix
+  name: Prefix
+  nameWithType: Tools.Prefix
+  fullName: Laga.GeneticAlgorithm.Tools.Prefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Tools.Parse*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Parse
+  name: Parse
+  nameWithType: Tools.Parse
+  fullName: Laga.GeneticAlgorithm.Tools.Parse
+- uid: Laga.Geometry.Vectord[]
+  isExternal: true
+  name: Vectord[]
+  nameWithType: Vectord[]
+  fullName: Laga.Geometry.Vectord[]
+  nameWithType.vb: Vectord()
+  fullName.vb: Laga.Geometry.Vectord()
+  name.vb: Vectord()
+  spec.csharp:
+  - uid: Laga.Geometry.Vectord
+    name: Vectord
+    nameWithType: Vectord
+    fullName: Laga.Geometry.Vectord
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Laga.Geometry.Vectord
+    name: Vectord
+    nameWithType: Vectord
+    fullName: Laga.Geometry.Vectord
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Double[]
+  isExternal: true
+  name: Double[]
+  nameWithType: Double[]
+  fullName: System.Double[]
+  nameWithType.vb: Double()
+  fullName.vb: System.Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  nameWithType: Char[]
+  fullName: System.Char[]
+  nameWithType.vb: Char()
+  fullName.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Tools.Reverse*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Reverse
+  name: Reverse
+  nameWithType: Tools.Reverse
+  fullName: Laga.GeneticAlgorithm.Tools.Reverse
+- uid: System.Int32[][]
+  isExternal: true
+  name: Int32[][]
+  nameWithType: Int32[][]
+  fullName: System.Int32[][]
+  nameWithType.vb: Int32()()
+  fullName.vb: System.Int32()()
+  name.vb: Int32()()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Double[][]
+  isExternal: true
+  name: Double[][]
+  nameWithType: Double[][]
+  fullName: System.Double[][]
+  nameWithType.vb: Double()()
+  fullName.vb: System.Double()()
+  name.vb: Double()()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[][]
+  isExternal: true
+  name: Single[][]
+  nameWithType: Single[][]
+  fullName: System.Single[][]
+  nameWithType.vb: Single()()
+  fullName.vb: System.Single()()
+  name.vb: Single()()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Object[][]
+  isExternal: true
+  name: Object[][]
+  nameWithType: Object[][]
+  fullName: System.Object[][]
+  nameWithType.vb: Object()()
+  fullName.vb: System.Object()()
+  name.vb: Object()()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Fisher_Yates
+  name: Fisher_Yates
+  nameWithType: Tools.Fisher_Yates
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent
+  name: Fisher_YatesPercent
+  nameWithType: Tools.Fisher_YatesPercent
+  fullName: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Laga.GeneticAlgorithm.Tools.GetRandomNumber*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.GetRandomNumber
+  name: GetRandomNumber
+  nameWithType: Tools.GetRandomNumber
+  fullName: Laga.GeneticAlgorithm.Tools.GetRandomNumber
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Laga.GeneticAlgorithm.Tools.RandomCharBinary*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomCharBinary
+  name: RandomCharBinary
+  nameWithType: Tools.RandomCharBinary
+  fullName: Laga.GeneticAlgorithm.Tools.RandomCharBinary
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: Laga.GeneticAlgorithm.Tools.RandomChar*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomChar
+  name: RandomChar
+  nameWithType: Tools.RandomChar
+  fullName: Laga.GeneticAlgorithm.Tools.RandomChar
+- uid: Laga.GeneticAlgorithm.Tools.RandomInt*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomInt
+  name: RandomInt
+  nameWithType: Tools.RandomInt
+  fullName: Laga.GeneticAlgorithm.Tools.RandomInt
+- uid: Laga.GeneticAlgorithm.Tools.Mom_Dad*
+  commentId: Overload:Laga.GeneticAlgorithm.Tools.Mom_Dad
+  name: Mom_Dad
+  nameWithType: Tools.Mom_Dad
+  fullName: Laga.GeneticAlgorithm.Tools.Mom_Dad

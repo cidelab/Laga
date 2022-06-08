@@ -1,0 +1,816 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.Numbers.Function
+  commentId: T:Laga.Numbers.Function
+  id: Function
+  parent: Laga.Numbers
+  children:
+  - Laga.Numbers.Function.Deg2Rad(System.Double)
+  - Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
+  - Laga.Numbers.Function.Rad2Deg(System.Double)
+  - Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - Laga.Numbers.Function.Sigmoid(System.Single)
+  - Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Function
+  nameWithType: Function
+  fullName: Laga.Numbers.Function
+  type: Class
+  source:
+    id: Function
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 10
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nfamouse Maths functions\n"
+  example: []
+  syntax:
+    content: public class Function
+    content.vb: Public Class Function
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  commentId: M:Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  id: ThreeXplusOne(System.Int32)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: ThreeXplusOne(Int32)
+  nameWithType: Function.ThreeXplusOne(Int32)
+  fullName: Laga.Numbers.Function.ThreeXplusOne(System.Int32)
+  type: Method
+  source:
+    id: ThreeXplusOne
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 17
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\n3X + 1 function\nFrom the book: The modern C# Challenge\n"
+  example: []
+  syntax:
+    content: public static List<int> ThreeXplusOne(int Sequence)
+    parameters:
+    - id: Sequence
+      type: System.Int32
+      description: the number to begin the sequence
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Shared Function ThreeXplusOne(Sequence As Integer) As List(Of Integer)
+  overload: Laga.Numbers.Function.ThreeXplusOne*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
+  commentId: M:Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
+  id: NumberDistinct``1(System.Collections.Generic.List{``0})
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: NumberDistinct<T>(List<T>)
+  nameWithType: Function.NumberDistinct<T>(List<T>)
+  fullName: Laga.Numbers.Function.NumberDistinct<T>(System.Collections.Generic.List<T>)
+  type: Method
+  source:
+    id: NumberDistinct
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 38
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static List<T> NumberDistinct<T>(List<T> lstData)
+    parameters:
+    - id: lstData
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    content.vb: Public Shared Function NumberDistinct(Of T)(lstData As List(Of T)) As List(Of T)
+  overload: Laga.Numbers.Function.NumberDistinct*
+  nameWithType.vb: Function.NumberDistinct(Of T)(List(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.Numbers.Function.NumberDistinct(Of T)(System.Collections.Generic.List(Of T))
+  name.vb: NumberDistinct(Of T)(List(Of T))
+- uid: Laga.Numbers.Function.Sigmoid(System.Single)
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Single)
+  id: Sigmoid(System.Single)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: Sigmoid(Single)
+  nameWithType: Function.Sigmoid(Single)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Single)
+  type: Method
+  source:
+    id: Sigmoid
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 48
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nSigmoid activation function\n"
+  example: []
+  syntax:
+    content: public static float Sigmoid(float t)
+    parameters:
+    - id: t
+      type: System.Single
+      description: param to evaluate
+    return:
+      type: System.Single
+      description: the param map
+    content.vb: Public Shared Function Sigmoid(t As Single) As Single
+  overload: Laga.Numbers.Function.Sigmoid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: Sigmoid(Double, Double, Double, Double, Double, Double)
+  nameWithType: Function.Sigmoid(Double, Double, Double, Double, Double, Double)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    id: Sigmoid
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 64
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nSigmoid simulation function\n"
+  example: []
+  syntax:
+    content: public static double Sigmoid(double t, double A1, double A2, double B1, double B2, double decay)
+    parameters:
+    - id: t
+      type: System.Double
+      description: param to evaluate
+    - id: A1
+      type: System.Double
+      description: The initial value
+    - id: A2
+      type: System.Double
+      description: The final value
+    - id: B1
+      type: System.Double
+      description: The initial scope value
+    - id: B2
+      type: System.Double
+      description: The final scope value
+    - id: decay
+      type: System.Double
+      description: factor decay
+    return:
+      type: System.Double
+      description: the param map
+    content.vb: Public Shared Function Sigmoid(t As Double, A1 As Double, A2 As Double, B1 As Double, B2 As Double, decay As Double) As Double
+  overload: Laga.Numbers.Function.Sigmoid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: Sigmoid(Single, Single, Single, Single, Single, Single)
+  nameWithType: Function.Sigmoid(Single, Single, Single, Single, Single, Single)
+  fullName: Laga.Numbers.Function.Sigmoid(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: Sigmoid
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 79
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nSigmoid sumulation function\n"
+  example: []
+  syntax:
+    content: public static float Sigmoid(float t, float A1, float A2, float B1, float B2, float decay)
+    parameters:
+    - id: t
+      type: System.Single
+      description: param to evaluate
+    - id: A1
+      type: System.Single
+      description: The initial value
+    - id: A2
+      type: System.Single
+      description: The final value
+    - id: B1
+      type: System.Single
+      description: The initial scope value
+    - id: B2
+      type: System.Single
+      description: The final scope value
+    - id: decay
+      type: System.Single
+      description: factor decay
+    return:
+      type: System.Single
+      description: the param map
+    content.vb: Public Shared Function Sigmoid(t As Single, A1 As Single, A2 As Single, B1 As Single, B2 As Single, decay As Single) As Single
+  overload: Laga.Numbers.Function.Sigmoid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Numbers.Function.Deg2Rad(System.Double)
+  commentId: M:Laga.Numbers.Function.Deg2Rad(System.Double)
+  id: Deg2Rad(System.Double)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: Deg2Rad(Double)
+  nameWithType: Function.Deg2Rad(Double)
+  fullName: Laga.Numbers.Function.Deg2Rad(System.Double)
+  type: Method
+  source:
+    id: Deg2Rad
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 89
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nDegrees to Radians\n"
+  example: []
+  syntax:
+    content: public static double Deg2Rad(double degrees)
+    parameters:
+    - id: degrees
+      type: System.Double
+      description: ''
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Shared Function Deg2Rad(degrees As Double) As Double
+  overload: Laga.Numbers.Function.Deg2Rad*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.Numbers.Function.Rad2Deg(System.Double)
+  commentId: M:Laga.Numbers.Function.Rad2Deg(System.Double)
+  id: Rad2Deg(System.Double)
+  parent: Laga.Numbers.Function
+  langs:
+  - csharp
+  - vb
+  name: Rad2Deg(Double)
+  nameWithType: Function.Rad2Deg(Double)
+  fullName: Laga.Numbers.Function.Rad2Deg(System.Double)
+  type: Method
+  source:
+    id: Rad2Deg
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\Function.cs
+    startLine: 100
+  assemblies:
+  - Laga
+  namespace: Laga.Numbers
+  summary: "\nRadians to Degree\n"
+  example: []
+  syntax:
+    content: public static double Rad2Deg(double radians)
+    parameters:
+    - id: radians
+      type: System.Double
+      description: ''
+    return:
+      type: System.Double
+      description: double
+    content.vb: Public Shared Function Rad2Deg(radians As Double) As Double
+  overload: Laga.Numbers.Function.Rad2Deg*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Laga.Numbers
+  commentId: N:Laga.Numbers
+  name: Laga.Numbers
+  nameWithType: Laga.Numbers
+  fullName: Laga.Numbers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.Numbers.Function.ThreeXplusOne*
+  commentId: Overload:Laga.Numbers.Function.ThreeXplusOne
+  name: ThreeXplusOne
+  nameWithType: Function.ThreeXplusOne
+  fullName: Laga.Numbers.Function.ThreeXplusOne
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Laga.Numbers.Function.NumberDistinct*
+  commentId: Overload:Laga.Numbers.Function.NumberDistinct
+  name: NumberDistinct
+  nameWithType: Function.NumberDistinct
+  fullName: Laga.Numbers.Function.NumberDistinct
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.Numbers.Function.Sigmoid*
+  commentId: Overload:Laga.Numbers.Function.Sigmoid
+  name: Sigmoid
+  nameWithType: Function.Sigmoid
+  fullName: Laga.Numbers.Function.Sigmoid
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Laga.Numbers.Function.Deg2Rad*
+  commentId: Overload:Laga.Numbers.Function.Deg2Rad
+  name: Deg2Rad
+  nameWithType: Function.Deg2Rad
+  fullName: Laga.Numbers.Function.Deg2Rad
+- uid: Laga.Numbers.Function.Rad2Deg*
+  commentId: Overload:Laga.Numbers.Function.Rad2Deg
+  name: Rad2Deg
+  nameWithType: Function.Rad2Deg
+  fullName: Laga.Numbers.Function.Rad2Deg

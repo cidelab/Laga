@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Plane
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Plane
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Laga.Geometry.Plane">
+  
+  
+  <h1 id="Laga_Geometry_Plane" data-uid="Laga.Geometry.Plane" class="text-break">Class Plane
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Plane class and operations</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Plane</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Laga.Geometry.html">Laga.Geometry</a></h6>
+  <h6><strong>Assembly</strong>: Laga.dll</h6>
+  <h5 id="Laga_Geometry_Plane_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Plane</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Laga_Geometry_Plane__ctor_" data-uid="Laga.Geometry.Plane.#ctor*"></a>
+  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)">Plane(Vectord, Vectord)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Plane normal equation, form: PX·N = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Vectord VectorPX, Vectord VectorNormal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">VectorPX</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Vector from plane origin to a point X in the plane</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">VectorNormal</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Normal vector to plane</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane__ctor_" data-uid="Laga.Geometry.Plane.#ctor*"></a>
+  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)">Plane(Vectord, Vectord, Vectord)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Vector equation plane, form: X = P+tU+sV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(Vectord OriginPoint, Vectord VectorU, Vectord VectorV)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">OriginPoint</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Point in the plane, considered the origin point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">VectorU</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">First vector in the plane (U)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">VectorV</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Second vector in the plane (V)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane__ctor_" data-uid="Laga.Geometry.Plane.#ctor*"></a>
+  <h4 id="Laga_Geometry_Plane__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="Laga.Geometry.Plane.#ctor(System.Double,System.Double,System.Double,System.Double)">Plane(Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">General Equation plane, form: Ax + By + Cz + D = 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plane(double Ax, double By, double Cz, double D)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Ax</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Coeficient Ax</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">By</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Coeficient By</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">Cz</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Coeficient Cz</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">D</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Constant D</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Laga_Geometry_Plane_Ax_" data-uid="Laga.Geometry.Plane.Ax*"></a>
+  <h4 id="Laga_Geometry_Plane_Ax" data-uid="Laga.Geometry.Plane.Ax">Ax</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Get the Ax term</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Ax { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_By_" data-uid="Laga.Geometry.Plane.By*"></a>
+  <h4 id="Laga_Geometry_Plane_By" data-uid="Laga.Geometry.Plane.By">By</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Get the By Term</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double By { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_ConstantTerm_" data-uid="Laga.Geometry.Plane.ConstantTerm*"></a>
+  <h4 id="Laga_Geometry_Plane_ConstantTerm" data-uid="Laga.Geometry.Plane.ConstantTerm">ConstantTerm</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Plane constant term</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ConstantTerm { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_Cz_" data-uid="Laga.Geometry.Plane.Cz*"></a>
+  <h4 id="Laga_Geometry_Plane_Cz" data-uid="Laga.Geometry.Plane.Cz">Cz</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Get the Cz term</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Cz { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_Norm_" data-uid="Laga.Geometry.Plane.Norm*"></a>
+  <h4 id="Laga_Geometry_Plane_Norm" data-uid="Laga.Geometry.Plane.Norm">Norm</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Vector normal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectord Norm { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_Origin_" data-uid="Laga.Geometry.Plane.Origin*"></a>
+  <h4 id="Laga_Geometry_Plane_Origin" data-uid="Laga.Geometry.Plane.Origin">Origin</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Plane origin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectord Origin { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_VectorU_" data-uid="Laga.Geometry.Plane.VectorU*"></a>
+  <h4 id="Laga_Geometry_Plane_VectorU" data-uid="Laga.Geometry.Plane.VectorU">VectorU</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Vector U (X direction)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectord VectorU { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_VectorV_" data-uid="Laga.Geometry.Plane.VectorV*"></a>
+  <h4 id="Laga_Geometry_Plane_VectorV" data-uid="Laga.Geometry.Plane.VectorV">VectorV</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Vector V (Y direction)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectord VectorV { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Laga_Geometry_Plane_DistanceTo_" data-uid="Laga.Geometry.Plane.DistanceTo*"></a>
+  <h4 id="Laga_Geometry_Plane_DistanceTo_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vectord)">DistanceTo(Vectord)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Distance plane point. If negative, the point is behind the plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DistanceTo(Vectord point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">point to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">double</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_IntersectTo_" data-uid="Laga.Geometry.Plane.IntersectTo*"></a>
+  <h4 id="Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vectord__" data-uid="Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@)">IntersectTo(Line, ref Vectord)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Plane line intersection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IntersectTo(Line line, ref Vectord intersection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Line.html">Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Line</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><span class="parametername">intersection</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">ref Vector Intersection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_IntersectTo_" data-uid="Laga.Geometry.Plane.IntersectTo*"></a>
+  <h4 id="Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Plane_Laga_Geometry_Line__System_Double_" data-uid="Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Plane,Laga.Geometry.Line@,System.Double)">IntersectTo(Plane, ref Line, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Find the intersection between 2 planes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IntersectTo(Plane plane, ref Line intersection, double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Plane.html">Plane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Plane to test</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Line.html">Line</a></td>
+        <td><span class="parametername">intersection</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">ref line intersection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Default tolerance: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_IsCoincidentTo_" data-uid="Laga.Geometry.Plane.IsCoincidentTo*"></a>
+  <h4 id="Laga_Geometry_Plane_IsCoincidentTo_Laga_Geometry_Plane_System_Double_" data-uid="Laga.Geometry.Plane.IsCoincidentTo(Laga.Geometry.Plane,System.Double)">IsCoincidentTo(Plane, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Check if 2 planes are coicident</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCoincidentTo(Plane plane, double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Plane.html">Plane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Plane to test</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Default tolerance: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_IsParallelTo_" data-uid="Laga.Geometry.Plane.IsParallelTo*"></a>
+  <h4 id="Laga_Geometry_Plane_IsParallelTo_Laga_Geometry_Plane_System_Double_" data-uid="Laga.Geometry.Plane.IsParallelTo(Laga.Geometry.Plane,System.Double)">IsParallelTo(Plane, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Check if the plane is parallel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParallelTo(Plane plane, double tolerance = 0.001)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Plane.html">Plane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Plane to test</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Default tolerance: 1e-3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_PointAt_" data-uid="Laga.Geometry.Plane.PointAt*"></a>
+  <h4 id="Laga_Geometry_Plane_PointAt_System_Double_System_Double_" data-uid="Laga.Geometry.Plane.PointAt(System.Double,System.Double)">PointAt(Double, Double)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Locate a point in the plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vectord PointAt(double U, double V)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">U</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">U parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">V</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">V parameter</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">Vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Geometry_Plane_ToString_" data-uid="Laga.Geometry.Plane.ToString*"></a>
+  <h4 id="Laga_Geometry_Plane_ToString" data-uid="Laga.Geometry.Plane.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="2">Print plane data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p sourcefile="api/Laga.Geometry.Plane.yml" sourcestartlinenumber="1">string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

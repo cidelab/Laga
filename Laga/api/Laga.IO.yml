@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  id: Laga.IO
+  children:
+  - Laga.IO.IODataFolder
+  - Laga.IO.IOExcelRead
+  - Laga.IO.IOExcelWrite
+  - Laga.IO.IOTextData
+  - Laga.IO.IOTextData.EncodingType
+  langs:
+  - csharp
+  - vb
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO
+  type: Namespace
+  assemblies:
+  - Laga
+references:
+- uid: Laga.IO.IOTextData
+  commentId: T:Laga.IO.IOTextData
+  name: IOTextData
+  nameWithType: IOTextData
+  fullName: Laga.IO.IOTextData
+- uid: Laga.IO.IOTextData.EncodingType
+  commentId: T:Laga.IO.IOTextData.EncodingType
+  parent: Laga.IO
+  name: IOTextData.EncodingType
+  nameWithType: IOTextData.EncodingType
+  fullName: Laga.IO.IOTextData.EncodingType
+- uid: Laga.IO.IOExcelRead
+  commentId: T:Laga.IO.IOExcelRead
+  name: IOExcelRead
+  nameWithType: IOExcelRead
+  fullName: Laga.IO.IOExcelRead
+- uid: Laga.IO.IOExcelWrite
+  commentId: T:Laga.IO.IOExcelWrite
+  name: IOExcelWrite
+  nameWithType: IOExcelWrite
+  fullName: Laga.IO.IOExcelWrite
+- uid: Laga.IO.IODataFolder
+  commentId: T:Laga.IO.IODataFolder
+  name: IODataFolder
+  nameWithType: IODataFolder
+  fullName: Laga.IO.IODataFolder
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO

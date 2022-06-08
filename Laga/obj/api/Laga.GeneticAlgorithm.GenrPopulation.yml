@@ -1,0 +1,1081 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm.GenrPopulation
+  commentId: T:Laga.GeneticAlgorithm.GenrPopulation
+  id: GenrPopulation
+  parent: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.GenrPopulation.#ctor(System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr(System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt(System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.CharPopulation(System.Int32,System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Double,System.Double)
+  - Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Single,System.Single)
+  - Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object[],System.Single,System.Boolean)
+  - Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  langs:
+  - csharp
+  - vb
+  name: GenrPopulation
+  nameWithType: GenrPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation
+  type: Class
+  source:
+    id: GenrPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 10
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerate basic populations\n"
+  example: []
+  syntax:
+    content: public class GenrPopulation
+    content.vb: Public Class GenrPopulation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  commentId: P:Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  id: SizePop
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: SizePop
+  nameWithType: GenrPopulation.SizePop
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  type: Property
+  source:
+    id: SizePop
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 18
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nSizePopulation\n"
+  example: []
+  syntax:
+    content: public int SizePop { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SizePop As Integer
+  overload: Laga.GeneticAlgorithm.GenrPopulation.SizePop*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.#ctor(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: GenrPopulation(Int32)
+  nameWithType: GenrPopulation.GenrPopulation(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.GenrPopulation(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 34
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nConstructor:\n"
+  example: []
+  syntax:
+    content: public GenrPopulation(int SizePopulation)
+    parameters:
+    - id: SizePopulation
+      type: System.Int32
+      description: The size of the Population
+    content.vb: Public Sub New(SizePopulation As Integer)
+  overload: Laga.GeneticAlgorithm.GenrPopulation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object[],System.Single,System.Boolean)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object[],System.Single,System.Boolean)
+  id: ObjectPopulationSwap(System.Object[],System.Single,System.Boolean)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: ObjectPopulationSwap(Object[], Single, Boolean)
+  nameWithType: GenrPopulation.ObjectPopulationSwap(Object[], Single, Boolean)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object[], System.Single, System.Boolean)
+  type: Method
+  source:
+    id: ObjectPopulationSwap
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 146
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a random population based on a chromosome of objects[]\n"
+  example:
+  - "\n<pre><code>//This is the Agent class\npublic class Agent\n{\n   private double[] awards;\n   public double[] Awards\n   {\n       get { return awards; }\n       set { awards = value; }\n   }\n\n   private readonly string[] labels = new string[] { &quot;forward&quot;, &quot;back&quot;, &quot;left&quot;, &quot;right&quot; };\n   public string[] Labels\n   {\n       get { return labels; }\n   }\n\n   private int[] pos;\n   public int[] Pos\n   {\n       get { return pos; }\n       set { pos = value; }\n   }\n}\n\nHere we will creates the Chromosome...\nGenrPopulation pop = new GenrPopulation(5); //population size...\n\nour agent object...\nobject[] agentTrace = new object[pop.SizePop];\nAgent agent;\n\ngenrChromosome to helps create the data.\nGenrChromosome dtaChrome = new GenrChromosome(agentTrace.Length); \n\nin this loop we creates the chromosome.\nfor(int i = 0; i &lt; agentTrace.Length ; i++)\n{\n    agent = new Agent();\n    dtaChrome.SizeChrom = 4;\n    agent.Awards = dtaChrome.NumberChromosome(0.00, 1.00);\n    dtaChrome.SizeChrom = 2;\n    agent.Pos = dtaChrome.NumberChromosome(0, 8);\n    agentTrace[i] = agent;\n}\n\nAnd we creates the population for the agents trajectories. \nthat&apos;s all.\nObject[][] popAgents = pop.ObjectPopulationSwap(agentTrace, 1.0f, true);\n\nresult:\nChromosome(agents trace) : 0\nPosition:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54\nPosition:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27\nPosition:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89\nPosition:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53\nPosition:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04\nPosition:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97\nPosition:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32\n\nChromosome(agents trace) : 1\nPosition:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54\nPosition:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97\nPosition:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53\nPosition:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89\nPosition:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32\nPosition:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27\nPosition:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04\n\nChromosome(agents trace) : 2\nPosition:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54\nPosition:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97\nPosition:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89\nPosition:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27\nPosition:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32\nPosition:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53\nPosition:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04\n\nChromosome(agents trace) : 3\nPosition:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32\nPosition:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53\nPosition:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89\nPosition:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04\nPosition:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97\nPosition:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54\nPosition:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27\n\nChromosome(agents trace) : 4\nPosition:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53\nPosition:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97\nPosition:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54\nPosition:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27\nPosition:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89\nPosition:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04\nPosition:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32</code></pre>\n"
+  syntax:
+    content: public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)
+    parameters:
+    - id: SeedChromosome
+      type: System.Object[]
+      description: The seed chromosome to genr8 the population
+    - id: percent
+      type: System.Single
+      description: the mutation percent in the population
+    - id: InOut
+      type: System.Boolean
+      description: true to include the seed chromosome in the population
+    return:
+      type: System.Object[][]
+      description: Population object[][]
+    content.vb: Public Function ObjectPopulationSwap(SeedChromosome As Object(), percent As Single, InOut As Boolean) As Object()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap*
+  nameWithType.vb: GenrPopulation.ObjectPopulationSwap(Object(), Single, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object(), System.Single, System.Boolean)
+  name.vb: ObjectPopulationSwap(Object(), Single, Boolean)
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Double,System.Double)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Double,System.Double)
+  id: NumPopulation(System.Int32,System.Double,System.Double)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: NumPopulation(Int32, Double, Double)
+  nameWithType: GenrPopulation.NumPopulation(Int32, Double, Double)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32, System.Double, System.Double)
+  type: Method
+  source:
+    id: NumPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 192
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Population of random double.\n"
+  example:
+  - "\n<pre><code>GenrPopulation pop = new GenrPopulation(5);\ndouble[][] dblPop = pop.NumPopulation(12, 0.00, 1.00);\n\nresult for double population\nChromosome: 0\n- 0.134, 0.623, 0.931, 0.896, 0.945, 0.599, 0.824, 0.837, 0.671, 0.081, 0.496, 0.027,\nChromosome: 1\n- 0.669, 0.725, 0.667, 0.651, 0.073, 0.215, 0.052, 0.92, 0.371, 0.122, 0.734, 0.535,\nChromosome: 2\n- 0.741, 0.056, 0.469, 0.699, 0.216, 0.727, 0.221, 0.322, 0.825, 0.301, 0.057, 0.775,\nChromosome: 3\n- 0.884, 0.257, 0.278, 0.461, 0.152, 0.24, 0.929, 0.364, 0.869, 0.415, 0.995, 0.776,\nChromosome: 4\n- 0.022, 0.403, 0.101, 0.041, 0.528, 0.667, 0.517, 0.012, 0.889, 0.395, 0.155, 0.888,</code></pre>\n"
+  syntax:
+    content: public double[][] NumPopulation(int sizeChromosome, double min, double max)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    - id: min
+      type: System.Double
+      description: The minimum value in the chromosome, inclusive
+    - id: max
+      type: System.Double
+      description: The maximum value in the chromosome, inclusive
+    return:
+      type: System.Double[][]
+      description: Population double[][]
+    content.vb: Public Function NumPopulation(sizeChromosome As Integer, min As Double, max As Double) As Double()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Single,System.Single)
+  id: NumPopulation(System.Int32,System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: NumPopulation(Int32, Single, Single)
+  nameWithType: GenrPopulation.NumPopulation(Int32, Single, Single)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32, System.Single, System.Single)
+  type: Method
+  source:
+    id: NumPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 216
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Population of random float.\n"
+  example: []
+  syntax:
+    content: public float[][] NumPopulation(int sizeChromosome, float min, float max)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    - id: min
+      type: System.Single
+      description: The minimum value in the chromosome, inclusive
+    - id: max
+      type: System.Single
+      description: The maximum value in the chromosome, inclusive
+    return:
+      type: System.Single[][]
+      description: Population float[][]
+    content.vb: Public Function NumPopulation(sizeChromosome As Integer, min As Single, max As Single) As Single()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Int32,System.Int32)
+  id: NumPopulation(System.Int32,System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: NumPopulation(Int32, Int32, Int32)
+  nameWithType: GenrPopulation.NumPopulation(Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: NumPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 240
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Population of random int.\n"
+  example: []
+  syntax:
+    content: public int[][] NumPopulation(int sizeChromosome, int min, int max)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    - id: min
+      type: System.Int32
+      description: The minimum value in the chromosome, inclusive
+    - id: max
+      type: System.Int32
+      description: The maximum value in the chromosome, inclusive
+    return:
+      type: System.Int32[][]
+      description: Population int[][]
+    content.vb: Public Function NumPopulation(sizeChromosome As Integer, min As Integer, max As Integer) As Integer()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap(System.Int32,System.Int32)
+  id: NumPopulationSwap(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: NumPopulationSwap(Int32, Int32)
+  nameWithType: GenrPopulation.NumPopulationSwap(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: NumPopulationSwap
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 281
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Population of random integers, between min and max value.\n"
+  example:
+  - "\n<pre><code>GenrPopulation pop = new GenrPopulation(5);\nint[][] intPop = pop.NumPopulationSwap(0, 10);\n\nresults\nChromosome: 0\n- 1, 4, 8, 6, 2, 10, 9, 5, 0, 7, 3,\nChromosome: 1\n- 5, 4, 0, 1, 7, 6, 8, 10, 2, 3, 9,\n Chromosome: 2\n- 1, 6, 10, 7, 3, 5, 9, 2, 0, 8, 4,\nChromosome: 3\n- 9, 1, 4, 6, 10, 2, 7, 5, 8, 0, 3,\nChromosome: 4\n- 2, 5, 0, 7, 6, 1, 4, 3, 8, 9, 10,</code></pre>\n"
+  syntax:
+    content: public int[][] NumPopulationSwap(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: The minimum value in the chromosome, inclusive
+    - id: max
+      type: System.Int32
+      description: The maximum value in the chromosome, inclusive
+    return:
+      type: System.Int32[][]
+      description: Population int[][]
+    content.vb: Public Function NumPopulationSwap(min As Integer, max As Integer) As Integer()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt(System.Int32)
+  id: BinaryPopulationInt(System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: BinaryPopulationInt(Int32)
+  nameWithType: GenrPopulation.BinaryPopulationInt(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt(System.Int32)
+  type: Method
+  source:
+    id: BinaryPopulationInt
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 331
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a binary Population 101011...\n"
+  example:
+  - "\n<pre><code>GenrPopulation pop = new GenrPopulation(5);\nint[][] intPop = pop.BinaryPopulationInt(20);\n\nresult:\nChromosome: 0\n- 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,\nChromosome: 1\n- 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0,\nChromosome: 2\n- 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0,\nChromosome: 3\n- 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1,\nChromosome: 4\n- 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0,</code></pre>\n"
+  syntax:
+    content: public int[][] BinaryPopulationInt(int sizeChromosome)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    return:
+      type: System.Int32[][]
+      description: Population int[][]
+    content.vb: Public Function BinaryPopulationInt(sizeChromosome As Integer) As Integer()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr(System.Int32)
+  id: BinaryPopulationChr(System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: BinaryPopulationChr(Int32)
+  nameWithType: GenrPopulation.BinaryPopulationChr(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr(System.Int32)
+  type: Method
+  source:
+    id: BinaryPopulationChr
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 378
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a binary Population &apos;1&apos;,&apos;0&apos;,&apos;1&apos;,&apos;0&apos;,&apos;1&apos;,&apos;1&apos;...\n"
+  example:
+  - "\nGenrPopulation pop = new GenrPopulation(5);\n[][] charPop = pop.BinaryPopulationChr(10);\n\nresult:\n\nChromosome: 0\n- 0, 1, 1, 1, 0, 0, 1, 0, 1, 0,\nChromosome: 1\n- 1, 1, 1, 1, 0, 1, 0, 0, 0, 1,\nChromosome: 2\n- 1, 1, 0, 0, 0, 1, 0, 1, 0, 1,\nChromosome: 3\n- 0, 1, 0, 0, 1, 1, 1, 0, 1, 0,\nChromosome: 4\n- 1, 0, 0, 0, 1, 0, 1, 1, 1, 1,\n"
+  syntax:
+    content: public char[][] BinaryPopulationChr(int sizeChromosome)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    return:
+      type: System.Char[][]
+      description: Population char[][]
+    content.vb: Public Function BinaryPopulationChr(sizeChromosome As Integer) As Char()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.CharPopulation(System.Int32,System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.CharPopulation(System.Int32,System.Int32,System.Int32)
+  id: CharPopulation(System.Int32,System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: CharPopulation(Int32, Int32, Int32)
+  nameWithType: GenrPopulation.CharPopulation(Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.CharPopulation(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: CharPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 423
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Population composed by random chars.\nbased on this link: http://www.asciitable.com/\n"
+  example:
+  - "\n<pre><code> \nGenrPopulation pop = new GenrPopulation(5);\nchar[][] charPop = pop.CharPopulation(30, 50, 100);\n\n/// result:\nChromosome: 0\n- Q, 5, A, P, ^, \\, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H\nChromosome: 1\n- C, 7, T, ], W, W, 7, ?, 4, b, 4, C, L, ], I, Z, J, 8, :, A, S, b, L, 9, a, 7, Q, 6, U, T\nChromosome: 2\n- H, C, O, b, ], O, M, a, H, C, @, 5, [, U, F, b, 2, P, X, 7, W, ?, :, d, Z, E, P, L, a, R\nChromosome: 3\n- 7, 3, N, E, L, U, Y, N, 2, ^, ?, M, U, \\, 3, O, 9, [, X, c, 7, 3, C, O, b, ;, ;, P, :, I\nChromosome: 4\n- d, 2, 2, Z, =, ?, L, H, ;, V, :, H, P, ^,], ;, O, B, b, [, @, Y, Y, b, L, 5, T, c, G</code></pre>\n"
+  syntax:
+    content: public char[][] CharPopulation(int sizeChromosome, int start, int end)
+    parameters:
+    - id: sizeChromosome
+      type: System.Int32
+      description: The size of the chromosome
+    - id: start
+      type: System.Int32
+      description: 'the start number for the table, inclusive: Eg: 97'
+    - id: end
+      type: System.Int32
+      description: 'the end number for the table, inclusive: Eg: 122'
+    return:
+      type: System.Char[][]
+      description: Population char[][]
+    content.vb: Public Function CharPopulation(sizeChromosome As Integer, start As Integer, end As Integer) As Char()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.CharPopulation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: PointPopulation(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.GenrPopulation
+  langs:
+  - csharp
+  - vb
+  name: PointPopulation(Int32, Single, Single, Single, Single, Single, Single)
+  nameWithType: GenrPopulation.PointPopulation(Int32, Single, Single, Single, Single, Single, Single)
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: PointPopulation
+    path: C:\Users\delab\Documents\GitHub\Laga\Laga\GenrPopulation.cs
+    startLine: 470
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenr8 a Random population of points [x,y,z]\n"
+  example:
+  - "\n<pre><code>GenrPopulation pop = new GenrPopulation(5);\npoint[][] pntPop = pop.PointPopulation(4, 0, 100d, 0d, 100d, 0d, 100d);\n\nresult:\nChromosome: 0\n- (67.06, 80, 95.77), (82.34, 41.8, 81.37), (74.42, 12.58, 46.27), (46.76, 59.55, 56.52),\nChromosome: 1\n- (56.48, 17.73, 27.91), (10.31, 68.15, 57.53), (62.79, 51.99, 29.98), (58.98, 41.34, 11.13),\nChromosome: 2\n- (38.26, 63.32, 64.84), (22.49, 65.4, 86.53), (42.75, 16.47, 12.87), (72.12, 70.32, 48.68),\nChromosome: 3\n- (32.05, 66.44, 0.96), (84.8, 18.4, 99.88), (48.29, 60.83, 37.58), (78.45, 42.13, 16.48),\nChromosome: 4\n- (79.54, 62.78, 7.36), (84.51, 83.64, 69.42), (1.99, 8.09, 38.65), (84.64, 44.09, 78.47),</code></pre>\n"
+  syntax:
+    content: public Vectord[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
+    parameters:
+    - id: SizeChromosome
+      type: System.Int32
+      description: The length of the chromosome
+    - id: minX
+      type: System.Single
+      description: The minimum value for X coordinate
+    - id: maxX
+      type: System.Single
+      description: The maximum value for X coordinate
+    - id: minY
+      type: System.Single
+      description: The minimum value for Y coordinate
+    - id: maxY
+      type: System.Single
+      description: The maximum value for Y coordinate
+    - id: minZ
+      type: System.Single
+      description: The minimum value for Z coordinate
+    - id: maxZ
+      type: System.Single
+      description: The maximum value for Z coordinate
+    return:
+      type: Laga.Geometry.Vectord[][]
+      description: a population of points
+    content.vb: Public Function PointPopulation(SizeChromosome As Integer, minX As Single, maxX As Single, minY As Single, maxY As Single, minZ As Single, maxZ As Single) As Vectord()()
+  overload: Laga.GeneticAlgorithm.GenrPopulation.PointPopulation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.GeneticAlgorithm.GenrPopulation.SizePop*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  name: SizePop
+  nameWithType: GenrPopulation.SizePop
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.SizePop
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.GeneticAlgorithm.GenrPopulation.#ctor*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.#ctor
+  name: GenrPopulation
+  nameWithType: GenrPopulation.GenrPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.GenrPopulation
+- uid: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap
+  name: ObjectPopulationSwap
+  nameWithType: GenrPopulation.ObjectPopulationSwap
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Object[][]
+  isExternal: true
+  name: Object[][]
+  nameWithType: Object[][]
+  fullName: System.Object[][]
+  nameWithType.vb: Object()()
+  fullName.vb: System.Object()()
+  name.vb: Object()()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.NumPopulation
+  name: NumPopulation
+  nameWithType: GenrPopulation.NumPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulation
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Double[][]
+  isExternal: true
+  name: Double[][]
+  nameWithType: Double[][]
+  fullName: System.Double[][]
+  nameWithType.vb: Double()()
+  fullName.vb: System.Double()()
+  name.vb: Double()()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[][]
+  isExternal: true
+  name: Single[][]
+  nameWithType: Single[][]
+  fullName: System.Single[][]
+  nameWithType.vb: Single()()
+  fullName.vb: System.Single()()
+  name.vb: Single()()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[][]
+  isExternal: true
+  name: Int32[][]
+  nameWithType: Int32[][]
+  fullName: System.Int32[][]
+  nameWithType.vb: Int32()()
+  fullName.vb: System.Int32()()
+  name.vb: Int32()()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap
+  name: NumPopulationSwap
+  nameWithType: GenrPopulation.NumPopulationSwap
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap
+- uid: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt
+  name: BinaryPopulationInt
+  nameWithType: GenrPopulation.BinaryPopulationInt
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt
+- uid: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr
+  name: BinaryPopulationChr
+  nameWithType: GenrPopulation.BinaryPopulationChr
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr
+- uid: System.Char[][]
+  isExternal: true
+  name: Char[][]
+  nameWithType: Char[][]
+  fullName: System.Char[][]
+  nameWithType.vb: Char()()
+  fullName.vb: System.Char()()
+  name.vb: Char()()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrPopulation.CharPopulation*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.CharPopulation
+  name: CharPopulation
+  nameWithType: GenrPopulation.CharPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.CharPopulation
+- uid: Laga.GeneticAlgorithm.GenrPopulation.PointPopulation*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.PointPopulation
+  name: PointPopulation
+  nameWithType: GenrPopulation.PointPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation.PointPopulation
+- uid: Laga.Geometry.Vectord[][]
+  isExternal: true
+  name: Vectord[][]
+  nameWithType: Vectord[][]
+  fullName: Laga.Geometry.Vectord[][]
+  nameWithType.vb: Vectord()()
+  fullName.vb: Laga.Geometry.Vectord()()
+  name.vb: Vectord()()
+  spec.csharp:
+  - uid: Laga.Geometry.Vectord
+    name: Vectord
+    nameWithType: Vectord
+    fullName: Laga.Geometry.Vectord
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Laga.Geometry.Vectord
+    name: Vectord
+    nameWithType: Vectord
+    fullName: Laga.Geometry.Vectord
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
