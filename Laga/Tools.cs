@@ -418,7 +418,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="thershold">thershold parameter. 0.5 = 50%</param>
         /// <returns></returns>
-        public static char RandomCharBinary(float thershold)
+        public static char RandomCharBinary(float thershold = 0.5f)
         {
             char t;
 
@@ -452,7 +452,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="max">the maximum value</param>
         /// <param name="percent">the percent of return, if 1f will return all the numbers.</param>
         /// <returns>array of integers if wrong array of 0</returns>
-        public static int[] RandomInt(int min, int max, float percent)
+        public static int[] RandomInt(int min, int max, float percent = 1.0f)
         {
             if(min > max) { return new int[] { 0 }; }
 
@@ -476,7 +476,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="lengthPop">the length of the population</param>
         /// <param name="percent">the percent of mutation</param>
         /// <returns>array of indexs</returns>
-        public static int[] Mom_Dad(int lengthPop, float percent)
+        public static int[] Mom_Dad(int lengthPop, float percent = 0.5f)
         {
             //numbers and utilities..
             int size = (int)(percent * lengthPop);

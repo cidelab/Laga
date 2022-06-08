@@ -8,7 +8,7 @@ using Rhino.Geometry;
 namespace LagaRhino
 {
     /// <summary>
-    /// 
+    /// Shoebox
     /// </summary>
     public class Shoebox : Brep
     {
@@ -23,16 +23,7 @@ namespace LagaRhino
         /// </summary>
         public Brep ShoeBox
             { get { return br; } }
-        /// <summary>
-        /// Get the shoebox volume
-        /// </summary>
-        public double Volume
-        {
-            get
-            {
-                return br.GetVolume();
-            }
-        }
+
         private Point3d pa, pb, pc, pd, pe, pf, pg, ph;
 
         /// <summary>
@@ -76,23 +67,15 @@ namespace LagaRhino
         }
 
         /// <summary>
-        /// 
+        /// Shoebox by length, width and height
         /// </summary>
-        /// <param name="point"></param>
-        /// <param name="length"></param>
-        /// <param name="width"></param>
-        /// <param name="height"></param>
+        /// <param name="point">Base point location</param>
+        /// <param name="length">Length</param>
+        /// <param name="width">Width</param>
+        /// <param name="height">Height</param>
         public Shoebox(Point3d point, double length, double width, double height)
         {
-            pl.Origin = point;
-            uw = width * 0.5;
-            ul = length * 0.5;
-            he = height;
-
-            pa = pl.PointAt(-ul, -uw);
-            pb = pl.PointAt(ul, -uw);
-            pc = pl.PointAt(ul, uw);
-            pd = pl.PointAt(-ul, uw);
+            PtsTranslate(point, length, width);
 
             pe = pa;
             pf = pb;
@@ -105,6 +88,45 @@ namespace LagaRhino
             ph.Z = he;
 
             br = Brep.CreateFromBox(new Point3d[] { pa, pb, pc, pd, pe, pf, pg, ph });
+        }
+
+        /// <summary>
+        /// Shoebox with the free Z top points
+        /// </summary>
+        /// <param name="point">Base point location</param>
+        /// <param name="length">Length</param>
+        /// <param name="width">Width</param>
+        /// <param name="eHeight">Z parameter for e point</param>
+        /// <param name="fHeight">Z parameter for f point</param>
+        /// <param name="gHeight">Z parameter for g point</param>
+        /// <param name="hHeight">Z parameter for h point</param>
+        public Shoebox(Point3d point, double length, double width, double eHeight, double fHeight, double gHeight, double hHeight)
+        {
+            PtsTranslate(point, length, width);
+
+            pe = pa;
+            pf = pb;
+            pg = pc;
+            ph = pd;
+
+            pe.Z = eHeight;
+            pf.Z = fHeight;
+            pg.Z = gHeight;
+            ph.Z = hHeight;
+
+            br = Brep.CreateFromBox(new Point3d[] { pa, pb, pc, pd, pe, pf, pg, ph });
+        }
+
+        private void PtsTranslate(Point3d p, double l, double w)
+        {
+            pl.Origin = p;
+            uw = w * 0.5;
+            ul = l * 0.5;
+
+            pa = pl.PointAt(-ul, -uw);
+            pb = pl.PointAt(ul, -uw);
+            pc = pl.PointAt(ul, uw);
+            pd = pl.PointAt(-ul, uw);
         }
     }
 }

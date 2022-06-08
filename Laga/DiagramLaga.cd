@@ -143,5 +143,12 @@
     <Position X="5.5" Y="1.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
+  <Struct Name="Laga.Geometry.Vectord" Collapsed="true">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARIAAEAAACACEcAEAAAAAAAgABAAAAEBgAUAgYEE=</HashCode>
+      <FileName>Vectord.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
