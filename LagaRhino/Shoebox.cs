@@ -16,6 +16,8 @@ namespace LagaRhino
         private Plane pl = Plane.WorldXY;
         private double uw;
         private double ul;
+        private double vol;
+        private double area;
 
         /// <summary>
         /// Get the ShoeBox geometry.
@@ -25,14 +27,14 @@ namespace LagaRhino
         /// <summary>
         /// Length Shoebox Property
         /// </summary>
-        public double Length
-            { get { return ul; } }
+        public double Volume
+            { get { return vol; } }
 
         /// <summary>
         /// Width Shoebox property
         /// </summary>
-        public double Width
-            { get { return uw; } }
+        public double Area
+            { get { return area; } }
 
         /// <summary>
         /// Shoebox by length, width and height
@@ -57,19 +59,20 @@ namespace LagaRhino
             ph.Z = height;
 
             ShoeBox = Brep.CreateFromBox(new Point3d[] { pa, pb, pc, pd, pe, pf, pg, ph });
+            Data();
         }
 
         /// <summary>
         /// Shoebox with the free Z top points
         /// </summary>
         /// <param name="point">Base point location</param>
-        /// <param name="rotate">Rotate parameter</param>
         /// <param name="length">Length</param>
         /// <param name="width">Width</param>
         /// <param name="eHeight">Z parameter for e point</param>
         /// <param name="fHeight">Z parameter for f point</param>
         /// <param name="gHeight">Z parameter for g point</param>
         /// <param name="hHeight">Z parameter for h point</param>
+        /// <param name="rotate">Rotate parameter</param>
         public Shoebox(Point3d point, double length, double width, double eHeight, double fHeight, double gHeight, double hHeight, double rotate = 0.0)
         {
             PtsTranslate(point, length, width, rotate);
@@ -85,8 +88,15 @@ namespace LagaRhino
             ph.Z = hHeight;
 
            ShoeBox = Brep.CreateFromBox(new Point3d[] { pa, pb, pc, pd, pe, pf, pg, ph });
+           Data();
+
         }
 
+        private void Data()
+        {
+            vol = ShoeBox.GetVolume();
+            area = ShoeBox.GetArea();
+        }
         private void PtsTranslate(Point3d p, double l, double w, double rot)
         {
             pl.Origin = p;

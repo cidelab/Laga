@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
+//using UnityEngine;
 
 namespace LagaUnity
 {
+    /*
     /// <summary>
     /// Polygon class
     /// </summary>
@@ -250,4 +251,5 @@ namespace LagaUnity
            return new Polygon(lstVectorPolygon.OrderBy(p => p.X).ThenBy(p => p.Y).ToList());
         }
     }
+    */
 }

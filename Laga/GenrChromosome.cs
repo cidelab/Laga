@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 //using System.Linq;
 using System.Text;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -177,19 +178,36 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Generates a binary chromosome of chars.
+        /// the method generate a chromosome composed by non repeated integers between min and max (not inclusive).
+        /// and is designed for combinatorial problems.
         /// </summary>
-        /// <returns>a random char list of 1s and 0s</returns>
-        /// <example>
-        /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(5);
-        /// char[] Chrom = chromosome.CharChromosomeBinary();
-        /// 
-        /// result:
-        /// 0, 1, 0, 1, 0,
-        /// </code>
-        /// </example>
-        public char[] CharChromosomeBinary()
+        /// <param name="min">the minimum value in the sequence</param>
+        /// <param name="max">the maximum value in the sequence</param>
+        /// <returns>int Chromosome</returns>
+        public Chromosome<int> DNA_RandInteger(int min, int max)
+        {
+            Chromosome<int> chr = new Chromosome<int>();
+            
+            for (int i = min; i < max + 1; i++)
+                chr.Add(i);
+
+            return Chromosome<int>.Fisher_Yates(chr); //Tools.Fisher_Yates(chr);
+        }
+
+/// <summary>
+/// Generates a binary chromosome of chars.
+/// </summary>
+/// <returns>a random char list of 1s and 0s</returns>
+/// <example>
+/// <code>
+/// GenrChromosome chromosome = new GenrChromosome(5);
+/// char[] Chrom = chromosome.CharChromosomeBinary();
+/// 
+/// result:
+/// 0, 1, 0, 1, 0,
+/// </code>
+/// </example>
+public char[] CharChromosomeBinary()
         {
             char[] arrChr = new char[size];
 
@@ -198,6 +216,20 @@ namespace Laga.GeneticAlgorithm
                 arrChr[i] = rnd.NextDouble() >= 0.5 ? '1' : '0';
 
             }
+
+            return arrChr;
+        }
+
+        /// <summary>
+        /// Generates a binary chromosome of chars.
+        /// </summary>
+        /// <returns>char Chromosome</returns>
+        public Chromosome<char> DNA_Char()
+        {
+            Chromosome<char> arrChr = new Chromosome<char>();
+
+            for (int i = 0; i < size; i++)
+                arrChr.Add(rnd.NextDouble() >= 0.5 ? '1' : '0');
 
             return arrChr;
         }
@@ -237,6 +269,23 @@ namespace Laga.GeneticAlgorithm
                 chr[i] = (char)rnd.Next(start, end);
             }
 
+            return chr;
+        }
+
+        /// <summary>
+        /// Generates an random char chromosome composed by characters.
+        /// See <a href="http://www.asciitable.com/">this link</a> for more information.
+        /// </summary>
+        /// <param name="start">the start number in the table, inclusive</param>
+        /// <param name="end">the end number in the table, exclusive</param>
+        /// <returns>char Chromosome</returns>
+        public Chromosome<char> DNA_Char(int start, int end)
+        {
+            Chromosome<char> chr = new Chromosome<char>(size);
+
+            for (int i = 0; i < size; i++)
+                chr.Add((char)rnd.Next(start, end));
+            
             return chr;
         }
 

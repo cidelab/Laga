@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -14,7 +15,7 @@ namespace Laga.GeneticAlgorithm
         private double fitness;
 
         /// <summary>
-        /// The size of the chromosome
+        /// The size of the chromosome++                                                                        
         /// </summary>
         public int Count
         {
@@ -105,6 +106,46 @@ namespace Laga.GeneticAlgorithm
         public string Chr2Str(string sep)
         {
             return string.Join(sep, chromosome);
+        }
+
+        /// <summary>
+        /// Convert the chromosome in a list
+        /// </summary>
+        /// <returns>List</returns>
+        public List<T> ToList()
+        {
+            return chromosome;
+        }
+
+        /// <summary>
+        /// Convert the chromosome in Array;
+        /// </summary>
+        /// <returns>Array</returns>
+        public T[] ToArray()
+        {
+            return chromosome.ToArray();
+        }
+
+        /// <summary>
+        /// Fisher-Yates Shuffle Algorithm for array of integers.
+        /// </summary>
+        /// <param name="chromosome"></param>
+        /// <returns></returns>
+        /// 
+        public static Chromosome<T> Fisher_Yates(Chromosome<T> chromosome) //not working!!!
+        {
+            int cant = chromosome.Count;
+            int index;
+            
+            Random rnd = new Random(DateTime.Now.Millisecond);
+
+            for (int i = 0; i < cant; i++)
+            {
+                index = i + (int)(rnd.NextDouble() * (cant - i));
+                chromosome.InsertDNA(index, chromosome.GetDNA(i)); //arrMut[index] = arrMut[i];
+                chromosome.InsertDNA(i, chromosome.GetDNA(index)); //arrMut[i] = temp;
+            }
+            return chromosome;
         }
 
     }

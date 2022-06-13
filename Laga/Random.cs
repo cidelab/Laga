@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Laga.GeneticAlgorithm;
 
 namespace Laga.Numbers
 {
     /// <summary>
     /// Random number class
     /// </summary>
-    public class Rand
+    public class Rand<T>
     {
         private static readonly Random rnd = new Random();
         /// <summary>
@@ -44,5 +45,7 @@ namespace Laga.Numbers
 
             return arrN;
         }
+
+
     }
 }

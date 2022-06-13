@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
+//using UnityEngine;
 using Laga.Geometry;
 
 namespace LagaUnity
@@ -13,7 +13,7 @@ namespace LagaUnity
     /// </summary>
     public static class Draw
     {
-
+        /*
         /// <summary>
         /// Draw a Vector
         /// </summary>
@@ -65,7 +65,7 @@ namespace LagaUnity
         {
             return new Vector3(vector.X, vector.Y, vector.Z);
         }
-
-
+         */
     }
+
 }

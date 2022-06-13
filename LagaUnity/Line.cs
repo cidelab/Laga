@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
+//using UnityEngine;
 using Laga.Geometry;
 
 namespace LagaUnity
 {
+    /*
     /// <summary>
     /// Draw a line in Unity
     /// </summary>
@@ -102,4 +103,5 @@ namespace LagaUnity
             return lineRenderer;
         }
     }
+    */
 }

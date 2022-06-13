@@ -1,8 +1,9 @@
 ﻿using System;
-using UnityEngine;
+//using UnityEngine;
 
 namespace LagaUnity
 {
+    /*
     /// <summary>
     /// Vector struct
     /// </summary>
@@ -241,4 +242,5 @@ namespace LagaUnity
             return "vecf [" + X + ", " + Y + ", " + Z + "] ";
         }
     }
+    */
 }
