@@ -9,7 +9,7 @@ namespace Laga.Numbers
     /// <summary>
     /// Random number class
     /// </summary>
-    public class Rand<T>
+    public class Rand
     {
         private static readonly Random rnd = new Random();
         /// <summary>
@@ -46,6 +46,34 @@ namespace Laga.Numbers
             return arrN;
         }
 
+        /// <summary>
+        /// Random Integer
+        /// </summary>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>integer</returns>
+        public static int IntNumber(int min, int max)
+        {
+            return min + (int)(rnd.NextDouble() * (max - min));
+        }
+        /// <summary>
+        /// random value between 0 and 1
+        /// </summary>
+        /// <returns>double</returns>
+        public static double DblNumber()
+        {
+            return rnd.NextDouble();
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static float FltNumber(float min, float max)
+        {
+            return max + (float)DblNumber() + (max - min);
+        }
     }
 }

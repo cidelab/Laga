@@ -99,13 +99,12 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Converts DNA Chromosome to a String
+        /// Chromosome to String
         /// </summary>
-        /// <param name="sep">separation</param>
         /// <returns>string</returns>
-        public string Chr2Str(string sep)
+        public override string ToString()
         {
-            return string.Join(sep, chromosome);
+            return "Chr:[" + string.Join(", ", chromosome) + "]";
         }
 
         /// <summary>
@@ -127,25 +126,22 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Fisher-Yates Shuffle Algorithm for array of integers.
+        /// Fisher_Yates algorithm for the chromosome
         /// </summary>
-        /// <param name="chromosome"></param>
-        /// <returns></returns>
-        /// 
-        public static Chromosome<T> Fisher_Yates(Chromosome<T> chromosome) //not working!!!
+        public void Fisher_Yates() //not working!!!
         {
-            int cant = chromosome.Count;
+            int cant = this.Count;
             int index;
-            
+            T te;
             Random rnd = new Random(DateTime.Now.Millisecond);
 
             for (int i = 0; i < cant; i++)
             {
                 index = i + (int)(rnd.NextDouble() * (cant - i));
-                chromosome.InsertDNA(index, chromosome.GetDNA(i)); //arrMut[index] = arrMut[i];
-                chromosome.InsertDNA(i, chromosome.GetDNA(index)); //arrMut[i] = temp;
+                te = this.GetDNA(index);
+                this.InsertDNA(index, this.GetDNA(i)); //arrMut[index] = arrMut[i];
+                this.InsertDNA(i, te); //arrMut[i] = temp;
             }
-            return chromosome;
         }
 
     }

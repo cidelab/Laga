@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Laga.Geometry;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -375,7 +376,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < cant; i++)
             {
                 //index = i + (int)(r.NextDouble() * (cant - i));
-                index = GetRandomNumber(i, cant);
+                index = Rand.IntNumber(i, cant);// tRandomNumber(i, cant);
                 //swap
                 object temp = arrObjMuts[index];
                 arrObjMuts[index] = arrObjMuts[i];
@@ -386,20 +387,6 @@ namespace Laga.GeneticAlgorithm
 
         //Function to get random number
         private static readonly Random getrandom = new Random(DateTime.Now.Millisecond);
-
-        /// <summary>
-        /// Random integer number between range
-        /// </summary>
-        /// <param name="min">int</param>
-        /// <param name="max">int</param>
-        /// <returns>int</returns>
-        public static int GetRandomNumber(int min, int max)
-        {
-            lock (getrandom) // synchronize
-            {
-                return getrandom.Next(min, max);
-            }
-        }
 
         /// <summary>
         /// Random number
@@ -442,7 +429,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>char</returns>
         public static char RandomChar(int start, int end)
         {
-            return (char)GetRandomNumber(start, end + 1);
+            return (char)Rand.IntNumber(start, end + 1);// GetRandomNumber(start, end + 1);
         }
 
         /// <summary>

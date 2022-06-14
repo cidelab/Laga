@@ -40,6 +40,9 @@ namespace Laga.GeneticAlgorithm
             rnd = new Random(DateTime.Now.Millisecond);
         }
 
+
+
+
         /// <summary>
         /// the method generates a chromosome composed by random doubles
         /// between min and max.
@@ -79,6 +82,24 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// The method generates a chromosome composed by random doubles between min and max.
+        /// </summary>
+        /// <param name="min">The min value in the chromosome</param>
+        /// <param name="max">The max value in the chromosome (excluded)</param>
+        /// <returns>double Chromosome</returns>
+        public Chromosome<double> DNA_RandDouble(double min, double max)
+        {
+            Chromosome<double> chrom = new Chromosome<double>();
+            for (int i = 0; i < size; i++)
+                chrom.Add(min + rnd.NextDouble() * (max - min));
+
+            return chrom;
+        }
+
+
+
+
+        /// <summary>
         /// the method generates a chromosome composed by random floats
         /// between min and max.
         /// </summary>
@@ -96,6 +117,23 @@ namespace Laga.GeneticAlgorithm
 
             return chr;
         }
+        /// <summary>
+        /// Generates a float chromosome between min and max
+        /// </summary>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns></returns>
+        public Chromosome<float> DNA_RandFloat(float min, float max)
+        {
+            Chromosome<float> ch = new Chromosome<float>();
+
+            for (int i = 0; i < size; i++)
+                ch.Add(Rand.FltNumber(min, max));
+
+            return ch;
+        }
+
+
 
         /// <summary>
         /// the method generates a chromosome composed by random integers
@@ -109,13 +147,28 @@ namespace Laga.GeneticAlgorithm
             int[] ch = new int[size];
 
             for (int i = 0; i < size; i++)
-            {
-                //ch[i] = rnd.Next(min, max);
-                ch[i] = Tools.GetRandomNumber(min, max);
-            }
+                ch[i] = Rand.IntNumber(min, max);
+            
             return ch;
-
         }
+
+        /// <summary>
+        /// Generates a Chromosome composed by random integers
+        /// </summary>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>int Chromosome</returns>
+        public Chromosome<int> DNA_RandInteger(int min, int max)
+        {
+            Chromosome<int> ch = new Chromosome<int>();
+
+            for (int i = 0; i < size; i++)
+                ch.Add(Rand.IntNumber(min, max));
+
+            return ch;
+        }
+
+
 
         /// <summary>
         /// creates a binary chromosome composed by 1s and 0s;
@@ -149,6 +202,22 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// Generates a binary Chromosome of 1s and 0s int type.
+        /// </summary>
+        /// <returns></returns>
+        public Chromosome<int> DNA_IntBinary()
+        {
+            Chromosome<int> arrChr = new Chromosome<int>();
+
+            for (int i = 0; i < size; i++)
+                arrChr.Add(Rand.DblNumber() >= 0.5 ? 1 : 0);
+
+            return arrChr;
+        }
+
+
+
+        /// <summary>
         /// the method generate a number chromosome composed by non repeated numbers between start and start + size(not inclusive).
         /// the method is based on integer numbers. this method is designed by combinatorial problems.
         /// </summary>
@@ -178,36 +247,48 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// the method generate a chromosome composed by non repeated integers between min and max (not inclusive).
-        /// and is designed for combinatorial problems.
+        /// Generate a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
         /// </summary>
-        /// <param name="min">the minimum value in the sequence</param>
-        /// <param name="max">the maximum value in the sequence</param>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
         /// <returns>int Chromosome</returns>
-        public Chromosome<int> DNA_RandInteger(int min, int max)
+        public static Chromosome<int> DNA_ShuffleInteger(int min, int max)
         {
+            Random rand = new Random(DateTime.Now.Millisecond);
             Chromosome<int> chr = new Chromosome<int>();
-            
+                           
             for (int i = min; i < max + 1; i++)
                 chr.Add(i);
+            
+            int n = chr.Count;
+            int index, temp;
+            for(int i = 0; i < n; i++)
+            {
+                index = Rand.IntNumber(i, n);
+                temp = chr.GetDNA(index);
+                chr.InsertDNA(index, chr.GetDNA(i));
+                chr.InsertDNA(i, temp);
+            }
 
-            return Chromosome<int>.Fisher_Yates(chr); //Tools.Fisher_Yates(chr);
+            return chr;
         }
 
-/// <summary>
-/// Generates a binary chromosome of chars.
-/// </summary>
-/// <returns>a random char list of 1s and 0s</returns>
-/// <example>
-/// <code>
-/// GenrChromosome chromosome = new GenrChromosome(5);
-/// char[] Chrom = chromosome.CharChromosomeBinary();
-/// 
-/// result:
-/// 0, 1, 0, 1, 0,
-/// </code>
-/// </example>
-public char[] CharChromosomeBinary()
+
+
+        /// <summary>
+        /// Generates a binary chromosome of chars.
+        /// </summary>
+        /// <returns>a random char list of 1s and 0s</returns>
+        /// <example>
+        /// <code>
+        /// GenrChromosome chromosome = new GenrChromosome(5);
+        /// char[] Chrom = chromosome.CharChromosomeBinary();
+        /// 
+        /// result:
+        /// 0, 1, 0, 1, 0,
+        /// </code>
+        /// </example>
+        public char[] CharChromosomeBinary()
         {
             char[] arrChr = new char[size];
 
@@ -221,10 +302,10 @@ public char[] CharChromosomeBinary()
         }
 
         /// <summary>
-        /// Generates a binary chromosome of chars.
+        /// Generates a binary Chromosome of 1s and 0s char type.
         /// </summary>
         /// <returns>char Chromosome</returns>
-        public Chromosome<char> DNA_Char()
+        public Chromosome<char> DNA_CharBinary()
         {
             Chromosome<char> arrChr = new Chromosome<char>();
 
@@ -233,6 +314,8 @@ public char[] CharChromosomeBinary()
 
             return arrChr;
         }
+
+
 
         /// <summary>
         /// Generates an random char chromosome composed by characters.
@@ -273,7 +356,7 @@ public char[] CharChromosomeBinary()
         }
 
         /// <summary>
-        /// Generates an random char chromosome composed by characters.
+        /// Generates a random char Chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
         /// <param name="start">the start number in the table, inclusive</param>
