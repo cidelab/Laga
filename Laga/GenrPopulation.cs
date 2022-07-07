@@ -8,6 +8,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Generate basic populations
     /// </summary>
+    [Obsolete("Please try GenrDNA instead", true)]
     public class GenrPopulation
     {
         private Random rnd;

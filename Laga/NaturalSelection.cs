@@ -49,7 +49,7 @@ namespace Laga.GeneticAlgorithm
 
             return matingPool;
         }*/
-
+        /*
         /// <summary>
         /// Roulette Wheel
         /// </summary>
@@ -81,6 +81,7 @@ namespace Laga.GeneticAlgorithm
 
             return matingPool;
         }
+        */
 
         #region testing algorithms
         /*

@@ -9,7 +9,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Create and manipulate Chromosomes
     /// </summary>
-    public class Chromosome<T>
+    public class Chromosome<T> : ICloneable
     {
 
         private double fitness;
@@ -132,17 +132,29 @@ namespace Laga.GeneticAlgorithm
         {
             int cant = this.Count;
             int index;
-            T te;
-            Random rnd = new Random(DateTime.Now.Millisecond);
+            T temp;
 
             for (int i = 0; i < cant; i++)
             {
-                index = i + (int)(rnd.NextDouble() * (cant - i));
-                te = this.GetDNA(index);
+                index = Rand.IntNumber(i, cant);
+
+                temp = this.GetDNA(index);
                 this.InsertDNA(index, this.GetDNA(i)); //arrMut[index] = arrMut[i];
-                this.InsertDNA(i, te); //arrMut[i] = temp;
+                this.InsertDNA(i, temp); //arrMut[i] = temp;
             }
         }
 
+
+        /// <summary>
+        /// Make a deep copy from a chromosome.
+        /// </summary>
+        /// <returns>Chromosome</returns>
+        public Chromosome<T> Clone() { return new Chromosome<T>(); }
+        
+        // ICloneable implementation
+        object ICloneable.Clone()
+        {
+            return Clone();
+        }
     }
 }

@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 
 namespace Laga.GeneticAlgorithm
-{
+{ 
     /// <summary>
     /// Create and Manipulate Populations
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class Population<T> : IEnumerable
     {
+        private List<Chromosome<T>> population;
 
         /// <summary>
         /// 
@@ -21,16 +22,6 @@ namespace Laga.GeneticAlgorithm
         {
             population = new List<Chromosome<T>>(SizePopulation);
         }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public Population()
-        {
-            population = new List<Chromosome<T>>();
-        }
-
-        private List<Chromosome<T>> population;
 
         /// <summary>
         /// 
@@ -103,7 +94,6 @@ namespace Laga.GeneticAlgorithm
 
             return fltAverage / population.Count;
         }
-
 
         /// <summary>
         /// IEnumerator

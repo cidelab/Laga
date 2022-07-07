@@ -41,8 +41,6 @@ namespace Laga.GeneticAlgorithm
         }
 
 
-
-
         /// <summary>
         /// the method generates a chromosome composed by random doubles
         /// between min and max.
@@ -183,7 +181,7 @@ namespace Laga.GeneticAlgorithm
         /// 1, 1, 0, 1, 1
         /// </code>
         /// </example>
-        public int[] NumberChromosomeBinary()
+        public int[] NumberChromosomeBinary(int size)
         {
             int[] chr = new int[size];
             int binary;
@@ -205,7 +203,7 @@ namespace Laga.GeneticAlgorithm
         /// Generates a binary Chromosome of 1s and 0s int type.
         /// </summary>
         /// <returns></returns>
-        public Chromosome<int> DNA_IntBinary()
+        public Chromosome<int> DNA_IntBinary(int size)
         {
             Chromosome<int> arrChr = new Chromosome<int>();
 
@@ -214,7 +212,6 @@ namespace Laga.GeneticAlgorithm
 
             return arrChr;
         }
-
 
 
         /// <summary>
@@ -272,7 +269,6 @@ namespace Laga.GeneticAlgorithm
 
             return chr;
         }
-
 
 
         /// <summary>

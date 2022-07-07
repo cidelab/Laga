@@ -10,6 +10,7 @@ namespace Laga.GeneticAlgorithm
     /// </summary>
     public class Crossover<T>
     {
+        /*
         Random rnd;
 
         private int[] arrIndex;
@@ -70,7 +71,7 @@ namespace Laga.GeneticAlgorithm
             }
             return selectedPop;
         }
-
+        */
         #region testing algorithms
         /// <summary>
         /// 
@@ -129,7 +130,7 @@ namespace Laga.GeneticAlgorithm
         #endregion
 
         #region Single Point crossover
-
+        /*
         /// <summary>
         /// A crossover algorithm performed in a single point of the chromosome.
         /// </summary>
@@ -424,7 +425,9 @@ namespace Laga.GeneticAlgorithm
             }
             return inherencePop;
         }
+        */
         #endregion
+
     }
 
 }

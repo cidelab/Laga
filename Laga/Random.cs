@@ -11,7 +11,8 @@ namespace Laga.Numbers
     /// </summary>
     public class Rand
     {
-        private static readonly Random rnd = new Random();
+        private static readonly Random rnd = new Random(DateTime.Now.Millisecond);
+
         /// <summary>
         /// Generate random numbers
         /// </summary>
@@ -73,7 +74,7 @@ namespace Laga.Numbers
         /// <returns></returns>
         public static float FltNumber(float min, float max)
         {
-            return max + (float)DblNumber() + (max - min);
+            return min + (float)DblNumber() * (max - min);
         }
     }
 }
