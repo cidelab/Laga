@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Laga.GeneticAlgorithm;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -17,49 +18,45 @@ namespace Laga.GeneticAlgorithm
 
         }
 
-        /*
         /// <summary>
-        /// 
+        /// Performs a roulette wheel selection over a population
         /// </summary>
-        /// <param name="population"></param>
-        /// <param name="maxItem"></param>
-        /// <returns></returns>
-        public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, int maxItem)
+        /// <param name="population">The popolution to perform the roulette wheel selection</param>
+        /// <param name="maxItem">the maximum number of chromosomes in the roulette</param>
+        /// <returns>Population</returns>
+        public static Population<T> RouletteWheel(Population<T> population, int maxItem)
         {
-            //clone the array.
-            Population<T> matingPool = new Population();
-            int index;
+            Population<T> matingPool = new Population<T>(population.Count);
             Chromosome<T> chrMax = population.Higher();
             double p1 = chrMax.Fitness;
             double p2 = 0;
-            double r;
+            int r;
 
             for (int i = 0; i < population.Count; i++)
             {
                 p2 = population.GetChromosome(i).Fitness;
-                r = (p2 / p1) * maxItem;
-                index = (int)r;
-                index = index < 1 ? 1 : index;
+                r = (int)(p2 / p1) * maxItem;
+                r = r < 1 ? 1 : r;
 
-                for (int j = 0; j < index; ++j)
+                for (int j = 0; j < r; ++j)
                 {
                     matingPool.Add(population.GetChromosome(i));
                 }
             }
 
             return matingPool;
-        }*/
-        /*
+        }
+        
         /// <summary>
         /// Roulette Wheel
         /// </summary>
         /// <param name="population">Popultion</param>
         /// <param name="maxItem">Maximum size in the roulette</param>
         /// <returns>Population</returns>
-        public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, int maxItem)
+        public static Population<T> RouletteWheelNonPolinomicMin2(Population<T> population, int maxItem)
         {
             //clone the array.
-            Population<T> matingPool = new Population<T>();
+            Population<T> matingPool = new Population<T>(population.Count);
             int index;
             Chromosome<T> chrMax = population.Higher();
             double p1 = chrMax.Fitness;
@@ -81,10 +78,10 @@ namespace Laga.GeneticAlgorithm
 
             return matingPool;
         }
-        */
+        
 
         #region testing algorithms
-        /*
+        
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
@@ -93,12 +90,12 @@ namespace Laga.GeneticAlgorithm
         /// <param name="arrFitness">the Fitness list</param>
         /// <param name="maxItem">The maximum number of chromosomes selected in the roulette wheel</param>
         /// <returns>IPopulation</returns>
-        public static Population RouletteWheelNonPolinomicMin<T>(Population population, float[] arrFitness, int maxItem)
+        public static Population<T> RouletteWheelNonPolinomicMin(Population<T> population, float[] arrFitness, int maxItem)
         {
             //clone the array.
-            Population matingPool = new Population();
+            Population<T> matingPool = new Population<T>(population.Count);
             int index;
-            float p1 = LagaTools.MinMaxValue<float>(arrFitness)[1];//results[0];
+            float p1 = Tools.MinMaxValue<float>(arrFitness)[1];//results[0];
             float p2 = 0;
             float r;
 
@@ -117,7 +114,7 @@ namespace Laga.GeneticAlgorithm
             }
 
             return matingPool;
-        }*/
+        }
         #endregion
 
         #region Elitism

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -10,8 +11,6 @@ namespace Laga.GeneticAlgorithm
     /// </summary>
     public class Crossover<T>
     {
-        /*
-        Random rnd;
 
         private int[] arrIndex;
 
@@ -32,30 +31,29 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         public Crossover()
         {
-            rnd = new Random();
         }
 
         /// <summary>
-        /// 
+        /// Performs a Single point crossover over a mating pool or population.
         /// </summary>
         /// <typeparamref name="T">The choromsome type</typeparamref>
-        /// <param name="matingPool"></param>
-        /// <param name="PopSize"></param>
-        /// <param name="cut"></param>
-        /// <returns></returns>
-        public static Population<T> SinglePointCrossover(Population<T> matingPool, int PopSize, int cut)
+        /// <param name="matPool">The mating pool is formed by candidate solutions to have the highest fitness </param>
+        /// <param name="popSize">the population size</param>
+        /// <param name="cut">the index to cut the chromosome</param>
+        /// <returns>population</returns>
+        public static Population<T> SinglePoint(Population<T> matPool, int popSize, int cut)
         {
-
-            Population<T> selectedPop = new Population<T>();
+            int sizeMatPool = matPool.Count;
+            Population<T> selectedPop = new Population<T>(popSize);
             Chromosome<T> crA, crB;
-            Chromosome<T> child = new Chromosome<T>();
-            Random rnd = new Random();
+            Chromosome<T> child;
 
-            for (int i = 0; i < PopSize; i++)
+            for (int i = 0; i < popSize; i++)
             {
-                crA = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
-                crB = matingPool.GetChromosome(rnd.Next(0, matingPool.Count));
+                crA = matPool.GetChromosome(Rand.IntNumber(0, sizeMatPool));
+                crB = matPool.GetChromosome(Rand.IntNumber(0, sizeMatPool));
                 child = new Chromosome<T>();
+                
                 for (int j = 0; j < crA.Count; j++)
                 {
                     if (j >= cut)
@@ -71,7 +69,7 @@ namespace Laga.GeneticAlgorithm
             }
             return selectedPop;
         }
-        */
+        
         #region testing algorithms
         /// <summary>
         /// 
@@ -130,7 +128,7 @@ namespace Laga.GeneticAlgorithm
         #endregion
 
         #region Single Point crossover
-        /*
+        
         /// <summary>
         /// A crossover algorithm performed in a single point of the chromosome.
         /// </summary>
@@ -425,7 +423,7 @@ namespace Laga.GeneticAlgorithm
             }
             return inherencePop;
         }
-        */
+        
         #endregion
 
     }
