@@ -9,6 +9,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Generate different Chromosome types
     /// </summary>
+    [Obsolete("Please try GenrDNA instead", false)]
     public class GenrChromosome
     {
         private int size;

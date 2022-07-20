@@ -12,15 +12,16 @@ namespace Laga.GeneticAlgorithm
     /// <typeparam name="T"></typeparam>
     public class Population<T> : IEnumerable
     {
-        private List<Chromosome<T>> population;
-
+        private List<Chromosome<T>> pop;
+        private int popSize;
         /// <summary>
         /// 
         /// </summary>
         /// <param name="SizePopulation"></param>
         public Population(int SizePopulation)
         {
-            population = new List<Chromosome<T>>(SizePopulation);
+            this.popSize = SizePopulation;
+            pop = new List<Chromosome<T>>(SizePopulation);
         }
 
         /// <summary>
@@ -30,7 +31,7 @@ namespace Laga.GeneticAlgorithm
         {
             get
             {
-                return population.Count;
+                return pop.Count;
             }
         }
 
@@ -40,7 +41,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public Chromosome<T> Higher()
         {
-            return population.OrderBy(chr => chr.Fitness).Last();
+            return pop.OrderBy(chr => chr.Fitness).Last();
         }
 
         /// <summary>
@@ -50,7 +51,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="chromosome"></param>
         public void Add(Chromosome<T> chromosome)
         {
-            population.Add(chromosome);
+            pop.Add(chromosome);
         }
 
         /// <summary>
@@ -59,7 +60,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="index"></param>
         public void Delete(int index)
         {
-            population.RemoveAt(index);
+            pop.RemoveAt(index);
         }
         /// <summary>
         /// Return the Lower ranked chromosome based on the fitness evaluation
@@ -67,7 +68,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public Chromosome<T> Lower()
         {
-            return population.OrderBy(chr => chr.Fitness).First();
+            return pop.OrderBy(chr => chr.Fitness).First();
         }
 
         /// <summary>
@@ -77,7 +78,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public Chromosome<T> GetChromosome(int index)
         {
-            return population[index];
+            return pop[index];
         }
 
         /// <summary>
@@ -87,12 +88,12 @@ namespace Laga.GeneticAlgorithm
        public double FitnessAverage()
         {
             double fltAverage = 0;
-            for (int i = 0; i < population.Count; i++)
+            for (int i = 0; i < pop.Count; i++)
             {
-                fltAverage += population[i].Fitness;
+                fltAverage += pop[i].Fitness;
             }
 
-            return fltAverage / population.Count;
+            return fltAverage / pop.Count;
         }
 
         /// <summary>
@@ -101,8 +102,12 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public IEnumerator GetEnumerator()
         {
-            return population.GetEnumerator();
+            return pop.GetEnumerator();
         }
 
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

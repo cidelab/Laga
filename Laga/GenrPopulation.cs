@@ -8,7 +8,6 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Generate basic populations
     /// </summary>
-    [Obsolete("Please try GenrDNA instead", true)]
     public class GenrPopulation
     {
         private Random rnd;
@@ -37,6 +36,22 @@ namespace Laga.GeneticAlgorithm
         {
             sizePopulation = SizePopulation;
             rnd = new Random(DateTime.Now.Millisecond);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="size"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public Population<char> Rand_Char(int size, int start, int end)
+        {
+            Population<char> popChr = new Population<char>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                popChr.Add(GenrDNA.Rand_Char(size, start, end));
+
+            return popChr;
         }
 
         /// <summary>
