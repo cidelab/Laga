@@ -10,7 +10,6 @@ namespace Laga.GeneticAlgorithm
     /// </summary>
     public class GenrPopulation
     {
-        private Random rnd;
         private int sizePopulation;
 
         /// <summary>
@@ -27,7 +26,7 @@ namespace Laga.GeneticAlgorithm
                 sizePopulation = value;
             }
         }
-        
+
         /// <summary>
         /// Constructor:
         /// </summary>
@@ -35,16 +34,169 @@ namespace Laga.GeneticAlgorithm
         public GenrPopulation(int SizePopulation)
         {
             sizePopulation = SizePopulation;
-            rnd = new Random(DateTime.Now.Millisecond);
         }
 
         /// <summary>
-        /// 
+        /// Genr8 a Population of chromosomes composed by random floats.
         /// </summary>
-        /// <param name="size"></param>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
-        /// <returns></returns>
+        /// <param name="size">the number of doubles in the chromosome</param>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>double Population</returns>
+        public Population<double> Rand_Double(int size, double min, double max)
+        {
+            Population<double> pop = new Population<double>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                pop.Add(GenrDNA.Rand_Double(size, min, max));
+
+            return pop;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by random floats.
+        /// </summary>
+        /// <param name="size">the number of floats in the chromosome</param>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>float Population</returns>
+        public Population<float> Rand_float(int size, float min, float max)
+        {
+            Population<float> pop = new Population<float>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                pop.Add(GenrDNA.Rand_Float(size, min, max));
+
+            return pop;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by random integers.
+        /// </summary>
+        /// <param name="size">the number of integers in the chromosome</param>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>int Population</returns>
+        public Population<int> Rand_Integer(int size, int min, int max)
+        {
+            Population<int> pop = new Population<int>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                pop.Add(GenrDNA.Shuffle_Integer(min, max));
+
+            return pop;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by 1s and 0s int type.
+        /// </summary>
+        /// <param name="size">the number of integers in the chromosome</param>
+        /// <returns>int Population</returns>
+        /// <example>
+        /// <code>
+        /// Population pop = new GenrPopulation(5).Binary_Integer(20);
+        /// result:
+        /// Chromosome: 0
+        /// - 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+        /// Chromosome: 1
+        /// - 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0,
+        /// Chromosome: 2
+        /// - 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+        /// Chromosome: 3
+        /// - 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1,
+        /// Chromosome: 4
+        /// - 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0,
+        /// </code>
+        /// </example>
+        public Population<int> Binary_Integer(int size)
+        {
+            Population<int> pop = new Population<int>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                pop.Add(GenrDNA.Binary_Integer(size));
+
+            return pop;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by non repeated integers between min and max included.
+        /// </summary>
+        /// <param name="min">min value</param>
+        /// <param name="max">max value</param>
+        /// <returns>int Population</returns>
+        /// <example>
+        /// <code>
+        /// Population pop = new GenrPopulation(5).Shuffle_Integer(0, 10);
+        /// results
+        /// Chromosome: 0
+        /// - 1, 4, 8, 6, 2, 10, 9, 5, 0, 7, 3,
+        /// Chromosome: 1
+        /// - 5, 4, 0, 1, 7, 6, 8, 10, 2, 3, 9,
+        ///  Chromosome: 2
+        /// - 1, 6, 10, 7, 3, 5, 9, 2, 0, 8, 4,
+        /// Chromosome: 3
+        /// - 9, 1, 4, 6, 10, 2, 7, 5, 8, 0, 3,
+        /// Chromosome: 4
+        /// - 2, 5, 0, 7, 6, 1, 4, 3, 8, 9, 10,
+        /// </code>
+        /// </example>
+        public Population<int> Shuffle_Integer(int min, int max)
+        {
+            Population<int> pop = new Population<int>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                pop.Add(GenrDNA.Shuffle_Integer(min, max));
+
+            return pop;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.
+        /// </summary>
+        /// <param name="size">the number of characters in the chromosome</param>
+        /// <returns>char Population</returns>
+        /// <example>
+        /// Population pop = new GenrPopulation(5).Binary_Char(10);
+        /// result:
+        /// Chromosome: 0
+        /// - 0, 1, 1, 1, 0, 0, 1, 0, 1, 0,
+        /// Chromosome: 1
+        /// - 1, 1, 1, 1, 0, 1, 0, 0, 0, 1,
+        /// Chromosome: 2
+        /// - 1, 1, 0, 0, 0, 1, 0, 1, 0, 1,
+        /// Chromosome: 3
+        /// - 0, 1, 0, 0, 1, 1, 1, 0, 1, 0,
+        /// Chromosome: 4
+        /// - 1, 0, 0, 0, 1, 0, 1, 1, 1, 1,
+        /// </example>
+        public Population<char> Binary_Char(int size)
+        {
+            Population<char> popChr = new Population<char>(sizePopulation);
+            for (int i = 0; i < sizePopulation; i++)
+                popChr.Add(GenrDNA.Binary_Char(size));
+
+            return popChr;
+        }
+
+        /// <summary>
+        /// Genr8 a Population of chromosomes composed by random characters.
+        /// See <a href="http://www.asciitable.com/">this link</a> for more information.
+        /// </summary>
+        /// <param name="size">the number of characters in the chromosome</param>
+        /// <param name="start">the start number in the table, inclusive</param>
+        /// <param name="end">the end number in the table, exclusive</param>
+        /// <returns>char Population</returns>
+        /// <example>
+        /// <code> 
+        /// Population pop = new GenrPopulation(5).Rand_Char(30, 50, 100);
+        /// result:
+        /// Chromosome: 0
+        /// - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
+        /// Chromosome: 1
+        /// - C, 7, T, ], W, W, 7, ?, 4, b, 4, C, L, ], I, Z, J, 8, :, A, S, b, L, 9, a, 7, Q, 6, U, T
+        /// Chromosome: 2
+        /// - H, C, O, b, ], O, M, a, H, C, @, 5, [, U, F, b, 2, P, X, 7, W, ?, :, d, Z, E, P, L, a, R
+        /// Chromosome: 3
+        /// - 7, 3, N, E, L, U, Y, N, 2, ^, ?, M, U, \, 3, O, 9, [, X, c, 7, 3, C, O, b, ;, ;, P, :, I
+        /// Chromosome: 4
+        /// - d, 2, 2, Z, =, ?, L, H, ;, V, :, H, P, ^,], ;, O, B, b, [, @, Y, Y, b, L, 5, T, c, G
+        /// </code>
+        /// </example>
         public Population<char> Rand_Char(int size, int start, int end)
         {
             Population<char> popChr = new Population<char>(sizePopulation);
@@ -53,7 +205,9 @@ namespace Laga.GeneticAlgorithm
 
             return popChr;
         }
-
+    }
+}
+    /*
         /// <summary>
         /// Genr8 a random population based on a chromosome of objects[]
         /// </summary>
@@ -277,24 +431,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">The minimum value in the chromosome, inclusive</param>
         /// <param name="max">The maximum value in the chromosome, inclusive</param>
         /// <returns>Population int[][]</returns>
-        /// <example>
-        /// <code>
-        /// GenrPopulation pop = new GenrPopulation(5);
-        /// int[][] intPop = pop.NumPopulationSwap(0, 10);
-        ///
-        /// results
-        /// Chromosome: 0
-        /// - 1, 4, 8, 6, 2, 10, 9, 5, 0, 7, 3,
-        /// Chromosome: 1
-        /// - 5, 4, 0, 1, 7, 6, 8, 10, 2, 3, 9,
-        ///  Chromosome: 2
-        /// - 1, 6, 10, 7, 3, 5, 9, 2, 0, 8, 4,
-        /// Chromosome: 3
-        /// - 9, 1, 4, 6, 10, 2, 7, 5, 8, 0, 3,
-        /// Chromosome: 4
-        /// - 2, 5, 0, 7, 6, 1, 4, 3, 8, 9, 10,
-        /// </code>
-        /// </example>
+
         public int[][] NumPopulationSwap(int min, int max)
         {
             int[][] pop = new int[sizePopulation][];
@@ -329,22 +466,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Population int[][]</returns>
         /// <example>
         /// <code>
-        /// GenrPopulation pop = new GenrPopulation(5);
-        /// int[][] intPop = pop.BinaryPopulationInt(20);
-        ///
-        /// result:
-        /// Chromosome: 0
-        /// - 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
-        /// Chromosome: 1
-        /// - 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0,
-        /// Chromosome: 2
-        /// - 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0,
-        /// Chromosome: 3
-        /// - 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1,
-        /// Chromosome: 4
-        /// - 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0,
-        /// </code>
-        /// </example>
+
         public int[][] BinaryPopulationInt(int sizeChromosome)
         {
             int[][] pop = new int[sizePopulation][];
@@ -375,23 +497,7 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="sizeChromosome">The size of the chromosome</param>
         /// <returns>Population char[][]</returns>
-        /// <example>
-        ///  GenrPopulation pop = new GenrPopulation(5);
-        /// [][] charPop = pop.BinaryPopulationChr(10);
-        ///
-        /// result:
-        /// 
-        /// Chromosome: 0
-        /// - 0, 1, 1, 1, 0, 0, 1, 0, 1, 0,
-        /// Chromosome: 1
-        /// - 1, 1, 1, 1, 0, 1, 0, 0, 0, 1,
-        /// Chromosome: 2
-        /// - 1, 1, 0, 0, 0, 1, 0, 1, 0, 1,
-        /// Chromosome: 3
-        /// - 0, 1, 0, 0, 1, 1, 1, 0, 1, 0,
-        /// Chromosome: 4
-        /// - 1, 0, 0, 0, 1, 0, 1, 1, 1, 1,
-        /// </example>
+        
         public char[][] BinaryPopulationChr(int sizeChromosome)
         {
             char[][] pop = new char[sizePopulation][];
@@ -419,24 +525,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns>Population char[][]</returns>
         /// <example>
-        /// <code> 
-        /// GenrPopulation pop = new GenrPopulation(5);
-        /// char[][] charPop = pop.CharPopulation(30, 50, 100);
-        /// 
-        /// /// result:
-        /// Chromosome: 0
-        /// - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
-        /// Chromosome: 1
-        /// - C, 7, T, ], W, W, 7, ?, 4, b, 4, C, L, ], I, Z, J, 8, :, A, S, b, L, 9, a, 7, Q, 6, U, T
-        /// Chromosome: 2
-        /// - H, C, O, b, ], O, M, a, H, C, @, 5, [, U, F, b, 2, P, X, 7, W, ?, :, d, Z, E, P, L, a, R
-        /// Chromosome: 3
-        /// - 7, 3, N, E, L, U, Y, N, 2, ^, ?, M, U, \, 3, O, 9, [, X, c, 7, 3, C, O, b, ;, ;, P, :, I
-        /// Chromosome: 4
-        /// - d, 2, 2, Z, =, ?, L, H, ;, V, :, H, P, ^,], ;, O, B, b, [, @, Y, Y, b, L, 5, T, c, G
-        /// </code>
-        /// </example>
-        /// 
+
         public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {
             char[] chromosome;
@@ -503,3 +592,4 @@ namespace Laga.GeneticAlgorithm
         }
     }
 }
+    */

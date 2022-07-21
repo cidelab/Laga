@@ -32,10 +32,10 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a float chromosome between min and max
         /// </summary>
-        /// <param name="size">the total floats in the chromosome</param>
+        /// <param name="size">the number of floats in the chromosome</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
-        /// <returns></returns>
+        /// <returns>float Chromosome</returns>
         public static Chromosome<float> Rand_Float(int size, float min, float max)
         {
             Chromosome<float> ch = new Chromosome<float>();
@@ -49,7 +49,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a Chromosome composed by random integers
         /// </summary>
-        /// <param name="size">the total integers in the chromosome</param>
+        /// <param name="size">the number of characters in the chromosome</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>int Chromosome</returns>
@@ -66,7 +66,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a binary Chromosome of 1s and 0s int type.
         /// </summary>
-        /// /// <param name="size">the length in the chromosome</param> 
+        /// /// <param name="size">the number of integers in the chromosome</param> 
         /// <returns>int Chromosome</returns>
         public static Chromosome<int> Binary_Integer(int size)
         {
@@ -123,7 +123,7 @@ namespace Laga.GeneticAlgorithm
         /// Generates a random char Chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
-        /// <param name="size">the total characters in the chromosome</param>
+        /// <param name="size">the length of characters in the chromosome</param>
         /// <param name="start">the start number in the table, inclusive</param>
         /// <param name="end">the end number in the table, exclusive</param>
         /// <returns>char Chromosome</returns>

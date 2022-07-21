@@ -105,9 +105,18 @@ namespace Laga.GeneticAlgorithm
             return pop.GetEnumerator();
         }
 
+        /// <summary>
+        /// Print a population
+        /// </summary>
+        /// <returns>string</returns>
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < pop.Count; i++)
+                sb.AppendLine(pop[i].ToString());
+            
+            return sb.ToString();
         }
     }
 }
