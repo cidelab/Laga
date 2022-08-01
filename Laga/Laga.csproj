@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Chromosome.cs" />
     <Compile Include="GenrDNA.cs" />
+    <Compile Include="IOExcel.cs" />
     <Compile Include="IOTextData.cs" />
     <Compile Include="Function.cs" />
     <Compile Include="Crossover.cs" />

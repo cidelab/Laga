@@ -112,6 +112,7 @@ namespace Laga.GeneticAlgorithm
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Population: ");
 
             for (int i = 0; i < pop.Count; i++)
                 sb.AppendLine(pop[i].ToString());

@@ -84,6 +84,20 @@ namespace Laga.IO
         }
 
         /// <summary>
+        /// Get the file name from a path
+        /// </summary>
+        /// <param name="dir">path</param>
+        /// <returns>string</returns>
+        public static string GetFileName(string dir)
+        {
+            string filename = "";
+            if (dir != null)
+                filename = Path.GetFileName(dir);
+
+            return filename;
+        }
+
+        /// <summary>
         /// The List of files according to the specified extension
         /// </summary>
         /// <param name="extension">The extension file to filter: ".txt"</param>

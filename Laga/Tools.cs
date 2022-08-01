@@ -139,6 +139,16 @@ namespace Laga.GeneticAlgorithm
             }
             return arrPtsChromosome;
         }
+        /// <summary>
+        /// Parse a double to float
+        /// </summary>
+        /// <param name="dbl">the double to convert</param>
+        /// <param name="digits">the numbers to round, default is 3</param>
+        /// <returns>float</returns>
+        public static float ParseDblToFloat(double dbl, int digits = 3)
+        {
+            return (float)Math.Round(dbl, digits);
+        }
 
         /// <summary>
         /// Parse any Chromosome type to string Array

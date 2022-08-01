@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 
@@ -88,19 +86,6 @@ namespace Laga.IO
         #endregion
 
         #region constructors
-
-        /// <summary>
-        /// Sets the basic data to write in excel.
-        /// do not forget call the open and close.
-        /// </summary>
-        /// <param name="FilePath">the direction to the file</param>
-        /// <param name="SheetNumber">the number of the sheet to open</param>
-        public IOExcelWrite(string FilePath, int SheetNumber)
-        {
-            this.filePath = FilePath;
-            this.sheetNum = SheetNumber;
-        }
-
         /// <summary>
         /// Creates and excel workbook.
         /// do not forget call the open and close.
@@ -119,6 +104,22 @@ namespace Laga.IO
         public IOExcelWrite(string FilePath)
         {
             this.filePath = FilePath;
+            if(IOExcel.TestExcelOpen(filePath, out xlBook))
+            {
+                xlSheet = xlBook.ActiveSheet;
+            }
+        }
+
+        /// <summary>
+        /// Sets the basic data to write in excel.
+        /// do not forget call the open and close.
+        /// </summary>
+        /// <param name="FilePath">the direction to the file</param>
+        /// <param name="SheetNumber">the number of the sheet to open</param>
+        public IOExcelWrite(string FilePath, int SheetNumber)
+        {
+            this.filePath = FilePath;
+            this.sheetNum = SheetNumber;
         }
         #endregion
 

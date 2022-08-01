@@ -85,7 +85,6 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)
         /// </summary>
-        /// <typeparam name="T">Chromosome type</typeparam>
         /// <param name="population">The Population</param>
         /// <param name="arrFitness">the Fitness list</param>
         /// <param name="maxItem">The maximum number of chromosomes selected in the roulette wheel</param>

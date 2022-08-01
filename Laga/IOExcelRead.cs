@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
-using Microsoft.Office.Interop;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Laga.IO
@@ -59,7 +58,7 @@ namespace Laga.IO
         {
             this.filePath = FilePath;
         }
-
+        
         /// <summary>
         /// Constructor for IOExcel most flexible constructor.
         /// therfore you have to deal with all operations:
@@ -153,26 +152,6 @@ namespace Laga.IO
 
             if (display)
                 xlSheet.Visible = Excel.XlSheetVisibility.xlSheetVisible;
-        }
-
-        /// <summary>
-        /// Test if excel application is open.
-        /// </summary>
-        public bool TestExcelOpen()
-        {
-            bool open = true;
-            Excel.Application exApp;
-            exApp = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
-
-            try
-            {
-                exApp.Workbooks.get_Item(1);
-            }
-            catch
-            {
-                open = false;
-            }
-            return open;
         }
 
         /// <summary>
