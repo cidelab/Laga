@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Laga.GeneticAlgorithm")]
-[assembly: AssemblyDescription("Genetic algorithm library")]
+[assembly: AssemblyTitle("Laga Library")]
+[assembly: AssemblyDescription("Genetic algorithm and data manipulation library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("designemergente.com")]
 [assembly: AssemblyProduct("Laga")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

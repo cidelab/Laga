@@ -2,8 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.IO;
-using Excel = Microsoft.Office.Interop.Excel;
-
+//using Excel = Microsoft.Office.Interop.Excel;
+/*
 namespace Laga.IO
 {
     /// <summary>
@@ -369,3 +369,5 @@ namespace Laga.IO
 
     }
 }
+
+*/
