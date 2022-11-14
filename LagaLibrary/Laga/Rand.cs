@@ -17,10 +17,10 @@ namespace Laga.Numbers
         /// Generate random numbers
         /// </summary>
         /// <param name="size">The amount of random values in the list</param>
-        /// <param name="min">the minimum value</param>
-        /// <param name="max">the maximum value</param>
+        /// <param name="min">The minimum value</param>
+        /// <param name="max">The maximum value</param>
         /// <returns>float[]</returns>
-        public static float[] RandomNumbers(int size, float min, float max)
+        public static float[] Numbers(int size, float min, float max)
         {
             Random rnd = new Random();
 
@@ -32,17 +32,17 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Return an array of random numebers.
+        /// Generate random numbers
         /// </summary>
-        /// <param name="size"></param>
-        /// <param name="min"></param>
-        /// <param name="max"></param>
-        /// <returns></returns>
-        public static List<double> RandomNumbers(int size, double min, double max)
+        /// <param name="size">The amount of random values in the list</param>
+        /// <param name="min">The minimum value</param>
+        /// <param name="max">The maximum value</param>
+        /// <returns>double[]</returns>
+        public static double[] Numbers(int size, double min, double max)
         {
-            List<double> arrN = new List<double>(size);
+            double[] arrN = new double[size];
             for (int i = 0; i < size; i++)
-                arrN.Add(min + (float)rnd.NextDouble() * (max - min));
+                arrN[i] = (min + (float)rnd.NextDouble() * (max - min));
 
             return arrN;
         }
@@ -58,7 +58,7 @@ namespace Laga.Numbers
             return min + (int)(rnd.NextDouble() * (max - min));
         }
         /// <summary>
-        /// random value between 0 and 1
+        /// Random value between 0 and 1
         /// </summary>
         /// <returns>double</returns>
         public static double DblNumber()

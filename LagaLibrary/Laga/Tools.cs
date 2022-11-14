@@ -94,7 +94,7 @@ namespace Laga.GeneticAlgorithm
             char[] arrTempInd;
             for (int i = 0; i < charPop.Length / 2; i++)
             {
-                arrTempInd = new char[charPop[i].Length];
+                _ = new char[charPop[i].Length];
                 arrTempInd = charPop[i];
                 charPop[i] = charPop[charPop.Length - i - 1];
                 charPop[charPop.Length - i - 1] = arrTempInd;
@@ -312,11 +312,10 @@ namespace Laga.GeneticAlgorithm
 
             int[] arrMut = new int[cant];
             Array.Copy(arrInt, arrMut, cant);
-            Random r = new Random(DateTime.Now.Millisecond);
 
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(GetRandomNumber() * (cant - i));
+                int index = i + (int)(Rand.DblNumber() * (cant - i));
                 int temp = arrMut[index];
                 arrMut[index] = arrMut[i];
                 arrMut[i] = temp;
@@ -332,10 +331,9 @@ namespace Laga.GeneticAlgorithm
         public static void Fisher_Yates<T>(this T[] arrData)
         {
             int n = arrData.Length;
-            Random r = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < n; i++)
             {
-                int ri = i + (int)(r.NextDouble() * (n - i));
+                int ri = i + (int)(Rand.DblNumber() * (n - i));
                 T t = arrData[ri];
                 arrData[ri] = arrData[i];
                 arrData[i] = t;
@@ -351,11 +349,10 @@ namespace Laga.GeneticAlgorithm
         {
             int cant = arrObj.Length;
             object[] arrObjMuts = (object[])arrObj.Clone();
-
-            Random r = new Random(DateTime.Now.Millisecond);
+           
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(r.NextDouble() * (cant - i));
+                int index = i + (int)(Rand.DblNumber() * (cant - i));
                 
                 //swap
                 object temp = arrObjMuts[index];
@@ -378,36 +375,18 @@ namespace Laga.GeneticAlgorithm
             object[] arrObjMuts = (object[])arrObj.Clone();
 
             int cant = (int)(l * percent);
-            cant = (cant <= 0) ? cant = 2 : cant;
+            cant = (cant <= 0) ? 2 : cant;
 
-            //Random r = new Random(DateTime.Now.Millisecond);
             int index;
 
             for (int i = 0; i < cant; i++)
             {
-                //index = i + (int)(r.NextDouble() * (cant - i));
-                index = Rand.IntNumber(i, cant);// tRandomNumber(i, cant);
-                //swap
+                index = Rand.IntNumber(i, cant);
                 object temp = arrObjMuts[index];
                 arrObjMuts[index] = arrObjMuts[i];
                 arrObjMuts[i] = temp;
             }
             return arrObjMuts;
-        }
-
-        //Function to get random number
-        private static readonly Random getrandom = new Random(DateTime.Now.Millisecond);
-
-        /// <summary>
-        /// Random number
-        /// </summary>
-        /// <returns></returns>
-        public static double GetRandomNumber()
-        {
-            lock(getrandom)
-            {
-                return getrandom.NextDouble();
-            }
         }
 
         /// <summary>
@@ -419,7 +398,7 @@ namespace Laga.GeneticAlgorithm
         {
             char t;
 
-            if (GetRandomNumber() < thershold)
+            if (Rand.DblNumber() < thershold)
             {
                 t = '1';
             }
