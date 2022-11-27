@@ -56,7 +56,7 @@
     <Compile Include="Rand.cs" />
     <Compile Include="RankingSort.cs" />
     <Compile Include="Tools.cs" />
-    <Compile Include="Vectord.cs" />
+    <Compile Include="Vector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

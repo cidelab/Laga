@@ -2,10 +2,13 @@
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Simple manipulations on Rhino LineCurves
+    /// </summary>
     public class LineCurveData
     {
         /// <summary>
-        /// Transform a LineCurve to an Axis object.
+        /// Transform a LineCurve to an Axis, The origin of the axis is the further point from the (0,0,0)
         /// </summary>
         /// <param name="axis">LineCurve</param>
         /// <returns>LineCurve</returns>
@@ -19,9 +22,7 @@ namespace LagaRhino
 
             if (pb.DistanceTo(Point3d.Origin) < pa.DistanceTo(Point3d.Origin))
             {
-                Point3d temp = pa;
-                pa = pb;
-                pb = temp;
+                (pb, pa) = (pa, pb);
             }
 
             return new LineCurve(pb, pa);

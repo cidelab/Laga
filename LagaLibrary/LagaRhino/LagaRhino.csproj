@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurveData.cs" />
     <Compile Include="LineCurveData.cs" />
+    <Compile Include="PointData.cs" />
     <Compile Include="Shoebox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
