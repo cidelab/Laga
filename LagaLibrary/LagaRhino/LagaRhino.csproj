@@ -50,6 +50,13 @@
     <Compile Include="PointData.cs" />
     <Compile Include="Shoebox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SurfaceData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laga\Laga.csproj">
+      <Project>{5C19906B-8B81-464F-A3B4-A6B44163D527}</Project>
+      <Name>Laga</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

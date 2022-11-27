@@ -1,7 +1,9 @@
-﻿using Rhino.Geometry;
+﻿using Laga.Geometry;
+using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -108,6 +110,55 @@ namespace LagaRhino
             }
 
             return lstArrGroup;
+        }
+
+        /// <summary>
+        /// Interpolate 2 points by span distance
+        /// </summary>
+        /// <param name="pointA">Start point</param>
+        /// <param name="pointB">End point</param>
+        /// <param name="span">span distance</param>
+        /// <returns>Point3d[]</returns>
+        public static Point3d[] TwoPointsInterpolation(Point3d pointA, Point3d pointB, double span)
+        {
+            Vector va = Point3dToVector(pointA);
+            Vector vb = Point3dToVector(pointB);
+
+            List<Vector> lstVectors = Vector.Interpolation(va, vb, span);
+            Point3d[] arrPts = new Point3d[lstVectors.Count];
+
+            for (int i = 0; i < lstVectors.Count; i++)
+                arrPts[i] = VectorToPoint3d(lstVectors[i]);
+
+            return arrPts;
+        }
+
+        /// <summary>
+        /// Convert Laga Vector to Rhino Point3d
+        /// </summary>
+        /// <param name="vector">The Vector to convert</param>
+        /// <returns>Point3d</returns>
+        public static Point3d VectorToPoint3d(Vector vector)
+        {
+            return new Point3d(vector.X, vector.Y, vector.Z);
+
+        }
+
+        /// <summary>
+        /// Convert Rhino Point3d to Laga Vector
+        /// </summary>
+        /// <param name="point">The point to convert</param>
+        /// <returns>Vector</returns>
+        public static Vector Point3dToVector(Point3d point)
+        {
+            if (point != null)
+            {
+                return new Vector(point.X, point.Y, point.Z);
+            }
+            else
+            {
+                return new Vector(0, 0, 0);
+            }
         }
     }
 }

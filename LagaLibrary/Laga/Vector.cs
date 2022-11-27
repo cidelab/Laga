@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Laga.Geometry
 {
@@ -335,8 +337,46 @@ namespace Laga.Geometry
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "vecd [" + x + ", " + y + ", " + z + "] ";
+            return "vec [" + x + ", " + y + ", " + z + "] ";
         }
+
+        /// <summary>
+        /// Creates an interpolated matrix between 2 points.
+        /// The method does not control exceptions for the points positions.
+        /// </summary>
+        /// <param name="pointA">The start point</param>
+        /// <param name="pointB">The end point</param>
+        /// <param name="span">the approximate separation between points</param>
+        /// <returns>List<Vector></returns>
+        public static List<Vector> Interpolation(Vector pointA, Vector pointB, double span)
+        {
+            List<Vector> result = new List<Vector>();
+
+            Vector pt_2 = new Vector(pointB.X, pointA.Y, pointA.Z);
+            Vector pt_4 = new Vector(pointA.X, pointB.Y, pointA.Z);
+            int u = (int)(pointA.DistanceTo(pt_2) / span);
+            int v = (int)(pointA.DistanceTo(pt_4) / span);
+
+            double xSize = pointA.DistanceTo(pt_2) / u;
+            double ySize = pointA.DistanceTo(pt_4) / v;
+       
+            double diffZ = (pointB.Z - pointA.Z) / ((u + 1) * (v + 1) - 1);
+            int c = 0;
+            Vector pt;
+
+            for (int i = 0; i <= u; i++)
+            {
+                for(int j = 0; j <= v; j++)
+                {
+                    pt = new Vector(pointA.X + (i * xSize), pointA.Y + (j * ySize), pointA.Z + (c * diffZ));
+                    result.Add(pt);
+                    c++;
+                }
+            }
+
+            return result;
+        }
+
 
         /// <summary>
         /// test if 2 vectors are equal
