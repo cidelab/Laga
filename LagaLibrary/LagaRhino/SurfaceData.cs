@@ -13,8 +13,9 @@ namespace LagaRhino
     {
         private Interval interval = new Interval(0, 1);
         private readonly List<Point3d> mPts;
-        private int uDivs;
-        private int vDivs;
+        private readonly int uDivs;
+        private readonly int vDivs;
+
         /// <summary>
         /// The points on the surface
         /// </summary>
@@ -31,8 +32,8 @@ namespace LagaRhino
         /// <param name="vCount">number of points in v direction</param>
         public SurfaceData(Surface surface, int uCount, int vCount)
         {
-            uDivs= uCount;
-            vDivs= vCount;
+            uDivs = uCount;
+            vDivs = vCount;
 
             surface.SetDomain(0, interval);
             surface.SetDomain(1, interval);
@@ -64,8 +65,6 @@ namespace LagaRhino
 
         }
 
-        }
-
         /// <summary>
         /// Return a Quad Pattern division
         /// </summary>
@@ -74,7 +73,7 @@ namespace LagaRhino
         {
             List<Polyline> polList = new List<Polyline>();
             Point3d[] arrPts;
-            
+
             int span = mPts.Count / uDivs;
 
             for (int i = 0; i < mPts.Count - span; i += span)
@@ -93,7 +92,7 @@ namespace LagaRhino
             }
             return polList;
         }
-        
+
         /// <summary>
         /// Build a vertical planar surface from a LineCurve axis.
         /// </summary>
@@ -116,5 +115,4 @@ namespace LagaRhino
             return NurbsSurface.CreateFromCorners(ps, psU, peU, pe);
         }
     }
-
 }
