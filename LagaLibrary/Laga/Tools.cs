@@ -316,9 +316,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < cant; i++)
             {
                 int index = i + (int)(Rand.DblNumber() * (cant - i));
-                int temp = arrMut[index];
-                arrMut[index] = arrMut[i];
-                arrMut[i] = temp;
+                (arrMut[i], arrMut[index]) = (arrMut[index], arrMut[i]);
             }
             return arrMut;
         }
@@ -334,9 +332,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < n; i++)
             {
                 int ri = i + (int)(Rand.DblNumber() * (n - i));
-                T t = arrData[ri];
-                arrData[ri] = arrData[i];
-                arrData[i] = t;
+                (arrData[i], arrData[ri]) = (arrData[ri], arrData[i]);
             }
         }
 
@@ -355,9 +351,7 @@ namespace Laga.GeneticAlgorithm
                 int index = i + (int)(Rand.DblNumber() * (cant - i));
                 
                 //swap
-                object temp = arrObjMuts[index];
-                arrObjMuts[index] = arrObjMuts[i];
-                arrObjMuts[i] = temp;
+                (arrObjMuts[i], arrObjMuts[index]) = (arrObjMuts[index], arrObjMuts[i]);
             }
 
             return arrObjMuts;
@@ -382,9 +376,7 @@ namespace Laga.GeneticAlgorithm
             for (int i = 0; i < cant; i++)
             {
                 index = Rand.IntNumber(i, cant);
-                object temp = arrObjMuts[index];
-                arrObjMuts[index] = arrObjMuts[i];
-                arrObjMuts[i] = temp;
+                (arrObjMuts[i], arrObjMuts[index]) = (arrObjMuts[index], arrObjMuts[i]);
             }
             return arrObjMuts;
         }
