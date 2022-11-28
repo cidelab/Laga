@@ -64,12 +64,6 @@ namespace LagaRhino
 
         }
 
-        /// <summary>
-        /// To develop Hexagon Pattern
-        /// </summary>
-        public void HexagonPattern()
-        {
-            
         }
 
         /// <summary>
