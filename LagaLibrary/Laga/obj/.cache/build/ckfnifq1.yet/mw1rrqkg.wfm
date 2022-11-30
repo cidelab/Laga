@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Chromosome&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Chromosome&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Laga.GeneticAlgorithm.Chromosome`1">
+  
+  
+  <h1 id="Laga_GeneticAlgorithm_Chromosome_1" data-uid="Laga.GeneticAlgorithm.Chromosome`1" class="text-break">Class Chromosome&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Create and manipulate Chromosomes</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Chromosome&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Laga.GeneticAlgorithm.html">Laga.GeneticAlgorithm</a></h6>
+  <h6><strong>Assembly</strong>: Laga.dll</h6>
+  <h5 id="Laga_GeneticAlgorithm_Chromosome_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Chromosome&lt;T&gt; : ICloneable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1__ctor_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1__ctor" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor">Chromosome()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome()</code></pre>
+  </div>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1__ctor_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1__ctor_System_Collections_Generic_List__0__" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Collections.Generic.List{`0})">Chromosome(List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome(List&lt;T&gt; ListDna)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="parametername">ListDna</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1__ctor_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1__ctor_System_Int32_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Int32)">Chromosome(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">cons 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome(int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_chromosome_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.chromosome*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_chromosome" data-uid="Laga.GeneticAlgorithm.Chromosome`1.chromosome">chromosome</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; chromosome { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Count_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Count*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Count" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The size of the chromosome++                                                                        </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Fitness_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fitness*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Fitness" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fitness">Fitness</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Get and set the chromosome fitness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Fitness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Add_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Add*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Add__0_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Add DNA to the Chromosome</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T DNA)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">DNA</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The DNA type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Clone_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Clone*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Clone" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Make a deep copy from a chromosome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;T&gt; Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;T&gt;</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Fisher_Yates_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Fisher_Yates" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates">Fisher_Yates()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Fisher_Yates algorithm for the chromosome</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fisher_Yates()</code></pre>
+  </div>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_GetDNA_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.GetDNA*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_GetDNA_System_Int32_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.GetDNA(System.Int32)">GetDNA(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Get Dna Chromosome at specific index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetDNA(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">T</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_InsertDNA_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.InsertDNA*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_InsertDNA_System_Int32__0_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.InsertDNA(System.Int32,`0)">InsertDNA(Int32, T)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Insert DNA in a chromosome at specific Location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertDNA(int index, T DNA)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The location in the chromosome</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">DNA</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The DNA to insert</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToArray_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToArray*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToArray" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Convert the chromosome in Array;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToList_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToList*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToList" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToList">ToList()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Convert the chromosome in a list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; ToList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">List</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToString_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToString*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToString" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Chromosome to String</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Chromosome-1.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_System_ICloneable_Clone_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_System_ICloneable_Clone" data-uid="Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

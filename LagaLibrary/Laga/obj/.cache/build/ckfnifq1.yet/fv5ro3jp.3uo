@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Tools
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Tools
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Laga.GeneticAlgorithm.Tools">
+  
+  
+  <h1 id="Laga_GeneticAlgorithm_Tools" data-uid="Laga.GeneticAlgorithm.Tools" class="text-break">Class Tools
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">A collection of methods to operate on Genetic operators and lists.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Tools</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Laga.GeneticAlgorithm.html">Laga.GeneticAlgorithm</a></h6>
+  <h6><strong>Assembly</strong>: Laga.dll</h6>
+  <h5 id="Laga_GeneticAlgorithm_Tools_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Tools</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_BinaryChromosomeToInteger_" data-uid="Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_BinaryChromosomeToInteger__1___0___" data-uid="Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])">BinaryChromosomeToInteger&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Convert a binary chromosome to an integer, base of 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinaryChromosomeToInteger&lt;T&gt;(this T[] chromosome)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">chromosome</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">your chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">int</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">chromosome type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_DataReport_" data-uid="Laga.GeneticAlgorithm.Tools.DataReport*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_DataReport__1_System_Collections_Generic_List___0__" data-uid="Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})">DataReport&lt;T&gt;(List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Creates a report based on a list of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; DataReport&lt;T&gt;(List&lt;T&gt; listValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="parametername">listValues</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the Values used to create the report</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">List<string></string></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ExtractDNA_" data-uid="Laga.GeneticAlgorithm.Tools.ExtractDNA*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ExtractDNA__1___0___System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)">ExtractDNA&lt;T&gt;(T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Extract part of the DNA from a chromosome. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ExtractDNA&lt;T&gt;(this T[] chromosome, int index, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">chromosome</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the chromosome</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">start the extraction</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">length of the extraction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">T[] A DNA segment from the original chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Any chromosome type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Fisher_Yates_" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Fisher_Yates_System_Int32___" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])">Fisher_Yates(Int32[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Fisher-Yates Shuffle Algorithm for array of integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] Fisher_Yates(int[] arrInt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">arrInt</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The array of integers to shuffle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Fisher_Yates_" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Fisher_Yates_System_Object___" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])">Fisher_Yates(Object[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Fisher-Yates Shuffle Algorithm for an array of objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object[] Fisher_Yates(object[] arrObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arrObj</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the array of objects to shuffle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Fisher_Yates_" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Fisher_Yates__1___0___" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])">Fisher_Yates&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Experimental Fisher_Yates algorithm to shuffle the original array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Fisher_Yates&lt;T&gt;(this T[] arrData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">arrData</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the array of data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the type of data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Fisher_YatesPercent_" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Fisher_YatesPercent_System_Object___System_Single_" data-uid="Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)">Fisher_YatesPercent(Object[], Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Fisher-Yates Shuffle Algorithm for an array of objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object[] Fisher_YatesPercent(object[] arrObj, float percent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arrObj</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the array of objects to shuffle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">percent</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the percent to shuffle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_MinMaxValue_" data-uid="Laga.GeneticAlgorithm.Tools.MinMaxValue*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_MinMaxValue__1___0___" data-uid="Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])">MinMaxValue&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Return the Min and Max values from an Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] MinMaxValue&lt;T&gt;(T[] genArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">genArray</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The array where to extract the values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Generic Array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Any number type like: int, double, float...</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Mom_Dad_" data-uid="Laga.GeneticAlgorithm.Tools.Mom_Dad*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Mom_Dad_System_Int32_System_Single_" data-uid="Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)">Mom_Dad(Int32, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Non repeated indexs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] Mom_Dad(int lengthPop, float percent = 0.5F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lengthPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the length of the population</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">percent</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the percent of mutation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">array of indexs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vector___System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)">Parse(Vector[], Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Round the location of a laga point, based on the round number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Parse(Vector[] points, int round)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The points to round coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">round</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">round number coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_System_Char___" data-uid="Laga.GeneticAlgorithm.Tools.Parse(System.Char[])">Parse(Char[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Parse a list of char to a list of strings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Parse(char[] any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">any</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">char[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_System_Double___" data-uid="Laga.GeneticAlgorithm.Tools.Parse(System.Double[])">Parse(Double[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Parse any Chromosome type to string Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Parse(double[] any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">any</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">double[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_System_Int32___" data-uid="Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])">Parse(Int32[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Parse a list of integers into a list of strings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Parse(int[] any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">any</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">int[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_System_Single___" data-uid="Laga.GeneticAlgorithm.Tools.Parse(System.Single[])">Parse(Single[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Parse a list of floats into a list of strings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Parse(float[] any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">any</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">float[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ParseDblToFloat_" data-uid="Laga.GeneticAlgorithm.Tools.ParseDblToFloat*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ParseDblToFloat_System_Double_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.ParseDblToFloat(System.Double,System.Int32)">ParseDblToFloat(Double, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Parse a double to float</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ParseDblToFloat(double dbl, int digits = 3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dbl</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the double to convert</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">digits</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the numbers to round, default is 3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">float</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Prefix_" data-uid="Laga.GeneticAlgorithm.Tools.Prefix*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Prefix_System_String_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)">Prefix(String, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generate prefixs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Prefix(string prefix, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string prefix</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the length of prefix to generate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_RandomChar_" data-uid="Laga.GeneticAlgorithm.Tools.RandomChar*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_RandomChar_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)">RandomChar(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="3">Generate a random char.
+based on this link: <a href="http://www.asciitable.com/" data-raw-source="http://www.asciitable.com/" sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="3" sourceendlinenumber="3">http://www.asciitable.com/</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char RandomChar(int start, int end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the start number for the table, inclusive</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the end number for the table, inclusive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">char</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_RandomCharBinary_" data-uid="Laga.GeneticAlgorithm.Tools.RandomCharBinary*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_RandomCharBinary_System_Single_" data-uid="Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)">RandomCharBinary(Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a Char in the format 0 or 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char RandomCharBinary(float thershold = 0.5F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">thershold</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">thershold parameter. 0.5 = 50%</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_RandomInt_" data-uid="Laga.GeneticAlgorithm.Tools.RandomInt*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_RandomInt_System_Int32_System_Int32_System_Single_" data-uid="Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)">RandomInt(Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Return non repetead integers between a min max and percent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] RandomInt(int min, int max, float percent = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the minimum value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the maximum value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">percent</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the percent of return, if 1f will return all the numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">array of integers if wrong array of 0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Reverse_" data-uid="Laga.GeneticAlgorithm.Tools.Reverse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Reverse_System_Double___" data-uid="Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])">Reverse(Double[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse the original array of doubles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reverse(double[] arrDbl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">arrDbl</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">double[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Reverse_" data-uid="Laga.GeneticAlgorithm.Tools.Reverse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Reverse_System_Int32___" data-uid="Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])">Reverse(Int32[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse the original array of integers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reverse(int[] arrInt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">arrInt</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">int[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_Reverse_" data-uid="Laga.GeneticAlgorithm.Tools.Reverse*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Reverse_System_Single___" data-uid="Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])">Reverse(Single[])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse the original array of floats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reverse(float[] arrFloat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">arrFloat</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">float[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ReversePopulation_" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Char_____" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])">ReversePopulation(Char[][])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse the original Population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReversePopulation(char[][] charPop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[][]</td>
+        <td><span class="parametername">charPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">char[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ReversePopulation_" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Double_____" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])">ReversePopulation(Double[][])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse original double population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReversePopulation(double[][] dblPop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[][]</td>
+        <td><span class="parametername">dblPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">double[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ReversePopulation_" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Int32_____" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])">ReversePopulation(Int32[][])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse Original integer population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReversePopulation(int[][] intPop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">intPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">int[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ReversePopulation_" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Object_____" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])">ReversePopulation(Object[][])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse original object population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReversePopulation(object[][] objPop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[][]</td>
+        <td><span class="parametername">objPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">object[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Tools_ReversePopulation_" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Single_____" data-uid="Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])">ReversePopulation(Single[][])</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Reverse original float population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReversePopulation(float[][] flPop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[][]</td>
+        <td><span class="parametername">flPop</span></td>
+        <td><p sourcefile="obj/api/Laga.GeneticAlgorithm.Tools.yml" sourcestartlinenumber="1" sourceendlinenumber="1">float[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

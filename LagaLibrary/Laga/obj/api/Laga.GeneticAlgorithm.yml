@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  id: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.Chromosome`1
+  - Laga.GeneticAlgorithm.Crossover`1
+  - Laga.GeneticAlgorithm.GenrChromosome
+  - Laga.GeneticAlgorithm.GenrDNA
+  - Laga.GeneticAlgorithm.GenrPopulation
+  - Laga.GeneticAlgorithm.Mutation
+  - Laga.GeneticAlgorithm.NaturalSelection`1
+  - Laga.GeneticAlgorithm.Population`1
+  - Laga.GeneticAlgorithm.RankingSort
+  - Laga.GeneticAlgorithm.Tools
+  langs:
+  - csharp
+  - vb
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+  type: Namespace
+  assemblies:
+  - Laga
+references:
+- uid: Laga.GeneticAlgorithm.Chromosome`1
+  commentId: T:Laga.GeneticAlgorithm.Chromosome`1
+  parent: Laga.GeneticAlgorithm
+  name: Chromosome<T>
+  nameWithType: Chromosome<T>
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>
+  nameWithType.vb: Chromosome(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T)
+  name.vb: Chromosome(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.Crossover`1
+  commentId: T:Laga.GeneticAlgorithm.Crossover`1
+  name: Crossover<T>
+  nameWithType: Crossover<T>
+  fullName: Laga.GeneticAlgorithm.Crossover<T>
+  nameWithType.vb: Crossover(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T)
+  name.vb: Crossover(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Crossover`1
+    name: Crossover
+    nameWithType: Crossover
+    fullName: Laga.GeneticAlgorithm.Crossover
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Crossover`1
+    name: Crossover
+    nameWithType: Crossover
+    fullName: Laga.GeneticAlgorithm.Crossover
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.GenrChromosome
+  commentId: T:Laga.GeneticAlgorithm.GenrChromosome
+  name: GenrChromosome
+  nameWithType: GenrChromosome
+  fullName: Laga.GeneticAlgorithm.GenrChromosome
+- uid: Laga.GeneticAlgorithm.GenrDNA
+  commentId: T:Laga.GeneticAlgorithm.GenrDNA
+  name: GenrDNA
+  nameWithType: GenrDNA
+  fullName: Laga.GeneticAlgorithm.GenrDNA
+- uid: Laga.GeneticAlgorithm.GenrPopulation
+  commentId: T:Laga.GeneticAlgorithm.GenrPopulation
+  name: GenrPopulation
+  nameWithType: GenrPopulation
+  fullName: Laga.GeneticAlgorithm.GenrPopulation
+- uid: Laga.GeneticAlgorithm.Mutation
+  commentId: T:Laga.GeneticAlgorithm.Mutation
+  name: Mutation
+  nameWithType: Mutation
+  fullName: Laga.GeneticAlgorithm.Mutation
+- uid: Laga.GeneticAlgorithm.NaturalSelection`1
+  commentId: T:Laga.GeneticAlgorithm.NaturalSelection`1
+  name: NaturalSelection<T>
+  nameWithType: NaturalSelection<T>
+  fullName: Laga.GeneticAlgorithm.NaturalSelection<T>
+  nameWithType.vb: NaturalSelection(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T)
+  name.vb: NaturalSelection(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.NaturalSelection`1
+    name: NaturalSelection
+    nameWithType: NaturalSelection
+    fullName: Laga.GeneticAlgorithm.NaturalSelection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.NaturalSelection`1
+    name: NaturalSelection
+    nameWithType: NaturalSelection
+    fullName: Laga.GeneticAlgorithm.NaturalSelection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.Population`1
+  commentId: T:Laga.GeneticAlgorithm.Population`1
+  name: Population<T>
+  nameWithType: Population<T>
+  fullName: Laga.GeneticAlgorithm.Population<T>
+  nameWithType.vb: Population(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.Population(Of T)
+  name.vb: Population(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Population`1
+    name: Population
+    nameWithType: Population
+    fullName: Laga.GeneticAlgorithm.Population
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Population`1
+    name: Population
+    nameWithType: Population
+    fullName: Laga.GeneticAlgorithm.Population
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.RankingSort
+  commentId: T:Laga.GeneticAlgorithm.RankingSort
+  name: RankingSort
+  nameWithType: RankingSort
+  fullName: Laga.GeneticAlgorithm.RankingSort
+- uid: Laga.GeneticAlgorithm.Tools
+  commentId: T:Laga.GeneticAlgorithm.Tools
+  name: Tools
+  nameWithType: Tools
+  fullName: Laga.GeneticAlgorithm.Tools
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm

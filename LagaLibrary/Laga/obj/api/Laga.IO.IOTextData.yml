@@ -1,0 +1,1124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.IO.IOTextData
+  commentId: T:Laga.IO.IOTextData
+  id: IOTextData
+  parent: Laga.IO
+  children:
+  - Laga.IO.IOTextData.#ctor(System.String)
+  - Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  - Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
+  - Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  - Laga.IO.IOTextData.DataText
+  - Laga.IO.IOTextData.DataTextLine
+  - Laga.IO.IOTextData.GetWords(System.String)
+  - Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
+  - Laga.IO.IOTextData.RemoveByLength(System.String[],System.Int32)
+  - Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  - Laga.IO.IOTextData.RemoveNumbers(System.String)
+  - Laga.IO.IOTextData.SourceEncoding
+  langs:
+  - csharp
+  - vb
+  name: IOTextData
+  nameWithType: IOTextData
+  fullName: Laga.IO.IOTextData
+  type: Class
+  source:
+    id: IOTextData
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 12
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRead and process text from a txt file\n"
+  example: []
+  syntax:
+    content: public class IOTextData
+    content.vb: Public Class IOTextData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.IO.IOTextData.SourceEncoding
+  commentId: P:Laga.IO.IOTextData.SourceEncoding
+  id: SourceEncoding
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: SourceEncoding
+  nameWithType: IOTextData.SourceEncoding
+  fullName: Laga.IO.IOTextData.SourceEncoding
+  type: Property
+  source:
+    id: SourceEncoding
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 73
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the Encoding Source from the Text File\n"
+  example: []
+  syntax:
+    content: public Encoding SourceEncoding { get; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public ReadOnly Property SourceEncoding As Encoding
+  overload: Laga.IO.IOTextData.SourceEncoding*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOTextData.DataText
+  commentId: P:Laga.IO.IOTextData.DataText
+  id: DataText
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: DataText
+  nameWithType: IOTextData.DataText
+  fullName: Laga.IO.IOTextData.DataText
+  type: Property
+  source:
+    id: DataText
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 81
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the Data Text as a string\n"
+  example: []
+  syntax:
+    content: public string DataText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DataText As String
+  overload: Laga.IO.IOTextData.DataText*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOTextData.DataTextLine
+  commentId: P:Laga.IO.IOTextData.DataTextLine
+  id: DataTextLine
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: DataTextLine
+  nameWithType: IOTextData.DataTextLine
+  fullName: Laga.IO.IOTextData.DataTextLine
+  type: Property
+  source:
+    id: DataTextLine
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 93
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the Data Text as a list of strings\n"
+  example: []
+  syntax:
+    content: public List<string> DataTextLine { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property DataTextLine As List(Of String)
+  overload: Laga.IO.IOTextData.DataTextLine*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOTextData.#ctor(System.String)
+  commentId: M:Laga.IO.IOTextData.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: IOTextData(String)
+  nameWithType: IOTextData.IOTextData(String)
+  fullName: Laga.IO.IOTextData.IOTextData(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 136
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nConstruct the class to operate txt files.\n"
+  example: []
+  syntax:
+    content: public IOTextData(string TextFileName)
+    parameters:
+    - id: TextFileName
+      type: System.String
+      description: The text file name
+    content.vb: Public Sub New(TextFileName As String)
+  overload: Laga.IO.IOTextData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  commentId: M:Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  id: ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: ConvertFileEncoding(String, IOTextData.EncodingType)
+  nameWithType: IOTextData.ConvertFileEncoding(String, IOTextData.EncodingType)
+  fullName: Laga.IO.IOTextData.ConvertFileEncoding(System.String, Laga.IO.IOTextData.EncodingType)
+  type: Method
+  source:
+    id: ConvertFileEncoding
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 148
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nConvert a file from one Encoding type to another encoding type\n"
+  example: []
+  syntax:
+    content: public string ConvertFileEncoding(string FileName, IOTextData.EncodingType encodingType)
+    parameters:
+    - id: FileName
+      type: System.String
+      description: the full file name to convert
+    - id: encodingType
+      type: Laga.IO.IOTextData.EncodingType
+      description: the Encoding type
+    return:
+      type: System.String
+    content.vb: Public Function ConvertFileEncoding(FileName As String, encodingType As IOTextData.EncodingType) As String
+  overload: Laga.IO.IOTextData.ConvertFileEncoding*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  commentId: M:Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  id: CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: CreateFile(List<String>, String, String)
+  nameWithType: IOTextData.CreateFile(List<String>, String, String)
+  fullName: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List<System.String>, System.String, System.String)
+  type: Method
+  source:
+    id: CreateFile
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 207
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nCreates a text file based on a list of strings\n"
+  example: []
+  syntax:
+    content: public static bool CreateFile(List<string> strList, string directory, string fileName)
+    parameters:
+    - id: strList
+      type: System.Collections.Generic.List{System.String}
+      description: the content for the file
+    - id: directory
+      type: System.String
+      description: the path to the directory to save the file
+    - id: fileName
+      type: System.String
+      description: name of the txt file
+    return:
+      type: System.Boolean
+      description: bool
+    content.vb: Public Shared Function CreateFile(strList As List(Of String), directory As String, fileName As String) As Boolean
+  overload: Laga.IO.IOTextData.CreateFile*
+  nameWithType.vb: IOTextData.CreateFile(List(Of String), String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List(Of System.String), System.String, System.String)
+  name.vb: CreateFile(List(Of String), String, String)
+- uid: Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
+  commentId: M:Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
+  id: CountWordsTopN(System.String,System.Int32)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: CountWordsTopN(String, Int32)
+  nameWithType: IOTextData.CountWordsTopN(String, Int32)
+  fullName: Laga.IO.IOTextData.CountWordsTopN(System.String, System.Int32)
+  type: Method
+  source:
+    id: CountWordsTopN
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 229
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nReturn the n most frequently occuring words in the string\n"
+  example: []
+  syntax:
+    content: public static Dictionary<string, int> CountWordsTopN(string strMessage, int topN)
+    parameters:
+    - id: strMessage
+      type: System.String
+      description: the string
+    - id: topN
+      type: System.Int32
+      description: Top N Numbers to return
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+      description: Dictionary
+    content.vb: Public Shared Function CountWordsTopN(strMessage As String, topN As Integer) As Dictionary(Of String, Integer)
+  overload: Laga.IO.IOTextData.CountWordsTopN*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.IO.IOTextData.GetWords(System.String)
+  commentId: M:Laga.IO.IOTextData.GetWords(System.String)
+  id: GetWords(System.String)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: GetWords(String)
+  nameWithType: IOTextData.GetWords(String)
+  fullName: Laga.IO.IOTextData.GetWords(System.String)
+  type: Method
+  source:
+    id: GetWords
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 268
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet The words from a string\n"
+  example: []
+  syntax:
+    content: public static string[] GetWords(string strMessage)
+    parameters:
+    - id: strMessage
+      type: System.String
+      description: The string to operate
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function GetWords(strMessage As String) As String()
+  overload: Laga.IO.IOTextData.GetWords*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.IO.IOTextData.RemoveNumbers(System.String)
+  commentId: M:Laga.IO.IOTextData.RemoveNumbers(System.String)
+  id: RemoveNumbers(System.String)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: RemoveNumbers(String)
+  nameWithType: IOTextData.RemoveNumbers(String)
+  fullName: Laga.IO.IOTextData.RemoveNumbers(System.String)
+  type: Method
+  source:
+    id: RemoveNumbers
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 279
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRemove the digits from a string\n"
+  example: []
+  syntax:
+    content: public static string RemoveNumbers(string strMessage)
+    parameters:
+    - id: strMessage
+      type: System.String
+      description: The string to remove the digits
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Shared Function RemoveNumbers(strMessage As String) As String
+  overload: Laga.IO.IOTextData.RemoveNumbers*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  commentId: M:Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  id: RemoveDiacritics(System.String)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: RemoveDiacritics(String)
+  nameWithType: IOTextData.RemoveDiacritics(String)
+  fullName: Laga.IO.IOTextData.RemoveDiacritics(System.String)
+  type: Method
+  source:
+    id: RemoveDiacritics
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 289
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRemove Diacritcs from string\n"
+  example: []
+  syntax:
+    content: public static string RemoveDiacritics(string strMessage)
+    parameters:
+    - id: strMessage
+      type: System.String
+      description: The string to clean
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Shared Function RemoveDiacritics(strMessage As String) As String
+  overload: Laga.IO.IOTextData.RemoveDiacritics*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.IO.IOTextData.RemoveByLength(System.String[],System.Int32)
+  commentId: M:Laga.IO.IOTextData.RemoveByLength(System.String[],System.Int32)
+  id: RemoveByLength(System.String[],System.Int32)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: RemoveByLength(String[], Int32)
+  nameWithType: IOTextData.RemoveByLength(String[], Int32)
+  fullName: Laga.IO.IOTextData.RemoveByLength(System.String[], System.Int32)
+  type: Method
+  source:
+    id: RemoveByLength
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 312
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRemove strings according to a specific Length\n"
+  example: []
+  syntax:
+    content: public static string[] RemoveByLength(string[] strMessages, int Length)
+    parameters:
+    - id: strMessages
+      type: System.String[]
+      description: the Array of strings to make the operations
+    - id: Length
+      type: System.Int32
+      description: The minimum string length
+    return:
+      type: System.String[]
+      description: string[]
+    content.vb: Public Shared Function RemoveByLength(strMessages As String(), Length As Integer) As String()
+  overload: Laga.IO.IOTextData.RemoveByLength*
+  nameWithType.vb: IOTextData.RemoveByLength(String(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Laga.IO.IOTextData.RemoveByLength(System.String(), System.Int32)
+  name.vb: RemoveByLength(String(), Int32)
+- uid: Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
+  commentId: M:Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
+  id: RemoveByLength(System.String,System.Int32,System.String)
+  parent: Laga.IO.IOTextData
+  langs:
+  - csharp
+  - vb
+  name: RemoveByLength(String, Int32, String)
+  nameWithType: IOTextData.RemoveByLength(String, Int32, String)
+  fullName: Laga.IO.IOTextData.RemoveByLength(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: RemoveByLength
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOTextData.cs
+    startLine: 333
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nRemove the words according to a specific length from a string\n"
+  example: []
+  syntax:
+    content: public static string RemoveByLength(string strMessage, int Length, string separator)
+    parameters:
+    - id: strMessage
+      type: System.String
+      description: The string to make the operation
+    - id: Length
+      type: System.Int32
+      description: The minimum word length in the string
+    - id: separator
+      type: System.String
+      description: 'A string to specify how combine the new string chain. eg: &quot; &quot;'
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Shared Function RemoveByLength(strMessage As String, Length As Integer, separator As String) As String
+  overload: Laga.IO.IOTextData.RemoveByLength*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.IO.IOTextData.SourceEncoding*
+  commentId: Overload:Laga.IO.IOTextData.SourceEncoding
+  name: SourceEncoding
+  nameWithType: IOTextData.SourceEncoding
+  fullName: Laga.IO.IOTextData.SourceEncoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Laga.IO.IOTextData.DataText*
+  commentId: Overload:Laga.IO.IOTextData.DataText
+  name: DataText
+  nameWithType: IOTextData.DataText
+  fullName: Laga.IO.IOTextData.DataText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.IO.IOTextData.DataTextLine*
+  commentId: Overload:Laga.IO.IOTextData.DataTextLine
+  name: DataTextLine
+  nameWithType: IOTextData.DataTextLine
+  fullName: Laga.IO.IOTextData.DataTextLine
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Laga.IO.IOTextData.#ctor*
+  commentId: Overload:Laga.IO.IOTextData.#ctor
+  name: IOTextData
+  nameWithType: IOTextData.IOTextData
+  fullName: Laga.IO.IOTextData.IOTextData
+- uid: Laga.IO.IOTextData.ConvertFileEncoding*
+  commentId: Overload:Laga.IO.IOTextData.ConvertFileEncoding
+  name: ConvertFileEncoding
+  nameWithType: IOTextData.ConvertFileEncoding
+  fullName: Laga.IO.IOTextData.ConvertFileEncoding
+- uid: Laga.IO.IOTextData.EncodingType
+  commentId: T:Laga.IO.IOTextData.EncodingType
+  parent: Laga.IO
+  name: IOTextData.EncodingType
+  nameWithType: IOTextData.EncodingType
+  fullName: Laga.IO.IOTextData.EncodingType
+- uid: Laga.IO.IOTextData.CreateFile*
+  commentId: Overload:Laga.IO.IOTextData.CreateFile
+  name: CreateFile
+  nameWithType: IOTextData.CreateFile
+  fullName: Laga.IO.IOTextData.CreateFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Laga.IO.IOTextData.CountWordsTopN*
+  commentId: Overload:Laga.IO.IOTextData.CountWordsTopN
+  name: CountWordsTopN
+  nameWithType: IOTextData.CountWordsTopN
+  fullName: Laga.IO.IOTextData.CountWordsTopN
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Int32>
+  nameWithType: Dictionary<String, Int32>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Int32>
+  nameWithType.vb: Dictionary(Of String, Int32)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Int32)
+  name.vb: Dictionary(Of String, Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.IO.IOTextData.GetWords*
+  commentId: Overload:Laga.IO.IOTextData.GetWords
+  name: GetWords
+  nameWithType: IOTextData.GetWords
+  fullName: Laga.IO.IOTextData.GetWords
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.IO.IOTextData.RemoveNumbers*
+  commentId: Overload:Laga.IO.IOTextData.RemoveNumbers
+  name: RemoveNumbers
+  nameWithType: IOTextData.RemoveNumbers
+  fullName: Laga.IO.IOTextData.RemoveNumbers
+- uid: Laga.IO.IOTextData.RemoveDiacritics*
+  commentId: Overload:Laga.IO.IOTextData.RemoveDiacritics
+  name: RemoveDiacritics
+  nameWithType: IOTextData.RemoveDiacritics
+  fullName: Laga.IO.IOTextData.RemoveDiacritics
+- uid: Laga.IO.IOTextData.RemoveByLength*
+  commentId: Overload:Laga.IO.IOTextData.RemoveByLength
+  name: RemoveByLength
+  nameWithType: IOTextData.RemoveByLength
+  fullName: Laga.IO.IOTextData.RemoveByLength

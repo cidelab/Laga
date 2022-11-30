@@ -1,0 +1,1352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm.GenrChromosome
+  commentId: T:Laga.GeneticAlgorithm.GenrChromosome
+  id: GenrChromosome
+  parent: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.GenrChromosome.#ctor(System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)
+  - Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single,System.Single)
+  - Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)
+  - Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  langs:
+  - csharp
+  - vb
+  name: GenrChromosome
+  nameWithType: GenrChromosome
+  fullName: Laga.GeneticAlgorithm.GenrChromosome
+  type: Class
+  source:
+    id: GenrChromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 11
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerate different Chromosome types\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Please try GenrDNA instead", false)]
+
+      public class GenrChromosome
+    content.vb: >-
+      <Obsolete("Please try GenrDNA instead", False)>
+
+      Public Class GenrChromosome
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: Please try GenrDNA instead
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  commentId: P:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  id: SizeChrom
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: SizeChrom
+  nameWithType: GenrChromosome.SizeChrom
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  type: Property
+  source:
+    id: SizeChrom
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 19
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nsize of the chromosome\n"
+  example: []
+  syntax:
+    content: public int SizeChrom { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SizeChrom As Integer
+  overload: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.#ctor(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: GenrChromosome(Int32)
+  nameWithType: GenrChromosome.GenrChromosome(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.GenrChromosome(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 37
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nConstructor:\n"
+  example: []
+  syntax:
+    content: public GenrChromosome(int Size)
+    parameters:
+    - id: Size
+      type: System.Int32
+      description: The Lengthof the Chromosome
+    content.vb: Public Sub New(Size As Integer)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)
+  id: NumberChromosome(System.Double,System.Double)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: NumberChromosome(Double, Double)
+  nameWithType: GenrChromosome.NumberChromosome(Double, Double)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double, System.Double)
+  type: Method
+  source:
+    id: NumberChromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 70
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nthe method generates a chromosome composed by random doubles\nbetween min and max.\n"
+  example:
+  - "How to implement this class:\n<pre><code>GenrChromosome chromosome = new GenrChromosome(5);\ndouble[] Chrom = chromosome.NumberChromosome(0.0, 1.0);\n\nresult:\n0.207198212485387, 0.253313632334263, 0.566322204920613, 0.735812343068334, 0.479827285036364\n\nfloat[] Chrom = chromosome.NumberChromosome(0.0f, 1.0f);\n\nresult:\n9.211745E+08, 1.134843E+09, 1.554793E+09, 1.223132E+09, 1.600176E+09\n\nint[] Chrom = chromosome.NumberChromosome(0, 10);\n\nresult: \n8, 3, 7, 2, 1</code></pre>\n"
+  syntax:
+    content: public double[] NumberChromosome(double min, double max)
+    parameters:
+    - id: min
+      type: System.Double
+      description: The min value in the chromosome
+    - id: max
+      type: System.Double
+      description: The max value in the chromosome(exclusive upper bound)
+    return:
+      type: System.Double[]
+      description: double[]
+    content.vb: Public Function NumberChromosome(min As Double, max As Double) As Double()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)
+  id: DNA_RandDouble(System.Double,System.Double)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_RandDouble(Double, Double)
+  nameWithType: GenrChromosome.DNA_RandDouble(Double, Double)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double, System.Double)
+  type: Method
+  source:
+    id: DNA_RandDouble
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 88
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nThe method generates a chromosome composed by random doubles between min and max.\n"
+  example: []
+  syntax:
+    content: public Chromosome<double> DNA_RandDouble(double min, double max)
+    parameters:
+    - id: min
+      type: System.Double
+      description: The min value in the chromosome
+    - id: max
+      type: System.Double
+      description: The max value in the chromosome (excluded)
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Double}
+      description: double Chromosome
+    content.vb: Public Function DNA_RandDouble(min As Double, max As Double) As Chromosome(Of Double)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single,System.Single)
+  id: NumberChromosome(System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: NumberChromosome(Single, Single)
+  nameWithType: GenrChromosome.NumberChromosome(Single, Single)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single, System.Single)
+  type: Method
+  source:
+    id: NumberChromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 107
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nthe method generates a chromosome composed by random floats\nbetween min and max.\n"
+  example: []
+  syntax:
+    content: public float[] NumberChromosome(float min, float max)
+    parameters:
+    - id: min
+      type: System.Single
+      description: The min value in the chromosome
+    - id: max
+      type: System.Single
+      description: The max value in the chromosome(exclusive upper bound)
+    return:
+      type: System.Single[]
+      description: float[]
+    content.vb: Public Function NumberChromosome(min As Single, max As Single) As Single()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)
+  id: DNA_RandFloat(System.Single,System.Single)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_RandFloat(Single, Single)
+  nameWithType: GenrChromosome.DNA_RandFloat(Single, Single)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single, System.Single)
+  type: Method
+  source:
+    id: DNA_RandFloat
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 124
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a float chromosome between min and max\n"
+  example: []
+  syntax:
+    content: public Chromosome<float> DNA_RandFloat(float min, float max)
+    parameters:
+    - id: min
+      type: System.Single
+      description: min value
+    - id: max
+      type: System.Single
+      description: max value
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Single}
+      description: ''
+    content.vb: Public Function DNA_RandFloat(min As Single, max As Single) As Chromosome(Of Single)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32,System.Int32)
+  id: NumberChromosome(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: NumberChromosome(Int32, Int32)
+  nameWithType: GenrChromosome.NumberChromosome(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: NumberChromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 143
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nthe method generates a chromosome composed by random integers\nbetween min and max.\n"
+  example: []
+  syntax:
+    content: public int[] NumberChromosome(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: The min value in the chromosome
+    - id: max
+      type: System.Int32
+      description: The max value in the chromosome(exclusive upper bound)
+    return:
+      type: System.Int32[]
+      description: int[]
+    content.vb: Public Function NumberChromosome(min As Integer, max As Integer) As Integer()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)
+  id: DNA_RandInteger(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_RandInteger(Int32, Int32)
+  nameWithType: GenrChromosome.DNA_RandInteger(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DNA_RandInteger
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 159
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a Chromosome composed by random integers\n"
+  example: []
+  syntax:
+    content: public Chromosome<int> DNA_RandInteger(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: min value
+    - id: max
+      type: System.Int32
+      description: max value
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Int32}
+      description: int Chromosome
+    content.vb: Public Function DNA_RandInteger(min As Integer, max As Integer) As Chromosome(Of Integer)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)
+  id: NumberChromosomeBinary(System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: NumberChromosomeBinary(Int32)
+  nameWithType: GenrChromosome.NumberChromosomeBinary(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)
+  type: Method
+  source:
+    id: NumberChromosomeBinary
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 184
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\ncreates a binary chromosome composed by 1s and 0s;\n"
+  example:
+  - "\n<pre><code>GenrChromosome chromosome = new GenrChromosome(5);\nint[] Chrom = chromosome.NumberChromosomeBinary();\n\nresult:\n1, 1, 0, 1, 1</code></pre>\n"
+  syntax:
+    content: public int[] NumberChromosomeBinary(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    return:
+      type: System.Int32[]
+      description: a random list of 1s and 0s
+    content.vb: Public Function NumberChromosomeBinary(size As Integer) As Integer()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)
+  id: DNA_IntBinary(System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_IntBinary(Int32)
+  nameWithType: GenrChromosome.DNA_IntBinary(Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)
+  type: Method
+  source:
+    id: DNA_IntBinary
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 206
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a binary Chromosome of 1s and 0s int type.\n"
+  example: []
+  syntax:
+    content: public Chromosome<int> DNA_IntBinary(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Int32}
+      description: ''
+    content.vb: Public Function DNA_IntBinary(size As Integer) As Chromosome(Of Integer)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)
+  id: NumberChromosomeSwap(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: NumberChromosomeSwap(Int32, Int32)
+  nameWithType: GenrChromosome.NumberChromosomeSwap(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: NumberChromosomeSwap
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 234
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nthe method generate a number chromosome composed by non repeated numbers between start and start + size(not inclusive).\nthe method is based on integer numbers. this method is designed by combinatorial problems.\n"
+  example:
+  - "\n<pre><code>GenrChromosome chromosome = new GenrChromosome(5);\nchar[] Chrom = chromosome.NumberChromosomeSwap(0, 4);\n\nresults:\n4, 1, 0, 2, 3\n3, 1, 2, 0, 4</code></pre>\n"
+  syntax:
+    content: public int[] NumberChromosomeSwap(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: the minimum value in the sequence
+    - id: max
+      type: System.Int32
+      description: the maximum value in the sequence
+    return:
+      type: System.Int32[]
+      description: a non repeat random integer list
+    content.vb: Public Function NumberChromosomeSwap(min As Integer, max As Integer) As Integer()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)
+  id: DNA_ShuffleInteger(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_ShuffleInteger(Int32, Int32)
+  nameWithType: GenrChromosome.DNA_ShuffleInteger(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DNA_ShuffleInteger
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 252
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerate a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.\n"
+  example: []
+  syntax:
+    content: public static Chromosome<int> DNA_ShuffleInteger(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: min value
+    - id: max
+      type: System.Int32
+      description: max value
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Int32}
+      description: int Chromosome
+    content.vb: Public Shared Function DNA_ShuffleInteger(min As Integer, max As Integer) As Chromosome(Of Integer)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+  id: CharChromosomeBinary
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: CharChromosomeBinary()
+  nameWithType: GenrChromosome.CharChromosomeBinary()
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary()
+  type: Method
+  source:
+    id: CharChromosomeBinary
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 287
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a binary chromosome of chars.\n"
+  example:
+  - "\n<pre><code>GenrChromosome chromosome = new GenrChromosome(5);\nchar[] Chrom = chromosome.CharChromosomeBinary();\n\nresult:\n0, 1, 0, 1, 0,</code></pre>\n"
+  syntax:
+    content: public char[] CharChromosomeBinary()
+    return:
+      type: System.Char[]
+      description: a random char list of 1s and 0s
+    content.vb: Public Function CharChromosomeBinary As Char()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+  id: DNA_CharBinary
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_CharBinary()
+  nameWithType: GenrChromosome.DNA_CharBinary()
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary()
+  type: Method
+  source:
+    id: DNA_CharBinary
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 304
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a binary Chromosome of 1s and 0s char type.\n"
+  example: []
+  syntax:
+    content: public Chromosome<char> DNA_CharBinary()
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Char}
+      description: char Chromosome
+    content.vb: Public Function DNA_CharBinary As Chromosome(Of Char)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)
+  id: CharChromosome(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: CharChromosome(Int32, Int32)
+  nameWithType: GenrChromosome.CharChromosome(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: CharChromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 342
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates an random char chromosome composed by characters.\nSee <a href=\"http://www.asciitable.com/\">this link</a> for more information.\n"
+  example:
+  - "\n<pre><code>GenrChromosome chromosome = new GenrChromosome(25);\nchar[] Chrom = chromosome.CharChromosome(65, 90);\n\nresult:\nE, B, C, N, F, C, O, P, C, H, O, U, Q, U, G, L, K, Z, E, K, X, A, L, B, Q,\n\nchar[] Chrom = chromosome.CharChromosome(33, 47);\n\nresult\n,, -, !, /, -, &apos;, %, !, %, %, !, /, ,, +, ), *, ), /, |, /, ], +, (, !, +,\n\nchar[] Chrom = chromosome.CharChromosome(97, 122);\n\nresult\nq, a, h, k, j, d, u, o, d, l, w, b, d, i, l, l, h, c, n, c, s, d, k, r, h,</code></pre>\n"
+  syntax:
+    content: public char[] CharChromosome(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: the start number in the table, inclusive
+    - id: end
+      type: System.Int32
+      description: the end number in the table, exclusive
+    return:
+      type: System.Char[]
+      description: returns a random list of characters
+    content.vb: Public Function CharChromosome(start As Integer, end As Integer) As Char()
+  overload: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)
+  id: DNA_Char(System.Int32,System.Int32)
+  parent: Laga.GeneticAlgorithm.GenrChromosome
+  langs:
+  - csharp
+  - vb
+  name: DNA_Char(Int32, Int32)
+  nameWithType: GenrChromosome.DNA_Char(Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DNA_Char
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\GenrChromosome.cs
+    startLine: 361
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGenerates a random char Chromosome composed by characters.\nSee <a href=\"http://www.asciitable.com/\">this link</a> for more information.\n"
+  example: []
+  syntax:
+    content: public Chromosome<char> DNA_Char(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: the start number in the table, inclusive
+    - id: end
+      type: System.Int32
+      description: the end number in the table, exclusive
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome{System.Char}
+      description: char Chromosome
+    content.vb: Public Function DNA_Char(start As Integer, end As Integer) As Chromosome(Of Char)
+  overload: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  name: SizeChrom
+  nameWithType: GenrChromosome.SizeChrom
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.GeneticAlgorithm.GenrChromosome.#ctor*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.#ctor
+  name: GenrChromosome
+  nameWithType: GenrChromosome.GenrChromosome
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.GenrChromosome
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome
+  name: NumberChromosome
+  nameWithType: GenrChromosome.NumberChromosome
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Double[]
+  isExternal: true
+  name: Double[]
+  nameWithType: Double[]
+  fullName: System.Double[]
+  nameWithType.vb: Double()
+  fullName.vb: System.Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble
+  name: DNA_RandDouble
+  nameWithType: GenrChromosome.DNA_RandDouble
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble
+- uid: Laga.GeneticAlgorithm.Chromosome{System.Double}
+  commentId: T:Laga.GeneticAlgorithm.Chromosome{System.Double}
+  parent: Laga.GeneticAlgorithm
+  definition: Laga.GeneticAlgorithm.Chromosome`1
+  name: Chromosome<Double>
+  nameWithType: Chromosome<Double>
+  fullName: Laga.GeneticAlgorithm.Chromosome<System.Double>
+  nameWithType.vb: Chromosome(Of Double)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of System.Double)
+  name.vb: Chromosome(Of Double)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.Chromosome`1
+  commentId: T:Laga.GeneticAlgorithm.Chromosome`1
+  parent: Laga.GeneticAlgorithm
+  name: Chromosome<T>
+  nameWithType: Chromosome<T>
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>
+  nameWithType.vb: Chromosome(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T)
+  name.vb: Chromosome(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat
+  name: DNA_RandFloat
+  nameWithType: GenrChromosome.DNA_RandFloat
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat
+- uid: Laga.GeneticAlgorithm.Chromosome{System.Single}
+  commentId: T:Laga.GeneticAlgorithm.Chromosome{System.Single}
+  parent: Laga.GeneticAlgorithm
+  definition: Laga.GeneticAlgorithm.Chromosome`1
+  name: Chromosome<Single>
+  nameWithType: Chromosome<Single>
+  fullName: Laga.GeneticAlgorithm.Chromosome<System.Single>
+  nameWithType.vb: Chromosome(Of Single)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of System.Single)
+  name.vb: Chromosome(Of Single)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger
+  name: DNA_RandInteger
+  nameWithType: GenrChromosome.DNA_RandInteger
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger
+- uid: Laga.GeneticAlgorithm.Chromosome{System.Int32}
+  commentId: T:Laga.GeneticAlgorithm.Chromosome{System.Int32}
+  parent: Laga.GeneticAlgorithm
+  definition: Laga.GeneticAlgorithm.Chromosome`1
+  name: Chromosome<Int32>
+  nameWithType: Chromosome<Int32>
+  fullName: Laga.GeneticAlgorithm.Chromosome<System.Int32>
+  nameWithType.vb: Chromosome(Of Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of System.Int32)
+  name.vb: Chromosome(Of Int32)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary
+  name: NumberChromosomeBinary
+  nameWithType: GenrChromosome.NumberChromosomeBinary
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary
+  name: DNA_IntBinary
+  nameWithType: GenrChromosome.DNA_IntBinary
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary
+- uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap
+  name: NumberChromosomeSwap
+  nameWithType: GenrChromosome.NumberChromosomeSwap
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger
+  name: DNA_ShuffleInteger
+  nameWithType: GenrChromosome.DNA_ShuffleInteger
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger
+- uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+  name: CharChromosomeBinary
+  nameWithType: GenrChromosome.CharChromosomeBinary
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  nameWithType: Char[]
+  fullName: System.Char[]
+  nameWithType.vb: Char()
+  fullName.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+  name: DNA_CharBinary
+  nameWithType: GenrChromosome.DNA_CharBinary
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+- uid: Laga.GeneticAlgorithm.Chromosome{System.Char}
+  commentId: T:Laga.GeneticAlgorithm.Chromosome{System.Char}
+  parent: Laga.GeneticAlgorithm
+  definition: Laga.GeneticAlgorithm.Chromosome`1
+  name: Chromosome<Char>
+  nameWithType: Chromosome<Char>
+  fullName: Laga.GeneticAlgorithm.Chromosome<System.Char>
+  nameWithType.vb: Chromosome(Of Char)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of System.Char)
+  name.vb: Chromosome(Of Char)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome
+  name: CharChromosome
+  nameWithType: GenrChromosome.CharChromosome
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome
+- uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char*
+  commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_Char
+  name: DNA_Char
+  nameWithType: GenrChromosome.DNA_Char
+  fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char

@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.IO.IODataFolder
+  commentId: T:Laga.IO.IODataFolder
+  id: IODataFolder
+  parent: Laga.IO
+  children:
+  - Laga.IO.IODataFolder.#ctor(System.String)
+  - Laga.IO.IODataFolder.#ctor(System.String,System.String)
+  - Laga.IO.IODataFolder.GetFileName(System.String)
+  - Laga.IO.IODataFolder.ListFileNames
+  - Laga.IO.IODataFolder.ListPathFileNames
+  - Laga.IO.IODataFolder.ReadSelectiveData(System.String[],System.String)
+  - Laga.IO.IODataFolder.RootFolder
+  langs:
+  - csharp
+  - vb
+  name: IODataFolder
+  nameWithType: IODataFolder
+  fullName: Laga.IO.IODataFolder
+  type: Class
+  source:
+    id: IODataFolder
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 8
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet Data files information from a folder directory\n"
+  example: []
+  syntax:
+    content: public class IODataFolder
+    content.vb: Public Class IODataFolder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.IO.IODataFolder.RootFolder
+  commentId: P:Laga.IO.IODataFolder.RootFolder
+  id: RootFolder
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: RootFolder
+  nameWithType: IODataFolder.RootFolder
+  fullName: Laga.IO.IODataFolder.RootFolder
+  type: Property
+  source:
+    id: RootFolder
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 17
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nThe Roof folder with the files\n"
+  example: []
+  syntax:
+    content: public string RootFolder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RootFolder As String
+  overload: Laga.IO.IODataFolder.RootFolder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IODataFolder.ListPathFileNames
+  commentId: P:Laga.IO.IODataFolder.ListPathFileNames
+  id: ListPathFileNames
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: ListPathFileNames
+  nameWithType: IODataFolder.ListPathFileNames
+  fullName: Laga.IO.IODataFolder.ListPathFileNames
+  type: Property
+  source:
+    id: ListPathFileNames
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 39
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nThe List of file names including the path\n"
+  example: []
+  syntax:
+    content: public string[] ListPathFileNames { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property ListPathFileNames As String()
+  overload: Laga.IO.IODataFolder.ListPathFileNames*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IODataFolder.ListFileNames
+  commentId: P:Laga.IO.IODataFolder.ListFileNames
+  id: ListFileNames
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: ListFileNames
+  nameWithType: IODataFolder.ListFileNames
+  fullName: Laga.IO.IODataFolder.ListFileNames
+  type: Property
+  source:
+    id: ListFileNames
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 50
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nThe list of file names without extension\n"
+  example: []
+  syntax:
+    content: public string[] ListFileNames { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property ListFileNames As String()
+  overload: Laga.IO.IODataFolder.ListFileNames*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IODataFolder.#ctor(System.String)
+  commentId: M:Laga.IO.IODataFolder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: IODataFolder(String)
+  nameWithType: IODataFolder.IODataFolder(String)
+  fullName: Laga.IO.IODataFolder.IODataFolder(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 62
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet all the files from an specific folder\n"
+  example: []
+  syntax:
+    content: public IODataFolder(string PathFolder)
+    parameters:
+    - id: PathFolder
+      type: System.String
+      description: The folders path to analize
+    content.vb: Public Sub New(PathFolder As String)
+  overload: Laga.IO.IODataFolder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IODataFolder.#ctor(System.String,System.String)
+  commentId: M:Laga.IO.IODataFolder.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: IODataFolder(String, String)
+  nameWithType: IODataFolder.IODataFolder(String, String)
+  fullName: Laga.IO.IODataFolder.IODataFolder(System.String, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 85
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the specific files from the filter extension. e: all the &quot;.DWG&quot; files in the folder\n"
+  example: []
+  syntax:
+    content: public IODataFolder(string PathFolder, string Filter)
+    parameters:
+    - id: PathFolder
+      type: System.String
+      description: The folders path to analize
+    - id: Filter
+      type: System.String
+      description: The filter extension
+    content.vb: Public Sub New(PathFolder As String, Filter As String)
+  overload: Laga.IO.IODataFolder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IODataFolder.GetFileName(System.String)
+  commentId: M:Laga.IO.IODataFolder.GetFileName(System.String)
+  id: GetFileName(System.String)
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: GetFileName(String)
+  nameWithType: IODataFolder.GetFileName(String)
+  fullName: Laga.IO.IODataFolder.GetFileName(System.String)
+  type: Method
+  source:
+    id: GetFileName
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 107
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the file name from a path\n"
+  example: []
+  syntax:
+    content: public static string GetFileName(string PathFile)
+    parameters:
+    - id: PathFile
+      type: System.String
+      description: Path to the file
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Shared Function GetFileName(PathFile As String) As String
+  overload: Laga.IO.IODataFolder.GetFileName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Laga.IO.IODataFolder.ReadSelectiveData(System.String[],System.String)
+  commentId: M:Laga.IO.IODataFolder.ReadSelectiveData(System.String[],System.String)
+  id: ReadSelectiveData(System.String[],System.String)
+  parent: Laga.IO.IODataFolder
+  langs:
+  - csharp
+  - vb
+  name: ReadSelectiveData(String[], String)
+  nameWithType: IODataFolder.ReadSelectiveData(String[], String)
+  fullName: Laga.IO.IODataFolder.ReadSelectiveData(System.String[], System.String)
+  type: Method
+  source:
+    id: ReadSelectiveData
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IODataFolder.cs
+    startLine: 122
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet the specific files from the filter extension.\n"
+  example: []
+  syntax:
+    content: public string[] ReadSelectiveData(string[] PathFiles, string Filter)
+    parameters:
+    - id: PathFiles
+      type: System.String[]
+      description: The path files to filter
+    - id: Filter
+      type: System.String
+      description: 'The filter Extension: like &quot;.jpg&quot;'
+    return:
+      type: System.String[]
+      description: ''
+    content.vb: Public Function ReadSelectiveData(PathFiles As String(), Filter As String) As String()
+  overload: Laga.IO.IODataFolder.ReadSelectiveData*
+  nameWithType.vb: IODataFolder.ReadSelectiveData(String(), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.IO.IODataFolder.ReadSelectiveData(System.String(), System.String)
+  name.vb: ReadSelectiveData(String(), String)
+references:
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.IO.IODataFolder.RootFolder*
+  commentId: Overload:Laga.IO.IODataFolder.RootFolder
+  name: RootFolder
+  nameWithType: IODataFolder.RootFolder
+  fullName: Laga.IO.IODataFolder.RootFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.IO.IODataFolder.ListPathFileNames*
+  commentId: Overload:Laga.IO.IODataFolder.ListPathFileNames
+  name: ListPathFileNames
+  nameWithType: IODataFolder.ListPathFileNames
+  fullName: Laga.IO.IODataFolder.ListPathFileNames
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.IO.IODataFolder.ListFileNames*
+  commentId: Overload:Laga.IO.IODataFolder.ListFileNames
+  name: ListFileNames
+  nameWithType: IODataFolder.ListFileNames
+  fullName: Laga.IO.IODataFolder.ListFileNames
+- uid: Laga.IO.IODataFolder.#ctor*
+  commentId: Overload:Laga.IO.IODataFolder.#ctor
+  name: IODataFolder
+  nameWithType: IODataFolder.IODataFolder
+  fullName: Laga.IO.IODataFolder.IODataFolder
+- uid: Laga.IO.IODataFolder.GetFileName*
+  commentId: Overload:Laga.IO.IODataFolder.GetFileName
+  name: GetFileName
+  nameWithType: IODataFolder.GetFileName
+  fullName: Laga.IO.IODataFolder.GetFileName
+- uid: Laga.IO.IODataFolder.ReadSelectiveData*
+  commentId: Overload:Laga.IO.IODataFolder.ReadSelectiveData
+  name: ReadSelectiveData
+  nameWithType: IODataFolder.ReadSelectiveData
+  fullName: Laga.IO.IODataFolder.ReadSelectiveData

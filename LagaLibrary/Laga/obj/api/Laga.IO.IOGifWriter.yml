@@ -1,0 +1,749 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.IO.IOGifWriter
+  commentId: T:Laga.IO.IOGifWriter
+  id: IOGifWriter
+  parent: Laga.IO
+  children:
+  - Laga.IO.IOGifWriter.#ctor(System.IO.Stream,System.Int32,System.Int32)
+  - Laga.IO.IOGifWriter.#ctor(System.String,System.Int32,System.Int32)
+  - Laga.IO.IOGifWriter.DefaultFrameDelay
+  - Laga.IO.IOGifWriter.DefaultHeight
+  - Laga.IO.IOGifWriter.DefaultWidth
+  - Laga.IO.IOGifWriter.Dispose
+  - Laga.IO.IOGifWriter.Repeat
+  - Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IOGifWriter
+  nameWithType: IOGifWriter
+  fullName: Laga.IO.IOGifWriter
+  type: Class
+  source:
+    id: IOGifWriter
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 11
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGif image creation class\nfrom The webpage: \n"
+  example: []
+  syntax:
+    content: 'public class IOGifWriter : IDisposable'
+    content.vb: >-
+      Public Class IOGifWriter
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Laga.IO.IOGifWriter.#ctor(System.IO.Stream,System.Int32,System.Int32)
+  commentId: M:Laga.IO.IOGifWriter.#ctor(System.IO.Stream,System.Int32,System.Int32)
+  id: '#ctor(System.IO.Stream,System.Int32,System.Int32)'
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: IOGifWriter(Stream, Int32, Int32)
+  nameWithType: IOGifWriter.IOGifWriter(Stream, Int32, Int32)
+  fullName: Laga.IO.IOGifWriter.IOGifWriter(System.IO.Stream, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 32
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nCreates a new instance of GifWriter.\n"
+  example: []
+  syntax:
+    content: public IOGifWriter(Stream OutStream, int DefaultFrameDelay = 500, int Repeat = -1)
+    parameters:
+    - id: OutStream
+      type: System.IO.Stream
+      description: The <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to output the Gif to.
+    - id: DefaultFrameDelay
+      type: System.Int32
+      description: Default Delay between consecutive frames... FrameRate = 1000 / DefaultFrameDelay.
+    - id: Repeat
+      type: System.Int32
+      description: No of times the Gif should repeat... -1 not to repeat, 0 to repeat indefinitely.
+    content.vb: Public Sub New(OutStream As Stream, DefaultFrameDelay As Integer = 500, Repeat As Integer = -1)
+  overload: Laga.IO.IOGifWriter.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:Laga.IO.IOGifWriter.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: IOGifWriter(String, Int32, Int32)
+  nameWithType: IOGifWriter.IOGifWriter(String, Int32, Int32)
+  fullName: Laga.IO.IOGifWriter.IOGifWriter(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 54
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nCreate a new instance of the writer\n"
+  example: []
+  syntax:
+    content: public IOGifWriter(string FileName, int DefaultFrameDelay = 500, int Repeat = -1)
+    parameters:
+    - id: FileName
+      type: System.String
+      description: The path to the file to output the gif to.
+    - id: DefaultFrameDelay
+      type: System.Int32
+      description: Default delay between consecutive frames... FrameRate = 1000 / DefaultFrameDelay
+    - id: Repeat
+      type: System.Int32
+      description: No of times the gif should repeat -1 not to repeat, 0 to repeat indefinetely.
+    content.vb: Public Sub New(FileName As String, DefaultFrameDelay As Integer = 500, Repeat As Integer = -1)
+  overload: Laga.IO.IOGifWriter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.DefaultWidth
+  commentId: P:Laga.IO.IOGifWriter.DefaultWidth
+  id: DefaultWidth
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: DefaultWidth
+  nameWithType: IOGifWriter.DefaultWidth
+  fullName: Laga.IO.IOGifWriter.DefaultWidth
+  type: Property
+  source:
+    id: DefaultWidth
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 61
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGets or Sets the Default Width of a Frame. Used when unspecified.\n"
+  example: []
+  syntax:
+    content: public int DefaultWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultWidth As Integer
+  overload: Laga.IO.IOGifWriter.DefaultWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.DefaultHeight
+  commentId: P:Laga.IO.IOGifWriter.DefaultHeight
+  id: DefaultHeight
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: DefaultHeight
+  nameWithType: IOGifWriter.DefaultHeight
+  fullName: Laga.IO.IOGifWriter.DefaultHeight
+  type: Property
+  source:
+    id: DefaultHeight
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 66
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet or set default height of a frame. Used when unspecified\n"
+  example: []
+  syntax:
+    content: public int DefaultHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultHeight As Integer
+  overload: Laga.IO.IOGifWriter.DefaultHeight*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.DefaultFrameDelay
+  commentId: P:Laga.IO.IOGifWriter.DefaultFrameDelay
+  id: DefaultFrameDelay
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: DefaultFrameDelay
+  nameWithType: IOGifWriter.DefaultFrameDelay
+  fullName: Laga.IO.IOGifWriter.DefaultFrameDelay
+  type: Property
+  source:
+    id: DefaultFrameDelay
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 71
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nGet or set the default delay in milliseconds\n"
+  example: []
+  syntax:
+    content: public int DefaultFrameDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultFrameDelay As Integer
+  overload: Laga.IO.IOGifWriter.DefaultFrameDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.Repeat
+  commentId: P:Laga.IO.IOGifWriter.Repeat
+  id: Repeat
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: Repeat
+  nameWithType: IOGifWriter.Repeat
+  fullName: Laga.IO.IOGifWriter.Repeat
+  type: Property
+  source:
+    id: Repeat
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 77
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\nThe number of times the animation repeat\n-1 indicate no repeat. 0 indificate indefinitely.\n"
+  example: []
+  syntax:
+    content: public int Repeat { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Repeat As Integer
+  overload: Laga.IO.IOGifWriter.Repeat*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image,System.Int32)
+  commentId: M:Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image,System.Int32)
+  id: WriteFrame(System.Drawing.Image,System.Int32)
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteFrame(Image, Int32)
+  nameWithType: IOGifWriter.WriteFrame(Image, Int32)
+  fullName: Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image, System.Int32)
+  type: Method
+  source:
+    id: WriteFrame
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 85
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void WriteFrame(Image image, int Delay = 0)
+    parameters:
+    - id: image
+      type: System.Drawing.Image
+      description: ''
+    - id: Delay
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub WriteFrame(image As Image, Delay As Integer = 0)
+  overload: Laga.IO.IOGifWriter.WriteFrame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Laga.IO.IOGifWriter.Dispose
+  commentId: M:Laga.IO.IOGifWriter.Dispose
+  id: Dispose
+  parent: Laga.IO.IOGifWriter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: IOGifWriter.Dispose()
+  fullName: Laga.IO.IOGifWriter.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\IOGifWriter.cs
+    startLine: 196
+  assemblies:
+  - Laga
+  namespace: Laga.IO
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Laga.IO.IOGifWriter.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Laga.IO
+  commentId: N:Laga.IO
+  name: Laga.IO
+  nameWithType: Laga.IO
+  fullName: Laga.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+- uid: Laga.IO.IOGifWriter.#ctor*
+  commentId: Overload:Laga.IO.IOGifWriter.#ctor
+  name: IOGifWriter
+  nameWithType: IOGifWriter.IOGifWriter
+  fullName: Laga.IO.IOGifWriter.IOGifWriter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.IO.IOGifWriter.DefaultWidth*
+  commentId: Overload:Laga.IO.IOGifWriter.DefaultWidth
+  name: DefaultWidth
+  nameWithType: IOGifWriter.DefaultWidth
+  fullName: Laga.IO.IOGifWriter.DefaultWidth
+- uid: Laga.IO.IOGifWriter.DefaultHeight*
+  commentId: Overload:Laga.IO.IOGifWriter.DefaultHeight
+  name: DefaultHeight
+  nameWithType: IOGifWriter.DefaultHeight
+  fullName: Laga.IO.IOGifWriter.DefaultHeight
+- uid: Laga.IO.IOGifWriter.DefaultFrameDelay*
+  commentId: Overload:Laga.IO.IOGifWriter.DefaultFrameDelay
+  name: DefaultFrameDelay
+  nameWithType: IOGifWriter.DefaultFrameDelay
+  fullName: Laga.IO.IOGifWriter.DefaultFrameDelay
+- uid: Laga.IO.IOGifWriter.Repeat*
+  commentId: Overload:Laga.IO.IOGifWriter.Repeat
+  name: Repeat
+  nameWithType: IOGifWriter.Repeat
+  fullName: Laga.IO.IOGifWriter.Repeat
+- uid: Laga.IO.IOGifWriter.WriteFrame*
+  commentId: Overload:Laga.IO.IOGifWriter.WriteFrame
+  name: WriteFrame
+  nameWithType: IOGifWriter.WriteFrame
+  fullName: Laga.IO.IOGifWriter.WriteFrame
+- uid: System.Drawing.Image
+  commentId: T:System.Drawing.Image
+  parent: System.Drawing
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: System.Drawing.Image
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+- uid: Laga.IO.IOGifWriter.Dispose*
+  commentId: Overload:Laga.IO.IOGifWriter.Dispose
+  name: Dispose
+  nameWithType: IOGifWriter.Dispose
+  fullName: Laga.IO.IOGifWriter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

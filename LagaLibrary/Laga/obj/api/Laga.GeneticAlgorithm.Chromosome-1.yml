@@ -1,0 +1,1174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Laga.GeneticAlgorithm.Chromosome`1
+  commentId: T:Laga.GeneticAlgorithm.Chromosome`1
+  id: Chromosome`1
+  parent: Laga.GeneticAlgorithm
+  children:
+  - Laga.GeneticAlgorithm.Chromosome`1.#ctor
+  - Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Collections.Generic.List{`0})
+  - Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Int32)
+  - Laga.GeneticAlgorithm.Chromosome`1.Add(`0)
+  - Laga.GeneticAlgorithm.Chromosome`1.chromosome
+  - Laga.GeneticAlgorithm.Chromosome`1.Clone
+  - Laga.GeneticAlgorithm.Chromosome`1.Count
+  - Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates
+  - Laga.GeneticAlgorithm.Chromosome`1.Fitness
+  - Laga.GeneticAlgorithm.Chromosome`1.GetDNA(System.Int32)
+  - Laga.GeneticAlgorithm.Chromosome`1.InsertDNA(System.Int32,`0)
+  - Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone
+  - Laga.GeneticAlgorithm.Chromosome`1.ToArray
+  - Laga.GeneticAlgorithm.Chromosome`1.ToList
+  - Laga.GeneticAlgorithm.Chromosome`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: Chromosome<T>
+  nameWithType: Chromosome<T>
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>
+  type: Class
+  source:
+    id: Chromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 11
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nCreate and manipulate Chromosomes\n"
+  example: []
+  syntax:
+    content: 'public class Chromosome<T> : ICloneable'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class Chromosome(Of T)
+          Implements ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: Chromosome(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T)
+  name.vb: Chromosome(Of T)
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Count
+  commentId: P:Laga.GeneticAlgorithm.Chromosome`1.Count
+  id: Count
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Chromosome<T>.Count
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Count
+  type: Property
+  source:
+    id: Count
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 19
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nThe size of the chromosome++                                                                        \n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Laga.GeneticAlgorithm.Chromosome`1.Count*
+  nameWithType.vb: Chromosome(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Count
+- uid: Laga.GeneticAlgorithm.Chromosome`1.chromosome
+  commentId: P:Laga.GeneticAlgorithm.Chromosome`1.chromosome
+  id: chromosome
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: chromosome
+  nameWithType: Chromosome<T>.chromosome
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.chromosome
+  type: Property
+  source:
+    id: chromosome
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 29
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public List<T> chromosome { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Property chromosome As List(Of T)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.chromosome*
+  nameWithType.vb: Chromosome(Of T).chromosome
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).chromosome
+- uid: Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Chromosome(Int32)
+  nameWithType: Chromosome<T>.Chromosome(Int32)
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chromosome(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 34
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\ncons 1\n"
+  example: []
+  syntax:
+    content: public Chromosome(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    content.vb: Public Sub New(size As Integer)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.#ctor*
+  nameWithType.vb: Chromosome(Of T).Chromosome(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chromosome(System.Int32)
+- uid: Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Collections.Generic.List{`0})
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Collections.Generic.List{`0})
+  id: '#ctor(System.Collections.Generic.List{`0})'
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Chromosome(List<T>)
+  nameWithType: Chromosome<T>.Chromosome(List<T>)
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chromosome(System.Collections.Generic.List<T>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 43
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Chromosome(List<T> ListDna)
+    parameters:
+    - id: ListDna
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    content.vb: Public Sub New(ListDna As List(Of T))
+  overload: Laga.GeneticAlgorithm.Chromosome`1.#ctor*
+  nameWithType.vb: Chromosome(Of T).Chromosome(List(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chromosome(System.Collections.Generic.List(Of T))
+  name.vb: Chromosome(List(Of T))
+- uid: Laga.GeneticAlgorithm.Chromosome`1.#ctor
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.#ctor
+  id: '#ctor'
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Chromosome()
+  nameWithType: Chromosome<T>.Chromosome()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chromosome()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 51
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Chromosome()
+    content.vb: Public Sub New
+  overload: Laga.GeneticAlgorithm.Chromosome`1.#ctor*
+  nameWithType.vb: Chromosome(Of T).Chromosome()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chromosome()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Fitness
+  commentId: P:Laga.GeneticAlgorithm.Chromosome`1.Fitness
+  id: Fitness
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Fitness
+  nameWithType: Chromosome<T>.Fitness
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fitness
+  type: Property
+  source:
+    id: Fitness
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 59
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGet and set the chromosome fitness\n"
+  example: []
+  syntax:
+    content: public double Fitness { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Fitness As Double
+  overload: Laga.GeneticAlgorithm.Chromosome`1.Fitness*
+  nameWithType.vb: Chromosome(Of T).Fitness
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fitness
+- uid: Laga.GeneticAlgorithm.Chromosome`1.GetDNA(System.Int32)
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.GetDNA(System.Int32)
+  id: GetDNA(System.Int32)
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: GetDNA(Int32)
+  nameWithType: Chromosome<T>.GetDNA(Int32)
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.GetDNA(System.Int32)
+  type: Method
+  source:
+    id: GetDNA
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 76
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nGet Dna Chromosome at specific index\n"
+  example: []
+  syntax:
+    content: public T GetDNA(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: index
+    return:
+      type: '{T}'
+      description: T
+    content.vb: Public Function GetDNA(index As Integer) As T
+  overload: Laga.GeneticAlgorithm.Chromosome`1.GetDNA*
+  nameWithType.vb: Chromosome(Of T).GetDNA(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).GetDNA(System.Int32)
+- uid: Laga.GeneticAlgorithm.Chromosome`1.InsertDNA(System.Int32,`0)
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.InsertDNA(System.Int32,`0)
+  id: InsertDNA(System.Int32,`0)
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: InsertDNA(Int32, T)
+  nameWithType: Chromosome<T>.InsertDNA(Int32, T)
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.InsertDNA(System.Int32, T)
+  type: Method
+  source:
+    id: InsertDNA
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 86
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nInsert DNA in a chromosome at specific Location\n"
+  example: []
+  syntax:
+    content: public void InsertDNA(int index, T DNA)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The location in the chromosome
+    - id: DNA
+      type: '{T}'
+      description: The DNA to insert
+    content.vb: Public Sub InsertDNA(index As Integer, DNA As T)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.InsertDNA*
+  nameWithType.vb: Chromosome(Of T).InsertDNA(Int32, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).InsertDNA(System.Int32, T)
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Add(`0)
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.Add(`0)
+  id: Add(`0)
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: Chromosome<T>.Add(T)
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Add(T)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 95
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nAdd DNA to the Chromosome\n"
+  example: []
+  syntax:
+    content: public void Add(T DNA)
+    parameters:
+    - id: DNA
+      type: '{T}'
+      description: The DNA type
+    content.vb: Public Sub Add(DNA As T)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.Add*
+  nameWithType.vb: Chromosome(Of T).Add(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Add(T)
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToString
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.ToString
+  id: ToString
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Chromosome<T>.ToString()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 104
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nChromosome to String\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Laga.GeneticAlgorithm.Chromosome`1.ToString*
+  nameWithType.vb: Chromosome(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToString()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToList
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.ToList
+  id: ToList
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: ToList()
+  nameWithType: Chromosome<T>.ToList()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToList()
+  type: Method
+  source:
+    id: ToList
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 113
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nConvert the chromosome in a list\n"
+  example: []
+  syntax:
+    content: public List<T> ToList()
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: List
+    content.vb: Public Function ToList As List(Of T)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.ToList*
+  nameWithType.vb: Chromosome(Of T).ToList()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToList()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToArray
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.ToArray
+  id: ToArray
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: Chromosome<T>.ToArray()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToArray()
+  type: Method
+  source:
+    id: ToArray
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 122
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nConvert the chromosome in Array;\n"
+  example: []
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+      description: Array
+    content.vb: Public Function ToArray As T()
+  overload: Laga.GeneticAlgorithm.Chromosome`1.ToArray*
+  nameWithType.vb: Chromosome(Of T).ToArray()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToArray()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates
+  id: Fisher_Yates
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Fisher_Yates()
+  nameWithType: Chromosome<T>.Fisher_Yates()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fisher_Yates()
+  type: Method
+  source:
+    id: Fisher_Yates
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 130
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nFisher_Yates algorithm for the chromosome\n"
+  example: []
+  syntax:
+    content: public void Fisher_Yates()
+    content.vb: Public Sub Fisher_Yates
+  overload: Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates*
+  nameWithType.vb: Chromosome(Of T).Fisher_Yates()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fisher_Yates()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Clone
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.Clone
+  id: Clone
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Chromosome<T>.Clone()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 151
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  summary: "\nMake a deep copy from a chromosome.\n"
+  example: []
+  syntax:
+    content: public Chromosome<T> Clone()
+    return:
+      type: Laga.GeneticAlgorithm.Chromosome`1
+      description: Chromosome
+    content.vb: Public Function Clone As Chromosome(Of T)
+  overload: Laga.GeneticAlgorithm.Chromosome`1.Clone*
+  nameWithType.vb: Chromosome(Of T).Clone()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Clone()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone
+  id: System#ICloneable#Clone
+  isEii: true
+  parent: Laga.GeneticAlgorithm.Chromosome`1
+  langs:
+  - csharp
+  - vb
+  name: ICloneable.Clone()
+  nameWithType: Chromosome<T>.ICloneable.Clone()
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.System.ICloneable.Clone()
+  type: Method
+  source:
+    id: System.ICloneable.Clone
+    path: C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\Chromosome.cs
+    startLine: 154
+  assemblies:
+  - Laga
+  namespace: Laga.GeneticAlgorithm
+  syntax:
+    content: object ICloneable.Clone()
+    return:
+      type: System.Object
+    content.vb: Function System.ICloneable.Clone As Object Implements ICloneable.Clone
+  overload: Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone*
+  implements:
+  - System.ICloneable.Clone
+  nameWithType.vb: Chromosome(Of T).System.ICloneable.Clone()
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).System.ICloneable.Clone()
+  name.vb: System.ICloneable.Clone()
+references:
+- uid: Laga.GeneticAlgorithm
+  commentId: N:Laga.GeneticAlgorithm
+  name: Laga.GeneticAlgorithm
+  nameWithType: Laga.GeneticAlgorithm
+  fullName: Laga.GeneticAlgorithm
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Count*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Count
+  name: Count
+  nameWithType: Chromosome<T>.Count
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Count
+  nameWithType.vb: Chromosome(Of T).Count
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Laga.GeneticAlgorithm.Chromosome`1.chromosome*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.chromosome
+  name: chromosome
+  nameWithType: Chromosome<T>.chromosome
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.chromosome
+  nameWithType.vb: Chromosome(Of T).chromosome
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).chromosome
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Laga.GeneticAlgorithm.Chromosome`1.#ctor*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.#ctor
+  name: Chromosome
+  nameWithType: Chromosome<T>.Chromosome
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chromosome
+  nameWithType.vb: Chromosome(Of T).Chromosome
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chromosome
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Fitness*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Fitness
+  name: Fitness
+  nameWithType: Chromosome<T>.Fitness
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fitness
+  nameWithType.vb: Chromosome(Of T).Fitness
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fitness
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Laga.GeneticAlgorithm.Chromosome`1.GetDNA*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.GetDNA
+  name: GetDNA
+  nameWithType: Chromosome<T>.GetDNA
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.GetDNA
+  nameWithType.vb: Chromosome(Of T).GetDNA
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).GetDNA
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Laga.GeneticAlgorithm.Chromosome`1.InsertDNA*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.InsertDNA
+  name: InsertDNA
+  nameWithType: Chromosome<T>.InsertDNA
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.InsertDNA
+  nameWithType.vb: Chromosome(Of T).InsertDNA
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).InsertDNA
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Add*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Add
+  name: Add
+  nameWithType: Chromosome<T>.Add
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Add
+  nameWithType.vb: Chromosome(Of T).Add
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Add
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToString*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToString
+  name: ToString
+  nameWithType: Chromosome<T>.ToString
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToString
+  nameWithType.vb: Chromosome(Of T).ToString
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToList*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToList
+  name: ToList
+  nameWithType: Chromosome<T>.ToList
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToList
+  nameWithType.vb: Chromosome(Of T).ToList
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToList
+- uid: Laga.GeneticAlgorithm.Chromosome`1.ToArray*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToArray
+  name: ToArray
+  nameWithType: Chromosome<T>.ToArray
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToArray
+  nameWithType.vb: Chromosome(Of T).ToArray
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates
+  name: Fisher_Yates
+  nameWithType: Chromosome<T>.Fisher_Yates
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fisher_Yates
+  nameWithType.vb: Chromosome(Of T).Fisher_Yates
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fisher_Yates
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Clone*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Clone
+  name: Clone
+  nameWithType: Chromosome<T>.Clone
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Clone
+  nameWithType.vb: Chromosome(Of T).Clone
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Clone
+- uid: Laga.GeneticAlgorithm.Chromosome`1
+  commentId: T:Laga.GeneticAlgorithm.Chromosome`1
+  parent: Laga.GeneticAlgorithm
+  name: Chromosome<T>
+  nameWithType: Chromosome<T>
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>
+  nameWithType.vb: Chromosome(Of T)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T)
+  name.vb: Chromosome(Of T)
+  spec.csharp:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Laga.GeneticAlgorithm.Chromosome`1
+    name: Chromosome
+    nameWithType: Chromosome
+    fullName: Laga.GeneticAlgorithm.Chromosome
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone*
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone
+  name: ICloneable.Clone
+  nameWithType: Chromosome<T>.ICloneable.Clone
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.System.ICloneable.Clone
+  nameWithType.vb: Chromosome(Of T).System.ICloneable.Clone
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).System.ICloneable.Clone
+  name.vb: System.ICloneable.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    nameWithType: ICloneable.Clone
+    fullName: System.ICloneable.Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    nameWithType: ICloneable.Clone
+    fullName: System.ICloneable.Clone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
