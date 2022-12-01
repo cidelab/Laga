@@ -2,6 +2,9 @@
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Class to build and analize shoeboxes types.
+    /// </summary>
     public class Shoebox : Brep
     {
         private Point3d pa, pb, pc, pd, pe, pf, pg, ph;

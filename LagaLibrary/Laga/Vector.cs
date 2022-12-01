@@ -133,7 +133,7 @@ namespace Laga.Geometry
         /// <param name="vectorA">Vector A</param>
         /// <param name="vectorB">Vector B</param>
         /// <param name="vectorC">Vector C</param>
-        /// <returns>Z coordinate of the cross product</returns>
+        /// <returns>double, z coordinate</returns>
         public static double CrossProductLength(Vector vectorA, Vector vectorB, Vector vectorC)
         {
             double ABx = vectorA.x - vectorB.x;
@@ -221,7 +221,7 @@ namespace Laga.Geometry
         /// <param name="vectorA"></param>
         /// <param name="vectorB"></param>
         /// <param name="vectorC"></param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double DotProduct(Vector vectorA, Vector vectorB, Vector vectorC)
         {
             double ABx = vectorA.x - vectorB.x;
@@ -347,7 +347,7 @@ namespace Laga.Geometry
         /// <param name="pointA">The start point</param>
         /// <param name="pointB">The end point</param>
         /// <param name="span">the approximate separation between points</param>
-        /// <returns>List<Vector></returns>
+        /// <returns><![CDATA[List<Vector>]]></returns>
         public static List<Vector> Interpolation(Vector pointA, Vector pointB, double span)
         {
             List<Vector> result = new List<Vector>();

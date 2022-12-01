@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Simple Manipulations on Rhino Surfaces
+    /// </summary>
     public class SurfaceData
     {
         private Interval interval = new Interval(0, 1);
@@ -68,7 +71,7 @@ namespace LagaRhino
         /// <summary>
         /// Return a Quad Pattern division
         /// </summary>
-        /// <returns>List<Polyline></returns>
+        /// <returns><![CDATA[List<Polyline>]]></returns>
         public List<Polyline> QuadPattern()
         {
             List<Polyline> polList = new List<Polyline>();

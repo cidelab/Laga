@@ -39,7 +39,7 @@ namespace LagaRhino
         /// Makes a deep copy from a list of curves.
         /// </summary>
         /// <param name="lstToCopy">The list to copy</param>
-        /// <returns>List<Curve></returns>
+        /// <returns><![CDATA[List<Curve>]]></returns>
         public static List<Curve> DeepCopyListCurve(List<Curve> lstToCopy)
         {
             List<Curve> lstDeepCopy = new List<Curve>();
@@ -57,7 +57,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="crv">the curve in the analysis</param>
         /// <param name="t">the t param on the curve</param>
-        /// <returns></returns>
+        /// <returns>Plane</returns>
         public static Plane CorrectPlaneOnCurveByParam(Curve crv, double t)
         {
             crv.PerpendicularFrameAt(t, out Plane pl);

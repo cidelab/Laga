@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace LagaRhino
 {
+    /// <summary>
+    /// Simple Manipulations on Rhino Points
+    /// </summary>
     public class PointData
     {
         /// <summary>
@@ -89,7 +92,7 @@ namespace LagaRhino
         /// Group points by Z coordinate.
         /// </summary>
         /// <param name="points">the array of points to group</param>
-        /// <returns>List<Point3d[]></returns>
+        /// <returns><![CDATA[List<Point3d[]>]]></returns>
         public static List<Point3d[]> GroupByZ(Point3d[] points)
         {
             points = points.OrderBy(p => p.Z).ToArray();

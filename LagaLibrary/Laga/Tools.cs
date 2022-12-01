@@ -11,11 +11,11 @@ namespace Laga.GeneticAlgorithm
     /// </summary>
     public static class Tools
     {
-       /// <summary>
-       /// Creates a report based on a list of data.
-       /// </summary>
-       /// <param name="listValues">the Values used to create the report</param>
-       /// <returns>List<string></string></returns>
+        /// <summary>
+        /// Creates a report based on a list of data.
+        /// </summary>
+        /// <param name="listValues">the Values used to create the report</param>
+        /// <returns><![CDATA[List<string>]]></returns>
         public static List<string> DataReport<T>(List<T> listValues)
         {
             listValues.Sort();
