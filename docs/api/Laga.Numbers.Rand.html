@@ -111,17 +111,159 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Rand</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Laga_Numbers_Rand_RandomNumbers_" data-uid="Laga.Numbers.Rand.RandomNumbers*"></a>
-  <h4 id="Laga_Numbers_Rand_RandomNumbers_System_Int32_System_Double_System_Double_" data-uid="Laga.Numbers.Rand.RandomNumbers(System.Int32,System.Double,System.Double)">RandomNumbers(Int32, Double, Double)</h4>
+  <a id="Laga_Numbers_Rand__ctor_" data-uid="Laga.Numbers.Rand.#ctor*"></a>
+  <h4 id="Laga_Numbers_Rand__ctor" data-uid="Laga.Numbers.Rand.#ctor">Rand()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;double&gt; RandomNumbers(int size, double min, double max)</code></pre>
+    <pre><code class="lang-csharp hljs">public Rand()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Laga_Numbers_Rand_DblNumber_" data-uid="Laga.Numbers.Rand.DblNumber*"></a>
+  <h4 id="Laga_Numbers_Rand_DblNumber" data-uid="Laga.Numbers.Rand.DblNumber">DblNumber()</h4>
+  <div class="markdown level1 summary"><p>Random value between 0 and 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DblNumber()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>double</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Numbers_Rand_FltNumber_" data-uid="Laga.Numbers.Rand.FltNumber*"></a>
+  <h4 id="Laga_Numbers_Rand_FltNumber_System_Single_System_Single_" data-uid="Laga.Numbers.Rand.FltNumber(System.Single,System.Single)">FltNumber(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Float Number between a range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FltNumber(float min, float max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value in the range</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value in the range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>float</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Numbers_Rand_IntNumber_" data-uid="Laga.Numbers.Rand.IntNumber*"></a>
+  <h4 id="Laga_Numbers_Rand_IntNumber_System_Int32_System_Int32_" data-uid="Laga.Numbers.Rand.IntNumber(System.Int32,System.Int32)">IntNumber(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Random Integer between a range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IntNumber(int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value in the range</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value in the range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>integer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_Numbers_Rand_Numbers_" data-uid="Laga.Numbers.Rand.Numbers*"></a>
+  <h4 id="Laga_Numbers_Rand_Numbers_System_Int32_System_Double_System_Double_" data-uid="Laga.Numbers.Rand.Numbers(System.Int32,System.Double,System.Double)">Numbers(Int32, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Generate random numbers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] Numbers(int size, double min, double max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,17 +278,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>The amount of random values in the list</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>The minimum value</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>The maximum value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -160,21 +305,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>double[]</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Laga_Numbers_Rand_RandomNumbers_" data-uid="Laga.Numbers.Rand.RandomNumbers*"></a>
-  <h4 id="Laga_Numbers_Rand_RandomNumbers_System_Int32_System_Single_System_Single_" data-uid="Laga.Numbers.Rand.RandomNumbers(System.Int32,System.Single,System.Single)">RandomNumbers(Int32, Single, Single)</h4>
+  <a id="Laga_Numbers_Rand_Numbers_" data-uid="Laga.Numbers.Rand.Numbers*"></a>
+  <h4 id="Laga_Numbers_Rand_Numbers_System_Int32_System_Single_System_Single_" data-uid="Laga.Numbers.Rand.Numbers(System.Int32,System.Single,System.Single)">Numbers(Int32, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Generate random numbers</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float[] RandomNumbers(int size, float min, float max)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float[] Numbers(int size, float min, float max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,13 +341,13 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">min</span></td>
-        <td><p>the minimum value</p>
+        <td><p>The minimum value</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">max</span></td>
-        <td><p>the maximum value</p>
+        <td><p>The maximum value</p>
 </td>
       </tr>
     </tbody>

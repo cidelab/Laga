@@ -174,14 +174,14 @@
   </h3>
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationChr_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationChr_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationChr(System.Int32)">BinaryPopulationChr(Int32)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a binary Population '1','0','1','0','1','1'...</p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Char_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Binary_Char*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Char_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Binary_Char(System.Int32)">Binary_Char(Int32)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char[][] BinaryPopulationChr(int sizeChromosome)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;char&gt; Binary_Char(int size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,8 +195,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of characters in the chromosome</p>
 </td>
       </tr>
     </tbody>
@@ -211,17 +211,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Char</span>[][]</td>
-        <td><p>Population char[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><p>char Population</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationChr_System_Int32__examples">Examples</h5>
-  <p>GenrPopulation pop = new GenrPopulation(5);
-[][] charPop = pop.BinaryPopulationChr(10);</p>
-<p>result:</p>
-<p>Chromosome: 0</p>
+  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Char_System_Int32__examples">Examples</h5>
+  <p>Population pop = new GenrPopulation(5).Binary_Char(10);
+result:
+Chromosome: 0</p>
 <ul>
 <li>0, 1, 1, 1, 0, 0, 1, 0, 1, 0,
 Chromosome: 1</li>
@@ -236,14 +235,14 @@ Chromosome: 4</li>
 
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationInt_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationInt_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.BinaryPopulationInt(System.Int32)">BinaryPopulationInt(Int32)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a binary Population 101011...</p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Integer_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Integer_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer(System.Int32)">Binary_Integer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by 1s and 0s int type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[][] BinaryPopulationInt(int sizeChromosome)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;int&gt; Binary_Integer(int size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,8 +256,8 @@ Chromosome: 4</li>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of integers in the chromosome</p>
 </td>
       </tr>
     </tbody>
@@ -273,16 +272,14 @@ Chromosome: 4</li>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span>[][]</td>
-        <td><p>Population int[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>int Population</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_BinaryPopulationInt_System_Int32__examples">Examples</h5>
-  <pre><code>GenrPopulation pop = new GenrPopulation(5);
-int[][] intPop = pop.BinaryPopulationInt(20);
-
+  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_Binary_Integer_System_Int32__examples">Examples</h5>
+  <pre><code>Population pop = new GenrPopulation(5).Binary_Integer(20);
 result:
 Chromosome: 0
 - 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
@@ -297,15 +294,15 @@ Chromosome: 4
 
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_CharPopulation_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.CharPopulation*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_CharPopulation_System_Int32_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.CharPopulation(System.Int32,System.Int32,System.Int32)">CharPopulation(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Population composed by random chars.
-based on this link: <a href="http://www.asciitable.com/">http://www.asciitable.com/</a></p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Char_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Char*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Char_System_Int32_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Char(System.Int32,System.Int32,System.Int32)">Rand_Char(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by random characters.
+See <a href="http://www.asciitable.com/">this link</a> for more information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char[][] CharPopulation(int sizeChromosome, int start, int end)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;char&gt; Rand_Char(int size, int start, int end)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,20 +316,20 @@ based on this link: <a href="http://www.asciitable.com/">http://www.asciitable.c
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of characters in the chromosome</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">start</span></td>
-        <td><p>the start number for the table, inclusive: Eg: 97</p>
+        <td><p>the start number in the table, inclusive</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">end</span></td>
-        <td><p>the end number for the table, inclusive: Eg: 122</p>
+        <td><p>the end number in the table, exclusive</p>
 </td>
       </tr>
     </tbody>
@@ -347,18 +344,16 @@ based on this link: <a href="http://www.asciitable.com/">http://www.asciitable.c
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Char</span>[][]</td>
-        <td><p>Population char[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><p>char Population</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_CharPopulation_System_Int32_System_Int32_System_Int32__examples">Examples</h5>
+  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Char_System_Int32_System_Int32_System_Int32__examples">Examples</h5>
   <pre><code> 
-GenrPopulation pop = new GenrPopulation(5);
-char[][] charPop = pop.CharPopulation(30, 50, 100);
-
-/// result:
+Population pop = new GenrPopulation(5).Rand_Char(30, 50, 100);
+result:
 Chromosome: 0
 - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
 Chromosome: 1
@@ -372,14 +367,14 @@ Chromosome: 4
 
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_System_Int32_System_Double_System_Double_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Double,System.Double)">NumPopulation(Int32, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Population of random double.</p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Double_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Double*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Double_System_Int32_System_Double_System_Double_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Double(System.Int32,System.Double,System.Double)">Rand_Double(Int32, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by random floats.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double[][] NumPopulation(int sizeChromosome, double min, double max)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;double&gt; Rand_Double(int size, double min, double max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -393,20 +388,20 @@ Chromosome: 4
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of doubles in the chromosome</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">min</span></td>
-        <td><p>The minimum value in the chromosome, inclusive</p>
+        <td><p>min value</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">max</span></td>
-        <td><p>The maximum value in the chromosome, inclusive</p>
+        <td><p>max value</p>
 </td>
       </tr>
     </tbody>
@@ -421,38 +416,22 @@ Chromosome: 4
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span>[][]</td>
-        <td><p>Population double[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>double Population</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_System_Int32_System_Double_System_Double__examples">Examples</h5>
-  <pre><code>GenrPopulation pop = new GenrPopulation(5);
-double[][] dblPop = pop.NumPopulation(12, 0.00, 1.00);
-
-result for double population
-Chromosome: 0
-- 0.134, 0.623, 0.931, 0.896, 0.945, 0.599, 0.824, 0.837, 0.671, 0.081, 0.496, 0.027,
-Chromosome: 1
-- 0.669, 0.725, 0.667, 0.651, 0.073, 0.215, 0.052, 0.92, 0.371, 0.122, 0.734, 0.535,
-Chromosome: 2
-- 0.741, 0.056, 0.469, 0.699, 0.216, 0.727, 0.221, 0.322, 0.825, 0.301, 0.057, 0.775,
-Chromosome: 3
-- 0.884, 0.257, 0.278, 0.461, 0.152, 0.24, 0.929, 0.364, 0.869, 0.415, 0.995, 0.776,
-Chromosome: 4
-- 0.022, 0.403, 0.101, 0.041, 0.528, 0.667, 0.517, 0.012, 0.889, 0.395, 0.155, 0.888,</code></pre>
-
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_System_Int32_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Int32,System.Int32)">NumPopulation(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Population of random int.</p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Rand_float_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_float*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Rand_float_System_Int32_System_Single_System_Single_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_float(System.Int32,System.Single,System.Single)">Rand_float(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by random floats.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[][] NumPopulation(int sizeChromosome, int min, int max)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;float&gt; Rand_float(int size, float min, float max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -466,77 +445,20 @@ Chromosome: 4
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">min</span></td>
-        <td><p>The minimum value in the chromosome, inclusive</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">max</span></td>
-        <td><p>The maximum value in the chromosome, inclusive</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span>[][]</td>
-        <td><p>Population int[][]</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulation_System_Int32_System_Single_System_Single_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulation(System.Int32,System.Single,System.Single)">NumPopulation(Int32, Single, Single)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Population of random float.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[][] NumPopulation(int sizeChromosome, float min, float max)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sizeChromosome</span></td>
-        <td><p>The size of the chromosome</p>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of floats in the chromosome</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">min</span></td>
-        <td><p>The minimum value in the chromosome, inclusive</p>
+        <td><p>min value</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">max</span></td>
-        <td><p>The maximum value in the chromosome, inclusive</p>
+        <td><p>max value</p>
 </td>
       </tr>
     </tbody>
@@ -551,22 +473,79 @@ Chromosome: 4
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span>[][]</td>
-        <td><p>Population float[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><p>float Population</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulationSwap_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulationSwap_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.NumPopulationSwap(System.Int32,System.Int32)">NumPopulationSwap(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Population of random integers, between min and max value.</p>
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Integer_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Integer*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Rand_Integer_System_Int32_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Rand_Integer(System.Int32,System.Int32,System.Int32)">Rand_Integer(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by random integers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[][] NumPopulationSwap(int min, int max)</code></pre>
+    <pre><code class="lang-csharp hljs">public Population&lt;int&gt; Rand_Integer(int size, int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the number of integers in the chromosome</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>int Population</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrPopulation_Shuffle_Integer_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Shuffle_Integer*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_Shuffle_Integer_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.Shuffle_Integer(System.Int32,System.Int32)">Shuffle_Integer(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Genr8 a Population of chromosomes composed by non repeated integers between min and max included.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Population&lt;int&gt; Shuffle_Integer(int min, int max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -581,13 +560,13 @@ Chromosome: 4
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">min</span></td>
-        <td><p>The minimum value in the chromosome, inclusive</p>
+        <td><p>min value</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">max</span></td>
-        <td><p>The maximum value in the chromosome, inclusive</p>
+        <td><p>max value</p>
 </td>
       </tr>
     </tbody>
@@ -602,16 +581,14 @@ Chromosome: 4
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span>[][]</td>
-        <td><p>Population int[][]</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>int Population</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_NumPopulationSwap_System_Int32_System_Int32__examples">Examples</h5>
-  <pre><code>GenrPopulation pop = new GenrPopulation(5);
-int[][] intPop = pop.NumPopulationSwap(0, 10);
-
+  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_Shuffle_Integer_System_Int32_System_Int32__examples">Examples</h5>
+  <pre><code>Population pop = new GenrPopulation(5).Shuffle_Integer(0, 10);
 results
 Chromosome: 0
 - 1, 4, 8, 6, 2, 10, 9, 5, 0, 7, 3,
@@ -623,256 +600,6 @@ Chromosome: 3
 - 9, 1, 4, 6, 10, 2, 7, 5, 8, 0, 3,
 Chromosome: 4
 - 2, 5, 0, 7, 6, 1, 4, 3, 8, 9, 10,</code></pre>
-
-  
-  
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_ObjectPopulationSwap_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_ObjectPopulationSwap_System_Object___System_Single_System_Boolean_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.ObjectPopulationSwap(System.Object[],System.Single,System.Boolean)">ObjectPopulationSwap(Object[], Single, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a random population based on a chromosome of objects[]</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">SeedChromosome</span></td>
-        <td><p>The seed chromosome to genr8 the population</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">percent</span></td>
-        <td><p>the mutation percent in the population</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">InOut</span></td>
-        <td><p>true to include the seed chromosome in the population</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span>[][]</td>
-        <td><p>Population object[][]</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_ObjectPopulationSwap_System_Object___System_Single_System_Boolean__examples">Examples</h5>
-  <pre><code>//This is the Agent class
-public class Agent
-{
-   private double[] awards;
-   public double[] Awards
-   {
-       get { return awards; }
-       set { awards = value; }
-   }
-
-   private readonly string[] labels = new string[] { &quot;forward&quot;, &quot;back&quot;, &quot;left&quot;, &quot;right&quot; };
-   public string[] Labels
-   {
-       get { return labels; }
-   }
-
-   private int[] pos;
-   public int[] Pos
-   {
-       get { return pos; }
-       set { pos = value; }
-   }
-}
-
-Here we will creates the Chromosome...
-GenrPopulation pop = new GenrPopulation(5); //population size...
-
-our agent object...
-object[] agentTrace = new object[pop.SizePop];
-Agent agent;
-
-genrChromosome to helps create the data.
-GenrChromosome dtaChrome = new GenrChromosome(agentTrace.Length); 
-
-in this loop we creates the chromosome.
-for(int i = 0; i &lt; agentTrace.Length ; i++)
-{
-    agent = new Agent();
-    dtaChrome.SizeChrom = 4;
-    agent.Awards = dtaChrome.NumberChromosome(0.00, 1.00);
-    dtaChrome.SizeChrom = 2;
-    agent.Pos = dtaChrome.NumberChromosome(0, 8);
-    agentTrace[i] = agent;
-}
-
-And we creates the population for the agents trajectories. 
-that&apos;s all.
-Object[][] popAgents = pop.ObjectPopulationSwap(agentTrace, 1.0f, true);
-
-result:
-Chromosome(agents trace) : 0
-Position:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54
-Position:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27
-Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
-Position:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53
-Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
-Position:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97
-Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32
-
-Chromosome(agents trace) : 1
-Position:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54
-Position:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97
-Position:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53
-Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
-Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32
-Position:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27
-Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
-
-Chromosome(agents trace) : 2
-Position:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54
-Position:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97
-Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
-Position:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27
-Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32
-Position:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53
-Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
-
-Chromosome(agents trace) : 3
-Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32
-Position:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53
-Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
-Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
-Position:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97
-Position:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54
-Position:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27
-
-Chromosome(agents trace) : 4
-Position:(5, 1) - Awards: forward:0.66, back:0.91, left:0.86, right:0.53
-Position:(5, 2) - Awards: forward:0.39, back:0.93, left:1, right:0.97
-Position:(3, 2) - Awards: forward:0.87, back:0.74, left:0.87, right:0.54
-Position:(2, 7) - Awards: forward:0.53, back:0.32, left:0.53, right:0.27
-Position:(1, 1) - Awards: forward:0.34, back:0.48, left:0.1, right:0.89
-Position:(1, 6) - Awards: forward:0.68, back:0.93, left:0.98, right:0.04
-Position:(0, 5) - Awards: forward:0.83, back:0.71, left:0.57, right:0.32</code></pre>
-
-  
-  
-  <a id="Laga_GeneticAlgorithm_GenrPopulation_PointPopulation_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.PointPopulation*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrPopulation_PointPopulation_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Laga.GeneticAlgorithm.GenrPopulation.PointPopulation(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">PointPopulation(Int32, Single, Single, Single, Single, Single, Single)</h4>
-  <div class="markdown level1 summary"><p>Genr8 a Random population of points [x,y,z]</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">SizeChromosome</span></td>
-        <td><p>The length of the chromosome</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">minX</span></td>
-        <td><p>The minimum value for X coordinate</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">maxX</span></td>
-        <td><p>The maximum value for X coordinate</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">minY</span></td>
-        <td><p>The minimum value for Y coordinate</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">maxY</span></td>
-        <td><p>The maximum value for Y coordinate</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">minZ</span></td>
-        <td><p>The minimum value for Z coordinate</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">maxZ</span></td>
-        <td><p>The maximum value for Z coordinate</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a>[][]</td>
-        <td><p>a population of points</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrPopulation_PointPopulation_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single__examples">Examples</h5>
-  <pre><code>GenrPopulation pop = new GenrPopulation(5);
-point[][] pntPop = pop.PointPopulation(4, 0, 100d, 0d, 100d, 0d, 100d);
-
-result:
-Chromosome: 0
-- (67.06, 80, 95.77), (82.34, 41.8, 81.37), (74.42, 12.58, 46.27), (46.76, 59.55, 56.52),
-Chromosome: 1
-- (56.48, 17.73, 27.91), (10.31, 68.15, 57.53), (62.79, 51.99, 29.98), (58.98, 41.34, 11.13),
-Chromosome: 2
-- (38.26, 63.32, 64.84), (22.49, 65.4, 86.53), (42.75, 16.47, 12.87), (72.12, 70.32, 48.68),
-Chromosome: 3
-- (32.05, 66.44, 0.96), (84.8, 18.4, 99.88), (48.29, 60.83, 37.58), (78.45, 42.13, 16.48),
-Chromosome: 4
-- (79.54, 62.78, 7.36), (84.51, 83.64, 69.42), (1.99, 8.09, 38.65), (84.64, 44.09, 78.47),</code></pre>
 
 </article>
           </div>

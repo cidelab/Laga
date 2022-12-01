@@ -1,0 +1,10 @@
+id: LagaRhino
+language: CSharp
+name:
+  Default: LagaRhino
+qualifiedName:
+  Default: LagaRhino
+type: Assembly
+modifiers: {}
+items: []
+references: {}

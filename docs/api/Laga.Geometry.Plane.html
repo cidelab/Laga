@@ -113,13 +113,13 @@
   
   
   <a id="Laga_Geometry_Plane__ctor_" data-uid="Laga.Geometry.Plane.#ctor*"></a>
-  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord)">Plane(Vectord, Vectord)</h4>
+  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector)">Plane(Vector, Vector)</h4>
   <div class="markdown level1 summary"><p>Plane normal equation, form: PX·N = 0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Plane(Vectord VectorPX, Vectord VectorNormal)</code></pre>
+    <pre><code class="lang-csharp hljs">public Plane(Vector VectorPX, Vector VectorNormal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,13 +132,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">VectorPX</span></td>
         <td><p>Vector from plane origin to a point X in the plane</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">VectorNormal</span></td>
         <td><p>Normal vector to plane</p>
 </td>
@@ -148,13 +148,13 @@
   
   
   <a id="Laga_Geometry_Plane__ctor_" data-uid="Laga.Geometry.Plane.#ctor*"></a>
-  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vectord_Laga_Geometry_Vectord_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vectord,Laga.Geometry.Vectord,Laga.Geometry.Vectord)">Plane(Vectord, Vectord, Vectord)</h4>
+  <h4 id="Laga_Geometry_Plane__ctor_Laga_Geometry_Vector_Laga_Geometry_Vector_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Plane.#ctor(Laga.Geometry.Vector,Laga.Geometry.Vector,Laga.Geometry.Vector)">Plane(Vector, Vector, Vector)</h4>
   <div class="markdown level1 summary"><p>Vector equation plane, form: X = P+tU+sV</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Plane(Vectord OriginPoint, Vectord VectorU, Vectord VectorV)</code></pre>
+    <pre><code class="lang-csharp hljs">public Plane(Vector OriginPoint, Vector VectorU, Vector VectorV)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,19 +167,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">OriginPoint</span></td>
         <td><p>Point in the plane, considered the origin point</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">VectorU</span></td>
         <td><p>First vector in the plane (U)</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">VectorV</span></td>
         <td><p>Second vector in the plane (V)</p>
 </td>
@@ -348,7 +348,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord Norm { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector Norm { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -360,7 +360,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -374,7 +374,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord Origin { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector Origin { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -386,7 +386,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -400,7 +400,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord VectorU { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector VectorU { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -412,7 +412,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -426,7 +426,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord VectorV { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector VectorV { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -438,7 +438,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -448,13 +448,13 @@
   
   
   <a id="Laga_Geometry_Plane_DistanceTo_" data-uid="Laga.Geometry.Plane.DistanceTo*"></a>
-  <h4 id="Laga_Geometry_Plane_DistanceTo_Laga_Geometry_Vectord_" data-uid="Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vectord)">DistanceTo(Vectord)</h4>
+  <h4 id="Laga_Geometry_Plane_DistanceTo_Laga_Geometry_Vector_" data-uid="Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vector)">DistanceTo(Vector)</h4>
   <div class="markdown level1 summary"><p>Distance plane point. If negative, the point is behind the plane.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double DistanceTo(Vectord point)</code></pre>
+    <pre><code class="lang-csharp hljs">public double DistanceTo(Vector point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,7 +467,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">point</span></td>
         <td><p>point to test</p>
 </td>
@@ -493,13 +493,13 @@
   
   
   <a id="Laga_Geometry_Plane_IntersectTo_" data-uid="Laga.Geometry.Plane.IntersectTo*"></a>
-  <h4 id="Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vectord__" data-uid="Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vectord@)">IntersectTo(Line, ref Vectord)</h4>
+  <h4 id="Laga_Geometry_Plane_IntersectTo_Laga_Geometry_Line_Laga_Geometry_Vector__" data-uid="Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@)">IntersectTo(Line, ref Vector)</h4>
   <div class="markdown level1 summary"><p>Plane line intersection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IntersectTo(Line line, ref Vectord intersection)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IntersectTo(Line line, ref Vector intersection)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -518,7 +518,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><span class="parametername">intersection</span></td>
         <td><p>ref Vector Intersection</p>
 </td>
@@ -709,7 +709,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vectord PointAt(double U, double V)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector PointAt(double U, double V)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -745,7 +745,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a></td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a></td>
         <td><p>Vector</p>
 </td>
       </tr>

@@ -109,7 +109,8 @@
   <h6><strong>Assembly</strong>: Laga.dll</h6>
   <h5 id="Laga_GeneticAlgorithm_GenrChromosome_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GenrChromosome</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please try GenrDNA instead&quot;, false)]
+public class GenrChromosome</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -275,6 +276,331 @@ char[] Chrom = chromosome.CharChromosomeBinary();
 result:
 0, 1, 0, 1, 0,</code></pre>
 
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_Char_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_Char*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_Char_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)">DNA_Char(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a random char Chromosome composed by characters.
+See <a href="http://www.asciitable.com/">this link</a> for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;char&gt; DNA_Char(int start, int end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>the start number in the table, inclusive</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>the end number in the table, exclusive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><p>char Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_CharBinary_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_CharBinary" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary">DNA_CharBinary()</h4>
+  <div class="markdown level1 summary"><p>Generates a binary Chromosome of 1s and 0s char type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;char&gt; DNA_CharBinary()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><p>char Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_IntBinary_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_IntBinary_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)">DNA_IntBinary(Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a binary Chromosome of 1s and 0s int type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;int&gt; DNA_IntBinary(int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandDouble_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandDouble_System_Double_System_Double_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)">DNA_RandDouble(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>The method generates a chromosome composed by random doubles between min and max.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;double&gt; DNA_RandDouble(double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The min value in the chromosome</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The max value in the chromosome (excluded)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>double Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandFloat_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandFloat_System_Single_System_Single_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)">DNA_RandFloat(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Generates a float chromosome between min and max</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;float&gt; DNA_RandFloat(float min, float max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandInteger_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_RandInteger_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)">DNA_RandInteger(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a Chromosome composed by random integers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;int&gt; DNA_RandInteger(int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>int Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_GenrChromosome_DNA_ShuffleInteger_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger*"></a>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_DNA_ShuffleInteger_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)">DNA_ShuffleInteger(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generate a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Chromosome&lt;int&gt; DNA_ShuffleInteger(int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>int Chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosome_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome*"></a>
@@ -452,14 +778,31 @@ between min and max.</p>
   
   
   <a id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary*"></a>
-  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary" data-uid="Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary">NumberChromosomeBinary()</h4>
+  <h4 id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary_System_Int32_" data-uid="Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)">NumberChromosomeBinary(Int32)</h4>
   <div class="markdown level1 summary"><p>creates a binary chromosome composed by 1s and 0s;</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[] NumberChromosomeBinary()</code></pre>
+    <pre><code class="lang-csharp hljs">public int[] NumberChromosomeBinary(int size)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -476,7 +819,7 @@ between min and max.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary_examples">Examples</h5>
+  <h5 id="Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary_System_Int32__examples">Examples</h5>
   <pre><code>GenrChromosome chromosome = new GenrChromosome(5);
 int[] Chrom = chromosome.NumberChromosomeBinary();
 

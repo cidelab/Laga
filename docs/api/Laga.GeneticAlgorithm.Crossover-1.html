@@ -219,6 +219,63 @@
   </table>
   
   
+  <a id="Laga_GeneticAlgorithm_Crossover_1_SinglePoint_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePoint*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Crossover_1_SinglePoint_Laga_GeneticAlgorithm_Population__0__System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePoint(Laga.GeneticAlgorithm.Population{`0},System.Int32,System.Int32)">SinglePoint(Population&lt;T&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Performs a Single point crossover over a mating pool or population.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; SinglePoint(Population&lt;T&gt; matPool, int popSize, int cut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><span class="parametername">matPool</span></td>
+        <td><p>The mating pool is formed by candidate solutions to have the highest fitness</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">popSize</span></td>
+        <td><p>the population size</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cut</span></td>
+        <td><p>the index to cut the chromosome</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><p>population</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Laga_GeneticAlgorithm_Crossover_1_SinglePointCrossover_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePointCrossover*"></a>
   <h4 id="Laga_GeneticAlgorithm_Crossover_1_SinglePointCrossover_Laga_GeneticAlgorithm_Chromosome__0__Laga_GeneticAlgorithm_Chromosome__0__System_Int32_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePointCrossover(Laga.GeneticAlgorithm.Chromosome{`0},Laga.GeneticAlgorithm.Chromosome{`0},System.Int32)">SinglePointCrossover(Chromosome&lt;T&gt;, Chromosome&lt;T&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Sinngle Point Chrossover at specific location</p>
@@ -271,58 +328,6 @@
         <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;T&gt;</td>
         <td><p>Chromosome</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Laga_GeneticAlgorithm_Crossover_1_SinglePointCrossover_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePointCrossover*"></a>
-  <h4 id="Laga_GeneticAlgorithm_Crossover_1_SinglePointCrossover_Laga_GeneticAlgorithm_Population__0__System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.Crossover`1.SinglePointCrossover(Laga.GeneticAlgorithm.Population{`0},System.Int32,System.Int32)">SinglePointCrossover(Population&lt;T&gt;, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; SinglePointCrossover(Population&lt;T&gt; matingPool, int PopSize, int cut)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
-        <td><span class="parametername">matingPool</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">PopSize</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">cut</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
-        <td></td>
       </tr>
     </tbody>
   </table>

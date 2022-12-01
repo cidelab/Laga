@@ -408,6 +408,57 @@ char[][] nsPop = ns.Elitism(charPop, 5);</code></pre>
   
   
   <a id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheel_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheel*"></a>
+  <h4 id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheel_Laga_GeneticAlgorithm_Population__0__System_Int32_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheel(Laga.GeneticAlgorithm.Population{`0},System.Int32)">RouletteWheel(Population&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Performs a roulette wheel selection over a population</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; RouletteWheel(Population&lt;T&gt; population, int maxItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><span class="parametername">population</span></td>
+        <td><p>The popolution to perform the roulette wheel selection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxItem</span></td>
+        <td><p>the maximum number of chromosomes in the roulette</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><p>Population</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheel_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheel*"></a>
   <h4 id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheel_System_Char_____System_Int32___System_Int32_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheel(System.Char[][],System.Int32[],System.Int32)">RouletteWheel(Char[][], Int32[], Int32)</h4>
   <div class="markdown level1 summary"><p>The individual fitness is proportional to the possibilities of being selected.</p>
 </div>
@@ -817,13 +868,13 @@ char[][] nsPop = ns.RouletteWheel(charPop, rndFitness, 5);</code></pre>
   
   
   <a id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin*"></a>
-  <h4 id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin_Laga_GeneticAlgorithm_Population__0__System_Int32_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin(Laga.GeneticAlgorithm.Population{`0},System.Int32)">RouletteWheelNonPolinomicMin(Population&lt;T&gt;, Int32)</h4>
-  <div class="markdown level1 summary"><p>Roulette Wheel</p>
+  <h4 id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin_Laga_GeneticAlgorithm_Population__0__System_Single___System_Int32_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin(Laga.GeneticAlgorithm.Population{`0},System.Single[],System.Int32)">RouletteWheelNonPolinomicMin(Population&lt;T&gt;, Single[], Int32)</h4>
+  <div class="markdown level1 summary"><p>The best ranked individuals have more chance to be selected than worst based in a non-polinomic curve (y = 1 / x)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; RouletteWheelNonPolinomicMin(Population&lt;T&gt; population, int maxItem)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; RouletteWheelNonPolinomicMin(Population&lt;T&gt; population, float[] arrFitness, int maxItem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -838,13 +889,19 @@ char[][] nsPop = ns.RouletteWheel(charPop, rndFitness, 5);</code></pre>
       <tr>
         <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
         <td><span class="parametername">population</span></td>
-        <td><p>Popultion</p>
+        <td><p>The Population</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">arrFitness</span></td>
+        <td><p>the Fitness list</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">maxItem</span></td>
-        <td><p>Maximum size in the roulette</p>
+        <td><p>The maximum number of chromosomes selected in the roulette wheel</p>
 </td>
       </tr>
     </tbody>
@@ -860,7 +917,7 @@ char[][] nsPop = ns.RouletteWheel(charPop, rndFitness, 5);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
-        <td><p>Population</p>
+        <td><p>IPopulation</p>
 </td>
       </tr>
     </tbody>
@@ -1042,6 +1099,57 @@ char[][] nsPop = ns.RouletteWheelNonPolinomicMin(charPop, rndFitness, 10);</code
       <tr>
         <td><span class="xref">System.Object</span>[][]</td>
         <td><p>object[][]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin2_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin2*"></a>
+  <h4 id="Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin2_Laga_GeneticAlgorithm_Population__0__System_Int32_" data-uid="Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin2(Laga.GeneticAlgorithm.Population{`0},System.Int32)">RouletteWheelNonPolinomicMin2(Population&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Roulette Wheel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Population&lt;T&gt; RouletteWheelNonPolinomicMin2(Population&lt;T&gt; population, int maxItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><span class="parametername">population</span></td>
+        <td><p>Popultion</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxItem</span></td>
+        <td><p>Maximum size in the roulette</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;T&gt;</td>
+        <td><p>Population</p>
 </td>
       </tr>
     </tbody>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using PointData Class </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using PointData Class ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-pointdata-class">Using PointData Class</h1>
+
+<h2 id="method-mirrorpointquadrant">Method: MirrorPointQuadrant()</h2>
+<p>Mirror a <code>Point3d</code> into the 4 qudrants.</p>
+<h2 id="code-to-implement-mirrorpointquadrant">Code to implement MirrorPointQuadrant()</h2>
+<p>The code is very simple, you will need to include <code>using LagaRhino;</code> at the top of the node.</p>
+<pre><code>using LagaRhino;
+
+  private void RunScript(Point3d pt, ref object A)
+  {
+    A = LagaRhino.PointData.MirrorPointQuadrant(pt);
+  }
+</code></pre>
+<h2 id="result-of-method-mirrorpointquadrant">Result of Method MirrorPointQuadrant()</h2>
+<p><img src="../images/MirrorQuad.gif" alt="Mirror points"></p>
+<p>The animation shows 4 points in each quadrant. The point with the circle, is the one used as seed to mirror the quadrants.</p>
+<h2 id="method-pointquadrant">Method: PointQuadrant()</h2>
+<p>Return in which quadrant the point belongs.</p>
+<h2 id="code-to-implement-pointquadrant">Code to implement PointQuadrant()</h2>
+<p>The code is very simple, you will need to include <code>using LagaRhino;</code> at the top of the node.</p>
+<pre><code>using LagaRhino;
+
+  private void RunScript(Point3d pt, ref object A)
+  {
+    A = LagaRhino.PointData.PointQuadrant(pt);
+  }
+</code></pre>
+<h2 id="result-of-method-pointquadrant">Result of method PointQuadrant()</h2>
+<p><img src="../images/PtQuad.gif" alt="Quad point">
+The oder is +X,+Y &gt; +X,-Y &gt; -X,-Y &gt; -X,+Y</p>
+<h2 id="method-sortpointsbyz">Method: SortPointsByZ()</h2>
+<p>The points are sorted in the Z coordinate, from the minimum to maximum value.</p>
+<h2 id="code-to-implement-sortpointsbyz">Code to implement SortPointsByZ()</h2>
+<p>The code is very simple, you will need to include <code>using LagaRhino;</code> at the top of the node.</p>
+<pre><code>using LagaRhino;
+
+  private void RunScript(List&lt;Point3d&gt; ptList, ref object A)
+  {
+    A = LagaRhino.PointData.SortPointsByZ(ptList.ToArray());
+  }
+
+</code></pre>
+<h2 id="result-of-method-sortpointsbyz">Result of method SortPointsByZ()</h2>
+<p><img src="../images/SortZ.gif" alt="SortedZ"></p>
+<p>The animation shows a circle travelling from the bottom to the top of the sorted list of points.</p>
+<h2 id="method-sortpointsbyxy">Method: SortPointsByXY()</h2>
+<p>Shows how to sort points from the X and then Y coordinate.</p>
+<h2 id="code-to-implement-sortpointsbyxy">Code to implement SortPointsByXY()</h2>
+<p>The code is very simple, you will need to include <code>using LagaRhino;</code> at the top of the node.</p>
+<pre><code>using LagaRhino;
+
+  private void RunScript(List&lt;Point3d&gt; ptList, ref object A)
+  {
+    A = LagaRhino.PointData.SortPointsByXY(ptList.ToArray());
+  }
+</code></pre>
+<h2 id="result-of-method-sortpointsbyxy">Result of method SortPointsByXY()</h2>
+<p><img src="../images/sortPtsXY.jpg" alt="sortedXY"></p>
+<p>The image shows the sorted points. In color the points sorted by X coordinate. the points sorted by Y coordinate change by scale.</p>
+<h2 id="method-twopointsinterpolation">Method: TwoPointsInterpolation()</h2>
+<p>Demonstrate how to interpolate x amount of points between a start and end point.</p>
+<h2 id="code-to-implement-twopointsinterpolation">Code to implement TwoPointsInterpolation()</h2>
+<p>The code is very simple, you will need to include <code>using LagaRhino;</code> at the top of the node.</p>
+<pre><code>using LagaRhino;
+
+  private void RunScript(Point3d ptA, Point3d ptB, double span, ref object A)
+  {
+    A = LagaRhino.PointData.TwoPointsInterpolation(ptA, ptB, span);
+  }
+</code></pre>
+<h2 id="result-of-method-twopointsinterpolation">Result of method TwoPointsInterpolation()</h2>
+<p><img src="../images/Interpolate.gif" alt="sortedXY"></p>
+<p>The span parameter controls the distance between the points in the interpolation.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -73,7 +73,7 @@
   
   <h1 id="LagaRhino_SurfaceData" data-uid="LagaRhino.SurfaceData" class="text-break">Class SurfaceData
   </h1>
-  <div class="markdown level0 summary"><p>Surface data</p>
+  <div class="markdown level0 summary"><p>Simple Manipulations on Rhino Surfaces</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -111,8 +111,90 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SurfaceData</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="LagaRhino_SurfaceData__ctor_" data-uid="LagaRhino.SurfaceData.#ctor*"></a>
+  <h4 id="LagaRhino_SurfaceData__ctor_Rhino_Geometry_Surface_System_Int32_System_Int32_" data-uid="LagaRhino.SurfaceData.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)">SurfaceData(Surface, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Construct a SurfaceData object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceData(Surface surface, int uCount, int vCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rhino.Geometry.Surface</span></td>
+        <td><span class="parametername">surface</span></td>
+        <td><p>The base surface</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">uCount</span></td>
+        <td><p>number of points in u direction</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">vCount</span></td>
+        <td><p>number of points in v direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="LagaRhino_SurfaceData_SurfacePoints_" data-uid="LagaRhino.SurfaceData.SurfacePoints*"></a>
+  <h4 id="LagaRhino_SurfaceData_SurfacePoints" data-uid="LagaRhino.SurfaceData.SurfacePoints">SurfacePoints</h4>
+  <div class="markdown level1 summary"><p>The points on the surface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Point3d&gt; SurfacePoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Rhino.Geometry.Point3d</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="LagaRhino_SurfaceData_CustomPattern_" data-uid="LagaRhino.SurfaceData.CustomPattern*"></a>
+  <h4 id="LagaRhino_SurfaceData_CustomPattern" data-uid="LagaRhino.SurfaceData.CustomPattern">CustomPattern()</h4>
+  <div class="markdown level1 summary"><p>To develop a custom pattern on surface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CustomPattern()</code></pre>
+  </div>
   
   
   <a id="LagaRhino_SurfaceData_PlaneSurfaceAxis_" data-uid="LagaRhino.SurfaceData.PlaneSurfaceAxis*"></a>
@@ -159,11 +241,49 @@
     <tbody>
       <tr>
         <td><span class="xref">Rhino.Geometry.Surface</span></td>
-        <td><p>Planar Surface</p>
+        <td><p>Surface</p>
 </td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="LagaRhino_SurfaceData_QuadPattern_" data-uid="LagaRhino.SurfaceData.QuadPattern*"></a>
+  <h4 id="LagaRhino_SurfaceData_QuadPattern" data-uid="LagaRhino.SurfaceData.QuadPattern">QuadPattern()</h4>
+  <div class="markdown level1 summary"><p>Return a Quad Pattern division</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Polyline&gt; QuadPattern()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Rhino.Geometry.Polyline</span>&gt;</td>
+        <td><p>List&lt;Polyline&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_SurfaceData_TriangularPatter_" data-uid="LagaRhino.SurfaceData.TriangularPatter*"></a>
+  <h4 id="LagaRhino_SurfaceData_TriangularPatter" data-uid="LagaRhino.SurfaceData.TriangularPatter">TriangularPatter()</h4>
+  <div class="markdown level1 summary"><p>To develop Triangular Pattern</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriangularPatter()</code></pre>
+  </div>
 </article>
           </div>
           

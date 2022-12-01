@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/delab/Documents/github/docs",
+  "source_base_path": "C:/Users/delab/Documents/GitHub/docfx/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Chromosome-1.html",
-          "hash": "G0CZEoz7G2xrf4/AVXJ3/9Of0J6n3DtkCFLRwuUDMP4="
+          "hash": "OMC7oUMV6mBfZwntOjfoICma6jMZVPhc48zyCHe4KTI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Crossover-1.html",
-          "hash": "6IdjgwWJuJ+WcPVBvSdsCkrYNVwXwAkXWIVpXGJcaSM="
+          "hash": "jLsKjTbNX/NK0JkhxNkNy/4jdI0ujlaQXK8sp+PUut4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrChromosome.html",
-          "hash": "3CAP0M9E96dqSPzSKdU2wUtuxxy6khfsUfb9HifQb+s="
+          "hash": "Nd+ZWnTP4fUJzvtsswFcPDySZiGHoD8kNR2vZXnA6/k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.GenrDNA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.GeneticAlgorithm.GenrDNA.html",
+          "hash": "bKb5daK3DVtCS/dhdpFEt5gHmbifHMoAZnyuDuUK3Ec="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.html",
-          "hash": "CvQwV6wpXVfdIAFZ8h0GKaEyxpDFw4f7VHD2wQeFOVE="
+          "hash": "YUrx/BBW6DBMvRPfIG12+lQE3jn0TtC61UTLfxsl2eQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +72,7 @@
           "hash": "QBRUuOnZ8zSv9yiC7Ub62cL9Gfp+Pg5+7NokV4t9WOc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.NaturalSelection-1.html",
-          "hash": "76+CJzQwyD8a8S7haqESkEzRt5GArsCbNHK7YWtCs/g="
+          "hash": "/Y3OUyGXFbhhyOiD71/vE5WAFHBXHyZ6JccZG+qwYoc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Population-1.html",
-          "hash": "T+nxdgrlOvwIDkvXn4hR7dMbB7iRWzeoEAtOc1+FKu8="
+          "hash": "y12PlS4S9enjXOhdmTOkLx46Pqo/OEy8F1t7r3B8i+Q="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,19 +108,7 @@
           "hash": "/rUrtNMN8YZDAvKqt3WP+/lc4sX5Yx8EGmU7G2nEQf4="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Laga.GeneticAlgorithm.Replacement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Laga.GeneticAlgorithm.Replacement.html",
-          "hash": "wblYmNKnzoIQ28V+RogcK6NvukhrWJctWRgpKJCc5Eo="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Tools.html",
-          "hash": "llF+yqh2PeVNEjeQl20+JoF9Q6kCZSLGnNnQGBw9iHg="
+          "hash": "00s+hg3VEj92fMrPGwwMzK1eYU4092aEdwEi9lXUn1U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,22 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.html",
-          "hash": "0os7SoNnqG6TshuGaIcC/Keqb/9upis1WmHljZ4or/I="
+          "hash": "MUSIs9kGq0mGhiYIO5f7KGPOG3OyeYZpz4Jhyt6vEcY="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Laga.Geometry.Box.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Laga.Geometry.Box.html",
-          "hash": "YMPE9VIP+EiwH+5T/+4TcdEkINA4UQSG1+oGVAjM3y8="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.Line.html",
-          "hash": "p7pfYliuEE4w0YDP6VeiGqpvPd67P8KCy5IeyxRig50="
+          "hash": "MrzeiL2OrOjbaTnDWsOqbIezvmjORwQzKGJqG3xVkwQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,22 +153,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.Plane.html",
-          "hash": "tQcl6KThxbkKzK1QJ/UscTQI9oAan5MYvtrrFweRqig="
+          "hash": "zbUfTgsXjNG0WISoLouKBkAhguyFggPddLJyEUlpySc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.Geometry.Vectord.yml",
+      "source_relative_path": "api/Laga.Geometry.Vector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.Geometry.Vectord.html",
-          "hash": "xnyRZ0poh7/I5fBPxzi7GLrvbpE21Df9HqkulTnsjC4="
+          "relative_path": "api/Laga.Geometry.Vector.html",
+          "hash": "3iOBD59/8aXMjjq87OySMblMWXeIi16Wp3sWB7xMeG8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.html",
-          "hash": "7y+ooFGaFOwAf3+dHFlPTHv5FWrTHMUyWjstjcVODgQ="
+          "hash": "Y9Ny9fSY4zn65MmfnoBSY0NroypIOdc/5f8A5LEo5G8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,34 +189,22 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.IODataFolder.html",
-          "hash": "vmCOQBP/AikvduTgIJHk23EWqrEtiL3k2LyJc1gP76k="
+          "hash": "0gWzxE7cvmKIFnkcsVEfFt+IEU0hw+7eQlfDILOG5uE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.IO.IOExcelRead.yml",
+      "source_relative_path": "api/Laga.IO.IOGifWriter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.IO.IOExcelRead.html",
-          "hash": "cep7hTHSuQiYd3RoGPqlKkBZT39g50w+2TrIHNyf2vY="
+          "relative_path": "api/Laga.IO.IOGifWriter.html",
+          "hash": "rYHLAMZbiRPLmYrFCFUpK7jGEQUlOBrAI3klWz2aOSE="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Laga.IO.IOExcelWrite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Laga.IO.IOExcelWrite.html",
-          "hash": "7uwQ8YOptG8srrCV+QcobuEKnHBYGXGPVJkOsuLoYGw="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +216,7 @@
           "hash": "M3oAqYqAzoqUmDLm5bhHRb88vamFMLGJDnDnR5txAtc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,7 +228,7 @@
           "hash": "2i8NkxcKP/eCh4sKZzOFvThzxqkJE+8pBVFr8xu43xY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.html",
-          "hash": "858Cj++X0fbFhkHgiE8skAnATemNRm6LsbRnxp5VBc4="
+          "hash": "JPBhzZgkT4NPHtlOrusBNvOatLknnlB9KvnhLv+zyWI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.Function.html",
-          "hash": "Iu/vKugcpxgR5EbAo/7zq3As5pWetBQOCzxNgCYr8x0="
+          "hash": "Sh45fZRxbPX2YtPJbVvo4hK+2Jg4KASK2ESiCLq9nCY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -285,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.Rand.html",
-          "hash": "7rFm73UOqo3zm47VVs48tAbgwfHABGH3yUrccImCWw8="
+          "hash": "ZE5dcHaZHhNG/TlwWl6Tq2kltDWqXLJf6OXdjVSLVhw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,7 +276,7 @@
           "hash": "qDWaGNOkd6uyIfPLpGGOXI1OqN5w3qy1tuVs5qu1vxY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaRhino.CurveData.html",
-          "hash": "f5kX31WoZyKWgN2TiDmhQBjTCyRi9P9ONoAQ/lg+iC0="
+          "hash": "9QnD90hmW+zHG+7FPCPVButfgDF4gzfWYV2v0/Shx2o="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,22 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaRhino.LineCurveData.html",
-          "hash": "ovfau1L3TIzZs4smpMuE1NPSetOAlpWMd70GVjJtQsE="
+          "hash": "bphhw7ai/yEfYhpYscBdqinz6IbuU622M81g2ptyiiY="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.PlaneData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaRhino.PlaneData.html",
-          "hash": "4r3vKClVMIQIPfdpyXLsEef0DoBeO89yBpukOKDWIrw="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,10 +309,22 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaRhino.PointData.html",
-          "hash": "m1S8Tm+Wz5+snLH8CsA9CkxKW8M2g4NhbddBSMYk/WM="
+          "hash": "fzYDxa+xa0JN02mfK36VQ8A9E4zw6FQVccU67elZQxo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LagaRhino.Shoebox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LagaRhino.Shoebox.html",
+          "hash": "KZDtUiLKzBcySzSl6DHCWCuvC3cMxAPRdGpxJjEdDUw="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaRhino.SurfaceData.html",
-          "hash": "z7mqxQUtMRh+Eeg/WfFHfZgCuMirIDNLh1cLKcH88ww="
+          "hash": "YqgFeFLKJSiTFBatpH0kulk/YhxXKtA2UfqwA+WjJv8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,70 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/LagaRhino.html",
-          "hash": "lZ8QtZH4Oe15BIqrUdseWRUh01IV7YjlMLhoo6UYeCU="
+          "hash": "JZykkUIdooAYNI+RHl7a/gk4NcNHjued3sivAoCWaj4="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Draw.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaUnity.Draw.html",
-          "hash": "+XHWt7ZhtSI1TeD4grAggF0KseBSkeDhNGtbp6ETkhE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Line.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaUnity.Line.html",
-          "hash": "4wV5U5+eXwm+/zVzgBWlwMOPthhyo7pT+0+f9hcGJWo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Polygon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaUnity.Polygon.html",
-          "hash": "lEz/dp2XHqgpvZkMpcBibeMgDoKDESDVHDYm4DXIE5s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.Vectorf.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaUnity.Vectorf.html",
-          "hash": "ObbAe/IPubx6cHyrJ/7SUPdB1PIlGxXAMhP9QkUxeyk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LagaUnity.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LagaUnity.html",
-          "hash": "bUryfBL5YATtw7ZqJRG/n0aMQJupt9ZD7OdBc2xrGCY="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -441,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "XvFsz+xHrGjSGDauyQKpxXjK2A2x89uc3G+Go65mf/A="
+          "hash": "xs0kdTpd+XSyu6aT/JXVl07XZq2/UTtfJ5x7P7Zp4LQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -453,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "JLYPlA0XRsNmhX56VNNCI8xexqI7h2RkDJqJMwhs8iY="
+          "hash": "UbM8HhzPpJaxByafZqN8MQPYgrjoJDTUQLO1M/SYFno="
         }
       },
       "is_incremental": false,
@@ -509,6 +425,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "ZRJCs6M9DVPASjKEjIDtOIoYDq80of2VQM20+cTQzGg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/mutation.md",
       "output": {
         ".html": {
@@ -550,6 +478,17 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "MrY5VJAWOqz4zE6rg9haj+7Ie66t+XevaBteIGzxpi8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Axis.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Axis.gif"
         }
       },
       "is_incremental": false,
@@ -601,10 +540,65 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Interpolate.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Interpolate.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaGithub.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaGithub.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/LagaLogo.png",
       "output": {
         "resource": {
           "relative_path": "images/LagaLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaNuget.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaNuget.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaRhinoStep1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaRhinoStep1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LagaRhinoStep2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaRhinoStep2.jpg"
         }
       },
       "is_incremental": false,
@@ -634,6 +628,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/LagaUML2022.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LagaUML2022.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/LagaWelcome.jpg",
       "output": {
         "resource": {
@@ -649,6 +654,94 @@
       "output": {
         "resource": {
           "relative_path": "images/Math2-spacesearch.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MirrorQuad.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/MirrorQuad.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/OldArchitecture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/OldArchitecture.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/PlaneSrf.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/PlaneSrf.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/PlaneVectorOK.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/PlaneVectorOK.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/PointsCD.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/PointsCD.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/PtQuad.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/PtQuad.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/SortZ.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/SortZ.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/SrfQuad.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/SrfQuad.gif"
         }
       },
       "is_incremental": false,
@@ -821,6 +914,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/sortPtsXY.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/sortPtsXY.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/spiral 3.jpg",
       "output": {
         "resource": {
@@ -869,7 +973,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jvY2aDLzzJO4zpo/CENnUfiUCp1t/3z5xr/2B7bPMqQ="
+          "hash": "CsLg02T32mt/Nf1UvfcPEm++iCmoYod2A4C9Pcojwqw="
         }
       },
       "is_incremental": true,
@@ -881,10 +985,94 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "zBa3hoxMuJaw0FAypc/TfjZhSdX1sd1rlyjw4WL/BSo="
+          "hash": "EBCnzTNXstqH5Z6S/+yBI2ye4Tj8pzsUwepT2yOBuQk="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/ChromosomeExamples.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/ChromosomeExamples.html",
+          "hash": "dwHthFHAfX5vA3HTrjhcPv6NYvOeieKaEz3Y58AaCuI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/CurveData.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/CurveData.html",
+          "hash": "sy2vNImyBw71hUBJV88epjUNYsbN7duQlWfwW0udkpo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/LagaRhino.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/LagaRhino.html",
+          "hash": "1m6oSZqlMfNeP1t9O7XmB2PgJnOtEsAgdPIKuU5Ww6k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/LineCurveData.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/LineCurveData.html",
+          "hash": "5KemsaBRFBYFUSzI16ETkdK5iHslPtG9vhElLSxK99Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/PointData.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/PointData.html",
+          "hash": "B8t+6aCXdzdyFp9GpYjybQ/rWWt6oyawlljxtEgadIo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/PopulationExamples.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/PopulationExamples.html",
+          "hash": "cxdJ+krqS4hesOVN0ezUUUAlwna7J5uoPdG2+d1p/W0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/SurfaceData.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/SurfaceData.html",
+          "hash": "iFbP48fOkntT0cSJl27/PZOjWQWinzbErqlBfaVYOEs="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -905,7 +1093,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/intro.html",
-          "hash": "BeBPOxWgmepG6vyoAOlvVavl/GKKtYcTDs2F9AuSYC4="
+          "hash": "GiwR2zL/0rP4qjxnGgfAK+FZlnRhwZfgFNAoTgqre/Q="
         }
       },
       "is_incremental": true,
@@ -965,7 +1153,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/toc.html",
-          "hash": "2z9+R1+GcVilW7FJ8785LkbaJ2AacdWv5u+i5Wmk3+Q="
+          "hash": "9wS+azGvoI0uDht4vFq8qd8hc+sQQ/oEAaqZjBNIcBw="
         }
       },
       "is_incremental": false,
@@ -984,14 +1172,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 15,
-          "skipped_file_count": 15
+          "total_file_count": 23,
+          "skipped_file_count": 23
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 36,
-          "skipped_file_count": 3
+          "total_file_count": 29,
+          "skipped_file_count": 29
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

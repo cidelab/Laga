@@ -81,11 +81,12 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Chromosome&lt;T&gt;</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -109,7 +110,7 @@
   <h6><strong>Assembly</strong>: Laga.dll</h6>
   <h5 id="Laga_GeneticAlgorithm_Chromosome_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Chromosome&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Chromosome&lt;T&gt; : ICloneable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -224,7 +225,7 @@
   
   <a id="Laga_GeneticAlgorithm_Chromosome_1_Count_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Count*"></a>
   <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Count" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Count">Count</h4>
-  <div class="markdown level1 summary"><p>The size of the chromosome</p>
+  <div class="markdown level1 summary"><p>The size of the chromosome++</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -305,33 +306,15 @@
   </table>
   
   
-  <a id="Laga_GeneticAlgorithm_Chromosome_1_Chr2Str_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Chr2Str*"></a>
-  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Chr2Str_System_String_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Chr2Str(System.String)">Chr2Str(String)</h4>
-  <div class="markdown level1 summary"><p>Converts DNA Chromosome to a String</p>
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Clone_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Clone*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Clone" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Make a deep copy from a chromosome.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Chr2Str(string sep)</code></pre>
+    <pre><code class="lang-csharp hljs">public Chromosome&lt;T&gt; Clone()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sep</span></td>
-        <td><p>separation</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -342,12 +325,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>string</p>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Chromosome-1.html">Chromosome</a>&lt;T&gt;</td>
+        <td><p>Chromosome</p>
 </td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_Fisher_Yates_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_Fisher_Yates" data-uid="Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates">Fisher_Yates()</h4>
+  <div class="markdown level1 summary"><p>Fisher_Yates algorithm for the chromosome</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fisher_Yates()</code></pre>
+  </div>
   
   
   <a id="Laga_GeneticAlgorithm_Chromosome_1_GetDNA_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.GetDNA*"></a>
@@ -428,6 +422,120 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToArray_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToArray*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToArray" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p>Convert the chromosome in Array;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToList_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToList*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToList" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToList">ToList()</h4>
+  <div class="markdown level1 summary"><p>Convert the chromosome in a list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; ToList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><p>List</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_ToString_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToString*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_ToString" data-uid="Laga.GeneticAlgorithm.Chromosome`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Chromosome to String</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Laga_GeneticAlgorithm_Chromosome_1_System_ICloneable_Clone_" data-uid="Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Chromosome_1_System_ICloneable_Clone" data-uid="Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
 </article>
           </div>
           

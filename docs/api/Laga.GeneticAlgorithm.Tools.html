@@ -214,7 +214,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>List<string></string></p>
+        <td><p>List&lt;string&gt;</p>
 </td>
       </tr>
     </tbody>
@@ -492,83 +492,6 @@
   </table>
   
   
-  <a id="Laga_GeneticAlgorithm_Tools_GetRandomNumber_" data-uid="Laga.GeneticAlgorithm.Tools.GetRandomNumber*"></a>
-  <h4 id="Laga_GeneticAlgorithm_Tools_GetRandomNumber" data-uid="Laga.GeneticAlgorithm.Tools.GetRandomNumber">GetRandomNumber()</h4>
-  <div class="markdown level1 summary"><p>Random number</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double GetRandomNumber()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Laga_GeneticAlgorithm_Tools_GetRandomNumber_" data-uid="Laga.GeneticAlgorithm.Tools.GetRandomNumber*"></a>
-  <h4 id="Laga_GeneticAlgorithm_Tools_GetRandomNumber_System_Int32_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.GetRandomNumber(System.Int32,System.Int32)">GetRandomNumber(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Random integer number between range</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetRandomNumber(int min, int max)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">min</span></td>
-        <td><p>int</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">max</span></td>
-        <td><p>int</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>int</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Laga_GeneticAlgorithm_Tools_MinMaxValue_" data-uid="Laga.GeneticAlgorithm.Tools.MinMaxValue*"></a>
   <h4 id="Laga_GeneticAlgorithm_Tools_MinMaxValue__1___0___" data-uid="Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])">MinMaxValue&lt;T&gt;(T[])</h4>
   <div class="markdown level1 summary"><p>Return the Min and Max values from an Array.</p>
@@ -637,7 +560,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int[] Mom_Dad(int lengthPop, float percent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int[] Mom_Dad(int lengthPop, float percent = 0.5F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -682,13 +605,13 @@
   
   
   <a id="Laga_GeneticAlgorithm_Tools_Parse_" data-uid="Laga.GeneticAlgorithm.Tools.Parse*"></a>
-  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vectord___System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vectord[],System.Int32)">Parse(Vectord[], Int32)</h4>
+  <h4 id="Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vector___System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)">Parse(Vector[], Int32)</h4>
   <div class="markdown level1 summary"><p>Round the location of a laga point, based on the round number</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] Parse(Vectord[] points, int round)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string[] Parse(Vector[] points, int round)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -701,7 +624,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Laga.Geometry.Vectord.html">Vectord</a>[]</td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a>[]</td>
         <td><span class="parametername">points</span></td>
         <td><p>The points to round coordinates</p>
 </td>
@@ -912,6 +835,57 @@
   </table>
   
   
+  <a id="Laga_GeneticAlgorithm_Tools_ParseDblToFloat_" data-uid="Laga.GeneticAlgorithm.Tools.ParseDblToFloat*"></a>
+  <h4 id="Laga_GeneticAlgorithm_Tools_ParseDblToFloat_System_Double_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.ParseDblToFloat(System.Double,System.Int32)">ParseDblToFloat(Double, Int32)</h4>
+  <div class="markdown level1 summary"><p>Parse a double to float</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ParseDblToFloat(double dbl, int digits = 3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dbl</span></td>
+        <td><p>the double to convert</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">digits</span></td>
+        <td><p>the numbers to round, default is 3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>float</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Laga_GeneticAlgorithm_Tools_Prefix_" data-uid="Laga.GeneticAlgorithm.Tools.Prefix*"></a>
   <h4 id="Laga_GeneticAlgorithm_Tools_Prefix_System_String_System_Int32_" data-uid="Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)">Prefix(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Generate prefixs.</p>
@@ -1022,7 +996,7 @@ based on this link: <a href="http://www.asciitable.com/">http://www.asciitable.c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static char RandomCharBinary(float thershold)</code></pre>
+    <pre><code class="lang-csharp hljs">public static char RandomCharBinary(float thershold = 0.5F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1066,7 +1040,7 @@ based on this link: <a href="http://www.asciitable.com/">http://www.asciitable.c
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int[] RandomInt(int min, int max, float percent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int[] RandomInt(int min, int max, float percent = 1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

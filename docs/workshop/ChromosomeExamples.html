@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to create Chromosomes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to create Chromosomes ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-create-chromosomes">How to create Chromosomes</h1>
+
+<h2 id="chromosome-logic">Chromosome Logic</h2>
+<p>There are several ways to create chromosomes with Laga. A chromosome is a Class that contains the DNA and the fitness value.
+The simple way is to generate DNA <code>GenrDNA.</code> and assign that data to the chromosome, which is like a container.</p>
+<p>For example, to create a chromosome of non repeated integers you write this:</p>
+<pre><code>Chromosome&lt;int&gt; intChrShuffle = GenrDNA.Shuffle_Integer(0, 6);
+</code></pre>
+<p>The code above will create a chromosome with fitness 0, composed by the numbers between 0 and 6 (the last value is exclusive).</p>
+<p>To assign a fitness value just do the following.</p>
+<pre><code>intChrShuffle.Fitness = 0.5;
+</code></pre>
+<p>Now that chromosome has a fitness of 0.5.</p>
+<h2 id="code-example">Code example</h2>
+<pre><code>//Generating different chromosomes types
+Chromosome&lt;int&gt; intChrShuffle = GenrDNA.Shuffle_Integer(0, 6);
+Chromosome&lt;int&gt; intChrBin = GenrDNA.Binary_Integer(10);
+Chromosome&lt;char&gt; chr = GenrDNA.Rand_Char(10, 50, 100);
+Chromosome&lt;char&gt; chrBin = GenrDNA.Binary_Char(20);
+Chromosome&lt;float&gt; fltChr = GenrDNA.Rand_Float(10, 2f, 90f);
+Chromosome&lt;double&gt; dblChr = GenrDNA.Rand_Double(5, 0, 10);
+
+// methods and examples to manipulate chromosomes
+chr.Fitness = 0.5;
+int size = chr.Count;
+chr.InsertDNA(1, '3');
+chr.Add('0');
+har dnaAt = chr.GetDNA(3);
+</code></pre>
+<p>The Following code is to print the results in the console. Please note that we apply a FisherYates() algorithm to one of the chromosomes.</p>
+<pre><code>Console.WriteLine(&quot;Shuffle integers: &quot; + intChrShuffle.ToString() + &quot; Fitness: &quot; + intChrShuffle.Fitness.ToString());
+Console.WriteLine(&quot;Binary integers: &quot; + intChrBin.ToString() + &quot; Fitness: &quot; + intChrBin.Fitness.ToString() + '\n');
+Console.WriteLine(&quot;Random characters: &quot; + chr.ToString() + &quot; Fitness: &quot; + chr.Fitness.ToString());
+Console.WriteLine(&quot;Binary characters: &quot; + chrBin.ToString() + &quot; Fitness: &quot; + chrBin.Fitness.ToString() + '\n');
+
+Console.WriteLine(&quot;Random floats : &quot; + fltChr.ToString() + &quot; Fitness: &quot; + fltChr.Fitness.ToString());
+fltChr.Fisher_Yates();
+
+Console.WriteLine(&quot;After Shuffle : &quot; + fltChr.ToString() + &quot; Fitness: &quot; + fltChr.Fitness.ToString() + '\n');
+Console.WriteLine(&quot;Random doubles: &quot; + dblChr.ToString() + &quot; Fitness: &quot; + dblChr.Fitness.ToString() + '\n');
+</code></pre>
+<h2 id="results">Results</h2>
+<p>The code will print the following results.</p>
+<pre><code>Shuffle integers: Chr:[4, 0, 5, 6, 2, 3, 1] Fitness: 0
+Binary integers: Chr:[1, 1, 0, 1, 0, 1, 1, 0, 0, 0] Fitness: 0
+
+Random characters: Chr:[U, 3, Y, I, `, U, `, T, C, 3, 0] Fitness: 0.5
+Binary characters: Chr:[0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0] Fitness: 0
+
+Random floats : Chr:[24.08559, 5.616806, 60.53252, 86.56444, 57.70979, 2.671795, 74.89948, 42.93675, 60.72312, 80.84686] Fitness: 0
+After Shuffle : Chr:[60.72312, 86.56444, 80.84686, 42.93675, 57.70979, 74.89948, 2.671795, 5.616806, 60.53252, 24.08559] Fitness: 0
+
+Random doubles: Chr:[7.25883503316847, 1.82007643478926, 0.203841775750668, 9.4951606120426, 7.23720578348134] Fitness: 0
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Powered by <strong><a href="https://designemergente.com/" target="_blank" rel="noopener noreferrer">DESIGNEMERGENTE.COM</a></strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
