@@ -132,7 +132,7 @@ namespace Laga.GeneticAlgorithm
             Chromosome<char> chr = new Chromosome<char>(size);
 
             for (int i = 0; i < size; i++)
-                chr.Add((char)Rand.IntNumber(start, end)); //chr.Add((char)rnd.Next(start, end)); 
+                chr.Add(Rand.Character(start, end)); //chr.Add((char)rnd.Next(start, end)); 
 
             return chr;
         }

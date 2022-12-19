@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -75,6 +76,17 @@ namespace Laga.Numbers
         public static float FltNumber(float min, float max)
         {
             return min + (float)DblNumber() * (max - min);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public static char Character(int start, int end)
+        {
+            return (char)Rand.IntNumber(start, end);
         }
     }
 }
