@@ -37,10 +37,10 @@ namespace Laga.GeneticAlgorithm
             return lstDtaFormat;
         }
         /// <summary>
-        /// Convert a binary chromosome to an integer, base of 2.
+        /// Convert a binary Chr to an integer, base of 2.
         /// </summary>
-        /// <typeparam name="T">chromosome type</typeparam>
-        /// <param name="chromosome">your chromosome</param>
+        /// <typeparam name="T">Chr type</typeparam>
+        /// <param name="chromosome">your Chr</param>
         /// <returns>int</returns>
         public static int BinaryChromosomeToInteger<T>(this T[] chromosome)
         {
@@ -56,13 +56,13 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Extract part of the DNA from a chromosome. 
+        /// Extract part of the DNA from a Chr. 
         /// </summary>
-        /// <typeparam name="T">Any chromosome type</typeparam>
-        /// <param name="chromosome">the chromosome</param>
+        /// <typeparam name="T">Any Chr type</typeparam>
+        /// <param name="chromosome">the Chr</param>
         /// <param name="index">start the extraction</param>
         /// <param name="length">length of the extraction</param>
-        /// <returns>T[] A DNA segment from the original chromosome</returns>
+        /// <returns>T[] A DNA segment from the original Chr</returns>
         public static T[] ExtractDNA<T>(this T[] chromosome, int index, int length)
         {
             T[] result = new T[length];

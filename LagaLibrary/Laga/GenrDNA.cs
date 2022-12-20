@@ -14,11 +14,11 @@ namespace Laga.GeneticAlgorithm
     {
 
         /// <summary>
-        /// The method generates a chromosome composed by random doubles between min and max.
+        /// The method generates a Chr composed by random doubles between min and max.
         /// </summary>
-        /// <param name="size">the total doubles in the chromosome</param>
-        /// <param name="min">The min value in the chromosome</param>
-        /// <param name="max">The max value in the chromosome (excluded)</param>
+        /// <param name="size">the total doubles in the Chr</param>
+        /// <param name="min">The min value in the Chr</param>
+        /// <param name="max">The max value in the Chr (excluded)</param>
         /// <returns>double Chromosome</returns>
         public static Chromosome<double> Rand_Double(int size, double min, double max)
         {
@@ -30,9 +30,9 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Generates a float chromosome between min and max
+        /// Generates a float Chr between min and max
         /// </summary>
-        /// <param name="size">the number of floats in the chromosome</param>
+        /// <param name="size">the number of floats in the Chr</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>float Chromosome</returns>
@@ -49,7 +49,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a Chromosome composed by random integers
         /// </summary>
-        /// <param name="size">the number of characters in the chromosome</param>
+        /// <param name="size">the number of characters in the Chr</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>int Chromosome</returns>
@@ -66,7 +66,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a binary Chromosome of 1s and 0s int type.
         /// </summary>
-        /// /// <param name="size">the number of integers in the chromosome</param> 
+        /// /// <param name="size">the number of integers in the Chr</param> 
         /// <returns>int Chromosome</returns>
         public static Chromosome<int> Binary_Integer(int size)
         {
@@ -107,7 +107,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a binary Chromosome of 1s and 0s char type.
         /// </summary>
-        /// <param name="size">the length in the chromosome</param> 
+        /// <param name="size">the length in the Chr</param> 
         /// <returns>char Chromosome</returns>
         public static Chromosome<char> Binary_Char(int size)
         {
@@ -123,7 +123,7 @@ namespace Laga.GeneticAlgorithm
         /// Generates a random char Chromosome composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
-        /// <param name="size">the length of characters in the chromosome</param>
+        /// <param name="size">the length of characters in the Chr</param>
         /// <param name="start">the start number in the table, inclusive</param>
         /// <param name="end">the end number in the table, exclusive</param>
         /// <returns>char Chromosome</returns>

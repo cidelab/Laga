@@ -15,26 +15,26 @@ namespace Laga.GeneticAlgorithm
         private double fitness;
 
         /// <summary>
-        /// The size of the chromosome++                                                                        
+        /// The size of the Chr++                                                                        
         /// </summary>
         public int Count
         {
             get
             {
-                return chromosome.Count;
+                return Chr.Count;
             }
         }
         /// <summary>
         /// 
         /// </summary>
-        public List<T> chromosome { get; set; }
+        public List<T> Chr { get; set; }
 
         /// <summary>
         /// cons 1
         /// </summary>
         public Chromosome(int size)
         {
-            chromosome = new List<T>(size);
+            Chr = new List<T>(size);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="ListDna"></param>
         public Chromosome(List<T> ListDna)
         {
-            chromosome = ListDna;
+            Chr = ListDna;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         public Chromosome()
         {
-            chromosome = new List<T>();
+            Chr = new List<T>();
         }
 
         /// <summary>
-        /// Get and set the chromosome fitness
+        /// Get and set the Chr fitness
         /// </summary>
         public double Fitness
         {
@@ -76,17 +76,17 @@ namespace Laga.GeneticAlgorithm
         /// <returns>T</returns>
         public T GetDNA(int index)
         {
-            return chromosome[index];
+            return Chr[index];
         }
 
         /// <summary>
-        /// Insert DNA in a chromosome at specific Location
+        /// Insert DNA in a Chr at specific Location
         /// </summary>
-        /// <param name="index">The location in the chromosome</param>
+        /// <param name="index">The location in the Chr</param>
         /// <param name="DNA">The DNA to insert</param>
         public void InsertDNA(int index, T DNA)
         {
-            chromosome[index] = DNA;
+            Chr[index] = DNA;
         }
 
         /// <summary>
@@ -95,7 +95,16 @@ namespace Laga.GeneticAlgorithm
         /// <param name="DNA">The DNA type</param>
         public void Add(T DNA)
         {
-            chromosome.Add(DNA);
+            Chr.Add(DNA);
+        }
+
+        /// <summary>
+        /// Add data as collection into the Chr
+        /// </summary>
+        /// <param name="DNACollection">The collection of data</param>
+        public void AddRange(IEnumerable<T> DNACollection)
+        {
+            Chr.AddRange(DNACollection);
         }
 
         /// <summary>
@@ -104,29 +113,29 @@ namespace Laga.GeneticAlgorithm
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "Chr:[" + string.Join(", ", chromosome) + "]";
+            return string.Join(",", Chr);
         }
 
         /// <summary>
-        /// Convert the chromosome in a list
+        /// Convert the Chr in a list
         /// </summary>
         /// <returns>List</returns>
         public List<T> ToList()
         {
-            return chromosome;
+            return Chr;
         }
 
         /// <summary>
-        /// Convert the chromosome in Array;
+        /// Convert the Chr in Array;
         /// </summary>
         /// <returns>Array</returns>
         public T[] ToArray()
         {
-            return chromosome.ToArray();
+            return Chr.ToArray();
         }
 
         /// <summary>
-        /// Fisher_Yates algorithm for the chromosome
+        /// Fisher_Yates algorithm for the Chr
         /// </summary>
         public void Fisher_Yates() //not working!!!
         {
@@ -146,7 +155,7 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// Make a deep copy from a chromosome.
+        /// Make a deep copy from a Chr.
         /// </summary>
         /// <returns>Chromosome</returns>
         public Chromosome<T> Clone() { return new Chromosome<T>(); }

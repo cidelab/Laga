@@ -47,7 +47,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <typeparamref name="T">The type for chromosome</typeparamref>
+        /// <typeparamref name="T">The type for Chr</typeparamref>
         /// <param name="chromosome"></param>
         public void Add(Chromosome<T> chromosome)
         {
@@ -63,7 +63,7 @@ namespace Laga.GeneticAlgorithm
             pop.RemoveAt(index);
         }
         /// <summary>
-        /// Return the Lower ranked chromosome based on the fitness evaluation
+        /// Return the Lower ranked Chr based on the fitness evaluation
         /// </summary>
         /// <returns></returns>
         public Chromosome<T> Lower()

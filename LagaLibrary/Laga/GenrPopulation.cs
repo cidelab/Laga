@@ -39,7 +39,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random floats.
         /// </summary>
-        /// <param name="size">the number of doubles in the chromosome</param>
+        /// <param name="size">the number of doubles in the Chr</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>double Population</returns>
@@ -55,7 +55,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random floats.
         /// </summary>
-        /// <param name="size">the number of floats in the chromosome</param>
+        /// <param name="size">the number of floats in the Chr</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>float Population</returns>
@@ -71,7 +71,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random integers.
         /// </summary>
-        /// <param name="size">the number of integers in the chromosome</param>
+        /// <param name="size">the number of integers in the Chr</param>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>int Population</returns>
@@ -87,7 +87,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of chromosomes composed by 1s and 0s int type.
         /// </summary>
-        /// <param name="size">the number of integers in the chromosome</param>
+        /// <param name="size">the number of integers in the Chr</param>
         /// <returns>int Population</returns>
         /// <example>
         /// <code>
@@ -148,7 +148,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.
         /// </summary>
-        /// <param name="size">the number of characters in the chromosome</param>
+        /// <param name="size">the number of characters in the Chr</param>
         /// <returns>char Population</returns>
         /// <example>
         /// Population pop = new GenrPopulation(5).Binary_Char(10);
@@ -177,7 +177,7 @@ namespace Laga.GeneticAlgorithm
         /// Genr8 a Population of chromosomes composed by random characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
-        /// <param name="size">the number of characters in the chromosome</param>
+        /// <param name="size">the number of characters in the Chr</param>
         /// <param name="start">the start number in the table, inclusive</param>
         /// <param name="end">the end number in the table, exclusive</param>
         /// <returns>char Population</returns>
@@ -209,11 +209,11 @@ namespace Laga.GeneticAlgorithm
 }
     /*
         /// <summary>
-        /// Genr8 a random population based on a chromosome of objects[]
+        /// Genr8 a random population based on a Chr of objects[]
         /// </summary>
-        /// <param name="SeedChromosome">The seed chromosome to genr8 the population</param>
+        /// <param name="SeedChromosome">The seed Chr to genr8 the population</param>
         /// <param name="percent">the mutation percent in the population</param>
-        /// <param name="InOut">true to include the seed chromosome in the population</param>
+        /// <param name="InOut">true to include the seed Chr in the population</param>
         /// <returns>Population object[][]</returns>
         /// <example>
         /// <code>
@@ -251,7 +251,7 @@ namespace Laga.GeneticAlgorithm
         /// genrChromosome to helps create the data.
         /// GenrChromosome dtaChrome = new GenrChromosome(agentTrace.Length); 
         ///
-        /// in this loop we creates the chromosome.
+        /// in this loop we creates the Chr.
         /// for(int i = 0; i &lt; agentTrace.Length ; i++)
         /// {
         ///     agent = new Agent();
@@ -338,9 +338,9 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random double.
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
-        /// <param name="min">The minimum value in the chromosome, inclusive</param>
-        /// <param name="max">The maximum value in the chromosome, inclusive</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
+        /// <param name="min">The minimum value in the Chr, inclusive</param>
+        /// <param name="max">The maximum value in the Chr, inclusive</param>
         /// <returns>Population double[][]</returns>
         /// <example>
         /// <code>
@@ -363,16 +363,16 @@ namespace Laga.GeneticAlgorithm
         public double[][] NumPopulation(int sizeChromosome, double min, double max)
         {
             double[][] pop = new double[sizePopulation][];
-            double[] chromosome;
+            double[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
             {
-                chromosome = new double[sizeChromosome];
+                Chr = new double[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = min + rnd.NextDouble() * (max - min);
+                    Chr[j] = min + rnd.NextDouble() * (max - min);
                 }
-                pop[i] = chromosome;
+                pop[i] = Chr;
             }
             return pop;
         }
@@ -380,23 +380,23 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random float.
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
-        /// <param name="min">The minimum value in the chromosome, inclusive</param>
-        /// <param name="max">The maximum value in the chromosome, inclusive</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
+        /// <param name="min">The minimum value in the Chr, inclusive</param>
+        /// <param name="max">The maximum value in the Chr, inclusive</param>
         /// <returns>Population float[][]</returns>
         public float[][] NumPopulation(int sizeChromosome, float min, float max)
         {
             float[][] pop = new float[sizePopulation][];
-            float[] chromosome;
+            float[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
             {
-                chromosome = new float[sizeChromosome];
+                Chr = new float[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = (float)(min + rnd.NextDouble() * (max - min));
+                    Chr[j] = (float)(min + rnd.NextDouble() * (max - min));
                 }
-                pop[i] = chromosome;
+                pop[i] = Chr;
             }
             return pop;
         }
@@ -404,23 +404,23 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random int.
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
-        /// <param name="min">The minimum value in the chromosome, inclusive</param>
-        /// <param name="max">The maximum value in the chromosome, inclusive</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
+        /// <param name="min">The minimum value in the Chr, inclusive</param>
+        /// <param name="max">The maximum value in the Chr, inclusive</param>
         /// <returns>Population int[][]</returns>
         public int[][] NumPopulation(int sizeChromosome, int min, int max)
         {
             int[][] pop = new int[sizePopulation][];
-            int[] chromosome;
+            int[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
             {
-                chromosome = new int[sizeChromosome];
+                Chr = new int[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = (int)(min + rnd.NextDouble() * ((max + 1) - min));
+                    Chr[j] = (int)(min + rnd.NextDouble() * ((max + 1) - min));
                 }
-                pop[i] = chromosome;
+                pop[i] = Chr;
             }
             return pop;
         }
@@ -428,8 +428,8 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Population of random integers, between min and max value.
         /// </summary>
-        /// <param name="min">The minimum value in the chromosome, inclusive</param>
-        /// <param name="max">The maximum value in the chromosome, inclusive</param>
+        /// <param name="min">The minimum value in the Chr, inclusive</param>
+        /// <param name="max">The maximum value in the Chr, inclusive</param>
         /// <returns>Population int[][]</returns>
 
         public int[][] NumPopulationSwap(int min, int max)
@@ -442,18 +442,18 @@ namespace Laga.GeneticAlgorithm
             else
             {
                 int capacity = (max - min) + 1;
-                int[] chromosome = new int[capacity];
+                int[] Chr = new int[capacity];
 
                 int count = 0;
                 for (int i = min; i < (min + capacity); ++i)
                 {
-                    chromosome[count] = i;
+                    Chr[count] = i;
                     count++;
                 }
 
                 for (int i = 0; i < sizePopulation; ++i)
                 {
-                    pop[i] = Tools.Fisher_Yates(chromosome);
+                    pop[i] = Tools.Fisher_Yates(Chr);
                 }
                 return pop;
             }
@@ -462,7 +462,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a binary Population 101011...
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
         /// <returns>Population int[][]</returns>
         /// <example>
         /// <code>
@@ -470,24 +470,24 @@ namespace Laga.GeneticAlgorithm
         public int[][] BinaryPopulationInt(int sizeChromosome)
         {
             int[][] pop = new int[sizePopulation][];
-            int[] chromosome;
+            int[] Chr;
 
 
             for (int i = 0; i < sizePopulation; ++i)
             {
-                chromosome = new int[sizeChromosome];
+                Chr = new int[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
                     if (Tools.GetRandomNumber() >= 0.5)
                     {
-                        chromosome[j] = 1;
+                        Chr[j] = 1;
                     }
                     else
                     {
-                        chromosome[j] = 0;
+                        Chr[j] = 0;
                     }
                 }
-                pop[i] = chromosome;
+                pop[i] = Chr;
             }
             return pop;
         }
@@ -495,7 +495,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a binary Population '1','0','1','0','1','1'...
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
         /// <returns>Population char[][]</returns>
         
         public char[][] BinaryPopulationChr(int sizeChromosome)
@@ -520,7 +520,7 @@ namespace Laga.GeneticAlgorithm
         /// Genr8 a Population composed by random chars.
         /// based on this link: http://www.asciitable.com/
         /// </summary>
-        /// <param name="sizeChromosome">The size of the chromosome</param>
+        /// <param name="sizeChromosome">The size of the Chr</param>
         /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns>Population char[][]</returns>
@@ -528,17 +528,17 @@ namespace Laga.GeneticAlgorithm
 
         public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {
-            char[] chromosome;
+            char[] Chr;
             char[][] charPopulation = new char[sizePopulation][];
 
             for (int i = 0; i < sizePopulation; ++i)
             {
-                chromosome = new char[sizeChromosome];
+                Chr = new char[sizeChromosome];
                 for (int j = 0; j < sizeChromosome; ++j)
                 {
-                    chromosome[j] = Tools.RandomChar(start, end);
+                    Chr[j] = Tools.RandomChar(start, end);
                 }
-                charPopulation[i] = chromosome;
+                charPopulation[i] = Chr;
             }
 
             return charPopulation;
@@ -547,7 +547,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Genr8 a Random population of points [x,y,z]
         /// </summary>
-        /// <param name="SizeChromosome">The length of the chromosome</param>
+        /// <param name="SizeChromosome">The length of the Chr</param>
         /// <param name="minX">The minimum value for X coordinate</param>
         /// <param name="maxX">The maximum value for X coordinate</param>
         /// <param name="minY">The minimum value for Y coordinate</param>
@@ -575,18 +575,18 @@ namespace Laga.GeneticAlgorithm
         /// </example>
         public Vectord[][] PointPopulation(int SizeChromosome, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
         {
-            Vectord[] chromosome;
+            Vectord[] Chr;
             Vectord[][] popPoints = new Vectord[sizePopulation][];
 
             for (int i = 0; i < sizePopulation; i++)
             {
-                chromosome = new Vectord[SizeChromosome];
+                Chr = new Vectord[SizeChromosome];
                 for (int j = 0; j < SizeChromosome; j++)
                 {
-                    chromosome[j] = new Vectord(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
+                    Chr[j] = new Vectord(minX + (float)rnd.NextDouble() * (maxX - minX), minY + (float)rnd.NextDouble() * (maxY - minY), minZ + (float)rnd.NextDouble() * (maxZ - minZ));
                 }
 
-                popPoints[i] = chromosome;
+                popPoints[i] = Chr;
             }
             return popPoints;
         }

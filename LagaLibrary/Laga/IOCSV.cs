@@ -68,7 +68,7 @@ namespace Laga.IO
         /// <param name="chromosome">row data to append</param>
         public void AddRowData(Chromosome<string> chromosome)
         {
-            output.AppendLine(string.Join(separator, chromosome.ToList()));
+            output.AppendLine(chromosome.ToString());
         }
 
         /// <summary>

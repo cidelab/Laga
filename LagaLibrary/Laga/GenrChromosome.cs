@@ -15,7 +15,7 @@ namespace Laga.GeneticAlgorithm
         private int size;
 
         /// <summary>
-        /// size of the chromosome
+        /// size of the Chr
         /// </summary>
         public int SizeChrom
         {
@@ -43,26 +43,26 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// the method generates a chromosome composed by random doubles
+        /// the method generates a Chr composed by random doubles
         /// between min and max.
         /// </summary>
-        /// <param name="min">The min value in the chromosome</param>
-        /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
+        /// <param name="min">The min value in the Chr</param>
+        /// <param name="max">The max value in the Chr(exclusive upper bound)</param>
         /// <returns>double[]</returns>
         /// <example> How to implement this class:
         /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(5);
-        /// double[] Chrom = chromosome.NumberChromosome(0.0, 1.0);
+        /// GenrChromosome Chr = new GenrChromosome(5);
+        /// double[] Chrom = Chr.NumberChromosome(0.0, 1.0);
         /// 
         /// result:
         /// 0.207198212485387, 0.253313632334263, 0.566322204920613, 0.735812343068334, 0.479827285036364
         ///
-        /// float[] Chrom = chromosome.NumberChromosome(0.0f, 1.0f);
+        /// float[] Chrom = Chr.NumberChromosome(0.0f, 1.0f);
         /// 
         /// result:
         /// 9.211745E+08, 1.134843E+09, 1.554793E+09, 1.223132E+09, 1.600176E+09
         ///
-        /// int[] Chrom = chromosome.NumberChromosome(0, 10);
+        /// int[] Chrom = Chr.NumberChromosome(0, 10);
         /// 
         /// result: 
         /// 8, 3, 7, 2, 1
@@ -81,10 +81,10 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// The method generates a chromosome composed by random doubles between min and max.
+        /// The method generates a Chr composed by random doubles between min and max.
         /// </summary>
-        /// <param name="min">The min value in the chromosome</param>
-        /// <param name="max">The max value in the chromosome (excluded)</param>
+        /// <param name="min">The min value in the Chr</param>
+        /// <param name="max">The max value in the Chr (excluded)</param>
         /// <returns>double Chromosome</returns>
         public Chromosome<double> DNA_RandDouble(double min, double max)
         {
@@ -99,11 +99,11 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// the method generates a chromosome composed by random floats
+        /// the method generates a Chr composed by random floats
         /// between min and max.
         /// </summary>
-        /// <param name="min">The min value in the chromosome</param>
-        /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
+        /// <param name="min">The min value in the Chr</param>
+        /// <param name="max">The max value in the Chr(exclusive upper bound)</param>
         /// <returns>float[]</returns>
         public float[] NumberChromosome(float min, float max)
         {
@@ -117,7 +117,7 @@ namespace Laga.GeneticAlgorithm
             return chr;
         }
         /// <summary>
-        /// Generates a float chromosome between min and max
+        /// Generates a float Chr between min and max
         /// </summary>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
@@ -135,11 +135,11 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// the method generates a chromosome composed by random integers
+        /// the method generates a Chr composed by random integers
         /// between min and max.
         /// </summary>
-        /// <param name="min">The min value in the chromosome</param>
-        /// <param name="max">The max value in the chromosome(exclusive upper bound)</param>
+        /// <param name="min">The min value in the Chr</param>
+        /// <param name="max">The max value in the Chr(exclusive upper bound)</param>
         /// <returns>int[]</returns>
         public int[] NumberChromosome(int min, int max)
         {
@@ -170,13 +170,13 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// creates a binary chromosome composed by 1s and 0s;
+        /// creates a binary Chr composed by 1s and 0s;
         /// </summary>
         /// <returns> a random list of 1s and 0s</returns>
         /// <example>
         /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(5);
-        /// int[] Chrom = chromosome.NumberChromosomeBinary();
+        /// GenrChromosome Chr = new GenrChromosome(5);
+        /// int[] Chrom = Chr.NumberChromosomeBinary();
         /// 
         /// result:
         /// 1, 1, 0, 1, 1
@@ -216,7 +216,7 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// the method generate a number chromosome composed by non repeated numbers between start and start + size(not inclusive).
+        /// the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
         /// the method is based on integer numbers. this method is designed by combinatorial problems.
         /// </summary>
         /// <param name="min">the minimum value in the sequence</param>
@@ -224,8 +224,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns>a non repeat random integer list</returns>
         /// <example>
         /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(5);
-        /// char[] Chrom = chromosome.NumberChromosomeSwap(0, 4);
+        /// GenrChromosome Chr = new GenrChromosome(5);
+        /// char[] Chrom = Chr.NumberChromosomeSwap(0, 4);
         /// 
         /// results:
         /// 4, 1, 0, 2, 3
@@ -273,13 +273,13 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// Generates a binary chromosome of chars.
+        /// Generates a binary Chr of chars.
         /// </summary>
         /// <returns>a random char list of 1s and 0s</returns>
         /// <example>
         /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(5);
-        /// char[] Chrom = chromosome.CharChromosomeBinary();
+        /// GenrChromosome Chr = new GenrChromosome(5);
+        /// char[] Chrom = Chr.CharChromosomeBinary();
         /// 
         /// result:
         /// 0, 1, 0, 1, 0,
@@ -315,7 +315,7 @@ namespace Laga.GeneticAlgorithm
 
 
         /// <summary>
-        /// Generates an random char chromosome composed by characters.
+        /// Generates an random char Chr composed by characters.
         /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
         /// <param name="start">the start number in the table, inclusive</param>
@@ -323,18 +323,18 @@ namespace Laga.GeneticAlgorithm
         /// <returns>returns a random list of characters</returns>
         /// <example>
         /// <code>
-        /// GenrChromosome chromosome = new GenrChromosome(25);
-        /// char[] Chrom = chromosome.CharChromosome(65, 90);
+        /// GenrChromosome Chr = new GenrChromosome(25);
+        /// char[] Chrom = Chr.CharChromosome(65, 90);
         /// 
         /// result:
         /// E, B, C, N, F, C, O, P, C, H, O, U, Q, U, G, L, K, Z, E, K, X, A, L, B, Q,
         ///
-        /// char[] Chrom = chromosome.CharChromosome(33, 47);
+        /// char[] Chrom = Chr.CharChromosome(33, 47);
         /// 
         /// result
         /// ,, -, !, /, -, ', %, !, %, %, !, /, ,, +, ), *, ), /, |, /, ], +, (, !, +,
         /// 
-        /// char[] Chrom = chromosome.CharChromosome(97, 122);
+        /// char[] Chrom = Chr.CharChromosome(97, 122);
         /// 
         /// result
         /// q, a, h, k, j, d, u, o, d, l, w, b, d, i, l, l, h, c, n, c, s, d, k, r, h,

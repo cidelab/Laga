@@ -315,7 +315,7 @@ namespace Laga.GeneticAlgorithm
         /// A Mutation Algorithm
         /// </summary>
         /// <param name="pop">The population to perform the mutation</param>
-        /// <param name="ChroPercent">the percent of mutation in the chromosome</param>
+        /// <param name="ChroPercent">the percent of mutation in the Chr</param>
         /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns>char[][]</returns>

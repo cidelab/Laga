@@ -39,7 +39,7 @@ namespace Laga.GeneticAlgorithm
         /// <typeparamref name="T">The choromsome type</typeparamref>
         /// <param name="matPool">The mating pool is formed by candidate solutions to have the highest fitness </param>
         /// <param name="popSize">the population size</param>
-        /// <param name="cut">the index to cut the chromosome</param>
+        /// <param name="cut">the index to cut the Chr</param>
         /// <returns>population</returns>
         public static Population<T> SinglePoint(Population<T> matPool, int popSize, int cut)
         {
@@ -130,7 +130,7 @@ namespace Laga.GeneticAlgorithm
         #region Single Point crossover
         
         /// <summary>
-        /// A crossover algorithm performed in a single point of the chromosome.
+        /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
         /// <param name="population">The population to perform the crossover</param>
         /// <param name="percent">Which percent of chromosomes will be croosver</param>
@@ -196,7 +196,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// A crossover algorithm performed in a single point of the chromosome.
+        /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
         /// <param name="population">The population to perform the crossover</param>
         /// <param name="percent">Which percent of chromosomes will be croosver</param>
@@ -244,7 +244,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// A crossover algorithm performed in a single point of the chromosome.
+        /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
         /// <param name="population">The population to perform the crossover</param>
         /// <param name="percent">Which percent of chromosomes will be croosver</param>
@@ -291,7 +291,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// A crossover algorithm performed in a single point of the chromosome.
+        /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
         /// <param name="population">The population to perform the crossover</param>
         /// <param name="percent">Which percent of chromosomes will be croosver</param>
@@ -339,7 +339,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// A crossover algorithm performed in a single point of the chromosome.
+        /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
         /// <param name="population">The population to perform the crossover</param>
         /// <param name="percent">Which percent of chromosomes will be croosver</param>

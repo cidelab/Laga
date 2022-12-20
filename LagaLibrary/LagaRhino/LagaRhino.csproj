@@ -59,6 +59,7 @@
     <ProjectReference Include="..\Laga\Laga.csproj">
       <Project>{5C19906B-8B81-464F-A3B4-A6B44163D527}</Project>
       <Name>Laga</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
