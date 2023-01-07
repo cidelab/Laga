@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Chromosome-1.html",
-          "hash": "OMC7oUMV6mBfZwntOjfoICma6jMZVPhc48zyCHe4KTI="
+          "hash": "mjsYLc5HSi9c2qHliVvlEtar/Mkn602LJcBy2fhMIrc="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Crossover-1.html",
-          "hash": "jLsKjTbNX/NK0JkhxNkNy/4jdI0ujlaQXK8sp+PUut4="
+          "hash": "TEjOHgx3ndhK9Zfay/okZz0ng/HDWOnfn3wsGTIvssM="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrChromosome.html",
-          "hash": "Nd+ZWnTP4fUJzvtsswFcPDySZiGHoD8kNR2vZXnA6/k="
+          "hash": "31cVarjCqUVsdB6mCwsNr7visrJnRZpMWnzzvLTJzj4="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrDNA.html",
-          "hash": "bKb5daK3DVtCS/dhdpFEt5gHmbifHMoAZnyuDuUK3Ec="
+          "hash": "yhA66B3v87o+2wa3zZOwaRRMKyuRtqBarXfehQQOGSg="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrPopulation.html",
-          "hash": "YUrx/BBW6DBMvRPfIG12+lQE3jn0TtC61UTLfxsl2eQ="
+          "hash": "QDNzEZFrTiMXajo5DzPVah4ra3SnrwUCNgAbNksnHGw="
         }
       },
       "is_incremental": true,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Mutation.html",
-          "hash": "QBRUuOnZ8zSv9yiC7Ub62cL9Gfp+Pg5+7NokV4t9WOc="
+          "hash": "BZkiTuI7V8NHRBDO+wUTNN7Fv5KEfhwsLxmbp0Cq9zg="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Population-1.html",
-          "hash": "y12PlS4S9enjXOhdmTOkLx46Pqo/OEy8F1t7r3B8i+Q="
+          "hash": "UZMY5DpV5TrXNf2bTAfj5ZLM/5yN+awKr1ttF588JW0="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Tools.html",
-          "hash": "00s+hg3VEj92fMrPGwwMzK1eYU4092aEdwEi9lXUn1U="
+          "hash": "e1zb77yu5oevonDW06RXWANe2e62v7KpZAD54dFFr1s="
         }
       },
       "is_incremental": true,
@@ -185,11 +185,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.IO.IODataFolder.yml",
+      "source_relative_path": "api/Laga.IO.IOCSV.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.IO.IODataFolder.html",
-          "hash": "0gWzxE7cvmKIFnkcsVEfFt+IEU0hw+7eQlfDILOG5uE="
+          "relative_path": "api/Laga.IO.IOCSV.html",
+          "hash": "3WnPbG2NCZGsjVzBybz0Wobynw/JypaaW/gAZeK43MI="
         }
       },
       "is_incremental": true,
@@ -197,11 +197,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.IO.IOGifWriter.yml",
+      "source_relative_path": "api/Laga.IO.IODataFolder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.IO.IOGifWriter.html",
-          "hash": "rYHLAMZbiRPLmYrFCFUpK7jGEQUlOBrAI3klWz2aOSE="
+          "relative_path": "api/Laga.IO.IODataFolder.html",
+          "hash": "0gWzxE7cvmKIFnkcsVEfFt+IEU0hw+7eQlfDILOG5uE="
         }
       },
       "is_incremental": true,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.html",
-          "hash": "JPBhzZgkT4NPHtlOrusBNvOatLknnlB9KvnhLv+zyWI="
+          "hash": "YKT4bcuJ5OaIW7Ndc5VzOt+e1GYAoqva7ESGqUbKO1Y="
         }
       },
       "is_incremental": true,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.Rand.html",
-          "hash": "ZE5dcHaZHhNG/TlwWl6Tq2kltDWqXLJf6OXdjVSLVhw="
+          "hash": "CQNieKMLDfA/IO0yO+lI1azcvGFqPo2dbwx/r3KIL0o="
         }
       },
       "is_incremental": true,
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "xs0kdTpd+XSyu6aT/JXVl07XZq2/UTtfJ5x7P7Zp4LQ="
+          "hash": "iBbn0zFHK9L2dX9NXtwfgNXsEYVw/Fpo48LECi9wN5s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UbM8HhzPpJaxByafZqN8MQPYgrjoJDTUQLO1M/SYFno="
+          "hash": "D1dkE/qoKXAYHhmfLpCBLGXT4V40JrzwOBsr7wkQmtc="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/fitness.html",
-          "hash": "PMFWzTv5N2qle09ekgQ8T1OTrHLmQ4obUcdOcZUnQ3Q="
+          "hash": "8PZWIE1vWel5Fnwbve1XM4IbY9E+k5cN1jGTxO5/KxY="
         }
       },
       "is_incremental": true,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/gas.html",
-          "hash": "1pPHaPw9gTeVKbuY3odpiSICtnhzxO3/0Fp4/u65n4w="
+          "hash": "tYk2gA7lnR65va5h/FPVF3di1HGFoz6Ia6BTqbJTzWQ="
         }
       },
       "is_incremental": true,
@@ -496,6 +496,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/CSVChromosome.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/CSVChromosome.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/CSVPopulation.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/CSVPopulation.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/Equal.png",
       "output": {
         "resource": {
@@ -529,10 +551,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/GAs biological base.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/GAs biological base.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/GAs.jpg",
       "output": {
         "resource": {
           "relative_path": "images/GAs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/GAs1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/GAs1.jpg"
         }
       },
       "is_incremental": false,
@@ -925,6 +969,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/spaceSearch.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spaceSearch.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/spaceSearch1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/spaceSearch1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/spiral 3.jpg",
       "output": {
         "resource": {
@@ -997,7 +1063,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/ChromosomeExamples.html",
-          "hash": "dwHthFHAfX5vA3HTrjhcPv6NYvOeieKaEz3Y58AaCuI="
+          "hash": "xJpSEo2vEwbnPsO9ITLc7sOzfOPkMx2fhZAZEQKAwXc="
         }
       },
       "is_incremental": true,
@@ -1057,7 +1123,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/PopulationExamples.html",
-          "hash": "cxdJ+krqS4hesOVN0ezUUUAlwna7J5uoPdG2+d1p/W0="
+          "hash": "kbpriOeatnSsKkqXBPwNecX5kOedY6tYZfMHcL6U9q0="
         }
       },
       "is_incremental": true,
@@ -1069,7 +1135,19 @@
       "output": {
         ".html": {
           "relative_path": "workshop/SurfaceData.html",
-          "hash": "iFbP48fOkntT0cSJl27/PZOjWQWinzbErqlBfaVYOEs="
+          "hash": "nb7nD00EJ34eXEWAN40OVITbELcEzw3iK2XiY6fGZ4E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "workshop/WriteCSV.md",
+      "output": {
+        ".html": {
+          "relative_path": "workshop/WriteCSV.html",
+          "hash": "CQTv1e5Rzaz0IDFCZQKEsXKr8gNvqeRvIimIzSdYQ4A="
         }
       },
       "is_incremental": true,
@@ -1129,7 +1207,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/randwalker.html",
-          "hash": "EqXF7QtNytBQ/GUkN/YNAelOmddaSsW3Sn3GP2k2m28="
+          "hash": "B+4GGpfofDYr9QRG5do2Nr6Rpun77opEPwI0vkhnsSc="
         }
       },
       "is_incremental": true,
@@ -1141,7 +1219,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/spirals.html",
-          "hash": "BEC9cS8NGqejFC23npf4GLQiw6ZGdMgddw31BdDLImM="
+          "hash": "iJPs91Md3g+8shdr2Yc4tr5GCymOvZVP+L93P5DXxkA="
         }
       },
       "is_incremental": true,
@@ -1153,7 +1231,7 @@
       "output": {
         ".html": {
           "relative_path": "workshop/toc.html",
-          "hash": "9wS+azGvoI0uDht4vFq8qd8hc+sQQ/oEAaqZjBNIcBw="
+          "hash": "Cb/Cc4hoMRosW8Gn+a0wR0sgSwYc2NHlPgHe8HeSRLs="
         }
       },
       "is_incremental": false,
@@ -1172,7 +1250,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 23,
+          "total_file_count": 24,
           "skipped_file_count": 23
         },
         "ManagedReferenceDocumentProcessor": {

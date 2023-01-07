@@ -65,22 +65,39 @@ references:
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Add
   nameWithType: Chromosome<T>.Add
   nameWithType.vb: Chromosome(Of T).Add
-- uid: Laga.GeneticAlgorithm.Chromosome`1.chromosome
-  name: chromosome
-  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_chromosome
-  commentId: P:Laga.GeneticAlgorithm.Chromosome`1.chromosome
-  fullName: Laga.GeneticAlgorithm.Chromosome<T>.chromosome
-  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).chromosome
-  nameWithType: Chromosome<T>.chromosome
-  nameWithType.vb: Chromosome(Of T).chromosome
-- uid: Laga.GeneticAlgorithm.Chromosome`1.chromosome*
-  name: chromosome
-  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_chromosome_
-  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.chromosome
-  fullName: Laga.GeneticAlgorithm.Chromosome<T>.chromosome
-  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).chromosome
-  nameWithType: Chromosome<T>.chromosome
-  nameWithType.vb: Chromosome(Of T).chromosome
+- uid: Laga.GeneticAlgorithm.Chromosome`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name: AddRange(IEnumerable<T>)
+  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Laga.GeneticAlgorithm.Chromosome`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: AddRange(IEnumerable(Of T))
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Chromosome<T>.AddRange(IEnumerable<T>)
+  nameWithType.vb: Chromosome(Of T).AddRange(IEnumerable(Of T))
+- uid: Laga.GeneticAlgorithm.Chromosome`1.AddRange*
+  name: AddRange
+  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_AddRange_
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.AddRange
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.AddRange
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).AddRange
+  nameWithType: Chromosome<T>.AddRange
+  nameWithType.vb: Chromosome(Of T).AddRange
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Chr
+  name: Chr
+  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Chr
+  commentId: P:Laga.GeneticAlgorithm.Chromosome`1.Chr
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chr
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chr
+  nameWithType: Chromosome<T>.Chr
+  nameWithType.vb: Chromosome(Of T).Chr
+- uid: Laga.GeneticAlgorithm.Chromosome`1.Chr*
+  name: Chr
+  href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Chr_
+  commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Chr
+  fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chr
+  fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chr
+  nameWithType: Chromosome<T>.Chr
+  nameWithType.vb: Chromosome(Of T).Chr
 - uid: Laga.GeneticAlgorithm.Chromosome`1.Clone
   name: Clone()
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Clone
@@ -2537,6 +2554,72 @@ references:
   commentId: N:Laga.IO
   fullName: Laga.IO
   nameWithType: Laga.IO
+- uid: Laga.IO.IOCSV
+  name: IOCSV
+  href: api/Laga.IO.IOCSV.html
+  commentId: T:Laga.IO.IOCSV
+  fullName: Laga.IO.IOCSV
+  nameWithType: IOCSV
+- uid: Laga.IO.IOCSV.#ctor(System.String,System.String[])
+  name: IOCSV(String, String[])
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV__ctor_System_String_System_String___
+  commentId: M:Laga.IO.IOCSV.#ctor(System.String,System.String[])
+  name.vb: IOCSV(String, String())
+  fullName: Laga.IO.IOCSV.IOCSV(System.String, System.String[])
+  fullName.vb: Laga.IO.IOCSV.IOCSV(System.String, System.String())
+  nameWithType: IOCSV.IOCSV(String, String[])
+  nameWithType.vb: IOCSV.IOCSV(String, String())
+- uid: Laga.IO.IOCSV.#ctor(System.String,System.String[],Laga.GeneticAlgorithm.Population{System.String})
+  name: IOCSV(String, String[], Population<String>)
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV__ctor_System_String_System_String___Laga_GeneticAlgorithm_Population_System_String__
+  commentId: M:Laga.IO.IOCSV.#ctor(System.String,System.String[],Laga.GeneticAlgorithm.Population{System.String})
+  name.vb: IOCSV(String, String(), Population(Of String))
+  fullName: Laga.IO.IOCSV.IOCSV(System.String, System.String[], Laga.GeneticAlgorithm.Population<System.String>)
+  fullName.vb: Laga.IO.IOCSV.IOCSV(System.String, System.String(), Laga.GeneticAlgorithm.Population(Of System.String))
+  nameWithType: IOCSV.IOCSV(String, String[], Population<String>)
+  nameWithType.vb: IOCSV.IOCSV(String, String(), Population(Of String))
+- uid: Laga.IO.IOCSV.#ctor(System.String,System.String[],System.Collections.Generic.List{System.Collections.Generic.List{System.String}})
+  name: IOCSV(String, String[], List<List<String>>)
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV__ctor_System_String_System_String___System_Collections_Generic_List_System_Collections_Generic_List_System_String___
+  commentId: M:Laga.IO.IOCSV.#ctor(System.String,System.String[],System.Collections.Generic.List{System.Collections.Generic.List{System.String}})
+  name.vb: IOCSV(String, String(), List(Of List(Of String)))
+  fullName: Laga.IO.IOCSV.IOCSV(System.String, System.String[], System.Collections.Generic.List<System.Collections.Generic.List<System.String>>)
+  fullName.vb: Laga.IO.IOCSV.IOCSV(System.String, System.String(), System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String)))
+  nameWithType: IOCSV.IOCSV(String, String[], List<List<String>>)
+  nameWithType.vb: IOCSV.IOCSV(String, String(), List(Of List(Of String)))
+- uid: Laga.IO.IOCSV.#ctor*
+  name: IOCSV
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV__ctor_
+  commentId: Overload:Laga.IO.IOCSV.#ctor
+  fullName: Laga.IO.IOCSV.IOCSV
+  nameWithType: IOCSV.IOCSV
+- uid: Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome{System.String})
+  name: AddRowData(Chromosome<String>)
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_AddRowData_Laga_GeneticAlgorithm_Chromosome_System_String__
+  commentId: M:Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome{System.String})
+  name.vb: AddRowData(Chromosome(Of String))
+  fullName: Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome<System.String>)
+  fullName.vb: Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome(Of System.String))
+  nameWithType: IOCSV.AddRowData(Chromosome<String>)
+  nameWithType.vb: IOCSV.AddRowData(Chromosome(Of String))
+- uid: Laga.IO.IOCSV.AddRowData*
+  name: AddRowData
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_AddRowData_
+  commentId: Overload:Laga.IO.IOCSV.AddRowData
+  fullName: Laga.IO.IOCSV.AddRowData
+  nameWithType: IOCSV.AddRowData
+- uid: Laga.IO.IOCSV.SaveAndClose
+  name: SaveAndClose()
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_SaveAndClose
+  commentId: M:Laga.IO.IOCSV.SaveAndClose
+  fullName: Laga.IO.IOCSV.SaveAndClose()
+  nameWithType: IOCSV.SaveAndClose()
+- uid: Laga.IO.IOCSV.SaveAndClose*
+  name: SaveAndClose
+  href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_SaveAndClose_
+  commentId: Overload:Laga.IO.IOCSV.SaveAndClose
+  fullName: Laga.IO.IOCSV.SaveAndClose
+  nameWithType: IOCSV.SaveAndClose
 - uid: Laga.IO.IODataFolder
   name: IODataFolder
   href: api/Laga.IO.IODataFolder.html
@@ -2624,102 +2707,6 @@ references:
   commentId: Overload:Laga.IO.IODataFolder.RootFolder
   fullName: Laga.IO.IODataFolder.RootFolder
   nameWithType: IODataFolder.RootFolder
-- uid: Laga.IO.IOGifWriter
-  name: IOGifWriter
-  href: api/Laga.IO.IOGifWriter.html
-  commentId: T:Laga.IO.IOGifWriter
-  fullName: Laga.IO.IOGifWriter
-  nameWithType: IOGifWriter
-- uid: Laga.IO.IOGifWriter.#ctor(System.IO.Stream,System.Int32,System.Int32)
-  name: IOGifWriter(Stream, Int32, Int32)
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter__ctor_System_IO_Stream_System_Int32_System_Int32_
-  commentId: M:Laga.IO.IOGifWriter.#ctor(System.IO.Stream,System.Int32,System.Int32)
-  fullName: Laga.IO.IOGifWriter.IOGifWriter(System.IO.Stream, System.Int32, System.Int32)
-  nameWithType: IOGifWriter.IOGifWriter(Stream, Int32, Int32)
-- uid: Laga.IO.IOGifWriter.#ctor(System.String,System.Int32,System.Int32)
-  name: IOGifWriter(String, Int32, Int32)
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter__ctor_System_String_System_Int32_System_Int32_
-  commentId: M:Laga.IO.IOGifWriter.#ctor(System.String,System.Int32,System.Int32)
-  fullName: Laga.IO.IOGifWriter.IOGifWriter(System.String, System.Int32, System.Int32)
-  nameWithType: IOGifWriter.IOGifWriter(String, Int32, Int32)
-- uid: Laga.IO.IOGifWriter.#ctor*
-  name: IOGifWriter
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter__ctor_
-  commentId: Overload:Laga.IO.IOGifWriter.#ctor
-  fullName: Laga.IO.IOGifWriter.IOGifWriter
-  nameWithType: IOGifWriter.IOGifWriter
-- uid: Laga.IO.IOGifWriter.DefaultFrameDelay
-  name: DefaultFrameDelay
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultFrameDelay
-  commentId: P:Laga.IO.IOGifWriter.DefaultFrameDelay
-  fullName: Laga.IO.IOGifWriter.DefaultFrameDelay
-  nameWithType: IOGifWriter.DefaultFrameDelay
-- uid: Laga.IO.IOGifWriter.DefaultFrameDelay*
-  name: DefaultFrameDelay
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultFrameDelay_
-  commentId: Overload:Laga.IO.IOGifWriter.DefaultFrameDelay
-  fullName: Laga.IO.IOGifWriter.DefaultFrameDelay
-  nameWithType: IOGifWriter.DefaultFrameDelay
-- uid: Laga.IO.IOGifWriter.DefaultHeight
-  name: DefaultHeight
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultHeight
-  commentId: P:Laga.IO.IOGifWriter.DefaultHeight
-  fullName: Laga.IO.IOGifWriter.DefaultHeight
-  nameWithType: IOGifWriter.DefaultHeight
-- uid: Laga.IO.IOGifWriter.DefaultHeight*
-  name: DefaultHeight
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultHeight_
-  commentId: Overload:Laga.IO.IOGifWriter.DefaultHeight
-  fullName: Laga.IO.IOGifWriter.DefaultHeight
-  nameWithType: IOGifWriter.DefaultHeight
-- uid: Laga.IO.IOGifWriter.DefaultWidth
-  name: DefaultWidth
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultWidth
-  commentId: P:Laga.IO.IOGifWriter.DefaultWidth
-  fullName: Laga.IO.IOGifWriter.DefaultWidth
-  nameWithType: IOGifWriter.DefaultWidth
-- uid: Laga.IO.IOGifWriter.DefaultWidth*
-  name: DefaultWidth
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_DefaultWidth_
-  commentId: Overload:Laga.IO.IOGifWriter.DefaultWidth
-  fullName: Laga.IO.IOGifWriter.DefaultWidth
-  nameWithType: IOGifWriter.DefaultWidth
-- uid: Laga.IO.IOGifWriter.Dispose
-  name: Dispose()
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_Dispose
-  commentId: M:Laga.IO.IOGifWriter.Dispose
-  fullName: Laga.IO.IOGifWriter.Dispose()
-  nameWithType: IOGifWriter.Dispose()
-- uid: Laga.IO.IOGifWriter.Dispose*
-  name: Dispose
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_Dispose_
-  commentId: Overload:Laga.IO.IOGifWriter.Dispose
-  fullName: Laga.IO.IOGifWriter.Dispose
-  nameWithType: IOGifWriter.Dispose
-- uid: Laga.IO.IOGifWriter.Repeat
-  name: Repeat
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_Repeat
-  commentId: P:Laga.IO.IOGifWriter.Repeat
-  fullName: Laga.IO.IOGifWriter.Repeat
-  nameWithType: IOGifWriter.Repeat
-- uid: Laga.IO.IOGifWriter.Repeat*
-  name: Repeat
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_Repeat_
-  commentId: Overload:Laga.IO.IOGifWriter.Repeat
-  fullName: Laga.IO.IOGifWriter.Repeat
-  nameWithType: IOGifWriter.Repeat
-- uid: Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image,System.Int32)
-  name: WriteFrame(Image, Int32)
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_WriteFrame_System_Drawing_Image_System_Int32_
-  commentId: M:Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image,System.Int32)
-  fullName: Laga.IO.IOGifWriter.WriteFrame(System.Drawing.Image, System.Int32)
-  nameWithType: IOGifWriter.WriteFrame(Image, Int32)
-- uid: Laga.IO.IOGifWriter.WriteFrame*
-  name: WriteFrame
-  href: api/Laga.IO.IOGifWriter.html#Laga_IO_IOGifWriter_WriteFrame_
-  commentId: Overload:Laga.IO.IOGifWriter.WriteFrame
-  fullName: Laga.IO.IOGifWriter.WriteFrame
-  nameWithType: IOGifWriter.WriteFrame
 - uid: Laga.IO.IOTextData
   name: IOTextData
   href: api/Laga.IO.IOTextData.html
@@ -3023,6 +3010,18 @@ references:
   commentId: Overload:Laga.Numbers.Rand.#ctor
   fullName: Laga.Numbers.Rand.Rand
   nameWithType: Rand.Rand
+- uid: Laga.Numbers.Rand.Character(System.Int32,System.Int32)
+  name: Character(Int32, Int32)
+  href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_Character_System_Int32_System_Int32_
+  commentId: M:Laga.Numbers.Rand.Character(System.Int32,System.Int32)
+  fullName: Laga.Numbers.Rand.Character(System.Int32, System.Int32)
+  nameWithType: Rand.Character(Int32, Int32)
+- uid: Laga.Numbers.Rand.Character*
+  name: Character
+  href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_Character_
+  commentId: Overload:Laga.Numbers.Rand.Character
+  fullName: Laga.Numbers.Rand.Character
+  nameWithType: Rand.Character
 - uid: Laga.Numbers.Rand.DblNumber
   name: DblNumber()
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_DblNumber

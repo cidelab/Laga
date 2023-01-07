@@ -73,15 +73,15 @@
 <p>There are several ways to create chromosomes with Laga. A chromosome is a Class that contains the DNA and the fitness value.
 The simple way is to generate DNA <code>GenrDNA.</code> and assign that data to the chromosome, which is like a container.</p>
 <p>For example, to create a chromosome of non repeated integers you write this:</p>
-<pre><code>Chromosome&lt;int&gt; intChrShuffle = GenrDNA.Shuffle_Integer(0, 6);
+<pre><code class="lang-C#">Chromosome&lt;int&gt; intChrShuffle = GenrDNA.Shuffle_Integer(0, 6);
 </code></pre>
 <p>The code above will create a chromosome with fitness 0, composed by the numbers between 0 and 6 (the last value is exclusive).</p>
 <p>To assign a fitness value just do the following.</p>
-<pre><code>intChrShuffle.Fitness = 0.5;
+<pre><code class="lang-C#">intChrShuffle.Fitness = 0.5;
 </code></pre>
 <p>Now that chromosome has a fitness of 0.5.</p>
 <h2 id="code-example">Code example</h2>
-<pre><code>//Generating different chromosomes types
+<pre><code class="lang-C#">//Generating different chromosomes types
 Chromosome&lt;int&gt; intChrShuffle = GenrDNA.Shuffle_Integer(0, 6);
 Chromosome&lt;int&gt; intChrBin = GenrDNA.Binary_Integer(10);
 Chromosome&lt;char&gt; chr = GenrDNA.Rand_Char(10, 50, 100);
@@ -97,7 +97,7 @@ chr.Add('0');
 har dnaAt = chr.GetDNA(3);
 </code></pre>
 <p>The Following code is to print the results in the console. Please note that we apply a FisherYates() algorithm to one of the chromosomes.</p>
-<pre><code>Console.WriteLine(&quot;Shuffle integers: &quot; + intChrShuffle.ToString() + &quot; Fitness: &quot; + intChrShuffle.Fitness.ToString());
+<pre><code class="lang-C#">Console.WriteLine(&quot;Shuffle integers: &quot; + intChrShuffle.ToString() + &quot; Fitness: &quot; + intChrShuffle.Fitness.ToString());
 Console.WriteLine(&quot;Binary integers: &quot; + intChrBin.ToString() + &quot; Fitness: &quot; + intChrBin.Fitness.ToString() + '\n');
 Console.WriteLine(&quot;Random characters: &quot; + chr.ToString() + &quot; Fitness: &quot; + chr.Fitness.ToString());
 Console.WriteLine(&quot;Binary characters: &quot; + chrBin.ToString() + &quot; Fitness: &quot; + chrBin.Fitness.ToString() + '\n');
@@ -110,16 +110,16 @@ Console.WriteLine(&quot;Random doubles: &quot; + dblChr.ToString() + &quot; Fitn
 </code></pre>
 <h2 id="results">Results</h2>
 <p>The code will print the following results.</p>
-<pre><code>Shuffle integers: Chr:[4, 0, 5, 6, 2, 3, 1] Fitness: 0
-Binary integers: Chr:[1, 1, 0, 1, 0, 1, 1, 0, 0, 0] Fitness: 0
+<pre><code class="lang-C#">Shuffle integers: 4, 0, 5, 6, 2, 3, 1 Fitness: 0
+Binary integers: 1, 1, 0, 1, 0, 1, 1, 0, 0, 0 Fitness: 0
 
-Random characters: Chr:[U, 3, Y, I, `, U, `, T, C, 3, 0] Fitness: 0.5
-Binary characters: Chr:[0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0] Fitness: 0
+Random characters: U, 3, Y, I, `, U, `, T, C, 3, 0 Fitness: 0.5
+Binary characters: 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0 Fitness: 0
 
-Random floats : Chr:[24.08559, 5.616806, 60.53252, 86.56444, 57.70979, 2.671795, 74.89948, 42.93675, 60.72312, 80.84686] Fitness: 0
-After Shuffle : Chr:[60.72312, 86.56444, 80.84686, 42.93675, 57.70979, 74.89948, 2.671795, 5.616806, 60.53252, 24.08559] Fitness: 0
+Random floats : 24.08559, 5.616806, 60.53252, 86.56444, 57.70979, 2.671795, 74.89948, 42.93675, 60.72312, 80.84686 Fitness: 0
+After Shuffle : 60.72312, 86.56444, 80.84686, 42.93675, 57.70979, 74.89948, 2.671795, 5.616806, 60.53252, 24.08559 Fitness: 0
 
-Random doubles: Chr:[7.25883503316847, 1.82007643478926, 0.203841775750668, 9.4951606120426, 7.23720578348134] Fitness: 0
+Random doubles: 7.25883503316847, 1.82007643478926, 0.203841775750668, 9.4951606120426, 7.23720578348134 Fitness: 0
 </code></pre>
 </article>
           </div>

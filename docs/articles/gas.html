@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GAs Classes </title>
+    <title>Genetic Algorithms </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="GAs Classes ">
+    <meta name="title" content="Genetic Algorithms ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,18 +67,31 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gas-classes">GAs Classes</h1>
+<h1 id="genetic-algorithms">Genetic Algorithms</h1>
 
-<p>This Chapter is about the documentation related to Genetic Algorithms Classes.
-The classes to design and build the GAs. Read the following pages to understand the laga architecture. The library is designed for easy to use. Nevertheless, you will need some programming knowledge to used efficiently and overall understand the concept of genetic algorithms.</p>
-<h2 id="genetic-algorithms">Genetic Algorithms</h2>
-<p>This section provides all the necessary tools to design and create Genetic Algorithms.
-The structure is very simple to use.</p>
-<p>Call the reference:</p>
-<pre><code>using Laga.GeneticAlgorithm;
-</code></pre>
-<p>The structure of a generic GA works like this:
-<img src="../images/GAs.jpg" alt=""></p>
+<p>Genetic Algorithms were invited by John Holland (1929 - 2015) in the 60s and were developed by him, their students and collegues of the Michigan University between 1960 and 1970. Holland was the first to propose the crossover and other genetic combinatorial operators. The aim of Holland, was to use the GAs a formal study of the adaptation and evolution mechanism and how can be exported to computational systems.</p>
+<p>The Hollands Book was launched in 1975, under the name &quot;Adaptation in Natural and Artificial Systems&quot;. Holland expose the GAs in detail, using the natural selection, crossover, offspring and random mutation. Also Holland was the first to set the Evolutionary Computation under a strong theory base. Holland also expose the schema theory, which is the base of almost all works in Genetic Algorithms.</p>
+<p>All of these works sets the base of the Evolutionary Computation. In the 80s GAs were applied in many areas, from math games to engineering. At the beginning the applications were very theoretical, but later they were applied to other fields like: Business prediction, microship design, bio chemistry and molecular biology, time table design for airports, fabrication, productions. Just to name few areas.</p>
+<blockquote>
+<p><strong>A Genetic Algorithm is an heuristic search method based in the Darwin Natural Selection Theory. And it can be used as a optimization tool.</strong></p>
+</blockquote>
+<p><img src="../images/GAs1.jpg" alt="Time Line">
+Timeline of some GAs highlights</p>
+<h2 id="biological-bases">Biological Bases</h2>
+<p>The GAs are based in the natural selection</p>
+<ol>
+<li>The individuals in a population compete all the time for resources. The individuals with more success to get the resources, have more chance to crossover and have offspring.</li>
+<li>The weak individuals has less chance to have offspring.</li>
+<li>Thus the strong individuals genes are copied more times in the future generations than a weak individual.</li>
+</ol>
+<p>All the living organism are made by cells, and each cell has the same group of chromosomes, which are represent the plans to build them. Chromosomes are divided by genes, which are a codification of proteins and explain the different features of the organism, for example the eye color. The different options of these genes are called alleles.</p>
+<p>Mostly all living organism are diploids, which means that have two pair of alleles per each gen. One allel is inherited from the father and the other from the mother. The offspring is not a sharp copy from the mother and father, because the DNA incorporate small mutations when is copied.</p>
+<p>Mostly all living organism have many chromosomes en each cell. The combination of all chromosomes is called genome. The genotype is the set of genes of a living organism, but do not represent the final shape. In the other hand, the phenotype is the expression of the genotype. Both, genotype and phenotype under the influence of the environment represents the final shape of the organism.</p>
+<p>Some phenotype is not visible in the organism shape, for example some personality traits or the production of specific enzymes. Other interesting point is that not all the genes are expressed in the phenotype.</p>
+<p>![GAs Biological base](../images/GAs biological base.jpg)</p>
+<h2 id="parts-of-a-genetic-algorithm">Parts of a Genetic Algorithm</h2>
+<p>The following diagram, shows the GAs compoments and the relation among them.</p>
+<p><img src="../images/GAs.jpg" alt="GA"></p>
 <table>
 <thead>
 <tr>

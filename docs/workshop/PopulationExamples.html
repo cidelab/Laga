@@ -73,7 +73,7 @@
 <p>A population is a collection of chromosomes. Each chromosome in the population needs to be filled with DNA.</p>
 <h2 id="example-1">Example 1</h2>
 <p>A population created by 1s and 0s, could look like this:</p>
-<pre><code>Chromosome&lt;int&gt;[] Pop = new Chromosome&lt;int&gt;[5];
+<pre><code class="lang-C#">Chromosome&lt;int&gt;[] Pop = new Chromosome&lt;int&gt;[5];
 for (int i = 0; i &lt; 5; i++)
 {
   Pop[i] = GenrDNA.Binary_Integer(10);
@@ -81,19 +81,19 @@ for (int i = 0; i &lt; 5; i++)
 }
 </code></pre>
 <p>In simple terms, the population is a collection of 5 chromosomes. Inside the loop, every chromosome is &quot;loaded&quot; with DNA and a fitness value. To see the results the code below will print the results.</p>
-<pre><code>for (int i = 0; i &lt; Pop.Length; i++)
+<pre><code class="lang-C#">for (int i = 0; i &lt; Pop.Length; i++)
   Console.WriteLine(&quot;chromosome: &quot; + i.ToString() + &quot; &quot; + Pop[i].ToString() + &quot; Fitness: &quot; + Pop[i].Fitness.ToString());
 </code></pre>
-<p>The outcome is this:</p>
-<pre><code>chromosome: 0 Chr:[0, 0, 1, 1, 0, 0, 0, 1, 0, 1] Fitness: 0.2
-chromosome: 1 Chr:[1, 0, 0, 1, 1, 1, 1, 0, 1, 0] Fitness: 0.4
-chromosome: 2 Chr:[1, 0, 1, 0, 0, 1, 1, 1, 1, 1] Fitness: 0.6
-chromosome: 3 Chr:[1, 1, 0, 0, 1, 1, 1, 0, 0, 1] Fitness: 0.8
-chromosome: 4 Chr:[1, 0, 1, 0, 1, 0, 0, 0, 0, 1] Fitness: 1
+<p><strong>The outcome is this:</strong></p>
+<pre><code class="lang-C#">chromosome: 0 0, 0, 1, 1, 0, 0, 0, 1, 0, 1 Fitness: 0.2
+chromosome: 1 1, 0, 0, 1, 1, 1, 1, 0, 1, 0 Fitness: 0.4
+chromosome: 2 1, 0, 1, 0, 0, 1, 1, 1, 1, 1 Fitness: 0.6
+chromosome: 3 1, 1, 0, 0, 1, 1, 1, 0, 0, 1 Fitness: 0.8
+chromosome: 4 1, 0, 1, 0, 1, 0, 0, 0, 0, 1 Fitness: 1
 </code></pre>
 <h2 id="example-2">Example 2</h2>
 <p>In some cases the problem could request an individual with a more complex chromosome. The following code shows an individual composed by 2 chromosomes and 1 number. Chromosomes are different, one is made of charaters and the other by points.</p>
-<pre><code>public class Agent
+<pre><code class="lang-C#">public class Agent
 {
   public Chromosome&lt;char&gt; name;
   public Chromosome&lt;int&gt; position;
@@ -101,7 +101,7 @@ chromosome: 4 Chr:[1, 0, 1, 0, 1, 0, 0, 0, 0, 1] Fitness: 1
 }
 </code></pre>
 <p>The code below shows how to load the DNA for the <code>Agent()</code>. In this case our population is list of Agents.</p>
-<pre><code>Agent[] pop = new Agent[5];
+<pre><code class="lang-C#">Agent[] pop = new Agent[5];
 Agent m;
 for (int i = 0; i &lt; pop.Length; i++)
 {
@@ -115,52 +115,52 @@ for (int i = 0; i &lt; pop.Length; i++)
 }
 </code></pre>
 <p>And here we print the results:</p>
-<pre><code>for (int i = 0; i &lt; pop.Length; i++)
+<pre><code class="lang-C#">for (int i = 0; i &lt; pop.Length; i++)
   Console.WriteLine(&quot;Agent: &quot; + i.ToString() + &quot; N: &quot; + pop[i].name.ToString() + &quot; Pos: &quot; + pop[i].position.ToString() + &quot; Spd: &quot; + pop[i].speed.ToString());         
 </code></pre>
-<p>The outcome is this:</p>
-<pre><code>Agent: 0 N: Chr:[P, Y, U, S, \] Pos: Chr:[1, 1, 1, 1, 0] Spd: 0.480901662484231
-Agent: 1 N: Chr:[N, Z, M, U, M] Pos: Chr:[0, 0, 1, 1, 0] Spd: 0.7173225924919
-Agent: 2 N: Chr:[W, X, X, L, R] Pos: Chr:[0, 1, 1, 0, 0] Spd: 0.701704415353809
-Agent: 3 N: Chr:[^, [, \, U, a] Pos: Chr:[1, 1, 0, 0, 0] Spd: 0.738936937758204
-Agent: 4 N: Chr:[Q, _, P, M, L] Pos: Chr:[1, 0, 1, 1, 0] Spd: 0.586921720107515
+<p><strong>The outcome is this:</strong></p>
+<pre><code class="lang-C#">Agent: 0 N: P, Y, U, S, \ Pos: 1, 1, 1, 1, 0 Spd: 0.480901662484231
+Agent: 1 N: N, Z, M, U, M Pos: 0, 0, 1, 1, 0 Spd: 0.7173225924919
+Agent: 2 N: W, X, X, L, R Pos: 0, 1, 1, 0, 0 Spd: 0.701704415353809
+Agent: 3 N: ^, [, \, U, a Pos: 1, 1, 0, 0, 0 Spd: 0.738936937758204
+Agent: 4 N: Q, _, P, M, L Pos: 1, 0, 1, 1, 0 Spd: 0.586921720107515
 </code></pre>
 <h2 id="example-3">Example 3</h2>
 <p>A third way to create populations is through the Class <code>GenrPopulation</code> probably is the most simple way to create populations.
 In the code below we will create 2 different populations.</p>
-<pre><code>Population&lt;char&gt; pop2 = new GenrPopulation(10).Rand_Char(5, 50, 100); //a population of size 10 and chars.
+<pre><code class="lang-C#">Population&lt;char&gt; pop2 = new GenrPopulation(10).Rand_Char(5, 50, 100); //a population of size 10 and chars.
 Population&lt;double&gt; pop3 = new GenrPopulation(10).Rand_Double(5, 3.0, 10.00); // a population of size 10 and random numbers.
 </code></pre>
 <p>To print the results we use the method <code>ToString()</code> from Population Class.</p>
-<pre><code>Console.WriteLine(pop2.ToString());
+<pre><code class="lang-C#">Console.WriteLine(pop2.ToString());
 Console.WriteLine(pop3.ToString());
 </code></pre>
-<p>The outcome is this:</p>
-<pre><code>\\For the first population (chars) pop2:
+<p><strong>The outcome is this:</strong></p>
+<pre><code class="lang-C#">\\For the first population (chars) pop2:
 Population:
-Chr:[\, ^, b, 6, :]
-Chr:[=, Z, U, G, \]
-Chr:[:, W, M, D, _]
-Chr:[], 5, D, E, &lt;]
-Chr:[H, O, J, c, O]
-Chr:[I, I, [, @, ;]
-Chr:[_, T, W, c, Z]
-Chr:[a, 2, I, B, 6]
-Chr:[4, T, C, 4, 8]
-Chr:[B, 6, c, C, ;]
+\, ^, b, 6, :
+=, Z, U, G, \
+:, W, M, D, _
+], 5, D, E, &lt;
+H, O, J, c, O
+I, I, [, @, ;
+_, T, W, c, Z
+a, 2, I, B, 6
+4, T, C, 4, 8
+B, 6, c, C, ;
 
 \\For the second population (doubles) pop3:
 Population:
-Chr:[4.62753681774602, 4.02755512996929, 8.74928638793029, 5.32517968971523, 7.23580926015778]
-Chr:[4.83140412756773, 5.79126246077533, 9.87193394492936, 6.48054824046816, 7.91141217989447]
-Chr:[8.38576184929617, 9.79560731295292, 5.89561517112684, 4.80421486115279, 9.60735930763528]
-Chr:[6.29786120788095, 3.03313660297223, 6.87013876432094, 6.88705595204935, 9.78663011211279]
-Chr:[9.02063052496902, 7.22314703893994, 3.29410384143428, 5.07819167993879, 4.06916109336035]
-Chr:[8.30988295996091, 4.6783354597531, 6.17090812380002, 9.06637426468841, 4.82932784819478]
-Chr:[5.63079573243428, 6.38134559401374, 6.39420086675985, 3.69885635035991, 9.64681209700499]
-Chr:[8.3476022134291, 9.09272527186793, 5.89850245597703, 5.70455012596424, 6.82878758657202]
-Chr:[6.85589047933737, 3.25216722127617, 9.77115423780454, 7.42695842004705, 5.22934810269128]
-Chr:[3.61948898649751, 4.95484550900517, 3.58980946782502, 3.71171564874785, 7.60794287994874]
+4.62753681774602, 4.02755512996929, 8.74928638793029, 5.32517968971523, 7.23580926015778
+4.83140412756773, 5.79126246077533, 9.87193394492936, 6.48054824046816, 7.91141217989447
+8.38576184929617, 9.79560731295292, 5.89561517112684, 4.80421486115279, 9.60735930763528
+6.29786120788095, 3.03313660297223, 6.87013876432094, 6.88705595204935, 9.78663011211279
+9.02063052496902, 7.22314703893994, 3.29410384143428, 5.07819167993879, 4.06916109336035
+8.30988295996091, 4.6783354597531, 6.17090812380002, 9.06637426468841, 4.82932784819478
+5.63079573243428, 6.38134559401374, 6.39420086675985, 3.69885635035991, 9.64681209700499
+8.3476022134291, 9.09272527186793, 5.89850245597703, 5.70455012596424, 6.82878758657202
+6.85589047933737, 3.25216722127617, 9.77115423780454, 7.42695842004705, 5.22934810269128
+3.61948898649751, 4.95484550900517, 3.58980946782502, 3.71171564874785, 7.60794287994874
 </code></pre>
 </article>
           </div>

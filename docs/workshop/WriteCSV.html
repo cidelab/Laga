@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Using SurfaceData Class </title>
+    <title>How to Write CSV files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Using SurfaceData Class ">
+    <meta name="title" content="How to Write CSV files ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,35 +67,71 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="using-surfacedata-class">Using SurfaceData Class</h1>
+<h1 id="how-to-write-csv-files">How to Write CSV files</h1>
 
-<p>The SurfaceData Class takes in the constructor a surface and other parameters to analyze surfaces.</p>
-<h2 id="code-to-implement-surfacedata-class">Code to implement SurfaceData Class</h2>
-<pre><code class="lang-C#">using LagaRhino;
+<h2 id="csv-write-logic">CSV write Logic</h2>
+<p>There are 2 ways to write CSV files. The first way takes a popoluation in the constructor to create the file. the second way takes a chromosome and allows you to write row by row the data. this method is helpful in case you dont know in advance how many data you will save in the CSV file.</p>
+<h3 id="first-way">First way</h3>
+<p>in this way a <code>Population</code> is used to create the CSV file. If the file does not exist the class <code>Laga.IO.IOCSV()</code> will create the file for you. the key point here is the number of features needs to be the same as the number of elements in the chromosome. in this case 4 features and a chromosome of 4 elements.</p>
+<pre><code class="lang-C#">Population&lt;String&gt; pop = new Population&lt;string&gt;(5);
+Chromosome&lt;string&gt; chromosome;
 
-  private void RunScript(Surface srf, int uCount, int vCount, ref object A, ref object B)
-  {
-    SurfaceData sd = new SurfaceData(srf, uCount, vCount);
-    A = sd.SurfacePoints; //return the points
-    B = sd.QuadPattern(); //return a squared pattern
-  }
+for (int i = 0; i &lt; 100; i++)
+{
+  chromosome = new Chromosome&lt;string&gt;(4); //chromosome size is 4
+  chromosome.Add(i.ToString());
+  chromosome.Add(Rand.Character(97, 122).ToString());
+  chromosome.Add(Rand.IntNumber(1, 200).ToString());
+  chromosome.Add(new string(GenrDNA.Rand_Char(10, 65, 90).ToArray()));
+  
+  pop.Add(chromosome);
+}
+
+string file = @&quot;C:\Users\delab\Documents\test.csv&quot;;
+string[] features = new string[] { &quot;number&quot;, &quot;character&quot;, &quot;random integer&quot;, &quot;random name&quot;}; //the number of features needs to be the same as the size of the chromosome
+
+_ = new IOCSV(file, features, pop); //in this line the CSV is created
+
 </code></pre>
-<h2 id="result">Result</h2>
-<p><img src="../images/SrfQuad.gif" alt="Mirror points"></p>
-<p>The animation shows the surface being analized at different densities.</p>
-<h2 id="method-planesurfaceaxis">Method: PlaneSurfaceAxis()</h2>
-<p>This method takes a LineCurve and creates a flat surface from it. Internally the library transform the line into an axis.</p>
-<h2 id="code-to-implement-planesurfaceaxis">Code to implement PlaneSurfaceAxis()</h2>
-<pre><code class="lang-C#">using LagaRhino;
+<p>The outcome, using Jupyter notebook with pandas, is like this</p>
+<pre><code class="lang-Python">
+import pandas as pd
 
-  private void RunScript(Line ln, double height, ref object A)
-  {
-    A = LagaRhino.SurfaceData.PlaneSurfaceAxis(new LineCurve(ln), height);
-  }
+dta = pd.read_csv('test.csv') #load data
+print(&quot;shape of data: {}&quot;.format(dta.shape)) #print shape data
+dta.head() #print head data
+
 </code></pre>
-<h2 id="result-of-method-pointquadrant">Result of method PointQuadrant()</h2>
-<p><img src="../images/PlaneSrf.gif" alt="Quad point"></p>
-<p>The animation shows how the different curves work coordinated with the same origin.</p>
+<p><img src="../images/CSVPopulation.jpg" alt="CSV with Population"></p>
+<h3 id="second-way">Second way</h3>
+<p>Since a <code>Chromosome</code> is the ultimate food for the class <code>Laga.IO.IOCSV()</code>, the second way to create a CSV is through chromosomes and a loop.</p>
+<pre><code class="lang-C#">string file2 = @&quot;C:\Users\delab\Documents\test2.csv&quot;;
+IOCSV oCSV = new IOCSV(file2, new string[] {&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;}); //this time we use the filename and the features
+
+Chromosome&lt;string&gt; chromosome2;
+
+for (int i = 0; i &lt;= 100; i++) //loop
+{
+    chromosome2 = new Chromosome&lt;string&gt;(12);
+    char[] arrChr = GenrDNA.Binary_Char(11).ToArray();
+    string[] arrStr = arrChr.Select(c =&gt; c.ToString()).ToArray(); //from char[] to string[]
+
+    chromosome2.AddRange(arrStr);
+    oCSV.AddRowData(chromosome2);//we adding the rows to the CSV for each loop iteration                
+}
+//after the loop we save and close the file
+oCSV.SaveAndClose();
+</code></pre>
+<p>The outcome, using Jupyter notebook with pandas, is like this</p>
+<pre><code class="lang-Python">
+import pandas as pd
+
+dta = pd.read_csv('test2.csv') #load data
+print(&quot;shape of data: {}&quot;.format(dta.shape)) #print shape data
+dta.head() #print head data
+
+</code></pre>
+<p><img src="../images/CSVChromosome.jpg" alt="CSV with Chromosome"></p>
 </article>
           </div>
           

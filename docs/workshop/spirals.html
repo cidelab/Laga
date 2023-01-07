@@ -77,7 +77,7 @@
 <p><code>Y = Sine * WT</code></p>
 <h2 id="code">Code</h2>
 <p>The code is very simple and it could be even more simple if you implement the static method <code>DrawPoint(point, width, color)</code> from LagaUnity. In the following example a <code>Vec</code> object is initiated first outside the loop and then is created inside the loop <code>pt = new Vec(x, y, z);</code> with the right parameters.</p>
-<pre><code>using UnityeEngine;
+<pre><code class="lang-C#">using UnityeEngine;
 using LagaUnity;
 
 public class drawlines : MonoBehaviour
@@ -110,18 +110,18 @@ public class drawlines : MonoBehaviour
 }
 </code></pre>
 <h2 id="results">Results</h2>
-<p><img src="../images/spiral1.jpg" alt="">
+<p><img src="../images/spiral1.jpg" alt="test 1">
 Parameters: <code>int count = 100;</code> <code>float step = 0.025f;</code> <code>float radius = 10;</code></p>
-<p><img src="../images/spiral3.jpg" alt="">
+<p><img src="../images/spiral3.jpg" alt="test 2">
 Parameters: <code>int count = 100;</code> <code>float step = 0.50f;</code> <code>float radius = 10;</code></p>
 <p>You might also want to implement the following code to render a continous spiral:</p>
-<pre><code>List&lt;Vec&gt; lstPt = new List&lt;Vec&gt;(); //Set a list of vectors
+<pre><code class="lang-C#">List&lt;Vec&gt; lstPt = new List&lt;Vec&gt;(); //Set a list of vectors
 lstPt.Add(pt); // add the vector to the list
 
  for (int k = 0; k &lt; lstPt.Count - 1; k++) //Draw a line between vectors
     Lne.DrawLine(lstPt[k], lstPt[k + 1], 0.5f, Color.gray);
 </code></pre>
-<p><img src="../images/spiral2.jpg" alt="">
+<p><img src="../images/spiral2.jpg" alt="Test 3">
 Parameters: <code>int count = 100;</code> <code>float step = 0.50f;</code> <code>float radius = 10;</code></p>
 </article>
           </div>

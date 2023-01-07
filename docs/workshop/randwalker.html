@@ -83,7 +83,7 @@ ptC.Y = ptA.Y + ptB.Y;
 </code></pre>
 <h2 id="code">Code</h2>
 <p>The same code runs 500 times per each walker. the result is similar to a nest that change color in relation to the distance to the screen centre.</p>
-<pre><code>using UnityEngine;
+<pre><code class="lang-C#">using UnityEngine;
 using LagaUnity;
 
 public class drawlines : MonoBehaviour
@@ -128,11 +128,11 @@ public class drawlines : MonoBehaviour
 }
 </code></pre>
 <h2 id="results">Results</h2>
-<p><img src="../images/randWalker1.jpg" alt="">
+<p><img src="../images/randWalker1.jpg" alt="rand 1">
 Parameters: <code>clr = new Color(0.2f*pos, 0.1f/pos, pos)</code></p>
-<p><img src="../images/randWalker2.jpg" alt="">
+<p><img src="../images/randWalker2.jpg" alt="rand 2">
 Parameters: <code>clr = new Color(0.2f * pos, 0.05f / pos, pos)</code></p>
-<p><img src="../images/randWalker3.jpg" alt="">
+<p><img src="../images/randWalker3.jpg" alt="rand 3">
 Parameters: <code>clr = new Color(0.8f * pos, Mathf.Sin(100*pos), pos);</code></p>
 </article>
           </div>

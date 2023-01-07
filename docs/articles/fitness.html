@@ -80,43 +80,35 @@
 </ol>
 <p>The most common use for GAs is the optimization task. The goal is to find the correct values for a list of parameters in a function. The fitness function depends of the problem to optimize and can goes from a simple value to complex function. Where all the parameters are related and is not possible to maximize one of them without to minimize others.</p>
 <p>Computer Scientist define the collection of all possible solutions to a problem as a <em>&quot;search space&quot;</em>. Suppose we want to design a protein with similar performance as collagen. The search space is the collection of all possible sequences of protein with length 100 and we have 26 possible amino-acids by letters in each gen of the chromosome.</p>
-<h5 id="how-many-possible-sequence-we-have">¿How many possible sequence we have?</h5>
-<p><img src="http://www.designemergente.org/laga/spaceSearch1.jpg" alt=""></p>
-<br>
-<p>Since the search space is so big that use GAs is a clever idea to find a very good result. Each candidate solution might look like this: A, B, C, D, D, E, D, F, R, L, L, G, A...</p>
-<br>
+<h5 id="how-many-possible-sequence-we-have">How many possible sequence we have</h5>
+<p><img src="../images/spaceSearch1.jpg" alt="SpaceSearch"></p>
+<p>Since the search space is so big that use GAs is a clever idea to find a very good result. Each candidate solution might look like this:</p>
+<blockquote>
+<p>'A, B, C, D, D, E, D, F, R, L, L, G, A...'</p>
+</blockquote>
 <p>An algorithm exploring in this <em>&quot;search space&quot;</em> is an effective way to choose possible solutions in each generation. Genetic Algorithms combine via crossover and mutation high quality possible solutions from different regions in the <em>&quot;search space&quot;</em>. The <em>&quot;search space&quot;</em> is the collection of all possible solutions to the problem, and for this case all possible amino-acids combinations to design our collagen protein.</p>
-<br>
 <h5 id="fitness-landscape">Fitness Landscape</h5>
 <p>The fitness landscape is the <em>&quot;search space&quot;</em> representation for all possible genotypes along with their fitness. The fitness landscape can be seen as a surface with valleys and peaks. Imagine a range mountain where the population is travelling and looking for the highest peak. Valleys represents low quality solutions and the highest peak the high-quality solution in the space search.</p>
-<br>
 <p>In a range mountain is possible to find &quot;peaks&quot;, &quot;hills&quot; and &quot;valleys&quot;. Only one peak will contain the best fitness and is called <em>Best Global</em> or <em>Global Optimum</em> all the others peaks and hills are called <em>Best Local</em> or <em>Local Optimum</em>. Where their fitness is the best in the zone but not in search space. Evolution causes populations to move along the landscape in particular ways, and adaptation can be seen as a population searching the higher peaks.</p>
 <blockquote>
 <p>Natural section, doesn't search for the best result. Only a enough good solution to keep the population &quot;alive&quot;.</p>
 </blockquote>
 <p>Genetic Algorithms operators crossover and mutation drive the population on the landscape defined by the fitness function. The idea of the evolution <em>&quot;moving&quot;</em> a population around a fixed landscape is not realistic for several reasons. Because, In the real world the landscape is not separated from the organisms that inhabit it. Organisms modify the landscape (environment) and the landscape modifies organisms.</p>
 <h5 id="fitness-landscape-representation">Fitness landscape representation</h5>
-<p><img src="http://www.designemergente.org/laga/spaceSearch.jpg" alt=""></p>
+<p><img src="../images/spaceSearch.jpg" alt="Space Search"></p>
 <h5 id="fitness-function">Fitness Function</h5>
 <p>Chromosomes are usually composed by bit of strings. Each gen in the chromosome has two possibilities: 0 or 1. Each chromosome can be represented as a point in the search space of a possible solution. The GA processes populations of chromosomes successively, replacing the old's by new generations. The GAs most often requires a fitness function to determine the &quot;performance&quot; of each chromosome in the population. The fitness of a chromosome depends on how well a chromosome performs against a problem.</p>
-<br>
 <p>One common application of GAs is function optimization, where the goal is to find a set of parameters values that maximize a multi-parameter function or one real dimensional function.</p>
-<br>
 <h5 id="lets-see-an-example-from-melanie-mitchell">Lets see an example from Melanie Mitchell</h5>
-<pre><code>{{{f(y) = y + |Sin(32y)|}}}
+<pre><code class="lang-C#">f(y) = y + |Sin(32y)|
 </code></pre>
-<br>
 <p>The candidate solutions are the <em>y</em> values. Each individual is encoded as bit string representing the real numbers between <em>(0 ≤ y &lt; π)</em>. Therefore it is necessary to translate the bit string <em>x</em> into a real number <em>y</em> to evaluate the value. So, the fitness of <em>x</em> is the result of the function.</p>
-<br>
-Going back to the problem, we can define the fitness as the negative of the potential energy of amino-acids sequence for a desire protein structure. The potential energy is the measure of how much physical resistance the sequence would need to be folded into a specific structure. Therefore, The lower energy, the higher fitness.
-<br>
-The important to understand that individuals are encoded as abstract chromosomes of numbers or letters or both. The fitness function is defined to evaluate each chromosome and assign a value to determine what is their location in the fitness landscape. Is the Chromosome in a valley?, is the chromosome in a peak?
-<br>
-<br>
-##### Search Methods
-We can find (at least) three search types.
+<p>Going back to the problem, we can define the fitness as the negative of the potential energy of amino-acids sequence for a desire protein structure. The potential energy is the measure of how much physical resistance the sequence would need to be folded into a specific structure. Therefore, The lower energy, the higher fitness.</p>
+<p>The important to understand that individuals are encoded as abstract chromosomes of numbers or letters or both. The fitness function is defined to evaluate each chromosome and assign a value to determine what is their location in the fitness landscape. Is the Chromosome in a valley?, is the chromosome in a peak?</p>
+<h5 id="search-methods">Search Methods</h5>
+<p>We can find (at least) three search types.</p>
 <p><strong>Search for Sorted Data</strong>
-Imagine we have a list of 1000 numbers, and is necessary find the closer to 20. {-623, -345, -34, 16, 56, 500, 845,…} we start with the -623, then we move it to -345 and so on to 16. Since the algorithm don´t know what is the next number it continues to 56, but the result is lower than 16. so the algorithm return 16 and finish the search. <em>Binary Search</em> is one of the most efficient methods to search in a sorted list.</p>
+Imagine we have a list of 1000 numbers, and is necessary find the closer to 20. <code>{-623, -345, -34, 16, 56, 500, 845,...}</code> we start with the -623, then we move it to -345 and so on to 16. Since the algorithm don`t know what is the next number it continues to 56, but the result is lower than 16. so the algorithm return 16 and finish the search. <em>Binary Search</em> is one of the most efficient methods to search in a sorted list.</p>
 <p><strong>Search for Paths to Objective</strong>
 The problem here consists in to find the correct set of actions that will move for an initial state to a given goal. This types of algorithms are the central of many artificial intelligence methods.</p>
 <p><strong>Search for Solutions</strong>
