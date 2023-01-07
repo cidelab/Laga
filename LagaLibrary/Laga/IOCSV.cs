@@ -3,6 +3,7 @@ using System.IO;
 using System;
 using System.Text;
 using System.Runtime.ConstrainedExecution;
+using System.Collections.Generic;
 
 namespace Laga.IO
 {
@@ -17,6 +18,38 @@ namespace Laga.IO
 
         private readonly Population<string> strPopulation;
         private readonly StringBuilder output;
+        private readonly List<List<string>> NestData;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="FileName"></param>
+        /// <param name="Features"></param>
+        /// <param name="Data"></param>
+        public IOCSV(string FileName, string[] Features, List<List<string>> Data)
+        {
+            this.file = FileName;
+            this.features = Features;
+            this.NestData = Data;
+
+            output = new StringBuilder();
+
+            if (features.Length == NestData[0].Count)
+            {
+                output.AppendLine(string.Join(separator, features));
+
+                foreach (List<string> chr in NestData)
+                {
+                    output.AppendLine(string.Join(separator, chr));
+                }
+
+                SaveAndClose();
+            }
+            else
+            {
+                Console.WriteLine("The number of features should be the same as the number of columns");
+            }
+        }
 
         /// <summary>
         /// Write a CSV based on population data
@@ -58,6 +91,7 @@ namespace Laga.IO
         {
             this.file = FileName;
             this.features = Features;
+            
             output = new StringBuilder();
             output.AppendLine(string.Join(separator, features));
         }
