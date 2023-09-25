@@ -53,7 +53,7 @@
     <Compile Include="PointData.cs" />
     <Compile Include="Shoebox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SurfaceData.cs" />
+    <Compile Include="SurfaceAnalysis.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Laga\Laga.csproj">

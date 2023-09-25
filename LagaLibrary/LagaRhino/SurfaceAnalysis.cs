@@ -12,36 +12,25 @@ namespace LagaRhino
     /// <summary>
     /// Simple Manipulations on Rhino Surfaces
     /// </summary>
-    public class SurfaceData
+    public class SurfaceAnalysis
     {
-        private Interval interval = new Interval(0, 1);
+        private static Interval interval = new Interval(0, 1);
         private readonly List<Point3d> mPts;
         private readonly int uDivs;
         private readonly int vDivs;
 
         /// <summary>
-        /// The points on the surface
-        /// </summary>
-        public List<Point3d> SurfacePoints
-        {
-            get { return mPts; }
-        }
-
-        /// <summary>
-        /// Construct a SurfaceData object
+        /// Subdivide Surface
         /// </summary>
         /// <param name="surface">The base surface</param>
         /// <param name="uCount">number of points in u direction</param>
         /// <param name="vCount">number of points in v direction</param>
-        public SurfaceData(Surface surface, int uCount, int vCount)
+        public List<Point3d> SubdividebyPoints(Surface surface, int uCount, int vCount)
         {
-            uDivs = uCount;
-            vDivs = vCount;
-
             surface.SetDomain(0, interval);
             surface.SetDomain(1, interval);
 
-            mPts = new List<Point3d>();
+            List<Point3d> mPts = new List<Point3d>();
             double uSpan = 1.00 / (uCount - 1);
             double vSpan = 1.00 / (vCount - 1);
             for (int i = 0; i < uCount; i++)
@@ -51,6 +40,39 @@ namespace LagaRhino
                     mPts.Add(surface.PointAt(i * uSpan, j * vSpan));
                 }
             }
+
+            return mPts;
+
+        }
+
+        /// <summary>
+        /// Subdivide surface by planes.
+        /// </summary>
+        /// <param name="surface">The surface</param>
+        /// <param name="uCount">The number of divisions in u direction</param>
+        /// <param name="vCount">The number of divisions in v direction</param>
+        /// <param name="uSpan">The offset span from u direction</param>
+        /// <param name="vSpan">the offset span from v direction</param>
+        /// <returns>List</returns>
+        public static List<Plane> SubdividebyPlanes(Surface surface, int uCount, int vCount, double uSpan = 0.0, double vSpan = 0.0)
+        {
+            surface.SetDomain(0, interval);
+            surface.SetDomain(1, interval);
+
+            List<Plane> lstPlanes = new List<Plane>();
+            double maxU = 1.00 - uSpan;
+            double maxV = 1.00 - vSpan;
+
+            for (int i = 0; i < uCount + 1; i++)
+            {
+                for (int j = 0; j < vCount + 1; j++)
+                {
+                    if (surface.FrameAt(uSpan + i * ((maxU - uSpan) / uCount), vSpan + j * ((maxV - vSpan) / vCount), out Plane pl))
+                        lstPlanes.Add(pl);
+                }
+            }
+
+            return lstPlanes;
 
         }
 
