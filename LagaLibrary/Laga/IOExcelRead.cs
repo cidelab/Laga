@@ -2,6 +2,13 @@
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices.ComTypes;
+using Microsoft.Office.Core;
+using System.Windows;
+using System.Windows.Media.Imaging;
+using System.IO;
 
 namespace Laga.IO
 {
@@ -80,6 +87,51 @@ namespace Laga.IO
         }
         #endregion
         #region methods to read excel
+
+        /// <summary>
+        /// Read an specific cell looking for an image or shape
+        /// </summary>
+        /// <param name="cellAdress">the string location</param>
+        /// <returns>Excel.Shape</returns>
+        public BitmapImage IOReadImageByCell(string cellAdress)
+        {
+            try
+            {
+                string shapeAdress;
+                foreach (Excel.Shape shape in xlSheet.Shapes)
+                {
+                    if(shape.Type == MsoShapeType.msoPicture)
+                    {
+                        shapeAdress = IOTextData.RemoveByCharacter((string)shape.TopLeftCell.Address, "$");
+                        if (shapeAdress == cellAdress)
+                        {
+                           shape.CopyPicture(Excel.XlPictureAppearance.xlScreen, Excel.XlCopyPictureFormat.xlBitmap);
+                           BitmapSource bitmapSource = Clipboard.GetImage();
+
+                            JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+                            MemoryStream memoryStream = new MemoryStream();
+                            BitmapImage bImg = new BitmapImage();
+
+                            encoder.Frames.Add(BitmapFrame.Create(bitmapSource));
+                            encoder.Save(memoryStream);
+
+                            memoryStream.Position = 0;
+                            bImg.BeginInit();
+                            bImg.StreamSource = memoryStream;
+                            bImg.EndInit();
+
+                            memoryStream.Close();
+
+                            return bImg;
+                        }
+                    }
+                }
+                return null;
+            }
+            catch { return null; }
+
+        }
+
         /// <summary>
         /// read the cells range specified in the parameter.
         /// </summary>

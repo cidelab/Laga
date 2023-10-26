@@ -346,5 +346,16 @@ namespace Laga.IO
             return string.Join(separator, lstStr);
         }
 
+        /// <summary>
+        /// Remove specific character from string
+        /// </summary>
+        /// <param name="message">string to modify</param>
+        /// <param name="character">character to remove</param>
+        /// <returns>string</returns>
+        public static string RemoveByCharacter(string message, string character)
+        {
+            return message.Replace(character, string.Empty);
+        }
+
     }
 }
