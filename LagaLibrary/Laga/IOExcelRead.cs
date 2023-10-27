@@ -25,6 +25,7 @@ namespace Laga.IO
         private Excel.Worksheet xlSheet;
         private Excel.Range xlRange;
         private List<List<string>> dataExcel;
+
         #region public properties
         /// <summary>
         /// get the data by list format, use this to get the data from excel
@@ -47,6 +48,7 @@ namespace Laga.IO
             }
         }
         #endregion
+
         #region constructors
         /// <summary>
         /// The simpliest constructor
@@ -86,50 +88,35 @@ namespace Laga.IO
             CloseExcelApp(false);
         }
         #endregion
+
         #region methods to read excel
 
         /// <summary>
-        /// Read an specific cell looking for an image or shape
+        /// Read an specific cell looking for an excel shape
         /// </summary>
-        /// <param name="cellAdress">the string location</param>
+        /// <param name="cellAddress">the cell adress for the shape location</param>
         /// <returns>Excel.Shape</returns>
-        public BitmapImage IOReadImageByCell(string cellAdress)
+        public Excel.Shape IOReadShapeCell(string cellAddress)
         {
             try
             {
                 string shapeAdress;
                 foreach (Excel.Shape shape in xlSheet.Shapes)
                 {
-                    if(shape.Type == MsoShapeType.msoPicture)
+                    shapeAdress = IOTextData.RemoveByCharacter((string)shape.TopLeftCell.Address, "$");
+                    if (shapeAdress == cellAddress)
                     {
-                        shapeAdress = IOTextData.RemoveByCharacter((string)shape.TopLeftCell.Address, "$");
-                        if (shapeAdress == cellAdress)
-                        {
-                           shape.CopyPicture(Excel.XlPictureAppearance.xlScreen, Excel.XlCopyPictureFormat.xlBitmap);
-                           BitmapSource bitmapSource = Clipboard.GetImage();
 
-                            JpegBitmapEncoder encoder = new JpegBitmapEncoder();
-                            MemoryStream memoryStream = new MemoryStream();
-                            BitmapImage bImg = new BitmapImage();
-
-                            encoder.Frames.Add(BitmapFrame.Create(bitmapSource));
-                            encoder.Save(memoryStream);
-
-                            memoryStream.Position = 0;
-                            bImg.BeginInit();
-                            bImg.StreamSource = memoryStream;
-                            bImg.EndInit();
-
-                            memoryStream.Close();
-
-                            return bImg;
-                        }
-                    }
+                        return shape;
+                    }                
                 }
                 return null;
             }
-            catch { return null; }
-
+            catch 
+            {
+                this.CloseExcelApp();
+                return null; 
+            }
         }
 
         /// <summary>
@@ -158,15 +145,16 @@ namespace Laga.IO
         /// <summary>
         /// Read a specific excel cell.
         /// </summary>
-        /// <param name="strXlCell">The cell to read in excel, format "A1"</param>
-        public string IOReadCell(string strXlCell)
+        /// <param name="cellAddress">The cell to read in excel, format "A1"</param>
+        public string IOReadCell(string cellAddress)
         {
-            xlRange = xlSheet.Range[strXlCell];
+            xlRange = xlSheet.Range[cellAddress];
             object obDta = (object)xlRange.Value2;
             string str = (obDta != null) ? obDta.ToString() : "!=";
             return str;
         }
         #endregion
+
         #region open and close excel application
         /// <summary>
         /// Activates a specific Excel sheet to read.
