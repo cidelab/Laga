@@ -16,35 +16,46 @@ namespace LagaRhino
     {
         private static Interval interval = new Interval(0, 1);
         private readonly List<Point3d> mPts;
+        private Surface srf;
         private readonly int uDivs;
         private readonly int vDivs;
 
-        /// <summary>
-        /// Subdivide Surface
-        /// </summary>
-        /// <param name="surface">The base surface</param>
-        /// <param name="uCount">number of points in u direction</param>
-        /// <param name="vCount">number of points in v direction</param>
-        public List<Point3d> SubdividebyPoints(Surface surface, int uCount, int vCount)
-        {
-            surface.SetDomain(0, interval);
-            surface.SetDomain(1, interval);
 
+        /// <summary>
+        /// Subdivide a surface by a list of points.
+        /// </summary>
+        /// <returns>List<Point3d></Point3d></returns>
+        public List<Point3d> SubdividebyPoints()
+        {
             List<Point3d> mPts = new List<Point3d>();
-            double uSpan = 1.00 / (uCount - 1);
-            double vSpan = 1.00 / (vCount - 1);
-            for (int i = 0; i < uCount; i++)
+            double uSpan = 1.00 / (uDivs - 1);
+            double vSpan = 1.00 / (vDivs - 1);
+            for (int i = 0; i < uDivs; i++)
             {
-                for (int j = 0; j < vCount; j++)
+                for (int j = 0; j < vDivs; j++)
                 {
-                    mPts.Add(surface.PointAt(i * uSpan, j * vSpan));
+                    mPts.Add(srf.PointAt(i * uSpan, j * vSpan));
                 }
             }
 
             return mPts;
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="surface">The base surface</param>
+        /// <param name="uCount">number of points in u direction</param>
+        /// <param name="vCount">number of points in v direction</param>
+        public SurfaceAnalysis(Surface surface, int uCount, int vCount)
+        {
+            srf = surface;
+            srf.SetDomain(0, interval);
+            srf.SetDomain(1, interval);
 
+            uDivs = uCount;
+            vDivs = vCount;
+        }
         /// <summary>
         /// Subdivide surface by planes.
         /// </summary>
@@ -53,7 +64,7 @@ namespace LagaRhino
         /// <param name="vCount">The number of divisions in v direction</param>
         /// <param name="uSpan">The offset span from u direction</param>
         /// <param name="vSpan">the offset span from v direction</param>
-        /// <returns>List</returns>
+        /// <returns>List<Plane></Plane></returns>
         public static List<Plane> SubdividebyPlanes(Surface surface, int uCount, int vCount, double uSpan = 0.0, double vSpan = 0.0)
         {
             surface.SetDomain(0, interval);
