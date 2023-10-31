@@ -15,8 +15,8 @@ namespace LagaRhino
     public class SurfaceAnalysis
     {
         private static Interval interval = new Interval(0, 1);
-        private readonly List<Point3d> mPts;
-        private Surface srf;
+       private readonly List<Point3d> mPts;
+        readonly private Surface srf;
         private readonly int uDivs;
         private readonly int vDivs;
 

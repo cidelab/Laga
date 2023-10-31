@@ -43,10 +43,9 @@ namespace LagaRhino
         public static List<Curve> DeepCopyListCurve(List<Curve> lstToCopy)
         {
             List<Curve> lstDeepCopy = new List<Curve>();
-            Curve deepCrv = null;
             foreach (Curve c in lstToCopy)
             {
-                deepCrv = (Curve)c.Duplicate();
+                Curve deepCrv = (Curve)c.Duplicate();
                 lstDeepCopy.Add(deepCrv);
             }
 

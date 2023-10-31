@@ -12,8 +12,8 @@ namespace Laga.GeneticAlgorithm
     /// <typeparam name="T"></typeparam>
     public class Population<T> : IEnumerable
     {
-        private List<Chromosome<T>> pop;
-        private int popSize;
+        readonly private List<Chromosome<T>> pop;
+        readonly private int popSize;
         /// <summary>
         /// 
         /// </summary>

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Laga.Geometry;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -22,7 +24,7 @@ namespace Laga.Numbers
             {
                 lstH.Add(Sequence);
                 if (Sequence % 2 == 0)
-                    Sequence = Sequence / 2;
+                    Sequence /= 2;
                 else
                     Sequence = 3 * Sequence + 1;
             }
@@ -80,6 +82,34 @@ namespace Laga.Numbers
         public static float Sigmoid(float t, float A1, float A2, float B1, float B2, float decay)
         {
             return A1 + (A2 - A1) / (1 + (float)Math.Exp(Math.Log(1 / decay - 1) * (B1 + B2 - 2 * t) / (B2 - B1)));
+        }
+
+        /// <summary>
+        /// Flower Spiral
+        /// </summary>
+        /// <param name="range"></param>
+        /// <param name="span"></param>
+        /// <param name="radOne"></param>
+        /// <param name="radTwo"></param>
+        /// <param name="radThree"></param>
+        /// <returns></returns>
+        public static Vector[] Flower(int range = 100, float span = 0.1f, float radOne = 8f, float radTwo = 6f, float radThree = 3f)
+        {
+            int size = (int)(range / span);
+            Vector[] ret = new Vector[size];
+            int count = 0;
+            for(float i = 0; i < range; i += span)
+            {
+                Vector v = new Vector
+                {
+                    X = radOne * Math.Cos(i) - radTwo * (Math.Cos((radOne * i) / radThree)),
+                    Y = radOne * Math.Sin(i) - radTwo * (Math.Sin((radOne * i) / radThree))
+                };
+                ret[count] = v;
+                count++;
+            }
+
+            return ret;
         }
 
         /// <summary>
