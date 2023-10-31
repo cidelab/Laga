@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Laga.Geometry;
 using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
@@ -135,6 +136,23 @@ namespace Laga.GeneticAlgorithm
                 chr.Add(Rand.Character(start, end)); //chr.Add((char)rnd.Next(start, end)); 
 
             return chr;
+        }
+
+        /// <summary>
+        /// GEnerates a random Vector chromosome
+        /// </summary>
+        /// <param name="size">the number of Vectors in the Chr</param>
+        /// <param name="Xcoord">The range of values in the X coordinate</param>
+        /// <param name="Ycoord">The range of values in the Y coordinate</param>
+        /// <param name="Zcoord">The range of values in the Z coordinate</param>
+        /// <returns>Vector Chromosome</returns>
+        public static Chromosome<Vector> Rand_Vector(int size, Range Xcoord, Range Ycoord, Range Zcoord)
+        {
+            Chromosome<Vector> chrVector = new Chromosome<Vector>();
+            for (int i = 0; i < size; i++)
+                chrVector.Add(new Vector(Rand.DblNumber() * (Xcoord.Max - Xcoord.Min), Rand.DblNumber() * (Ycoord.Max - Ycoord.Min), Rand.DblNumber() * (Zcoord.Max - Zcoord.Min)));
+        
+            return chrVector;
         }
 
     }

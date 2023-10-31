@@ -8,6 +8,36 @@ using System.Text;
 namespace Laga.Numbers
 {
     /// <summary>
+    /// Range for numbers
+    /// </summary>
+    public struct Range
+    {
+        private double min, max;
+
+        /// <summary>
+        /// Get the max value
+        /// </summary>
+        public double Max
+        { get { return max; } }
+
+        /// <summary>
+        /// Get the min value
+        /// </summary>
+        public double Min
+        { get { return min; } }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Start"></param>
+        /// <param name="End"></param>
+        public Range(double Start, double End)
+        {
+            min = Start;
+            max = End;
+        }
+    }
+    /// <summary>
     /// famouse Maths functions
     /// </summary>
     public class Function

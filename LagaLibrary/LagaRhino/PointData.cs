@@ -148,6 +148,21 @@ namespace LagaRhino
         }
 
         /// <summary>
+        /// Convert Laga Vectors to Rhino Point3ds
+        /// </summary>
+        /// <param name="arrVector">The arry of Vectors to convert</param>
+        /// <returns>Point3d[]</returns>
+        public static Point3d[] VectorToPoint3d(Vector[] arrVector)
+        {
+            Point3d[] arrPt3d = new Point3d[arrVector.Length];
+            for(int i = 0;i < arrVector.Length;i++)
+                arrPt3d[i] = new Point3d(VectorToPoint3d(arrVector[i]));
+
+            return arrPt3d;
+
+        }
+
+        /// <summary>
         /// Convert Rhino Point3d to Laga Vector
         /// </summary>
         /// <param name="point">The point to convert</param>

@@ -29,7 +29,7 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
-        private Random rnd;
+       readonly private Random rnd;
 
         /// <summary>
         /// Constructor:
