@@ -252,7 +252,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>int Chromosome</returns>
         public static Chromosome<int> DNA_ShuffleInteger(int min, int max)
         {
-            Random rand = new Random(DateTime.Now.Millisecond);
+            _ = new Random(DateTime.Now.Millisecond);
             Chromosome<int> chr = new Chromosome<int>();
                            
             for (int i = min; i < max + 1; i++)

@@ -15,11 +15,29 @@ namespace LagaRhino
         private static Interval param = new Interval(0.0, 1.0);
 
         /// <summary>
+        /// Reparametrize Curve
+        /// </summary>
+        /// <param name="curve">Curve to modify</param>
+        public static void Reparam(Curve curve)
+        {
+            curve.Domain = param;
+        }
+
+        /// <summary>
         /// Apply the same t parameter to a list of curves to return an array of points
         /// </summary>
         /// <param name="lstCrvs">The list of curves</param>
         /// <param name="t">t param</param>
         /// <returns>Point3d[]</returns>
+        /// <example>
+        /// Shows how to get the same point parameter from a list of curves.
+        /// <code>
+        /// using LagaRhino;
+        /// {
+        ///     A = CurveData.GetPointFromCurves(lstCrvs, y);
+        /// }
+        /// </code>
+        /// </example>
         public static Point3d[] GetPointFromCurves(List<Curve> lstCrvs, double t)
         {
             Point3d[] arrPts = new Point3d[lstCrvs.Count];
