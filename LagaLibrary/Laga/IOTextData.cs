@@ -12,11 +12,11 @@ namespace Laga.IO
     /// </summary>
     public class IOTextData
     {
-        private string textFileName;
-        private List<string> dataTextLine = new List<string>();
+        private readonly string textFileName;
+        private readonly List<string> dataTextLine = new List<string>();
         private string dataText = "";
-        private Encoding sourceEncoding;
-        private StreamReader streamReader;
+        private readonly Encoding sourceEncoding;
+        private readonly StreamReader streamReader;
 
         private string GetEncodingString(EncodingType encoding)
         {

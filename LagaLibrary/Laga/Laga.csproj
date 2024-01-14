@@ -56,6 +56,7 @@
     <Compile Include="IODataFolder.cs" />
     <Compile Include="IOExcel.cs" />
     <Compile Include="IOExcelRead.cs" />
+    <Compile Include="IOExcelWrite.cs" />
     <Compile Include="IOTextData.cs" />
     <Compile Include="Line.cs" />
     <Compile Include="Mutation.cs" />

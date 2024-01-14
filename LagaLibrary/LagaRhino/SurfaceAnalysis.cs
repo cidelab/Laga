@@ -15,7 +15,7 @@ namespace LagaRhino
     public class SurfaceAnalysis
     {
         private static Interval interval = new Interval(0, 1);
-       private readonly List<Point3d> mPts;
+        private List<Point3d> mPts;
         readonly private Surface srf;
         private readonly int uDivs;
         private readonly int vDivs;
@@ -27,7 +27,7 @@ namespace LagaRhino
         /// <returns>List<Point3d></Point3d></returns>
         public List<Point3d> SubdividebyPoints()
         {
-            List<Point3d> mPts = new List<Point3d>();
+            mPts = new List<Point3d>();
             double uSpan = 1.00 / (uDivs - 1);
             double vSpan = 1.00 / (vDivs - 1);
             for (int i = 0; i < uDivs; i++)

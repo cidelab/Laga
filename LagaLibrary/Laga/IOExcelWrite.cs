@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
+using Laga.GeneticAlgorithm;
 
 namespace Laga.IO
 {
@@ -11,7 +12,7 @@ namespace Laga.IO
     /// </summary>
     public class IOExcelWrite
     {
-        private readonly string filePath;
+        private string filePath;
         private int sheetNum;
         private Excel.Application excelApp;
         private Excel.Workbook xlBook;
@@ -27,14 +28,8 @@ namespace Laga.IO
         /// </summary>
         public Excel.Range XlRange
         {
-            set
-            {
-                value = xlRange;
-            }
-            get
-            {
-                return xlRange;
-            }
+            set => _ = xlRange;
+            get => xlRange;
         }
         /// <summary>
         /// get the sheet number 
@@ -99,6 +94,18 @@ namespace Laga.IO
                 xlSheet = xlBook.ActiveSheet;
             }
         }
+
+        /// <summary>
+        /// Creates an excel workbook, don't forget to save and close with the right methods.
+        /// </summary>
+        /// <param name="FolderPath">Folder path to save the excel doc</param>
+        /// <param name="FileName">the name for the excel workbook</param>
+        /// <param name="SheetName">The name of the sheet in the excel</param>
+        /// <param name="Display">Boolean to see the document created</param>
+        public IOExcelWrite(string FolderPath, string FileName, string SheetName = "My sheet", bool Display = true)
+        {
+            IOWrite_CreatesExcelBook(FolderPath, FileName, SheetName, Display);
+        }
         /// <summary>
         /// Sets the basic data to write in excel.
         /// do not forget call the open and close.
@@ -111,6 +118,7 @@ namespace Laga.IO
             this.sheetNum = SheetNumber;
         }
         #endregion
+
         /// <summary>
         /// Creates and excel sheet to write on.
         /// </summary>
@@ -140,6 +148,8 @@ namespace Laga.IO
         /// <param name="strItem">the item to write in excel</param>
         /// <param name="Row">The row position</param>
         /// <param name="Col">The column position</param>
+        /// 
+
         public void IOWriteItem(string strItem, int Row, int Col)
         {
             xlSheet.Cells[Row, Col] = strItem;
@@ -169,6 +179,60 @@ namespace Laga.IO
                 }
             }
         }
+
+        /* should used to write a population in excel.
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pop"></param>
+        /// <param name="Row"></param>
+        /// <param name="Col"></param>
+        /// <param name="swap"></param>
+        public static bool WritePopulation<T>(Population<T> pop, int Row = 1, int Col = 1, bool swap = true)
+        {
+            
+            try
+            {
+                if (pop.Count > 0)
+                {
+                    int origCol = Col;
+                    int origRow = Row;
+                    if (swap)
+                    {
+                        foreach (List<T> lstString in pop)
+                        {
+                            Col = origCol;
+                            foreach (T s in lstString)
+                            {
+                                xlSheet.Cells[Row, Col] = s;
+                                Col++;
+                            }
+                            Row++;
+                        }
+                    }
+                    else
+                    {
+                        foreach (List<T> lstString in pop)
+                        {
+                            Row = origRow;
+                            foreach (T s in lstString)
+                            {
+                                xlSheet.Cells[Row, Col] = s;
+                                Row++;
+                            }
+                            Col++;
+                        }
+                    }
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        */
+        
         /// <summary>
         /// Write a nested list of strings in excel. The list length is calculated automatically.
         /// </summary>
@@ -176,7 +240,8 @@ namespace Laga.IO
         /// <param name="Row">The row position</param>
         /// <param name="Col">The column position</param>
         /// <param name="swap">If true, write first the row, if false write first the column</param>
-        public void IOWriteMatrix(List<List<string>> matData, int Row, int Col, bool swap)
+        /// 
+        public void IOWriteMatrix(List<List<string>> matData, int Row, int Col, bool swap = true)
         {
             if (matData.Count > 0)
             {
@@ -277,6 +342,28 @@ namespace Laga.IO
             excelApp = new Excel.Application();
             xlBook = excelApp.Workbooks.Add(misValue);
             excelApp.Visible = display;
+        }
+        private bool IOWrite_CreatesExcelBook(string folderPath, string fileName, string sheetName, bool display)
+        {
+            excelApp = new Excel.Application();
+
+            if (excelApp == null)
+            {
+                // Excel is not installed, handle this case accordingly.
+                return false;
+            }
+
+            xlBook = excelApp.Workbooks.Add();
+            xlSheet = (Excel.Worksheet)xlBook.Worksheets.Add();
+            xlSheet.Name = sheetName;
+
+            // You can add data to the worksheet here, e.g., worksheet.Cells[1, 1] = "Hello, World";
+
+            this.filePath = Path.Combine(folderPath, fileName + ".xlsx");
+            xlBook.SaveAs(filePath);
+            excelApp.Visible = display;
+
+            return true;
         }
         /// <summary>
         /// Save the Excel file and close safely the Excel application.

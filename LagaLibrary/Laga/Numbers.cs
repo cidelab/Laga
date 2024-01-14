@@ -10,9 +10,9 @@ namespace Laga.Numbers
     /// <summary>
     /// Range for numbers
     /// </summary>
-    public struct Range
+    readonly public struct Range
     {
-        private double min, max;
+       readonly private double min, max;
 
         /// <summary>
         /// Get the max value
@@ -31,7 +31,7 @@ namespace Laga.Numbers
         /// </summary>
         /// <param name="Start"></param>
         /// <param name="End"></param>
-        public Range(double Start, double End)
+       public Range(double Start, double End)
         {
             min = Start;
             max = End;
