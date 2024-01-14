@@ -178,5 +178,26 @@ namespace LagaRhino
                 return new Vector(0, 0, 0);
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pattern"></param>
+        /// <param name="test"></param>
+        /// <param name="stand"></param>
+        /// <returns></returns>
+        public static double FindZDifference(List<double> pattern, double test, double stand = 0.35)
+        {
+            int index1 = 0;
+            for (int index2 = 0; index2 < pattern.Count; ++index2)
+            {
+                if (pattern[index2] == test)
+                {
+                    index1 = index2;
+                    break;
+                }
+            }
+            return index1 == pattern.Count - 1 ? stand : pattern[index1 + 1] - pattern[index1];
+        }
     }
 }
