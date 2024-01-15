@@ -89,6 +89,39 @@ namespace LagaRhino
         }
 
         /// <summary>
+        /// Sort a list of points clockwise
+        /// </summary>
+        /// <param name="points">the list of points</param>
+        /// <returns><![CDATA[List<Point3d>]]></returns>
+        public static List<Point3d> SortPointsClockwise(List<Point3d> points)
+        {
+            List<Point3d> list = points.OrderBy<Point3d, double>((Func<Point3d, double>)(pt => Math.Atan2(pt.X, pt.Y))).ToList<Point3d>();
+            Point3d point3d1 = list[0];
+            int num;
+            if (point3d1.X < 0.0)
+            {
+                Point3d point3d2 = list[1];
+                if (point3d2.X > 0.0)
+                {
+                    Point3d point3d3 = list[0];
+                    if (point3d3.Y < 0.0)
+                    {
+                        Point3d point3d4 = list[1];
+                        num = point3d4.Y < 0.0 ? 1 : 0;
+                    }
+                    else
+                    {
+                        num = 0;
+                    }
+                }
+            }
+            num = 0;
+            if (num != 0)
+                list.Reverse();
+            return list;
+        }
+
+        /// <summary>
         /// Group points by Z coordinate.
         /// </summary>
         /// <param name="points">the array of points to group</param>
@@ -180,12 +213,12 @@ namespace LagaRhino
         }
 
         /// <summary>
-        /// 
+        /// list of Z values... not really...
         /// </summary>
         /// <param name="pattern"></param>
         /// <param name="test"></param>
         /// <param name="stand"></param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double FindZDifference(List<double> pattern, double test, double stand = 0.35)
         {
             int index1 = 0;
