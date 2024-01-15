@@ -99,5 +99,25 @@ namespace LagaRhino
 
             return pl;
         }
+
+        /// <summary>
+        /// Returns the Z values from a list of curves
+        /// </summary>
+        /// <param name="lstCrvs">lstCrv</param>
+        /// <returns><![CDATA[List<double>]]></returns>
+        public static List<double> CurvesZValues(List<Curve> lstCrvs)
+        {
+            List<double> source = new List<double>();
+            foreach (Curve lstCrv in lstCrvs)
+            {
+                List<double> doubleList = source;
+                Point3d pointAtStart = lstCrv.PointAtStart;
+                double num = Math.Round(pointAtStart.Z, 8);
+                doubleList.Add(num);
+            }
+            List<double> list = source.Distinct<double>().ToList<double>();
+            list.Sort();
+            return list;
+        }
     }
 }
