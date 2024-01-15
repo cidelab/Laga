@@ -47,5 +47,23 @@ namespace LagaRhino
 
             return new LineCurve(pb, pa);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="axis"></param>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public static Surface PlaneSurfaceAxis(LineCurve axis, double height = 100.0)
+        {
+            Point3d pointAtStart = ((Curve)axis).PointAtStart;
+            Point3d pointAtEnd = ((Curve)axis).PointAtEnd;
+            pointAtStart.Z = 0.0;
+            pointAtEnd.Z = 0.0;
+            Point3d point3d1 = new Point3d(pointAtStart.X, pointAtStart.Y, height);
+           Point3d point3d2 = new Point3d(pointAtEnd.X, pointAtEnd.Y, height);
+
+            return NurbsSurface.CreateFromCorners(pointAtStart, point3d1, point3d2, pointAtEnd);
+        }
     }
 }

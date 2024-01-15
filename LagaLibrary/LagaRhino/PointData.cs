@@ -77,6 +77,35 @@ namespace LagaRhino
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="arrPoints"></param>
+        /// <returns></returns>
+        public static double[] SortCoordinateZ(Point3d[] arrPoints)
+        {
+            return arrPoints.Select<Point3d, double>((Func<Point3d, double>)(pt => pt.Z)).OrderBy<double, double>((Func<double, double>)(Z => Z)).ToArray<double>();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="point"></param>
+        /// <returns></returns>
+        public static Point3d[] SortPointsQuadrant(Point3d point)
+        {
+            Point3d[] point3dArray = new Point3d[4];
+            double num1 = Math.Abs(point.X);
+            double num2 = num1 * -1.0;
+            double num3 = Math.Abs(point.Y);
+            double num4 = num3 * -1.0;
+            point3dArray[0] = new Point3d(num1, num3, 0.0);
+            point3dArray[1] = new Point3d(num1, num4, 0.0);
+            point3dArray[2] = new Point3d(num2, num4, 0.0);
+            point3dArray[3] = new Point3d(num2, num3, 0.0);
+            return point3dArray;
+        }
+
+        /// <summary>
         /// Sort points by the coordinate X and then by the coordinate Y.
         /// </summary>
         /// <param name="points">The points to sort</param>
