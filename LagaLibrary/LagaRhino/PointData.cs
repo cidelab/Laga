@@ -125,28 +125,19 @@ namespace LagaRhino
         public static List<Point3d> SortPointsClockwise(List<Point3d> points)
         {
             List<Point3d> list = points.OrderBy<Point3d, double>((Func<Point3d, double>)(pt => Math.Atan2(pt.X, pt.Y))).ToList<Point3d>();
-            Point3d point3d1 = list[0];
-            int num;
-            if (point3d1.X < 0.0)
-            {
-                Point3d point3d2 = list[1];
-                if (point3d2.X > 0.0)
-                {
-                    Point3d point3d3 = list[0];
-                    if (point3d3.Y < 0.0)
-                    {
-                        Point3d point3d4 = list[1];
-                        num = point3d4.Y < 0.0 ? 1 : 0;
-                    }
-                    else
-                    {
-                        num = 0;
-                    }
-                }
+            
+            if(list.Count == 2)
+            { 
+            Point3d ptA = list[0];
+                Point3d ptB = list[1];
+             
+                bool pass = false;
+                if((ptA.Y <= 0.0 && ptB.Y <= 0.0) && (ptA.X < 0.0 && ptB.X >= 0.0))
+                    pass = true;
+
+                if(pass)
+                    list.Reverse();
             }
-            num = 0;
-            if (num != 0)
-                list.Reverse();
             return list;
         }
 
@@ -214,13 +205,14 @@ namespace LagaRhino
         /// </summary>
         /// <param name="arrVector">The arry of Vectors to convert</param>
         /// <returns>Point3d[]</returns>
-        public static Point3d[] VectorToPoint3d(Vector[] arrVector)
+        public static List<Point3d> VectorToPoint3D(List<Vector> vectors)
         {
-            Point3d[] arrPt3d = new Point3d[arrVector.Length];
-            for(int i = 0;i < arrVector.Length;i++)
-                arrPt3d[i] = new Point3d(VectorToPoint3d(arrVector[i]));
+            List<Point3d> lstPoints = new List<Point3d>(vectors.Count());
 
-            return arrPt3d;
+            foreach (Vector v in vectors)
+                lstPoints.Add(new Point3d(VectorToPoint3d(v)));
+
+            return lstPoints;
 
         }
 
@@ -229,7 +221,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="point">The point to convert</param>
         /// <returns>Vector</returns>
-        public static Vector Point3dToVector(Point3d point)
+        public static Vector Point3DToVector(Point3d point)
         {
             if (point != null)
             {
@@ -239,6 +231,21 @@ namespace LagaRhino
             {
                 return new Vector(0, 0, 0);
             }
+        }
+
+        /// <summary>
+        /// Convert Rhino Point3ds to Laga Vectors
+        /// </summary>
+        /// <param name="points">The list of Points3d to convert</param>
+        /// <returns>Vectors</returns>
+        public static List<Vector> Point3DToVector(List<Point3d> points)
+        {
+            List<Vector> lstVec = new List<Vector>(points.Count());
+
+            foreach(Point3d p in points)
+                lstVec.Add(new Vector(Point3DToVector(p)));
+
+            return lstVec;
         }
 
         /// <summary>

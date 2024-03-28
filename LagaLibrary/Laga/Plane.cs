@@ -16,19 +16,13 @@ namespace Laga.Geometry
         private Vector vecY;
         private Vector norm;
         private double det;
-
-        private double A;
         private double B;
-        private double C;
-        private double consD;
+        private readonly double consD;
 
         /// <summary>
         /// Get the Cz term
         /// </summary>
-        public double Cz
-        {
-            get { return C; }
-        }
+        public double Cz { get; }
         /// <summary>
         /// Get the By Term
         /// </summary>
@@ -40,10 +34,7 @@ namespace Laga.Geometry
         /// <summary>
         /// Get the Ax term
         /// </summary>
-        public double Ax
-        {
-            get { return A; }
-        }
+        public double Ax { get; }
 
         /// <summary>
         /// Plane origin
@@ -119,9 +110,9 @@ namespace Laga.Geometry
             norm = new Vector(Ax, By, Cz);
             norm.Normalize();
 
-            A = Ax;
+            this.Ax = Ax;
             B = By;
-            C = Cz;
+            this.Cz = Cz;
             consD = D;
 
             double abc = (Ax * Ax) + (By * By) + (Cz * Cz);
