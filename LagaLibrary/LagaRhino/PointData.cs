@@ -221,7 +221,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="point">The point to convert</param>
         /// <returns>Vector</returns>
-        public static Vector Point3DToVector(Point3d point)
+        public static Vector Point3dToVector(Point3d point)
         {
             if (point != null)
             {
@@ -243,7 +243,7 @@ namespace LagaRhino
             List<Vector> lstVec = new List<Vector>(points.Count());
 
             foreach(Point3d p in points)
-                lstVec.Add(new Vector(Point3DToVector(p)));
+                lstVec.Add(new Vector(Point3dToVector(p)));
 
             return lstVec;
         }

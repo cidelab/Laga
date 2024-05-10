@@ -16,7 +16,7 @@ namespace Laga.Geometry
         private Vector vecY;
         private Vector norm;
         private double det;
-        private double B;
+        private readonly double B;
         private readonly double consD;
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace Laga.Geometry
             vecY = VectorV - OriginPoint;
             norm = Vector.CrossProduct(vecX, vecY);
             norm.Normalize();
-            determinant();
+            Determinant();
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Laga.Geometry
                               (Cz * (Ax + By)) - (Ax * Ax) - (By * By));
             vecY.Normalize();
 
-            determinant();
+            Determinant();
         }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace Laga.Geometry
             origin = VectorPX.ComponentProjectTo(VectorNormal);
             vecX = VectorPX;
             vecY = Vector.CrossProduct(VectorNormal, VectorPX);
-            determinant();
+            Determinant();
         }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace Laga.Geometry
             return "Orig: (" + origin.X + ", " + origin.Y + ", " + origin.Z + "), Norm: " + norm.ToString();
         }
 
-        private void determinant()
+        private void Determinant()
         {
             det = -(norm.X * origin.X) - (norm.Y * origin.Y) - (norm.Z * origin.Z);
         }

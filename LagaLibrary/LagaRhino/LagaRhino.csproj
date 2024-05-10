@@ -14,9 +14,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="RhinoCommon">
-      <Version>7.35.23346.11001</Version>
-    </PackageReference>
+    <PackageReference Include="RhinoCommon" Version="7.35.23346.11001" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
 </Project>

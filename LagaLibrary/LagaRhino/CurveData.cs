@@ -26,7 +26,7 @@ namespace LagaRhino
         /// <summary>
         /// Apply the same t parameter to a list of curves to return an array of points
         /// </summary>
-        /// <param name="lstCrvs">The list of curves</param>
+        /// <param name="lstCurves">The list of curves</param>
         /// <param name="t">t param</param>
         /// <returns>Point3d[]</returns>
         /// <example>
@@ -34,17 +34,17 @@ namespace LagaRhino
         /// <code>
         /// using LagaRhino;
         /// {
-        ///     A = CurveData.GetPointFromCurves(lstCrvs, y);
+        ///     A = CurveData.GetPointFromCurves(lstCurves, y);
         /// }
         /// </code>
         /// </example>
-        public static Point3d[] GetPointFromCurves(List<Curve> lstCrvs, double t)
+        public static Point3d[] GetPointFromCurves(List<Curve> lstCurves, double t)
         {
-            Point3d[] arrPts = new Point3d[lstCrvs.Count];
+            Point3d[] arrPts = new Point3d[lstCurves.Count];
             Curve c;
-            for (int i = 0; i < lstCrvs.Count; i++)
+            for (int i = 0; i < lstCurves.Count; i++)
             {
-                c = lstCrvs[i];
+                c = lstCurves[i];
                 c.Domain = param;
                 arrPts[i] = c.PointAt(t);
 
@@ -72,12 +72,12 @@ namespace LagaRhino
         /// <summary>
         /// Align Perpendicular frames in the Curve
         /// </summary>
-        /// <param name="crv">the curve in the analysis</param>
+        /// <param name="curve">the curve in the analysis</param>
         /// <param name="t">the t param on the curve</param>
         /// <returns>Plane</returns>
-        public static Plane CorrectPlaneOnCurveByParam(Curve crv, double t)
+        public static Plane CorrectPlaneOnCurveByParam(Curve curve, double t)
         {
-            crv.PerpendicularFrameAt(t, out Plane pl);
+            curve.PerpendicularFrameAt(t, out Plane pl);
 
             //check the direction of the plane
             Point3d plOrigin = pl.Origin;
@@ -98,6 +98,22 @@ namespace LagaRhino
             }
 
             return pl;
+        }
+
+        public static Curve MirrorCurve( Curve curve, Plane plane)
+        {
+            Curve c = (Curve)curve.DuplicateCurve();
+            Transform xform = Transform.Mirror(plane);
+            if(c.Transform(xform))
+            {
+                Curve[] arrC = Curve.JoinCurves(new Curve[] { c, curve });
+                return arrC[0];
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         /// <summary>
