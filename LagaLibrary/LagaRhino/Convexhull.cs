@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Rhino.Geometry;
 using Laga.Geometry;
-using System.Reflection.Emit;
 
 namespace LagaRhino
 {
@@ -21,8 +16,8 @@ namespace LagaRhino
         /// <returns>convexhull points</returns>
         public static List<Point3d> ConvexHull2D(List<Point3d> points)
         {
-            List<Vector> lstVec = Laga.Geometry.ConvexHull.ConvexHull2D(PointData.Point3DToVector(points));
-            return PointData.VectorToPoint3D(lstVec);
+            List<Vector> lstVec = Laga.Geometry.ConvexHull.ConvexHull2D(PointData.Points2Vectors(points));
+            return PointData.Vectors2Points(lstVec);
         }
     }
 }

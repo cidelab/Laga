@@ -139,7 +139,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// GEnerates a random Vector chromosome
+        /// Generates a random Vector chromosome
         /// </summary>
         /// <param name="size">the number of Vectors in the Chr</param>
         /// <param name="Xcoord">The range of values in the X coordinate</param>

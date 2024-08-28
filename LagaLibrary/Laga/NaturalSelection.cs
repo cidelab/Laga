@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Laga.GeneticAlgorithm;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {

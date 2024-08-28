@@ -14,8 +14,9 @@ namespace Laga.GeneticAlgorithm
     {
         readonly private List<Chromosome<T>> pop;
         readonly private int popSize;
+
         /// <summary>
-        /// 
+        /// Construct a predifined size population 
         /// </summary>
         /// <param name="SizePopulation"></param>
         public Population(int SizePopulation)
@@ -24,6 +25,13 @@ namespace Laga.GeneticAlgorithm
             pop = new List<Chromosome<T>>(SizePopulation);
         }
 
+        /// <summary>
+        /// Construct a population with no size
+        /// </summary>
+        public Population()
+        {
+            pop = new List<Chromosome<T>>();
+        }
         /// <summary>
         /// 
         /// </summary>

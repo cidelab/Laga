@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Laga.GeneticAlgorithm;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -190,7 +191,7 @@ namespace Laga.Geometry
         }
 
         /// <summary>
-        /// Test if 2 vectors are parallel
+        /// Test if 2 vector are parallel
         /// </summary>
         /// <param name="vector">The vector to test</param>
         /// <param name="tolerance">Default tolerance: 1e-3</param>
@@ -344,42 +345,47 @@ namespace Laga.Geometry
         /// Creates an interpolated matrix between 2 points.
         /// The method does not control exceptions for the points positions.
         /// </summary>
-        /// <param name="pointA">The start point</param>
-        /// <param name="pointB">The end point</param>
+        /// <param name="vectorA">The start point</param>
+        /// <param name="vectorB">The end point</param>
         /// <param name="span">the approximate separation between points</param>
         /// <returns><![CDATA[List<Vector>]]></returns>
-        public static List<Vector> Interpolation(Vector pointA, Vector pointB, double span)
+        public static Population<Vector> Interpolation(Vector vectorA, Vector vectorB, double span)
         {
-            List<Vector> result = new List<Vector>();
+            Population<Vector> pop = new Population<Vector>();
+            Chromosome<Vector> chr;// = new Chromosome<Vector>();
 
-            Vector pt_2 = new Vector(pointB.X, pointA.Y, pointA.Z);
-            Vector pt_4 = new Vector(pointA.X, pointB.Y, pointA.Z);
-            int u = (int)(pointA.DistanceTo(pt_2) / span);
-            int v = (int)(pointA.DistanceTo(pt_4) / span);
+            //List<Vector> result = new List<Vector>();
 
-            double xSize = pointA.DistanceTo(pt_2) / u;
-            double ySize = pointA.DistanceTo(pt_4) / v;
+            Vector pt_2 = new Vector(vectorB.X, vectorA.Y, vectorA.Z);
+            Vector pt_4 = new Vector(vectorA.X, vectorB.Y, vectorA.Z);
+            int u = (int)(vectorA.DistanceTo(pt_2) / span);
+            int v = (int)(vectorA.DistanceTo(pt_4) / span);
+
+            double xSize = (vectorA.X < vectorB.X)  ? vectorA.DistanceTo(pt_2) / u : - (vectorA.DistanceTo(pt_2) / u);
+            double ySize = (vectorA.Y < vectorB.Y)  ? vectorA.DistanceTo(pt_4) / v : - (vectorA.DistanceTo(pt_4) / v);
        
-            double diffZ = (pointB.Z - pointA.Z) / ((u + 1) * (v + 1) - 1);
+            double diffZ = (vectorB.Z - vectorA.Z) / ((u + 1) * (v + 1) - 1);
             int c = 0;
-            Vector pt;
+            //Vector vec;
 
             for (int i = 0; i <= u; i++)
             {
-                for(int j = 0; j <= v; j++)
+                chr = new Chromosome<Vector>();
+                for (int j = 0; j <= v; j++)
                 {
-                    pt = new Vector(pointA.X + (i * xSize), pointA.Y + (j * ySize), pointA.Z + (c * diffZ));
-                    result.Add(pt);
+                    //vec = new Vector(vectorA.X + (i * xSize), vectorA.Y + (j * ySize), vectorA.Z + (c * diffZ));
+                    chr.Add(new Vector(vectorA.X + (i * xSize), vectorA.Y + (j * ySize), vectorA.Z + (c * diffZ)));
+                    //result.Add(vec);
                     c++;
                 }
+                pop.Add(chr);
             }
 
-            return result;
+            return pop;
         }
 
-
         /// <summary>
-        /// test if 2 vectors are equal
+        /// test if 2 vector are equal
         /// </summary>
         /// <param name="vector">Vector to test</param>
         /// <returns>bool</returns>

@@ -4,13 +4,35 @@ using System.Linq;
 using Laga.Geometry;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga.Numbers
 {
     /// <summary>
     /// A collection of methods to operate on Genetic operators and lists.
     /// </summary>
     public static class Tools
     {
+        /// <summary>
+        /// Degrees to Radians
+        /// </summary>
+        /// <param name="degrees"></param>
+        /// <returns>double</returns>
+        public static double Deg2Rad(double degrees)
+        {
+            double radians = (Math.PI / 180.0) * degrees;
+            return (radians);
+        }
+
+        /// <summary>
+        /// Radians to Degree
+        /// </summary>
+        /// <param name="radians"></param>
+        /// <returns>double</returns>
+        public static double Rad2Deg(double radians)
+        {
+            double degrees = (180.0 / Math.PI) * radians;
+            return (degrees);
+        }
+
         /// <summary>
         /// Creates a report based on a list of data.
         /// </summary>
@@ -118,27 +140,7 @@ namespace Laga.GeneticAlgorithm
             return arrS;
         }
 
-        /// <summary>
-        /// Round the location of a laga point, based on the round number
-        /// </summary>
-        /// <param name="points">The points to round coordinates</param>
-        /// <param name="round">round number coordinates</param>
-        /// <returns>string[]</returns>
-        public static string[] Parse(Vector[] points, int round)
-        {
-            string[] arrPtsChromosome = new string[points.Length];
-            double[] arrdblCoords;
-            int i = 0;
-
-            foreach (Vector p in points)
-            {
-                arrdblCoords = new double[] {Math.Round(p.X, round), Math.Round(p.Y, round), Math.Round(p.Z, round)};
-                string[] arrString = Array.ConvertAll(arrdblCoords, new Converter<double, string>(Convert.ToString));
-                arrPtsChromosome[i] = string.Join(", ", arrString);
-                i++;
-            }
-            return arrPtsChromosome;
-        }
+        
         /// <summary>
         /// Parse a double to float
         /// </summary>

@@ -1,4 +1,5 @@
-﻿using Laga.Geometry;
+﻿using Laga.GeneticAlgorithm;
+using Laga.Geometry;
 using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
@@ -174,54 +175,55 @@ namespace LagaRhino
         /// <param name="pointA">Start point</param>
         /// <param name="pointB">End point</param>
         /// <param name="span">span distance</param>
-        /// <returns>Point3d[]</returns>
-        public static Point3d[] TwoPointsInterpolation(Point3d pointA, Point3d pointB, double span)
+        /// <returns>Point3d[,]</returns>
+        public static Point3d[,] Interpolate2Points(Point3d pointA, Point3d pointB, double span)
         {
-            Vector va = Point3dToVector(pointA);
-            Vector vb = Point3dToVector(pointB);
+            Vector va = Point2Vector(pointA);
+            Vector vb = Point2Vector(pointB);
 
-            List<Vector> lstVectors = Vector.Interpolation(va, vb, span);
-            Point3d[] arrPts = new Point3d[lstVectors.Count];
+            Population<Vector> population = Vector.Interpolation(va, vb, span);
+            Point3d[,] arr2Pts = new Point3d[population.Count, population.GetChromosome(0).Count];
 
-            for (int i = 0; i < lstVectors.Count; i++)
-                arrPts[i] = VectorToPoint3d(lstVectors[i]);
+            for (int i = 0; i < population.Count; i++)
+            {
+                for (int j = 0; j < population.GetChromosome(i).Count; j++)
+                    arr2Pts[i, j] = Vector2Point(population.GetChromosome(i).GetDNA(j));
+            }
 
-            return arrPts;
+            return arr2Pts;
         }
 
         /// <summary>
-        /// Convert Laga Vector to Rhino Point3d
+        /// Convert Laga Vector to Rhino Point
         /// </summary>
         /// <param name="vector">The Vector to convert</param>
         /// <returns>Point3d</returns>
-        public static Point3d VectorToPoint3d(Vector vector)
+        public static Point3d Vector2Point(Vector vector)
         {
             return new Point3d(vector.X, vector.Y, vector.Z);
-
         }
 
         /// <summary>
-        /// Convert Laga Vectors to Rhino Point3ds
+        /// Convert Laga Vectors to Rhino Points
         /// </summary>
-        /// <param name="arrVector">The arry of Vectors to convert</param>
+        /// <param name="vectors">The arry of Vectors to convert</param>
         /// <returns>Point3d[]</returns>
-        public static List<Point3d> VectorToPoint3D(List<Vector> vectors)
+        public static List<Point3d> Vectors2Points(List<Vector> vectors)
         {
             List<Point3d> lstPoints = new List<Point3d>(vectors.Count());
 
             foreach (Vector v in vectors)
-                lstPoints.Add(new Point3d(VectorToPoint3d(v)));
+                lstPoints.Add(new Point3d(Vector2Point(v)));
 
             return lstPoints;
-
         }
 
         /// <summary>
-        /// Convert Rhino Point3d to Laga Vector
+        /// Convert Rhino Point to Laga Vector
         /// </summary>
         /// <param name="point">The point to convert</param>
         /// <returns>Vector</returns>
-        public static Vector Point3DToVector(Point3d point)
+        public static Vector Point2Vector(Point3d point)
         {
             if (point != null)
             {
@@ -238,12 +240,12 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">The list of Points3d to convert</param>
         /// <returns>Vectors</returns>
-        public static List<Vector> Point3DToVector(List<Point3d> points)
+        public static List<Vector> Points2Vectors(List<Point3d> points)
         {
             List<Vector> lstVec = new List<Vector>(points.Count());
 
             foreach(Point3d p in points)
-                lstVec.Add(new Vector(Point3DToVector(p)));
+                lstVec.Add(new Vector(Point2Vector(p)));
 
             return lstVec;
         }
