@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LagaRhino
 {
@@ -21,6 +19,56 @@ namespace LagaRhino
         public static void Reparam(Curve curve)
         {
             curve.Domain = param;
+        }
+
+        public static LineCurve PerpendicularSegment(Curve curve, double t, double length = 1)
+        {
+            LineCurve ln = new LineCurve();
+            CurveData.Reparam(curve);
+
+            if(curve.PerpendicularFrameAt(t, out Plane plane))
+            {
+                Vector3d vecDir = plane.ZAxis;
+                Vector3d vecLeft = Vector3d.CrossProduct(vecDir, Vector3d.ZAxis);
+                vecLeft.Unitize();
+                vecLeft *= (length * 0.5);
+                Vector3d vecRight = vecLeft;
+                vecRight.Reverse();
+                Point3d pa = plane.Origin + vecLeft;
+                Point3d pb = plane.Origin + vecRight;
+
+                ln = new LineCurve(pa, pb);
+                
+            }
+
+
+            return ln;
+        }
+
+        /// <summary>
+        /// from the curve end points build an axis.
+        /// </summary>
+        /// <param name="curve">the curve to convert</param>
+        /// <returns>LineCurve</returns>
+        public static LineCurve Axis(Curve curve)
+        {
+            LineCurve lc = new LineCurve(curve.PointAtStart, curve.PointAtEnd);
+            return LineCurveData.Axis(lc);
+        }
+
+        /// <summary>
+        /// Evaluate a curve based on array of parameters
+        /// </summary>
+        /// <param name="curve">The curve to evaluate</param>
+        /// <param name="arrT">the array of parameters</param>
+        /// <returns>Point3d[]</returns>
+        public static Point3d[] Evaluate(Curve curve, double[] arrT)
+        {
+            Point3d[] arrpoints = new Point3d[arrT.Length];
+            for(int i = 0; i < arrpoints.Length; i++)
+                arrpoints[i] = curve.PointAt(arrT[i]);
+
+            return arrpoints;
         }
 
         /// <summary>
@@ -110,10 +158,7 @@ namespace LagaRhino
                 return arrC[0];
             }
             else
-            {
                 return null;
-            }
-
         }
 
         /// <summary>

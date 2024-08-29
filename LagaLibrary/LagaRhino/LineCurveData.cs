@@ -7,7 +7,6 @@ namespace LagaRhino
     /// </summary>
     public class LineCurveData
     {
-
         /// <summary>
         /// Build a plane from the axis, it's not a perpendicular plane.
         /// </summary>
