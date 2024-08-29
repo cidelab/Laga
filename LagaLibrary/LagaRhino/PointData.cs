@@ -4,9 +4,6 @@ using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LagaRhino
 {
@@ -72,19 +69,19 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">The points to sort</param>
         /// <returns>point3d[]</returns>
-        public static Point3d[] SortPointsByZ(Point3d[] points)
+        public static Point3d[] SortPointsByZ(IEnumerable<Point3d> points)
         {
             return points.OrderBy(p => p.Z).ToArray();
         }
 
         /// <summary>
-        /// 
+        /// Sort the Z coordinate from an array of points
         /// </summary>
-        /// <param name="arrPoints"></param>
-        /// <returns></returns>
-        public static double[] SortCoordinateZ(Point3d[] arrPoints)
+        /// <param name="points"></param>
+        /// <returns>double[]</returns>
+        public static double[] SortCoortindateZ(IEnumerable<Point3d> points)
         {
-            return arrPoints.Select<Point3d, double>((Func<Point3d, double>)(pt => pt.Z)).OrderBy<double, double>((Func<double, double>)(Z => Z)).ToArray<double>();
+            return points.Select<Point3d, double>((Func<Point3d, double>)(pt => pt.Z)).OrderBy<double, double>((Func<double, double>)(Z => Z)).ToArray<double>();
         }
 
         /// <summary>
@@ -111,7 +108,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">The points to sort</param>
         /// <returns>point3d[]</returns>
-        public static Point3d[] SortPointsByXY(Point3d[] points)
+        public static Point3d[] SortPointsByXY(IEnumerable<Point3d> points)
         {
             return points.OrderBy(item => item.X)
                          .ThenBy(item => item.Y).ToArray();
@@ -123,7 +120,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">the list of points</param>
         /// <returns><![CDATA[List<Point3d>]]></returns>
-        public static List<Point3d> SortPointsClockwise(List<Point3d> points)
+        public static List<Point3d> SortPointsClockwise(IEnumerable<Point3d> points)
         {
             List<Point3d> list = points.OrderBy<Point3d, double>((Func<Point3d, double>)(pt => Math.Atan2(pt.X, pt.Y))).ToList<Point3d>();
             
@@ -147,18 +144,21 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">the array of points to group</param>
         /// <returns><![CDATA[List<Point3d[]>]]></returns>
-        public static List<Point3d[]> GroupByZ(Point3d[] points)
+        public static Population<Point3d> GroupPointsByZ(IEnumerable<Point3d> points)
         {
             points = points.OrderBy(p => p.Z).ToArray();
 
-            List<Point3d[]> lstArrGroup = new List<Point3d[]>();
+            //List<Point3d[]> lstArrGroup = new List<Point3d[]>();
+            Population<Point3d> popGroup = new Population<Point3d>();
             try
             {
                 var groupedResult = points.GroupBy(p => p.Z);
 
                 foreach (var zGroup in groupedResult)
                 {
-                    lstArrGroup.Add(zGroup.ToArray());
+                    popGroup.Add(new Chromosome<Point3d>(zGroup.ToList()));
+                    //lstArrGroup.Add(zGroup.ToArray());
+
                 }
             }
             catch (Exception)
@@ -166,7 +166,7 @@ namespace LagaRhino
                 return null;
             }
 
-            return lstArrGroup;
+            return popGroup; //lstArrGroup;
         }
 
         /// <summary>
@@ -176,21 +176,21 @@ namespace LagaRhino
         /// <param name="pointB">End point</param>
         /// <param name="span">span distance</param>
         /// <returns>Point3d[,]</returns>
-        public static Point3d[,] Interpolate2Points(Point3d pointA, Point3d pointB, double span)
+        public static Population<Point3d> Interpolate2Points(Point3d pointA, Point3d pointB, double span)
         {
             Vector va = Point2Vector(pointA);
             Vector vb = Point2Vector(pointB);
 
             Population<Vector> population = Vector.Interpolation(va, vb, span);
-            Point3d[,] arr2Pts = new Point3d[population.Count, population.GetChromosome(0).Count];
-
+            Population<Point3d> popPts = new Population<Point3d>();
+            
             for (int i = 0; i < population.Count; i++)
             {
-                for (int j = 0; j < population.GetChromosome(i).Count; j++)
-                    arr2Pts[i, j] = Vector2Point(population.GetChromosome(i).GetDNA(j));
+                List<Vector> vecs = population.GetChromosome(i).ToList();
+                popPts.Add(new Chromosome<Point3d>(Vectors2Points(vecs)));
             }
 
-            return arr2Pts;
+            return popPts;
         }
 
         /// <summary>
@@ -208,7 +208,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="vectors">The arry of Vectors to convert</param>
         /// <returns>Point3d[]</returns>
-        public static List<Point3d> Vectors2Points(List<Vector> vectors)
+        public static List<Point3d> Vectors2Points(IEnumerable<Vector> vectors)
         {
             List<Point3d> lstPoints = new List<Point3d>(vectors.Count());
 
@@ -240,7 +240,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points">The list of Points3d to convert</param>
         /// <returns>Vectors</returns>
-        public static List<Vector> Points2Vectors(List<Point3d> points)
+        public static List<Vector> Points2Vectors(IEnumerable<Point3d> points)
         {
             List<Vector> lstVec = new List<Vector>(points.Count());
 

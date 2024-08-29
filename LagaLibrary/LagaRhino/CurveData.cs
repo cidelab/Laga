@@ -26,7 +26,7 @@ namespace LagaRhino
         /// <summary>
         /// Apply the same t parameter to a list of curves to return an array of points
         /// </summary>
-        /// <param name="lstCrvs">The list of curves</param>
+        /// <param name="curves">The list of curves</param>
         /// <param name="t">t param</param>
         /// <returns>Point3d[]</returns>
         /// <example>
@@ -34,34 +34,31 @@ namespace LagaRhino
         /// <code>
         /// using LagaRhino;
         /// {
-        ///     A = CurveData.GetPointFromCurves(lstCrvs, y);
+        ///     A = CurveData.GetPointFromCurves(curves, t);
         /// }
         /// </code>
         /// </example>
-        public static Point3d[] GetPointFromCurves(List<Curve> lstCrvs, double t)
+        public static Point3d[] GetPointFromCurves(IEnumerable<Curve> curves, double t)
         {
-            Point3d[] arrPts = new Point3d[lstCrvs.Count];
-            Curve c;
-            for (int i = 0; i < lstCrvs.Count; i++)
+            Point3d[] arrPts = new Point3d[curves.Count()];
+            int i = 0;
+            foreach(Curve c in curves)
             {
-                c = lstCrvs[i];
-                c.Domain = param;
                 arrPts[i] = c.PointAt(t);
-
+                i++;            
             }
-
             return arrPts;
         }
 
         /// <summary>
         /// Makes a deep copy from a list of curves.
         /// </summary>
-        /// <param name="lstToCopy">The list to copy</param>
+        /// <param name="curves">The list to copy</param>
         /// <returns><![CDATA[List<Curve>]]></returns>
-        public static List<Curve> DeepCopyListCurve(List<Curve> lstToCopy)
+        public static List<Curve> DeepCopyListCurve(IEnumerable<Curve> curves)
         {
             List<Curve> lstDeepCopy = new List<Curve>();
-            foreach (Curve c in lstToCopy)
+            foreach (Curve c in curves)
             {
                 Curve deepCrv = (Curve)c.Duplicate();
                 lstDeepCopy.Add(deepCrv);
@@ -72,12 +69,12 @@ namespace LagaRhino
         /// <summary>
         /// Align Perpendicular frames in the Curve
         /// </summary>
-        /// <param name="crv">the curve in the analysis</param>
+        /// <param name="curve">the curve in the analysis</param>
         /// <param name="t">the t param on the curve</param>
         /// <returns>Plane</returns>
-        public static Plane CorrectPlaneOnCurveByParam(Curve crv, double t)
+        public static Plane CorrectPlaneOnCurveByParam(Curve curve, double t)
         {
-            crv.PerpendicularFrameAt(t, out Plane pl);
+            curve.PerpendicularFrameAt(t, out Plane pl);
 
             //check the direction of the plane
             Point3d plOrigin = pl.Origin;
@@ -101,14 +98,14 @@ namespace LagaRhino
         }
 
         /// <summary>
-        /// Returns the Z values from a list of curves
+        /// Group a collection of curves by their Z Value.
         /// </summary>
-        /// <param name="lstCrvs">lstCrv</param>
+        /// <param name="curves">lstCrv</param>
         /// <returns><![CDATA[List<double>]]></returns>
-        public static List<double> CurvesZValues(List<Curve> lstCrvs)
+        public static List<double> CurvesZCoordinate(IEnumerable<Curve> curves)
         {
             List<double> source = new List<double>();
-            foreach (Curve lstCrv in lstCrvs)
+            foreach (Curve lstCrv in curves)
             {
                 List<double> doubleList = source;
                 Point3d pointAtStart = lstCrv.PointAtStart;

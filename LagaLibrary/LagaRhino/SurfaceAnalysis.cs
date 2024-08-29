@@ -6,6 +6,8 @@ using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using Laga.GeneticAlgorithm;
+using System.CodeDom;
 
 namespace LagaRhino
 {
@@ -15,34 +17,47 @@ namespace LagaRhino
     public class SurfaceAnalysis
     {
         private static Interval interval = new Interval(0, 1);
-        private List<Point3d> mPts;
+        private Population<Point3d> popGrid;
         readonly private Surface srf;
         private readonly int uDivs;
         private readonly int vDivs;
 
+        /// <summary>
+        /// Get access to all points on the surface.
+        /// </summary>
+        public Population<Point3d> PointsOnSurface { get {  return popGrid; } }
 
         /// <summary>
-        /// Subdivide a surface by a list of points.
+        /// Load the grid of points on the surface.
         /// </summary>
-        /// <returns>List<Point3d></Point3d></returns>
-        public List<Point3d> SubdividebyPoints()
+        private void SubdividebyPoints()
         {
-            mPts = new List<Point3d>();
             double uSpan = 1.00 / (uDivs - 1);
             double vSpan = 1.00 / (vDivs - 1);
+
+            popGrid = new Population<Point3d>();
+            List<Point3d> mPts;
+
             for (int i = 0; i < uDivs; i++)
             {
+                mPts = new List<Point3d>();
                 for (int j = 0; j < vDivs; j++)
                 {
                     mPts.Add(srf.PointAt(i * uSpan, j * vSpan));
                 }
+                popGrid.Add(new Chromosome<Point3d>(mPts));
             }
+        }
 
-            return mPts;
+        private void SubdividebySpan()
+        {
+            Curve crvU = srf.IsoCurve(0, 0);
+            Curve crvV = srf.IsoCurve(1, 0);
 
+            //binary search...
         }
         /// <summary>
-        /// 
+        /// Constructor, Subdivide the surface by u and v numbers.
         /// </summary>
         /// <param name="surface">The base surface</param>
         /// <param name="uCount">number of points in u direction</param>
@@ -55,7 +70,25 @@ namespace LagaRhino
 
             uDivs = uCount;
             vDivs = vCount;
+
+            SubdividebyPoints();
         }
+
+        /// <summary>
+        /// Constructor, Subdivide the surface by uspan length and vspan length.
+        /// </summary>
+        /// <param name="surface">The base surface</param>
+        /// <param name="uSpan">the span length for u direction</param>
+        /// <param name="vSpan">the span length for v direction</param>
+        public SurfaceAnalysis(Surface surface, double uSpan, double vSpan)
+        {
+            srf = surface;
+            srf.SetDomain(0, interval);
+            srf.SetDomain(1, interval);
+
+            SubdividebySpan();
+        }
+
         /// <summary>
         /// Subdivide surface by planes.
         /// </summary>
@@ -90,13 +123,15 @@ namespace LagaRhino
         /// <summary>
         /// To develop a custom pattern on surface
         /// </summary>
-        public void CustomPattern()
-        { }
+        public void CustomPattern(string grammar)
+        { 
+            _ = grammar.Length;
+        }
 
         /// <summary>
         /// To develop Triangular Pattern
         /// </summary>
-        public void TriangularPatter()
+        public void TriangularPattern()
         {
 
         }
@@ -105,50 +140,27 @@ namespace LagaRhino
         /// Return a Quad Pattern division
         /// </summary>
         /// <returns><![CDATA[List<Polyline>]]></returns>
-        public List<Polyline> QuadPattern()
+        public Population<Polyline> QuadPattern()
         {
-            List<Polyline> polList = new List<Polyline>();
-            Point3d[] arrPts;
+            Population<Polyline> pop = new Population<Polyline>();
+            Chromosome<Polyline> chrRow;
+            Point3d pa, pb, pc, pd;
 
-            int span = mPts.Count / uDivs;
-
-            for (int i = 0; i < mPts.Count - span; i += span)
+            for (int i = 0; i < uDivs - 1; i ++)
             {
-                arrPts = new Point3d[5];
+                chrRow = new Chromosome<Polyline>();
                 for (int j = 0; j < vDivs - 1; j++)
                 {
-                    arrPts[0] = mPts[j + i];
-                    arrPts[1] = mPts[j + (i + span)];
-                    arrPts[2] = mPts[j + 1 + (i + span)];
-                    arrPts[3] = mPts[j + 1 + i];
-                    arrPts[4] = mPts[j + i];
+                    pa = popGrid.GetChromosome(i).GetDNA(j);
+                    pb = popGrid.GetChromosome(i + 1).GetDNA(j);
+                    pc = popGrid.GetChromosome(i + 1).GetDNA(j + 1);
+                    pd = popGrid.GetChromosome(i).GetDNA(j + 1);
 
-                    polList.Add(new Polyline(arrPts));
+                    chrRow.Add(new Polyline(new Point3d[] {pa, pb, pc, pd, pa}));
                 }
+                pop.Add(chrRow);
             }
-            return polList;
-        }
-
-        /// <summary>
-        /// Build a vertical planar surface from a LineCurve axis.
-        /// </summary>
-        /// <param name="axis">the axis</param>
-        /// <param name="height">the height of the surface</param>
-        /// <returns>Surface</returns>
-        public static Surface PlaneSurfaceAxis(LineCurve axis, double height = 100)
-        {
-            LineCurve lc = LineCurveData.Axis(axis);
-
-            Point3d ps = lc.PointAtStart;
-            Point3d pe = lc.PointAtEnd;
-
-            ps.Z = 0;
-            pe.Z = 0;
-
-            Point3d psU = new Point3d(ps.X, ps.Y, height);
-            Point3d peU = new Point3d(pe.X, pe.Y, height);
-
-            return NurbsSurface.CreateFromCorners(ps, psU, peU, pe);
+            return pop;
         }
     }
 }
