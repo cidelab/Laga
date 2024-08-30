@@ -14,8 +14,9 @@ namespace Laga.GeneticAlgorithm
     {
         readonly private List<Chromosome<T>> pop;
         readonly private int popSize;
+
         /// <summary>
-        /// 
+        /// Construct a predifined size population 
         /// </summary>
         /// <param name="SizePopulation"></param>
         public Population(int SizePopulation)
@@ -24,6 +25,13 @@ namespace Laga.GeneticAlgorithm
             pop = new List<Chromosome<T>>(SizePopulation);
         }
 
+        /// <summary>
+        /// Construct a population with no size
+        /// </summary>
+        public Population()
+        {
+            pop = new List<Chromosome<T>>();
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -65,17 +73,17 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Return the Lower ranked Chr based on the fitness evaluation
         /// </summary>
-        /// <returns></returns>
+        /// <returns><![CDATA[Chromosome<T>]]></returns>
         public Chromosome<T> Lower()
         {
             return pop.OrderBy(chr => chr.Fitness).First();
         }
 
         /// <summary>
-        /// 
+        /// Get the chromosome from the population.
         /// </summary>
         /// <param name="index"></param>
-        /// <returns></returns>
+        /// <returns><![CDATA[Chromosome<T>]]></returns>
         public Chromosome<T> GetChromosome(int index)
         {
             return pop[index];

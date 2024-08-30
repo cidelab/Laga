@@ -58,6 +58,15 @@ namespace LagaRhino
         }
 
         /// <summary>
+        /// Rotate Shoebox
+        /// </summary>
+        /// <param name="angle">Rotation angle in radians</param>
+        public void Rot(double angle)
+        {
+            this.ShoeBox.Rotate(angle, Vector3d.ZAxis, pl.Origin);
+        }
+
+        /// <summary>
         /// Shoebox with the free Z top points
         /// </summary>
         /// <param name="point">Base point location</param>

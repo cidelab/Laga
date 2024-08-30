@@ -8,7 +8,7 @@ namespace LagaRhino
     public class LineCurveData
     {
         /// <summary>
-        /// Build a plane from the axis, it's not a perpendicular plane.
+        /// Build a plane from the axis, it's not the perpendicular plane.
         /// </summary>
         /// <param name="axis">The LineCurve base</param>
         /// <returns>Plane</returns>
@@ -26,6 +26,7 @@ namespace LagaRhino
 
             return new Plane(ptOrigin, vecX, Vector3d.ZAxis);
         }
+
         /// <summary>
         /// Transform a LineCurve to an Axis, The origin of the axis is the further point from the (0,0,0)
         /// </summary>
