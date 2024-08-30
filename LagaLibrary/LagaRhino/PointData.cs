@@ -79,7 +79,7 @@ namespace LagaRhino
         /// </summary>
         /// <param name="points"></param>
         /// <returns>double[]</returns>
-        public static double[] SortCoortindateZ(IEnumerable<Point3d> points)
+        public static double[] SortCoordinateZ(IEnumerable<Point3d> points)
         {
             return points.Select<Point3d, double>((Func<Point3d, double>)(pt => pt.Z)).OrderBy<double, double>((Func<double, double>)(Z => Z)).ToArray<double>();
         }
@@ -245,7 +245,7 @@ namespace LagaRhino
             List<Vector> lstVec = new List<Vector>(points.Count());
 
             foreach(Point3d p in points)
-                lstVec.Add(new Vector(Point3DToVector(p)));
+                lstVec.Add(new Vector(Point2Vector(p)));
 
             return lstVec;
         }

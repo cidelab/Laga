@@ -7,6 +7,13 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<FileVersion>1.0.1.0</FileVersion>
     <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</PackageVersion>
+    <Title>LagaRhino</Title>
+    <Authors>Carlos de la b</Authors>
+    <Company>designemergente.com</Company>
+    <Description>multipurpose library for Rhinocommon</Description>
+    <RepositoryUrl>https://github.com/cidelab/Laga/tree/newDevelopment</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>http://cidelab.github.io/Laga/</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\LagaRhino.xml</DocumentationFile>
@@ -20,9 +27,13 @@
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MIT License.txt" Pack="true" Visible="false" PackagePath=""/>
+    <None Include="..\..\..\..\..\OneDrive - designemergente\04 - Web Page\2024 - Web\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="MIT License.txt" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
    <ItemGroup>
-        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 </Project>

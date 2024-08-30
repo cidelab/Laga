@@ -12,6 +12,12 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
 	<FileVersion>1.0.1.0</FileVersion>
 	<PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</PackageVersion>
+	<Title>Laga</Title>
+	<Description>General library to design and build genetic algorithms</Description>
+	<PackageProjectUrl>http://cidelab.github.io/Laga/</PackageProjectUrl>
+	<Company>carlos de la b.</Company>
+	<PackageIcon>logo.png</PackageIcon>
+	<RepositoryUrl>https://github.com/cidelab/Laga/tree/newDevelopment</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\Laga.xml</DocumentationFile>
@@ -51,6 +57,10 @@
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\..\OneDrive - designemergente\04 - Web Page\2024 - Web\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="MIT License.txt" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
