@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Laga.GeneticAlgorithm;
 using System.CodeDom;
 
-namespace LagaRhino
+namespace Laga.Rhino
 {
     /// <summary>
     /// Simple Manipulations on Rhino Surfaces

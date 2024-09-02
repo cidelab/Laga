@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LagaRhino
+namespace Laga.Rhino
 {
     /// <summary>
     /// Simple Manipulations on Rhino Points

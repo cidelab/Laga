@@ -4,6 +4,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>MIT License.txt</PackageLicenseFile>
     <OutputType>Library</OutputType>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<FileVersion>1.0.1.0</FileVersion>
     <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</PackageVersion>
@@ -27,10 +28,6 @@
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\..\OneDrive - designemergente\04 - Web Page\2024 - Web\logo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include="MIT License.txt" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
    <ItemGroup>

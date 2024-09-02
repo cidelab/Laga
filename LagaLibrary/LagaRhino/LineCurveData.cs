@@ -1,6 +1,6 @@
 ﻿using Rhino.Geometry;
 
-namespace LagaRhino
+namespace Laga.Rhino
 {
     /// <summary>
     /// Simple manipulations on Rhino LineCurves

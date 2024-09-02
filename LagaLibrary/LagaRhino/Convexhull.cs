@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using Laga.Geometry;
 
-namespace LagaRhino
+namespace Laga.Rhino
 {
     /// <summary>
     /// Convexhull Class
