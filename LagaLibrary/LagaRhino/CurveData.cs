@@ -21,6 +21,13 @@ namespace Laga.Rhino
             curve.Domain = param;
         }
 
+        /// <summary>
+        /// Build a perpendicular line at specific point of a curve
+        /// </summary>
+        /// <param name="curve">The curve</param>
+        /// <param name="t">The parameter between 0 to 1</param>
+        /// <param name="length">The length for the segment, default 1</param>
+        /// <returns>LineCurve</returns>
         public static LineCurve PerpendicularSegment(Curve curve, double t, double length = 1)
         {
             LineCurve ln = new LineCurve();
@@ -77,8 +84,7 @@ namespace Laga.Rhino
         /// <param name="curves">The list of curves</param>
         /// <param name="t">t param</param>
         /// <returns>Point3d[]</returns>
-        /// <example>
-        /// Shows how to get the same point parameter from a list of curves.
+        /// <example> Shows how to get the same point parameter from a list of curves:
         /// <code>
         /// using LagaRhino;
         /// {
@@ -145,6 +151,12 @@ namespace Laga.Rhino
             return pl;
         }
 
+        /// <summary>
+        /// Mirror a curve from a plane
+        /// </summary>
+        /// <param name="curve">The curve to mirror</param>
+        /// <param name="plane">The plane</param>
+        /// <returns>Curve</returns>
         public static Curve MirrorCurve( Curve curve, Plane plane)
         {
             Curve c = (Curve)curve.DuplicateCurve();

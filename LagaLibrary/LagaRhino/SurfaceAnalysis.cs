@@ -1,13 +1,6 @@
 ﻿using Rhino.Geometry;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 using Laga.GeneticAlgorithm;
-using System.CodeDom;
 
 namespace Laga.Rhino
 {
