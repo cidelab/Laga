@@ -1,0 +1,13 @@
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.pdb
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.xml
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.csproj.AssemblyReference.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Interop.Microsoft.Office.Core.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Interop.VBIDE.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.csproj.ResolveComReference.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.csproj.CoreCompileInputs.cache
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.sourcelink.json
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.dll
+C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.pdb

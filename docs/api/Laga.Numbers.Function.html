@@ -111,30 +111,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Function</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Laga_Numbers_Function__ctor_" data-uid="Laga.Numbers.Function.#ctor*"></a>
-  <h4 id="Laga_Numbers_Function__ctor" data-uid="Laga.Numbers.Function.#ctor">Function()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Function()</code></pre>
-  </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Laga_Numbers_Function_Deg2Rad_" data-uid="Laga.Numbers.Function.Deg2Rad*"></a>
-  <h4 id="Laga_Numbers_Function_Deg2Rad_System_Double_" data-uid="Laga.Numbers.Function.Deg2Rad(System.Double)">Deg2Rad(Double)</h4>
-  <div class="markdown level1 summary"><p>Degrees to Radians</p>
+  <a id="Laga_Numbers_Function_Flower_" data-uid="Laga.Numbers.Function.Flower*"></a>
+  <h4 id="Laga_Numbers_Function_Flower_System_Int32_System_Single_System_Single_System_Single_System_Single_" data-uid="Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)">Flower(Int32, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Flower Spiral</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double Deg2Rad(double degrees)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector[] Flower(int range = 100, float span = 0.1F, float radOne = 8F, float radTwo = 6F, float radThree = 3F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,8 +135,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">degrees</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">span</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radOne</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radTwo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radThree</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -163,9 +171,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>double</p>
-</td>
+        <td><a class="xref" href="Laga.Geometry.Vector.html">Vector</a>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -223,50 +230,6 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Laga_Numbers_Function_Rad2Deg_" data-uid="Laga.Numbers.Function.Rad2Deg*"></a>
-  <h4 id="Laga_Numbers_Function_Rad2Deg_System_Double_" data-uid="Laga.Numbers.Function.Rad2Deg(System.Double)">Rad2Deg(Double)</h4>
-  <div class="markdown level1 summary"><p>Radians to Degree</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double Rad2Deg(double radians)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">radians</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>double</p>
-</td>
       </tr>
     </tbody>
   </table>

@@ -45,6 +45,7 @@ references:
   name: Chromosome
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chromosome
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chromosome
   nameWithType: Chromosome<T>.Chromosome
@@ -61,6 +62,7 @@ references:
   name: Add
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Add_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Add
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Add
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Add
   nameWithType: Chromosome<T>.Add
@@ -78,6 +80,7 @@ references:
   name: AddRange
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_AddRange_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.AddRange
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.AddRange
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).AddRange
   nameWithType: Chromosome<T>.AddRange
@@ -94,6 +97,7 @@ references:
   name: Chr
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Chr_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Chr
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Chr
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Chr
   nameWithType: Chromosome<T>.Chr
@@ -110,6 +114,7 @@ references:
   name: Clone
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Clone_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Clone
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Clone
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Clone
   nameWithType: Chromosome<T>.Clone
@@ -126,6 +131,7 @@ references:
   name: Count
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Count_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Count
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Count
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Count
   nameWithType: Chromosome<T>.Count
@@ -142,6 +148,7 @@ references:
   name: Fisher_Yates
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Fisher_Yates_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Fisher_Yates
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fisher_Yates
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fisher_Yates
   nameWithType: Chromosome<T>.Fisher_Yates
@@ -158,6 +165,7 @@ references:
   name: Fitness
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_Fitness_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.Fitness
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.Fitness
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).Fitness
   nameWithType: Chromosome<T>.Fitness
@@ -174,6 +182,7 @@ references:
   name: GetDNA
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_GetDNA_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.GetDNA
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.GetDNA
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).GetDNA
   nameWithType: Chromosome<T>.GetDNA
@@ -190,6 +199,7 @@ references:
   name: InsertDNA
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_InsertDNA_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.InsertDNA
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.InsertDNA
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).InsertDNA
   nameWithType: Chromosome<T>.InsertDNA
@@ -207,6 +217,7 @@ references:
   name: ICloneable.Clone
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_System_ICloneable_Clone_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.System#ICloneable#Clone
+  isSpec: "True"
   name.vb: System.ICloneable.Clone
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.System.ICloneable.Clone
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).System.ICloneable.Clone
@@ -224,6 +235,7 @@ references:
   name: ToArray
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_ToArray_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToArray
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToArray
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToArray
   nameWithType: Chromosome<T>.ToArray
@@ -240,6 +252,7 @@ references:
   name: ToList
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_ToList_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToList
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToList
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToList
   nameWithType: Chromosome<T>.ToList
@@ -256,6 +269,7 @@ references:
   name: ToString
   href: api/Laga.GeneticAlgorithm.Chromosome-1.html#Laga_GeneticAlgorithm_Chromosome_1_ToString_
   commentId: Overload:Laga.GeneticAlgorithm.Chromosome`1.ToString
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Chromosome<T>.ToString
   fullName.vb: Laga.GeneticAlgorithm.Chromosome(Of T).ToString
   nameWithType: Chromosome<T>.ToString
@@ -281,6 +295,7 @@ references:
   name: Crossover
   href: api/Laga.GeneticAlgorithm.Crossover-1.html#Laga_GeneticAlgorithm_Crossover_1__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.Crossover`1.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Crossover<T>.Crossover
   fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T).Crossover
   nameWithType: Crossover<T>.Crossover
@@ -297,6 +312,7 @@ references:
   name: IndexParent
   href: api/Laga.GeneticAlgorithm.Crossover-1.html#Laga_GeneticAlgorithm_Crossover_1_IndexParent_
   commentId: Overload:Laga.GeneticAlgorithm.Crossover`1.IndexParent
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Crossover<T>.IndexParent
   fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T).IndexParent
   nameWithType: Crossover<T>.IndexParent
@@ -314,6 +330,7 @@ references:
   name: RandomPointCrossover
   href: api/Laga.GeneticAlgorithm.Crossover-1.html#Laga_GeneticAlgorithm_Crossover_1_RandomPointCrossover_
   commentId: Overload:Laga.GeneticAlgorithm.Crossover`1.RandomPointCrossover
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Crossover<T>.RandomPointCrossover
   fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T).RandomPointCrossover
   nameWithType: Crossover<T>.RandomPointCrossover
@@ -331,6 +348,7 @@ references:
   name: SinglePoint
   href: api/Laga.GeneticAlgorithm.Crossover-1.html#Laga_GeneticAlgorithm_Crossover_1_SinglePoint_
   commentId: Overload:Laga.GeneticAlgorithm.Crossover`1.SinglePoint
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Crossover<T>.SinglePoint
   fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T).SinglePoint
   nameWithType: Crossover<T>.SinglePoint
@@ -393,6 +411,7 @@ references:
   name: SinglePointCrossover
   href: api/Laga.GeneticAlgorithm.Crossover-1.html#Laga_GeneticAlgorithm_Crossover_1_SinglePointCrossover_
   commentId: Overload:Laga.GeneticAlgorithm.Crossover`1.SinglePointCrossover
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Crossover<T>.SinglePointCrossover
   fullName.vb: Laga.GeneticAlgorithm.Crossover(Of T).SinglePointCrossover
   nameWithType: Crossover<T>.SinglePointCrossover
@@ -413,6 +432,7 @@ references:
   name: GenrChromosome
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.GenrChromosome
   nameWithType: GenrChromosome.GenrChromosome
 - uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)
@@ -425,6 +445,7 @@ references:
   name: CharChromosome
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_CharChromosome_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosome
   nameWithType: GenrChromosome.CharChromosome
 - uid: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
@@ -437,6 +458,7 @@ references:
   name: CharChromosomeBinary
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_CharChromosomeBinary_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary
   nameWithType: GenrChromosome.CharChromosomeBinary
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)
@@ -449,6 +471,7 @@ references:
   name: DNA_Char
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_Char_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_Char
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_Char
   nameWithType: GenrChromosome.DNA_Char
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
@@ -461,6 +484,7 @@ references:
   name: DNA_CharBinary
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_CharBinary_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary
   nameWithType: GenrChromosome.DNA_CharBinary
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)
@@ -473,6 +497,7 @@ references:
   name: DNA_IntBinary
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_IntBinary_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary
   nameWithType: GenrChromosome.DNA_IntBinary
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)
@@ -485,6 +510,7 @@ references:
   name: DNA_RandDouble
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_RandDouble_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble
   nameWithType: GenrChromosome.DNA_RandDouble
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)
@@ -497,6 +523,7 @@ references:
   name: DNA_RandFloat
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_RandFloat_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat
   nameWithType: GenrChromosome.DNA_RandFloat
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)
@@ -509,6 +536,7 @@ references:
   name: DNA_RandInteger
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_RandInteger_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger
   nameWithType: GenrChromosome.DNA_RandInteger
 - uid: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)
@@ -521,6 +549,7 @@ references:
   name: DNA_ShuffleInteger
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_DNA_ShuffleInteger_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger
   nameWithType: GenrChromosome.DNA_ShuffleInteger
 - uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)
@@ -545,6 +574,7 @@ references:
   name: NumberChromosome
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_NumberChromosome_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome
   nameWithType: GenrChromosome.NumberChromosome
 - uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)
@@ -557,6 +587,7 @@ references:
   name: NumberChromosomeBinary
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeBinary_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary
   nameWithType: GenrChromosome.NumberChromosomeBinary
 - uid: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)
@@ -569,6 +600,7 @@ references:
   name: NumberChromosomeSwap
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_NumberChromosomeSwap_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap
   nameWithType: GenrChromosome.NumberChromosomeSwap
 - uid: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
@@ -581,6 +613,7 @@ references:
   name: SizeChrom
   href: api/Laga.GeneticAlgorithm.GenrChromosome.html#Laga_GeneticAlgorithm_GenrChromosome_SizeChrom_
   commentId: Overload:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrChromosome.SizeChrom
   nameWithType: GenrChromosome.SizeChrom
 - uid: Laga.GeneticAlgorithm.GenrDNA
@@ -599,6 +632,7 @@ references:
   name: Binary_Char
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Binary_Char_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Binary_Char
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Binary_Char
   nameWithType: GenrDNA.Binary_Char
 - uid: Laga.GeneticAlgorithm.GenrDNA.Binary_Integer(System.Int32)
@@ -611,6 +645,7 @@ references:
   name: Binary_Integer
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Binary_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Binary_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Binary_Integer
   nameWithType: GenrDNA.Binary_Integer
 - uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Char(System.Int32,System.Int32,System.Int32)
@@ -623,6 +658,7 @@ references:
   name: Rand_Char
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Char_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Rand_Char
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Char
   nameWithType: GenrDNA.Rand_Char
 - uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Double(System.Int32,System.Double,System.Double)
@@ -635,6 +671,7 @@ references:
   name: Rand_Double
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Double_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Rand_Double
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Double
   nameWithType: GenrDNA.Rand_Double
 - uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Float(System.Int32,System.Single,System.Single)
@@ -647,6 +684,7 @@ references:
   name: Rand_Float
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Float_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Rand_Float
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Float
   nameWithType: GenrDNA.Rand_Float
 - uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Integer(System.Int32,System.Int32,System.Int32)
@@ -659,8 +697,22 @@ references:
   name: Rand_Integer
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Rand_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Integer
   nameWithType: GenrDNA.Rand_Integer
+- uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Vector(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)
+  name: Rand_Vector(Int32, Range, Range, Range)
+  href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Vector_System_Int32_Laga_Numbers_Range_Laga_Numbers_Range_Laga_Numbers_Range_
+  commentId: M:Laga.GeneticAlgorithm.GenrDNA.Rand_Vector(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)
+  fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Vector(System.Int32, Laga.Numbers.Range, Laga.Numbers.Range, Laga.Numbers.Range)
+  nameWithType: GenrDNA.Rand_Vector(Int32, Range, Range, Range)
+- uid: Laga.GeneticAlgorithm.GenrDNA.Rand_Vector*
+  name: Rand_Vector
+  href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Rand_Vector_
+  commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Rand_Vector
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.GenrDNA.Rand_Vector
+  nameWithType: GenrDNA.Rand_Vector
 - uid: Laga.GeneticAlgorithm.GenrDNA.Shuffle_Integer(System.Int32,System.Int32)
   name: Shuffle_Integer(Int32, Int32)
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Shuffle_Integer_System_Int32_System_Int32_
@@ -671,6 +723,7 @@ references:
   name: Shuffle_Integer
   href: api/Laga.GeneticAlgorithm.GenrDNA.html#Laga_GeneticAlgorithm_GenrDNA_Shuffle_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrDNA.Shuffle_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrDNA.Shuffle_Integer
   nameWithType: GenrDNA.Shuffle_Integer
 - uid: Laga.GeneticAlgorithm.GenrPopulation
@@ -689,6 +742,7 @@ references:
   name: GenrPopulation
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.GenrPopulation
   nameWithType: GenrPopulation.GenrPopulation
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Binary_Char(System.Int32)
@@ -701,6 +755,7 @@ references:
   name: Binary_Char
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Binary_Char_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Binary_Char
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Binary_Char
   nameWithType: GenrPopulation.Binary_Char
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer(System.Int32)
@@ -713,6 +768,7 @@ references:
   name: Binary_Integer
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Binary_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer
   nameWithType: GenrPopulation.Binary_Integer
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Rand_Char(System.Int32,System.Int32,System.Int32)
@@ -725,6 +781,7 @@ references:
   name: Rand_Char
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Rand_Char_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Rand_Char
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Rand_Char
   nameWithType: GenrPopulation.Rand_Char
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Rand_Double(System.Int32,System.Double,System.Double)
@@ -737,6 +794,7 @@ references:
   name: Rand_Double
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Rand_Double_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Rand_Double
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Rand_Double
   nameWithType: GenrPopulation.Rand_Double
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Rand_float(System.Int32,System.Single,System.Single)
@@ -749,6 +807,7 @@ references:
   name: Rand_float
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Rand_float_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Rand_float
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Rand_float
   nameWithType: GenrPopulation.Rand_float
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Rand_Integer(System.Int32,System.Int32,System.Int32)
@@ -761,6 +820,7 @@ references:
   name: Rand_Integer
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Rand_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Rand_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Rand_Integer
   nameWithType: GenrPopulation.Rand_Integer
 - uid: Laga.GeneticAlgorithm.GenrPopulation.Shuffle_Integer(System.Int32,System.Int32)
@@ -773,6 +833,7 @@ references:
   name: Shuffle_Integer
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_Shuffle_Integer_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.Shuffle_Integer
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.Shuffle_Integer
   nameWithType: GenrPopulation.Shuffle_Integer
 - uid: Laga.GeneticAlgorithm.GenrPopulation.SizePop
@@ -785,6 +846,7 @@ references:
   name: SizePop
   href: api/Laga.GeneticAlgorithm.GenrPopulation.html#Laga_GeneticAlgorithm_GenrPopulation_SizePop_
   commentId: Overload:Laga.GeneticAlgorithm.GenrPopulation.SizePop
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.GenrPopulation.SizePop
   nameWithType: GenrPopulation.SizePop
 - uid: Laga.GeneticAlgorithm.Mutation
@@ -803,6 +865,7 @@ references:
   name: Mutation
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.Mutation
   nameWithType: Mutation.Mutation
 - uid: Laga.GeneticAlgorithm.Mutation.BinaryCharMutation(System.Char[][],System.Single)
@@ -818,6 +881,7 @@ references:
   name: BinaryCharMutation
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation_BinaryCharMutation_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.BinaryCharMutation
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.BinaryCharMutation
   nameWithType: Mutation.BinaryCharMutation
 - uid: Laga.GeneticAlgorithm.Mutation.CharMutation(Laga.GeneticAlgorithm.Population{System.Char},System.Single,System.Int32,System.Int32)
@@ -842,6 +906,7 @@ references:
   name: CharMutation
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation_CharMutation_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.CharMutation
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.CharMutation
   nameWithType: Mutation.CharMutation
 - uid: Laga.GeneticAlgorithm.Mutation.MutationSwap(System.Object[][],System.Single)
@@ -857,6 +922,7 @@ references:
   name: MutationSwap
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation_MutationSwap_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.MutationSwap
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.MutationSwap
   nameWithType: Mutation.MutationSwap
 - uid: Laga.GeneticAlgorithm.Mutation.Number(Laga.GeneticAlgorithm.Population{System.Double},System.Single,System.Double,System.Double)
@@ -872,6 +938,7 @@ references:
   name: Number
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation_Number_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.Number
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.Number
   nameWithType: Mutation.Number
 - uid: Laga.GeneticAlgorithm.Mutation.NumbMutation(System.Double[][],System.Double,System.Double,System.Single)
@@ -905,6 +972,7 @@ references:
   name: NumbMutation
   href: api/Laga.GeneticAlgorithm.Mutation.html#Laga_GeneticAlgorithm_Mutation_NumbMutation_
   commentId: Overload:Laga.GeneticAlgorithm.Mutation.NumbMutation
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Mutation.NumbMutation
   nameWithType: Mutation.NumbMutation
 - uid: Laga.GeneticAlgorithm.NaturalSelection`1
@@ -928,6 +996,7 @@ references:
   name: NaturalSelection
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.NaturalSelection
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).NaturalSelection
   nameWithType: NaturalSelection<T>.NaturalSelection
@@ -981,6 +1050,7 @@ references:
   name: Elitism
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_Elitism_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.Elitism
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.Elitism
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).Elitism
   nameWithType: NaturalSelection<T>.Elitism
@@ -1061,6 +1131,7 @@ references:
   name: RouletteWheel
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheel_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheel
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.RouletteWheel
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).RouletteWheel
   nameWithType: NaturalSelection<T>.RouletteWheel
@@ -1105,6 +1176,7 @@ references:
   name: RouletteWheelNonPolinomicMin
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.RouletteWheelNonPolinomicMin
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).RouletteWheelNonPolinomicMin
   nameWithType: NaturalSelection<T>.RouletteWheelNonPolinomicMin
@@ -1122,6 +1194,7 @@ references:
   name: RouletteWheelNonPolinomicMin2
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelNonPolinomicMin2_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelNonPolinomicMin2
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.RouletteWheelNonPolinomicMin2
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).RouletteWheelNonPolinomicMin2
   nameWithType: NaturalSelection<T>.RouletteWheelNonPolinomicMin2
@@ -1175,6 +1248,7 @@ references:
   name: RouletteWheelSigmoidal
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_RouletteWheelSigmoidal_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.RouletteWheelSigmoidal
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.RouletteWheelSigmoidal
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).RouletteWheelSigmoidal
   nameWithType: NaturalSelection<T>.RouletteWheelSigmoidal
@@ -1273,6 +1347,7 @@ references:
   name: TournamentSelection
   href: api/Laga.GeneticAlgorithm.NaturalSelection-1.html#Laga_GeneticAlgorithm_NaturalSelection_1_TournamentSelection_
   commentId: Overload:Laga.GeneticAlgorithm.NaturalSelection`1.TournamentSelection
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.NaturalSelection<T>.TournamentSelection
   fullName.vb: Laga.GeneticAlgorithm.NaturalSelection(Of T).TournamentSelection
   nameWithType: NaturalSelection<T>.TournamentSelection
@@ -1286,6 +1361,14 @@ references:
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T)
   nameWithType: Population<T>
   nameWithType.vb: Population(Of T)
+- uid: Laga.GeneticAlgorithm.Population`1.#ctor
+  name: Population()
+  href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1__ctor
+  commentId: M:Laga.GeneticAlgorithm.Population`1.#ctor
+  fullName: Laga.GeneticAlgorithm.Population<T>.Population()
+  fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Population()
+  nameWithType: Population<T>.Population()
+  nameWithType.vb: Population(Of T).Population()
 - uid: Laga.GeneticAlgorithm.Population`1.#ctor(System.Int32)
   name: Population(Int32)
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1__ctor_System_Int32_
@@ -1298,6 +1381,7 @@ references:
   name: Population
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Population
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Population
   nameWithType: Population<T>.Population
@@ -1315,6 +1399,7 @@ references:
   name: Add
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_Add_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.Add
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Add
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Add
   nameWithType: Population<T>.Add
@@ -1331,6 +1416,7 @@ references:
   name: Count
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_Count_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.Count
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Count
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Count
   nameWithType: Population<T>.Count
@@ -1347,6 +1433,7 @@ references:
   name: Delete
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_Delete_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.Delete
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Delete
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Delete
   nameWithType: Population<T>.Delete
@@ -1363,6 +1450,7 @@ references:
   name: FitnessAverage
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_FitnessAverage_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.FitnessAverage
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.FitnessAverage
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).FitnessAverage
   nameWithType: Population<T>.FitnessAverage
@@ -1379,6 +1467,7 @@ references:
   name: GetChromosome
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_GetChromosome_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.GetChromosome
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.GetChromosome
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).GetChromosome
   nameWithType: Population<T>.GetChromosome
@@ -1395,6 +1484,7 @@ references:
   name: GetEnumerator
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_GetEnumerator_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.GetEnumerator
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.GetEnumerator
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).GetEnumerator
   nameWithType: Population<T>.GetEnumerator
@@ -1411,6 +1501,7 @@ references:
   name: Higher
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_Higher_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.Higher
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Higher
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Higher
   nameWithType: Population<T>.Higher
@@ -1427,6 +1518,7 @@ references:
   name: Lower
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_Lower_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.Lower
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.Lower
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).Lower
   nameWithType: Population<T>.Lower
@@ -1443,6 +1535,7 @@ references:
   name: ToString
   href: api/Laga.GeneticAlgorithm.Population-1.html#Laga_GeneticAlgorithm_Population_1_ToString_
   commentId: Overload:Laga.GeneticAlgorithm.Population`1.ToString
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.Population<T>.ToString
   fullName.vb: Laga.GeneticAlgorithm.Population(Of T).ToString
   nameWithType: Population<T>.ToString
@@ -1463,6 +1556,7 @@ references:
   name: RankingSort
   href: api/Laga.GeneticAlgorithm.RankingSort.html#Laga_GeneticAlgorithm_RankingSort__ctor_
   commentId: Overload:Laga.GeneticAlgorithm.RankingSort.#ctor
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.RankingSort.RankingSort
   nameWithType: RankingSort.RankingSort
 - uid: Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Int32[],System.Boolean)
@@ -1559,335 +1653,217 @@ references:
   name: BidirectionalBubbleSort
   href: api/Laga.GeneticAlgorithm.RankingSort.html#Laga_GeneticAlgorithm_RankingSort_BidirectionalBubbleSort_
   commentId: Overload:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort
+  isSpec: "True"
   fullName: Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort
   nameWithType: RankingSort.BidirectionalBubbleSort
-- uid: Laga.GeneticAlgorithm.Tools
-  name: Tools
-  href: api/Laga.GeneticAlgorithm.Tools.html
-  commentId: T:Laga.GeneticAlgorithm.Tools
-  fullName: Laga.GeneticAlgorithm.Tools
-  nameWithType: Tools
-- uid: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger*
-  name: BinaryChromosomeToInteger
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_BinaryChromosomeToInteger_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger
-  fullName: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger
-  nameWithType: Tools.BinaryChromosomeToInteger
-- uid: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])
-  name: BinaryChromosomeToInteger<T>(T[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_BinaryChromosomeToInteger__1___0___
-  commentId: M:Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger``1(``0[])
-  name.vb: BinaryChromosomeToInteger(Of T)(T())
-  fullName: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger<T>(T[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.BinaryChromosomeToInteger(Of T)(T())
-  nameWithType: Tools.BinaryChromosomeToInteger<T>(T[])
-  nameWithType.vb: Tools.BinaryChromosomeToInteger(Of T)(T())
-- uid: Laga.GeneticAlgorithm.Tools.DataReport*
-  name: DataReport
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_DataReport_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.DataReport
-  fullName: Laga.GeneticAlgorithm.Tools.DataReport
-  nameWithType: Tools.DataReport
-- uid: Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})
-  name: DataReport<T>(List<T>)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_DataReport__1_System_Collections_Generic_List___0__
-  commentId: M:Laga.GeneticAlgorithm.Tools.DataReport``1(System.Collections.Generic.List{``0})
-  name.vb: DataReport(Of T)(List(Of T))
-  fullName: Laga.GeneticAlgorithm.Tools.DataReport<T>(System.Collections.Generic.List<T>)
-  fullName.vb: Laga.GeneticAlgorithm.Tools.DataReport(Of T)(System.Collections.Generic.List(Of T))
-  nameWithType: Tools.DataReport<T>(List<T>)
-  nameWithType.vb: Tools.DataReport(Of T)(List(Of T))
-- uid: Laga.GeneticAlgorithm.Tools.ExtractDNA*
-  name: ExtractDNA
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ExtractDNA_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.ExtractDNA
-  fullName: Laga.GeneticAlgorithm.Tools.ExtractDNA
-  nameWithType: Tools.ExtractDNA
-- uid: Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
-  name: ExtractDNA<T>(T[], Int32, Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ExtractDNA__1___0___System_Int32_System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
-  name.vb: ExtractDNA(Of T)(T(), Int32, Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.ExtractDNA<T>(T[], System.Int32, System.Int32)
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ExtractDNA(Of T)(T(), System.Int32, System.Int32)
-  nameWithType: Tools.ExtractDNA<T>(T[], Int32, Int32)
-  nameWithType.vb: Tools.ExtractDNA(Of T)(T(), Int32, Int32)
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
-  name: Fisher_Yates(Int32[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_Yates_System_Int32___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
-  name.vb: Fisher_Yates(Int32())
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Int32())
-  nameWithType: Tools.Fisher_Yates(Int32[])
-  nameWithType.vb: Tools.Fisher_Yates(Int32())
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
-  name: Fisher_Yates(Object[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_Yates_System_Object___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
-  name.vb: Fisher_Yates(Object())
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(System.Object())
-  nameWithType: Tools.Fisher_Yates(Object[])
-  nameWithType.vb: Tools.Fisher_Yates(Object())
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates*
-  name: Fisher_Yates
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_Yates_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Fisher_Yates
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates
-  nameWithType: Tools.Fisher_Yates
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])
-  name: Fisher_Yates<T>(T[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_Yates__1___0___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_Yates``1(``0[])
-  name.vb: Fisher_Yates(Of T)(T())
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_Yates<T>(T[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_Yates(Of T)(T())
-  nameWithType: Tools.Fisher_Yates<T>(T[])
-  nameWithType.vb: Tools.Fisher_Yates(Of T)(T())
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)
-  name: Fisher_YatesPercent(Object[], Single)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_YatesPercent_System_Object___System_Single_
-  commentId: M:Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[],System.Single)
-  name.vb: Fisher_YatesPercent(Object(), Single)
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object[], System.Single)
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent(System.Object(), System.Single)
-  nameWithType: Tools.Fisher_YatesPercent(Object[], Single)
-  nameWithType.vb: Tools.Fisher_YatesPercent(Object(), Single)
-- uid: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent*
-  name: Fisher_YatesPercent
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Fisher_YatesPercent_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent
-  fullName: Laga.GeneticAlgorithm.Tools.Fisher_YatesPercent
-  nameWithType: Tools.Fisher_YatesPercent
-- uid: Laga.GeneticAlgorithm.Tools.MinMaxValue*
-  name: MinMaxValue
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_MinMaxValue_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.MinMaxValue
-  fullName: Laga.GeneticAlgorithm.Tools.MinMaxValue
-  nameWithType: Tools.MinMaxValue
-- uid: Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])
-  name: MinMaxValue<T>(T[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_MinMaxValue__1___0___
-  commentId: M:Laga.GeneticAlgorithm.Tools.MinMaxValue``1(``0[])
-  name.vb: MinMaxValue(Of T)(T())
-  fullName: Laga.GeneticAlgorithm.Tools.MinMaxValue<T>(T[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.MinMaxValue(Of T)(T())
-  nameWithType: Tools.MinMaxValue<T>(T[])
-  nameWithType.vb: Tools.MinMaxValue(Of T)(T())
-- uid: Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)
-  name: Mom_Dad(Int32, Single)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Mom_Dad_System_Int32_System_Single_
-  commentId: M:Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32,System.Single)
-  fullName: Laga.GeneticAlgorithm.Tools.Mom_Dad(System.Int32, System.Single)
-  nameWithType: Tools.Mom_Dad(Int32, Single)
-- uid: Laga.GeneticAlgorithm.Tools.Mom_Dad*
-  name: Mom_Dad
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Mom_Dad_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Mom_Dad
-  fullName: Laga.GeneticAlgorithm.Tools.Mom_Dad
-  nameWithType: Tools.Mom_Dad
-- uid: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)
-  name: Parse(Vector[], Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_Laga_Geometry_Vector___System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[],System.Int32)
-  name.vb: Parse(Vector(), Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector[], System.Int32)
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(Laga.Geometry.Vector(), System.Int32)
-  nameWithType: Tools.Parse(Vector[], Int32)
-  nameWithType.vb: Tools.Parse(Vector(), Int32)
-- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
-  name: Parse(Char[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_System_Char___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
-  name.vb: Parse(Char())
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Char[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Char())
-  nameWithType: Tools.Parse(Char[])
-  nameWithType.vb: Tools.Parse(Char())
-- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
-  name: Parse(Double[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_System_Double___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
-  name.vb: Parse(Double())
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Double[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Double())
-  nameWithType: Tools.Parse(Double[])
-  nameWithType.vb: Tools.Parse(Double())
-- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
-  name: Parse(Int32[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_System_Int32___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
-  name.vb: Parse(Int32())
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Int32[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Int32())
-  nameWithType: Tools.Parse(Int32[])
-  nameWithType.vb: Tools.Parse(Int32())
-- uid: Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
-  name: Parse(Single[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_System_Single___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
-  name.vb: Parse(Single())
-  fullName: Laga.GeneticAlgorithm.Tools.Parse(System.Single[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Parse(System.Single())
-  nameWithType: Tools.Parse(Single[])
-  nameWithType.vb: Tools.Parse(Single())
-- uid: Laga.GeneticAlgorithm.Tools.Parse*
-  name: Parse
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Parse_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Parse
-  fullName: Laga.GeneticAlgorithm.Tools.Parse
-  nameWithType: Tools.Parse
-- uid: Laga.GeneticAlgorithm.Tools.ParseDblToFloat(System.Double,System.Int32)
-  name: ParseDblToFloat(Double, Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ParseDblToFloat_System_Double_System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.ParseDblToFloat(System.Double,System.Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.ParseDblToFloat(System.Double, System.Int32)
-  nameWithType: Tools.ParseDblToFloat(Double, Int32)
-- uid: Laga.GeneticAlgorithm.Tools.ParseDblToFloat*
-  name: ParseDblToFloat
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ParseDblToFloat_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.ParseDblToFloat
-  fullName: Laga.GeneticAlgorithm.Tools.ParseDblToFloat
-  nameWithType: Tools.ParseDblToFloat
-- uid: Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)
-  name: Prefix(String, Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Prefix_System_String_System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.Prefix(System.String,System.Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.Prefix(System.String, System.Int32)
-  nameWithType: Tools.Prefix(String, Int32)
-- uid: Laga.GeneticAlgorithm.Tools.Prefix*
-  name: Prefix
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Prefix_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Prefix
-  fullName: Laga.GeneticAlgorithm.Tools.Prefix
-  nameWithType: Tools.Prefix
-- uid: Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)
-  name: RandomChar(Int32, Int32)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomChar_System_Int32_System_Int32_
-  commentId: M:Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32,System.Int32)
-  fullName: Laga.GeneticAlgorithm.Tools.RandomChar(System.Int32, System.Int32)
-  nameWithType: Tools.RandomChar(Int32, Int32)
-- uid: Laga.GeneticAlgorithm.Tools.RandomChar*
-  name: RandomChar
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomChar_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomChar
-  fullName: Laga.GeneticAlgorithm.Tools.RandomChar
-  nameWithType: Tools.RandomChar
-- uid: Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
-  name: RandomCharBinary(Single)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomCharBinary_System_Single_
-  commentId: M:Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
-  fullName: Laga.GeneticAlgorithm.Tools.RandomCharBinary(System.Single)
-  nameWithType: Tools.RandomCharBinary(Single)
-- uid: Laga.GeneticAlgorithm.Tools.RandomCharBinary*
-  name: RandomCharBinary
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomCharBinary_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomCharBinary
-  fullName: Laga.GeneticAlgorithm.Tools.RandomCharBinary
-  nameWithType: Tools.RandomCharBinary
-- uid: Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)
-  name: RandomInt(Int32, Int32, Single)
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomInt_System_Int32_System_Int32_System_Single_
-  commentId: M:Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32,System.Int32,System.Single)
-  fullName: Laga.GeneticAlgorithm.Tools.RandomInt(System.Int32, System.Int32, System.Single)
-  nameWithType: Tools.RandomInt(Int32, Int32, Single)
-- uid: Laga.GeneticAlgorithm.Tools.RandomInt*
-  name: RandomInt
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_RandomInt_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.RandomInt
-  fullName: Laga.GeneticAlgorithm.Tools.RandomInt
-  nameWithType: Tools.RandomInt
-- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
-  name: Reverse(Double[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Reverse_System_Double___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
-  name.vb: Reverse(Double())
-  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Double[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Double())
-  nameWithType: Tools.Reverse(Double[])
-  nameWithType.vb: Tools.Reverse(Double())
-- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
-  name: Reverse(Int32[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Reverse_System_Int32___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
-  name.vb: Reverse(Int32())
-  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Int32())
-  nameWithType: Tools.Reverse(Int32[])
-  nameWithType.vb: Tools.Reverse(Int32())
-- uid: Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
-  name: Reverse(Single[])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Reverse_System_Single___
-  commentId: M:Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
-  name.vb: Reverse(Single())
-  fullName: Laga.GeneticAlgorithm.Tools.Reverse(System.Single[])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.Reverse(System.Single())
-  nameWithType: Tools.Reverse(Single[])
-  nameWithType.vb: Tools.Reverse(Single())
-- uid: Laga.GeneticAlgorithm.Tools.Reverse*
-  name: Reverse
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_Reverse_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.Reverse
-  fullName: Laga.GeneticAlgorithm.Tools.Reverse
-  nameWithType: Tools.Reverse
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
-  name: ReversePopulation(Char[][])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Char_____
-  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
-  name.vb: ReversePopulation(Char()())
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char[][])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Char()())
-  nameWithType: Tools.ReversePopulation(Char[][])
-  nameWithType.vb: Tools.ReversePopulation(Char()())
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
-  name: ReversePopulation(Double[][])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Double_____
-  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
-  name.vb: ReversePopulation(Double()())
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double[][])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Double()())
-  nameWithType: Tools.ReversePopulation(Double[][])
-  nameWithType.vb: Tools.ReversePopulation(Double()())
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
-  name: ReversePopulation(Int32[][])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Int32_____
-  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
-  name.vb: ReversePopulation(Int32()())
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32[][])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Int32()())
-  nameWithType: Tools.ReversePopulation(Int32[][])
-  nameWithType.vb: Tools.ReversePopulation(Int32()())
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
-  name: ReversePopulation(Object[][])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Object_____
-  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
-  name.vb: ReversePopulation(Object()())
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object[][])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Object()())
-  nameWithType: Tools.ReversePopulation(Object[][])
-  nameWithType.vb: Tools.ReversePopulation(Object()())
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
-  name: ReversePopulation(Single[][])
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_System_Single_____
-  commentId: M:Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
-  name.vb: ReversePopulation(Single()())
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single[][])
-  fullName.vb: Laga.GeneticAlgorithm.Tools.ReversePopulation(System.Single()())
-  nameWithType: Tools.ReversePopulation(Single[][])
-  nameWithType.vb: Tools.ReversePopulation(Single()())
-- uid: Laga.GeneticAlgorithm.Tools.ReversePopulation*
-  name: ReversePopulation
-  href: api/Laga.GeneticAlgorithm.Tools.html#Laga_GeneticAlgorithm_Tools_ReversePopulation_
-  commentId: Overload:Laga.GeneticAlgorithm.Tools.ReversePopulation
-  fullName: Laga.GeneticAlgorithm.Tools.ReversePopulation
-  nameWithType: Tools.ReversePopulation
+- uid: Laga.GeneticAlgorithm.Replacement
+  name: Replacement
+  href: api/Laga.GeneticAlgorithm.Replacement.html
+  commentId: T:Laga.GeneticAlgorithm.Replacement
+  fullName: Laga.GeneticAlgorithm.Replacement
+  nameWithType: Replacement
+- uid: Laga.GeneticAlgorithm.Replacement.#ctor
+  name: Replacement()
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement__ctor
+  commentId: M:Laga.GeneticAlgorithm.Replacement.#ctor
+  fullName: Laga.GeneticAlgorithm.Replacement.Replacement()
+  nameWithType: Replacement.Replacement()
+- uid: Laga.GeneticAlgorithm.Replacement.#ctor*
+  name: Replacement
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement__ctor_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.#ctor
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.Replacement
+  nameWithType: Replacement.Replacement
+- uid: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)
+  name: BinaryCharRandomReplace(Char[][], Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_BinaryCharRandomReplace_System_Char_____System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)
+  name.vb: BinaryCharRandomReplace(Char()(), Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char()(), System.Int32)
+  nameWithType: Replacement.BinaryCharRandomReplace(Char[][], Int32)
+  nameWithType.vb: Replacement.BinaryCharRandomReplace(Char()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace*
+  name: BinaryCharRandomReplace
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_BinaryCharRandomReplace_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace
+  nameWithType: Replacement.BinaryCharRandomReplace
+- uid: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  name: CharRandomReplace(Char[][], Int32, Int32, Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_CharRandomReplace_System_Char_____System_Int32_System_Int32_System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)
+  name.vb: CharRandomReplace(Char()(), Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][], System.Int32, System.Int32, System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char()(), System.Int32, System.Int32, System.Int32)
+  nameWithType: Replacement.CharRandomReplace(Char[][], Int32, Int32, Int32)
+  nameWithType.vb: Replacement.CharRandomReplace(Char()(), Int32, Int32, Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.CharRandomReplace*
+  name: CharRandomReplace
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_CharRandomReplace_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.CharRandomReplace
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.CharRandomReplace
+  nameWithType: Replacement.CharRandomReplace
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  name: ReplaceInheritance(Double[][], Double[][], Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritance_System_Double_____System_Double_____System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)
+  name.vb: ReplaceInheritance(Double()(), Double()(), Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][], System.Double[][], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double()(), System.Double()(), System.Int32)
+  nameWithType: Replacement.ReplaceInheritance(Double[][], Double[][], Int32)
+  nameWithType.vb: Replacement.ReplaceInheritance(Double()(), Double()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  name: ReplaceInheritance(Int32[][], Int32[][], Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritance_System_Int32_____System_Int32_____System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)
+  name.vb: ReplaceInheritance(Int32()(), Int32()(), Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][], System.Int32[][], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32()(), System.Int32()(), System.Int32)
+  nameWithType: Replacement.ReplaceInheritance(Int32[][], Int32[][], Int32)
+  nameWithType.vb: Replacement.ReplaceInheritance(Int32()(), Int32()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  name: ReplaceInheritance(Object[][], Object[][], Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritance_System_Object_____System_Object_____System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)
+  name.vb: ReplaceInheritance(Object()(), Object()(), Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][], System.Object[][], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object()(), System.Object()(), System.Int32)
+  nameWithType: Replacement.ReplaceInheritance(Object[][], Object[][], Int32)
+  nameWithType.vb: Replacement.ReplaceInheritance(Object()(), Object()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  name: ReplaceInheritance(Single[][], Single[][], Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritance_System_Single_____System_Single_____System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)
+  name.vb: ReplaceInheritance(Single()(), Single()(), Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][], System.Single[][], System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single()(), System.Single()(), System.Int32)
+  nameWithType: Replacement.ReplaceInheritance(Single[][], Single[][], Int32)
+  nameWithType.vb: Replacement.ReplaceInheritance(Single()(), Single()(), Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance*
+  name: ReplaceInheritance
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritance_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritance
+  nameWithType: Replacement.ReplaceInheritance
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  name: ReplaceInheritanceRandom(Double[][], Double[][], Int32, Double, Double, Single)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritanceRandom_System_Double_____System_Double_____System_Int32_System_Double_System_Double_System_Single_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)
+  name.vb: ReplaceInheritanceRandom(Double()(), Double()(), Int32, Double, Double, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][], System.Double[][], System.Int32, System.Double, System.Double, System.Single)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double()(), System.Double()(), System.Int32, System.Double, System.Double, System.Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Double[][], Double[][], Int32, Double, Double, Single)
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Double()(), Double()(), Int32, Double, Double, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  name: ReplaceInheritanceRandom(Int32[][], Int32[][], Int32, Int32, Double, Single)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritanceRandom_System_Int32_____System_Int32_____System_Int32_System_Int32_System_Double_System_Single_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)
+  name.vb: ReplaceInheritanceRandom(Int32()(), Int32()(), Int32, Int32, Double, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][], System.Int32[][], System.Int32, System.Int32, System.Double, System.Single)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32()(), System.Int32()(), System.Int32, System.Int32, System.Double, System.Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Int32[][], Int32[][], Int32, Int32, Double, Single)
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Int32()(), Int32()(), Int32, Int32, Double, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  name: ReplaceInheritanceRandom(Object[][], Object[][], Int32, Single)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritanceRandom_System_Object_____System_Object_____System_Int32_System_Single_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)
+  name.vb: ReplaceInheritanceRandom(Object()(), Object()(), Int32, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][], System.Object[][], System.Int32, System.Single)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object()(), System.Object()(), System.Int32, System.Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Object[][], Object[][], Int32, Single)
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Object()(), Object()(), Int32, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  name: ReplaceInheritanceRandom(Single[][], Single[][], Int32, Single, Single, Single)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritanceRandom_System_Single_____System_Single_____System_Int32_System_Single_System_Single_System_Single_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)
+  name.vb: ReplaceInheritanceRandom(Single()(), Single()(), Int32, Single, Single, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][], System.Single[][], System.Int32, System.Single, System.Single, System.Single)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single()(), System.Single()(), System.Int32, System.Single, System.Single, System.Single)
+  nameWithType: Replacement.ReplaceInheritanceRandom(Single[][], Single[][], Int32, Single, Single, Single)
+  nameWithType.vb: Replacement.ReplaceInheritanceRandom(Single()(), Single()(), Int32, Single, Single, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom*
+  name: ReplaceInheritanceRandom
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceInheritanceRandom_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom
+  nameWithType: Replacement.ReplaceInheritanceRandom
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  name: ReplaceRandom(Double[][], Int32, Double, Double)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceRandom_System_Double_____System_Int32_System_Double_System_Double_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)
+  name.vb: ReplaceRandom(Double()(), Int32, Double, Double)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][], System.Int32, System.Double, System.Double)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double()(), System.Int32, System.Double, System.Double)
+  nameWithType: Replacement.ReplaceRandom(Double[][], Int32, Double, Double)
+  nameWithType.vb: Replacement.ReplaceRandom(Double()(), Int32, Double, Double)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  name: ReplaceRandom(Int32[][], Int32, Int32, Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceRandom_System_Int32_____System_Int32_System_Int32_System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)
+  name.vb: ReplaceRandom(Int32()(), Int32, Int32, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][], System.Int32, System.Int32, System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32()(), System.Int32, System.Int32, System.Int32)
+  nameWithType: Replacement.ReplaceRandom(Int32[][], Int32, Int32, Int32)
+  nameWithType.vb: Replacement.ReplaceRandom(Int32()(), Int32, Int32, Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  name: ReplaceRandom(Object[][], Single, Int32)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceRandom_System_Object_____System_Single_System_Int32_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)
+  name.vb: ReplaceRandom(Object()(), Single, Int32)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][], System.Single, System.Int32)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object()(), System.Single, System.Int32)
+  nameWithType: Replacement.ReplaceRandom(Object[][], Single, Int32)
+  nameWithType.vb: Replacement.ReplaceRandom(Object()(), Single, Int32)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  name: ReplaceRandom(Single[][], Int32, Single, Single)
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceRandom_System_Single_____System_Int32_System_Single_System_Single_
+  commentId: M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)
+  name.vb: ReplaceRandom(Single()(), Int32, Single, Single)
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][], System.Int32, System.Single, System.Single)
+  fullName.vb: Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single()(), System.Int32, System.Single, System.Single)
+  nameWithType: Replacement.ReplaceRandom(Single[][], Int32, Single, Single)
+  nameWithType.vb: Replacement.ReplaceRandom(Single()(), Int32, Single, Single)
+- uid: Laga.GeneticAlgorithm.Replacement.ReplaceRandom*
+  name: ReplaceRandom
+  href: api/Laga.GeneticAlgorithm.Replacement.html#Laga_GeneticAlgorithm_Replacement_ReplaceRandom_
+  commentId: Overload:Laga.GeneticAlgorithm.Replacement.ReplaceRandom
+  isSpec: "True"
+  fullName: Laga.GeneticAlgorithm.Replacement.ReplaceRandom
+  nameWithType: Replacement.ReplaceRandom
 - uid: Laga.Geometry
   name: Laga.Geometry
   href: api/Laga.Geometry.html
   commentId: N:Laga.Geometry
   fullName: Laga.Geometry
   nameWithType: Laga.Geometry
+- uid: Laga.Geometry.ConvexHull
+  name: ConvexHull
+  href: api/Laga.Geometry.ConvexHull.html
+  commentId: T:Laga.Geometry.ConvexHull
+  fullName: Laga.Geometry.ConvexHull
+  nameWithType: ConvexHull
+- uid: Laga.Geometry.ConvexHull.ConvexHull2D(System.Collections.Generic.List{Laga.Geometry.Vector})
+  name: ConvexHull2D(List<Vector>)
+  href: api/Laga.Geometry.ConvexHull.html#Laga_Geometry_ConvexHull_ConvexHull2D_System_Collections_Generic_List_Laga_Geometry_Vector__
+  commentId: M:Laga.Geometry.ConvexHull.ConvexHull2D(System.Collections.Generic.List{Laga.Geometry.Vector})
+  name.vb: ConvexHull2D(List(Of Vector))
+  fullName: Laga.Geometry.ConvexHull.ConvexHull2D(System.Collections.Generic.List<Laga.Geometry.Vector>)
+  fullName.vb: Laga.Geometry.ConvexHull.ConvexHull2D(System.Collections.Generic.List(Of Laga.Geometry.Vector))
+  nameWithType: ConvexHull.ConvexHull2D(List<Vector>)
+  nameWithType.vb: ConvexHull.ConvexHull2D(List(Of Vector))
+- uid: Laga.Geometry.ConvexHull.ConvexHull2D*
+  name: ConvexHull2D
+  href: api/Laga.Geometry.ConvexHull.html#Laga_Geometry_ConvexHull_ConvexHull2D_
+  commentId: Overload:Laga.Geometry.ConvexHull.ConvexHull2D
+  isSpec: "True"
+  fullName: Laga.Geometry.ConvexHull.ConvexHull2D
+  nameWithType: ConvexHull.ConvexHull2D
 - uid: Laga.Geometry.Line
   name: Line
   href: api/Laga.Geometry.Line.html
@@ -1916,6 +1892,7 @@ references:
   name: Line
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line__ctor_
   commentId: Overload:Laga.Geometry.Line.#ctor
+  isSpec: "True"
   fullName: Laga.Geometry.Line.Line
   nameWithType: Line.Line
 - uid: Laga.Geometry.Line.ClosestTo(Laga.Geometry.Line,Laga.Geometry.Vector@,Laga.Geometry.Vector@)
@@ -1931,6 +1908,7 @@ references:
   name: ClosestTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_ClosestTo_
   commentId: Overload:Laga.Geometry.Line.ClosestTo
+  isSpec: "True"
   fullName: Laga.Geometry.Line.ClosestTo
   nameWithType: Line.ClosestTo
 - uid: Laga.Geometry.Line.Direction
@@ -1943,6 +1921,7 @@ references:
   name: Direction
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_Direction_
   commentId: Overload:Laga.Geometry.Line.Direction
+  isSpec: "True"
   fullName: Laga.Geometry.Line.Direction
   nameWithType: Line.Direction
 - uid: Laga.Geometry.Line.EndPoint
@@ -1955,6 +1934,7 @@ references:
   name: EndPoint
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_EndPoint_
   commentId: Overload:Laga.Geometry.Line.EndPoint
+  isSpec: "True"
   fullName: Laga.Geometry.Line.EndPoint
   nameWithType: Line.EndPoint
 - uid: Laga.Geometry.Line.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@,System.Double)
@@ -1970,6 +1950,7 @@ references:
   name: IntersectTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IntersectTo_
   commentId: Overload:Laga.Geometry.Line.IntersectTo
+  isSpec: "True"
   fullName: Laga.Geometry.Line.IntersectTo
   nameWithType: Line.IntersectTo
 - uid: Laga.Geometry.Line.IsCoincidentTo(Laga.Geometry.Line,System.Double)
@@ -1982,6 +1963,7 @@ references:
   name: IsCoincidentTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IsCoincidentTo_
   commentId: Overload:Laga.Geometry.Line.IsCoincidentTo
+  isSpec: "True"
   fullName: Laga.Geometry.Line.IsCoincidentTo
   nameWithType: Line.IsCoincidentTo
 - uid: Laga.Geometry.Line.IsParallelTo(Laga.Geometry.Line,System.Double)
@@ -1994,6 +1976,7 @@ references:
   name: IsParallelTo
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_IsParallelTo_
   commentId: Overload:Laga.Geometry.Line.IsParallelTo
+  isSpec: "True"
   fullName: Laga.Geometry.Line.IsParallelTo
   nameWithType: Line.IsParallelTo
 - uid: Laga.Geometry.Line.Length
@@ -2006,6 +1989,7 @@ references:
   name: Length
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_Length_
   commentId: Overload:Laga.Geometry.Line.Length
+  isSpec: "True"
   fullName: Laga.Geometry.Line.Length
   nameWithType: Line.Length
 - uid: Laga.Geometry.Line.PointAt(System.Double)
@@ -2018,6 +2002,7 @@ references:
   name: PointAt
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_PointAt_
   commentId: Overload:Laga.Geometry.Line.PointAt
+  isSpec: "True"
   fullName: Laga.Geometry.Line.PointAt
   nameWithType: Line.PointAt
 - uid: Laga.Geometry.Line.StartPoint
@@ -2030,6 +2015,7 @@ references:
   name: StartPoint
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_StartPoint_
   commentId: Overload:Laga.Geometry.Line.StartPoint
+  isSpec: "True"
   fullName: Laga.Geometry.Line.StartPoint
   nameWithType: Line.StartPoint
 - uid: Laga.Geometry.Line.ToString
@@ -2042,6 +2028,7 @@ references:
   name: ToString
   href: api/Laga.Geometry.Line.html#Laga_Geometry_Line_ToString_
   commentId: Overload:Laga.Geometry.Line.ToString
+  isSpec: "True"
   fullName: Laga.Geometry.Line.ToString
   nameWithType: Line.ToString
 - uid: Laga.Geometry.Plane
@@ -2072,6 +2059,7 @@ references:
   name: Plane
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane__ctor_
   commentId: Overload:Laga.Geometry.Plane.#ctor
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.Plane
   nameWithType: Plane.Plane
 - uid: Laga.Geometry.Plane.Ax
@@ -2084,6 +2072,7 @@ references:
   name: Ax
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_Ax_
   commentId: Overload:Laga.Geometry.Plane.Ax
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.Ax
   nameWithType: Plane.Ax
 - uid: Laga.Geometry.Plane.By
@@ -2096,6 +2085,7 @@ references:
   name: By
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_By_
   commentId: Overload:Laga.Geometry.Plane.By
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.By
   nameWithType: Plane.By
 - uid: Laga.Geometry.Plane.ConstantTerm
@@ -2108,6 +2098,7 @@ references:
   name: ConstantTerm
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_ConstantTerm_
   commentId: Overload:Laga.Geometry.Plane.ConstantTerm
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.ConstantTerm
   nameWithType: Plane.ConstantTerm
 - uid: Laga.Geometry.Plane.Cz
@@ -2120,6 +2111,7 @@ references:
   name: Cz
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_Cz_
   commentId: Overload:Laga.Geometry.Plane.Cz
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.Cz
   nameWithType: Plane.Cz
 - uid: Laga.Geometry.Plane.DistanceTo(Laga.Geometry.Vector)
@@ -2132,6 +2124,7 @@ references:
   name: DistanceTo
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_DistanceTo_
   commentId: Overload:Laga.Geometry.Plane.DistanceTo
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.DistanceTo
   nameWithType: Plane.DistanceTo
 - uid: Laga.Geometry.Plane.IntersectTo(Laga.Geometry.Line,Laga.Geometry.Vector@)
@@ -2156,6 +2149,7 @@ references:
   name: IntersectTo
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IntersectTo_
   commentId: Overload:Laga.Geometry.Plane.IntersectTo
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.IntersectTo
   nameWithType: Plane.IntersectTo
 - uid: Laga.Geometry.Plane.IsCoincidentTo(Laga.Geometry.Plane,System.Double)
@@ -2168,6 +2162,7 @@ references:
   name: IsCoincidentTo
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IsCoincidentTo_
   commentId: Overload:Laga.Geometry.Plane.IsCoincidentTo
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.IsCoincidentTo
   nameWithType: Plane.IsCoincidentTo
 - uid: Laga.Geometry.Plane.IsParallelTo(Laga.Geometry.Plane,System.Double)
@@ -2180,6 +2175,7 @@ references:
   name: IsParallelTo
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_IsParallelTo_
   commentId: Overload:Laga.Geometry.Plane.IsParallelTo
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.IsParallelTo
   nameWithType: Plane.IsParallelTo
 - uid: Laga.Geometry.Plane.Norm
@@ -2192,6 +2188,7 @@ references:
   name: Norm
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_Norm_
   commentId: Overload:Laga.Geometry.Plane.Norm
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.Norm
   nameWithType: Plane.Norm
 - uid: Laga.Geometry.Plane.Origin
@@ -2204,6 +2201,7 @@ references:
   name: Origin
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_Origin_
   commentId: Overload:Laga.Geometry.Plane.Origin
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.Origin
   nameWithType: Plane.Origin
 - uid: Laga.Geometry.Plane.PointAt(System.Double,System.Double)
@@ -2216,6 +2214,7 @@ references:
   name: PointAt
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_PointAt_
   commentId: Overload:Laga.Geometry.Plane.PointAt
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.PointAt
   nameWithType: Plane.PointAt
 - uid: Laga.Geometry.Plane.ToString
@@ -2228,6 +2227,7 @@ references:
   name: ToString
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_ToString_
   commentId: Overload:Laga.Geometry.Plane.ToString
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.ToString
   nameWithType: Plane.ToString
 - uid: Laga.Geometry.Plane.VectorU
@@ -2240,6 +2240,7 @@ references:
   name: VectorU
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_VectorU_
   commentId: Overload:Laga.Geometry.Plane.VectorU
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.VectorU
   nameWithType: Plane.VectorU
 - uid: Laga.Geometry.Plane.VectorV
@@ -2252,6 +2253,7 @@ references:
   name: VectorV
   href: api/Laga.Geometry.Plane.html#Laga_Geometry_Plane_VectorV_
   commentId: Overload:Laga.Geometry.Plane.VectorV
+  isSpec: "True"
   fullName: Laga.Geometry.Plane.VectorV
   nameWithType: Plane.VectorV
 - uid: Laga.Geometry.Vector
@@ -2282,6 +2284,7 @@ references:
   name: Vector
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector__ctor_
   commentId: Overload:Laga.Geometry.Vector.#ctor
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Vector
   nameWithType: Vector.Vector
 - uid: Laga.Geometry.Vector.Angle(Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2300,6 +2303,7 @@ references:
   name: Angle
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Angle_
   commentId: Overload:Laga.Geometry.Vector.Angle
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Angle
   nameWithType: Vector.Angle
 - uid: Laga.Geometry.Vector.ComponentOrthogonalTo(Laga.Geometry.Vector)
@@ -2312,6 +2316,7 @@ references:
   name: ComponentOrthogonalTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentOrthogonalTo_
   commentId: Overload:Laga.Geometry.Vector.ComponentOrthogonalTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.ComponentOrthogonalTo
   nameWithType: Vector.ComponentOrthogonalTo
 - uid: Laga.Geometry.Vector.ComponentProjectTo(Laga.Geometry.Vector)
@@ -2324,6 +2329,7 @@ references:
   name: ComponentProjectTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ComponentProjectTo_
   commentId: Overload:Laga.Geometry.Vector.ComponentProjectTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.ComponentProjectTo
   nameWithType: Vector.ComponentProjectTo
 - uid: Laga.Geometry.Vector.CrossProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2336,6 +2342,7 @@ references:
   name: CrossProduct
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_CrossProduct_
   commentId: Overload:Laga.Geometry.Vector.CrossProduct
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.CrossProduct
   nameWithType: Vector.CrossProduct
 - uid: Laga.Geometry.Vector.CrossProductLength(Laga.Geometry.Vector,Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2348,6 +2355,7 @@ references:
   name: CrossProductLength
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_CrossProductLength_
   commentId: Overload:Laga.Geometry.Vector.CrossProductLength
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.CrossProductLength
   nameWithType: Vector.CrossProductLength
 - uid: Laga.Geometry.Vector.DistanceTo(Laga.Geometry.Vector)
@@ -2360,6 +2368,7 @@ references:
   name: DistanceTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DistanceTo_
   commentId: Overload:Laga.Geometry.Vector.DistanceTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.DistanceTo
   nameWithType: Vector.DistanceTo
 - uid: Laga.Geometry.Vector.DotProduct(Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2378,6 +2387,7 @@ references:
   name: DotProduct
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_DotProduct_
   commentId: Overload:Laga.Geometry.Vector.DotProduct
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.DotProduct
   nameWithType: Vector.DotProduct
 - uid: Laga.Geometry.Vector.EqualTo(Laga.Geometry.Vector)
@@ -2390,6 +2400,7 @@ references:
   name: EqualTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_EqualTo_
   commentId: Overload:Laga.Geometry.Vector.EqualTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.EqualTo
   nameWithType: Vector.EqualTo
 - uid: Laga.Geometry.Vector.Interpolation(Laga.Geometry.Vector,Laga.Geometry.Vector,System.Double)
@@ -2402,6 +2413,7 @@ references:
   name: Interpolation
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Interpolation_
   commentId: Overload:Laga.Geometry.Vector.Interpolation
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Interpolation
   nameWithType: Vector.Interpolation
 - uid: Laga.Geometry.Vector.IsOrthogonalTo(Laga.Geometry.Vector,System.Double)
@@ -2414,6 +2426,7 @@ references:
   name: IsOrthogonalTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsOrthogonalTo_
   commentId: Overload:Laga.Geometry.Vector.IsOrthogonalTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.IsOrthogonalTo
   nameWithType: Vector.IsOrthogonalTo
 - uid: Laga.Geometry.Vector.IsParallelTo(Laga.Geometry.Vector,System.Double)
@@ -2426,6 +2439,7 @@ references:
   name: IsParallelTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsParallelTo_
   commentId: Overload:Laga.Geometry.Vector.IsParallelTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.IsParallelTo
   nameWithType: Vector.IsParallelTo
 - uid: Laga.Geometry.Vector.IsVectorCero(System.Double)
@@ -2438,6 +2452,7 @@ references:
   name: IsVectorCero
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_IsVectorCero_
   commentId: Overload:Laga.Geometry.Vector.IsVectorCero
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.IsVectorCero
   nameWithType: Vector.IsVectorCero
 - uid: Laga.Geometry.Vector.Normalize
@@ -2450,6 +2465,7 @@ references:
   name: Normalize
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Normalize_
   commentId: Overload:Laga.Geometry.Vector.Normalize
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Normalize
   nameWithType: Vector.Normalize
 - uid: Laga.Geometry.Vector.op_Addition(Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2462,6 +2478,7 @@ references:
   name: Addition
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Addition_
   commentId: Overload:Laga.Geometry.Vector.op_Addition
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Addition
   nameWithType: Vector.Addition
 - uid: Laga.Geometry.Vector.op_Multiply(Laga.Geometry.Vector,System.Double)
@@ -2474,6 +2491,7 @@ references:
   name: Multiply
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Multiply_
   commentId: Overload:Laga.Geometry.Vector.op_Multiply
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Multiply
   nameWithType: Vector.Multiply
 - uid: Laga.Geometry.Vector.op_Subtraction(Laga.Geometry.Vector,Laga.Geometry.Vector)
@@ -2486,6 +2504,7 @@ references:
   name: Subtraction
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_op_Subtraction_
   commentId: Overload:Laga.Geometry.Vector.op_Subtraction
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Subtraction
   nameWithType: Vector.Subtraction
 - uid: Laga.Geometry.Vector.OrthogonalTo(Laga.Geometry.Vector)
@@ -2498,6 +2517,7 @@ references:
   name: OrthogonalTo
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_OrthogonalTo_
   commentId: Overload:Laga.Geometry.Vector.OrthogonalTo
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.OrthogonalTo
   nameWithType: Vector.OrthogonalTo
 - uid: Laga.Geometry.Vector.ToString
@@ -2510,6 +2530,7 @@ references:
   name: ToString
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_ToString_
   commentId: Overload:Laga.Geometry.Vector.ToString
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.ToString
   nameWithType: Vector.ToString
 - uid: Laga.Geometry.Vector.X
@@ -2522,6 +2543,7 @@ references:
   name: X
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_X_
   commentId: Overload:Laga.Geometry.Vector.X
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.X
   nameWithType: Vector.X
 - uid: Laga.Geometry.Vector.Y
@@ -2534,6 +2556,7 @@ references:
   name: Y
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Y_
   commentId: Overload:Laga.Geometry.Vector.Y
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Y
   nameWithType: Vector.Y
 - uid: Laga.Geometry.Vector.Z
@@ -2546,6 +2569,7 @@ references:
   name: Z
   href: api/Laga.Geometry.Vector.html#Laga_Geometry_Vector_Z_
   commentId: Overload:Laga.Geometry.Vector.Z
+  isSpec: "True"
   fullName: Laga.Geometry.Vector.Z
   nameWithType: Vector.Z
 - uid: Laga.IO
@@ -2591,6 +2615,7 @@ references:
   name: IOCSV
   href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV__ctor_
   commentId: Overload:Laga.IO.IOCSV.#ctor
+  isSpec: "True"
   fullName: Laga.IO.IOCSV.IOCSV
   nameWithType: IOCSV.IOCSV
 - uid: Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome{System.String})
@@ -2606,6 +2631,7 @@ references:
   name: AddRowData
   href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_AddRowData_
   commentId: Overload:Laga.IO.IOCSV.AddRowData
+  isSpec: "True"
   fullName: Laga.IO.IOCSV.AddRowData
   nameWithType: IOCSV.AddRowData
 - uid: Laga.IO.IOCSV.SaveAndClose
@@ -2618,6 +2644,7 @@ references:
   name: SaveAndClose
   href: api/Laga.IO.IOCSV.html#Laga_IO_IOCSV_SaveAndClose_
   commentId: Overload:Laga.IO.IOCSV.SaveAndClose
+  isSpec: "True"
   fullName: Laga.IO.IOCSV.SaveAndClose
   nameWithType: IOCSV.SaveAndClose
 - uid: Laga.IO.IODataFolder
@@ -2642,6 +2669,7 @@ references:
   name: IODataFolder
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder__ctor_
   commentId: Overload:Laga.IO.IODataFolder.#ctor
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.IODataFolder
   nameWithType: IODataFolder.IODataFolder
 - uid: Laga.IO.IODataFolder.GetFileName(System.String)
@@ -2654,6 +2682,7 @@ references:
   name: GetFileName
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_GetFileName_
   commentId: Overload:Laga.IO.IODataFolder.GetFileName
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.GetFileName
   nameWithType: IODataFolder.GetFileName
 - uid: Laga.IO.IODataFolder.ListFileNames
@@ -2666,6 +2695,7 @@ references:
   name: ListFileNames
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListFileNames_
   commentId: Overload:Laga.IO.IODataFolder.ListFileNames
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.ListFileNames
   nameWithType: IODataFolder.ListFileNames
 - uid: Laga.IO.IODataFolder.ListPathFileNames
@@ -2678,6 +2708,7 @@ references:
   name: ListPathFileNames
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ListPathFileNames_
   commentId: Overload:Laga.IO.IODataFolder.ListPathFileNames
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.ListPathFileNames
   nameWithType: IODataFolder.ListPathFileNames
 - uid: Laga.IO.IODataFolder.ReadSelectiveData(System.String[],System.String)
@@ -2693,6 +2724,7 @@ references:
   name: ReadSelectiveData
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_ReadSelectiveData_
   commentId: Overload:Laga.IO.IODataFolder.ReadSelectiveData
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.ReadSelectiveData
   nameWithType: IODataFolder.ReadSelectiveData
 - uid: Laga.IO.IODataFolder.RootFolder
@@ -2705,8 +2737,399 @@ references:
   name: RootFolder
   href: api/Laga.IO.IODataFolder.html#Laga_IO_IODataFolder_RootFolder_
   commentId: Overload:Laga.IO.IODataFolder.RootFolder
+  isSpec: "True"
   fullName: Laga.IO.IODataFolder.RootFolder
   nameWithType: IODataFolder.RootFolder
+- uid: Laga.IO.IOExcelRead
+  name: IOExcelRead
+  href: api/Laga.IO.IOExcelRead.html
+  commentId: T:Laga.IO.IOExcelRead
+  fullName: Laga.IO.IOExcelRead
+  nameWithType: IOExcelRead
+- uid: Laga.IO.IOExcelRead.#ctor(System.String)
+  name: IOExcelRead(String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead__ctor_System_String_
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String)
+  nameWithType: IOExcelRead.IOExcelRead(String)
+- uid: Laga.IO.IOExcelRead.#ctor(System.String,System.Int32)
+  name: IOExcelRead(String, Int32)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead__ctor_System_String_System_Int32_
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String,System.Int32)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String, System.Int32)
+  nameWithType: IOExcelRead.IOExcelRead(String, Int32)
+- uid: Laga.IO.IOExcelRead.#ctor(System.String,System.Int32,System.String)
+  name: IOExcelRead(String, Int32, String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead__ctor_System_String_System_Int32_System_String_
+  commentId: M:Laga.IO.IOExcelRead.#ctor(System.String,System.Int32,System.String)
+  fullName: Laga.IO.IOExcelRead.IOExcelRead(System.String, System.Int32, System.String)
+  nameWithType: IOExcelRead.IOExcelRead(String, Int32, String)
+- uid: Laga.IO.IOExcelRead.#ctor*
+  name: IOExcelRead
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead__ctor_
+  commentId: Overload:Laga.IO.IOExcelRead.#ctor
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IOExcelRead
+  nameWithType: IOExcelRead.IOExcelRead
+- uid: Laga.IO.IOExcelRead.CloseExcelApp
+  name: CloseExcelApp()
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_CloseExcelApp
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp()
+  nameWithType: IOExcelRead.CloseExcelApp()
+- uid: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  name: CloseExcelApp(Boolean)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_CloseExcelApp_System_Boolean_
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean)
+  nameWithType: IOExcelRead.CloseExcelApp(Boolean)
+- uid: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean,System.String,System.String)
+  name: CloseExcelApp(Boolean, String, String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_CloseExcelApp_System_Boolean_System_String_System_String_
+  commentId: M:Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean,System.String,System.String)
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp(System.Boolean, System.String, System.String)
+  nameWithType: IOExcelRead.CloseExcelApp(Boolean, String, String)
+- uid: Laga.IO.IOExcelRead.CloseExcelApp*
+  name: CloseExcelApp
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_CloseExcelApp_
+  commentId: Overload:Laga.IO.IOExcelRead.CloseExcelApp
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.CloseExcelApp
+  nameWithType: IOExcelRead.CloseExcelApp
+- uid: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  name: IORead_ExcelWorksheetNames()
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_ExcelWorksheetNames
+  commentId: M:Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  fullName: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames()
+  nameWithType: IOExcelRead.IORead_ExcelWorksheetNames()
+- uid: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames*
+  name: IORead_ExcelWorksheetNames
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_ExcelWorksheetNames_
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IORead_ExcelWorksheetNames
+  nameWithType: IOExcelRead.IORead_ExcelWorksheetNames
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  name: IORead_OpenExcelApp()
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_OpenExcelApp
+  commentId: M:Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp()
+  nameWithType: IOExcelRead.IORead_OpenExcelApp()
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  name: IORead_OpenExcelApp(Boolean)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_OpenExcelApp_System_Boolean_
+  commentId: M:Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp(System.Boolean)
+  nameWithType: IOExcelRead.IORead_OpenExcelApp(Boolean)
+- uid: Laga.IO.IOExcelRead.IORead_OpenExcelApp*
+  name: IORead_OpenExcelApp
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_OpenExcelApp_
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IORead_OpenExcelApp
+  nameWithType: IOExcelRead.IORead_OpenExcelApp
+- uid: Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32,System.Boolean)
+  name: IORead_SetActiveSheet(Int32, Boolean)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_SetActiveSheet_System_Int32_System_Boolean_
+  commentId: M:Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32,System.Boolean)
+  fullName: Laga.IO.IOExcelRead.IORead_SetActiveSheet(System.Int32, System.Boolean)
+  nameWithType: IOExcelRead.IORead_SetActiveSheet(Int32, Boolean)
+- uid: Laga.IO.IOExcelRead.IORead_SetActiveSheet*
+  name: IORead_SetActiveSheet
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IORead_SetActiveSheet_
+  commentId: Overload:Laga.IO.IOExcelRead.IORead_SetActiveSheet
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IORead_SetActiveSheet
+  nameWithType: IOExcelRead.IORead_SetActiveSheet
+- uid: Laga.IO.IOExcelRead.IOReadCell(System.String)
+  name: IOReadCell(String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadCell_System_String_
+  commentId: M:Laga.IO.IOExcelRead.IOReadCell(System.String)
+  fullName: Laga.IO.IOExcelRead.IOReadCell(System.String)
+  nameWithType: IOExcelRead.IOReadCell(String)
+- uid: Laga.IO.IOExcelRead.IOReadCell*
+  name: IOReadCell
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadCell_
+  commentId: Overload:Laga.IO.IOExcelRead.IOReadCell
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IOReadCell
+  nameWithType: IOExcelRead.IOReadCell
+- uid: Laga.IO.IOExcelRead.IOReadRange(System.String)
+  name: IOReadRange(String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadRange_System_String_
+  commentId: M:Laga.IO.IOExcelRead.IOReadRange(System.String)
+  fullName: Laga.IO.IOExcelRead.IOReadRange(System.String)
+  nameWithType: IOExcelRead.IOReadRange(String)
+- uid: Laga.IO.IOExcelRead.IOReadRange*
+  name: IOReadRange
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadRange_
+  commentId: Overload:Laga.IO.IOExcelRead.IOReadRange
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IOReadRange
+  nameWithType: IOExcelRead.IOReadRange
+- uid: Laga.IO.IOExcelRead.IOReadShapeCell(System.String)
+  name: IOReadShapeCell(String)
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadShapeCell_System_String_
+  commentId: M:Laga.IO.IOExcelRead.IOReadShapeCell(System.String)
+  fullName: Laga.IO.IOExcelRead.IOReadShapeCell(System.String)
+  nameWithType: IOExcelRead.IOReadShapeCell(String)
+- uid: Laga.IO.IOExcelRead.IOReadShapeCell*
+  name: IOReadShapeCell
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_IOReadShapeCell_
+  commentId: Overload:Laga.IO.IOExcelRead.IOReadShapeCell
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.IOReadShapeCell
+  nameWithType: IOExcelRead.IOReadShapeCell
+- uid: Laga.IO.IOExcelRead.MatrixDataExcel
+  name: MatrixDataExcel
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_MatrixDataExcel
+  commentId: P:Laga.IO.IOExcelRead.MatrixDataExcel
+  fullName: Laga.IO.IOExcelRead.MatrixDataExcel
+  nameWithType: IOExcelRead.MatrixDataExcel
+- uid: Laga.IO.IOExcelRead.MatrixDataExcel*
+  name: MatrixDataExcel
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_MatrixDataExcel_
+  commentId: Overload:Laga.IO.IOExcelRead.MatrixDataExcel
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.MatrixDataExcel
+  nameWithType: IOExcelRead.MatrixDataExcel
+- uid: Laga.IO.IOExcelRead.SheetNum
+  name: SheetNum
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_SheetNum
+  commentId: P:Laga.IO.IOExcelRead.SheetNum
+  fullName: Laga.IO.IOExcelRead.SheetNum
+  nameWithType: IOExcelRead.SheetNum
+- uid: Laga.IO.IOExcelRead.SheetNum*
+  name: SheetNum
+  href: api/Laga.IO.IOExcelRead.html#Laga_IO_IOExcelRead_SheetNum_
+  commentId: Overload:Laga.IO.IOExcelRead.SheetNum
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelRead.SheetNum
+  nameWithType: IOExcelRead.SheetNum
+- uid: Laga.IO.IOExcelWrite
+  name: IOExcelWrite
+  href: api/Laga.IO.IOExcelWrite.html
+  commentId: T:Laga.IO.IOExcelWrite
+  fullName: Laga.IO.IOExcelWrite
+  nameWithType: IOExcelWrite
+- uid: Laga.IO.IOExcelWrite.#ctor(System.Boolean)
+  name: IOExcelWrite(Boolean)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite__ctor_System_Boolean_
+  commentId: M:Laga.IO.IOExcelWrite.#ctor(System.Boolean)
+  fullName: Laga.IO.IOExcelWrite.IOExcelWrite(System.Boolean)
+  nameWithType: IOExcelWrite.IOExcelWrite(Boolean)
+- uid: Laga.IO.IOExcelWrite.#ctor(System.String)
+  name: IOExcelWrite(String)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite__ctor_System_String_
+  commentId: M:Laga.IO.IOExcelWrite.#ctor(System.String)
+  fullName: Laga.IO.IOExcelWrite.IOExcelWrite(System.String)
+  nameWithType: IOExcelWrite.IOExcelWrite(String)
+- uid: Laga.IO.IOExcelWrite.#ctor(System.String,System.Int32)
+  name: IOExcelWrite(String, Int32)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite__ctor_System_String_System_Int32_
+  commentId: M:Laga.IO.IOExcelWrite.#ctor(System.String,System.Int32)
+  fullName: Laga.IO.IOExcelWrite.IOExcelWrite(System.String, System.Int32)
+  nameWithType: IOExcelWrite.IOExcelWrite(String, Int32)
+- uid: Laga.IO.IOExcelWrite.#ctor(System.String,System.String,System.String,System.Boolean)
+  name: IOExcelWrite(String, String, String, Boolean)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite__ctor_System_String_System_String_System_String_System_Boolean_
+  commentId: M:Laga.IO.IOExcelWrite.#ctor(System.String,System.String,System.String,System.Boolean)
+  fullName: Laga.IO.IOExcelWrite.IOExcelWrite(System.String, System.String, System.String, System.Boolean)
+  nameWithType: IOExcelWrite.IOExcelWrite(String, String, String, Boolean)
+- uid: Laga.IO.IOExcelWrite.#ctor*
+  name: IOExcelWrite
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite__ctor_
+  commentId: Overload:Laga.IO.IOExcelWrite.#ctor
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOExcelWrite
+  nameWithType: IOExcelWrite.IOExcelWrite
+- uid: Laga.IO.IOExcelWrite.CheckExcelFile(System.String)
+  name: CheckExcelFile(String)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_CheckExcelFile_System_String_
+  commentId: M:Laga.IO.IOExcelWrite.CheckExcelFile(System.String)
+  fullName: Laga.IO.IOExcelWrite.CheckExcelFile(System.String)
+  nameWithType: IOExcelWrite.CheckExcelFile(String)
+- uid: Laga.IO.IOExcelWrite.CheckExcelFile*
+  name: CheckExcelFile
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_CheckExcelFile_
+  commentId: Overload:Laga.IO.IOExcelWrite.CheckExcelFile
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.CheckExcelFile
+  nameWithType: IOExcelWrite.CheckExcelFile
+- uid: Laga.IO.IOExcelWrite.CloseExcelApp(System.Boolean)
+  name: CloseExcelApp(Boolean)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_CloseExcelApp_System_Boolean_
+  commentId: M:Laga.IO.IOExcelWrite.CloseExcelApp(System.Boolean)
+  fullName: Laga.IO.IOExcelWrite.CloseExcelApp(System.Boolean)
+  nameWithType: IOExcelWrite.CloseExcelApp(Boolean)
+- uid: Laga.IO.IOExcelWrite.CloseExcelApp*
+  name: CloseExcelApp
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_CloseExcelApp_
+  commentId: Overload:Laga.IO.IOExcelWrite.CloseExcelApp
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.CloseExcelApp
+  nameWithType: IOExcelWrite.CloseExcelApp
+- uid: Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet(System.Int32,System.String)
+  name: IOWrite_NewExcelSheet(Int32, String)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_NewExcelSheet_System_Int32_System_String_
+  commentId: M:Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet(System.Int32,System.String)
+  fullName: Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet(System.Int32, System.String)
+  nameWithType: IOExcelWrite.IOWrite_NewExcelSheet(Int32, String)
+- uid: Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet*
+  name: IOWrite_NewExcelSheet
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_NewExcelSheet_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWrite_NewExcelSheet
+  nameWithType: IOExcelWrite.IOWrite_NewExcelSheet
+- uid: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp
+  name: IOWrite_OpenExcelApp()
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_OpenExcelApp
+  commentId: M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp
+  fullName: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp()
+  nameWithType: IOExcelWrite.IOWrite_OpenExcelApp()
+- uid: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean)
+  name: IOWrite_OpenExcelApp(Boolean)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_OpenExcelApp_System_Boolean_
+  commentId: M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean)
+  fullName: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean)
+  nameWithType: IOExcelWrite.IOWrite_OpenExcelApp(Boolean)
+- uid: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean,System.Int32)
+  name: IOWrite_OpenExcelApp(Boolean, Int32)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_OpenExcelApp_System_Boolean_System_Int32_
+  commentId: M:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean,System.Int32)
+  fullName: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp(System.Boolean, System.Int32)
+  nameWithType: IOExcelWrite.IOWrite_OpenExcelApp(Boolean, Int32)
+- uid: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp*
+  name: IOWrite_OpenExcelApp
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_OpenExcelApp_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWrite_OpenExcelApp
+  nameWithType: IOExcelWrite.IOWrite_OpenExcelApp
+- uid: Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet(System.Int32)
+  name: IOWrite_SetActiveSheet(Int32)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_SetActiveSheet_System_Int32_
+  commentId: M:Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet(System.Int32)
+  fullName: Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet(System.Int32)
+  nameWithType: IOExcelWrite.IOWrite_SetActiveSheet(Int32)
+- uid: Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet*
+  name: IOWrite_SetActiveSheet
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWrite_SetActiveSheet_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWrite_SetActiveSheet
+  nameWithType: IOExcelWrite.IOWrite_SetActiveSheet
+- uid: Laga.IO.IOExcelWrite.IOWriteItem(System.String,System.Int32,System.Int32)
+  name: IOWriteItem(String, Int32, Int32)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteItem_System_String_System_Int32_System_Int32_
+  commentId: M:Laga.IO.IOExcelWrite.IOWriteItem(System.String,System.Int32,System.Int32)
+  fullName: Laga.IO.IOExcelWrite.IOWriteItem(System.String, System.Int32, System.Int32)
+  nameWithType: IOExcelWrite.IOWriteItem(String, Int32, Int32)
+- uid: Laga.IO.IOExcelWrite.IOWriteItem*
+  name: IOWriteItem
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteItem_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWriteItem
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWriteItem
+  nameWithType: IOExcelWrite.IOWriteItem
+- uid: Laga.IO.IOExcelWrite.IOWriteList(System.Collections.Generic.List{System.String},System.Int32,System.Int32,System.Char)
+  name: IOWriteList(List<String>, Int32, Int32, Char)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteList_System_Collections_Generic_List_System_String__System_Int32_System_Int32_System_Char_
+  commentId: M:Laga.IO.IOExcelWrite.IOWriteList(System.Collections.Generic.List{System.String},System.Int32,System.Int32,System.Char)
+  name.vb: IOWriteList(List(Of String), Int32, Int32, Char)
+  fullName: Laga.IO.IOExcelWrite.IOWriteList(System.Collections.Generic.List<System.String>, System.Int32, System.Int32, System.Char)
+  fullName.vb: Laga.IO.IOExcelWrite.IOWriteList(System.Collections.Generic.List(Of System.String), System.Int32, System.Int32, System.Char)
+  nameWithType: IOExcelWrite.IOWriteList(List<String>, Int32, Int32, Char)
+  nameWithType.vb: IOExcelWrite.IOWriteList(List(Of String), Int32, Int32, Char)
+- uid: Laga.IO.IOExcelWrite.IOWriteList*
+  name: IOWriteList
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteList_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWriteList
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWriteList
+  nameWithType: IOExcelWrite.IOWriteList
+- uid: Laga.IO.IOExcelWrite.IOWriteMatrix(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Int32,System.Int32,System.Boolean)
+  name: IOWriteMatrix(List<List<String>>, Int32, Int32, Boolean)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteMatrix_System_Collections_Generic_List_System_Collections_Generic_List_System_String___System_Int32_System_Int32_System_Boolean_
+  commentId: M:Laga.IO.IOExcelWrite.IOWriteMatrix(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Int32,System.Int32,System.Boolean)
+  name.vb: IOWriteMatrix(List(Of List(Of String)), Int32, Int32, Boolean)
+  fullName: Laga.IO.IOExcelWrite.IOWriteMatrix(System.Collections.Generic.List<System.Collections.Generic.List<System.String>>, System.Int32, System.Int32, System.Boolean)
+  fullName.vb: Laga.IO.IOExcelWrite.IOWriteMatrix(System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String)), System.Int32, System.Int32, System.Boolean)
+  nameWithType: IOExcelWrite.IOWriteMatrix(List<List<String>>, Int32, Int32, Boolean)
+  nameWithType.vb: IOExcelWrite.IOWriteMatrix(List(Of List(Of String)), Int32, Int32, Boolean)
+- uid: Laga.IO.IOExcelWrite.IOWriteMatrix*
+  name: IOWriteMatrix
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_IOWriteMatrix_
+  commentId: Overload:Laga.IO.IOExcelWrite.IOWriteMatrix
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.IOWriteMatrix
+  nameWithType: IOExcelWrite.IOWriteMatrix
+- uid: Laga.IO.IOExcelWrite.ListDataExcel
+  name: ListDataExcel
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_ListDataExcel
+  commentId: P:Laga.IO.IOExcelWrite.ListDataExcel
+  fullName: Laga.IO.IOExcelWrite.ListDataExcel
+  nameWithType: IOExcelWrite.ListDataExcel
+- uid: Laga.IO.IOExcelWrite.ListDataExcel*
+  name: ListDataExcel
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_ListDataExcel_
+  commentId: Overload:Laga.IO.IOExcelWrite.ListDataExcel
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.ListDataExcel
+  nameWithType: IOExcelWrite.ListDataExcel
+- uid: Laga.IO.IOExcelWrite.MatrixDataExcel
+  name: MatrixDataExcel
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_MatrixDataExcel
+  commentId: P:Laga.IO.IOExcelWrite.MatrixDataExcel
+  fullName: Laga.IO.IOExcelWrite.MatrixDataExcel
+  nameWithType: IOExcelWrite.MatrixDataExcel
+- uid: Laga.IO.IOExcelWrite.MatrixDataExcel*
+  name: MatrixDataExcel
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_MatrixDataExcel_
+  commentId: Overload:Laga.IO.IOExcelWrite.MatrixDataExcel
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.MatrixDataExcel
+  nameWithType: IOExcelWrite.MatrixDataExcel
+- uid: Laga.IO.IOExcelWrite.SaveCloseExcelApp(System.String)
+  name: SaveCloseExcelApp(String)
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_SaveCloseExcelApp_System_String_
+  commentId: M:Laga.IO.IOExcelWrite.SaveCloseExcelApp(System.String)
+  fullName: Laga.IO.IOExcelWrite.SaveCloseExcelApp(System.String)
+  nameWithType: IOExcelWrite.SaveCloseExcelApp(String)
+- uid: Laga.IO.IOExcelWrite.SaveCloseExcelApp*
+  name: SaveCloseExcelApp
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_SaveCloseExcelApp_
+  commentId: Overload:Laga.IO.IOExcelWrite.SaveCloseExcelApp
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.SaveCloseExcelApp
+  nameWithType: IOExcelWrite.SaveCloseExcelApp
+- uid: Laga.IO.IOExcelWrite.SheetNum
+  name: SheetNum
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_SheetNum
+  commentId: P:Laga.IO.IOExcelWrite.SheetNum
+  fullName: Laga.IO.IOExcelWrite.SheetNum
+  nameWithType: IOExcelWrite.SheetNum
+- uid: Laga.IO.IOExcelWrite.SheetNum*
+  name: SheetNum
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_SheetNum_
+  commentId: Overload:Laga.IO.IOExcelWrite.SheetNum
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.SheetNum
+  nameWithType: IOExcelWrite.SheetNum
+- uid: Laga.IO.IOExcelWrite.XlRange
+  name: XlRange
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_XlRange
+  commentId: P:Laga.IO.IOExcelWrite.XlRange
+  fullName: Laga.IO.IOExcelWrite.XlRange
+  nameWithType: IOExcelWrite.XlRange
+- uid: Laga.IO.IOExcelWrite.XlRange*
+  name: XlRange
+  href: api/Laga.IO.IOExcelWrite.html#Laga_IO_IOExcelWrite_XlRange_
+  commentId: Overload:Laga.IO.IOExcelWrite.XlRange
+  isSpec: "True"
+  fullName: Laga.IO.IOExcelWrite.XlRange
+  nameWithType: IOExcelWrite.XlRange
 - uid: Laga.IO.IOTextData
   name: IOTextData
   href: api/Laga.IO.IOTextData.html
@@ -2723,6 +3146,7 @@ references:
   name: IOTextData
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData__ctor_
   commentId: Overload:Laga.IO.IOTextData.#ctor
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.IOTextData
   nameWithType: IOTextData.IOTextData
 - uid: Laga.IO.IOTextData.ConvertFileEncoding(System.String,Laga.IO.IOTextData.EncodingType)
@@ -2735,6 +3159,7 @@ references:
   name: ConvertFileEncoding
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_ConvertFileEncoding_
   commentId: Overload:Laga.IO.IOTextData.ConvertFileEncoding
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.ConvertFileEncoding
   nameWithType: IOTextData.ConvertFileEncoding
 - uid: Laga.IO.IOTextData.CountWordsTopN(System.String,System.Int32)
@@ -2747,6 +3172,7 @@ references:
   name: CountWordsTopN
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CountWordsTopN_
   commentId: Overload:Laga.IO.IOTextData.CountWordsTopN
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.CountWordsTopN
   nameWithType: IOTextData.CountWordsTopN
 - uid: Laga.IO.IOTextData.CreateFile(System.Collections.Generic.List{System.String},System.String,System.String)
@@ -2762,6 +3188,7 @@ references:
   name: CreateFile
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_CreateFile_
   commentId: Overload:Laga.IO.IOTextData.CreateFile
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.CreateFile
   nameWithType: IOTextData.CreateFile
 - uid: Laga.IO.IOTextData.DataText
@@ -2774,6 +3201,7 @@ references:
   name: DataText
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataText_
   commentId: Overload:Laga.IO.IOTextData.DataText
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.DataText
   nameWithType: IOTextData.DataText
 - uid: Laga.IO.IOTextData.DataTextLine
@@ -2786,6 +3214,7 @@ references:
   name: DataTextLine
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_DataTextLine_
   commentId: Overload:Laga.IO.IOTextData.DataTextLine
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.DataTextLine
   nameWithType: IOTextData.DataTextLine
 - uid: Laga.IO.IOTextData.EncodingType
@@ -2834,8 +3263,22 @@ references:
   name: GetWords
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_GetWords_
   commentId: Overload:Laga.IO.IOTextData.GetWords
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.GetWords
   nameWithType: IOTextData.GetWords
+- uid: Laga.IO.IOTextData.RemoveByCharacter(System.String,System.String)
+  name: RemoveByCharacter(String, String)
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByCharacter_System_String_System_String_
+  commentId: M:Laga.IO.IOTextData.RemoveByCharacter(System.String,System.String)
+  fullName: Laga.IO.IOTextData.RemoveByCharacter(System.String, System.String)
+  nameWithType: IOTextData.RemoveByCharacter(String, String)
+- uid: Laga.IO.IOTextData.RemoveByCharacter*
+  name: RemoveByCharacter
+  href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByCharacter_
+  commentId: Overload:Laga.IO.IOTextData.RemoveByCharacter
+  isSpec: "True"
+  fullName: Laga.IO.IOTextData.RemoveByCharacter
+  nameWithType: IOTextData.RemoveByCharacter
 - uid: Laga.IO.IOTextData.RemoveByLength(System.String,System.Int32,System.String)
   name: RemoveByLength(String, Int32, String)
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByLength_System_String_System_Int32_System_String_
@@ -2855,6 +3298,7 @@ references:
   name: RemoveByLength
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveByLength_
   commentId: Overload:Laga.IO.IOTextData.RemoveByLength
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.RemoveByLength
   nameWithType: IOTextData.RemoveByLength
 - uid: Laga.IO.IOTextData.RemoveDiacritics(System.String)
@@ -2867,6 +3311,7 @@ references:
   name: RemoveDiacritics
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveDiacritics_
   commentId: Overload:Laga.IO.IOTextData.RemoveDiacritics
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.RemoveDiacritics
   nameWithType: IOTextData.RemoveDiacritics
 - uid: Laga.IO.IOTextData.RemoveNumbers(System.String)
@@ -2879,6 +3324,7 @@ references:
   name: RemoveNumbers
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_RemoveNumbers_
   commentId: Overload:Laga.IO.IOTextData.RemoveNumbers
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.RemoveNumbers
   nameWithType: IOTextData.RemoveNumbers
 - uid: Laga.IO.IOTextData.SourceEncoding
@@ -2891,6 +3337,7 @@ references:
   name: SourceEncoding
   href: api/Laga.IO.IOTextData.html#Laga_IO_IOTextData_SourceEncoding_
   commentId: Overload:Laga.IO.IOTextData.SourceEncoding
+  isSpec: "True"
   fullName: Laga.IO.IOTextData.SourceEncoding
   nameWithType: IOTextData.SourceEncoding
 - uid: Laga.Numbers
@@ -2905,34 +3352,24 @@ references:
   commentId: T:Laga.Numbers.Function
   fullName: Laga.Numbers.Function
   nameWithType: Function
-- uid: Laga.Numbers.Function.#ctor
-  name: Function()
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function__ctor
-  commentId: M:Laga.Numbers.Function.#ctor
-  fullName: Laga.Numbers.Function.Function()
-  nameWithType: Function.Function()
-- uid: Laga.Numbers.Function.#ctor*
-  name: Function
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function__ctor_
-  commentId: Overload:Laga.Numbers.Function.#ctor
-  fullName: Laga.Numbers.Function.Function
-  nameWithType: Function.Function
-- uid: Laga.Numbers.Function.Deg2Rad(System.Double)
-  name: Deg2Rad(Double)
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Deg2Rad_System_Double_
-  commentId: M:Laga.Numbers.Function.Deg2Rad(System.Double)
-  fullName: Laga.Numbers.Function.Deg2Rad(System.Double)
-  nameWithType: Function.Deg2Rad(Double)
-- uid: Laga.Numbers.Function.Deg2Rad*
-  name: Deg2Rad
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Deg2Rad_
-  commentId: Overload:Laga.Numbers.Function.Deg2Rad
-  fullName: Laga.Numbers.Function.Deg2Rad
-  nameWithType: Function.Deg2Rad
+- uid: Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)
+  name: Flower(Int32, Single, Single, Single, Single)
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Flower_System_Int32_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)
+  fullName: Laga.Numbers.Function.Flower(System.Int32, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Function.Flower(Int32, Single, Single, Single, Single)
+- uid: Laga.Numbers.Function.Flower*
+  name: Flower
+  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Flower_
+  commentId: Overload:Laga.Numbers.Function.Flower
+  isSpec: "True"
+  fullName: Laga.Numbers.Function.Flower
+  nameWithType: Function.Flower
 - uid: Laga.Numbers.Function.NumberDistinct*
   name: NumberDistinct
   href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_NumberDistinct_
   commentId: Overload:Laga.Numbers.Function.NumberDistinct
+  isSpec: "True"
   fullName: Laga.Numbers.Function.NumberDistinct
   nameWithType: Function.NumberDistinct
 - uid: Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})
@@ -2944,18 +3381,6 @@ references:
   fullName.vb: Laga.Numbers.Function.NumberDistinct(Of T)(System.Collections.Generic.List(Of T))
   nameWithType: Function.NumberDistinct<T>(List<T>)
   nameWithType.vb: Function.NumberDistinct(Of T)(List(Of T))
-- uid: Laga.Numbers.Function.Rad2Deg(System.Double)
-  name: Rad2Deg(Double)
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Rad2Deg_System_Double_
-  commentId: M:Laga.Numbers.Function.Rad2Deg(System.Double)
-  fullName: Laga.Numbers.Function.Rad2Deg(System.Double)
-  nameWithType: Function.Rad2Deg(Double)
-- uid: Laga.Numbers.Function.Rad2Deg*
-  name: Rad2Deg
-  href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Rad2Deg_
-  commentId: Overload:Laga.Numbers.Function.Rad2Deg
-  fullName: Laga.Numbers.Function.Rad2Deg
-  nameWithType: Function.Rad2Deg
 - uid: Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
   name: Sigmoid(Double, Double, Double, Double, Double, Double)
   href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
@@ -2978,6 +3403,7 @@ references:
   name: Sigmoid
   href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_Sigmoid_
   commentId: Overload:Laga.Numbers.Function.Sigmoid
+  isSpec: "True"
   fullName: Laga.Numbers.Function.Sigmoid
   nameWithType: Function.Sigmoid
 - uid: Laga.Numbers.Function.ThreeXplusOne(System.Int32)
@@ -2990,6 +3416,7 @@ references:
   name: ThreeXplusOne
   href: api/Laga.Numbers.Function.html#Laga_Numbers_Function_ThreeXplusOne_
   commentId: Overload:Laga.Numbers.Function.ThreeXplusOne
+  isSpec: "True"
   fullName: Laga.Numbers.Function.ThreeXplusOne
   nameWithType: Function.ThreeXplusOne
 - uid: Laga.Numbers.Rand
@@ -2998,18 +3425,6 @@ references:
   commentId: T:Laga.Numbers.Rand
   fullName: Laga.Numbers.Rand
   nameWithType: Rand
-- uid: Laga.Numbers.Rand.#ctor
-  name: Rand()
-  href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand__ctor
-  commentId: M:Laga.Numbers.Rand.#ctor
-  fullName: Laga.Numbers.Rand.Rand()
-  nameWithType: Rand.Rand()
-- uid: Laga.Numbers.Rand.#ctor*
-  name: Rand
-  href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand__ctor_
-  commentId: Overload:Laga.Numbers.Rand.#ctor
-  fullName: Laga.Numbers.Rand.Rand
-  nameWithType: Rand.Rand
 - uid: Laga.Numbers.Rand.Character(System.Int32,System.Int32)
   name: Character(Int32, Int32)
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_Character_System_Int32_System_Int32_
@@ -3020,6 +3435,7 @@ references:
   name: Character
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_Character_
   commentId: Overload:Laga.Numbers.Rand.Character
+  isSpec: "True"
   fullName: Laga.Numbers.Rand.Character
   nameWithType: Rand.Character
 - uid: Laga.Numbers.Rand.DblNumber
@@ -3032,6 +3448,7 @@ references:
   name: DblNumber
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_DblNumber_
   commentId: Overload:Laga.Numbers.Rand.DblNumber
+  isSpec: "True"
   fullName: Laga.Numbers.Rand.DblNumber
   nameWithType: Rand.DblNumber
 - uid: Laga.Numbers.Rand.FltNumber(System.Single,System.Single)
@@ -3044,6 +3461,7 @@ references:
   name: FltNumber
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_FltNumber_
   commentId: Overload:Laga.Numbers.Rand.FltNumber
+  isSpec: "True"
   fullName: Laga.Numbers.Rand.FltNumber
   nameWithType: Rand.FltNumber
 - uid: Laga.Numbers.Rand.IntNumber(System.Int32,System.Int32)
@@ -3056,6 +3474,7 @@ references:
   name: IntNumber
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_IntNumber_
   commentId: Overload:Laga.Numbers.Rand.IntNumber
+  isSpec: "True"
   fullName: Laga.Numbers.Rand.IntNumber
   nameWithType: Rand.IntNumber
 - uid: Laga.Numbers.Rand.Numbers(System.Int32,System.Double,System.Double)
@@ -3074,362 +3493,1010 @@ references:
   name: Numbers
   href: api/Laga.Numbers.Rand.html#Laga_Numbers_Rand_Numbers_
   commentId: Overload:Laga.Numbers.Rand.Numbers
+  isSpec: "True"
   fullName: Laga.Numbers.Rand.Numbers
   nameWithType: Rand.Numbers
-- uid: LagaRhino
-  name: LagaRhino
-  href: api/LagaRhino.html
-  commentId: N:LagaRhino
-  fullName: LagaRhino
-  nameWithType: LagaRhino
-- uid: LagaRhino.CurveData
+- uid: Laga.Numbers.Range
+  name: Range
+  href: api/Laga.Numbers.Range.html
+  commentId: T:Laga.Numbers.Range
+  fullName: Laga.Numbers.Range
+  nameWithType: Range
+- uid: Laga.Numbers.Range.#ctor(System.Double,System.Double)
+  name: Range(Double, Double)
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range__ctor_System_Double_System_Double_
+  commentId: M:Laga.Numbers.Range.#ctor(System.Double,System.Double)
+  fullName: Laga.Numbers.Range.Range(System.Double, System.Double)
+  nameWithType: Range.Range(Double, Double)
+- uid: Laga.Numbers.Range.#ctor*
+  name: Range
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range__ctor_
+  commentId: Overload:Laga.Numbers.Range.#ctor
+  isSpec: "True"
+  fullName: Laga.Numbers.Range.Range
+  nameWithType: Range.Range
+- uid: Laga.Numbers.Range.Max
+  name: Max
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range_Max
+  commentId: P:Laga.Numbers.Range.Max
+  fullName: Laga.Numbers.Range.Max
+  nameWithType: Range.Max
+- uid: Laga.Numbers.Range.Max*
+  name: Max
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range_Max_
+  commentId: Overload:Laga.Numbers.Range.Max
+  isSpec: "True"
+  fullName: Laga.Numbers.Range.Max
+  nameWithType: Range.Max
+- uid: Laga.Numbers.Range.Min
+  name: Min
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range_Min
+  commentId: P:Laga.Numbers.Range.Min
+  fullName: Laga.Numbers.Range.Min
+  nameWithType: Range.Min
+- uid: Laga.Numbers.Range.Min*
+  name: Min
+  href: api/Laga.Numbers.Range.html#Laga_Numbers_Range_Min_
+  commentId: Overload:Laga.Numbers.Range.Min
+  isSpec: "True"
+  fullName: Laga.Numbers.Range.Min
+  nameWithType: Range.Min
+- uid: Laga.Numbers.Tools
+  name: Tools
+  href: api/Laga.Numbers.Tools.html
+  commentId: T:Laga.Numbers.Tools
+  fullName: Laga.Numbers.Tools
+  nameWithType: Tools
+- uid: Laga.Numbers.Tools.BinaryChromosomeToInteger*
+  name: BinaryChromosomeToInteger
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_BinaryChromosomeToInteger_
+  commentId: Overload:Laga.Numbers.Tools.BinaryChromosomeToInteger
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.BinaryChromosomeToInteger
+  nameWithType: Tools.BinaryChromosomeToInteger
+- uid: Laga.Numbers.Tools.BinaryChromosomeToInteger``1(``0[])
+  name: BinaryChromosomeToInteger<T>(T[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_BinaryChromosomeToInteger__1___0___
+  commentId: M:Laga.Numbers.Tools.BinaryChromosomeToInteger``1(``0[])
+  name.vb: BinaryChromosomeToInteger(Of T)(T())
+  fullName: Laga.Numbers.Tools.BinaryChromosomeToInteger<T>(T[])
+  fullName.vb: Laga.Numbers.Tools.BinaryChromosomeToInteger(Of T)(T())
+  nameWithType: Tools.BinaryChromosomeToInteger<T>(T[])
+  nameWithType.vb: Tools.BinaryChromosomeToInteger(Of T)(T())
+- uid: Laga.Numbers.Tools.DataReport*
+  name: DataReport
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_DataReport_
+  commentId: Overload:Laga.Numbers.Tools.DataReport
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.DataReport
+  nameWithType: Tools.DataReport
+- uid: Laga.Numbers.Tools.DataReport``1(System.Collections.Generic.List{``0})
+  name: DataReport<T>(List<T>)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_DataReport__1_System_Collections_Generic_List___0__
+  commentId: M:Laga.Numbers.Tools.DataReport``1(System.Collections.Generic.List{``0})
+  name.vb: DataReport(Of T)(List(Of T))
+  fullName: Laga.Numbers.Tools.DataReport<T>(System.Collections.Generic.List<T>)
+  fullName.vb: Laga.Numbers.Tools.DataReport(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: Tools.DataReport<T>(List<T>)
+  nameWithType.vb: Tools.DataReport(Of T)(List(Of T))
+- uid: Laga.Numbers.Tools.Deg2Rad(System.Double)
+  name: Deg2Rad(Double)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Deg2Rad_System_Double_
+  commentId: M:Laga.Numbers.Tools.Deg2Rad(System.Double)
+  fullName: Laga.Numbers.Tools.Deg2Rad(System.Double)
+  nameWithType: Tools.Deg2Rad(Double)
+- uid: Laga.Numbers.Tools.Deg2Rad*
+  name: Deg2Rad
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Deg2Rad_
+  commentId: Overload:Laga.Numbers.Tools.Deg2Rad
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Deg2Rad
+  nameWithType: Tools.Deg2Rad
+- uid: Laga.Numbers.Tools.ExtractDNA*
+  name: ExtractDNA
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ExtractDNA_
+  commentId: Overload:Laga.Numbers.Tools.ExtractDNA
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.ExtractDNA
+  nameWithType: Tools.ExtractDNA
+- uid: Laga.Numbers.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
+  name: ExtractDNA<T>(T[], Int32, Int32)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ExtractDNA__1___0___System_Int32_System_Int32_
+  commentId: M:Laga.Numbers.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)
+  name.vb: ExtractDNA(Of T)(T(), Int32, Int32)
+  fullName: Laga.Numbers.Tools.ExtractDNA<T>(T[], System.Int32, System.Int32)
+  fullName.vb: Laga.Numbers.Tools.ExtractDNA(Of T)(T(), System.Int32, System.Int32)
+  nameWithType: Tools.ExtractDNA<T>(T[], Int32, Int32)
+  nameWithType.vb: Tools.ExtractDNA(Of T)(T(), Int32, Int32)
+- uid: Laga.Numbers.Tools.Fisher_Yates(System.Int32[])
+  name: Fisher_Yates(Int32[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_Yates_System_Int32___
+  commentId: M:Laga.Numbers.Tools.Fisher_Yates(System.Int32[])
+  name.vb: Fisher_Yates(Int32())
+  fullName: Laga.Numbers.Tools.Fisher_Yates(System.Int32[])
+  fullName.vb: Laga.Numbers.Tools.Fisher_Yates(System.Int32())
+  nameWithType: Tools.Fisher_Yates(Int32[])
+  nameWithType.vb: Tools.Fisher_Yates(Int32())
+- uid: Laga.Numbers.Tools.Fisher_Yates(System.Object[])
+  name: Fisher_Yates(Object[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_Yates_System_Object___
+  commentId: M:Laga.Numbers.Tools.Fisher_Yates(System.Object[])
+  name.vb: Fisher_Yates(Object())
+  fullName: Laga.Numbers.Tools.Fisher_Yates(System.Object[])
+  fullName.vb: Laga.Numbers.Tools.Fisher_Yates(System.Object())
+  nameWithType: Tools.Fisher_Yates(Object[])
+  nameWithType.vb: Tools.Fisher_Yates(Object())
+- uid: Laga.Numbers.Tools.Fisher_Yates*
+  name: Fisher_Yates
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_Yates_
+  commentId: Overload:Laga.Numbers.Tools.Fisher_Yates
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Fisher_Yates
+  nameWithType: Tools.Fisher_Yates
+- uid: Laga.Numbers.Tools.Fisher_Yates``1(``0[])
+  name: Fisher_Yates<T>(T[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_Yates__1___0___
+  commentId: M:Laga.Numbers.Tools.Fisher_Yates``1(``0[])
+  name.vb: Fisher_Yates(Of T)(T())
+  fullName: Laga.Numbers.Tools.Fisher_Yates<T>(T[])
+  fullName.vb: Laga.Numbers.Tools.Fisher_Yates(Of T)(T())
+  nameWithType: Tools.Fisher_Yates<T>(T[])
+  nameWithType.vb: Tools.Fisher_Yates(Of T)(T())
+- uid: Laga.Numbers.Tools.Fisher_YatesPercent(System.Object[],System.Single)
+  name: Fisher_YatesPercent(Object[], Single)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_YatesPercent_System_Object___System_Single_
+  commentId: M:Laga.Numbers.Tools.Fisher_YatesPercent(System.Object[],System.Single)
+  name.vb: Fisher_YatesPercent(Object(), Single)
+  fullName: Laga.Numbers.Tools.Fisher_YatesPercent(System.Object[], System.Single)
+  fullName.vb: Laga.Numbers.Tools.Fisher_YatesPercent(System.Object(), System.Single)
+  nameWithType: Tools.Fisher_YatesPercent(Object[], Single)
+  nameWithType.vb: Tools.Fisher_YatesPercent(Object(), Single)
+- uid: Laga.Numbers.Tools.Fisher_YatesPercent*
+  name: Fisher_YatesPercent
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Fisher_YatesPercent_
+  commentId: Overload:Laga.Numbers.Tools.Fisher_YatesPercent
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Fisher_YatesPercent
+  nameWithType: Tools.Fisher_YatesPercent
+- uid: Laga.Numbers.Tools.MinMaxValue*
+  name: MinMaxValue
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_MinMaxValue_
+  commentId: Overload:Laga.Numbers.Tools.MinMaxValue
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.MinMaxValue
+  nameWithType: Tools.MinMaxValue
+- uid: Laga.Numbers.Tools.MinMaxValue``1(``0[])
+  name: MinMaxValue<T>(T[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_MinMaxValue__1___0___
+  commentId: M:Laga.Numbers.Tools.MinMaxValue``1(``0[])
+  name.vb: MinMaxValue(Of T)(T())
+  fullName: Laga.Numbers.Tools.MinMaxValue<T>(T[])
+  fullName.vb: Laga.Numbers.Tools.MinMaxValue(Of T)(T())
+  nameWithType: Tools.MinMaxValue<T>(T[])
+  nameWithType.vb: Tools.MinMaxValue(Of T)(T())
+- uid: Laga.Numbers.Tools.Mom_Dad(System.Int32,System.Single)
+  name: Mom_Dad(Int32, Single)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Mom_Dad_System_Int32_System_Single_
+  commentId: M:Laga.Numbers.Tools.Mom_Dad(System.Int32,System.Single)
+  fullName: Laga.Numbers.Tools.Mom_Dad(System.Int32, System.Single)
+  nameWithType: Tools.Mom_Dad(Int32, Single)
+- uid: Laga.Numbers.Tools.Mom_Dad*
+  name: Mom_Dad
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Mom_Dad_
+  commentId: Overload:Laga.Numbers.Tools.Mom_Dad
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Mom_Dad
+  nameWithType: Tools.Mom_Dad
+- uid: Laga.Numbers.Tools.Parse(System.Char[])
+  name: Parse(Char[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Parse_System_Char___
+  commentId: M:Laga.Numbers.Tools.Parse(System.Char[])
+  name.vb: Parse(Char())
+  fullName: Laga.Numbers.Tools.Parse(System.Char[])
+  fullName.vb: Laga.Numbers.Tools.Parse(System.Char())
+  nameWithType: Tools.Parse(Char[])
+  nameWithType.vb: Tools.Parse(Char())
+- uid: Laga.Numbers.Tools.Parse(System.Double[])
+  name: Parse(Double[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Parse_System_Double___
+  commentId: M:Laga.Numbers.Tools.Parse(System.Double[])
+  name.vb: Parse(Double())
+  fullName: Laga.Numbers.Tools.Parse(System.Double[])
+  fullName.vb: Laga.Numbers.Tools.Parse(System.Double())
+  nameWithType: Tools.Parse(Double[])
+  nameWithType.vb: Tools.Parse(Double())
+- uid: Laga.Numbers.Tools.Parse(System.Int32[])
+  name: Parse(Int32[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Parse_System_Int32___
+  commentId: M:Laga.Numbers.Tools.Parse(System.Int32[])
+  name.vb: Parse(Int32())
+  fullName: Laga.Numbers.Tools.Parse(System.Int32[])
+  fullName.vb: Laga.Numbers.Tools.Parse(System.Int32())
+  nameWithType: Tools.Parse(Int32[])
+  nameWithType.vb: Tools.Parse(Int32())
+- uid: Laga.Numbers.Tools.Parse(System.Single[])
+  name: Parse(Single[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Parse_System_Single___
+  commentId: M:Laga.Numbers.Tools.Parse(System.Single[])
+  name.vb: Parse(Single())
+  fullName: Laga.Numbers.Tools.Parse(System.Single[])
+  fullName.vb: Laga.Numbers.Tools.Parse(System.Single())
+  nameWithType: Tools.Parse(Single[])
+  nameWithType.vb: Tools.Parse(Single())
+- uid: Laga.Numbers.Tools.Parse*
+  name: Parse
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Parse_
+  commentId: Overload:Laga.Numbers.Tools.Parse
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Parse
+  nameWithType: Tools.Parse
+- uid: Laga.Numbers.Tools.ParseDblToFloat(System.Double,System.Int32)
+  name: ParseDblToFloat(Double, Int32)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ParseDblToFloat_System_Double_System_Int32_
+  commentId: M:Laga.Numbers.Tools.ParseDblToFloat(System.Double,System.Int32)
+  fullName: Laga.Numbers.Tools.ParseDblToFloat(System.Double, System.Int32)
+  nameWithType: Tools.ParseDblToFloat(Double, Int32)
+- uid: Laga.Numbers.Tools.ParseDblToFloat*
+  name: ParseDblToFloat
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ParseDblToFloat_
+  commentId: Overload:Laga.Numbers.Tools.ParseDblToFloat
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.ParseDblToFloat
+  nameWithType: Tools.ParseDblToFloat
+- uid: Laga.Numbers.Tools.Prefix(System.String,System.Int32)
+  name: Prefix(String, Int32)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Prefix_System_String_System_Int32_
+  commentId: M:Laga.Numbers.Tools.Prefix(System.String,System.Int32)
+  fullName: Laga.Numbers.Tools.Prefix(System.String, System.Int32)
+  nameWithType: Tools.Prefix(String, Int32)
+- uid: Laga.Numbers.Tools.Prefix*
+  name: Prefix
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Prefix_
+  commentId: Overload:Laga.Numbers.Tools.Prefix
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Prefix
+  nameWithType: Tools.Prefix
+- uid: Laga.Numbers.Tools.Rad2Deg(System.Double)
+  name: Rad2Deg(Double)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Rad2Deg_System_Double_
+  commentId: M:Laga.Numbers.Tools.Rad2Deg(System.Double)
+  fullName: Laga.Numbers.Tools.Rad2Deg(System.Double)
+  nameWithType: Tools.Rad2Deg(Double)
+- uid: Laga.Numbers.Tools.Rad2Deg*
+  name: Rad2Deg
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Rad2Deg_
+  commentId: Overload:Laga.Numbers.Tools.Rad2Deg
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Rad2Deg
+  nameWithType: Tools.Rad2Deg
+- uid: Laga.Numbers.Tools.RandomChar(System.Int32,System.Int32)
+  name: RandomChar(Int32, Int32)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomChar_System_Int32_System_Int32_
+  commentId: M:Laga.Numbers.Tools.RandomChar(System.Int32,System.Int32)
+  fullName: Laga.Numbers.Tools.RandomChar(System.Int32, System.Int32)
+  nameWithType: Tools.RandomChar(Int32, Int32)
+- uid: Laga.Numbers.Tools.RandomChar*
+  name: RandomChar
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomChar_
+  commentId: Overload:Laga.Numbers.Tools.RandomChar
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.RandomChar
+  nameWithType: Tools.RandomChar
+- uid: Laga.Numbers.Tools.RandomCharBinary(System.Single)
+  name: RandomCharBinary(Single)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomCharBinary_System_Single_
+  commentId: M:Laga.Numbers.Tools.RandomCharBinary(System.Single)
+  fullName: Laga.Numbers.Tools.RandomCharBinary(System.Single)
+  nameWithType: Tools.RandomCharBinary(Single)
+- uid: Laga.Numbers.Tools.RandomCharBinary*
+  name: RandomCharBinary
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomCharBinary_
+  commentId: Overload:Laga.Numbers.Tools.RandomCharBinary
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.RandomCharBinary
+  nameWithType: Tools.RandomCharBinary
+- uid: Laga.Numbers.Tools.RandomInt(System.Int32,System.Int32,System.Single)
+  name: RandomInt(Int32, Int32, Single)
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomInt_System_Int32_System_Int32_System_Single_
+  commentId: M:Laga.Numbers.Tools.RandomInt(System.Int32,System.Int32,System.Single)
+  fullName: Laga.Numbers.Tools.RandomInt(System.Int32, System.Int32, System.Single)
+  nameWithType: Tools.RandomInt(Int32, Int32, Single)
+- uid: Laga.Numbers.Tools.RandomInt*
+  name: RandomInt
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_RandomInt_
+  commentId: Overload:Laga.Numbers.Tools.RandomInt
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.RandomInt
+  nameWithType: Tools.RandomInt
+- uid: Laga.Numbers.Tools.Reverse(System.Double[])
+  name: Reverse(Double[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Reverse_System_Double___
+  commentId: M:Laga.Numbers.Tools.Reverse(System.Double[])
+  name.vb: Reverse(Double())
+  fullName: Laga.Numbers.Tools.Reverse(System.Double[])
+  fullName.vb: Laga.Numbers.Tools.Reverse(System.Double())
+  nameWithType: Tools.Reverse(Double[])
+  nameWithType.vb: Tools.Reverse(Double())
+- uid: Laga.Numbers.Tools.Reverse(System.Int32[])
+  name: Reverse(Int32[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Reverse_System_Int32___
+  commentId: M:Laga.Numbers.Tools.Reverse(System.Int32[])
+  name.vb: Reverse(Int32())
+  fullName: Laga.Numbers.Tools.Reverse(System.Int32[])
+  fullName.vb: Laga.Numbers.Tools.Reverse(System.Int32())
+  nameWithType: Tools.Reverse(Int32[])
+  nameWithType.vb: Tools.Reverse(Int32())
+- uid: Laga.Numbers.Tools.Reverse(System.Single[])
+  name: Reverse(Single[])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Reverse_System_Single___
+  commentId: M:Laga.Numbers.Tools.Reverse(System.Single[])
+  name.vb: Reverse(Single())
+  fullName: Laga.Numbers.Tools.Reverse(System.Single[])
+  fullName.vb: Laga.Numbers.Tools.Reverse(System.Single())
+  nameWithType: Tools.Reverse(Single[])
+  nameWithType.vb: Tools.Reverse(Single())
+- uid: Laga.Numbers.Tools.Reverse*
+  name: Reverse
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_Reverse_
+  commentId: Overload:Laga.Numbers.Tools.Reverse
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.Reverse
+  nameWithType: Tools.Reverse
+- uid: Laga.Numbers.Tools.ReversePopulation(System.Char[][])
+  name: ReversePopulation(Char[][])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_System_Char_____
+  commentId: M:Laga.Numbers.Tools.ReversePopulation(System.Char[][])
+  name.vb: ReversePopulation(Char()())
+  fullName: Laga.Numbers.Tools.ReversePopulation(System.Char[][])
+  fullName.vb: Laga.Numbers.Tools.ReversePopulation(System.Char()())
+  nameWithType: Tools.ReversePopulation(Char[][])
+  nameWithType.vb: Tools.ReversePopulation(Char()())
+- uid: Laga.Numbers.Tools.ReversePopulation(System.Double[][])
+  name: ReversePopulation(Double[][])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_System_Double_____
+  commentId: M:Laga.Numbers.Tools.ReversePopulation(System.Double[][])
+  name.vb: ReversePopulation(Double()())
+  fullName: Laga.Numbers.Tools.ReversePopulation(System.Double[][])
+  fullName.vb: Laga.Numbers.Tools.ReversePopulation(System.Double()())
+  nameWithType: Tools.ReversePopulation(Double[][])
+  nameWithType.vb: Tools.ReversePopulation(Double()())
+- uid: Laga.Numbers.Tools.ReversePopulation(System.Int32[][])
+  name: ReversePopulation(Int32[][])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_System_Int32_____
+  commentId: M:Laga.Numbers.Tools.ReversePopulation(System.Int32[][])
+  name.vb: ReversePopulation(Int32()())
+  fullName: Laga.Numbers.Tools.ReversePopulation(System.Int32[][])
+  fullName.vb: Laga.Numbers.Tools.ReversePopulation(System.Int32()())
+  nameWithType: Tools.ReversePopulation(Int32[][])
+  nameWithType.vb: Tools.ReversePopulation(Int32()())
+- uid: Laga.Numbers.Tools.ReversePopulation(System.Object[][])
+  name: ReversePopulation(Object[][])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_System_Object_____
+  commentId: M:Laga.Numbers.Tools.ReversePopulation(System.Object[][])
+  name.vb: ReversePopulation(Object()())
+  fullName: Laga.Numbers.Tools.ReversePopulation(System.Object[][])
+  fullName.vb: Laga.Numbers.Tools.ReversePopulation(System.Object()())
+  nameWithType: Tools.ReversePopulation(Object[][])
+  nameWithType.vb: Tools.ReversePopulation(Object()())
+- uid: Laga.Numbers.Tools.ReversePopulation(System.Single[][])
+  name: ReversePopulation(Single[][])
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_System_Single_____
+  commentId: M:Laga.Numbers.Tools.ReversePopulation(System.Single[][])
+  name.vb: ReversePopulation(Single()())
+  fullName: Laga.Numbers.Tools.ReversePopulation(System.Single[][])
+  fullName.vb: Laga.Numbers.Tools.ReversePopulation(System.Single()())
+  nameWithType: Tools.ReversePopulation(Single[][])
+  nameWithType.vb: Tools.ReversePopulation(Single()())
+- uid: Laga.Numbers.Tools.ReversePopulation*
+  name: ReversePopulation
+  href: api/Laga.Numbers.Tools.html#Laga_Numbers_Tools_ReversePopulation_
+  commentId: Overload:Laga.Numbers.Tools.ReversePopulation
+  isSpec: "True"
+  fullName: Laga.Numbers.Tools.ReversePopulation
+  nameWithType: Tools.ReversePopulation
+- uid: Laga.Rhino
+  name: Laga.Rhino
+  href: api/Laga.Rhino.html
+  commentId: N:Laga.Rhino
+  fullName: Laga.Rhino
+  nameWithType: Laga.Rhino
+- uid: Laga.Rhino.Convexhull
+  name: Convexhull
+  href: api/Laga.Rhino.Convexhull.html
+  commentId: T:Laga.Rhino.Convexhull
+  fullName: Laga.Rhino.Convexhull
+  nameWithType: Convexhull
+- uid: Laga.Rhino.Convexhull.ConvexHull2D(System.Collections.Generic.List{Point3d})
+  name: ConvexHull2D(List<Point3d>)
+  href: api/Laga.Rhino.Convexhull.html#Laga_Rhino_Convexhull_ConvexHull2D_System_Collections_Generic_List_Point3d__
+  commentId: M:Laga.Rhino.Convexhull.ConvexHull2D(System.Collections.Generic.List{Point3d})
+  name.vb: ConvexHull2D(List(Of Point3d))
+  fullName: Laga.Rhino.Convexhull.ConvexHull2D(System.Collections.Generic.List<Point3d>)
+  fullName.vb: Laga.Rhino.Convexhull.ConvexHull2D(System.Collections.Generic.List(Of Point3d))
+  nameWithType: Convexhull.ConvexHull2D(List<Point3d>)
+  nameWithType.vb: Convexhull.ConvexHull2D(List(Of Point3d))
+- uid: Laga.Rhino.Convexhull.ConvexHull2D*
+  name: ConvexHull2D
+  href: api/Laga.Rhino.Convexhull.html#Laga_Rhino_Convexhull_ConvexHull2D_
+  commentId: Overload:Laga.Rhino.Convexhull.ConvexHull2D
+  isSpec: "True"
+  fullName: Laga.Rhino.Convexhull.ConvexHull2D
+  nameWithType: Convexhull.ConvexHull2D
+- uid: Laga.Rhino.CurveData
   name: CurveData
-  href: api/LagaRhino.CurveData.html
-  commentId: T:LagaRhino.CurveData
-  fullName: LagaRhino.CurveData
+  href: api/Laga.Rhino.CurveData.html
+  commentId: T:Laga.Rhino.CurveData
+  fullName: Laga.Rhino.CurveData
   nameWithType: CurveData
-- uid: LagaRhino.CurveData.#ctor
-  name: CurveData()
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData__ctor
-  commentId: M:LagaRhino.CurveData.#ctor
-  fullName: LagaRhino.CurveData.CurveData()
-  nameWithType: CurveData.CurveData()
-- uid: LagaRhino.CurveData.#ctor*
-  name: CurveData
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData__ctor_
-  commentId: Overload:LagaRhino.CurveData.#ctor
-  fullName: LagaRhino.CurveData.CurveData
-  nameWithType: CurveData.CurveData
-- uid: LagaRhino.CurveData.CorrectPlaneOnCurveByParam(Rhino.Geometry.Curve,System.Double)
-  name: CorrectPlaneOnCurveByParam(Curve, Double)
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_CorrectPlaneOnCurveByParam_Rhino_Geometry_Curve_System_Double_
-  commentId: M:LagaRhino.CurveData.CorrectPlaneOnCurveByParam(Rhino.Geometry.Curve,System.Double)
-  fullName: LagaRhino.CurveData.CorrectPlaneOnCurveByParam(Rhino.Geometry.Curve, System.Double)
-  nameWithType: CurveData.CorrectPlaneOnCurveByParam(Curve, Double)
-- uid: LagaRhino.CurveData.CorrectPlaneOnCurveByParam*
-  name: CorrectPlaneOnCurveByParam
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_CorrectPlaneOnCurveByParam_
-  commentId: Overload:LagaRhino.CurveData.CorrectPlaneOnCurveByParam
-  fullName: LagaRhino.CurveData.CorrectPlaneOnCurveByParam
-  nameWithType: CurveData.CorrectPlaneOnCurveByParam
-- uid: LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.List{Rhino.Geometry.Curve})
-  name: DeepCopyListCurve(List<Curve>)
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_DeepCopyListCurve_System_Collections_Generic_List_Rhino_Geometry_Curve__
-  commentId: M:LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.List{Rhino.Geometry.Curve})
-  name.vb: DeepCopyListCurve(List(Of Curve))
-  fullName: LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.List<Rhino.Geometry.Curve>)
-  fullName.vb: LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.List(Of Rhino.Geometry.Curve))
-  nameWithType: CurveData.DeepCopyListCurve(List<Curve>)
-  nameWithType.vb: CurveData.DeepCopyListCurve(List(Of Curve))
-- uid: LagaRhino.CurveData.DeepCopyListCurve*
-  name: DeepCopyListCurve
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_DeepCopyListCurve_
-  commentId: Overload:LagaRhino.CurveData.DeepCopyListCurve
-  fullName: LagaRhino.CurveData.DeepCopyListCurve
-  nameWithType: CurveData.DeepCopyListCurve
-- uid: LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.List{Rhino.Geometry.Curve},System.Double)
-  name: GetPointFromCurves(List<Curve>, Double)
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_GetPointFromCurves_System_Collections_Generic_List_Rhino_Geometry_Curve__System_Double_
-  commentId: M:LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.List{Rhino.Geometry.Curve},System.Double)
-  name.vb: GetPointFromCurves(List(Of Curve), Double)
-  fullName: LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.List<Rhino.Geometry.Curve>, System.Double)
-  fullName.vb: LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.List(Of Rhino.Geometry.Curve), System.Double)
-  nameWithType: CurveData.GetPointFromCurves(List<Curve>, Double)
-  nameWithType.vb: CurveData.GetPointFromCurves(List(Of Curve), Double)
-- uid: LagaRhino.CurveData.GetPointFromCurves*
-  name: GetPointFromCurves
-  href: api/LagaRhino.CurveData.html#LagaRhino_CurveData_GetPointFromCurves_
-  commentId: Overload:LagaRhino.CurveData.GetPointFromCurves
-  fullName: LagaRhino.CurveData.GetPointFromCurves
-  nameWithType: CurveData.GetPointFromCurves
-- uid: LagaRhino.LineCurveData
-  name: LineCurveData
-  href: api/LagaRhino.LineCurveData.html
-  commentId: T:LagaRhino.LineCurveData
-  fullName: LagaRhino.LineCurveData
-  nameWithType: LineCurveData
-- uid: LagaRhino.LineCurveData.#ctor
-  name: LineCurveData()
-  href: api/LagaRhino.LineCurveData.html#LagaRhino_LineCurveData__ctor
-  commentId: M:LagaRhino.LineCurveData.#ctor
-  fullName: LagaRhino.LineCurveData.LineCurveData()
-  nameWithType: LineCurveData.LineCurveData()
-- uid: LagaRhino.LineCurveData.#ctor*
-  name: LineCurveData
-  href: api/LagaRhino.LineCurveData.html#LagaRhino_LineCurveData__ctor_
-  commentId: Overload:LagaRhino.LineCurveData.#ctor
-  fullName: LagaRhino.LineCurveData.LineCurveData
-  nameWithType: LineCurveData.LineCurveData
-- uid: LagaRhino.LineCurveData.Axis(Rhino.Geometry.LineCurve)
-  name: Axis(LineCurve)
-  href: api/LagaRhino.LineCurveData.html#LagaRhino_LineCurveData_Axis_Rhino_Geometry_LineCurve_
-  commentId: M:LagaRhino.LineCurveData.Axis(Rhino.Geometry.LineCurve)
-  fullName: LagaRhino.LineCurveData.Axis(Rhino.Geometry.LineCurve)
-  nameWithType: LineCurveData.Axis(LineCurve)
-- uid: LagaRhino.LineCurveData.Axis*
+- uid: Laga.Rhino.CurveData.Axis(Curve)
+  name: Axis(Curve)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Axis_Curve_
+  commentId: M:Laga.Rhino.CurveData.Axis(Curve)
+  fullName: Laga.Rhino.CurveData.Axis(Curve)
+  nameWithType: CurveData.Axis(Curve)
+- uid: Laga.Rhino.CurveData.Axis*
   name: Axis
-  href: api/LagaRhino.LineCurveData.html#LagaRhino_LineCurveData_Axis_
-  commentId: Overload:LagaRhino.LineCurveData.Axis
-  fullName: LagaRhino.LineCurveData.Axis
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Axis_
+  commentId: Overload:Laga.Rhino.CurveData.Axis
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.Axis
+  nameWithType: CurveData.Axis
+- uid: Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam(Curve,System.Double)
+  name: CorrectPlaneOnCurveByParam(Curve, Double)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_CorrectPlaneOnCurveByParam_Curve_System_Double_
+  commentId: M:Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam(Curve,System.Double)
+  fullName: Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam(Curve, System.Double)
+  nameWithType: CurveData.CorrectPlaneOnCurveByParam(Curve, Double)
+- uid: Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam*
+  name: CorrectPlaneOnCurveByParam
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_CorrectPlaneOnCurveByParam_
+  commentId: Overload:Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.CorrectPlaneOnCurveByParam
+  nameWithType: CurveData.CorrectPlaneOnCurveByParam
+- uid: Laga.Rhino.CurveData.CurvesZCoordinate(System.Collections.Generic.IEnumerable{Curve})
+  name: CurvesZCoordinate(IEnumerable<Curve>)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_CurvesZCoordinate_System_Collections_Generic_IEnumerable_Curve__
+  commentId: M:Laga.Rhino.CurveData.CurvesZCoordinate(System.Collections.Generic.IEnumerable{Curve})
+  name.vb: CurvesZCoordinate(IEnumerable(Of Curve))
+  fullName: Laga.Rhino.CurveData.CurvesZCoordinate(System.Collections.Generic.IEnumerable<Curve>)
+  fullName.vb: Laga.Rhino.CurveData.CurvesZCoordinate(System.Collections.Generic.IEnumerable(Of Curve))
+  nameWithType: CurveData.CurvesZCoordinate(IEnumerable<Curve>)
+  nameWithType.vb: CurveData.CurvesZCoordinate(IEnumerable(Of Curve))
+- uid: Laga.Rhino.CurveData.CurvesZCoordinate*
+  name: CurvesZCoordinate
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_CurvesZCoordinate_
+  commentId: Overload:Laga.Rhino.CurveData.CurvesZCoordinate
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.CurvesZCoordinate
+  nameWithType: CurveData.CurvesZCoordinate
+- uid: Laga.Rhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable{Curve})
+  name: DeepCopyListCurve(IEnumerable<Curve>)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_DeepCopyListCurve_System_Collections_Generic_IEnumerable_Curve__
+  commentId: M:Laga.Rhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable{Curve})
+  name.vb: DeepCopyListCurve(IEnumerable(Of Curve))
+  fullName: Laga.Rhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable<Curve>)
+  fullName.vb: Laga.Rhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable(Of Curve))
+  nameWithType: CurveData.DeepCopyListCurve(IEnumerable<Curve>)
+  nameWithType.vb: CurveData.DeepCopyListCurve(IEnumerable(Of Curve))
+- uid: Laga.Rhino.CurveData.DeepCopyListCurve*
+  name: DeepCopyListCurve
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_DeepCopyListCurve_
+  commentId: Overload:Laga.Rhino.CurveData.DeepCopyListCurve
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.DeepCopyListCurve
+  nameWithType: CurveData.DeepCopyListCurve
+- uid: Laga.Rhino.CurveData.Evaluate(Curve,System.Double[])
+  name: Evaluate(Curve, Double[])
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Evaluate_Curve_System_Double___
+  commentId: M:Laga.Rhino.CurveData.Evaluate(Curve,System.Double[])
+  name.vb: Evaluate(Curve, Double())
+  fullName: Laga.Rhino.CurveData.Evaluate(Curve, System.Double[])
+  fullName.vb: Laga.Rhino.CurveData.Evaluate(Curve, System.Double())
+  nameWithType: CurveData.Evaluate(Curve, Double[])
+  nameWithType.vb: CurveData.Evaluate(Curve, Double())
+- uid: Laga.Rhino.CurveData.Evaluate*
+  name: Evaluate
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Evaluate_
+  commentId: Overload:Laga.Rhino.CurveData.Evaluate
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.Evaluate
+  nameWithType: CurveData.Evaluate
+- uid: Laga.Rhino.CurveData.GetPointFromCurves(System.Collections.Generic.IEnumerable{Curve},System.Double)
+  name: GetPointFromCurves(IEnumerable<Curve>, Double)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_GetPointFromCurves_System_Collections_Generic_IEnumerable_Curve__System_Double_
+  commentId: M:Laga.Rhino.CurveData.GetPointFromCurves(System.Collections.Generic.IEnumerable{Curve},System.Double)
+  name.vb: GetPointFromCurves(IEnumerable(Of Curve), Double)
+  fullName: Laga.Rhino.CurveData.GetPointFromCurves(System.Collections.Generic.IEnumerable<Curve>, System.Double)
+  fullName.vb: Laga.Rhino.CurveData.GetPointFromCurves(System.Collections.Generic.IEnumerable(Of Curve), System.Double)
+  nameWithType: CurveData.GetPointFromCurves(IEnumerable<Curve>, Double)
+  nameWithType.vb: CurveData.GetPointFromCurves(IEnumerable(Of Curve), Double)
+- uid: Laga.Rhino.CurveData.GetPointFromCurves*
+  name: GetPointFromCurves
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_GetPointFromCurves_
+  commentId: Overload:Laga.Rhino.CurveData.GetPointFromCurves
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.GetPointFromCurves
+  nameWithType: CurveData.GetPointFromCurves
+- uid: Laga.Rhino.CurveData.MirrorCurve(Curve,Plane)
+  name: MirrorCurve(Curve, Plane)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_MirrorCurve_Curve_Plane_
+  commentId: M:Laga.Rhino.CurveData.MirrorCurve(Curve,Plane)
+  fullName: Laga.Rhino.CurveData.MirrorCurve(Curve, Plane)
+  nameWithType: CurveData.MirrorCurve(Curve, Plane)
+- uid: Laga.Rhino.CurveData.MirrorCurve*
+  name: MirrorCurve
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_MirrorCurve_
+  commentId: Overload:Laga.Rhino.CurveData.MirrorCurve
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.MirrorCurve
+  nameWithType: CurveData.MirrorCurve
+- uid: Laga.Rhino.CurveData.PerpendicularSegment(Curve,System.Double,System.Double)
+  name: PerpendicularSegment(Curve, Double, Double)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_PerpendicularSegment_Curve_System_Double_System_Double_
+  commentId: M:Laga.Rhino.CurveData.PerpendicularSegment(Curve,System.Double,System.Double)
+  fullName: Laga.Rhino.CurveData.PerpendicularSegment(Curve, System.Double, System.Double)
+  nameWithType: CurveData.PerpendicularSegment(Curve, Double, Double)
+- uid: Laga.Rhino.CurveData.PerpendicularSegment*
+  name: PerpendicularSegment
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_PerpendicularSegment_
+  commentId: Overload:Laga.Rhino.CurveData.PerpendicularSegment
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.PerpendicularSegment
+  nameWithType: CurveData.PerpendicularSegment
+- uid: Laga.Rhino.CurveData.Reparam(Curve)
+  name: Reparam(Curve)
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Reparam_Curve_
+  commentId: M:Laga.Rhino.CurveData.Reparam(Curve)
+  fullName: Laga.Rhino.CurveData.Reparam(Curve)
+  nameWithType: CurveData.Reparam(Curve)
+- uid: Laga.Rhino.CurveData.Reparam*
+  name: Reparam
+  href: api/Laga.Rhino.CurveData.html#Laga_Rhino_CurveData_Reparam_
+  commentId: Overload:Laga.Rhino.CurveData.Reparam
+  isSpec: "True"
+  fullName: Laga.Rhino.CurveData.Reparam
+  nameWithType: CurveData.Reparam
+- uid: Laga.Rhino.DrawText
+  name: DrawText
+  href: api/Laga.Rhino.DrawText.html
+  commentId: T:Laga.Rhino.DrawText
+  fullName: Laga.Rhino.DrawText
+  nameWithType: DrawText
+- uid: Laga.Rhino.DrawText.#ctor(Plane,System.String,System.Int32)
+  name: DrawText(Plane, String, Int32)
+  href: api/Laga.Rhino.DrawText.html#Laga_Rhino_DrawText__ctor_Plane_System_String_System_Int32_
+  commentId: M:Laga.Rhino.DrawText.#ctor(Plane,System.String,System.Int32)
+  fullName: Laga.Rhino.DrawText.DrawText(Plane, System.String, System.Int32)
+  nameWithType: DrawText.DrawText(Plane, String, Int32)
+- uid: Laga.Rhino.DrawText.#ctor*
+  name: DrawText
+  href: api/Laga.Rhino.DrawText.html#Laga_Rhino_DrawText__ctor_
+  commentId: Overload:Laga.Rhino.DrawText.#ctor
+  isSpec: "True"
+  fullName: Laga.Rhino.DrawText.DrawText
+  nameWithType: DrawText.DrawText
+- uid: Laga.Rhino.LineCurveData
+  name: LineCurveData
+  href: api/Laga.Rhino.LineCurveData.html
+  commentId: T:Laga.Rhino.LineCurveData
+  fullName: Laga.Rhino.LineCurveData
+  nameWithType: LineCurveData
+- uid: Laga.Rhino.LineCurveData.Axis(LineCurve)
+  name: Axis(LineCurve)
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_Axis_LineCurve_
+  commentId: M:Laga.Rhino.LineCurveData.Axis(LineCurve)
+  fullName: Laga.Rhino.LineCurveData.Axis(LineCurve)
+  nameWithType: LineCurveData.Axis(LineCurve)
+- uid: Laga.Rhino.LineCurveData.Axis*
+  name: Axis
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_Axis_
+  commentId: Overload:Laga.Rhino.LineCurveData.Axis
+  isSpec: "True"
+  fullName: Laga.Rhino.LineCurveData.Axis
   nameWithType: LineCurveData.Axis
-- uid: LagaRhino.PointData
-  name: PointData
-  href: api/LagaRhino.PointData.html
-  commentId: T:LagaRhino.PointData
-  fullName: LagaRhino.PointData
-  nameWithType: PointData
-- uid: LagaRhino.PointData.#ctor
-  name: PointData()
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData__ctor
-  commentId: M:LagaRhino.PointData.#ctor
-  fullName: LagaRhino.PointData.PointData()
-  nameWithType: PointData.PointData()
-- uid: LagaRhino.PointData.#ctor*
-  name: PointData
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData__ctor_
-  commentId: Overload:LagaRhino.PointData.#ctor
-  fullName: LagaRhino.PointData.PointData
-  nameWithType: PointData.PointData
-- uid: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
-  name: GroupByZ(Point3d[])
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_GroupByZ_Rhino_Geometry_Point3d___
-  commentId: M:LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
-  name.vb: GroupByZ(Point3d())
-  fullName: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])
-  fullName.vb: LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d())
-  nameWithType: PointData.GroupByZ(Point3d[])
-  nameWithType.vb: PointData.GroupByZ(Point3d())
-- uid: LagaRhino.PointData.GroupByZ*
-  name: GroupByZ
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_GroupByZ_
-  commentId: Overload:LagaRhino.PointData.GroupByZ
-  fullName: LagaRhino.PointData.GroupByZ
-  nameWithType: PointData.GroupByZ
-- uid: LagaRhino.PointData.MirrorPointQuadrant(Rhino.Geometry.Point3d)
-  name: MirrorPointQuadrant(Point3d)
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_MirrorPointQuadrant_Rhino_Geometry_Point3d_
-  commentId: M:LagaRhino.PointData.MirrorPointQuadrant(Rhino.Geometry.Point3d)
-  fullName: LagaRhino.PointData.MirrorPointQuadrant(Rhino.Geometry.Point3d)
-  nameWithType: PointData.MirrorPointQuadrant(Point3d)
-- uid: LagaRhino.PointData.MirrorPointQuadrant*
-  name: MirrorPointQuadrant
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_MirrorPointQuadrant_
-  commentId: Overload:LagaRhino.PointData.MirrorPointQuadrant
-  fullName: LagaRhino.PointData.MirrorPointQuadrant
-  nameWithType: PointData.MirrorPointQuadrant
-- uid: LagaRhino.PointData.Point3dToVector(Rhino.Geometry.Point3d)
-  name: Point3dToVector(Point3d)
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_Point3dToVector_Rhino_Geometry_Point3d_
-  commentId: M:LagaRhino.PointData.Point3dToVector(Rhino.Geometry.Point3d)
-  fullName: LagaRhino.PointData.Point3dToVector(Rhino.Geometry.Point3d)
-  nameWithType: PointData.Point3dToVector(Point3d)
-- uid: LagaRhino.PointData.Point3dToVector*
-  name: Point3dToVector
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_Point3dToVector_
-  commentId: Overload:LagaRhino.PointData.Point3dToVector
-  fullName: LagaRhino.PointData.Point3dToVector
-  nameWithType: PointData.Point3dToVector
-- uid: LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
-  name: PointQuadrant(Point3d)
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_PointQuadrant_Rhino_Geometry_Point3d_
-  commentId: M:LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
-  fullName: LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)
-  nameWithType: PointData.PointQuadrant(Point3d)
-- uid: LagaRhino.PointData.PointQuadrant*
-  name: PointQuadrant
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_PointQuadrant_
-  commentId: Overload:LagaRhino.PointData.PointQuadrant
-  fullName: LagaRhino.PointData.PointQuadrant
-  nameWithType: PointData.PointQuadrant
-- uid: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
-  name: SortPointsByXY(Point3d[])
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_SortPointsByXY_Rhino_Geometry_Point3d___
-  commentId: M:LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
-  name.vb: SortPointsByXY(Point3d())
-  fullName: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])
-  fullName.vb: LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d())
-  nameWithType: PointData.SortPointsByXY(Point3d[])
-  nameWithType.vb: PointData.SortPointsByXY(Point3d())
-- uid: LagaRhino.PointData.SortPointsByXY*
-  name: SortPointsByXY
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_SortPointsByXY_
-  commentId: Overload:LagaRhino.PointData.SortPointsByXY
-  fullName: LagaRhino.PointData.SortPointsByXY
-  nameWithType: PointData.SortPointsByXY
-- uid: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
-  name: SortPointsByZ(Point3d[])
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_SortPointsByZ_Rhino_Geometry_Point3d___
-  commentId: M:LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
-  name.vb: SortPointsByZ(Point3d())
-  fullName: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])
-  fullName.vb: LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d())
-  nameWithType: PointData.SortPointsByZ(Point3d[])
-  nameWithType.vb: PointData.SortPointsByZ(Point3d())
-- uid: LagaRhino.PointData.SortPointsByZ*
-  name: SortPointsByZ
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_SortPointsByZ_
-  commentId: Overload:LagaRhino.PointData.SortPointsByZ
-  fullName: LagaRhino.PointData.SortPointsByZ
-  nameWithType: PointData.SortPointsByZ
-- uid: LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
-  name: TwoPointsInterpolation(Point3d, Point3d, Double)
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_TwoPointsInterpolation_Rhino_Geometry_Point3d_Rhino_Geometry_Point3d_System_Double_
-  commentId: M:LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)
-  fullName: LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d, Rhino.Geometry.Point3d, System.Double)
-  nameWithType: PointData.TwoPointsInterpolation(Point3d, Point3d, Double)
-- uid: LagaRhino.PointData.TwoPointsInterpolation*
-  name: TwoPointsInterpolation
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_TwoPointsInterpolation_
-  commentId: Overload:LagaRhino.PointData.TwoPointsInterpolation
-  fullName: LagaRhino.PointData.TwoPointsInterpolation
-  nameWithType: PointData.TwoPointsInterpolation
-- uid: LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector)
-  name: VectorToPoint3d(Vector)
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_VectorToPoint3d_Laga_Geometry_Vector_
-  commentId: M:LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector)
-  fullName: LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector)
-  nameWithType: PointData.VectorToPoint3d(Vector)
-- uid: LagaRhino.PointData.VectorToPoint3d*
-  name: VectorToPoint3d
-  href: api/LagaRhino.PointData.html#LagaRhino_PointData_VectorToPoint3d_
-  commentId: Overload:LagaRhino.PointData.VectorToPoint3d
-  fullName: LagaRhino.PointData.VectorToPoint3d
-  nameWithType: PointData.VectorToPoint3d
-- uid: LagaRhino.Shoebox
-  name: Shoebox
-  href: api/LagaRhino.Shoebox.html
-  commentId: T:LagaRhino.Shoebox
-  fullName: LagaRhino.Shoebox
-  nameWithType: Shoebox
-- uid: LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double)
-  name: Shoebox(Point3d, Double, Double, Double, Double)
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox__ctor_Rhino_Geometry_Point3d_System_Double_System_Double_System_Double_System_Double_
-  commentId: M:LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double)
-  fullName: LagaRhino.Shoebox.Shoebox(Rhino.Geometry.Point3d, System.Double, System.Double, System.Double, System.Double)
-  nameWithType: Shoebox.Shoebox(Point3d, Double, Double, Double, Double)
-- uid: LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
-  name: Shoebox(Point3d, Double, Double, Double, Double, Double, Double, Double)
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox__ctor_Rhino_Geometry_Point3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
-  commentId: M:LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
-  fullName: LagaRhino.Shoebox.Shoebox(Rhino.Geometry.Point3d, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
-  nameWithType: Shoebox.Shoebox(Point3d, Double, Double, Double, Double, Double, Double, Double)
-- uid: LagaRhino.Shoebox.#ctor*
-  name: Shoebox
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox__ctor_
-  commentId: Overload:LagaRhino.Shoebox.#ctor
-  fullName: LagaRhino.Shoebox.Shoebox
-  nameWithType: Shoebox.Shoebox
-- uid: LagaRhino.Shoebox.Area
-  name: Area
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_Area
-  commentId: P:LagaRhino.Shoebox.Area
-  fullName: LagaRhino.Shoebox.Area
-  nameWithType: Shoebox.Area
-- uid: LagaRhino.Shoebox.Area*
-  name: Area
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_Area_
-  commentId: Overload:LagaRhino.Shoebox.Area
-  fullName: LagaRhino.Shoebox.Area
-  nameWithType: Shoebox.Area
-- uid: LagaRhino.Shoebox.ShoeBox
-  name: ShoeBox
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_ShoeBox
-  commentId: P:LagaRhino.Shoebox.ShoeBox
-  fullName: LagaRhino.Shoebox.ShoeBox
-  nameWithType: Shoebox.ShoeBox
-- uid: LagaRhino.Shoebox.ShoeBox*
-  name: ShoeBox
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_ShoeBox_
-  commentId: Overload:LagaRhino.Shoebox.ShoeBox
-  fullName: LagaRhino.Shoebox.ShoeBox
-  nameWithType: Shoebox.ShoeBox
-- uid: LagaRhino.Shoebox.Volume
-  name: Volume
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_Volume
-  commentId: P:LagaRhino.Shoebox.Volume
-  fullName: LagaRhino.Shoebox.Volume
-  nameWithType: Shoebox.Volume
-- uid: LagaRhino.Shoebox.Volume*
-  name: Volume
-  href: api/LagaRhino.Shoebox.html#LagaRhino_Shoebox_Volume_
-  commentId: Overload:LagaRhino.Shoebox.Volume
-  fullName: LagaRhino.Shoebox.Volume
-  nameWithType: Shoebox.Volume
-- uid: LagaRhino.SurfaceData
-  name: SurfaceData
-  href: api/LagaRhino.SurfaceData.html
-  commentId: T:LagaRhino.SurfaceData
-  fullName: LagaRhino.SurfaceData
-  nameWithType: SurfaceData
-- uid: LagaRhino.SurfaceData.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)
-  name: SurfaceData(Surface, Int32, Int32)
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData__ctor_Rhino_Geometry_Surface_System_Int32_System_Int32_
-  commentId: M:LagaRhino.SurfaceData.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)
-  fullName: LagaRhino.SurfaceData.SurfaceData(Rhino.Geometry.Surface, System.Int32, System.Int32)
-  nameWithType: SurfaceData.SurfaceData(Surface, Int32, Int32)
-- uid: LagaRhino.SurfaceData.#ctor*
-  name: SurfaceData
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData__ctor_
-  commentId: Overload:LagaRhino.SurfaceData.#ctor
-  fullName: LagaRhino.SurfaceData.SurfaceData
-  nameWithType: SurfaceData.SurfaceData
-- uid: LagaRhino.SurfaceData.CustomPattern
-  name: CustomPattern()
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_CustomPattern
-  commentId: M:LagaRhino.SurfaceData.CustomPattern
-  fullName: LagaRhino.SurfaceData.CustomPattern()
-  nameWithType: SurfaceData.CustomPattern()
-- uid: LagaRhino.SurfaceData.CustomPattern*
-  name: CustomPattern
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_CustomPattern_
-  commentId: Overload:LagaRhino.SurfaceData.CustomPattern
-  fullName: LagaRhino.SurfaceData.CustomPattern
-  nameWithType: SurfaceData.CustomPattern
-- uid: LagaRhino.SurfaceData.PlaneSurfaceAxis(Rhino.Geometry.LineCurve,System.Double)
+- uid: Laga.Rhino.LineCurveData.BuildPlane(LineCurve)
+  name: BuildPlane(LineCurve)
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_BuildPlane_LineCurve_
+  commentId: M:Laga.Rhino.LineCurveData.BuildPlane(LineCurve)
+  fullName: Laga.Rhino.LineCurveData.BuildPlane(LineCurve)
+  nameWithType: LineCurveData.BuildPlane(LineCurve)
+- uid: Laga.Rhino.LineCurveData.BuildPlane*
+  name: BuildPlane
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_BuildPlane_
+  commentId: Overload:Laga.Rhino.LineCurveData.BuildPlane
+  isSpec: "True"
+  fullName: Laga.Rhino.LineCurveData.BuildPlane
+  nameWithType: LineCurveData.BuildPlane
+- uid: Laga.Rhino.LineCurveData.PlaneSurfaceAxis(LineCurve,System.Double)
   name: PlaneSurfaceAxis(LineCurve, Double)
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_PlaneSurfaceAxis_Rhino_Geometry_LineCurve_System_Double_
-  commentId: M:LagaRhino.SurfaceData.PlaneSurfaceAxis(Rhino.Geometry.LineCurve,System.Double)
-  fullName: LagaRhino.SurfaceData.PlaneSurfaceAxis(Rhino.Geometry.LineCurve, System.Double)
-  nameWithType: SurfaceData.PlaneSurfaceAxis(LineCurve, Double)
-- uid: LagaRhino.SurfaceData.PlaneSurfaceAxis*
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_PlaneSurfaceAxis_LineCurve_System_Double_
+  commentId: M:Laga.Rhino.LineCurveData.PlaneSurfaceAxis(LineCurve,System.Double)
+  fullName: Laga.Rhino.LineCurveData.PlaneSurfaceAxis(LineCurve, System.Double)
+  nameWithType: LineCurveData.PlaneSurfaceAxis(LineCurve, Double)
+- uid: Laga.Rhino.LineCurveData.PlaneSurfaceAxis*
   name: PlaneSurfaceAxis
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_PlaneSurfaceAxis_
-  commentId: Overload:LagaRhino.SurfaceData.PlaneSurfaceAxis
-  fullName: LagaRhino.SurfaceData.PlaneSurfaceAxis
-  nameWithType: SurfaceData.PlaneSurfaceAxis
-- uid: LagaRhino.SurfaceData.QuadPattern
+  href: api/Laga.Rhino.LineCurveData.html#Laga_Rhino_LineCurveData_PlaneSurfaceAxis_
+  commentId: Overload:Laga.Rhino.LineCurveData.PlaneSurfaceAxis
+  isSpec: "True"
+  fullName: Laga.Rhino.LineCurveData.PlaneSurfaceAxis
+  nameWithType: LineCurveData.PlaneSurfaceAxis
+- uid: Laga.Rhino.PointData
+  name: PointData
+  href: api/Laga.Rhino.PointData.html
+  commentId: T:Laga.Rhino.PointData
+  fullName: Laga.Rhino.PointData
+  nameWithType: PointData
+- uid: Laga.Rhino.PointData.FindZDifference(System.Collections.Generic.List{System.Double},System.Double,System.Double)
+  name: FindZDifference(List<Double>, Double, Double)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_FindZDifference_System_Collections_Generic_List_System_Double__System_Double_System_Double_
+  commentId: M:Laga.Rhino.PointData.FindZDifference(System.Collections.Generic.List{System.Double},System.Double,System.Double)
+  name.vb: FindZDifference(List(Of Double), Double, Double)
+  fullName: Laga.Rhino.PointData.FindZDifference(System.Collections.Generic.List<System.Double>, System.Double, System.Double)
+  fullName.vb: Laga.Rhino.PointData.FindZDifference(System.Collections.Generic.List(Of System.Double), System.Double, System.Double)
+  nameWithType: PointData.FindZDifference(List<Double>, Double, Double)
+  nameWithType.vb: PointData.FindZDifference(List(Of Double), Double, Double)
+- uid: Laga.Rhino.PointData.FindZDifference*
+  name: FindZDifference
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_FindZDifference_
+  commentId: Overload:Laga.Rhino.PointData.FindZDifference
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.FindZDifference
+  nameWithType: PointData.FindZDifference
+- uid: Laga.Rhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable{Point3d})
+  name: GroupPointsByZ(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_GroupPointsByZ_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: GroupPointsByZ(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.GroupPointsByZ(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.GroupPointsByZ(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.GroupPointsByZ*
+  name: GroupPointsByZ
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_GroupPointsByZ_
+  commentId: Overload:Laga.Rhino.PointData.GroupPointsByZ
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.GroupPointsByZ
+  nameWithType: PointData.GroupPointsByZ
+- uid: Laga.Rhino.PointData.Interpolate2Points(Point3d,Point3d,System.Double)
+  name: Interpolate2Points(Point3d, Point3d, Double)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Interpolate2Points_Point3d_Point3d_System_Double_
+  commentId: M:Laga.Rhino.PointData.Interpolate2Points(Point3d,Point3d,System.Double)
+  fullName: Laga.Rhino.PointData.Interpolate2Points(Point3d, Point3d, System.Double)
+  nameWithType: PointData.Interpolate2Points(Point3d, Point3d, Double)
+- uid: Laga.Rhino.PointData.Interpolate2Points*
+  name: Interpolate2Points
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Interpolate2Points_
+  commentId: Overload:Laga.Rhino.PointData.Interpolate2Points
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.Interpolate2Points
+  nameWithType: PointData.Interpolate2Points
+- uid: Laga.Rhino.PointData.MirrorPointQuadrant(Point3d)
+  name: MirrorPointQuadrant(Point3d)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_MirrorPointQuadrant_Point3d_
+  commentId: M:Laga.Rhino.PointData.MirrorPointQuadrant(Point3d)
+  fullName: Laga.Rhino.PointData.MirrorPointQuadrant(Point3d)
+  nameWithType: PointData.MirrorPointQuadrant(Point3d)
+- uid: Laga.Rhino.PointData.MirrorPointQuadrant*
+  name: MirrorPointQuadrant
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_MirrorPointQuadrant_
+  commentId: Overload:Laga.Rhino.PointData.MirrorPointQuadrant
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.MirrorPointQuadrant
+  nameWithType: PointData.MirrorPointQuadrant
+- uid: Laga.Rhino.PointData.Point2Vector(Point3d)
+  name: Point2Vector(Point3d)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Point2Vector_Point3d_
+  commentId: M:Laga.Rhino.PointData.Point2Vector(Point3d)
+  fullName: Laga.Rhino.PointData.Point2Vector(Point3d)
+  nameWithType: PointData.Point2Vector(Point3d)
+- uid: Laga.Rhino.PointData.Point2Vector*
+  name: Point2Vector
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Point2Vector_
+  commentId: Overload:Laga.Rhino.PointData.Point2Vector
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.Point2Vector
+  nameWithType: PointData.Point2Vector
+- uid: Laga.Rhino.PointData.PointQuadrant(Point3d)
+  name: PointQuadrant(Point3d)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_PointQuadrant_Point3d_
+  commentId: M:Laga.Rhino.PointData.PointQuadrant(Point3d)
+  fullName: Laga.Rhino.PointData.PointQuadrant(Point3d)
+  nameWithType: PointData.PointQuadrant(Point3d)
+- uid: Laga.Rhino.PointData.PointQuadrant*
+  name: PointQuadrant
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_PointQuadrant_
+  commentId: Overload:Laga.Rhino.PointData.PointQuadrant
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.PointQuadrant
+  nameWithType: PointData.PointQuadrant
+- uid: Laga.Rhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable{Point3d})
+  name: Points2Vectors(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Points2Vectors_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: Points2Vectors(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.Points2Vectors(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.Points2Vectors(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.Points2Vectors*
+  name: Points2Vectors
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Points2Vectors_
+  commentId: Overload:Laga.Rhino.PointData.Points2Vectors
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.Points2Vectors
+  nameWithType: PointData.Points2Vectors
+- uid: Laga.Rhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable{Point3d})
+  name: SortCoordinateZ(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortCoordinateZ_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: SortCoordinateZ(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.SortCoordinateZ(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.SortCoordinateZ(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.SortCoordinateZ*
+  name: SortCoordinateZ
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortCoordinateZ_
+  commentId: Overload:Laga.Rhino.PointData.SortCoordinateZ
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.SortCoordinateZ
+  nameWithType: PointData.SortCoordinateZ
+- uid: Laga.Rhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable{Point3d})
+  name: SortPointsByXY(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsByXY_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: SortPointsByXY(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.SortPointsByXY(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.SortPointsByXY(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.SortPointsByXY*
+  name: SortPointsByXY
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsByXY_
+  commentId: Overload:Laga.Rhino.PointData.SortPointsByXY
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.SortPointsByXY
+  nameWithType: PointData.SortPointsByXY
+- uid: Laga.Rhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable{Point3d})
+  name: SortPointsByZ(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsByZ_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: SortPointsByZ(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.SortPointsByZ(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.SortPointsByZ(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.SortPointsByZ*
+  name: SortPointsByZ
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsByZ_
+  commentId: Overload:Laga.Rhino.PointData.SortPointsByZ
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.SortPointsByZ
+  nameWithType: PointData.SortPointsByZ
+- uid: Laga.Rhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable{Point3d})
+  name: SortPointsClockwise(IEnumerable<Point3d>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsClockwise_System_Collections_Generic_IEnumerable_Point3d__
+  commentId: M:Laga.Rhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable{Point3d})
+  name.vb: SortPointsClockwise(IEnumerable(Of Point3d))
+  fullName: Laga.Rhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable<Point3d>)
+  fullName.vb: Laga.Rhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable(Of Point3d))
+  nameWithType: PointData.SortPointsClockwise(IEnumerable<Point3d>)
+  nameWithType.vb: PointData.SortPointsClockwise(IEnumerable(Of Point3d))
+- uid: Laga.Rhino.PointData.SortPointsClockwise*
+  name: SortPointsClockwise
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsClockwise_
+  commentId: Overload:Laga.Rhino.PointData.SortPointsClockwise
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.SortPointsClockwise
+  nameWithType: PointData.SortPointsClockwise
+- uid: Laga.Rhino.PointData.SortPointsQuadrant(Point3d)
+  name: SortPointsQuadrant(Point3d)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsQuadrant_Point3d_
+  commentId: M:Laga.Rhino.PointData.SortPointsQuadrant(Point3d)
+  fullName: Laga.Rhino.PointData.SortPointsQuadrant(Point3d)
+  nameWithType: PointData.SortPointsQuadrant(Point3d)
+- uid: Laga.Rhino.PointData.SortPointsQuadrant*
+  name: SortPointsQuadrant
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_SortPointsQuadrant_
+  commentId: Overload:Laga.Rhino.PointData.SortPointsQuadrant
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.SortPointsQuadrant
+  nameWithType: PointData.SortPointsQuadrant
+- uid: Laga.Rhino.PointData.Vector2Point(Laga.Geometry.Vector)
+  name: Vector2Point(Vector)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Vector2Point_Laga_Geometry_Vector_
+  commentId: M:Laga.Rhino.PointData.Vector2Point(Laga.Geometry.Vector)
+  fullName: Laga.Rhino.PointData.Vector2Point(Laga.Geometry.Vector)
+  nameWithType: PointData.Vector2Point(Vector)
+- uid: Laga.Rhino.PointData.Vector2Point*
+  name: Vector2Point
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Vector2Point_
+  commentId: Overload:Laga.Rhino.PointData.Vector2Point
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.Vector2Point
+  nameWithType: PointData.Vector2Point
+- uid: Laga.Rhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable{Laga.Geometry.Vector})
+  name: Vectors2Points(IEnumerable<Vector>)
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Vectors2Points_System_Collections_Generic_IEnumerable_Laga_Geometry_Vector__
+  commentId: M:Laga.Rhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable{Laga.Geometry.Vector})
+  name.vb: Vectors2Points(IEnumerable(Of Vector))
+  fullName: Laga.Rhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable<Laga.Geometry.Vector>)
+  fullName.vb: Laga.Rhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable(Of Laga.Geometry.Vector))
+  nameWithType: PointData.Vectors2Points(IEnumerable<Vector>)
+  nameWithType.vb: PointData.Vectors2Points(IEnumerable(Of Vector))
+- uid: Laga.Rhino.PointData.Vectors2Points*
+  name: Vectors2Points
+  href: api/Laga.Rhino.PointData.html#Laga_Rhino_PointData_Vectors2Points_
+  commentId: Overload:Laga.Rhino.PointData.Vectors2Points
+  isSpec: "True"
+  fullName: Laga.Rhino.PointData.Vectors2Points
+  nameWithType: PointData.Vectors2Points
+- uid: Laga.Rhino.Shoebox
+  name: Shoebox
+  href: api/Laga.Rhino.Shoebox.html
+  commentId: T:Laga.Rhino.Shoebox
+  fullName: Laga.Rhino.Shoebox
+  nameWithType: Shoebox
+- uid: Laga.Rhino.Shoebox.#ctor(Point3d,System.Double,System.Double,System.Double,System.Double)
+  name: Shoebox(Point3d, Double, Double, Double, Double)
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox__ctor_Point3d_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Laga.Rhino.Shoebox.#ctor(Point3d,System.Double,System.Double,System.Double,System.Double)
+  fullName: Laga.Rhino.Shoebox.Shoebox(Point3d, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: Shoebox.Shoebox(Point3d, Double, Double, Double, Double)
+- uid: Laga.Rhino.Shoebox.#ctor(Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: Shoebox(Point3d, Double, Double, Double, Double, Double, Double, Double)
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox__ctor_Point3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Laga.Rhino.Shoebox.#ctor(Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: Laga.Rhino.Shoebox.Shoebox(Point3d, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: Shoebox.Shoebox(Point3d, Double, Double, Double, Double, Double, Double, Double)
+- uid: Laga.Rhino.Shoebox.#ctor*
+  name: Shoebox
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox__ctor_
+  commentId: Overload:Laga.Rhino.Shoebox.#ctor
+  isSpec: "True"
+  fullName: Laga.Rhino.Shoebox.Shoebox
+  nameWithType: Shoebox.Shoebox
+- uid: Laga.Rhino.Shoebox.Area
+  name: Area
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Area
+  commentId: P:Laga.Rhino.Shoebox.Area
+  fullName: Laga.Rhino.Shoebox.Area
+  nameWithType: Shoebox.Area
+- uid: Laga.Rhino.Shoebox.Area*
+  name: Area
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Area_
+  commentId: Overload:Laga.Rhino.Shoebox.Area
+  isSpec: "True"
+  fullName: Laga.Rhino.Shoebox.Area
+  nameWithType: Shoebox.Area
+- uid: Laga.Rhino.Shoebox.Rot(System.Double)
+  name: Rot(Double)
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Rot_System_Double_
+  commentId: M:Laga.Rhino.Shoebox.Rot(System.Double)
+  fullName: Laga.Rhino.Shoebox.Rot(System.Double)
+  nameWithType: Shoebox.Rot(Double)
+- uid: Laga.Rhino.Shoebox.Rot*
+  name: Rot
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Rot_
+  commentId: Overload:Laga.Rhino.Shoebox.Rot
+  isSpec: "True"
+  fullName: Laga.Rhino.Shoebox.Rot
+  nameWithType: Shoebox.Rot
+- uid: Laga.Rhino.Shoebox.ShoeBox
+  name: ShoeBox
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_ShoeBox
+  commentId: P:Laga.Rhino.Shoebox.ShoeBox
+  fullName: Laga.Rhino.Shoebox.ShoeBox
+  nameWithType: Shoebox.ShoeBox
+- uid: Laga.Rhino.Shoebox.ShoeBox*
+  name: ShoeBox
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_ShoeBox_
+  commentId: Overload:Laga.Rhino.Shoebox.ShoeBox
+  isSpec: "True"
+  fullName: Laga.Rhino.Shoebox.ShoeBox
+  nameWithType: Shoebox.ShoeBox
+- uid: Laga.Rhino.Shoebox.Volume
+  name: Volume
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Volume
+  commentId: P:Laga.Rhino.Shoebox.Volume
+  fullName: Laga.Rhino.Shoebox.Volume
+  nameWithType: Shoebox.Volume
+- uid: Laga.Rhino.Shoebox.Volume*
+  name: Volume
+  href: api/Laga.Rhino.Shoebox.html#Laga_Rhino_Shoebox_Volume_
+  commentId: Overload:Laga.Rhino.Shoebox.Volume
+  isSpec: "True"
+  fullName: Laga.Rhino.Shoebox.Volume
+  nameWithType: Shoebox.Volume
+- uid: Laga.Rhino.SurfaceAnalysis
+  name: SurfaceAnalysis
+  href: api/Laga.Rhino.SurfaceAnalysis.html
+  commentId: T:Laga.Rhino.SurfaceAnalysis
+  fullName: Laga.Rhino.SurfaceAnalysis
+  nameWithType: SurfaceAnalysis
+- uid: Laga.Rhino.SurfaceAnalysis.#ctor(Surface,System.Double,System.Double)
+  name: SurfaceAnalysis(Surface, Double, Double)
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis__ctor_Surface_System_Double_System_Double_
+  commentId: M:Laga.Rhino.SurfaceAnalysis.#ctor(Surface,System.Double,System.Double)
+  fullName: Laga.Rhino.SurfaceAnalysis.SurfaceAnalysis(Surface, System.Double, System.Double)
+  nameWithType: SurfaceAnalysis.SurfaceAnalysis(Surface, Double, Double)
+- uid: Laga.Rhino.SurfaceAnalysis.#ctor(Surface,System.Int32,System.Int32)
+  name: SurfaceAnalysis(Surface, Int32, Int32)
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis__ctor_Surface_System_Int32_System_Int32_
+  commentId: M:Laga.Rhino.SurfaceAnalysis.#ctor(Surface,System.Int32,System.Int32)
+  fullName: Laga.Rhino.SurfaceAnalysis.SurfaceAnalysis(Surface, System.Int32, System.Int32)
+  nameWithType: SurfaceAnalysis.SurfaceAnalysis(Surface, Int32, Int32)
+- uid: Laga.Rhino.SurfaceAnalysis.#ctor*
+  name: SurfaceAnalysis
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis__ctor_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.#ctor
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.SurfaceAnalysis
+  nameWithType: SurfaceAnalysis.SurfaceAnalysis
+- uid: Laga.Rhino.SurfaceAnalysis.CustomPattern(System.String)
+  name: CustomPattern(String)
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_CustomPattern_System_String_
+  commentId: M:Laga.Rhino.SurfaceAnalysis.CustomPattern(System.String)
+  fullName: Laga.Rhino.SurfaceAnalysis.CustomPattern(System.String)
+  nameWithType: SurfaceAnalysis.CustomPattern(String)
+- uid: Laga.Rhino.SurfaceAnalysis.CustomPattern*
+  name: CustomPattern
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_CustomPattern_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.CustomPattern
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.CustomPattern
+  nameWithType: SurfaceAnalysis.CustomPattern
+- uid: Laga.Rhino.SurfaceAnalysis.PointsOnSurface
+  name: PointsOnSurface
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_PointsOnSurface
+  commentId: P:Laga.Rhino.SurfaceAnalysis.PointsOnSurface
+  fullName: Laga.Rhino.SurfaceAnalysis.PointsOnSurface
+  nameWithType: SurfaceAnalysis.PointsOnSurface
+- uid: Laga.Rhino.SurfaceAnalysis.PointsOnSurface*
+  name: PointsOnSurface
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_PointsOnSurface_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.PointsOnSurface
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.PointsOnSurface
+  nameWithType: SurfaceAnalysis.PointsOnSurface
+- uid: Laga.Rhino.SurfaceAnalysis.QuadPattern
   name: QuadPattern()
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_QuadPattern
-  commentId: M:LagaRhino.SurfaceData.QuadPattern
-  fullName: LagaRhino.SurfaceData.QuadPattern()
-  nameWithType: SurfaceData.QuadPattern()
-- uid: LagaRhino.SurfaceData.QuadPattern*
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_QuadPattern
+  commentId: M:Laga.Rhino.SurfaceAnalysis.QuadPattern
+  fullName: Laga.Rhino.SurfaceAnalysis.QuadPattern()
+  nameWithType: SurfaceAnalysis.QuadPattern()
+- uid: Laga.Rhino.SurfaceAnalysis.QuadPattern*
   name: QuadPattern
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_QuadPattern_
-  commentId: Overload:LagaRhino.SurfaceData.QuadPattern
-  fullName: LagaRhino.SurfaceData.QuadPattern
-  nameWithType: SurfaceData.QuadPattern
-- uid: LagaRhino.SurfaceData.SurfacePoints
-  name: SurfacePoints
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_SurfacePoints
-  commentId: P:LagaRhino.SurfaceData.SurfacePoints
-  fullName: LagaRhino.SurfaceData.SurfacePoints
-  nameWithType: SurfaceData.SurfacePoints
-- uid: LagaRhino.SurfaceData.SurfacePoints*
-  name: SurfacePoints
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_SurfacePoints_
-  commentId: Overload:LagaRhino.SurfaceData.SurfacePoints
-  fullName: LagaRhino.SurfaceData.SurfacePoints
-  nameWithType: SurfaceData.SurfacePoints
-- uid: LagaRhino.SurfaceData.TriangularPatter
-  name: TriangularPatter()
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_TriangularPatter
-  commentId: M:LagaRhino.SurfaceData.TriangularPatter
-  fullName: LagaRhino.SurfaceData.TriangularPatter()
-  nameWithType: SurfaceData.TriangularPatter()
-- uid: LagaRhino.SurfaceData.TriangularPatter*
-  name: TriangularPatter
-  href: api/LagaRhino.SurfaceData.html#LagaRhino_SurfaceData_TriangularPatter_
-  commentId: Overload:LagaRhino.SurfaceData.TriangularPatter
-  fullName: LagaRhino.SurfaceData.TriangularPatter
-  nameWithType: SurfaceData.TriangularPatter
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_QuadPattern_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.QuadPattern
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.QuadPattern
+  nameWithType: SurfaceAnalysis.QuadPattern
+- uid: Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes(Surface,System.Int32,System.Int32,System.Double,System.Double)
+  name: SubdividebyPlanes(Surface, Int32, Int32, Double, Double)
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_SubdividebyPlanes_Surface_System_Int32_System_Int32_System_Double_System_Double_
+  commentId: M:Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes(Surface,System.Int32,System.Int32,System.Double,System.Double)
+  fullName: Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes(Surface, System.Int32, System.Int32, System.Double, System.Double)
+  nameWithType: SurfaceAnalysis.SubdividebyPlanes(Surface, Int32, Int32, Double, Double)
+- uid: Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes*
+  name: SubdividebyPlanes
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_SubdividebyPlanes_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.SubdividebyPlanes
+  nameWithType: SurfaceAnalysis.SubdividebyPlanes
+- uid: Laga.Rhino.SurfaceAnalysis.TriangularPattern
+  name: TriangularPattern()
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_TriangularPattern
+  commentId: M:Laga.Rhino.SurfaceAnalysis.TriangularPattern
+  fullName: Laga.Rhino.SurfaceAnalysis.TriangularPattern()
+  nameWithType: SurfaceAnalysis.TriangularPattern()
+- uid: Laga.Rhino.SurfaceAnalysis.TriangularPattern*
+  name: TriangularPattern
+  href: api/Laga.Rhino.SurfaceAnalysis.html#Laga_Rhino_SurfaceAnalysis_TriangularPattern_
+  commentId: Overload:Laga.Rhino.SurfaceAnalysis.TriangularPattern
+  isSpec: "True"
+  fullName: Laga.Rhino.SurfaceAnalysis.TriangularPattern
+  nameWithType: SurfaceAnalysis.TriangularPattern

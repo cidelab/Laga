@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LagaRhino</id>
+    <version>1.0.0</version>
+    <authors>LagaRhino</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="abcf04f44cc8f4dfd6594951f8c811cbd9695e33" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Laga" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="RhinoCommon" version="7.35.23346.11001" exclude="Build,Analyzers" />
+        <dependency id="System.Data.DataSetExtensions" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\bin\Release\net48\LagaRhino.dll" target="lib\net48\LagaRhino.dll" />
+  </files>
+</package>

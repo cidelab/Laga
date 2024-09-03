@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Laga</id>
+    <version>2024.3.28</version>
+    <authors>Laga</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="39fe57c3cd4bdd6f77d3c28280f56e4710586bb7" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.DataSetExtensions" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\Laga\bin\Release\net48\Laga.dll" target="lib\net48\Laga.dll" />
+  </files>
+</package>

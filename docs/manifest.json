@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.GenrDNA.html",
-          "hash": "yhA66B3v87o+2wa3zZOwaRRMKyuRtqBarXfehQQOGSg="
+          "hash": "cxDJImsdHQfeG6Gtt9M0+UrCojNNZD8/KOS23AUhCS8="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.Population-1.html",
-          "hash": "UZMY5DpV5TrXNf2bTAfj5ZLM/5yN+awKr1ttF588JW0="
+          "hash": "QtHZb23uHUbX84l9OkeDaJJ/1fCTtWwTOLfnkiZsRX0="
         }
       },
       "is_incremental": true,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Laga.GeneticAlgorithm.Tools.yml",
+      "source_relative_path": "api/Laga.GeneticAlgorithm.Replacement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Laga.GeneticAlgorithm.Tools.html",
-          "hash": "e1zb77yu5oevonDW06RXWANe2e62v7KpZAD54dFFr1s="
+          "relative_path": "api/Laga.GeneticAlgorithm.Replacement.html",
+          "hash": "wblYmNKnzoIQ28V+RogcK6NvukhrWJctWRgpKJCc5Eo="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.GeneticAlgorithm.html",
-          "hash": "MUSIs9kGq0mGhiYIO5f7KGPOG3OyeYZpz4Jhyt6vEcY="
+          "hash": "0H1OrD5Rl589UjKkeTgoIqIukdo9pT2SMreaMUwvk0Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Geometry.ConvexHull.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Geometry.ConvexHull.html",
+          "hash": "qNOuSILiIhmRXBGZVEEn7SO6eTcwlRtyiikrsmp5A9Q="
         }
       },
       "is_incremental": true,
@@ -165,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.Vector.html",
-          "hash": "3iOBD59/8aXMjjq87OySMblMWXeIi16Wp3sWB7xMeG8="
+          "hash": "ZinnKg2Bu0cRiy0nG2xFSuaGXTZb8HZcbPHz/+VZ9IQ="
         }
       },
       "is_incremental": true,
@@ -177,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Geometry.html",
-          "hash": "Y9Ny9fSY4zn65MmfnoBSY0NroypIOdc/5f8A5LEo5G8="
+          "hash": "rennYlwXyAcrMGxVMI5Qhk5yQjb2y+iBT9iUL/X6iTw="
         }
       },
       "is_incremental": true,
@@ -209,6 +221,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOExcelRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOExcelRead.html",
+          "hash": "pHBM3edKx/zEv5SyKjn1fVQ6PCKDjUzMvsP32C0UtvI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.IO.IOExcelWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.IO.IOExcelWrite.html",
+          "hash": "7vW4Zbka2wqF0i5hgDxpJPaxbxI3DWU5b9A3ZH92XMs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Laga.IO.IOTextData.EncodingType.yml",
       "output": {
         ".html": {
@@ -225,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.IOTextData.html",
-          "hash": "2i8NkxcKP/eCh4sKZzOFvThzxqkJE+8pBVFr8xu43xY="
+          "hash": "Wn+CKQhUYWZkVMxBZ1ZBLkoTlKhRSYhKlhGwWmDL0jo="
         }
       },
       "is_incremental": true,
@@ -237,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.IO.html",
-          "hash": "YKT4bcuJ5OaIW7Ndc5VzOt+e1GYAoqva7ESGqUbKO1Y="
+          "hash": "MYJZoCH+u3udd9IfiaRpa/xOUZA2TszNY1kdYdzowIg="
         }
       },
       "is_incremental": true,
@@ -249,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.Function.html",
-          "hash": "Sh45fZRxbPX2YtPJbVvo4hK+2Jg4KASK2ESiCLq9nCY="
+          "hash": "9DxjK74KPETtxmC118GqRpcMRkI3QWEHz+M47g5xczQ="
         }
       },
       "is_incremental": true,
@@ -261,7 +297,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.Rand.html",
-          "hash": "CQNieKMLDfA/IO0yO+lI1azcvGFqPo2dbwx/r3KIL0o="
+          "hash": "wTHu08hmkeVIBH7i8+TEZdOsvY0kvyIN3sJLyIx4Aoc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.Range.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.Range.html",
+          "hash": "FqwoPVbiszhFty83YgolbhK6DOMMszthrUeaDm1BT6Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Numbers.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Numbers.Tools.html",
+          "hash": "rk9pjECkVW+qrkFq3mQF2C6qSaYNM/RFZPOc8tfD3eI="
         }
       },
       "is_incremental": true,
@@ -273,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Laga.Numbers.html",
-          "hash": "qDWaGNOkd6uyIfPLpGGOXI1OqN5w3qy1tuVs5qu1vxY="
+          "hash": "0xEPKkQCOYXd2FfQMdtirt1rDL/7A/vjUpWwRBcj2KY="
         }
       },
       "is_incremental": true,
@@ -281,11 +341,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.CurveData.yml",
+      "source_relative_path": "api/Laga.Rhino.Convexhull.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.CurveData.html",
-          "hash": "9QnD90hmW+zHG+7FPCPVButfgDF4gzfWYV2v0/Shx2o="
+          "relative_path": "api/Laga.Rhino.Convexhull.html",
+          "hash": "d7nUm/pJGLlrVBECuRlpzDgseMy48SZ5BWrrzYP6gek="
         }
       },
       "is_incremental": true,
@@ -293,11 +353,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.LineCurveData.yml",
+      "source_relative_path": "api/Laga.Rhino.CurveData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.LineCurveData.html",
-          "hash": "bphhw7ai/yEfYhpYscBdqinz6IbuU622M81g2ptyiiY="
+          "relative_path": "api/Laga.Rhino.CurveData.html",
+          "hash": "RK+NKsmBbNIcX2PE3NRxOnO9InYot62N1rpmKQ0+M3c="
         }
       },
       "is_incremental": true,
@@ -305,11 +365,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.PointData.yml",
+      "source_relative_path": "api/Laga.Rhino.DrawText.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.PointData.html",
-          "hash": "fzYDxa+xa0JN02mfK36VQ8A9E4zw6FQVccU67elZQxo="
+          "relative_path": "api/Laga.Rhino.DrawText.html",
+          "hash": "TgRU7oK5daSGM2boPW3FoQzLFlz23KlC76Ez8NSVD4E="
         }
       },
       "is_incremental": true,
@@ -317,11 +377,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.Shoebox.yml",
+      "source_relative_path": "api/Laga.Rhino.LineCurveData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.Shoebox.html",
-          "hash": "KZDtUiLKzBcySzSl6DHCWCuvC3cMxAPRdGpxJjEdDUw="
+          "relative_path": "api/Laga.Rhino.LineCurveData.html",
+          "hash": "oCCe7RqyRPsPHzbhLd830jkIun83NUSkW2Ea/WQzha4="
         }
       },
       "is_incremental": true,
@@ -329,11 +389,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.SurfaceData.yml",
+      "source_relative_path": "api/Laga.Rhino.PointData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.SurfaceData.html",
-          "hash": "YqgFeFLKJSiTFBatpH0kulk/YhxXKtA2UfqwA+WjJv8="
+          "relative_path": "api/Laga.Rhino.PointData.html",
+          "hash": "cp4jxeNPcPxyT99sthEEoYNjTB2Zoe3+28jEqZD3rWg="
         }
       },
       "is_incremental": true,
@@ -341,11 +401,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LagaRhino.yml",
+      "source_relative_path": "api/Laga.Rhino.Shoebox.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LagaRhino.html",
-          "hash": "JZykkUIdooAYNI+RHl7a/gk4NcNHjued3sivAoCWaj4="
+          "relative_path": "api/Laga.Rhino.Shoebox.html",
+          "hash": "gsc3HmRfcmpDfcA8Ll7usc7FTUb+aydhWyWT0jVh0SI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Rhino.SurfaceAnalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Rhino.SurfaceAnalysis.html",
+          "hash": "nXzJkjoOFCagfa75Ns/8xB/zXBPT1u/4Fy1JOUbLKso="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Laga.Rhino.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Laga.Rhino.html",
+          "hash": "y9QyTZGx3NybKnEiuxBsSXoTuUmarvEUukWI0iSw9y4="
         }
       },
       "is_incremental": true,
@@ -357,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "iBbn0zFHK9L2dX9NXtwfgNXsEYVw/Fpo48LECi9wN5s="
+          "hash": "oaDtAaDQHC8kwb7QBOmHk6Ab5WpurZsnd/bJQaA0Xyo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "D1dkE/qoKXAYHhmfLpCBLGXT4V40JrzwOBsr7wkQmtc="
+          "hash": "cx9aTP69XYSwlTr8L+iMa4Q4Hs6pNH3r2nd2ZWur5X0="
         }
       },
       "is_incremental": false,
@@ -650,32 +734,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/LagaUML2020.svg",
+      "source_relative_path": "images/LagaUML2024.jpg",
       "output": {
         "resource": {
-          "relative_path": "images/LagaUML2020.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/LagaUML2021.svg",
-      "output": {
-        "resource": {
-          "relative_path": "images/LagaUML2021.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/LagaUML2022.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "images/LagaUML2022.jpg"
+          "relative_path": "images/LagaUML2024.jpg"
         }
       },
       "is_incremental": false,
@@ -1039,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "CsLg02T32mt/Nf1UvfcPEm++iCmoYod2A4C9Pcojwqw="
+          "hash": "P3BpimVL6bnn9kxQoO6Wqw26RJDOxttkJYp3VX5Iqqw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1256,8 +1318,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 29,
-          "skipped_file_count": 29
+          "total_file_count": 36,
+          "skipped_file_count": 36
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
