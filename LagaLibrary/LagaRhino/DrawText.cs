@@ -2,7 +2,7 @@
 using System.Drawing;
 using Rhino;
 
-namespace Laga.Rhino
+namespace LagaRhino
 {
     /// <summary>
     /// Draw RichText in Rhino.

@@ -1,6 +1,6 @@
 ﻿using Rhino.Geometry;
 
-namespace Laga.Rhino
+namespace LagaRhino
 {
     /// <summary>
     /// Class to build and analize shoeboxes types.

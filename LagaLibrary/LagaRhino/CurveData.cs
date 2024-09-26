@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Laga.Rhino
+namespace LagaRhino
 {
     /// <summary>
     /// Simple Manipulations on Rhino Curves

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Laga.GeneticAlgorithm;
 
-namespace Laga.Rhino
+namespace LagaRhino
 {
     /// <summary>
     /// Simple Manipulations on Rhino Surfaces
