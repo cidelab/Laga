@@ -1,14 +1,8 @@
 ﻿using Rhino;
 using Rhino.Display;
 using Rhino.DocObjects;
-using Rhino.UI;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 
 namespace LagaRhino
 {
@@ -43,65 +37,59 @@ namespace LagaRhino
         }
 
         /// <summary>
-        /// 
+        /// From all the layers in the document, will only display the ones in the list.
         /// </summary>
-        /// <param name="layerName"></param>
-        /// <param name="size"></param>
-        /// <returns></returns>
-        public RhinoPageView CreateLayoutFromLayer(string layerName, string size = "A4")
+        /// <param name="layerNamesToShow">the List or array of layernames to display</param>
+        /// <returns>bool, true if successful</returns>
+        public bool ShowLayers(IEnumerable<string> layerNamesToShow)
         {
-            LayoutSize(size, out double w, out double h);
-            RhinoPageView pageView = doc.Views.AddPageView(layerName, w, h);
-
-            if (pageView != null)
+            int indexLayer;
+            Layer L;
+            foreach (string Lname in layerNames)
             {
-                RhinoApp.WriteLine($"PageView '(layerName)' created successfully.");
-                Rhino.Geometry.Point2d top_Left = new Rhino.Geometry.Point2d(10, 287);
-                Rhino.Geometry.Point2d bottom_Right = new Rhino.Geometry.Point2d(200, 10);
-                DetailViewObject detailView = pageView.AddDetailView("name", top_Left, bottom_Right, DefinedViewportProjection.Top);
-                if (detailView != null)
+                indexLayer = -1;
+                for (int i = 0; i < layerNamesToShow.Count(); i++)
                 {
-                    pageView.SetActiveDetail(detailView.Id);
-                    detailView.Viewport.ZoomExtents();
-                    detailView.DetailGeometry.IsProjectionLocked = true;
-                    detailView.DetailGeometry.SetScale(1, doc.ModelUnitSystem, 1, doc.PageUnitSystem);
-                    detailView.CommitChanges();
+                    string name = layerNamesToShow.ElementAt(i);
+                    if (Lname == name)
+                        indexLayer = GetLayerIndex(name);
+                }
+
+                if (indexLayer != -1)
+                {
+                    L = doc.Layers[indexLayer];
+                    L.IsVisible = true;
+                }
+                else
+                {
+                    indexLayer = GetLayerIndex(Lname);
+                    L = doc.Layers[indexLayer];
+                    L.IsVisible = false;
                 }
             }
-            else
-                RhinoApp.WriteLine($"Something terrible wrong happened.");
-
-            return pageView;
-        }
-
-        private bool CurrentLayer(string layerName)
-        {
-            //doc.Layers.ge
-
             return false;
         }
 
-        private void LayoutSize(string pageName, out double width, out double height)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public int GetLayerIndex(string name)
         {
-            switch (pageName)
-            {
-                case "A4":
-                    width = 210;
-                    height = 297;
-                    break;
-                case "A3":
-                    width = 297;
-                    height = 420;
-                    break;
-                case "A2":
-                    width = 420;
-                    height = 590;
-                    break;
-                default:
-                    width = 210;
-                    height = 297;
-                    break;
-            }
+            Layer myLayer = doc.Layers.FindName(name);
+            return myLayer.Index;
+        }
+
+        /// <summary>
+        /// Set the current layer using their name
+        /// </summary>
+        /// <param name="name">the name of the layer</param>
+        /// <returns>bool</returns>
+        public bool SetCurrentLayer(string name)
+        {
+            int indexLayer = GetLayerIndex(name);
+            return doc.Layers.SetCurrentLayerIndex(indexLayer, true);
         }
     }
 }

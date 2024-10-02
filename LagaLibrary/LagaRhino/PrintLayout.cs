@@ -4,7 +4,6 @@ using Rhino.FileIO;
 using System;
 using Rhino.Commands;
 using Rhino.Display;
-using Eto.Forms;
 
 namespace LagaRhino
 {
@@ -35,12 +34,14 @@ namespace LagaRhino
             
         }
 
+
         /// <summary>
-        /// 
+        /// Print a PDF.
         /// </summary>
-        /// <param name="pageLayout"></param>
-        /// <returns></returns>
-        public Result PrintPDF(RhinoPageView pageLayout)
+        /// <param name="pageLayout">The Layout to print</param>
+        /// <param name="fileName">the file name to save the pdf</param>
+        /// <returns>Result type</returns>
+        public Result PrintPDF(RhinoPageView pageLayout, string fileName)
         {
             FilePdf filePdf = FilePdf.Create();
 
@@ -58,7 +59,7 @@ namespace LagaRhino
             
             filePdf.AddPage(settings);
 
-            string filePath = Path.Combine(folder, "namePage" + ".pdf");
+            string filePath = Path.Combine(folder, fileName + ".pdf");
             try
             {
                 filePdf.Write(filePath);
