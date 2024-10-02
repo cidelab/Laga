@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LagaRhino</name>
+    </assembly>
+    <members>
+        <member name="T:LagaRhino.Convexhull">
+            <summary>
+            Convexhull Class
+            </summary>
+        </member>
+        <member name="M:LagaRhino.Convexhull.ConvexHull2D(System.Collections.Generic.List{Rhino.Geometry.Point3d})">
+            <summary>
+            ConvexHull2d
+            </summary>
+            <param name="points">The points</param>
+            <returns>convexhull points</returns>
+        </member>
+        <member name="T:LagaRhino.CurveData">
+            <summary>
+            Simple Manipulations on Rhino Curves
+            </summary>
+        </member>
+        <member name="M:LagaRhino.CurveData.Reparam(Rhino.Geometry.Curve)">
+            <summary>
+            Reparametrize Curve
+            </summary>
+            <param name="curve">Curve to modify</param>
+        </member>
+        <member name="M:LagaRhino.CurveData.PerpendicularSegment(Rhino.Geometry.Curve,System.Double,System.Double)">
+            <summary>
+            Build a perpendicular line at specific point of a curve
+            </summary>
+            <param name="curve">The curve</param>
+            <param name="t">The parameter between 0 to 1</param>
+            <param name="length">The length for the segment, default 1</param>
+            <returns>LineCurve</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.Axis(Rhino.Geometry.Curve)">
+            <summary>
+            from the curve end points build an axis.
+            </summary>
+            <param name="curve">the curve to convert</param>
+            <returns>LineCurve</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.Evaluate(Rhino.Geometry.Curve,System.Double[])">
+            <summary>
+            Evaluate a curve based on array of parameters
+            </summary>
+            <param name="curve">The curve to evaluate</param>
+            <param name="arrT">the array of parameters</param>
+            <returns>Point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.IEnumerable{Rhino.Geometry.Curve},System.Double)">
+            <summary>
+            Apply the same t parameter to a list of curves to return an array of points
+            </summary>
+            <param name="curves">The list of curves</param>
+            <param name="t">t param</param>
+            <returns>Point3d[]</returns>
+            <example> Shows how to get the same point parameter from a list of curves:
+            <code>
+            using LagaRhino;
+            {
+                A = CurveData.GetPointFromCurves(curves, t);
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable{Rhino.Geometry.Curve})">
+            <summary>
+            Makes a deep copy from a list of curves.
+            </summary>
+            <param name="curves">The list to copy</param>
+            <returns><![CDATA[List<Curve>]]></returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.CorrectPlaneOnCurveByParam(Rhino.Geometry.Curve,System.Double)">
+            <summary>
+            Align Perpendicular frames in the Curve
+            </summary>
+            <param name="curve">the curve in the analysis</param>
+            <param name="t">the t param on the curve</param>
+            <returns>Plane</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.MirrorCurve(Rhino.Geometry.Curve,Rhino.Geometry.Plane)">
+            <summary>
+            Mirror a curve from a plane
+            </summary>
+            <param name="curve">The curve to mirror</param>
+            <param name="plane">The plane</param>
+            <returns>Curve</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.CurvesZCoordinate(System.Collections.Generic.IEnumerable{Rhino.Geometry.Curve})">
+            <summary>
+            Group a collection of curves by their Z Value.
+            </summary>
+            <param name="curves">lstCrv</param>
+            <returns><![CDATA[List<double>]]></returns>
+        </member>
+        <member name="T:LagaRhino.DrawText">
+            <summary>
+            Draw RichText in Rhino.
+            </summary>
+        </member>
+        <member name="M:LagaRhino.DrawText.#ctor(Rhino.Geometry.Plane,System.String,System.Int32)">
+            <summary>
+            basic constructor for draw text.
+            </summary>
+            <param name="plane"></param>
+            <param name="message"></param>
+            <param name="TextHeight">The text height</param>
+        </member>
+        <member name="T:LagaRhino.LineCurveData">
+            <summary>
+            Simple manipulations on Rhino LineCurves
+            </summary>
+        </member>
+        <member name="M:LagaRhino.LineCurveData.BuildPlane(Rhino.Geometry.LineCurve)">
+            <summary>
+            Build a plane from the axis, it's not the perpendicular plane.
+            </summary>
+            <param name="axis">The LineCurve base</param>
+            <returns>Plane</returns>
+        </member>
+        <member name="M:LagaRhino.LineCurveData.Axis(Rhino.Geometry.LineCurve)">
+            <summary>
+            Transform a LineCurve to an Axis, The origin of the axis is the further point from the (0,0,0)
+            </summary>
+            <param name="axis">LineCurve</param>
+            <returns>LineCurve</returns>
+        </member>
+        <member name="M:LagaRhino.LineCurveData.PlaneSurfaceAxis(Rhino.Geometry.LineCurve,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="axis"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LagaRhino.PointData">
+            <summary>
+            Simple Manipulations on Rhino Points
+            </summary>
+        </member>
+        <member name="M:LagaRhino.PointData.MirrorPointQuadrant(Rhino.Geometry.Point3d)">
+            <summary>
+            Mirror a point by the 4 quadrants
+            </summary>
+            <param name="point">point to mirror</param>
+            <returns>Point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)">
+            <summary>
+            determine in which quadrant is the point, if 0:++, 1:+-, 2:--, 3:-+.
+            </summary>
+            <param name="point">Test point</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Sort points by Z coordinate
+            </summary>
+            <param name="points">The points to sort</param>
+            <returns>point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Sort the Z coordinate from an array of points
+            </summary>
+            <param name="points"></param>
+            <returns>double[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)">
+            <summary>
+            
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LagaRhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Sort points by the coordinate X and then by the coordinate Y.
+            </summary>
+            <param name="points">The points to sort</param>
+            <returns>point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Sort a list of points clockwise
+            </summary>
+            <param name="points">the list of points</param>
+            <returns><![CDATA[List<Point3d>]]></returns>
+        </member>
+        <member name="M:LagaRhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Group points by Z coordinate.
+            </summary>
+            <param name="points">the array of points to group</param>
+            <returns><![CDATA[List<Point3d[]>]]></returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Interpolate2Points(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)">
+            <summary>
+            Interpolate 2 points by span distance
+            </summary>
+            <param name="pointA">Start point</param>
+            <param name="pointB">End point</param>
+            <param name="span">span distance</param>
+            <returns>Point3d[,]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Vector2Point(Laga.Geometry.Vector)">
+            <summary>
+            Convert Laga Vector to Rhino Point
+            </summary>
+            <param name="vector">The Vector to convert</param>
+            <returns>Point3d</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable{Laga.Geometry.Vector})">
+            <summary>
+            Convert Laga Vectors to Rhino Points
+            </summary>
+            <param name="vectors">The arry of Vectors to convert</param>
+            <returns>Point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Point2Vector(Rhino.Geometry.Point3d)">
+            <summary>
+            Convert Rhino Point to Laga Vector
+            </summary>
+            <param name="point">The point to convert</param>
+            <returns>Vector</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+            <summary>
+            Convert Rhino Point3ds to Laga Vectors
+            </summary>
+            <param name="points">The list of Points3d to convert</param>
+            <returns>Vectors</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.FindZDifference(System.Collections.Generic.List{System.Double},System.Double,System.Double)">
+            <summary>
+            list of Z values... not really...
+            </summary>
+            <param name="pattern"></param>
+            <param name="test"></param>
+            <param name="stand"></param>
+            <returns>double</returns>
+        </member>
+        <member name="T:LagaRhino.PrintLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LagaRhino.PrintLayout.#ctor(Rhino.RhinoDoc,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ActiveDoc"></param>
+            <param name="Directory"></param>
+            <param name="Dpi"></param>
+        </member>
+        <member name="M:LagaRhino.PrintLayout.PrintPDF(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LagaRhino.Shoebox">
+            <summary>
+            Class to build and analize shoeboxes types.
+            </summary>
+        </member>
+        <member name="P:LagaRhino.Shoebox.ShoeBox">
+            <summary>
+            Get the ShoeBox geometry.
+            </summary>
+        </member>
+        <member name="P:LagaRhino.Shoebox.Volume">
+            <summary>
+            Length Shoebox Property
+            </summary>
+        </member>
+        <member name="P:LagaRhino.Shoebox.Area">
+            <summary>
+            Width Shoebox property
+            </summary>
+        </member>
+        <member name="M:LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Shoebox by length, width and height
+            </summary>
+            <param name="point">Base point location</param>
+            <param name="rotate">Rotate parameter</param>
+            <param name="length">Length</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:LagaRhino.Shoebox.Rot(System.Double)">
+            <summary>
+            Rotate Shoebox
+            </summary>
+            <param name="angle">Rotation angle in radians</param>
+        </member>
+        <member name="M:LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Shoebox with the free Z top points
+            </summary>
+            <param name="point">Base point location</param>
+            <param name="length">Length</param>
+            <param name="width">Width</param>
+            <param name="eHeight">Z parameter for e point</param>
+            <param name="fHeight">Z parameter for f point</param>
+            <param name="gHeight">Z parameter for g point</param>
+            <param name="hHeight">Z parameter for h point</param>
+            <param name="rotate">Rotate parameter</param>
+        </member>
+        <member name="T:LagaRhino.SurfaceAnalysis">
+            <summary>
+            Simple Manipulations on Rhino Surfaces
+            </summary>
+        </member>
+        <member name="P:LagaRhino.SurfaceAnalysis.PointsOnSurface">
+            <summary>
+            Get access to all points on the surface.
+            </summary>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.SubdividebyPoints">
+            <summary>
+            Load the grid of points on the surface.
+            </summary>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)">
+            <summary>
+            Constructor, Subdivide the surface by u and v numbers.
+            </summary>
+            <param name="surface">The base surface</param>
+            <param name="uCount">number of points in u direction</param>
+            <param name="vCount">number of points in v direction</param>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.#ctor(Rhino.Geometry.Surface,System.Double,System.Double)">
+            <summary>
+            Constructor, Subdivide the surface by uspan length and vspan length.
+            </summary>
+            <param name="surface">The base surface</param>
+            <param name="uSpan">the span length for u direction</param>
+            <param name="vSpan">the span length for v direction</param>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.SubdividebyPlanes(Rhino.Geometry.Surface,System.Int32,System.Int32,System.Double,System.Double)">
+            <summary>
+            Subdivide surface by planes.
+            </summary>
+            <param name="surface">The surface</param>
+            <param name="uCount">The number of divisions in u direction</param>
+            <param name="vCount">The number of divisions in v direction</param>
+            <param name="uSpan">The offset span from u direction</param>
+            <param name="vSpan">the offset span from v direction</param>
+            <returns>List<Plane></Plane></returns>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.CustomPattern(System.String)">
+            <summary>
+            To develop a custom pattern on surface
+            </summary>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.TriangularPattern">
+            <summary>
+            To develop Triangular Pattern
+            </summary>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.QuadPattern">
+            <summary>
+            Return a Quad Pattern division
+            </summary>
+            <returns><![CDATA[List<Polyline>]]></returns>
+        </member>
+    </members>
+</doc>
