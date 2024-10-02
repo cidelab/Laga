@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "OC7aXX6lz8s=",
   "success": true,
   "projectFilePath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
@@ -7,6 +8,15 @@
     "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\rhinocommon\\7.36.23346.16351\\rhinocommon.7.36.23346.16351.nupkg.sha512",
     "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+=======
+  "dgSpecHash": "sUzwggKjIaM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\delab\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\delab\\.nuget\\packages\\rhinocommon\\7.36.23346.16351\\rhinocommon.7.36.23346.16351.nupkg.sha512",
+    "C:\\Users\\delab\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+>>>>>>> origin/master
   ],
   "logs": []
 }

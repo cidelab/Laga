@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PointData
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -111,30 +111,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PointData</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="LagaRhino_PointData__ctor_" data-uid="LagaRhino.PointData.#ctor*"></a>
-  <h4 id="LagaRhino_PointData__ctor" data-uid="LagaRhino.PointData.#ctor">PointData()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PointData()</code></pre>
-  </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="LagaRhino_PointData_GroupByZ_" data-uid="LagaRhino.PointData.GroupByZ*"></a>
-  <h4 id="LagaRhino_PointData_GroupByZ_Rhino_Geometry_Point3d___" data-uid="LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])">GroupByZ(Point3d[])</h4>
-  <div class="markdown level1 summary"><p>Group points by Z coordinate.</p>
+  <a id="LagaRhino_PointData_FindZDifference_" data-uid="LagaRhino.PointData.FindZDifference*"></a>
+  <h4 id="LagaRhino_PointData_FindZDifference_System_Collections_Generic_List_System_Double__System_Double_System_Double_" data-uid="LagaRhino.PointData.FindZDifference(System.Collections.Generic.List{System.Double},System.Double,System.Double)">FindZDifference(List&lt;Double&gt;, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>list of Z values... not really...</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Point3d[]&gt; GroupByZ(Point3d[] points)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double FindZDifference(List&lt;double&gt; pattern, double test, double stand = 0.35)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,7 +135,61 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">pattern</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">test</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">stand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>double</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_PointData_GroupPointsByZ_" data-uid="LagaRhino.PointData.GroupPointsByZ*"></a>
+  <h4 id="LagaRhino_PointData_GroupPointsByZ_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable{Point3d})">GroupPointsByZ(IEnumerable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Group points by Z coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Population&lt;Point3d&gt; GroupPointsByZ(IEnumerable&lt;Point3d&gt; points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
         <td><span class="parametername">points</span></td>
         <td><p>the array of points to group</p>
 </td>
@@ -164,7 +206,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Rhino.Geometry.Point3d</span>[]&gt;</td>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">Point3d</span>&gt;</td>
         <td><p>List&lt;Point3d[]&gt;</p>
 </td>
       </tr>
@@ -172,8 +214,65 @@
   </table>
   
   
+  <a id="LagaRhino_PointData_Interpolate2Points_" data-uid="LagaRhino.PointData.Interpolate2Points*"></a>
+  <h4 id="LagaRhino_PointData_Interpolate2Points_Point3d_Point3d_System_Double_" data-uid="LagaRhino.PointData.Interpolate2Points(Point3d,Point3d,System.Double)">Interpolate2Points(Point3d, Point3d, Double)</h4>
+  <div class="markdown level1 summary"><p>Interpolate 2 points by span distance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Population&lt;Point3d&gt; Interpolate2Points(Point3d pointA, Point3d pointB, double span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point3d</span></td>
+        <td><span class="parametername">pointA</span></td>
+        <td><p>Start point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Point3d</span></td>
+        <td><span class="parametername">pointB</span></td>
+        <td><p>End point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">span</span></td>
+        <td><p>span distance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Laga.GeneticAlgorithm.Population-1.html">Population</a>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><p>Point3d[,]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="LagaRhino_PointData_MirrorPointQuadrant_" data-uid="LagaRhino.PointData.MirrorPointQuadrant*"></a>
-  <h4 id="LagaRhino_PointData_MirrorPointQuadrant_Rhino_Geometry_Point3d_" data-uid="LagaRhino.PointData.MirrorPointQuadrant(Rhino.Geometry.Point3d)">MirrorPointQuadrant(Point3d)</h4>
+  <h4 id="LagaRhino_PointData_MirrorPointQuadrant_Point3d_" data-uid="LagaRhino.PointData.MirrorPointQuadrant(Point3d)">MirrorPointQuadrant(Point3d)</h4>
   <div class="markdown level1 summary"><p>Mirror a point by the 4 quadrants</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -192,7 +291,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="xref">Point3d</span></td>
         <td><span class="parametername">point</span></td>
         <td><p>point to mirror</p>
 </td>
@@ -209,7 +308,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">Point3d</span>[]</td>
         <td><p>Point3d[]</p>
 </td>
       </tr>
@@ -217,14 +316,14 @@
   </table>
   
   
-  <a id="LagaRhino_PointData_Point3dToVector_" data-uid="LagaRhino.PointData.Point3dToVector*"></a>
-  <h4 id="LagaRhino_PointData_Point3dToVector_Rhino_Geometry_Point3d_" data-uid="LagaRhino.PointData.Point3dToVector(Rhino.Geometry.Point3d)">Point3dToVector(Point3d)</h4>
-  <div class="markdown level1 summary"><p>Convert Rhino Point3d to Laga Vector</p>
+  <a id="LagaRhino_PointData_Point2Vector_" data-uid="LagaRhino.PointData.Point2Vector*"></a>
+  <h4 id="LagaRhino_PointData_Point2Vector_Point3d_" data-uid="LagaRhino.PointData.Point2Vector(Point3d)">Point2Vector(Point3d)</h4>
+  <div class="markdown level1 summary"><p>Convert Rhino Point to Laga Vector</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector Point3dToVector(Point3d point)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector Point2Vector(Point3d point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,7 +336,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="xref">Point3d</span></td>
         <td><span class="parametername">point</span></td>
         <td><p>The point to convert</p>
 </td>
@@ -263,7 +362,7 @@
   
   
   <a id="LagaRhino_PointData_PointQuadrant_" data-uid="LagaRhino.PointData.PointQuadrant*"></a>
-  <h4 id="LagaRhino_PointData_PointQuadrant_Rhino_Geometry_Point3d_" data-uid="LagaRhino.PointData.PointQuadrant(Rhino.Geometry.Point3d)">PointQuadrant(Point3d)</h4>
+  <h4 id="LagaRhino_PointData_PointQuadrant_Point3d_" data-uid="LagaRhino.PointData.PointQuadrant(Point3d)">PointQuadrant(Point3d)</h4>
   <div class="markdown level1 summary"><p>determine in which quadrant is the point, if 0:++, 1:+-, 2:--, 3:-+.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -282,7 +381,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="xref">Point3d</span></td>
         <td><span class="parametername">point</span></td>
         <td><p>Test point</p>
 </td>
@@ -307,14 +406,14 @@
   </table>
   
   
-  <a id="LagaRhino_PointData_SortPointsByXY_" data-uid="LagaRhino.PointData.SortPointsByXY*"></a>
-  <h4 id="LagaRhino_PointData_SortPointsByXY_Rhino_Geometry_Point3d___" data-uid="LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])">SortPointsByXY(Point3d[])</h4>
-  <div class="markdown level1 summary"><p>Sort points by the coordinate X and then by the coordinate Y.</p>
+  <a id="LagaRhino_PointData_Points2Vectors_" data-uid="LagaRhino.PointData.Points2Vectors*"></a>
+  <h4 id="LagaRhino_PointData_Points2Vectors_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable{Point3d})">Points2Vectors(IEnumerable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Convert Rhino Point3ds to Laga Vectors</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Point3d[] SortPointsByXY(Point3d[] points)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector&gt; Points2Vectors(IEnumerable&lt;Point3d&gt; points)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,7 +426,96 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The list of Points3d to convert</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Laga.Geometry.Vector.html">Vector</a>&gt;</td>
+        <td><p>Vectors</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_PointData_SortCoordinateZ_" data-uid="LagaRhino.PointData.SortCoordinateZ*"></a>
+  <h4 id="LagaRhino_PointData_SortCoordinateZ_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable{Point3d})">SortCoordinateZ(IEnumerable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sort the Z coordinate from an array of points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] SortCoordinateZ(IEnumerable&lt;Point3d&gt; points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>double[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_PointData_SortPointsByXY_" data-uid="LagaRhino.PointData.SortPointsByXY*"></a>
+  <h4 id="LagaRhino_PointData_SortPointsByXY_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable{Point3d})">SortPointsByXY(IEnumerable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sort points by the coordinate X and then by the coordinate Y.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point3d[] SortPointsByXY(IEnumerable&lt;Point3d&gt; points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
         <td><span class="parametername">points</span></td>
         <td><p>The points to sort</p>
 </td>
@@ -344,7 +532,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">Point3d</span>[]</td>
         <td><p>point3d[]</p>
 </td>
       </tr>
@@ -353,13 +541,13 @@
   
   
   <a id="LagaRhino_PointData_SortPointsByZ_" data-uid="LagaRhino.PointData.SortPointsByZ*"></a>
-  <h4 id="LagaRhino_PointData_SortPointsByZ_Rhino_Geometry_Point3d___" data-uid="LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])">SortPointsByZ(Point3d[])</h4>
+  <h4 id="LagaRhino_PointData_SortPointsByZ_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable{Point3d})">SortPointsByZ(IEnumerable&lt;Point3d&gt;)</h4>
   <div class="markdown level1 summary"><p>Sort points by Z coordinate</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Point3d[] SortPointsByZ(Point3d[] points)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Point3d[] SortPointsByZ(IEnumerable&lt;Point3d&gt; points)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -372,7 +560,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
         <td><span class="parametername">points</span></td>
         <td><p>The points to sort</p>
 </td>
@@ -389,7 +577,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
+        <td><span class="xref">Point3d</span>[]</td>
         <td><p>point3d[]</p>
 </td>
       </tr>
@@ -397,14 +585,14 @@
   </table>
   
   
-  <a id="LagaRhino_PointData_TwoPointsInterpolation_" data-uid="LagaRhino.PointData.TwoPointsInterpolation*"></a>
-  <h4 id="LagaRhino_PointData_TwoPointsInterpolation_Rhino_Geometry_Point3d_Rhino_Geometry_Point3d_System_Double_" data-uid="LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)">TwoPointsInterpolation(Point3d, Point3d, Double)</h4>
-  <div class="markdown level1 summary"><p>Interpolate 2 points by span distance</p>
+  <a id="LagaRhino_PointData_SortPointsClockwise_" data-uid="LagaRhino.PointData.SortPointsClockwise*"></a>
+  <h4 id="LagaRhino_PointData_SortPointsClockwise_System_Collections_Generic_IEnumerable_Point3d__" data-uid="LagaRhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable{Point3d})">SortPointsClockwise(IEnumerable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sort a list of points clockwise</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Point3d[] TwoPointsInterpolation(Point3d pointA, Point3d pointB, double span)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Point3d&gt; SortPointsClockwise(IEnumerable&lt;Point3d&gt; points)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -417,21 +605,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
-        <td><span class="parametername">pointA</span></td>
-        <td><p>Start point</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
-        <td><span class="parametername">pointB</span></td>
-        <td><p>End point</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">span</span></td>
-        <td><p>span distance</p>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>the list of points</p>
 </td>
       </tr>
     </tbody>
@@ -446,22 +622,64 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span>[]</td>
-        <td><p>Point3d[]</p>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><p>List&lt;Point3d&gt;</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="LagaRhino_PointData_VectorToPoint3d_" data-uid="LagaRhino.PointData.VectorToPoint3d*"></a>
-  <h4 id="LagaRhino_PointData_VectorToPoint3d_Laga_Geometry_Vector_" data-uid="LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector)">VectorToPoint3d(Vector)</h4>
-  <div class="markdown level1 summary"><p>Convert Laga Vector to Rhino Point3d</p>
+  <a id="LagaRhino_PointData_SortPointsQuadrant_" data-uid="LagaRhino.PointData.SortPointsQuadrant*"></a>
+  <h4 id="LagaRhino_PointData_SortPointsQuadrant_Point3d_" data-uid="LagaRhino.PointData.SortPointsQuadrant(Point3d)">SortPointsQuadrant(Point3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point3d[] SortPointsQuadrant(Point3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point3d</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_PointData_Vector2Point_" data-uid="LagaRhino.PointData.Vector2Point*"></a>
+  <h4 id="LagaRhino_PointData_Vector2Point_Laga_Geometry_Vector_" data-uid="LagaRhino.PointData.Vector2Point(Laga.Geometry.Vector)">Vector2Point(Vector)</h4>
+  <div class="markdown level1 summary"><p>Convert Laga Vector to Rhino Point</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Point3d VectorToPoint3d(Vector vector)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Point3d Vector2Point(Vector vector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -491,8 +709,53 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.Point3d</span></td>
+        <td><span class="xref">Point3d</span></td>
         <td><p>Point3d</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_PointData_Vectors2Points_" data-uid="LagaRhino.PointData.Vectors2Points*"></a>
+  <h4 id="LagaRhino_PointData_Vectors2Points_System_Collections_Generic_IEnumerable_Laga_Geometry_Vector__" data-uid="LagaRhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable{Laga.Geometry.Vector})">Vectors2Points(IEnumerable&lt;Vector&gt;)</h4>
+  <div class="markdown level1 summary"><p>Convert Laga Vectors to Rhino Points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Point3d&gt; Vectors2Points(IEnumerable&lt;Vector&gt; vectors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Laga.Geometry.Vector.html">Vector</a>&gt;</td>
+        <td><span class="parametername">vectors</span></td>
+        <td><p>The arry of Vectors to convert</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Point3d</span>&gt;</td>
+        <td><p>Point3d[]</p>
 </td>
       </tr>
     </tbody>

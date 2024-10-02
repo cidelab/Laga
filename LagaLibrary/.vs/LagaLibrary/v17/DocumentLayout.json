@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
@@ -48,6 +49,13 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4A79B92-F30E-4932-9F0F-483E208A7763}|LagaRhino\\LagaRhino.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhino\\drawtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A79B92-F30E-4932-9F0F-483E208A7763}|LagaRhino\\LagaRhino.csproj|solutionrelative:lagarhino\\drawtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\laga\\genrchromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\genrchromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> origin/master
     }
   ],
   "DocumentGroupContainers": [
@@ -56,16 +64,34 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 359,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+=======
+          "DockedWidth": 253,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+>>>>>>> origin/master
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Laga",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
               "RelativeDocumentMoniker": "Laga\\Laga.csproj",
@@ -207,6 +233,21 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T11:19:06.766Z"
+=======
+              "Title": "GenrChromosome.cs",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\GenrChromosome.cs",
+              "RelativeDocumentMoniker": "Laga\\GenrChromosome.cs",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\GenrChromosome.cs",
+              "RelativeToolTip": "Laga\\GenrChromosome.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwEQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T15:44:39.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+>>>>>>> origin/master
             }
           ]
         }

@@ -1,5 +1,9 @@
 is_global = true
 build_property.RootNamespace = LagaRhino
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\
+=======
+build_property.ProjectDir = C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\
+>>>>>>> origin/master
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

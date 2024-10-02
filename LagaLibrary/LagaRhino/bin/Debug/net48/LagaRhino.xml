@@ -4,12 +4,20 @@
         <name>LagaRhino</name>
     </assembly>
     <members>
+<<<<<<< HEAD
         <member name="T:LagaRhino.Convexhull">
+=======
+        <member name="T:LagaRhino.ConvexHull">
+>>>>>>> origin/master
             <summary>
             Convexhull Class
             </summary>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.Convexhull.ConvexHull2D(System.Collections.Generic.List{Rhino.Geometry.Point3d})">
+=======
+        <member name="M:LagaRhino.ConvexHull.ConvexHull2D(System.Collections.Generic.List{Rhino.Geometry.Point3d})">
+>>>>>>> origin/master
             <summary>
             ConvexHull2d
             </summary>
@@ -27,6 +35,7 @@
             </summary>
             <param name="curve">Curve to modify</param>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.CurveData.PerpendicularSegment(Rhino.Geometry.Curve,System.Double,System.Double)">
             <summary>
             Build a perpendicular line at specific point of a curve
@@ -63,21 +72,45 @@
             using LagaRhino;
             {
                 A = CurveData.GetPointFromCurves(curves, t);
+=======
+        <member name="M:LagaRhino.CurveData.GetPointFromCurves(System.Collections.Generic.List{Rhino.Geometry.Curve},System.Double)">
+            <summary>
+            Apply the same t parameter to a list of curves to return an array of points
+            </summary>
+            <param name="lstCrvs">The list of curves</param>
+            <param name="t">t param</param>
+            <returns>Point3d[]</returns>
+            <example>
+            Shows how to get the same point parameter from a list of curves.
+            <code>
+            using LagaRhino;
+            {
+                A = CurveData.GetPointFromCurves(lstCrvs, y);
+>>>>>>> origin/master
             }
             </code>
             </example>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.IEnumerable{Rhino.Geometry.Curve})">
             <summary>
             Makes a deep copy from a list of curves.
             </summary>
             <param name="curves">The list to copy</param>
+=======
+        <member name="M:LagaRhino.CurveData.DeepCopyListCurve(System.Collections.Generic.List{Rhino.Geometry.Curve})">
+            <summary>
+            Makes a deep copy from a list of curves.
+            </summary>
+            <param name="lstToCopy">The list to copy</param>
+>>>>>>> origin/master
             <returns><![CDATA[List<Curve>]]></returns>
         </member>
         <member name="M:LagaRhino.CurveData.CorrectPlaneOnCurveByParam(Rhino.Geometry.Curve,System.Double)">
             <summary>
             Align Perpendicular frames in the Curve
             </summary>
+<<<<<<< HEAD
             <param name="curve">the curve in the analysis</param>
             <param name="t">the t param on the curve</param>
             <returns>Plane</returns>
@@ -95,6 +128,17 @@
             Group a collection of curves by their Z Value.
             </summary>
             <param name="curves">lstCrv</param>
+=======
+            <param name="crv">the curve in the analysis</param>
+            <param name="t">the t param on the curve</param>
+            <returns>Plane</returns>
+        </member>
+        <member name="M:LagaRhino.CurveData.CurvesZValues(System.Collections.Generic.List{Rhino.Geometry.Curve})">
+            <summary>
+            Returns the Z values from a list of curves
+            </summary>
+            <param name="lstCrvs">lstCrv</param>
+>>>>>>> origin/master
             <returns><![CDATA[List<double>]]></returns>
         </member>
         <member name="T:LagaRhino.DrawText">
@@ -110,6 +154,7 @@
             <param name="message"></param>
             <param name="TextHeight">The text height</param>
         </member>
+<<<<<<< HEAD
         <member name="T:LagaRhino.LayerManager">
             <summary>
             Get control of layers.
@@ -147,6 +192,8 @@
             <param name="name">the name of the layer</param>
             <returns>bool</returns>
         </member>
+=======
+>>>>>>> origin/master
         <member name="T:LagaRhino.LineCurveData">
             <summary>
             Simple manipulations on Rhino LineCurves
@@ -154,7 +201,11 @@
         </member>
         <member name="M:LagaRhino.LineCurveData.BuildPlane(Rhino.Geometry.LineCurve)">
             <summary>
+<<<<<<< HEAD
             Build a plane from the axis, it's not the perpendicular plane.
+=======
+            Build a plane from the axis, it's not a perpendicular plane.
+>>>>>>> origin/master
             </summary>
             <param name="axis">The LineCurve base</param>
             <returns>Plane</returns>
@@ -174,6 +225,7 @@
             <param name="height"></param>
             <returns></returns>
         </member>
+<<<<<<< HEAD
         <member name="T:LagaRhino.PaperLayout">
             <summary>
             Rhino Layouts for printing
@@ -202,6 +254,8 @@
             <param name="width"></param>
             <param name="height"></param>
         </member>
+=======
+>>>>>>> origin/master
         <member name="T:LagaRhino.PointData">
             <summary>
             Simple Manipulations on Rhino Points
@@ -221,19 +275,32 @@
             <param name="point">Test point</param>
             <returns>int</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.SortPointsByZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+=======
+        <member name="M:LagaRhino.PointData.SortPointsByZ(Rhino.Geometry.Point3d[])">
+>>>>>>> origin/master
             <summary>
             Sort points by Z coordinate
             </summary>
             <param name="points">The points to sort</param>
             <returns>point3d[]</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.SortCoordinateZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
             <summary>
             Sort the Z coordinate from an array of points
             </summary>
             <param name="points"></param>
             <returns>double[]</returns>
+=======
+        <member name="M:LagaRhino.PointData.SortCoordinateZ(Rhino.Geometry.Point3d[])">
+            <summary>
+            
+            </summary>
+            <param name="arrPoints"></param>
+            <returns></returns>
+>>>>>>> origin/master
         </member>
         <member name="M:LagaRhino.PointData.SortPointsQuadrant(Rhino.Geometry.Point3d)">
             <summary>
@@ -242,43 +309,68 @@
             <param name="point"></param>
             <returns></returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.SortPointsByXY(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+=======
+        <member name="M:LagaRhino.PointData.SortPointsByXY(Rhino.Geometry.Point3d[])">
+>>>>>>> origin/master
             <summary>
             Sort points by the coordinate X and then by the coordinate Y.
             </summary>
             <param name="points">The points to sort</param>
             <returns>point3d[]</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.SortPointsClockwise(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+=======
+        <member name="M:LagaRhino.PointData.SortPointsClockwise(System.Collections.Generic.List{Rhino.Geometry.Point3d})">
+>>>>>>> origin/master
             <summary>
             Sort a list of points clockwise
             </summary>
             <param name="points">the list of points</param>
             <returns><![CDATA[List<Point3d>]]></returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.GroupPointsByZ(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
+=======
+        <member name="M:LagaRhino.PointData.GroupByZ(Rhino.Geometry.Point3d[])">
+>>>>>>> origin/master
             <summary>
             Group points by Z coordinate.
             </summary>
             <param name="points">the array of points to group</param>
             <returns><![CDATA[List<Point3d[]>]]></returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.Interpolate2Points(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)">
+=======
+        <member name="M:LagaRhino.PointData.TwoPointsInterpolation(Rhino.Geometry.Point3d,Rhino.Geometry.Point3d,System.Double)">
+>>>>>>> origin/master
             <summary>
             Interpolate 2 points by span distance
             </summary>
             <param name="pointA">Start point</param>
             <param name="pointB">End point</param>
             <param name="span">span distance</param>
+<<<<<<< HEAD
             <returns>Point3d[,]</returns>
         </member>
         <member name="M:LagaRhino.PointData.Vector2Point(Laga.Geometry.Vector)">
             <summary>
             Convert Laga Vector to Rhino Point
+=======
+            <returns>Point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector)">
+            <summary>
+            Convert Laga Vector to Rhino Point3d
+>>>>>>> origin/master
             </summary>
             <param name="vector">The Vector to convert</param>
             <returns>Point3d</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.Vectors2Points(System.Collections.Generic.IEnumerable{Laga.Geometry.Vector})">
             <summary>
             Convert Laga Vectors to Rhino Points
@@ -289,16 +381,37 @@
         <member name="M:LagaRhino.PointData.Point2Vector(Rhino.Geometry.Point3d)">
             <summary>
             Convert Rhino Point to Laga Vector
+=======
+        <member name="M:LagaRhino.PointData.VectorToPoint3d(Laga.Geometry.Vector[])">
+            <summary>
+            Convert Laga Vectors to Rhino Point3ds
+            </summary>
+            <param name="arrVector">The arry of Vectors to convert</param>
+            <returns>Point3d[]</returns>
+        </member>
+        <member name="M:LagaRhino.PointData.Point3dToVector(Rhino.Geometry.Point3d)">
+            <summary>
+            Convert Rhino Point3d to Laga Vector
+>>>>>>> origin/master
             </summary>
             <param name="point">The point to convert</param>
             <returns>Vector</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.PointData.Points2Vectors(System.Collections.Generic.IEnumerable{Rhino.Geometry.Point3d})">
             <summary>
             Convert Rhino Point3ds to Laga Vectors
             </summary>
             <param name="points">The list of Points3d to convert</param>
             <returns>Vectors</returns>
+=======
+        <member name="M:LagaRhino.PointData.Point3d2Vector(Rhino.Geometry.Point3d[])">
+            <summary>
+            Convert Rhino Point3ds to Laga Vectors
+            </summary>
+            <param name="arrPoint">The arry of Points3d to convert</param>
+            <returns>Vector[]</returns>
+>>>>>>> origin/master
         </member>
         <member name="M:LagaRhino.PointData.FindZDifference(System.Collections.Generic.List{System.Double},System.Double,System.Double)">
             <summary>
@@ -309,6 +422,7 @@
             <param name="stand"></param>
             <returns>double</returns>
         </member>
+<<<<<<< HEAD
         <member name="T:LagaRhino.PrintLayout">
             <summary>
             
@@ -343,6 +457,8 @@
             </summary>
             <returns></returns>
         </member>
+=======
+>>>>>>> origin/master
         <member name="T:LagaRhino.Shoebox">
             <summary>
             Class to build and analize shoeboxes types.
@@ -373,12 +489,15 @@
             <param name="width">Width</param>
             <param name="height">Height</param>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.Shoebox.Rot(System.Double)">
             <summary>
             Rotate Shoebox
             </summary>
             <param name="angle">Rotation angle in radians</param>
         </member>
+=======
+>>>>>>> origin/master
         <member name="M:LagaRhino.Shoebox.#ctor(Rhino.Geometry.Point3d,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
             <summary>
             Shoebox with the free Z top points
@@ -397,6 +516,7 @@
             Simple Manipulations on Rhino Surfaces
             </summary>
         </member>
+<<<<<<< HEAD
         <member name="P:LagaRhino.SurfaceAnalysis.PointsOnSurface">
             <summary>
             Get access to all points on the surface.
@@ -410,11 +530,23 @@
         <member name="M:LagaRhino.SurfaceAnalysis.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)">
             <summary>
             Constructor, Subdivide the surface by u and v numbers.
+=======
+        <member name="M:LagaRhino.SurfaceAnalysis.SubdividebyPoints">
+            <summary>
+            Subdivide a surface by a list of points.
+            </summary>
+            <returns>List<Point3d></Point3d></returns>
+        </member>
+        <member name="M:LagaRhino.SurfaceAnalysis.#ctor(Rhino.Geometry.Surface,System.Int32,System.Int32)">
+            <summary>
+            
+>>>>>>> origin/master
             </summary>
             <param name="surface">The base surface</param>
             <param name="uCount">number of points in u direction</param>
             <param name="vCount">number of points in v direction</param>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.SurfaceAnalysis.#ctor(Rhino.Geometry.Surface,System.Double,System.Double)">
             <summary>
             Constructor, Subdivide the surface by uspan length and vspan length.
@@ -423,6 +555,8 @@
             <param name="uSpan">the span length for u direction</param>
             <param name="vSpan">the span length for v direction</param>
         </member>
+=======
+>>>>>>> origin/master
         <member name="M:LagaRhino.SurfaceAnalysis.SubdividebyPlanes(Rhino.Geometry.Surface,System.Int32,System.Int32,System.Double,System.Double)">
             <summary>
             Subdivide surface by planes.
@@ -434,12 +568,20 @@
             <param name="vSpan">the offset span from v direction</param>
             <returns>List<Plane></Plane></returns>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.SurfaceAnalysis.CustomPattern(System.String)">
+=======
+        <member name="M:LagaRhino.SurfaceAnalysis.CustomPattern">
+>>>>>>> origin/master
             <summary>
             To develop a custom pattern on surface
             </summary>
         </member>
+<<<<<<< HEAD
         <member name="M:LagaRhino.SurfaceAnalysis.TriangularPattern">
+=======
+        <member name="M:LagaRhino.SurfaceAnalysis.TriangularPatter">
+>>>>>>> origin/master
             <summary>
             To develop Triangular Pattern
             </summary>
@@ -450,5 +592,16 @@
             </summary>
             <returns><![CDATA[List<Polyline>]]></returns>
         </member>
+<<<<<<< HEAD
+=======
+        <member name="M:LagaRhino.SurfaceAnalysis.PlaneSurfaceAxis(Rhino.Geometry.LineCurve,System.Double)">
+            <summary>
+            Build a vertical planar surface from a LineCurve axis.
+            </summary>
+            <param name="axis">the axis</param>
+            <param name="height">the height of the surface</param>
+            <returns>Surface</returns>
+        </member>
+>>>>>>> origin/master
     </members>
 </doc>

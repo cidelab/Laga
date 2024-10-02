@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LineCurveData
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -111,24 +111,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class LineCurveData</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="LagaRhino_LineCurveData__ctor_" data-uid="LagaRhino.LineCurveData.#ctor*"></a>
-  <h4 id="LagaRhino_LineCurveData__ctor" data-uid="LagaRhino.LineCurveData.#ctor">LineCurveData()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LineCurveData()</code></pre>
-  </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="LagaRhino_LineCurveData_Axis_" data-uid="LagaRhino.LineCurveData.Axis*"></a>
-  <h4 id="LagaRhino_LineCurveData_Axis_Rhino_Geometry_LineCurve_" data-uid="LagaRhino.LineCurveData.Axis(Rhino.Geometry.LineCurve)">Axis(LineCurve)</h4>
+  <h4 id="LagaRhino_LineCurveData_Axis_LineCurve_" data-uid="LagaRhino.LineCurveData.Axis(LineCurve)">Axis(LineCurve)</h4>
   <div class="markdown level1 summary"><p>Transform a LineCurve to an Axis, The origin of the axis is the further point from the (0,0,0)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -147,7 +135,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.LineCurve</span></td>
+        <td><span class="xref">LineCurve</span></td>
         <td><span class="parametername">axis</span></td>
         <td><p>LineCurve</p>
 </td>
@@ -164,9 +152,101 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Rhino.Geometry.LineCurve</span></td>
+        <td><span class="xref">LineCurve</span></td>
         <td><p>LineCurve</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_LineCurveData_BuildPlane_" data-uid="LagaRhino.LineCurveData.BuildPlane*"></a>
+  <h4 id="LagaRhino_LineCurveData_BuildPlane_LineCurve_" data-uid="LagaRhino.LineCurveData.BuildPlane(LineCurve)">BuildPlane(LineCurve)</h4>
+  <div class="markdown level1 summary"><p>Build a plane from the axis, it's not the perpendicular plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane BuildPlane(LineCurve axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LineCurve</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The LineCurve base</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Plane</span></td>
+        <td><p>Plane</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LagaRhino_LineCurveData_PlaneSurfaceAxis_" data-uid="LagaRhino.LineCurveData.PlaneSurfaceAxis*"></a>
+  <h4 id="LagaRhino_LineCurveData_PlaneSurfaceAxis_LineCurve_System_Double_" data-uid="LagaRhino.LineCurveData.PlaneSurfaceAxis(LineCurve,System.Double)">PlaneSurfaceAxis(LineCurve, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Surface PlaneSurfaceAxis(LineCurve axis, double height = 100)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LineCurve</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Surface</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -50,7 +50,11 @@
           "lib/net45/_._": {}
         }
       },
+<<<<<<< HEAD
       "Laga/2024.10.2": {
+=======
+      "Laga/2024.9.2": {
+>>>>>>> origin/master
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -174,7 +178,11 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
     "Laga/2024.10.2": {
+=======
+    "Laga/2024.9.2": {
+>>>>>>> origin/master
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -182,13 +190,18 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
+<<<<<<< HEAD
       "Laga >= 2024.10.2",
+=======
+      "Laga >= 2024.9.2",
+>>>>>>> origin/master
       "Microsoft.CSharp >= 4.7.0",
       "RhinoCommon >= 7.36.23346.16351",
       "System.Data.DataSetExtensions >= 4.5.0"
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\": {}
   },
   "project": {
@@ -202,6 +215,25 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\delab\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "2024.9.2",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "projectName": "LagaRhino",
+      "projectPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "packagesPath": "C:\\Users\\delab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\delab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/master
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -209,14 +241,23 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> origin/master
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
               "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+=======
+            "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+              "projectPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+>>>>>>> origin/master
             }
           }
         }
@@ -249,7 +290,11 @@
             "version": "[4.5.0, )"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/master
       }
     }
   }
