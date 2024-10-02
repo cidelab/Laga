@@ -4,6 +4,7 @@ using Rhino.FileIO;
 using System;
 using Rhino.Commands;
 using Rhino.Display;
+using Eto.Forms;
 
 namespace LagaRhino
 {
@@ -32,6 +33,43 @@ namespace LagaRhino
             dpi = Dpi;
             rhinoViews = doc.Views; //doc.Views;
             
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pageLayout"></param>
+        /// <returns></returns>
+        public Result PrintPDF(RhinoPageView pageLayout)
+        {
+            FilePdf filePdf = FilePdf.Create();
+
+            pageLayout.SetPageAsActive();
+            doc.Views.ActiveView = pageLayout;
+            pageLayout.MainViewport.ZoomExtents();
+            doc.Views.Redraw();
+
+            double pageWidth = pageLayout.PageWidth;
+            double pageHeight = pageLayout.PageHeight;
+            System.Drawing.Size size = new System.Drawing.Size(Convert.ToInt32(pageWidth * dpi / 25.4), Convert.ToInt32(pageHeight * dpi / 25.4));
+
+            ViewCaptureSettings settings = new ViewCaptureSettings(pageLayout, size, dpi);
+            settings.RasterMode = false;
+            
+            filePdf.AddPage(settings);
+
+            string filePath = Path.Combine(folder, "namePage" + ".pdf");
+            try
+            {
+                filePdf.Write(filePath);
+            }
+            catch (Exception ex)
+            {
+                RhinoApp.WriteLine($"Error writing PDF: {ex.Message}");
+                return Result.Failure;
+            }
+
+            return Result.Success;
         }
 
         /// <summary>
