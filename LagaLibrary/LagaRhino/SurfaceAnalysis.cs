@@ -124,9 +124,36 @@ namespace LagaRhino
         /// <summary>
         /// To develop Triangular Pattern
         /// </summary>
-        public void TriangularPattern()
+        public Population<Polyline> TriangularPattern()
         {
+            Population<Polyline> pop = new Population<Polyline>();
+            Chromosome<Polyline> chrRow;
+            Point3d pa, pb, pc, pd, ptMid;
+            
+            for (int i = 0; i < uDivs - 1; i++)
+            {
+                chrRow = new Chromosome<Polyline>();
+                for (int j = 0; j < vDivs - 1; j++)
+                {
+                    pa = popGrid.GetChromosome(i).GetDNA(j);
+                    pb = popGrid.GetChromosome(i + 1).GetDNA(j);
+                    pc = popGrid.GetChromosome(i).GetDNA(j + 1);
+                    pd = popGrid.GetChromosome(i + 1).GetDNA(j + 1);
 
+                    ptMid = MidPoint(pc, pd);
+
+                    chrRow.Add(new Polyline(new Point3d[] { pa, pb, ptMid, pa }));
+                    chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, (i == 0) ? pc : MidPoint(popGrid.GetChromosome(i - 1).GetDNA(j + 1), pc), pa }));
+
+                }
+                pop.Add(chrRow);
+            }
+            return pop;
+        }
+
+        private Point3d MidPoint(Point3d pa, Point3d pb)
+        {
+            return new Point3d((pa.X + pb.X) / 2, (pa.Y + pb.Y) /2, (pa.Z + pb.Z) / 2);
         }
 
         /// <summary>

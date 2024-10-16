@@ -393,5 +393,15 @@ namespace Laga.Geometry
         {
             return this.x == vector.x && this.y == vector.y && this.z == vector.z;
         }
+
+        /// <summary>
+        /// The middle location between 2 vectors
+        /// </summary>
+        /// <param name="vector">First Vector</param>
+        /// <returns>Vector</returns>
+        public Vector MidVector(Vector vector)
+        {
+            return new Vector((this.x + vector.x) / 2, (this.y + vector.y) /2, (this.Z + vector.z) / 2);
+        }
     }
 }
