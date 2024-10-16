@@ -50,7 +50,7 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2024.10.3": {
+      "Laga/2024.10.16": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -174,7 +174,7 @@
         "version.txt"
       ]
     },
-    "Laga/2024.10.3": {
+    "Laga/2024.10.16": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -182,7 +182,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2024.10.3",
+      "Laga >= 2024.10.16",
       "Microsoft.CSharp >= 4.7.0",
       "RhinoCommon >= 7.36.23346.16351",
       "System.Data.DataSetExtensions >= 4.5.0"
@@ -192,7 +192,7 @@
     "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "2024.10.3",
+    "version": "2024.10.16",
     "restore": {
       "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "projectName": "LagaRhino",
@@ -252,13 +252,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
