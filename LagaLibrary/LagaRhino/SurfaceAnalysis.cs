@@ -10,7 +10,8 @@ namespace LagaRhino
     public class SurfaceAnalysis
     {
         private static Interval interval = new Interval(0, 1);
-        private Population<Point3d> popGrid;
+        private Population<Point3d> popGrid; 
+
         readonly private Surface srf;
         private readonly int uDivs;
         private readonly int vDivs;
@@ -34,9 +35,11 @@ namespace LagaRhino
             for (int i = 0; i < uDivs; i++)
             {
                 mPts = new List<Point3d>();
+                
                 for (int j = 0; j < vDivs; j++)
                 {
                     mPts.Add(srf.PointAt(i * uSpan, j * vSpan));
+                    
                 }
                 popGrid.Add(new Chromosome<Point3d>(mPts));
             }
@@ -126,10 +129,14 @@ namespace LagaRhino
         /// </summary>
         public Population<Polyline> TriangularPattern()
         {
-            Population<Polyline> pop = new Population<Polyline>();
+            Population<Polyline> pop = new Population<Polyline>
+            {
+                TriangleEdge(popGrid, 0, vDivs)
+            };
+
             Chromosome<Polyline> chrRow;
             Point3d pa, pb, pc, pd, ptMid;
-            
+
             for (int i = 0; i < uDivs - 1; i++)
             {
                 chrRow = new Chromosome<Polyline>();
@@ -143,12 +150,49 @@ namespace LagaRhino
                     ptMid = MidPoint(pc, pd);
 
                     chrRow.Add(new Polyline(new Point3d[] { pa, pb, ptMid, pa }));
-                    chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, (i == 0) ? pc : MidPoint(popGrid.GetChromosome(i - 1).GetDNA(j + 1), pc), pa }));
 
+                    if (i > 0)
+                        chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, MidPoint(pc, popGrid.GetChromosome(i - 1).GetDNA(j + 1)), pa }));
                 }
                 pop.Add(chrRow);
             }
+            pop.Add(TriangleEdgeEnd(popGrid, uDivs, vDivs));
+
             return pop;
+        }
+
+        private Chromosome<Polyline> TriangleEdgeEnd(Population<Point3d> popGrid, int popIndex, int size)
+        {
+            Point3d pa, pb, pc, ptMid;
+            Chromosome<Polyline> chrRow = new Chromosome<Polyline>(); ;
+            for (int j = 0; j < size - 1; j++)
+            {
+                pa = popGrid.GetChromosome(popIndex - 1).GetDNA(j);
+                pb = popGrid.GetChromosome(popIndex - 1).GetDNA(j + 1);
+                pc = popGrid.GetChromosome(popIndex - 2).GetDNA(j + 1);
+
+                ptMid = MidPoint(pc, pb);
+
+                chrRow.Add(new Polyline(new Point3d[] { pa, pb, ptMid, pa }));
+            }
+            return chrRow;
+        }
+
+        private Chromosome<Polyline> TriangleEdge(Population<Point3d> popGrid, int popIndex, int size)
+        {
+            Point3d pa, pb, pc, ptMid;
+            Chromosome<Polyline> chrRow = new Chromosome<Polyline>(); ;
+            for (int j = 0; j < size - 1; j++)
+            {
+                pa = popGrid.GetChromosome(popIndex).GetDNA(j);
+                pb = popGrid.GetChromosome(popIndex + 1).GetDNA(j + 1);
+                pc = popGrid.GetChromosome(popIndex).GetDNA(j + 1);
+
+                ptMid = MidPoint(pc, pb);
+
+                chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, pc, pa }));
+            }
+            return chrRow;
         }
 
         private Point3d MidPoint(Point3d pa, Point3d pb)

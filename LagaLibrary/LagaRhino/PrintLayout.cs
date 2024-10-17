@@ -16,8 +16,8 @@ namespace LagaRhino
         private Rhino.DocObjects.Tables.ViewTable rhinoViews;
         private readonly string folder;
         private readonly int dpi;
-        private readonly double width;
-        private readonly double height;
+        //private readonly double width;
+        //private readonly double height;
 
         /// <summary>
         /// 
