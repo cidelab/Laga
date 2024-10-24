@@ -10,10 +10,31 @@ namespace Laga.GeneticAlgorithm
     /// Create and Manipulate Populations
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class Population<T> : IEnumerable
+    public class Population<T> : IEnumerable<Chromosome<T>>
     {
         readonly private List<Chromosome<T>> pop;
         readonly private int popSize;
+        private Chromosome<T> highestFitnessChromosome;
+        private Chromosome<T> lowestFitnessChromosome;
+        private double totalFitness;
+
+        /// <summary>
+        /// Return the higher chromosome in the population
+        /// </summary>
+        /// <returns><![CDATA[Chromosome<T>]]></returns>
+        public Chromosome<T> Higher() => highestFitnessChromosome;
+
+        /// <summary>
+        /// Return the lower chromosome in the population
+        /// </summary>
+        /// <returns><![CDATA[Chromosome<T>]]></returns>
+        public Chromosome<T> Lower() => lowestFitnessChromosome;
+
+        /// <summary>
+        /// return the average fitness in the population
+        /// </summary>
+        /// <returns>double</returns>
+        public double FitnessAverage() => totalFitness / pop.Count;
 
         /// <summary>
         /// Construct a predifined size population 
@@ -32,8 +53,9 @@ namespace Laga.GeneticAlgorithm
         {
             pop = new List<Chromosome<T>>();
         }
+
         /// <summary>
-        /// 
+        /// Population count
         /// </summary>
         public int Count
         {
@@ -44,39 +66,36 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Return the Higher Ranked Chromosome based on the fitness evaluation
-        /// </summary>
-        /// <returns></returns>
-        public Chromosome<T> Higher()
-        {
-            return pop.OrderBy(chr => chr.Fitness).Last();
-        }
-
-        /// <summary>
-        /// 
+        /// Add a chromosome to the population
         /// </summary>
         /// <typeparamref name="T">The type for Chr</typeparamref>
         /// <param name="chromosome"></param>
         public void Add(Chromosome<T> chromosome)
         {
+            if (popSize > 0 && pop.Count >= popSize)
+                throw new InvalidOperationException("Population size limit reached");
+
+            UpdateFitnessStatistics(chromosome);
+
             pop.Add(chromosome);
         }
 
+        private void UpdateFitnessStatistics(Chromosome<T> newChromosome)
+        {
+            totalFitness += newChromosome.Fitness;
+            if (highestFitnessChromosome == null || newChromosome.Fitness > highestFitnessChromosome.Fitness)
+                highestFitnessChromosome = newChromosome;
+            if (lowestFitnessChromosome == null || newChromosome.Fitness < lowestFitnessChromosome.Fitness)
+                lowestFitnessChromosome = newChromosome;
+        }
+
         /// <summary>
-        /// 
+        /// Delete a chromosome from the population
         /// </summary>
         /// <param name="index"></param>
         public void Delete(int index)
         {
             pop.RemoveAt(index);
-        }
-        /// <summary>
-        /// Return the Lower ranked Chr based on the fitness evaluation
-        /// </summary>
-        /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> Lower()
-        {
-            return pop.OrderBy(chr => chr.Fitness).First();
         }
 
         /// <summary>
@@ -90,18 +109,23 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// 
+        /// Print a population
         /// </summary>
-        /// <returns></returns>
-       public double FitnessAverage()
+        /// <returns>string</returns>
+        public override string ToString()
         {
-            double fltAverage = 0;
-            for (int i = 0; i < pop.Count; i++)
-            {
-                fltAverage += pop[i].Fitness;
-            }
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Population:");
 
-            return fltAverage / pop.Count;
+            for (int i = 0; i < pop.Count; i++)
+                sb.AppendLine($"Chromosome {i}: {pop[i].ToString()} (Fitness: {pop[i].Fitness})");
+            
+            return sb.ToString();
+        }
+
+        IEnumerator<Chromosome<T>> IEnumerable<Chromosome<T>>.GetEnumerator()
+        {
+            return pop.GetEnumerator();
         }
 
         /// <summary>
@@ -113,19 +137,5 @@ namespace Laga.GeneticAlgorithm
             return pop.GetEnumerator();
         }
 
-        /// <summary>
-        /// Print a population
-        /// </summary>
-        /// <returns>string</returns>
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Population: ");
-
-            for (int i = 0; i < pop.Count; i++)
-                sb.AppendLine(pop[i].ToString());
-            
-            return sb.ToString();
-        }
     }
 }

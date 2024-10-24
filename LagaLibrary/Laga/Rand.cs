@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using Laga.GeneticAlgorithm;
 
 namespace Laga.Numbers
@@ -12,51 +13,37 @@ namespace Laga.Numbers
     /// </summary>
     public class Rand
     {
-        private static readonly Random rnd = new Random(DateTime.Now.Millisecond);
+        private static readonly ThreadLocal<Random> rnd = new ThreadLocal<Random>(() => new Random());
 
         /// <summary>
         /// Generate random numbers
         /// </summary>
-        /// <param name="size">The amount of random values in the list</param>
-        /// <param name="min">The minimum value</param>
-        /// <param name="max">The maximum value</param>
-        /// <returns>float[]</returns>
-        public static float[] Numbers(int size, float min, float max)
+        /// <typeparam name="T">Generic type</typeparam>
+        /// <param name="size">number of random values</param>
+        /// <param name="min">The minimum value in the range</param>
+        /// <param name="max">The maximum value in the range</param>
+        /// <returns>a list of random values</returns>
+        public static T[] Numbers<T>(int size, T min, T max) where T : struct, IComparable
         {
-            Random rnd = new Random();
-
-            float[] arrN = new float[size];
+            T[] arrN = new T[size];
             for (int i = 0; i < size; i++)
-                arrN[i] = min + (float)rnd.NextDouble() * (max - min);
-
+            {
+                dynamic minVal = min;
+                dynamic maxVal = max;
+                arrN[i] = minVal + (T)(rnd.Value.NextDouble() * (maxVal - minVal));
+            }
             return arrN;
         }
 
         /// <summary>
-        /// Generate random numbers
-        /// </summary>
-        /// <param name="size">The amount of random values in the list</param>
-        /// <param name="min">The minimum value</param>
-        /// <param name="max">The maximum value</param>
-        /// <returns>double[]</returns>
-        public static double[] Numbers(int size, double min, double max)
-        {
-            double[] arrN = new double[size];
-            for (int i = 0; i < size; i++)
-                arrN[i] = (min + (float)rnd.NextDouble() * (max - min));
-
-            return arrN;
-        }
-
-        /// <summary>
-        /// Random Integer between a range
+        ///  Generates a random a random integer between a range
         /// </summary>
         /// <param name="min">The minimum value in the range</param>
         /// <param name="max">The maximum value in the range</param>
         /// <returns>integer</returns>
-        public static int IntNumber(int min, int max)
+        public static int NextInt(int min, int max)
         {
-            return min + (int)(rnd.NextDouble() * (max - min));
+            return rnd.Value.Next(min, max);
         }
         /// <summary>
         /// Random value between 0 and 1
@@ -64,29 +51,43 @@ namespace Laga.Numbers
         /// <returns>double</returns>
         public static double DblNumber()
         {
-            return rnd.NextDouble();
+            return rnd.Value.NextDouble();
         }
 
         /// <summary>
-        /// Float Number between a range
+        /// Generates a random double between min and max
+        /// </summary>
+        /// <param name="min">The minimum value in the range</param>
+        /// <param name="max">The maximum value in the range</param>
+        /// <returns>double</returns>
+        public static double NextDouble(double min, double max)
+        {
+            return min + rnd.Value.NextDouble() * (max - min);
+        }
+
+        /// <summary>
+        ///  Generates a random float Number between a range
         /// </summary>
         /// <param name="min">The minimum value in the range</param>
         /// <param name="max">The maximum value in the range</param>
         /// <returns>float</returns>
-        public static float FltNumber(float min, float max)
+        public static float NextFloat(float min, float max)
         {
-            return min + (float)DblNumber() * (max - min);
+            return min + (float)rnd.Value.NextDouble() * (max - min);
         }
 
         /// <summary>
-        /// 
+        /// Generates a random character
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
         public static char Character(int start, int end)
         {
-            return (char)Rand.IntNumber(start, end);
+            if (start < 0 || end > 255 || start > end)
+                throw new ArgumentOutOfRangeException("Character range is invalid.");
+
+            return (char)rnd.Value.Next(start, end);
         }
     }
 }

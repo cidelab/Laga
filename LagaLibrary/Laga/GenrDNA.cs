@@ -31,6 +31,22 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="size"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="generator"></param>
+        /// <returns></returns>
+        public static Chromosome<T> Rand_Chromosome<T>(int size, T min, T max, Func<T, T, T> generator)
+        {
+            Chromosome<T> chrom = new Chromosome<T>(size);
+            for (int i = 0; i < size; i++)
+                chrom.Add(generator(min, max));
+            return chrom;
+        }    
+        /// <summary>
         /// Generates a float Chr between min and max
         /// </summary>
         /// <param name="size">the number of floats in the Chr</param>
@@ -42,24 +58,7 @@ namespace Laga.GeneticAlgorithm
             Chromosome<float> ch = new Chromosome<float>();
 
             for (int i = 0; i < size; i++)
-                ch.Add(Rand.FltNumber(min, max));
-
-            return ch;
-        }
-
-        /// <summary>
-        /// Generates a Chromosome composed by random integers
-        /// </summary>
-        /// <param name="size">the number of characters in the Chr</param>
-        /// <param name="min">min value</param>
-        /// <param name="max">max value</param>
-        /// <returns>int Chromosome</returns>
-        public static Chromosome<int> Rand_Integer(int size, int min, int max)
-        {
-            Chromosome<int> ch = new Chromosome<int>();
-
-            for (int i = 0; i < size; i++)
-                ch.Add(Rand.IntNumber(min, max));
+                ch.Add(Rand.NextFloat(min, max));
 
             return ch;
         }
@@ -96,7 +95,7 @@ namespace Laga.GeneticAlgorithm
             int index, temp;
             for (int i = 0; i < n; i++)
             {
-                index = Rand.IntNumber(i, n);
+                index = Rand.NextInt(i, n);
                 temp = chr.GetDNA(index);
                 chr.SetDNA(index, chr.GetDNA(i));
                 chr.SetDNA(i, temp);

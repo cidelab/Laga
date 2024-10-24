@@ -127,7 +127,7 @@ namespace Laga.GeneticAlgorithm
             Chromosome<float> ch = new Chromosome<float>();
 
             for (int i = 0; i < size; i++)
-                ch.Add(Rand.FltNumber(min, max));
+                ch.Add(Rand.NextFloat(min, max));
 
             return ch;
         }
@@ -146,7 +146,7 @@ namespace Laga.GeneticAlgorithm
             int[] ch = new int[size];
 
             for (int i = 0; i < size; i++)
-                ch[i] = Rand.IntNumber(min, max);
+                ch[i] = Rand.NextInt(min, max);
             
             return ch;
         }
@@ -162,7 +162,7 @@ namespace Laga.GeneticAlgorithm
             Chromosome<int> ch = new Chromosome<int>();
 
             for (int i = 0; i < size; i++)
-                ch.Add(Rand.IntNumber(min, max));
+                ch.Add(Rand.NextInt(min, max));
 
             return ch;
         }
@@ -260,7 +260,7 @@ namespace Laga.GeneticAlgorithm
             int index, temp;
             for(int i = 0; i < n; i++)
             {
-                index = Rand.IntNumber(i, n);
+                index = Rand.NextInt(i, n);
                 temp = chr.GetDNA(index);
                 chr.SetDNA(index, chr.GetDNA(i));
                 chr.SetDNA(i, temp);

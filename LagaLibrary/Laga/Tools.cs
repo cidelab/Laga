@@ -377,7 +377,7 @@ namespace Laga.Numbers
 
             for (int i = 0; i < cant; i++)
             {
-                index = Rand.IntNumber(i, cant);
+                index = Rand.NextInt(i, cant);
                 (arrObjMuts[i], arrObjMuts[index]) = (arrObjMuts[index], arrObjMuts[i]);
             }
             return arrObjMuts;
@@ -412,7 +412,7 @@ namespace Laga.Numbers
         /// <returns>char</returns>
         public static char RandomChar(int start, int end)
         {
-            return (char)Rand.IntNumber(start, end + 1);// GetRandomNumber(start, end + 1);
+            return (char)Rand.NextInt(start, end + 1);// GetRandomNumber(start, end + 1);
         }
 
         /// <summary>

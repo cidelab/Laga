@@ -50,8 +50,8 @@ namespace Laga.GeneticAlgorithm
 
             for (int i = 0; i < popSize; i++)
             {
-                crA = matPool.GetChromosome(Rand.IntNumber(0, sizeMatPool));
-                crB = matPool.GetChromosome(Rand.IntNumber(0, sizeMatPool));
+                crA = matPool.GetChromosome(Rand.NextInt(0, sizeMatPool));
+                crB = matPool.GetChromosome(Rand.NextInt(0, sizeMatPool));
                 child = new Chromosome<T>();
                 
                 for (int j = 0; j < crA.Count; j++)

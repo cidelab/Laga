@@ -145,7 +145,7 @@ namespace Laga.GeneticAlgorithm
 
             for (int i = count - 1; i > 0; i--)
             {
-                int index = Rand.IntNumber(i, count);
+                int index = Rand.NextInt(i, count);
 
                 T temp = this.GetDNA(i);
 
