@@ -13,7 +13,7 @@ namespace LagaRhino
     public class PrintLayout
     {
         private readonly RhinoDoc doc;
-        private Rhino.DocObjects.Tables.ViewTable rhinoViews;
+        private readonly Rhino.DocObjects.Tables.ViewTable rhinoViews;
         private readonly string folder;
         private readonly int dpi;
         //private readonly double width;

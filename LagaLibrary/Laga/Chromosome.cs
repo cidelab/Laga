@@ -30,24 +30,24 @@ namespace Laga.GeneticAlgorithm
         public List<T> Chr { get; set; }
 
         /// <summary>
-        /// cons 1
+        /// Constructor by size
         /// </summary>
         public Chromosome(int size)
         {
-            Chr = new List<T>(size);
+            this.Chr = new List<T>(size);
         }
 
         /// <summary>
-        /// 
+        /// constructor from a list of genes
         /// </summary>
         /// <param name="ListDna"></param>
         public Chromosome(List<T> ListDna)
         {
-            Chr = ListDna;
+            this.Chr = ListDna;
         }
 
         /// <summary>
-        /// 
+        ///  Generic constructor
         /// </summary>
         public Chromosome()
         {
@@ -84,8 +84,10 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="index">The location in the Chr</param>
         /// <param name="DNA">The DNA to insert</param>
-        public void InsertDNA(int index, T DNA)
+        public void SetDNA(int index, T DNA)
         {
+            if (index < 0 || index >= Chr.Count)
+                throw new ArgumentOutOfRangeException("index", "Index is out of range.");
             Chr[index] = DNA;
         }
 
@@ -117,7 +119,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Convert the Chr in a list
+        /// Convert the Chromosome in a list
         /// </summary>
         /// <returns>List</returns>
         public List<T> ToList()
@@ -126,7 +128,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Convert the Chr in Array;
+        /// Convert the Chromosome in Array;
         /// </summary>
         /// <returns>Array</returns>
         public T[] ToArray()
@@ -137,28 +139,27 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Fisher_Yates algorithm for the Chr
         /// </summary>
-        public void Fisher_Yates() //not working!!!
+        public void Fisher_Yates()
         {
-            int cant = this.Count;
-            int index;
-            T temp;
+            int count = this.Count;
 
-            for (int i = 0; i < cant; i++)
+            for (int i = count - 1; i > 0; i--)
             {
-                index = Rand.IntNumber(i, cant);
+                int index = Rand.IntNumber(i, count);
 
-                temp = this.GetDNA(index);
-                this.InsertDNA(index, this.GetDNA(i)); //arrMut[index] = arrMut[i];
-                this.InsertDNA(i, temp); //arrMut[i] = temp;
+                T temp = this.GetDNA(i);
+
+                this.SetDNA(i, this.GetDNA(index));
+                this.SetDNA(index, temp);
             }
         }
 
 
         /// <summary>
-        /// Make a deep copy from a Chr.
+        /// Create a new Chromosome making a deep copy of it.
         /// </summary>
         /// <returns>Chromosome</returns>
-        public Chromosome<T> Clone() { return new Chromosome<T>(); }
+        public Chromosome<T> Clone() { return new Chromosome<T>(new List<T>(this.Chr)); }
         
         // ICloneable implementation
         object ICloneable.Clone()

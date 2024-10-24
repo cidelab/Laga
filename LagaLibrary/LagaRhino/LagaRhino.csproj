@@ -20,9 +20,6 @@
     <DocumentationFile>bin\Debug\LagaRhino.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Laga\Laga.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="RhinoCommon" Version="7.36.23346.16351" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
@@ -33,4 +30,7 @@
    <ItemGroup>
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
+   <ItemGroup>
+     <ProjectReference Include="..\Laga\Laga.csproj" />
+   </ItemGroup>
 </Project>

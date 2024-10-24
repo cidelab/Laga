@@ -52,6 +52,7 @@ namespace LagaRhino
 
             //binary search...
         }
+
         /// <summary>
         /// Constructor, Subdivide the surface by u and v numbers.
         /// </summary>

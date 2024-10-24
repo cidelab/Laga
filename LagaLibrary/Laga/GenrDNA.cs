@@ -98,8 +98,8 @@ namespace Laga.GeneticAlgorithm
             {
                 index = Rand.IntNumber(i, n);
                 temp = chr.GetDNA(index);
-                chr.InsertDNA(index, chr.GetDNA(i));
-                chr.InsertDNA(i, temp);
+                chr.SetDNA(index, chr.GetDNA(i));
+                chr.SetDNA(i, temp);
             }
 
             return chr;
