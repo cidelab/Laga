@@ -22,14 +22,9 @@ namespace Laga.GeneticAlgorithm
         {
             get
             {
-                return Chr.Count;
+                return genes.Count;
             }
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<T> Chr { get; set; }
 
         /// <summary>
         /// Constructor accepting a fitness function
@@ -166,13 +161,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns>string</returns>
         public override string ToString()
         {
-            return string.Join(",", Chr);
+            return string.Join(",", genes);
         }
-
-
-
-
-
         
     }
 }

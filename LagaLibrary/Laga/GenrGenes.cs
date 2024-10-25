@@ -29,57 +29,7 @@ namespace Laga.GeneticAlgorithm
                 chrom.Add(generator(min, max));
             return chrom;
         }
-        /*
-        /// <summary>
-        /// The method generates a Chr composed by random doubles between min and max.
-        /// </summary>
-        /// <param name="size">the total doubles in the Chr</param>
-        /// <param name="min">The min value in the Chr</param>
-        /// <param name="max">The max value in the Chr (excluded)</param>
-        /// <returns>double Chromosome</returns>
-        public static Chromosome<double> Doubles(int size, double min, double max)
-        {
-            Chromosome<double> chrom = new Chromosome<double>();
-            for (int i = 0; i < size; i++)
-                chrom.Add(min + Rand.NextDouble() * (max - min));
-
-            return chrom;
-        }
-  
-        /// <summary>
-        /// Generates a float Chr between min and max
-        /// </summary>
-        /// <param name="size">the number of floats in the Chr</param>
-        /// <param name="min">min value</param>
-        /// <param name="max">max value</param>
-        /// <returns>float Chromosome</returns>
-        public static Chromosome<float> Floats(int size, float min, float max)
-        {
-            Chromosome<float> ch = new Chromosome<float>();
-
-            for (int i = 0; i < size; i++)
-                ch.Add(Rand.NextFloat(min, max));
-
-            return ch;
-        }
-
-        /// <summary>
-        /// Generates a integer Chromosome between min and max
-        /// </summary>
-        /// <param name="size">the number of floats in the Chr</param>
-        /// <param name="min">min value</param>
-        /// <param name="max">max value</param>
-        /// <returns>int Chromosome</returns>
-        public static Chromosome<int> Integers(int size, int min, int max)
-        {
-            Chromosome<int> ch = new Chromosome<int>();
-
-            for (int i = 0; i < size; i++)
-                ch.Add(Rand.NextInt(min, max));
-
-            return ch;
-        }
-        */
+ 
         /// <summary>
         /// Generates a binary Chromosome of 1s and 0s int type.
         /// </summary>

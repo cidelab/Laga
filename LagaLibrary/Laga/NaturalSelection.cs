@@ -26,7 +26,7 @@ namespace Laga.GeneticAlgorithm
         public static Population<T> RouletteWheel(Population<T> population, int maxItem)
         {
             Population<T> matingPool = new Population<T>(population.Count);
-            Chromosome<T> chrMax = population.Higher();
+            Chromosome<T> chrMax = population.GetHighestFitnessChromosome();
             double p1 = chrMax.Fitness;
             double p2 = 0;
             int r;
@@ -57,7 +57,7 @@ namespace Laga.GeneticAlgorithm
             //clone the array.
             Population<T> matingPool = new Population<T>(population.Count);
             int index;
-            Chromosome<T> chrMax = population.Higher();
+            Chromosome<T> chrMax = population.GetHighestFitnessChromosome();
             double p1 = chrMax.Fitness;
             double p2 = 0;
             double r;

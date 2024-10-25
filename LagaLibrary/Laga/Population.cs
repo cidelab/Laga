@@ -22,19 +22,19 @@ namespace Laga.GeneticAlgorithm
         /// Return the higher chromosome in the population
         /// </summary>
         /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> Higher() => highestFitnessChromosome;
+        public Chromosome<T> GetHighestFitnessChromosome() => highestFitnessChromosome;
 
         /// <summary>
         /// Return the lower chromosome in the population
         /// </summary>
         /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> Lower() => lowestFitnessChromosome;
+        public Chromosome<T> GetLowestFitnessChromosome() => lowestFitnessChromosome;
 
         /// <summary>
         /// return the average fitness in the population
         /// </summary>
         /// <returns>double</returns>
-        public double FitnessAverage() => totalFitness / pop.Count;
+        public double GetAverageFitness() => totalFitness / pop.Count;
 
         /// <summary>
         /// Construct a predifined size population 
