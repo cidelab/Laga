@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Laga.Geometry;
+using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
 {
@@ -43,15 +44,17 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>double Population</returns>
+        /// 
+        /*
         public Population<double> Rand_Double(int size, double min, double max)
         {
             Population<double> pop = new Population<double>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrDNA.Rand_Double(size, min, max));
+                pop.Add(GenrGenes.Rand_Double(size, min, max));
 
             return pop;
         }
-
+        */
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random floats.
         /// </summary>
@@ -59,15 +62,16 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>float Population</returns>
+        /*
         public Population<float> Rand_float(int size, float min, float max)
         {
             Population<float> pop = new Population<float>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrDNA.Rand_Float(size, min, max));
+                pop.Add(Rand.Floats(size, min, max));
 
             return pop;
         }
-
+        */
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random integers.
         /// </summary>
@@ -75,15 +79,16 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>int Population</returns>
+        /*
         public Population<int> Rand_Integer(int size, int min, int max)
         {
             Population<int> pop = new Population<int>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrDNA.Shuffle_Integer(min, max));
+                pop.Add(GenrGenes.Shuffle_Integer(min, max));
 
             return pop;
         }
-
+        */
         /// <summary>
         /// Genr8 a Population of chromosomes composed by 1s and 0s int type.
         /// </summary>
@@ -109,7 +114,7 @@ namespace Laga.GeneticAlgorithm
         {
             Population<int> pop = new Population<int>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrDNA.Binary_Integer(size));
+                pop.Add(GenrGenes.Binary_Integer(size));
 
             return pop;
         }
@@ -136,14 +141,16 @@ namespace Laga.GeneticAlgorithm
         /// - 2, 5, 0, 7, 6, 1, 4, 3, 8, 9, 10,
         /// </code>
         /// </example>
+        /// 
+        /*
         public Population<int> Shuffle_Integer(int min, int max)
         {
             Population<int> pop = new Population<int>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrDNA.Shuffle_Integer(min, max));
+                pop.Add(GenrGenes.Shuffle_Integer(min, max));
 
             return pop;
-        }
+        }*/
 
         /// <summary>
         /// Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.
@@ -168,7 +175,7 @@ namespace Laga.GeneticAlgorithm
         {
             Population<char> popChr = new Population<char>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                popChr.Add(GenrDNA.Binary_Char(size));
+                popChr.Add(GenrGenes.Binary_Char(size));
 
             return popChr;
         }
@@ -201,7 +208,7 @@ namespace Laga.GeneticAlgorithm
         {
             Population<char> popChr = new Population<char>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                popChr.Add(GenrDNA.Rand_Char(size, start, end));
+                popChr.Add(GenrGenes.Rand_Char(size, start, end));
 
             return popChr;
         }

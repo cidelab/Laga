@@ -43,7 +43,7 @@ namespace Laga.GeneticAlgorithm
                 {
                     if (rnd.NextDouble() < percentChrom)
                     {        
-                        chr.SetDNA(i, Tools.RandomChar(start, end));
+                        chr.SetGene(i, Tools.RandomChar(start, end));
                     }
                 }
             }
@@ -70,7 +70,7 @@ namespace Laga.GeneticAlgorithm
                     for (int j = 0; j < chr.Count; j++)
                     {
                         v = min + rnd.NextDouble() * (max - min);
-                        chr.SetDNA(j, v);
+                        chr.SetGene(j, v);
                     }
                 }
             }

@@ -225,7 +225,7 @@ namespace Laga.IO
         /// Return the n most frequently occuring words in the string
         /// </summary>      
         /// <param name="strMessage">the string</param>
-        /// <param name="topN">Top N Numbers to return</param>
+        /// <param name="topN">Top N GenrFloats to return</param>
         /// <returns>Dictionary</returns>
         public static Dictionary<string, int> CountWordsTopN(string strMessage, int topN)
         {

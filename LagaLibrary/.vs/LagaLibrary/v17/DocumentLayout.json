@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\genrgenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\genrgenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\crossover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\crossover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +19,16 @@
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\genrpopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\genrdna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\genrdna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A79B92-F30E-4932-9F0F-483E208A7763}|LagaRhino\\LagaRhino.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhino\\shoebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -72,72 +72,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "GenrPopulation.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrPopulation.cs",
+              "RelativeDocumentMoniker": "Laga\\GenrPopulation.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrPopulation.cs",
+              "RelativeToolTip": "Laga\\GenrPopulation.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:46:18.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Crossover.cs",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Crossover.cs",
               "RelativeDocumentMoniker": "Laga\\Crossover.cs",
               "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Crossover.cs",
               "RelativeToolTip": "Laga\\Crossover.cs",
-              "ViewState": "AgIAACwBAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:29:22.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GenrPopulation.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrPopulation.cs",
-              "RelativeDocumentMoniker": "Laga\\GenrPopulation.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrPopulation.cs",
-              "RelativeToolTip": "Laga\\GenrPopulation.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:17:10.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Population.cs",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
               "RelativeDocumentMoniker": "Laga\\Population.cs",
               "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
               "RelativeToolTip": "Laga\\Population.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwIoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAIsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T15:49:38.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "Chromosome.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
+              "RelativeDocumentMoniker": "Laga\\Chromosome.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
+              "RelativeToolTip": "Laga\\Chromosome.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T10:04:30.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Rand.cs",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Rand.cs",
               "RelativeDocumentMoniker": "Laga\\Rand.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Rand.cs",
-              "RelativeToolTip": "Laga\\Rand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Rand.cs*",
+              "RelativeToolTip": "Laga\\Rand.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T10:52:34.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenrDNA.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrDNA.cs",
-              "RelativeDocumentMoniker": "Laga\\GenrDNA.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrDNA.cs",
-              "RelativeToolTip": "Laga\\GenrDNA.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GenrGenes.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrGenes.cs",
+              "RelativeDocumentMoniker": "Laga\\GenrGenes.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\GenrGenes.cs",
+              "RelativeToolTip": "Laga\\GenrGenes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T10:50:18.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Numbers.cs",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Numbers.cs",
               "RelativeDocumentMoniker": "Laga\\Numbers.cs",
@@ -145,21 +158,7 @@
               "RelativeToolTip": "Laga\\Numbers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:48:13.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Chromosome.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
-              "RelativeDocumentMoniker": "Laga\\Chromosome.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
-              "RelativeToolTip": "Laga\\Chromosome.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwI0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:04:30.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:48:13.797Z"
             },
             {
               "$type": "Document",
@@ -219,7 +218,8 @@
               "RelativeToolTip": "LagaRhino\\SurfaceAnalysis.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:46:44.69Z"
+              "WhenOpened": "2024-10-16T08:46:44.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

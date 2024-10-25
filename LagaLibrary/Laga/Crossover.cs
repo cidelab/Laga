@@ -58,11 +58,11 @@ namespace Laga.GeneticAlgorithm
                 {
                     if (j >= cut)
                     {
-                        child.Add(crA.GetDNA(j));
+                        child.Add(crA.GetGene(j));
                     }
                     else
                     {
-                        child.Add(crB.GetDNA(j));
+                        child.Add(crB.GetGene(j));
                     }
                 }
                 selectedPop.Add(child);
@@ -115,11 +115,11 @@ namespace Laga.GeneticAlgorithm
             {
                 if( i > cut)
                 {
-                    child.Add(chromosomeA.GetDNA(i));
+                    child.Add(chromosomeA.GetGene(i));
                 }
                 else
                 {
-                    child.Add(chromosomeB.GetDNA(i));
+                    child.Add(chromosomeB.GetGene(i));
                 }
             }
 

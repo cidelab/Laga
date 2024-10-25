@@ -9,7 +9,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Generate different Chromosome types
     /// </summary>
-    [Obsolete("Please try GenrDNA instead", false)]
+    [Obsolete("Please try GenrGenes instead", false)]
     public class GenrChromosome
     {
         private int size;
@@ -207,7 +207,7 @@ namespace Laga.GeneticAlgorithm
             Chromosome<int> arrChr = new Chromosome<int>();
 
             for (int i = 0; i < size; i++)
-                arrChr.Add(Rand.DblNumber() >= 0.5 ? 1 : 0);
+                arrChr.Add(Rand.NextDouble() >= 0.5 ? 1 : 0);
 
             return arrChr;
         }
@@ -261,9 +261,9 @@ namespace Laga.GeneticAlgorithm
             for(int i = 0; i < n; i++)
             {
                 index = Rand.NextInt(i, n);
-                temp = chr.GetDNA(index);
-                chr.SetDNA(index, chr.GetDNA(i));
-                chr.SetDNA(i, temp);
+                temp = chr.GetGene(index);
+                chr.SetGene(index, chr.GetGene(i));
+                chr.SetGene(i, temp);
             }
 
             return chr;

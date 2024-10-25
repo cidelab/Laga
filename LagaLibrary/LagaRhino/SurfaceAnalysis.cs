@@ -143,17 +143,17 @@ namespace LagaRhino
                 chrRow = new Chromosome<Polyline>();
                 for (int j = 0; j < vDivs - 1; j++)
                 {
-                    pa = popGrid.GetChromosome(i).GetDNA(j);
-                    pb = popGrid.GetChromosome(i + 1).GetDNA(j);
-                    pc = popGrid.GetChromosome(i).GetDNA(j + 1);
-                    pd = popGrid.GetChromosome(i + 1).GetDNA(j + 1);
+                    pa = popGrid.GetChromosome(i).GetGene(j);
+                    pb = popGrid.GetChromosome(i + 1).GetGene(j);
+                    pc = popGrid.GetChromosome(i).GetGene(j + 1);
+                    pd = popGrid.GetChromosome(i + 1).GetGene(j + 1);
 
                     ptMid = MidPoint(pc, pd);
 
                     chrRow.Add(new Polyline(new Point3d[] { pa, pb, ptMid, pa }));
 
                     if (i > 0)
-                        chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, MidPoint(pc, popGrid.GetChromosome(i - 1).GetDNA(j + 1)), pa }));
+                        chrRow.Add(new Polyline(new Point3d[] { pa, ptMid, MidPoint(pc, popGrid.GetChromosome(i - 1).GetGene(j + 1)), pa }));
                 }
                 pop.Add(chrRow);
             }
@@ -168,9 +168,9 @@ namespace LagaRhino
             Chromosome<Polyline> chrRow = new Chromosome<Polyline>(); ;
             for (int j = 0; j < size - 1; j++)
             {
-                pa = popGrid.GetChromosome(popIndex - 1).GetDNA(j);
-                pb = popGrid.GetChromosome(popIndex - 1).GetDNA(j + 1);
-                pc = popGrid.GetChromosome(popIndex - 2).GetDNA(j + 1);
+                pa = popGrid.GetChromosome(popIndex - 1).GetGene(j);
+                pb = popGrid.GetChromosome(popIndex - 1).GetGene(j + 1);
+                pc = popGrid.GetChromosome(popIndex - 2).GetGene(j + 1);
 
                 ptMid = MidPoint(pc, pb);
 
@@ -185,9 +185,9 @@ namespace LagaRhino
             Chromosome<Polyline> chrRow = new Chromosome<Polyline>(); ;
             for (int j = 0; j < size - 1; j++)
             {
-                pa = popGrid.GetChromosome(popIndex).GetDNA(j);
-                pb = popGrid.GetChromosome(popIndex + 1).GetDNA(j + 1);
-                pc = popGrid.GetChromosome(popIndex).GetDNA(j + 1);
+                pa = popGrid.GetChromosome(popIndex).GetGene(j);
+                pb = popGrid.GetChromosome(popIndex + 1).GetGene(j + 1);
+                pc = popGrid.GetChromosome(popIndex).GetGene(j + 1);
 
                 ptMid = MidPoint(pc, pb);
 
@@ -216,10 +216,10 @@ namespace LagaRhino
                 chrRow = new Chromosome<Polyline>();
                 for (int j = 0; j < vDivs - 1; j++)
                 {
-                    pa = popGrid.GetChromosome(i).GetDNA(j);
-                    pb = popGrid.GetChromosome(i + 1).GetDNA(j);
-                    pc = popGrid.GetChromosome(i + 1).GetDNA(j + 1);
-                    pd = popGrid.GetChromosome(i).GetDNA(j + 1);
+                    pa = popGrid.GetChromosome(i).GetGene(j);
+                    pb = popGrid.GetChromosome(i + 1).GetGene(j);
+                    pc = popGrid.GetChromosome(i + 1).GetGene(j + 1);
+                    pd = popGrid.GetChromosome(i).GetGene(j + 1);
 
                     chrRow.Add(new Polyline(new Point3d[] {pa, pb, pc, pd, pa}));
                 }

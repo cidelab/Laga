@@ -317,7 +317,7 @@ namespace Laga.Numbers
 
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(Rand.DblNumber() * (cant - i));
+                int index = i + (int)(Rand.NextDouble() * (cant - i));
                 (arrMut[i], arrMut[index]) = (arrMut[index], arrMut[i]);
             }
             return arrMut;
@@ -333,7 +333,7 @@ namespace Laga.Numbers
             int n = arrData.Length;
             for (int i = 0; i < n; i++)
             {
-                int ri = i + (int)(Rand.DblNumber() * (n - i));
+                int ri = i + (int)(Rand.NextDouble() * (n - i));
                 (arrData[i], arrData[ri]) = (arrData[ri], arrData[i]);
             }
         }
@@ -350,7 +350,7 @@ namespace Laga.Numbers
            
             for (int i = 0; i < cant; i++)
             {
-                int index = i + (int)(Rand.DblNumber() * (cant - i));
+                int index = i + (int)(Rand.NextDouble() * (cant - i));
                 
                 //swap
                 (arrObjMuts[i], arrObjMuts[index]) = (arrObjMuts[index], arrObjMuts[i]);
@@ -392,7 +392,7 @@ namespace Laga.Numbers
         {
             char t;
 
-            if (Rand.DblNumber() < thershold)
+            if (Rand.NextDouble() < thershold)
             {
                 t = '1';
             }
