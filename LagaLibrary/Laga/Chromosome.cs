@@ -30,10 +30,12 @@ namespace Laga.GeneticAlgorithm
         /// Constructor accepting a fitness function
         /// </summary>
         /// <param name="FitnessFunction">Function to evaluate chromosome fitness</param>
-        public Chromosome(Func<Chromosome<T>, double> FitnessFunction)
+        /// <param name="genes"></param>
+        public Chromosome(Func<Chromosome<T>, double> FitnessFunction, IEnumerable<T> genes)
         {
-            this.genes = new List<T>();
+            this.genes = genes?.ToList() ?? new List<T>();
             this.fitnessFunction = FitnessFunction ?? throw new ArgumentNullException(nameof(fitnessFunction), "Fitness function cannot be null.");
+            cachedFitness = this.Fitness;
         }
 
         /// <summary>
@@ -48,9 +50,9 @@ namespace Laga.GeneticAlgorithm
         /// constructor from a list of genes
         /// </summary>
         /// <param name="genes"></param>
-        public Chromosome(List<T> genes)
+        public Chromosome(IEnumerable<T> genes)
         {
-            this.genes = genes ?? new List<T>();
+            this.genes = genes?.ToList();
         }
 
         /// <summary>
@@ -62,7 +64,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Get and set the Chr fitness
+        /// Get and set the Chr fitnessString
         /// </summary>
         public double Fitness
         {
@@ -74,6 +76,7 @@ namespace Laga.GeneticAlgorithm
                 }
                 return cachedFitness.Value;
             }
+            set{ cachedFitness = value; }
         }
 
         /// <summary>
@@ -138,9 +141,9 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Fisher_Yates algorithm for the Chromosome
+        /// Perform Fisher-Yates shuffle on the genes.
         /// </summary>
-        public void Fisher_Yates()
+        public void Shuffle()
         {
             int count = this.Count;
 
@@ -161,7 +164,9 @@ namespace Laga.GeneticAlgorithm
         /// <returns>string</returns>
         public override string ToString()
         {
-            return string.Join(",", genes);
+            string geneString = string.Join(", ", genes);
+            string fitnessString = cachedFitness.HasValue ? cachedFitness.Value.ToString() : "No fitness";
+            return $"Genes: {geneString} | Fitness: {fitnessString}";
         }
         
     }
