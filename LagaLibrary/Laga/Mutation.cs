@@ -329,7 +329,7 @@ namespace Laga.GeneticAlgorithm
             //clone the array.
             char[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
 
-            char rndChar; //random Character to replace
+            char rndChar; //random NextChar to replace
             int pointer; //random pointer, for the index
 
             for (int i = 0; i < cant; ++i) //the loop for the population
