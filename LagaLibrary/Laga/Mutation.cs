@@ -5,10 +5,24 @@ using Laga.Numbers;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Apply Mutations on the Population
+    /// Mutate class
     /// </summary>
-     public class Mutation
+    /// <typeparam name="T"></typeparam>
+     public static class Mutation<T>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static Func<int, char> Mutate(int min, int max)
+        {
+            return (geneIndex) => Rand.Character(min, max);
+        }
+
+        //old code
+        /*
         private float popPercent;
         private int cant;
         private int[] arrIndex;
@@ -19,7 +33,7 @@ namespace Laga.GeneticAlgorithm
         /// 
         /// </summary>
         /// <param name="MutationRate"></param>
-        public Mutation(float MutationRate)
+        public Mutate(float MutationRate)
         {
             popPercent = MutationRate;
             rnd = new Random(DateTime.Now.Millisecond);
@@ -77,7 +91,7 @@ namespace Laga.GeneticAlgorithm
             return population;
         }
 
-        #region Mutation
+        #region Mutate
         /// <summary>
         /// 
         /// </summary>
@@ -313,7 +327,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// A Mutation Algorithm
+        /// A Mutate Algorithm
         /// </summary>
         /// <param name="pop">The population to perform the mutation</param>
         /// <param name="ChroPercent">the percent of mutation in the Chr</param>
@@ -386,7 +400,6 @@ namespace Laga.GeneticAlgorithm
                 } while (c != 0);
             }
         }
+        */
     }
-
-    #endregion
 }

@@ -76,7 +76,7 @@ namespace Laga.GeneticAlgorithm
                 }
                 return cachedFitness.Value;
             }
-            set{ cachedFitness = value; }
+            set { cachedFitness = value; }
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace Laga.GeneticAlgorithm
         {
             return new List<T>(genes);
         }
-        
+
         /// <summary>
         /// Convert the Chromosome in Array;
         /// </summary>
@@ -168,6 +168,33 @@ namespace Laga.GeneticAlgorithm
             string fitnessString = cachedFitness.HasValue ? cachedFitness.Value.ToString() : "No fitness";
             return $"Genes: {geneString} | Fitness: {fitnessString}";
         }
-        
+
+        /// <summary>
+        /// Perform a crossover with another chromosome using a specified function.
+        /// </summary>
+        /// <param name="partner">The other parent chromosome</param>
+        /// <param name="CrossoverFunction">The crossover function to use</param>
+        /// <returns>Tuple containing two new Chromosome offspring</returns>
+        public (Chromosome<T>, Chromosome<T>) Crossover(Chromosome<T> partner, Func<Chromosome<T>, Chromosome<T>, (Chromosome<T>, Chromosome<T>)> CrossoverFunction)
+        {
+            return CrossoverFunction(this, partner);
+        }
+
+        /// <summary>
+        /// Mutate the chromosome
+        /// </summary>
+        /// <param name="mutationRate"></param>
+        /// <param name="MutationFunction"></param>
+        public void Mutate(double mutationRate, Func<int, T> MutationFunction)
+        {
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (Rand.NextDouble() < mutationRate)
+                {
+                        genes[i] = MutationFunction(i);
+                        cachedFitness = null;
+                } 
+            }
+        }
     }
 }
