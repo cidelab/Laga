@@ -129,7 +129,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2024.10.25",
+    "version": "2024.11.1",
     "restore": {
       "projectUniqueName": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
       "projectName": "Laga",
@@ -185,5 +185,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

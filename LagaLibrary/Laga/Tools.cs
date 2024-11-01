@@ -324,7 +324,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Experimental Fisher_Yates algorithm to shuffle the original array.
+        /// Experimental Shuffle algorithm to shuffle the original array.
         /// </summary>
         /// <typeparam name="T">the type of data</typeparam>
         /// <param name="arrData">the array of data</param>

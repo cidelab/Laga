@@ -460,7 +460,7 @@ namespace Laga.GeneticAlgorithm
 
                 for (int i = 0; i < sizePopulation; ++i)
                 {
-                    pop[i] = Tools.Fisher_Yates(Chr);
+                    pop[i] = Tools.Shuffle(Chr);
                 }
                 return pop;
             }

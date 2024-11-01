@@ -9,10 +9,44 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Different crossover type operations
     /// </summary>
-    public class Crossover<T>
+    public static class Crossover<T>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parentA"></param>
+        /// <param name="parentB"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
+        public static (Chromosome<T>, Chromosome<T>) OnePoint(Chromosome<T> parentA, Chromosome<T> parentB)
+        {
+            if (parentA.Count != parentB.Count)
+                throw new ArgumentException("Chromosomes must have the same length for crossover.");
 
-        private int[] arrIndex;
+            int crossoverPoint = Rand.NextInt(1, parentA.Count - 1);
+
+            var offspring1Genes = new List<T>();
+            var offspring2Genes = new List<T>();
+
+            for (int i = 0; i < parentA.Count; i++)
+            {
+                if (i < crossoverPoint)
+                {
+                    offspring1Genes.Add(parentA.GetGene(i));
+                    offspring2Genes.Add(parentB.GetGene(i));
+                }
+                else
+                {
+                    offspring1Genes.Add(parentA.GetGene(i));
+                    offspring2Genes.Add(parentB.GetGene(i));
+                }
+            }
+
+            return (new Chromosome<T>(offspring1Genes), new Chromosome<T>(offspring2Genes));
+        }
+
+        //old code
+        /*private int[] arrIndex;
 
         /// <summary>
         /// get and set indexes for parents in crossover.
@@ -69,8 +103,10 @@ namespace Laga.GeneticAlgorithm
             }
             return selectedPop;
         }
-        
+        */
+
         #region testing algorithms
+        /*
         /// <summary>
         /// 
         /// </summary>
@@ -125,10 +161,11 @@ namespace Laga.GeneticAlgorithm
 
             return child;
         }
+        */
         #endregion
 
         #region Single Point crossover
-        
+        /*
         /// <summary>
         /// A crossover algorithm performed in a single point of the Chr.
         /// </summary>
@@ -423,7 +460,7 @@ namespace Laga.GeneticAlgorithm
             }
             return inherencePop;
         }
-        
+        */
         #endregion
 
     }

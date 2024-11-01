@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {}
+    "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {}
   },
   "projects": {
-    "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-      "version": "2024.10.25",
+    "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+      "version": "2024.10.29",
       "restore": {
-        "projectUniqueName": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
         "projectName": "Laga",
-        "projectPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
-        "packagesPath": "C:\\Users\\delab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\obj\\",
+        "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "packagesPath": "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\delab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
               "version": "[4.5.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
