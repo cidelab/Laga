@@ -1,6 +1,0 @@
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\bin\Release\LagaRhino.dll
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\bin\Release\LagaRhino.pdb
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Release\LagaRhino.csproj.AssemblyReference.cache
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Release\LagaRhino.csproj.CoreCompileInputs.cache
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Release\LagaRhino.dll
-C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Release\LagaRhino.pdb
