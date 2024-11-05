@@ -7,8 +7,7 @@ namespace Laga.GeneticAlgorithm
     /// <summary>
     /// Mutate class
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-     public static class Mutation<T>
+     public static class Mutation
     {
         /// <summary>
         /// 
@@ -95,19 +94,19 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="percentChrom"></param>
         /// <returns></returns>
-        public object[][] MutationSwap(object[][] pop, float percentChrom)
+        public object[][] MutationSwap(object[][] chromosomes, float percentChrom)
         {
-            cant = (int)(popPercent * pop.Length);
+            cant = (int)(popPercent * chromosomes.Length);
             if (cant == 0) { cant = 1; }
 
             //deep copy the array.
-            object[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            object[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
             //random list...
-            int[] arrindex = new int[pop.Length];
+            int[] arrindex = new int[chromosomes.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
             arrindex = Tools.Fisher_Yates(arrindex); // fisher_yate(arrindex);
 
@@ -150,20 +149,20 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <param name="percentChrom"></param>
         /// <returns></returns>
-        public double[][] NumbMutation(double[][] pop, double min, double max, float percentChrom)
+        public double[][] NumbMutation(double[][] chromosomes, double min, double max, float percentChrom)
         {
-            cant = (int)(popPercent * pop.Length);
+            cant = (int)(popPercent * chromosomes.Length);
             if (cant == 0) { cant = 1; }
 
             //deep copy the array.
-            double[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            double[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
-            int[] arrindex = new int[pop.Length];
+            int[] arrindex = new int[chromosomes.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
             arrindex = Tools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
 
@@ -200,19 +199,19 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <param name="percentChrom"></param>
         /// <returns></returns>
-        public float[][] NumbMutation(float[][] pop, float min, float max, float percentChrom)
+        public float[][] NumbMutation(float[][] chromosomes, float min, float max, float percentChrom)
         {
-            cant = (int)(popPercent * pop.Length);
+            cant = (int)(popPercent * chromosomes.Length);
             if (cant == 0) { cant = 1; }
 
-            float[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            float[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
-            int[] arrindex = new int[pop.Length];
+            int[] arrindex = new int[chromosomes.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
             arrindex = Tools.Fisher_Yates(arrindex); 
 
@@ -247,20 +246,20 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <param name="percentChrom"></param>
         /// <returns></returns>
-        public int[][] NumbMutation(int[][] pop, int min, int max, float percentChrom)
+        public int[][] NumbMutation(int[][] chromosomes, int min, int max, float percentChrom)
         {
-            cant = (int)(popPercent * pop.Length);
+            cant = (int)(popPercent * chromosomes.Length);
             if (cant == 0) { cant = 1; }
 
             //deep copy the array.
-            int[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            int[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
-            int[] arrindex = new int[pop.Length];
+            int[] arrindex = new int[chromosomes.Length];
             for (int i = 0; i < arrindex.Length; ++i) arrindex[i] = i;
             arrindex = Tools.Fisher_Yates(arrindex); //fisher_yate(arrindex);
 
@@ -295,24 +294,24 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="ChroPercent"></param>
         /// <returns></returns>
-        public char[][] BinaryCharMutation(char[][] pop, float ChroPercent)
+        public char[][] BinaryCharMutation(char[][] chromosomes, float ChroPercent)
         {
-            SelectChromosomes(pop);
-            int chroCant = (int)(pop[0].Length * ChroPercent);
+            SelectChromosomes(chromosomes);
+            int chroCant = (int)(chromosomes[0].Length * ChroPercent);
             if (chroCant == 0) { chroCant = 1; }
 
             //deep copy the array.
-            char[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            char[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
             int[] arrPointer;
 
             char gen, mutGen;
             for (int i = 0; i < cant; ++i) //the loop for the population
             {
-                arrPointer = Tools.RandomInt(0, pop[i].Length, ChroPercent);
+                arrPointer = Tools.RandomInt(0, chromosomes[i].Length, ChroPercent);
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     gen = mutatedPop[arrIndex[i]][arrPointer[j]];
@@ -329,19 +328,19 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// A Mutate Algorithm
         /// </summary>
-        /// <param name="pop">The population to perform the mutation</param>
+        /// <param name="chromosomes">The population to perform the mutation</param>
         /// <param name="ChroPercent">the percent of mutation in the Chr</param>
         /// <param name="start">the start number for the table, inclusive: Eg: 97</param>
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns>char[][]</returns>
-        public char[][] CharMutation(char[][] pop, float ChroPercent, int start, int end)
+        public char[][] CharMutation(char[][] chromosomes, float ChroPercent, int start, int end)
         {
-            SelectChromosomes(pop);
-            int chroCant = (int)(pop[0].Length * ChroPercent);
+            SelectChromosomes(chromosomes);
+            int chroCant = (int)(chromosomes[0].Length * ChroPercent);
             if (chroCant == 0) { chroCant = 1; }
 
             //clone the array.
-            char[][] mutatedPop = pop.Select(a => a.ToArray()).ToArray();
+            char[][] mutatedPop = chromosomes.Select(a => a.ToArray()).ToArray();
 
             char rndChar; //random Character to replace
             int pointer; //random pointer, for the index
@@ -351,7 +350,7 @@ namespace Laga.GeneticAlgorithm
                 for (int j = 0; j < chroCant; ++j) //the loop for the chromosomes
                 {
                     rndChar = Tools.RandomChar(start, end); // RandomChar();
-                    pointer = rnd.Next(pop[i].Length);
+                    pointer = rnd.Next(chromosomes[i].Length);
                     mutatedPop[arrIndex[i]][pointer] = rndChar;
                 }
             }

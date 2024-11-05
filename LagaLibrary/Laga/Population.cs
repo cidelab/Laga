@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 
 namespace Laga.GeneticAlgorithm
-{ 
+{
     /// <summary>
     /// Create and Manipulate Populations
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class Population<T> : IEnumerable<Chromosome<T>>
     {
-        readonly private List<Chromosome<T>> pop;
+        readonly private List<Chromosome<T>> chromosomes;
         readonly private int popSize;
         private Chromosome<T> highestFitnessChromosome;
         private Chromosome<T> lowestFitnessChromosome;
@@ -31,10 +31,19 @@ namespace Laga.GeneticAlgorithm
         public Chromosome<T> GetLowestFitnessChromosome() => lowestFitnessChromosome;
 
         /// <summary>
+        /// Calculates the sum of all fitness values in the population.
+        /// </summary>
+        /// <returns>The sum of fitness values of all chromosomes.</returns>
+        public double SumFitness()
+        {
+            return chromosomes.Sum(Chromosome => Chromosome.Fitness);
+        }
+
+        /// <summary>
         /// return the average fitness in the population
         /// </summary>
         /// <returns>double</returns>
-        public double GetAverageFitness() => totalFitness / pop.Count;
+        public double GetAverageFitness() => totalFitness / chromosomes.Count;
 
         /// <summary>
         /// Construct a predifined size population 
@@ -43,7 +52,7 @@ namespace Laga.GeneticAlgorithm
         public Population(int SizePopulation)
         {
             this.popSize = SizePopulation;
-            pop = new List<Chromosome<T>>(SizePopulation);
+            chromosomes = new List<Chromosome<T>>(SizePopulation);
         }
 
         /// <summary>
@@ -51,19 +60,13 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         public Population()
         {
-            pop = new List<Chromosome<T>>();
+            chromosomes = new List<Chromosome<T>>();
         }
 
         /// <summary>
         /// Population count
         /// </summary>
-        public int Count
-        {
-            get
-            {
-                return pop.Count;
-            }
-        }
+        public int Count => chromosomes.Count;
 
         /// <summary>
         /// Add a chromosome to the population
@@ -72,12 +75,12 @@ namespace Laga.GeneticAlgorithm
         /// <param name="chromosome"></param>
         public void Add(Chromosome<T> chromosome)
         {
-            if (popSize > 0 && pop.Count >= popSize)
+            if (popSize > 0 && chromosomes.Count >= popSize)
                 throw new InvalidOperationException("Population size limit reached");
 
             UpdateFitnessStatistics(chromosome);
 
-            pop.Add(chromosome);
+            chromosomes.Add(chromosome);
         }
 
         private void UpdateFitnessStatistics(Chromosome<T> newChromosome)
@@ -95,7 +98,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="index"></param>
         public void Delete(int index)
         {
-            pop.RemoveAt(index);
+            chromosomes.RemoveAt(index);
         }
 
         /// <summary>
@@ -105,7 +108,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns><![CDATA[Chromosome<T>]]></returns>
         public Chromosome<T> GetChromosome(int index)
         {
-            return pop[index];
+            return chromosomes[index];
         }
 
         /// <summary>
@@ -117,15 +120,15 @@ namespace Laga.GeneticAlgorithm
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Population:");
 
-            for (int i = 0; i < pop.Count; i++)
-                sb.AppendLine($"Chromosome {i}: {pop[i].ToString()} (Fitness: {pop[i].Fitness})");
+            for (int i = 0; i < chromosomes.Count; i++)
+                sb.AppendLine($"Chromosome {i}: {chromosomes[i].ToString()} (Fitness: {chromosomes[i].Fitness})");
             
             return sb.ToString();
         }
 
         IEnumerator<Chromosome<T>> IEnumerable<Chromosome<T>>.GetEnumerator()
         {
-            return pop.GetEnumerator();
+            return chromosomes.GetEnumerator();
         }
 
         /// <summary>
@@ -134,7 +137,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public IEnumerator GetEnumerator()
         {
-            return pop.GetEnumerator();
+            return chromosomes.GetEnumerator();
         }
 
     }

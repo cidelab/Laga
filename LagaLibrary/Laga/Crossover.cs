@@ -18,7 +18,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="parentB"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public static (Chromosome<T>, Chromosome<T>) OnePoint(Chromosome<T> parentA, Chromosome<T> parentB)
+        public static (Chromosome<T>, Chromosome<T>) OneRandPoint(Chromosome<T> parentA, Chromosome<T> parentB)
         {
             if (parentA.Count != parentB.Count)
                 throw new ArgumentException("Chromosomes must have the same length for crossover.");
@@ -37,8 +37,8 @@ namespace Laga.GeneticAlgorithm
                 }
                 else
                 {
-                    offspring1Genes.Add(parentA.GetGene(i));
-                    offspring2Genes.Add(parentB.GetGene(i));
+                    offspring1Genes.Add(parentB.GetGene(i));
+                    offspring2Genes.Add(parentA.GetGene(i));
                 }
             }
 
@@ -384,8 +384,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Char[][]</returns>
         /// <example>
         /// <code>
-        /// GenrPopulation pop = new GenrPopulation(6);
-        /// char[][] charPop = pop.CharPopulation(5, 97, 122);
+        /// GenrPopulation chromosomes = new GenrPopulation(6);
+        /// char[][] charPop = chromosomes.CharPopulation(5, 97, 122);
         /// float[] rndFitness = Rand.RandomNumbers(6, 0f, 1f);
         /// 
         /// sort:

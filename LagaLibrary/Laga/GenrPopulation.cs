@@ -48,11 +48,11 @@ namespace Laga.GeneticAlgorithm
         /*
         public Population<double> Rand_Double(int size, double min, double max)
         {
-            Population<double> pop = new Population<double>(sizePopulation);
+            Population<double> chromosomes = new Population<double>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrGenes.Rand_Double(size, min, max));
+                chromosomes.Add(GenrGenes.Rand_Double(size, min, max));
 
-            return pop;
+            return chromosomes;
         }
         */
         /// <summary>
@@ -65,11 +65,11 @@ namespace Laga.GeneticAlgorithm
         /*
         public Population<float> Rand_float(int size, float min, float max)
         {
-            Population<float> pop = new Population<float>(sizePopulation);
+            Population<float> chromosomes = new Population<float>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(Rand.Floats(size, min, max));
+                chromosomes.Add(Rand.Floats(size, min, max));
 
-            return pop;
+            return chromosomes;
         }
         */
         /// <summary>
@@ -82,11 +82,11 @@ namespace Laga.GeneticAlgorithm
         /*
         public Population<int> Rand_Integer(int size, int min, int max)
         {
-            Population<int> pop = new Population<int>(sizePopulation);
+            Population<int> chromosomes = new Population<int>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrGenes.Shuffle_Integer(min, max));
+                chromosomes.Add(GenrGenes.Shuffle_Integer(min, max));
 
-            return pop;
+            return chromosomes;
         }
         */
         /// <summary>
@@ -145,11 +145,11 @@ namespace Laga.GeneticAlgorithm
         /*
         public Population<int> Shuffle_Integer(int min, int max)
         {
-            Population<int> pop = new Population<int>(sizePopulation);
+            Population<int> chromosomes = new Population<int>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                pop.Add(GenrGenes.Shuffle_Integer(min, max));
+                chromosomes.Add(GenrGenes.Shuffle_Integer(min, max));
 
-            return pop;
+            return chromosomes;
         }*/
 
         /// <summary>
@@ -190,7 +190,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>char Population</returns>
         /// <example>
         /// <code> 
-        /// Population pop = new GenrPopulation(5).Rand_Char(30, 50, 100);
+        /// Population chromosomes = new GenrPopulation(5).Rand_Char(30, 50, 100);
         /// result:
         /// Chromosome: 0
         /// - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
@@ -249,10 +249,10 @@ namespace Laga.GeneticAlgorithm
         /// }
         /// 
         /// Here we will creates the Chromosome...
-        /// GenrPopulation pop = new GenrPopulation(5); //population size...
+        /// GenrPopulation chromosomes = new GenrPopulation(5); //population size...
         ///
         /// our agent object...
-        /// object[] agentTrace = new object[pop.SizePop];
+        /// object[] agentTrace = new object[chromosomes.SizePop];
         /// Agent agent;
         ///
         /// genrChromosome to helps create the data.
@@ -271,7 +271,7 @@ namespace Laga.GeneticAlgorithm
         ///
         /// And we creates the population for the agents trajectories. 
         /// that's all.
-        /// Object[][] popAgents = pop.ObjectPopulationSwap(agentTrace, 1.0f, true);
+        /// Object[][] popAgents = chromosomes.ObjectPopulationSwap(agentTrace, 1.0f, true);
         ///
         /// result:
         /// Chromosome(agents trace) : 0
@@ -323,7 +323,7 @@ namespace Laga.GeneticAlgorithm
         /// </example>
         public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)
         {
-            object[][] pop = new object[sizePopulation][];
+            object[][] chromosomes = new object[sizePopulation][];
                   
                 for (int i = 0; i < sizePopulation; ++i)
                 {
@@ -331,15 +331,15 @@ namespace Laga.GeneticAlgorithm
 
                 if ((i == 0) && (InOut))
                     {
-                        pop[i] = SeedChromosome;
+                        chromosomes[i] = SeedChromosome;
                     }
                     else
                     {
-                        pop[i] = Tools.Fisher_YatesPercent(SeedChromosome, percent);
+                        chromosomes[i] = Tools.Fisher_YatesPercent(SeedChromosome, percent);
                     }
                 }
 
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -351,8 +351,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Population double[][]</returns>
         /// <example>
         /// <code>
-        /// GenrPopulation pop = new GenrPopulation(5);
-        /// double[][] dblPop = pop.NumPopulation(12, 0.00, 1.00);
+        /// GenrPopulation chromosomes = new GenrPopulation(5);
+        /// double[][] dblPop = chromosomes.NumPopulation(12, 0.00, 1.00);
         ///
         /// result for double population
         /// Chromosome: 0
@@ -369,7 +369,7 @@ namespace Laga.GeneticAlgorithm
         /// </example>
         public double[][] NumPopulation(int sizeChromosome, double min, double max)
         {
-            double[][] pop = new double[sizePopulation][];
+            double[][] chromosomes = new double[sizePopulation][];
             double[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
@@ -379,9 +379,9 @@ namespace Laga.GeneticAlgorithm
                 {
                     Chr[j] = min + rnd.NextDouble() * (max - min);
                 }
-                pop[i] = Chr;
+                chromosomes[i] = Chr;
             }
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -393,7 +393,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Population float[][]</returns>
         public float[][] NumPopulation(int sizeChromosome, float min, float max)
         {
-            float[][] pop = new float[sizePopulation][];
+            float[][] chromosomes = new float[sizePopulation][];
             float[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
@@ -403,9 +403,9 @@ namespace Laga.GeneticAlgorithm
                 {
                     Chr[j] = (float)(min + rnd.NextDouble() * (max - min));
                 }
-                pop[i] = Chr;
+                chromosomes[i] = Chr;
             }
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -417,7 +417,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Population int[][]</returns>
         public int[][] NumPopulation(int sizeChromosome, int min, int max)
         {
-            int[][] pop = new int[sizePopulation][];
+            int[][] chromosomes = new int[sizePopulation][];
             int[] Chr;
 
             for (int i = 0; i < sizePopulation; ++i)
@@ -427,9 +427,9 @@ namespace Laga.GeneticAlgorithm
                 {
                     Chr[j] = (int)(min + rnd.NextDouble() * ((max + 1) - min));
                 }
-                pop[i] = Chr;
+                chromosomes[i] = Chr;
             }
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -441,10 +441,10 @@ namespace Laga.GeneticAlgorithm
 
         public int[][] NumPopulationSwap(int min, int max)
         {
-            int[][] pop = new int[sizePopulation][];
+            int[][] chromosomes = new int[sizePopulation][];
             if (min >= max)
             {
-                return pop;
+                return chromosomes;
             }
             else
             {
@@ -460,9 +460,9 @@ namespace Laga.GeneticAlgorithm
 
                 for (int i = 0; i < sizePopulation; ++i)
                 {
-                    pop[i] = Tools.Shuffle(Chr);
+                    chromosomes[i] = Tools.Shuffle(Chr);
                 }
-                return pop;
+                return chromosomes;
             }
         }
 
@@ -476,7 +476,7 @@ namespace Laga.GeneticAlgorithm
 
         public int[][] BinaryPopulationInt(int sizeChromosome)
         {
-            int[][] pop = new int[sizePopulation][];
+            int[][] chromosomes = new int[sizePopulation][];
             int[] Chr;
 
 
@@ -494,9 +494,9 @@ namespace Laga.GeneticAlgorithm
                         Chr[j] = 0;
                     }
                 }
-                pop[i] = Chr;
+                chromosomes[i] = Chr;
             }
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -507,7 +507,7 @@ namespace Laga.GeneticAlgorithm
         
         public char[][] BinaryPopulationChr(int sizeChromosome)
         {
-            char[][] pop = new char[sizePopulation][];
+            char[][] chromosomes = new char[sizePopulation][];
             char[] arrChr;
 
             for (int i = 0; i < sizePopulation; ++i)
@@ -518,9 +518,9 @@ namespace Laga.GeneticAlgorithm
                     arrChr[j] = Tools.GetRandomNumber() >= 0.5 ? '1' : '0';
                 }
 
-                pop[i] = arrChr;
+                chromosomes[i] = arrChr;
             }
-            return pop;
+            return chromosomes;
         }
 
         /// <summary>
@@ -564,8 +564,8 @@ namespace Laga.GeneticAlgorithm
         /// <returns> a population of points</returns>
         /// <example>
         /// <code>
-        /// GenrPopulation pop = new GenrPopulation(5);
-        /// point[][] pntPop = pop.PointPopulation(4, 0, 100d, 0d, 100d, 0d, 100d);
+        /// GenrPopulation chromosomes = new GenrPopulation(5);
+        /// point[][] pntPop = chromosomes.PointPopulation(4, 0, 100d, 0d, 100d, 0d, 100d);
         ///
         /// result:
         /// Chromosome: 0

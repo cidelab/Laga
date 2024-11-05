@@ -183,8 +183,8 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Mutate the chromosome
         /// </summary>
-        /// <param name="mutationRate"></param>
-        /// <param name="MutationFunction"></param>
+        /// <param name="mutationRate">The percentage possibility to occur the mutation</param>
+        /// <param name="MutationFunction">The Mutation function</param>
         public void Mutate(double mutationRate, Func<int, T> MutationFunction)
         {
             for (int i = 0; i < this.Count; i++)

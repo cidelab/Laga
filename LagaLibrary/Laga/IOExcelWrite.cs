@@ -184,22 +184,22 @@ namespace Laga.IO
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="pop"></param>
+        /// <param name="chromosomes"></param>
         /// <param name="Row"></param>
         /// <param name="Col"></param>
         /// <param name="swap"></param>
-        public static bool WritePopulation<T>(Population<T> pop, int Row = 1, int Col = 1, bool swap = true)
+        public static bool WritePopulation<T>(Population<T> chromosomes, int Row = 1, int Col = 1, bool swap = true)
         {
             
             try
             {
-                if (pop.Count > 0)
+                if (chromosomes.Count > 0)
                 {
                     int origCol = Col;
                     int origRow = Row;
                     if (swap)
                     {
-                        foreach (List<T> lstString in pop)
+                        foreach (List<T> lstString in chromosomes)
                         {
                             Col = origCol;
                             foreach (T s in lstString)
@@ -212,7 +212,7 @@ namespace Laga.IO
                     }
                     else
                     {
-                        foreach (List<T> lstString in pop)
+                        foreach (List<T> lstString in chromosomes)
                         {
                             Row = origRow;
                             foreach (T s in lstString)
