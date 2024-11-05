@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Laga.Geometry;
-using Laga.Numbers;
-
+﻿
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
@@ -36,6 +31,8 @@ namespace Laga.GeneticAlgorithm
         {
             sizePopulation = SizePopulation;
         }
+        #region Old code
+        /*
 
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random floats.
@@ -44,8 +41,6 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>double Population</returns>
-        /// 
-        /*
         public Population<double> Rand_Double(int size, double min, double max)
         {
             Population<double> chromosomes = new Population<double>(sizePopulation);
@@ -54,7 +49,7 @@ namespace Laga.GeneticAlgorithm
 
             return chromosomes;
         }
-        */
+
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random floats.
         /// </summary>
@@ -62,7 +57,6 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>float Population</returns>
-        /*
         public Population<float> Rand_float(int size, float min, float max)
         {
             Population<float> chromosomes = new Population<float>(sizePopulation);
@@ -71,7 +65,7 @@ namespace Laga.GeneticAlgorithm
 
             return chromosomes;
         }
-        */
+
         /// <summary>
         /// Genr8 a Population of chromosomes composed by random integers.
         /// </summary>
@@ -79,7 +73,6 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>
         /// <returns>int Population</returns>
-        /*
         public Population<int> Rand_Integer(int size, int min, int max)
         {
             Population<int> chromosomes = new Population<int>(sizePopulation);
@@ -88,7 +81,7 @@ namespace Laga.GeneticAlgorithm
 
             return chromosomes;
         }
-        */
+
         /// <summary>
         /// Genr8 a Population of chromosomes composed by 1s and 0s int type.
         /// </summary>
@@ -142,7 +135,6 @@ namespace Laga.GeneticAlgorithm
         /// </code>
         /// </example>
         /// 
-        /*
         public Population<int> Shuffle_Integer(int min, int max)
         {
             Population<int> chromosomes = new Population<int>(sizePopulation);
@@ -150,7 +142,7 @@ namespace Laga.GeneticAlgorithm
                 chromosomes.Add(GenrGenes.Shuffle_Integer(min, max));
 
             return chromosomes;
-        }*/
+        }
 
         /// <summary>
         /// Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.
@@ -212,9 +204,7 @@ namespace Laga.GeneticAlgorithm
 
             return popChr;
         }
-    }
-}
-    /*
+
         /// <summary>
         /// Genr8 a random population based on a Chr of objects[]
         /// </summary>
@@ -324,20 +314,20 @@ namespace Laga.GeneticAlgorithm
         public object[][] ObjectPopulationSwap(object[] SeedChromosome, float percent, bool InOut)
         {
             object[][] chromosomes = new object[sizePopulation][];
-                  
-                for (int i = 0; i < sizePopulation; ++i)
-                {
-                    object[] copyChromosome = (object[])SeedChromosome.Clone();
+
+            for (int i = 0; i < sizePopulation; ++i)
+            {
+                object[] copyChromosome = (object[])SeedChromosome.Clone();
 
                 if ((i == 0) && (InOut))
-                    {
-                        chromosomes[i] = SeedChromosome;
-                    }
-                    else
-                    {
-                        chromosomes[i] = Tools.Fisher_YatesPercent(SeedChromosome, percent);
-                    }
+                {
+                    chromosomes[i] = SeedChromosome;
                 }
+                else
+                {
+                    chromosomes[i] = Tools.Fisher_YatesPercent(SeedChromosome, percent);
+                }
+            }
 
             return chromosomes;
         }
@@ -438,7 +428,6 @@ namespace Laga.GeneticAlgorithm
         /// <param name="min">The minimum value in the Chr, inclusive</param>
         /// <param name="max">The maximum value in the Chr, inclusive</param>
         /// <returns>Population int[][]</returns>
-
         public int[][] NumPopulationSwap(int min, int max)
         {
             int[][] chromosomes = new int[sizePopulation][];
@@ -473,7 +462,6 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Population int[][]</returns>
         /// <example>
         /// <code>
-
         public int[][] BinaryPopulationInt(int sizeChromosome)
         {
             int[][] chromosomes = new int[sizePopulation][];
@@ -504,7 +492,6 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="sizeChromosome">The size of the Chr</param>
         /// <returns>Population char[][]</returns>
-        
         public char[][] BinaryPopulationChr(int sizeChromosome)
         {
             char[][] chromosomes = new char[sizePopulation][];
@@ -532,7 +519,6 @@ namespace Laga.GeneticAlgorithm
         /// <param name="end">the end number for the table, inclusive: Eg: 122</param>
         /// <returns>Population char[][]</returns>
         /// <example>
-
         public char[][] CharPopulation(int sizeChromosome, int start, int end)
         {
             char[] Chr;
@@ -597,6 +583,8 @@ namespace Laga.GeneticAlgorithm
             }
             return popPoints;
         }
+        */
+        #endregion
     }
 }
-    */
+   

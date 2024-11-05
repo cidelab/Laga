@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Laga.Geometry;
-using Laga.Numbers;
 
 namespace Laga.Numbers
 {

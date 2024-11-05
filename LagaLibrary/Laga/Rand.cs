@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using Laga.GeneticAlgorithm;
 
 namespace Laga.Numbers
 {
@@ -104,6 +99,7 @@ namespace Laga.Numbers
 
         /// <summary>
         /// Generates a random character between min and max paremeters
+        /// See <a href="http://www.asciitable.com/">this link</a> for more information.
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>

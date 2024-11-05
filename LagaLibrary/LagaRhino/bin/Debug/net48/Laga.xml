@@ -378,76 +378,6 @@
             </summary>
             <param name="SizePopulation">The size of the Population</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrPopulation.Binary_Integer(System.Int32)">
-            <summary>
-            Genr8 a Population of chromosomes composed by 1s and 0s int type.
-            </summary>
-            <param name="size">the number of integers in the Chr</param>
-            <returns>int Population</returns>
-            <example>
-            <code>
-            Population pop = new GenrPopulation(5).Binary_Integer(20);
-            result:
-            Chromosome: 0
-            - 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
-            Chromosome: 1
-            - 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0,
-            Chromosome: 2
-            - 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0,
-            Chromosome: 3
-            - 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1,
-            Chromosome: 4
-            - 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0,
-            </code>
-            </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrPopulation.Binary_Char(System.Int32)">
-            <summary>
-            Genr8 a Population of chromosomes composed by binary characters of 1s and 0s.
-            </summary>
-            <param name="size">the number of characters in the Chr</param>
-            <returns>char Population</returns>
-            <example>
-            Population pop = new GenrPopulation(5).Binary_Char(10);
-            result:
-            Chromosome: 0
-            - 0, 1, 1, 1, 0, 0, 1, 0, 1, 0,
-            Chromosome: 1
-            - 1, 1, 1, 1, 0, 1, 0, 0, 0, 1,
-            Chromosome: 2
-            - 1, 1, 0, 0, 0, 1, 0, 1, 0, 1,
-            Chromosome: 3
-            - 0, 1, 0, 0, 1, 1, 1, 0, 1, 0,
-            Chromosome: 4
-            - 1, 0, 0, 0, 1, 0, 1, 1, 1, 1,
-            </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrPopulation.Rand_Char(System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Genr8 a Population of chromosomes composed by random characters.
-            See <a href="http://www.asciitable.com/">this link</a> for more information.
-            </summary>
-            <param name="size">the number of characters in the Chr</param>
-            <param name="start">the start number in the table, inclusive</param>
-            <param name="end">the end number in the table, exclusive</param>
-            <returns>char Population</returns>
-            <example>
-            <code> 
-            Population chromosomes = new GenrPopulation(5).Rand_Char(30, 50, 100);
-            result:
-            Chromosome: 0
-            - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
-            Chromosome: 1
-            - C, 7, T, ], W, W, 7, ?, 4, b, 4, C, L, ], I, Z, J, 8, :, A, S, b, L, 9, a, 7, Q, 6, U, T
-            Chromosome: 2
-            - H, C, O, b, ], O, M, a, H, C, @, 5, [, U, F, b, 2, P, X, 7, W, ?, :, d, Z, E, P, L, a, R
-            Chromosome: 3
-            - 7, 3, N, E, L, U, Y, N, 2, ^, ?, M, U, \, 3, O, 9, [, X, c, 7, 3, C, O, b, ;, ;, P, :, I
-            Chromosome: 4
-            - d, 2, 2, Z, =, ?, L, H, ;, V, :, H, P, ^,], ;, O, B, b, [, @, Y, Y, b, L, 5, T, c, G
-            </code>
-            </example>
-        </member>
         <member name="T:Laga.GeneticAlgorithm.Mutation">
             <summary>
             Mutate class
@@ -543,92 +473,6 @@
             <summary>
             To sort chromosomes in populations according to fitness evaluation.
             </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.#ctor">
-            <summary>
-            constructor
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Object[][],System.Single[],System.Boolean)">
-            <summary>
-            Sort the individuals in the population by fitness value.
-            </summary>
-            <param name="population">population to sort</param>
-            <param name="arrResults">Array of fitness in the population. Only two flavors are supported: int[] and float[]</param>
-            <param name="minmax">if is true the sort is by min to max, else max to min</param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Object[][],System.Int32[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Double[][],System.Single[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Double[][],System.Int32[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Single[][],System.Single[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Single[][],System.Int32[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Int32[][],System.Single[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Int32[][],System.Int32[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Single[],System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="population"></param>
-            <param name="arrResults"></param>
-            <param name="minmax"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.RankingSort.BidirectionalBubbleSort(System.Char[][],System.Int32[],System.Boolean)">
-            <summary>
-            An optimised BidirectionalBubbleSort method. Sort the individuals in the population by fitness value.
-            </summary>
-            <param name="population">population to sort</param>
-            <param name="arrResults">Array of fitness in the population. Only 2 flavors are supported: int[] and float[]</param>
-            <param name="minmax">if is true the sort is by min to max, else max to min</param>
-            <returns>automatically the population is sorted. the original population will be modified.</returns>
         </member>
         <member name="T:Laga.GeneticAlgorithm.Replacement">
             <summary>
@@ -1971,6 +1815,7 @@
         <member name="M:Laga.Numbers.Rand.NextChar(System.Int32,System.Int32)">
             <summary>
             Generates a random character between min and max paremeters
+            See <a href="http://www.asciitable.com/">this link</a> for more information.
             </summary>
             <param name="start"></param>
             <param name="end"></param>

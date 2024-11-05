@@ -8,7 +8,7 @@ namespace Laga.GeneticAlgorithm
     public class RankingSort
     {
         //LagaCasting lc = new LagaCasting();
-
+        /*
         private object[][] objPopulation;
         private double[][] dblPopulation;
         private float[][] fltPopulation;
@@ -557,6 +557,6 @@ namespace Laga.GeneticAlgorithm
             srtPopulation = population;
             intArrResults = arrResults;
         }
-
+        */
     }
 }

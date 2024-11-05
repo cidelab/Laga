@@ -12,9 +12,19 @@ namespace LagaExamples
     {
         public static void Run()
         {
-            Console.WriteLine("Running Basic Example 1...");
-            double dblRand = Rand.NextDouble(0, 1);
-            Console.WriteLine("random value between 0 and 1 (ex) is {0}", dblRand);
+            Console.WriteLine("Use this class to generate random numbers and data: \n");
+
+            double dblRand = Rand.NextDouble(0, 5);
+            Console.WriteLine("random value between 0.0 and 5.0 (exc.) > {0}", dblRand);
+
+            char charRand = Rand.NextChar(65, 91);
+            Console.WriteLine("any capital letter from A to Z > {0} \n", charRand);
+
+            Console.WriteLine("it possible to generate lists as well.");
+            float[] arrFloats = Rand.Floats(10, 10f, 20f);
+            arrFloats.ToList().ForEach(Console.WriteLine);
+            
+
             Console.ReadLine();
         }
     }

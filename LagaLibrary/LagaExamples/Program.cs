@@ -1,6 +1,6 @@
 ﻿namespace LagaExamples
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,8 +14,8 @@
             switch (choice)
             {
                 case "1":
-                   TestingRandom.Run();
-             break;
+                    TestingRandom.Run();
+                    break;
 
                 default:
                     Console.WriteLine("Invalid choice.");
