@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laga", "Laga\Laga.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LagaRhino", "LagaRhino\LagaRhino.csproj", "{F4A79B92-F30E-4932-9F0F-483E208A7763}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LagaExamples", "LagaExamples\LagaExamples.csproj", "{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F4A79B92-F30E-4932-9F0F-483E208A7763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A79B92-F30E-4932-9F0F-483E208A7763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A79B92-F30E-4932-9F0F-483E208A7763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
