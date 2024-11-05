@@ -111,5 +111,6 @@ namespace Laga.Numbers
 
             return (char)rnd.Value.Next(start, end);
         }
+
     }
 }
