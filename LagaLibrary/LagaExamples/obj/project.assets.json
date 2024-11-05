@@ -40,46 +40,6 @@
           "bin/placeholder/Laga.dll": {}
         }
       }
-    },
-    ".NETFramework,Version=v4.8/win7-x86": {
-      "Microsoft.CSharp/4.7.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Data.DataSetExtensions/4.5.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Data.DataSetExtensions"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "Laga/2024.11.5": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "System.Data.DataSetExtensions": "4.5.0"
-        },
-        "compile": {
-          "bin/placeholder/Laga.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Laga.dll": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -231,11 +191,6 @@
       "net48": {
         "targetAlias": "net48",
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win7-x86": {
-        "#import": []
       }
     }
   }

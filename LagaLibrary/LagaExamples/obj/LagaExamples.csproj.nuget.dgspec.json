@@ -51,11 +51,6 @@
           "targetAlias": "net48",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "win7-x86": {
-          "#import": []
-        }
       }
     },
     "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
