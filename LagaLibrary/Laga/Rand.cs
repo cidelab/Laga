@@ -16,7 +16,7 @@ namespace Laga.Numbers
         private static readonly ThreadLocal<Random> rnd = new ThreadLocal<Random>(() => new Random());
 
         /// <summary>
-        /// Generate a list of Integers
+        /// Generate a list of Integers between min and max paremeters
         /// </summary>
         /// <param name="size">number of integers in the list</param>
         /// <param name="min">the min value</param>
@@ -31,7 +31,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a list of floats
+        /// Generate a list of floats between min and max paremeters
         /// </summary>
         /// <param name="size">number of floats in the list</param>
         /// <param name="min">the min value</param>
@@ -46,7 +46,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a list of doubles
+        /// Generate a list of doubles between min and max paremeters
         /// </summary>
         /// <param name="size">number of doubles in the list</param>
         /// <param name="min">the min value</param>
@@ -61,7 +61,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        ///  Generates a random a random integer between a range
+        ///  Generates a random a random integer between min and max paremeters
         /// </summary>
         /// <param name="min">The minimum value in the range</param>
         /// <param name="max">The maximum value in the range</param>
@@ -81,7 +81,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generates a random double between min and max
+        /// Generates a random double between min and max paremeters
         /// </summary>
         /// <param name="min">The minimum value in the range</param>
         /// <param name="max">The maximum value in the range</param>
@@ -92,7 +92,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        ///  Generates a random float Number between a range
+        ///  Generates a random float Number between min and max paremeters
         /// </summary>
         /// <param name="min">The minimum value in the range</param>
         /// <param name="max">The maximum value in the range</param>
@@ -103,15 +103,15 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generates a random character
+        /// Generates a random character between min and max paremeters
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
-        /// <returns></returns>
-        public static char Character(int start, int end)
+        /// <returns>char</returns>
+        public static char NextChar(int start, int end)
         {
             if (start < 0 || end > 255 || start > end)
-                throw new ArgumentOutOfRangeException("Character range is invalid.");
+                throw new ArgumentOutOfRangeException("NextChar range is invalid.");
 
             return (char)rnd.Value.Next(start, end);
         }
