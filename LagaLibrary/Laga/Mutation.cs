@@ -17,7 +17,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns></returns>
         public static Func<int, char> Mutate(int min, int max)
         {
-            return (geneIndex) => Rand.Character(min, max);
+            return (geneIndex) => Rand.NextChar(min, max);
         }
 
         //old code

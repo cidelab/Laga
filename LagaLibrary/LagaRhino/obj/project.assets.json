@@ -50,11 +50,7 @@
           "lib/net45/_._": {}
         }
       },
-<<<<<<< HEAD
       "Laga/2024.11.5": {
-=======
-      "Laga/2024.11.1": {
->>>>>>> e44d6ab206b5b64de02e0fdff7cec22639204a34
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -178,11 +174,7 @@
         "version.txt"
       ]
     },
-<<<<<<< HEAD
     "Laga/2024.11.5": {
-=======
-    "Laga/2024.11.1": {
->>>>>>> e44d6ab206b5b64de02e0fdff7cec22639204a34
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -190,38 +182,26 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-<<<<<<< HEAD
       "Laga >= 2024.11.5",
-=======
-      "Laga >= 2024.11.1",
->>>>>>> e44d6ab206b5b64de02e0fdff7cec22639204a34
       "Microsoft.CSharp >= 4.7.0",
       "RhinoCommon >= 7.36.23346.16351",
       "System.Data.DataSetExtensions >= 4.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\delab\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\": {}
   },
   "project": {
-<<<<<<< HEAD
     "version": "2024.11.5",
-=======
-    "version": "2024.11.1",
->>>>>>> e44d6ab206b5b64de02e0fdff7cec22639204a34
     "restore": {
-      "projectUniqueName": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "projectName": "LagaRhino",
-      "projectPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
-      "packagesPath": "C:\\Users\\delab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
+      "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "packagesPath": "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\delab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -236,8 +216,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-              "projectPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+            "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+              "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
             }
           }
         }
@@ -270,16 +250,8 @@
             "version": "[4.5.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaRhino\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
