@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,6 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\App.razor",
+              "RelativeDocumentMoniker": "Dashboard\\App.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\App.razor",
+              "RelativeToolTip": "Dashboard\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T01:33:24.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Program.cs",
+              "RelativeDocumentMoniker": "Dashboard\\Program.cs",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Program.cs",
+              "RelativeToolTip": "Dashboard\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T01:33:11.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CombineProblem.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\CombineProblem.cs",
               "RelativeDocumentMoniker": "LagaExamples\\CombineProblem.cs",
@@ -54,12 +88,11 @@
               "RelativeToolTip": "LagaExamples\\CombineProblem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:58:59.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T22:58:59.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TestingChromosomes.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\TestingChromosomes.cs",
               "RelativeDocumentMoniker": "LagaExamples\\TestingChromosomes.cs",
@@ -67,12 +100,11 @@
               "RelativeToolTip": "LagaExamples\\TestingChromosomes.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:38:59.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T22:38:59.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TestingRandom.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\TestingRandom.cs",
               "RelativeDocumentMoniker": "LagaExamples\\TestingRandom.cs",
@@ -80,25 +112,24 @@
               "RelativeToolTip": "LagaExamples\\TestingRandom.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T15:15:11.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T15:15:11.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
               "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
               "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
               "RelativeToolTip": "LagaExamples\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAwAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T15:15:08.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Rand.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Rand.cs",
               "RelativeDocumentMoniker": "Laga\\Rand.cs",
@@ -106,8 +137,7 @@
               "RelativeToolTip": "Laga\\Rand.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAgwHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:06:08.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T16:06:08.295Z"
             }
           ]
         }
