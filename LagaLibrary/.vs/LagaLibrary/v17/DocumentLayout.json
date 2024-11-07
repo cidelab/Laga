@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\mydashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\mydashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\components\\linechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\components\\linechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\dashboard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\dashboard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\dashboard\\hubs\\algorithmhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64C67F8A-9104-49AC-A347-1569E1515E9B}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\hubs\\algorithmhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\delab\\documents\\github\\laga\\lagalibrary\\lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +94,137 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor",
+              "RelativeDocumentMoniker": "Dashboard\\_Imports.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor",
+              "RelativeToolTip": "Dashboard\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:39:17.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FetchData.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\FetchData.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\FetchData.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\FetchData.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\FetchData.razor",
+              "ViewState": "AQIAABEAAAAAAAAAAAAlwCkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:39:03.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Dashboard\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:37:22.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:36:44.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "Dashboard\\Pages\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:36:40.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\MyDashboard.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\MyDashboard.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\MyDashboard.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\MyDashboard.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAApwDgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T17:36:04.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Dashboard\\Pages\\_Host.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T13:05:17.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LineChart.razor",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Components\\LineChart.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Components\\LineChart.razor",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Components\\LineChart.razor",
+              "RelativeToolTip": "Dashboard\\Components\\LineChart.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T11:22:36.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AlgorithmHub.cs",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Hubs\\AlgorithmHub.cs",
+              "RelativeDocumentMoniker": "Dashboard\\Hubs\\AlgorithmHub.cs",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Hubs\\AlgorithmHub.cs",
+              "RelativeToolTip": "Dashboard\\Hubs\\AlgorithmHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:43:39.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.csproj",
+              "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Dashboard.csproj",
+              "RelativeDocumentMoniker": "Dashboard\\Dashboard.csproj",
+              "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Dashboard.csproj",
+              "RelativeToolTip": "Dashboard\\Dashboard.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T10:31:48.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\App.razor",
               "RelativeDocumentMoniker": "Dashboard\\App.razor",
@@ -67,20 +237,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Program.cs",
               "RelativeDocumentMoniker": "Dashboard\\Program.cs",
               "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Dashboard\\Program.cs",
               "RelativeToolTip": "Dashboard\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T01:33:11.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "CombineProblem.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\CombineProblem.cs",
               "RelativeDocumentMoniker": "LagaExamples\\CombineProblem.cs",
@@ -88,11 +258,12 @@
               "RelativeToolTip": "LagaExamples\\CombineProblem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:58:59.028Z"
+              "WhenOpened": "2024-11-05T22:58:59.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "TestingChromosomes.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\TestingChromosomes.cs",
               "RelativeDocumentMoniker": "LagaExamples\\TestingChromosomes.cs",
@@ -100,23 +271,25 @@
               "RelativeToolTip": "LagaExamples\\TestingChromosomes.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:38:59.954Z"
+              "WhenOpened": "2024-11-05T22:38:59.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "TestingRandom.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\TestingRandom.cs",
               "RelativeDocumentMoniker": "LagaExamples\\TestingRandom.cs",
               "ToolTip": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\TestingRandom.cs",
               "RelativeToolTip": "LagaExamples\\TestingRandom.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T15:15:11.098Z"
+              "WhenOpened": "2024-11-05T15:15:11.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
               "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
@@ -129,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Rand.cs",
               "DocumentMoniker": "C:\\Users\\delab\\Documents\\GitHub\\Laga\\LagaLibrary\\Laga\\Rand.cs",
               "RelativeDocumentMoniker": "Laga\\Rand.cs",
@@ -137,7 +310,8 @@
               "RelativeToolTip": "Laga\\Rand.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAgwHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:06:08.295Z"
+              "WhenOpened": "2024-11-05T16:06:08.295Z",
+              "EditorCaption": ""
             }
           ]
         }

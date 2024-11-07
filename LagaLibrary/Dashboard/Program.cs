@@ -1,4 +1,5 @@
 using Dashboard.Data;
+using Dashboard.Hubs;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -28,4 +29,7 @@ app.UseRouting();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
+app.MapHub<AlgorithmHub>("/algorithmHub");
+
 app.Run();
+
