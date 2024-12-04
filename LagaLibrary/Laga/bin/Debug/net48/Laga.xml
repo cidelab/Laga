@@ -788,6 +788,11 @@
             <param name="selectionCount">The number of chromosomes to select for the mating pool</param>
             <returns>A new population representing the mating pool</returns>
         </member>
+        <member name="T:Laga.Numbers.ColorRange">
+            <summary>
+            Color range class
+            </summary>
+        </member>
         <member name="M:Laga.Numbers.ColorRange.LerpColor(System.Drawing.Color,System.Drawing.Color,System.Double)">
             <summary>
             Linearly interpolates between two colors.

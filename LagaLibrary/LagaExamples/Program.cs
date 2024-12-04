@@ -1,8 +1,29 @@
-﻿namespace LagaExamples
+﻿using System;
+
+namespace LagaExamples
 {
     public class Program
     {
         static void Main(string[] args)
+        {
+            Console.WriteLine("Press Escape (Esc) to exit the loop.");
+
+            while (true)
+            {
+                Console.Clear();
+                ConsoleKeyInfo input = UI();
+                    if (input.Key == ConsoleKey.Escape)
+                    {
+                        Console.WriteLine("Exiting...");
+                        break;
+                    }
+
+                // Add a pause or prompt for continuation if desired
+                Console.ReadKey(intercept: true);
+            }
+        }
+
+        private static ConsoleKeyInfo UI()
         {
             Console.WriteLine("Select an example to run:\n");
             Console.WriteLine("1. Random value Examples");
@@ -10,23 +31,23 @@
             Console.WriteLine("3. Combinatorial Problem");
             Console.Write("Enter your choice: ");
 
-            string choice = Console.ReadLine();
-
-            switch (choice)
+            ConsoleKeyInfo myKey = Console.ReadKey(true);
+            switch (myKey.KeyChar)
             {
-                case "1":
+                case '1':
                     TestingRandom.Run();
                     break;
-                case "2":
+                case '2':
                     TestingChromosomes.Run();
                     break;
-                case "3":
+                case '3':
                     CombineProblem.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
             }
+            return myKey;
         }
     }
 }

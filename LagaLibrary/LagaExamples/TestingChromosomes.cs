@@ -38,7 +38,7 @@ namespace LagaExamples
 
             Console.WriteLine("A chromosome can take any type");
 
-            Console.ReadLine();
+            Console.WriteLine("\n /// - Press any key to return to the menu - /// ");
         }
     }
 }

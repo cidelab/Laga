@@ -33,7 +33,8 @@ namespace LagaExamples
             Color clr = Rand.NextColor();
             Console.WriteLine(clr.ToString());
 
-            Console.ReadLine();
+            Console.WriteLine("\n /// - Press any key to return to the menu - /// ");
+
         }
     }
 }

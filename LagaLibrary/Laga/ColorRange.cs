@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace Laga.Numbers
 {
+    /// <summary>
+    /// Color range class
+    /// </summary>
     public class ColorRange
     {
         // Predefined color palettes (e.g., Matplotlib-style)
