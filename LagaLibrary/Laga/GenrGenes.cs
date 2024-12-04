@@ -67,9 +67,7 @@ namespace Laga.GeneticAlgorithm
         public static Chromosome<char> Rand_Char(int size, int start, int end)
         {
             Chromosome<char> chr = new Chromosome<char>(size);
-
-            for (int i = 0; i < size; i++)
-                chr.Add(Rand.NextChar(start, end));
+            chr.AddGenes(Rand.Characters(size, start, end));
 
             return chr;
         }
@@ -77,7 +75,7 @@ namespace Laga.GeneticAlgorithm
         /// <summary>
         /// Generates a random Vector chromosome
         /// </summary>
-        /// <param name="size">the number of Vectors in the Chr</param>
+        /// <param name="size">number of Vectors in the Chromosome</param>
         /// <param name="Xcoord">The range of values in the X coordinate</param>
         /// <param name="Ycoord">The range of values in the Y coordinate</param>
         /// <param name="Zcoord">The range of values in the Z coordinate</param>
@@ -85,9 +83,7 @@ namespace Laga.GeneticAlgorithm
         public static Chromosome<Vector> Rand_Vector(int size, Range Xcoord, Range Ycoord, Range Zcoord)
         {
             Chromosome<Vector> chrVector = new Chromosome<Vector>();
-            for (int i = 0; i < size; i++)
-                chrVector.Add(new Vector(Rand.NextDouble() * (Xcoord.Max - Xcoord.Min), Rand.NextDouble() * (Ycoord.Max - Ycoord.Min), Rand.NextDouble() * (Zcoord.Max - Zcoord.Min)));
-        
+            chrVector.AddGenes(Rand.Vectors(size, Xcoord, Ycoord, Zcoord));
             return chrVector;
         }
 

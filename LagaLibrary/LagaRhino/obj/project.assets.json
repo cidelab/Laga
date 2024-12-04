@@ -50,7 +50,7 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2024.11.5": {
+      "Laga/2024.12.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -174,7 +174,7 @@
         "version.txt"
       ]
     },
-    "Laga/2024.11.5": {
+    "Laga/2024.12.4": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -182,17 +182,18 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2024.11.5",
+      "Laga >= 2024.12.4",
       "Microsoft.CSharp >= 4.7.0",
       "RhinoCommon >= 7.36.23346.16351",
       "System.Data.DataSetExtensions >= 4.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\": {}
+    "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2024.11.5",
+    "version": "2024.12.4",
     "restore": {
       "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "projectName": "LagaRhino",
@@ -200,8 +201,12 @@
       "packagesPath": "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -209,7 +214,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -231,7 +235,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net48": {
@@ -250,7 +255,7 @@
             "version": "[4.5.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

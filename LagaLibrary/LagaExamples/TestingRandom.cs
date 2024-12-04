@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,18 +13,25 @@ namespace LagaExamples
     {
         public static void Run()
         {
-            Console.WriteLine("Use this class to generate random numbers and data: \n");
+            Console.WriteLine("\n /// - Use the class Laga.Numbers.Rand() to generate random data: - /// \n");
 
             double dblRand = Rand.NextDouble(0, 5);
-            Console.WriteLine("random value between 0.0 and 5.0 (exc.) > {0}", dblRand);
+            Console.WriteLine("Random double between 0.0 and 5.0 (exc.): {0} \n", dblRand);
 
             char charRand = Rand.NextChar(65, 91);
-            Console.WriteLine("any capital letter from A to Z > {0} \n", charRand);
+            Console.WriteLine("Any capital letter from A to Z: {0} \n", charRand);
 
-            Console.WriteLine("it possible to generate lists as well.");
+            Console.WriteLine("Array of capital characters:");
+            char[] arrChs = Rand.Characters(20, 65, 91);
+            Console.WriteLine(string.Join(", ", arrChs)+ "\n");
+
+            Console.WriteLine("It's possible to generate lists as well; float list:");
             float[] arrFloats = Rand.Floats(10, 10f, 20f);
-            arrFloats.ToList().ForEach(Console.WriteLine);
-            
+            Console.WriteLine(string.Join(", ", arrFloats) + "\n");
+
+            Console.WriteLine("Random color:");
+            Color clr = Rand.NextColor();
+            Console.WriteLine(clr.ToString());
 
             Console.ReadLine();
         }

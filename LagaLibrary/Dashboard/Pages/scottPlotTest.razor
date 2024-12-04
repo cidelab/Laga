@@ -1,0 +1,18 @@
+﻿@page "/"
+@using ScottPlot
+@using ScottPlot.Blazor
+
+<h1>ScottPlot 5 in Blazor</h1>
+
+<BlazorPlot @ref=BlazorPlot Style="width: 400px; height: 300px;" />
+
+@code {
+
+    BlazorPlot BlazorPlot { get; set; } = new();
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        BlazorPlot.Plot.Add.Signal(Generate.Sin());
+        BlazorPlot.Plot.Add.Signal(Generate.Cos());
+    }
+}

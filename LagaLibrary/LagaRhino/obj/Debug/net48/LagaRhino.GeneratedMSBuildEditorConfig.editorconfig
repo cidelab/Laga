@@ -3,3 +3,6 @@ build_property.RootNamespace = LagaRhino
 build_property.ProjectDir = C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

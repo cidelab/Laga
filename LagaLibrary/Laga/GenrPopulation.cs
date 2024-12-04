@@ -182,7 +182,7 @@ namespace Laga.GeneticAlgorithm
         /// <returns>char Population</returns>
         /// <example>
         /// <code> 
-        /// Population chromosomes = new GenrPopulation(5).Rand_Char(30, 50, 100);
+        /// Population chromosomes = new GenrPopulation(5).Characters(30, 50, 100);
         /// result:
         /// Chromosome: 0
         /// - Q, 5, A, P, ^, \, T, ^, F, ;, U, ?, Z, :, 5, E, B, ], S, H, A, L, I, =, _, ~, E, B, @, H
@@ -196,11 +196,11 @@ namespace Laga.GeneticAlgorithm
         /// - d, 2, 2, Z, =, ?, L, H, ;, V, :, H, P, ^,], ;, O, B, b, [, @, Y, Y, b, L, 5, T, c, G
         /// </code>
         /// </example>
-        public Population<char> Rand_Char(int size, int start, int end)
+        public Population<char> Characters(int size, int start, int end)
         {
             Population<char> popChr = new Population<char>(sizePopulation);
             for (int i = 0; i < sizePopulation; i++)
-                popChr.Add(GenrGenes.Rand_Char(size, start, end));
+                popChr.Add(GenrGenes.Characters(size, start, end));
 
             return popChr;
         }

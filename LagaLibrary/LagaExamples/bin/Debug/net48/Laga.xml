@@ -356,7 +356,7 @@
             <summary>
             Generates a random Vector chromosome
             </summary>
-            <param name="size">the number of Vectors in the Chr</param>
+            <param name="size">number of Vectors in the Chromosome</param>
             <param name="Xcoord">The range of values in the X coordinate</param>
             <param name="Ycoord">The range of values in the Y coordinate</param>
             <param name="Zcoord">The range of values in the Z coordinate</param>
@@ -787,6 +787,436 @@
             <param name="tournamentSize">The number of chromosomes in each tournament, sometimes called pressure</param>
             <param name="selectionCount">The number of chromosomes to select for the mating pool</param>
             <returns>A new population representing the mating pool</returns>
+        </member>
+        <member name="M:Laga.Numbers.ColorRange.LerpColor(System.Drawing.Color,System.Drawing.Color,System.Double)">
+            <summary>
+            Linearly interpolates between two colors.
+            </summary>
+            <param name="color1">The starting color.</param>
+            <param name="color2">The ending color.</param>
+            <param name="t">Interpolation factor (0.0 to 1.0).</param>
+            <returns>An interpolated color.</returns>
+        </member>
+        <member name="M:Laga.Numbers.ColorRange.InterpolateColor(System.Collections.Generic.List{System.Drawing.Color},System.Double)">
+            <summary>
+            Interpolates a color from a given palette based on a normalized position (0.0 to 1.0).
+            </summary>
+            <param name="palette">The base palette colors.</param>
+            <param name="t">Normalized position (0.0 to 1.0).</param>
+            <returns>An interpolated color.</returns>
+        </member>
+        <member name="M:Laga.Numbers.ColorRange.Generate(System.String,System.Int32)">
+            <summary>
+            Generates a range of colors based on a selected palette.
+            </summary>
+            <param name="paletteName">Name of the predefined palette.</param>
+            <param name="count">Number of colors to generate in the range.</param>
+            <returns>A list of interpolated colors.</returns>
+        </member>
+        <member name="T:Laga.Numbers.Range">
+            <summary>
+            Range for numbers
+            </summary>
+        </member>
+        <member name="P:Laga.Numbers.Range.Max">
+            <summary>
+            Get the max value
+            </summary>
+        </member>
+        <member name="P:Laga.Numbers.Range.Min">
+            <summary>
+            Get the min value
+            </summary>
+        </member>
+        <member name="M:Laga.Numbers.Range.#ctor(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="Start"></param>
+            <param name="End"></param>
+        </member>
+        <member name="T:Laga.Numbers.Function">
+            <summary>
+            famouse Maths functions
+            </summary>
+        </member>
+        <member name="M:Laga.Numbers.Function.ThreeXplusOne(System.Int32)">
+            <summary>
+            3X + 1 function
+            From the book: The modern C# Challenge
+            </summary>
+            <param name="Sequence">the number to begin the sequence</param>
+        </member>
+        <member name="M:Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="lstData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Numbers.Function.Sigmoid(System.Single)">
+            <summary>
+            Sigmoid activation function
+            </summary>
+            <param name="t">param to evaluate</param>
+            <returns>the param map</returns>
+        </member>
+        <member name="M:Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Sigmoid simulation function
+            </summary>
+            <param name="t">param to evaluate</param>
+            <param name="A1">The initial value</param>
+            <param name="A2">The final value</param>
+            <param name="B1">The initial scope value</param>
+            <param name="B2">The final scope value</param>
+            <param name="decay">factor decay</param>
+            <returns>the param map</returns>
+        </member>
+        <member name="M:Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sigmoid sumulation function
+            </summary>
+            <param name="t">param to evaluate</param>
+            <param name="A1">The initial value</param>
+            <param name="A2">The final value</param>
+            <param name="B1">The initial scope value</param>
+            <param name="B2">The final scope value</param>
+            <param name="decay">factor decay</param>
+            <returns>the param map</returns>
+        </member>
+        <member name="M:Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Flower Spiral
+            </summary>
+            <param name="range"></param>
+            <param name="span"></param>
+            <param name="radOne"></param>
+            <param name="radTwo"></param>
+            <param name="radThree"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Laga.Numbers.Rand">
+            <summary>
+            Random number class
+            </summary>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Integers(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generate a list of Integers between min and max paremeters
+            </summary>
+            <param name="size">number of integers in the list</param>
+            <param name="min">the min value</param>
+            <param name="max">the max value</param>
+            <returns>Array of integers</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Floats(System.Int32,System.Single,System.Single)">
+            <summary>
+            Generate a list of floats between min and max paremeters
+            </summary>
+            <param name="size">number of floats in the list</param>
+            <param name="min">the min value</param>
+            <param name="max">the max value</param>
+            <returns>Array of floats</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Doubles(System.Int32,System.Double,System.Double)">
+            <summary>
+            Generate a list of doubles between min and max paremeters
+            </summary>
+            <param name="size">number of doubles in the list</param>
+            <param name="min">the min value</param>
+            <param name="max">the max value</param>
+            <returns>Array of doubles</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Characters(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates a random array of characters.
+            See <a href="http://www.asciitable.com/">this link</a> for more information.
+            </summary>
+            <param name="size">the length of characters in the Chr</param>
+            <param name="start">the start number in the table, inclusive</param>
+            <param name="end">the end number in the table, exclusive</param>
+            <returns>Array of chars</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Colours(System.Int32)">
+            <summary>
+            Generate a random array of colours.
+            </summary>
+            <param name="size">number of colours in the array</param>
+            <returns>Array of colours</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.Vectors(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)">
+            <summary>
+            Generate a random array of vectors.
+            </summary>
+            <param name="size">number of vectors in the array</param>
+            <param name="Xcoord">The range of values in the X coordinate</param>
+            <param name="Ycoord">The range of values in the Y coordinate</param>
+            <param name="Zcoord">The range of values in the Z coordinate</param>
+            <returns>Array of vectors</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextInt(System.Int32,System.Int32)">
+            <summary>
+             Generates a random a random integer between min and max paremeters
+            </summary>
+            <param name="min">The minimum value in the range</param>
+            <param name="max">The maximum value in the range</param>
+            <returns>integer</returns> 
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextDouble">
+            <summary>
+            Random value between 0 and 1
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextDouble(System.Double,System.Double)">
+            <summary>
+            Generates a random double between min and max paremeters
+            </summary>
+            <param name="min">The minimum value in the range</param>
+            <param name="max">The maximum value in the range</param>
+            <returns>double</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextFloat(System.Single,System.Single)">
+            <summary>
+             Generates a random float Number between min and max paremeters
+            </summary>
+            <param name="min">The minimum value in the range</param>
+            <param name="max">The maximum value in the range</param>
+            <returns>float</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextChar(System.Int32,System.Int32)">
+            <summary>
+            Generates a random character between min and max paremeters
+            See <a href="http://www.asciitable.com/">this link</a> for more information.
+            </summary>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns>char</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextColor">
+            <summary>
+            Generates a random color
+            </summary>
+            <returns>A random color</returns>
+        </member>
+        <member name="M:Laga.Numbers.Rand.NextVector(Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)">
+            <summary>
+            Generates a random vector
+            </summary>
+            <param name="Xcoord">The range of values in the X coordinate</param>
+            <param name="Ycoord">The range of values in the Y coordinate</param>
+            <param name="Zcoord">The range of values in the Z coordinate</param>
+            <returns>Random vector</returns>
+        </member>
+        <member name="T:Laga.Numbers.Tools">
+            <summary>
+            A collection of methods to operate on Genetic operators and lists.
+            </summary>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Deg2Rad(System.Double)">
+            <summary>
+            Degrees to Radians
+            </summary>
+            <param name="degrees"></param>
+            <returns>double</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Rad2Deg(System.Double)">
+            <summary>
+            Radians to Degree
+            </summary>
+            <param name="radians"></param>
+            <returns>double</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.DataReport``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Creates a report based on a list of data.
+            </summary>
+            <param name="listValues">the Values used to create the report</param>
+            <returns><![CDATA[List<string>]]></returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.BinaryChromosomeToInteger``1(``0[])">
+            <summary>
+            Convert a binary Chr to an integer, base of 2.
+            </summary>
+            <typeparam name="T">Chr type</typeparam>
+            <param name="chromosome">your Chr</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Extract part of the DNA from a Chr. 
+            </summary>
+            <typeparam name="T">Any Chr type</typeparam>
+            <param name="chromosome">the Chr</param>
+            <param name="index">start the extraction</param>
+            <param name="length">length of the extraction</param>
+            <returns>T[] A DNA segment from the original Chr</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.MinMaxValue``1(``0[])">
+            <summary>
+            Return the Min and Max values from an Array.
+            </summary>
+            <typeparam name="T">Any number type like: int, double, float...</typeparam>
+            <param name="genArray">The array where to extract the values</param>
+            <returns>Generic Array</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Char[][])">
+            <summary>
+            Reverse the original Population
+            </summary>
+            <param name="charPop">char[][]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Prefix(System.String,System.Int32)">
+            <summary>
+            Generate prefixs.
+            </summary>
+            <param name="prefix">string prefix</param>
+            <param name="size">the length of prefix to generate</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ParseDblToFloat(System.Double,System.Int32)">
+            <summary>
+            Parse a double to float
+            </summary>
+            <param name="dbl">the double to convert</param>
+            <param name="digits">the numbers to round, default is 3</param>
+            <returns>float</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Parse(System.Double[])">
+            <summary>
+            Parse any Chromosome type to string Array
+            </summary>
+            <param name="any">double[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Parse(System.Int32[])">
+            <summary>
+            Parse a list of integers into a list of strings
+            </summary>
+            <param name="any">int[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Parse(System.Single[])">
+            <summary>
+            Parse a list of floats into a list of strings
+            </summary>
+            <param name="any">float[]</param>
+            <returns>string[]</returns>
+            
+        </member>
+        <member name="M:Laga.Numbers.Tools.Parse(System.Char[])">
+            <summary>
+            Parse a list of char to a list of strings
+            </summary>
+            <param name="any">char[]</param>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Reverse(System.Single[])">
+            <summary>
+            Reverse the original array of floats.
+            </summary>
+            <param name="arrFloat">float[]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Reverse(System.Int32[])">
+            <summary>
+            Reverse the original array of integers
+            </summary>
+            <param name="arrInt">int[]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Reverse(System.Double[])">
+            <summary>
+            Reverse the original array of doubles
+            </summary>
+            <param name="arrDbl">double[]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Int32[][])">
+            <summary>
+            Reverse Original integer population
+            </summary>
+            <param name="intPop">int[][]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Double[][])">
+            <summary>
+            Reverse original double population
+            </summary>
+            <param name="dblPop">double[][]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Single[][])">
+            <summary>
+            Reverse original float population
+            </summary>
+            <param name="flPop">float[][]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Object[][])">
+            <summary>
+            Reverse original object population
+            </summary>
+            <param name="objPop">object[][]</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Int32[])">
+            <summary>
+            Fisher-Yates Shuffle Algorithm for array of integers.
+            </summary>
+            <param name="arrInt">The array of integers to shuffle</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Laga.Numbers.Tools.Fisher_Yates``1(``0[])">
+            <summary>
+            Experimental Shuffle algorithm to shuffle the original array.
+            </summary>
+            <typeparam name="T">the type of data</typeparam>
+            <param name="arrData">the array of data</param>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Object[])">
+            <summary>
+            Fisher-Yates Shuffle Algorithm for an array of objects.
+            </summary>
+            <param name="arrObj">the array of objects to shuffle</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Fisher_YatesPercent(System.Object[],System.Single)">
+            <summary>
+            Fisher-Yates Shuffle Algorithm for an array of objects.
+            </summary>
+            <param name="arrObj">the array of objects to shuffle</param>
+            <param name="percent">the percent to shuffle</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.RandomCharBinary(System.Single)">
+            <summary>
+            Returns a Char in the format 0 or 1
+            </summary>
+            <param name="thershold">thershold parameter. 0.5 = 50%</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.RandomChar(System.Int32,System.Int32)">
+            <summary>
+            Generate a random char.
+            based on this link: http://www.asciitable.com/
+            </summary>
+            <param name="start">the start number for the table, inclusive</param>
+            <param name="end">the end number for the table, inclusive</param>
+            <returns>char</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.RandomInt(System.Int32,System.Int32,System.Single)">
+            <summary>
+            Return non repetead integers between a min max and percent.
+            </summary>
+            <param name="min">the minimum value</param>
+            <param name="max">the maximum value</param>
+            <param name="percent">the percent of return, if 1f will return all the numbers.</param>
+            <returns>array of integers if wrong array of 0</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.Mom_Dad(System.Int32,System.Single)">
+            <summary>
+            Non repeated indexs.
+            </summary>
+            <param name="lengthPop">the length of the population</param>
+            <param name="percent">the percent of mutation</param>
+            <returns>array of indexs</returns>
         </member>
         <member name="T:Laga.Geometry.ConvexHull">
             <summary>
@@ -1665,369 +2095,6 @@
             <param name="message">string to modify</param>
             <param name="character">character to remove</param>
             <returns>string</returns>
-        </member>
-        <member name="T:Laga.Numbers.Range">
-            <summary>
-            Range for numbers
-            </summary>
-        </member>
-        <member name="P:Laga.Numbers.Range.Max">
-            <summary>
-            Get the max value
-            </summary>
-        </member>
-        <member name="P:Laga.Numbers.Range.Min">
-            <summary>
-            Get the min value
-            </summary>
-        </member>
-        <member name="M:Laga.Numbers.Range.#ctor(System.Double,System.Double)">
-            <summary>
-            
-            </summary>
-            <param name="Start"></param>
-            <param name="End"></param>
-        </member>
-        <member name="T:Laga.Numbers.Function">
-            <summary>
-            famouse Maths functions
-            </summary>
-        </member>
-        <member name="M:Laga.Numbers.Function.ThreeXplusOne(System.Int32)">
-            <summary>
-            3X + 1 function
-            From the book: The modern C# Challenge
-            </summary>
-            <param name="Sequence">the number to begin the sequence</param>
-        </member>
-        <member name="M:Laga.Numbers.Function.NumberDistinct``1(System.Collections.Generic.List{``0})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="lstData"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.Numbers.Function.Sigmoid(System.Single)">
-            <summary>
-            Sigmoid activation function
-            </summary>
-            <param name="t">param to evaluate</param>
-            <returns>the param map</returns>
-        </member>
-        <member name="M:Laga.Numbers.Function.Sigmoid(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
-            <summary>
-            Sigmoid simulation function
-            </summary>
-            <param name="t">param to evaluate</param>
-            <param name="A1">The initial value</param>
-            <param name="A2">The final value</param>
-            <param name="B1">The initial scope value</param>
-            <param name="B2">The final scope value</param>
-            <param name="decay">factor decay</param>
-            <returns>the param map</returns>
-        </member>
-        <member name="M:Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
-            <summary>
-            Sigmoid sumulation function
-            </summary>
-            <param name="t">param to evaluate</param>
-            <param name="A1">The initial value</param>
-            <param name="A2">The final value</param>
-            <param name="B1">The initial scope value</param>
-            <param name="B2">The final scope value</param>
-            <param name="decay">factor decay</param>
-            <returns>the param map</returns>
-        </member>
-        <member name="M:Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)">
-            <summary>
-            Flower Spiral
-            </summary>
-            <param name="range"></param>
-            <param name="span"></param>
-            <param name="radOne"></param>
-            <param name="radTwo"></param>
-            <param name="radThree"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Laga.Numbers.Rand">
-            <summary>
-            Random number class
-            </summary>
-        </member>
-        <member name="M:Laga.Numbers.Rand.Integers(System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Generate a list of Integers between min and max paremeters
-            </summary>
-            <param name="size">number of integers in the list</param>
-            <param name="min">the min value</param>
-            <param name="max">the max value</param>
-            <returns>int[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.Floats(System.Int32,System.Single,System.Single)">
-            <summary>
-            Generate a list of floats between min and max paremeters
-            </summary>
-            <param name="size">number of floats in the list</param>
-            <param name="min">the min value</param>
-            <param name="max">the max value</param>
-            <returns>float[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.Doubles(System.Int32,System.Double,System.Double)">
-            <summary>
-            Generate a list of doubles between min and max paremeters
-            </summary>
-            <param name="size">number of doubles in the list</param>
-            <param name="min">the min value</param>
-            <param name="max">the max value</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.NextInt(System.Int32,System.Int32)">
-            <summary>
-             Generates a random a random integer between min and max paremeters
-            </summary>
-            <param name="min">The minimum value in the range</param>
-            <param name="max">The maximum value in the range</param>
-            <returns>integer</returns> 
-        </member>
-        <member name="M:Laga.Numbers.Rand.NextDouble">
-            <summary>
-            Random value between 0 and 1
-            </summary>
-            <returns>double</returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.NextDouble(System.Double,System.Double)">
-            <summary>
-            Generates a random double between min and max paremeters
-            </summary>
-            <param name="min">The minimum value in the range</param>
-            <param name="max">The maximum value in the range</param>
-            <returns>double</returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.NextFloat(System.Single,System.Single)">
-            <summary>
-             Generates a random float Number between min and max paremeters
-            </summary>
-            <param name="min">The minimum value in the range</param>
-            <param name="max">The maximum value in the range</param>
-            <returns>float</returns>
-        </member>
-        <member name="M:Laga.Numbers.Rand.NextChar(System.Int32,System.Int32)">
-            <summary>
-            Generates a random character between min and max paremeters
-            See <a href="http://www.asciitable.com/">this link</a> for more information.
-            </summary>
-            <param name="start"></param>
-            <param name="end"></param>
-            <returns>char</returns>
-        </member>
-        <member name="T:Laga.Numbers.Tools">
-            <summary>
-            A collection of methods to operate on Genetic operators and lists.
-            </summary>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Deg2Rad(System.Double)">
-            <summary>
-            Degrees to Radians
-            </summary>
-            <param name="degrees"></param>
-            <returns>double</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Rad2Deg(System.Double)">
-            <summary>
-            Radians to Degree
-            </summary>
-            <param name="radians"></param>
-            <returns>double</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.DataReport``1(System.Collections.Generic.List{``0})">
-            <summary>
-            Creates a report based on a list of data.
-            </summary>
-            <param name="listValues">the Values used to create the report</param>
-            <returns><![CDATA[List<string>]]></returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.BinaryChromosomeToInteger``1(``0[])">
-            <summary>
-            Convert a binary Chr to an integer, base of 2.
-            </summary>
-            <typeparam name="T">Chr type</typeparam>
-            <param name="chromosome">your Chr</param>
-            <returns>int</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)">
-            <summary>
-            Extract part of the DNA from a Chr. 
-            </summary>
-            <typeparam name="T">Any Chr type</typeparam>
-            <param name="chromosome">the Chr</param>
-            <param name="index">start the extraction</param>
-            <param name="length">length of the extraction</param>
-            <returns>T[] A DNA segment from the original Chr</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.MinMaxValue``1(``0[])">
-            <summary>
-            Return the Min and Max values from an Array.
-            </summary>
-            <typeparam name="T">Any number type like: int, double, float...</typeparam>
-            <param name="genArray">The array where to extract the values</param>
-            <returns>Generic Array</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Char[][])">
-            <summary>
-            Reverse the original Population
-            </summary>
-            <param name="charPop">char[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Prefix(System.String,System.Int32)">
-            <summary>
-            Generate prefixs.
-            </summary>
-            <param name="prefix">string prefix</param>
-            <param name="size">the length of prefix to generate</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ParseDblToFloat(System.Double,System.Int32)">
-            <summary>
-            Parse a double to float
-            </summary>
-            <param name="dbl">the double to convert</param>
-            <param name="digits">the numbers to round, default is 3</param>
-            <returns>float</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Double[])">
-            <summary>
-            Parse any Chromosome type to string Array
-            </summary>
-            <param name="any">double[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Int32[])">
-            <summary>
-            Parse a list of integers into a list of strings
-            </summary>
-            <param name="any">int[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Single[])">
-            <summary>
-            Parse a list of floats into a list of strings
-            </summary>
-            <param name="any">float[]</param>
-            <returns>string[]</returns>
-            
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Char[])">
-            <summary>
-            Parse a list of char to a list of strings
-            </summary>
-            <param name="any">char[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Single[])">
-            <summary>
-            Reverse the original array of floats.
-            </summary>
-            <param name="arrFloat">float[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Int32[])">
-            <summary>
-            Reverse the original array of integers
-            </summary>
-            <param name="arrInt">int[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Double[])">
-            <summary>
-            Reverse the original array of doubles
-            </summary>
-            <param name="arrDbl">double[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Int32[][])">
-            <summary>
-            Reverse Original integer population
-            </summary>
-            <param name="intPop">int[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Double[][])">
-            <summary>
-            Reverse original double population
-            </summary>
-            <param name="dblPop">double[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Single[][])">
-            <summary>
-            Reverse original float population
-            </summary>
-            <param name="flPop">float[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Object[][])">
-            <summary>
-            Reverse original object population
-            </summary>
-            <param name="objPop">object[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Int32[])">
-            <summary>
-            Fisher-Yates Shuffle Algorithm for array of integers.
-            </summary>
-            <param name="arrInt">The array of integers to shuffle</param>
-            <returns></returns>
-            
-        </member>
-        <member name="M:Laga.Numbers.Tools.Fisher_Yates``1(``0[])">
-            <summary>
-            Experimental Shuffle algorithm to shuffle the original array.
-            </summary>
-            <typeparam name="T">the type of data</typeparam>
-            <param name="arrData">the array of data</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Object[])">
-            <summary>
-            Fisher-Yates Shuffle Algorithm for an array of objects.
-            </summary>
-            <param name="arrObj">the array of objects to shuffle</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Fisher_YatesPercent(System.Object[],System.Single)">
-            <summary>
-            Fisher-Yates Shuffle Algorithm for an array of objects.
-            </summary>
-            <param name="arrObj">the array of objects to shuffle</param>
-            <param name="percent">the percent to shuffle</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.RandomCharBinary(System.Single)">
-            <summary>
-            Returns a Char in the format 0 or 1
-            </summary>
-            <param name="thershold">thershold parameter. 0.5 = 50%</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.RandomChar(System.Int32,System.Int32)">
-            <summary>
-            Generate a random char.
-            based on this link: http://www.asciitable.com/
-            </summary>
-            <param name="start">the start number for the table, inclusive</param>
-            <param name="end">the end number for the table, inclusive</param>
-            <returns>char</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.RandomInt(System.Int32,System.Int32,System.Single)">
-            <summary>
-            Return non repetead integers between a min max and percent.
-            </summary>
-            <param name="min">the minimum value</param>
-            <param name="max">the maximum value</param>
-            <param name="percent">the percent of return, if 1f will return all the numbers.</param>
-            <returns>array of integers if wrong array of 0</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Mom_Dad(System.Int32,System.Single)">
-            <summary>
-            Non repeated indexs.
-            </summary>
-            <param name="lengthPop">the length of the population</param>
-            <param name="percent">the percent of mutation</param>
-            <returns>array of indexs</returns>
         </member>
     </members>
 </doc>

@@ -336,7 +336,7 @@ namespace Laga.Geometry
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "vec [" + x + ", " + y + ", " + z + "] ";
+            return "vec [" + x + ", " + y + ", " + z + "]";
         }
 
         /// <summary>
