@@ -1,0 +1,24 @@
+﻿@page "/"
+@using ScottPlot;
+@using ScottPlot.Blazor;
+@using Laga.Numbers;
+
+<PageTitle>Home</PageTitle>
+
+<h2>testing dashboard</h2>
+
+<BlazorPlot @ref=BlazorPlot Style="width: 600px; height: 300px;" />
+
+@code
+{
+    BlazorPlot BlazorPlot { get; set; } = new();
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        double[] arrdata = Laga.Numbers.Rand.Doubles(51, 0, 1);
+        BlazorPlot.Plot.Add.Signal(arrdata); // Generate.Sin());
+        double[] arrdata2 = Laga.Numbers.Rand.Doubles(51, -1, 0);
+        BlazorPlot.Plot.Add.Signal(arrdata2); // Generate.Cos());
+    }
+
+}
