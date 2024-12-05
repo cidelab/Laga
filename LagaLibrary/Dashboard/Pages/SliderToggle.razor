@@ -1,0 +1,29 @@
+﻿@page "/SliderToggle"
+@using ScottPlot;
+@using ScottPlot.Blazor;
+
+<BlazorPlot @ref=Sigmoid Style="width: 600px; height: 300px;" />
+
+@code {
+
+    BlazorPlot Sigmoid { get; set; } = new();
+
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        double[] fltData = new double[100];
+        float[] arrFltData = new float[100];
+
+        for (int i = 0; i < 100; i++)
+        {
+            fltData[i] = i;
+            arrFltData[i] = (float)Function.Sigmoid(fltData[i], 1, 100, 1, 100, 0.001);
+        }
+        Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(fltData.ToList()));
+        ScottPlot.Plottables.Signal sign2 = Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(arrFltData.ToList()));
+        sign2.LineColor = Colors.Red;
+        Sigmoid.Plot.Title("complex Sigmoid function");
+    }
+
+}

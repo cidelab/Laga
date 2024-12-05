@@ -61,17 +61,6 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="lstData"></param>
-        /// <returns></returns>
-        public static List<T> NumberDistinct<T>(List<T> lstData)
-        {
-            return lstData.Distinct().ToList();
-        }
-
-        /// <summary>
         /// Sigmoid activation function
         /// </summary>
         /// <param name="t">param to evaluate</param>
@@ -95,21 +84,6 @@ namespace Laga.Numbers
         public static double Sigmoid(double t, double A1, double A2, double B1, double B2, double decay)
         {
             return A1 + (A2 - A1) / (1 + Math.Exp(Math.Log(1 / decay - 1) * (B1 + B2 - 2 * t) / (B2 - B1)));
-        }
-
-        /// <summary>
-        /// Sigmoid sumulation function
-        /// </summary>
-        /// <param name="t">param to evaluate</param>
-        /// <param name="A1">The initial value</param>
-        /// <param name="A2">The final value</param>
-        /// <param name="B1">The initial scope value</param>
-        /// <param name="B2">The final scope value</param>
-        /// <param name="decay">factor decay</param>
-        /// <returns>the param map</returns>
-        public static float Sigmoid(float t, float A1, float A2, float B1, float B2, float decay)
-        {
-            return A1 + (A2 - A1) / (1 + (float)Math.Exp(Math.Log(1 / decay - 1) * (B1 + B2 - 2 * t) / (B2 - B1)));
         }
 
         /// <summary>

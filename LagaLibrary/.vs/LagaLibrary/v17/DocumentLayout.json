@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\testingrandom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\testingrandom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\testingchromosomes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\testingchromosomes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\testingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\testingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,8 +25,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 303,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 360,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T14:57:18.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Dashboard\\Pages\\Counter.razor",
               "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
               "RelativeToolTip": "Dashboard\\Pages\\Counter.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:39:00.158Z",
+              "WhenOpened": "2024-12-05T14:43:18.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Dashboard\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor*",
-              "RelativeToolTip": "Dashboard\\Pages\\Home.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Title": "SliderToggle.razor",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\SliderToggle.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\SliderToggle.razor",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\SliderToggle.razor*",
+              "RelativeToolTip": "Dashboard\\Pages\\SliderToggle.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T16:19:10.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TestingChromosomes.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\TestingChromosomes.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\TestingChromosomes.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\TestingChromosomes.cs",
-              "RelativeToolTip": "LagaExamples\\TestingChromosomes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:15:57.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TestingRandom.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\TestingRandom.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\TestingRandom.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\TestingRandom.cs",
-              "RelativeToolTip": "LagaExamples\\TestingRandom.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:15:11.083Z",
+              "WhenOpened": "2024-12-05T14:41:05.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
-              "RelativeToolTip": "LagaExamples\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Title": "Testingfunctions.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Testingfunctions.cs",
+              "RelativeDocumentMoniker": "LagaExamples\\Testingfunctions.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Testingfunctions.cs",
+              "RelativeToolTip": "LagaExamples\\Testingfunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAnwBIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:16:52.013Z",
+              "WhenOpened": "2024-12-05T10:13:12.361Z",
               "EditorCaption": ""
             }
           ]

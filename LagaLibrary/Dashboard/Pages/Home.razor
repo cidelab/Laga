@@ -1,24 +1,64 @@
 ﻿@page "/"
 @using ScottPlot;
 @using ScottPlot.Blazor;
-@using Laga.Numbers;
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Functions</PageTitle>
 
 <h2>testing dashboard</h2>
 
-<BlazorPlot @ref=BlazorPlot Style="width: 600px; height: 300px;" />
+<BlazorPlot @ref=RandValues Style="width: 600px; height: 300px;"/>
+<BlazorPlot @ref=ThreeXplusOne Style="width: 600px; height: 300px;" />
+<BlazorPlot @ref=Sigmoid Style="width: 600px; height: 300px;" />
 
 @code
 {
-    BlazorPlot BlazorPlot { get; set; } = new();
-
+    BlazorPlot RandValues { get; set; } = new();
+    BlazorPlot ThreeXplusOne { get; set; } = new();
+    BlazorPlot Sigmoid { get; set; } = new();
     protected override void OnAfterRender(bool firstRender)
     {
-        double[] arrdata = Laga.Numbers.Rand.Doubles(51, 0, 1);
-        BlazorPlot.Plot.Add.Signal(arrdata); // Generate.Sin());
-        double[] arrdata2 = Laga.Numbers.Rand.Doubles(51, -1, 0);
-        BlazorPlot.Plot.Add.Signal(arrdata2); // Generate.Cos());
-    } 
+        //Rand plot:
+        double[] arrdata = Rand.Doubles(51, 0, 1);
+        RandValues.Plot.Add.Signal(arrdata);
+        double[] arrdata2 = Rand.Doubles(51, -1, 0);
+        RandValues.Plot.Add.Signal(arrdata2);
+
+        RandValues.Plot.Title("random values");
+
+        //function 1 plot:
+        List<int> listintData = Function.ThreeXplusOne(500);
+        double[] dataY = Tools.Convert2Doubles(listintData);
+
+        double[] dataX = new double[listintData.Count];
+        for (int i = 0; i < dataX.Length; i++)
+            dataX[i] = (double)i;
+
+        ScottPlot.Plottables.Scatter scat = ThreeXplusOne.Plot.Add.Scatter(dataX, dataY);
+
+        ThreeXplusOne.Plot.Title("Math function: Three x plus one");
+        ThreeXplusOne.Plot.XLabel("horizontal axis");
+        ThreeXplusOne.Plot.YLabel("function values");
+
+        scat.Color = Colors.Red;
+        scat.MarkerShape = MarkerShape.FilledCircle;
+        scat.MarkerSize = 10;
+        scat.LineStyle = LineStyle.None;
+
+        //function 2 sigmoid plot:
+        double[] sin = Generate.Sin(100); ;
+        float[] arrSigmoid = new float[100];
+        for (int i = 0; i < 100; i++)
+            arrSigmoid[i] = Function.Sigmoid((float)sin[i]);
+
+        Sigmoid.Plot.Add.Signal(sin);
+        ScottPlot.Plottables.Signal sign = Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(arrSigmoid.ToList()));
+        sign.LineColor = Colors.Red;
+
+        Sigmoid.Plot.Title("simple Sigmoid function");
+    }
+
+    
+
+    
 
 }

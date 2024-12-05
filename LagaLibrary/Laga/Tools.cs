@@ -10,6 +10,41 @@ namespace Laga.Numbers
     public static class Tools
     {
         /// <summary>
+        /// Remap a value
+        /// </summary>
+        /// <param name="value">value to remap</param>
+        /// <param name="fromMin">The min from the value range</param>
+        /// <param name="fromMax">The max from the value range</param>
+        /// <param name="toMin">The min in the new range</param>
+        /// <param name="toMax">The max in the new range</param>
+        /// <returns>value remapped</returns>
+        public static double Remap(double value, double fromMin, double fromMax, double toMin, double toMax)
+        {
+            return toMin + (value - fromMin) * (toMax - toMin) / (fromMax - fromMin);
+        }
+
+        /// <summary>
+        /// Return the list of distinct numbers in a list.
+        /// </summary>
+        /// <typeparam name="T">Data</typeparam>
+        /// <param name="lstData">The List with distinct numbers</param>
+        /// <returns>List of values</returns>
+        public static List<T> NumberDistinct<T>(List<T> lstData)
+        {
+            return lstData.Distinct().ToList();
+        }
+
+        /// <summary>
+        /// Convert a list of numbers to an array of doubles.
+        /// </summary>
+        /// <param name="values">The list of values</param>
+        /// <returns>Array of doubles[]</returns>
+        public static double[] Convert2Doubles<T>(List<T> values) where T : struct, IConvertible
+        {
+            return values.Select(i => Convert.ToDouble(i)).ToArray(); ;
+        }
+
+        /// <summary>
         /// Degrees to Radians
         /// </summary>
         /// <param name="degrees"></param>

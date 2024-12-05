@@ -4,7 +4,7 @@ namespace LagaExamples
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Press Escape (Esc) to exit the loop.");
 
@@ -28,7 +28,7 @@ namespace LagaExamples
             Console.WriteLine("Select an example to run:\n");
             Console.WriteLine("1. Random value Examples");
             Console.WriteLine("2. Chromosome Examples");
-            Console.WriteLine("3. Combinatorial Problem");
+            Console.WriteLine("3. Math Functions");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -41,7 +41,7 @@ namespace LagaExamples
                     TestingChromosomes.Run();
                     break;
                 case '3':
-                    CombineProblem.Run();
+                    Testingfunctions.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
