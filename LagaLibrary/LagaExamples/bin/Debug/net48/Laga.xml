@@ -871,18 +871,6 @@
             <param name="decay">factor decay</param>
             <returns>the param map</returns>
         </member>
-        <member name="M:Laga.Numbers.Function.Sigmoid(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
-            <summary>
-            Sigmoid sumulation function
-            </summary>
-            <param name="t">param to evaluate</param>
-            <param name="A1">The initial value</param>
-            <param name="A2">The final value</param>
-            <param name="B1">The initial scope value</param>
-            <param name="B2">The final scope value</param>
-            <param name="decay">factor decay</param>
-            <returns>the param map</returns>
-        </member>
         <member name="M:Laga.Numbers.Function.Flower(System.Int32,System.Single,System.Single,System.Single,System.Single)">
             <summary>
             Flower Spiral
