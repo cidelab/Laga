@@ -2,7 +2,7 @@
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Generate basic populations
+    /// GenrPalette basic populations
     /// </summary>
     public class GenrPopulation
     {

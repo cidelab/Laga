@@ -1,11 +1,6 @@
 ﻿using Laga.GeneticAlgorithm;
 using Laga.Geometry;
 using Laga.Numbers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LagaExamples
 {
@@ -17,11 +12,11 @@ namespace LagaExamples
 
             Console.WriteLine("Chromosome of floats, essentially is a collection with a fitness function parameter.");
             Chromosome<float> chrFloats = GenrGenes.RandomChromosome<float>(5, 6f, 7f, Rand.NextFloat);
-            Console.WriteLine(chrFloats.ToString());
+            Console.WriteLine(chrFloats.ToString() + "\n");
 
             Console.WriteLine("We are now asigning the fitness of 0.678");
             chrFloats.Fitness = 0.678;
-            Console.WriteLine(chrFloats.ToString());
+            Console.WriteLine(chrFloats.ToString() + "\n");
 
             Console.WriteLine("We can also shuffle the genes in the chromosome:");
             chrFloats.Shuffle();

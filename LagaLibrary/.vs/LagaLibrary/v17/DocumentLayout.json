@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\colourpattern.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\colourpattern.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\testingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\testingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\slidertoggle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\pages\\slider.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\pages\\slider.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 360,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,68 +50,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor",
-              "RelativeDocumentMoniker": "Dashboard\\_Imports.razor",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor",
-              "RelativeToolTip": "Dashboard\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T15:56:04.096Z",
+              "DocumentIndex": 1,
+              "Title": "Population.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
+              "RelativeDocumentMoniker": "Laga\\Population.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
+              "RelativeToolTip": "Laga\\Population.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T17:10:42.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeDocumentMoniker": "Laga\\Tools.cs",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeToolTip": "Laga\\Tools.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T17:09:34.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Dashboard\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
-              "RelativeToolTip": "Dashboard\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T14:57:18.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Dashboard\\Pages\\Counter.razor",
               "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Counter.razor",
               "RelativeToolTip": "Dashboard\\Pages\\Counter.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T14:43:18.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T16:56:17.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Home.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T16:55:51.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Slider.razor",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Slider.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\Slider.razor",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\Slider.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\Slider.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T16:55:42.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "SliderToggle.razor",
               "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\SliderToggle.razor",
               "RelativeDocumentMoniker": "Dashboard\\Pages\\SliderToggle.razor",
               "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\SliderToggle.razor",
               "RelativeToolTip": "Dashboard\\Pages\\SliderToggle.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T14:41:05.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T16:55:23.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Testingfunctions.cs",
-              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Testingfunctions.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\Testingfunctions.cs",
-              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Testingfunctions.cs",
-              "RelativeToolTip": "LagaExamples\\Testingfunctions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAnwBIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T10:13:12.361Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "ColourPattern.razor",
+              "DocumentMoniker": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\ColourPattern.razor",
+              "RelativeDocumentMoniker": "Dashboard\\Pages\\ColourPattern.razor",
+              "ToolTip": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\Pages\\ColourPattern.razor",
+              "RelativeToolTip": "Dashboard\\Pages\\ColourPattern.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T16:39:14.888Z"
             }
           ]
         }

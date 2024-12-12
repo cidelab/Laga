@@ -27,7 +27,7 @@ namespace Laga.Numbers
         /// <param name="color2">The ending color.</param>
         /// <param name="t">Interpolation factor (0.0 to 1.0).</param>
         /// <returns>An interpolated color.</returns>
-        private static Color LerpColor(Color color1, Color color2, double t)
+        public static Color LerpColor(Color color1, Color color2, double t)
         {
             int r = (int)(color1.R + t * (color2.R - color1.R));
             int g = (int)(color1.G + t * (color2.G - color1.G));
@@ -41,7 +41,7 @@ namespace Laga.Numbers
         /// <param name="palette">The base palette colors.</param>
         /// <param name="t">Normalized position (0.0 to 1.0).</param>
         /// <returns>An interpolated color.</returns>
-        private static Color InterpolateColor(List<Color> palette, double t)
+        public static Color InterpolateColor(List<Color> palette, double t)
         {
             if (t <= 0) return palette[0];
             if (t >= 1) return palette[palette.Count - 1];
@@ -61,7 +61,7 @@ namespace Laga.Numbers
         /// <param name="paletteName">Name of the predefined palette.</param>
         /// <param name="count">Number of colors to generate in the range.</param>
         /// <returns>A list of interpolated colors.</returns>
-        public static List<Color> Generate(string paletteName, int count)
+        public static List<Color> GenrPalette(string paletteName, int count)
         {
             if (!Palettes.ContainsKey(paletteName))
                 throw new ArgumentException($"Palette '{paletteName}' does not exist.");

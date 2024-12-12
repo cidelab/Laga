@@ -5,7 +5,7 @@ using Laga.Numbers;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Generate DNA for Chromosome classes
+    /// GenrPalette DNA for Chromosome classes
     /// </summary>
     public static class GenrGenes
     {

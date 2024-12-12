@@ -14,7 +14,7 @@ namespace Laga.Numbers
         private static readonly ThreadLocal<Random> rnd = new ThreadLocal<Random>(() => new Random());
 
         /// <summary>
-        /// Generate a list of Integers between min and max paremeters
+        /// GenrPalette a list of Integers between min and max paremeters
         /// </summary>
         /// <param name="size">number of integers in the list</param>
         /// <param name="min">the min value</param>
@@ -29,7 +29,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a list of floats between min and max paremeters
+        /// GenrPalette a list of floats between min and max paremeters
         /// </summary>
         /// <param name="size">number of floats in the list</param>
         /// <param name="min">the min value</param>
@@ -44,7 +44,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a list of doubles between min and max paremeters
+        /// GenrPalette a list of doubles between min and max paremeters
         /// </summary>
         /// <param name="size">number of doubles in the list</param>
         /// <param name="min">the min value</param>
@@ -76,7 +76,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a random array of colours.
+        /// GenrPalette a random array of colours.
         /// </summary>
         /// <param name="size">number of colours in the array</param>
         /// <returns>Array of colours</returns>
@@ -89,7 +89,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a random array of vectors.
+        /// GenrPalette a random array of vectors.
         /// </summary>
         /// <param name="size">number of vectors in the array</param>
         /// <param name="Xcoord">The range of values in the X coordinate</param>

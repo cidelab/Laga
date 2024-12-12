@@ -157,7 +157,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate prefixs.
+        /// GenrPalette prefixs.
         /// </summary>
         /// <param name="prefix">string prefix</param>
         /// <param name="size">the length of prefix to generate</param>
@@ -437,7 +437,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Generate a random char.
+        /// GenrPalette a random char.
         /// based on this link: http://www.asciitable.com/
         /// </summary>
         /// <param name="start">the start number for the table, inclusive</param>

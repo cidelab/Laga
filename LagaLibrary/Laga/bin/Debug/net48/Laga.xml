@@ -122,7 +122,7 @@
         </member>
         <member name="T:Laga.GeneticAlgorithm.GenrChromosome">
             <summary>
-            Generate different Chromosome types
+            GenrPalette different Chromosome types
             </summary>
         </member>
         <member name="P:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom">
@@ -248,7 +248,7 @@
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)">
             <summary>
-            Generate a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
+            GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
             </summary>
             <param name="min">min value</param>
             <param name="max">max value</param>
@@ -314,7 +314,7 @@
         </member>
         <member name="T:Laga.GeneticAlgorithm.GenrGenes">
             <summary>
-            Generate DNA for Chromosome classes
+            GenrPalette DNA for Chromosome classes
             </summary>
         </member>
         <member name="M:Laga.GeneticAlgorithm.GenrGenes.RandomChromosome``1(System.Int32,``0,``0,System.Func{``0,``0,``0})">
@@ -364,7 +364,7 @@
         </member>
         <member name="T:Laga.GeneticAlgorithm.GenrPopulation">
             <summary>
-            Generate basic populations
+            GenrPalette basic populations
             </summary>
         </member>
         <member name="P:Laga.GeneticAlgorithm.GenrPopulation.SizePop">
@@ -431,6 +431,12 @@
             <summary>
             Construct a population with no size
             </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Sort(System.Boolean)">
+            <summary>
+            Sorts the chromosomes in the population by fitness.
+            </summary>
+            <param name="ascending">If true, sorts in ascending order; otherwise, descending order.</param>
         </member>
         <member name="P:Laga.GeneticAlgorithm.Population`1.Count">
             <summary>
@@ -810,7 +816,7 @@
             <param name="t">Normalized position (0.0 to 1.0).</param>
             <returns>An interpolated color.</returns>
         </member>
-        <member name="M:Laga.Numbers.ColorRange.Generate(System.String,System.Int32)">
+        <member name="M:Laga.Numbers.ColorRange.GenrPalette(System.String,System.Int32)">
             <summary>
             Generates a range of colors based on a selected palette.
             </summary>
@@ -889,7 +895,7 @@
         </member>
         <member name="M:Laga.Numbers.Rand.Integers(System.Int32,System.Int32,System.Int32)">
             <summary>
-            Generate a list of Integers between min and max paremeters
+            GenrPalette a list of Integers between min and max paremeters
             </summary>
             <param name="size">number of integers in the list</param>
             <param name="min">the min value</param>
@@ -898,7 +904,7 @@
         </member>
         <member name="M:Laga.Numbers.Rand.Floats(System.Int32,System.Single,System.Single)">
             <summary>
-            Generate a list of floats between min and max paremeters
+            GenrPalette a list of floats between min and max paremeters
             </summary>
             <param name="size">number of floats in the list</param>
             <param name="min">the min value</param>
@@ -907,7 +913,7 @@
         </member>
         <member name="M:Laga.Numbers.Rand.Doubles(System.Int32,System.Double,System.Double)">
             <summary>
-            Generate a list of doubles between min and max paremeters
+            GenrPalette a list of doubles between min and max paremeters
             </summary>
             <param name="size">number of doubles in the list</param>
             <param name="min">the min value</param>
@@ -926,14 +932,14 @@
         </member>
         <member name="M:Laga.Numbers.Rand.Colours(System.Int32)">
             <summary>
-            Generate a random array of colours.
+            GenrPalette a random array of colours.
             </summary>
             <param name="size">number of colours in the array</param>
             <returns>Array of colours</returns>
         </member>
         <member name="M:Laga.Numbers.Rand.Vectors(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)">
             <summary>
-            Generate a random array of vectors.
+            GenrPalette a random array of vectors.
             </summary>
             <param name="size">number of vectors in the array</param>
             <param name="Xcoord">The range of values in the X coordinate</param>
@@ -1081,7 +1087,7 @@
         </member>
         <member name="M:Laga.Numbers.Tools.Prefix(System.String,System.Int32)">
             <summary>
-            Generate prefixs.
+            GenrPalette prefixs.
             </summary>
             <param name="prefix">string prefix</param>
             <param name="size">the length of prefix to generate</param>
@@ -1205,7 +1211,7 @@
         </member>
         <member name="M:Laga.Numbers.Tools.RandomChar(System.Int32,System.Int32)">
             <summary>
-            Generate a random char.
+            GenrPalette a random char.
             based on this link: http://www.asciitable.com/
             </summary>
             <param name="start">the start number for the table, inclusive</param>

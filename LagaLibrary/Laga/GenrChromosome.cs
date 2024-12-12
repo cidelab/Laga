@@ -4,7 +4,7 @@ using Laga.Numbers;
 namespace Laga.GeneticAlgorithm
 {
     /// <summary>
-    /// Generate different Chromosome types
+    /// GenrPalette different Chromosome types
     /// </summary>
     [Obsolete("Please try GenrGenes instead", false)]
     public class GenrChromosome
@@ -240,7 +240,7 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
-        /// Generate a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
+        /// GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
         /// </summary>
         /// <param name="min">min value</param>
         /// <param name="max">max value</param>

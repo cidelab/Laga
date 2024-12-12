@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Laga.GeneticAlgorithm
@@ -64,6 +65,21 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// Sorts the chromosomes in the population by fitness.
+        /// </summary>
+        /// <param name="ascending">If true, sorts in ascending order; otherwise, descending order.</param>
+        public void Sort(bool ascending = true)
+        {
+            if (ascending) 
+            {
+                chromosomes.Sort((a, b) => a.Fitness.CompareTo(b.Fitness));
+            }
+            else
+            {
+                chromosomes.Sort((a, b) => a.Fitness.CompareTo(b.Fitness));
+            }
+        }
+        /// <summary>
         /// Population count
         /// </summary>
         public int Count => chromosomes.Count;
@@ -121,7 +137,7 @@ namespace Laga.GeneticAlgorithm
             sb.AppendLine("Population:");
 
             for (int i = 0; i < chromosomes.Count; i++)
-                sb.AppendLine($"Chromosome {i}: {chromosomes[i].ToString()} (Fitness: {chromosomes[i].Fitness})");
+                sb.AppendLine($"Chromosome {i}: {chromosomes[i]}");
             
             return sb.ToString();
         }

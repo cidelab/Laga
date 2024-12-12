@@ -1,26 +1,12 @@
 ﻿@page "/SliderToggle"
 @using ScottPlot;
 @using ScottPlot.Blazor;
-@using Microsoft.FluentUI.AspNetCore.Components;
 
-<div style="margin-bottom: 60px;">
-    <FluentButton style="width: 90px; margin: 10px;" @onclick="() => orientation = (orientation == Microsoft.FluentUI.AspNetCore.Components.Orientation.Vertical) ? Microsoft.FluentUI.AspNetCore.Components.Orientation.Horizontal : Microsoft.FluentUI.AspNetCore.Components.Orientation.Vertical">Toggle orientation</FluentButton>
-    <FluentSlider Label="Select a temperature" Orientation="@orientation" Min="0" Max="100" Step="10" @bind-Value=value>
-        <FluentSliderLabel Position="0">0&#8451;</FluentSliderLabel>
-        <FluentSliderLabel Position="10">10&#8451;</FluentSliderLabel>
-        <FluentSliderLabel Position="90">90&#8451;</FluentSliderLabel>
-        <FluentSliderLabel Position="100">100&#8451;</FluentSliderLabel>
-    </FluentSlider>
-</div>
-<p>Selected value: @value</p>
+<h4>Sigmoid curve</h4>
 
-
-<BlazorPlot @ref=Sigmoid Style="width: 600px; height: 300px;" />
+<BlazorPlot @ref=Sigmoid Style="width: 1000px; height: 800px;" />
 
 @code {
-
-    Microsoft.FluentUI.AspNetCore.Components.Orientation orientation = Microsoft.FluentUI.AspNetCore.Components.Orientation.Horizontal;
-    int value = 70;
 
     BlazorPlot Sigmoid { get; set; } = new();
 
@@ -30,13 +16,29 @@
         float[] arrFltData = new float[100];
 
         for (int i = 0; i < 100; i++)
-        {
             fltData[i] = i;
-            arrFltData[i] = (float)Function.Sigmoid(fltData[i], 1, 100, 1, 100, 0.001);
-        }
+
         Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(fltData.ToList()));
-        ScottPlot.Plottables.Signal sign2 = Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(arrFltData.ToList()));
-        sign2.LineColor = Colors.Red;
+
+        double s = 0.000;
+        for(int j = 0; j < 50; j++)
+        {
+
+            s = Laga.Numbers.Tools.Remap(j, 0, 50, 0.000, 1.000);
+            for (int k = 0; k < 100; k++)
+                arrFltData[k] = (float)Function.Sigmoid(fltData[k], 1, 100, 1, 100, s);
+
+            ScottPlot.Plottables.Signal sign = Sigmoid.Plot.Add.Signal(Tools.Convert2Doubles(arrFltData.ToList()));
+
+            System.Drawing.Color clr = Laga.Numbers.ColorRange.LerpColor(System.Drawing.Color.Red, System.Drawing.Color.RoyalBlue, Laga.Numbers.Tools.Remap(j, 0, 50, 0, 1));
+            sign.LineColor = ScottPlot.Color.FromColor(clr);
+
+            ScottPlot.Plottables.Text txt = Sigmoid.Plot.Add.Text("decay: " + Math.Round(s, 4).ToString(), -15, j*2.1);
+            txt.LabelFontSize = 11;
+
+            sign.LineWidth = 2;
+        }
+        
         Sigmoid.Plot.Title("complex Sigmoid function");
     }
 

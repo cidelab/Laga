@@ -1,0 +1,43 @@
+﻿@page "/Colors"
+@using ScottPlot;
+@using ScottPlot.Blazor;
+
+<h4>Color pattern</h4>
+
+<BlazorPlot @ref=Bin Style="width: 600px; height: 600px;" />
+
+@code {
+    BlazorPlot Bin { get; set; } = new();
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        double[,] data = GenerateData();
+
+        ScottPlot.Plottables.Heatmap hm = Bin.Plot.Add.Heatmap(data);
+        hm.Colormap = new ScottPlot.Colormaps.Viridis();
+        hm.Smooth = true;
+       
+        for (int y = 0; y < data.GetLength(0); y++)
+        {
+            for (int x = 0; x < data.GetLength(1); x++)
+            {
+                Coordinates coordinates = new(x, y);
+                string cellLabel = data[y, x].ToString("0.0");
+                var text = Bin.Plot.Add.Text(cellLabel, coordinates);
+                text.Alignment = Alignment.MiddleCenter;
+                text.LabelFontSize = 5;
+                text.LabelFontColor = Colors.White;
+            }
+        }
+    }
+
+    private double[,] GenerateData()
+    {
+        double[,] arrdata = new double[20,20];
+        for (int i = 0; i < 20; i++)
+        for(int j = 0; j < 20; j++)
+            arrdata[i, j] = Laga.Numbers.Rand.NextDouble(0, 5);
+
+        return arrdata;
+    }
+}

@@ -11,9 +11,17 @@ namespace LagaExamples
         {
             Console.WriteLine("\n /// - Examples of Laga.Numbers.Functions() - /// \n");
 
-            Console.WriteLine("Three X plus one function (pay attention to the sequence):");
+            Console.WriteLine("Three X plus one function for 100: ");
             List<int> lstdata = Function.ThreeXplusOne(100);
             Console.WriteLine(string.Join(", ", lstdata) + "\n");
+            
+            Console.WriteLine("Three X plus one function for 50: ");
+            List<int> lstdata2 = Function.ThreeXplusOne(50);
+            Console.WriteLine(string.Join(", ", lstdata2) + "\n");
+
+            Console.WriteLine("Three X plus one function for 10: ");
+            List<int> lstdata3 = Function.ThreeXplusOne(10);
+            Console.WriteLine(string.Join(", ", lstdata3) + "\n");
 
             Console.WriteLine("Example of Sigmoid function:");
             float[] fltSequence = [0.1f, 0.2f, 0.3f, 0.4f, 0.5f, 0.6f, 0.7f, 0.8f, 0.9f, 1.0f];

@@ -29,6 +29,7 @@ namespace LagaExamples
             Console.WriteLine("1. Random value Examples");
             Console.WriteLine("2. Chromosome Examples");
             Console.WriteLine("3. Math Functions");
+            Console.WriteLine("4. Population Examples");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -42,6 +43,9 @@ namespace LagaExamples
                     break;
                 case '3':
                     Testingfunctions.Run();
+                    break;
+                case '4':
+                    TestingPopulation.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
