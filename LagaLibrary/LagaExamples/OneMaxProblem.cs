@@ -17,10 +17,6 @@ namespace LagaExamples
             double pr = 0.5;
             double chr = 0.1;
 
-            Console.WriteLine("GA parameters:");
-            Console.WriteLine("Population size: {0} , Chromosome length: {1}", popSize, chrLength);
-            Console.WriteLine("Mutation in population rate: {0} , Mutation in Chromosome rate: {1} \n", pr, chr);
-
             //initialize the population:
             Population<int> population = new Population<int>();
             for (int i = 0; i < popSize; i++)
@@ -43,7 +39,7 @@ namespace LagaExamples
 
         private static void PrintData(Population<int> pop, int c)
         {
-            Console.SetCursorPosition(0, 18);
+            Console.SetCursorPosition(0, 16);
             Chromosome<int> chr = pop.HighestFitnessChromosome();
             Console.WriteLine($"Iter:({c}) > Highest Fitness: {chr.Fitness} , Average Fitness: {pop.GetAverageFitness():F2}");
             Console.WriteLine(chr.ToString());

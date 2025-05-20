@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\onemaxproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\onemaxproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\rastrigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\rastrigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,8 +17,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 399,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 384,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,35 +36,22 @@
               "RelativeDocumentMoniker": "LagaExamples\\FunctionOptimization.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\FunctionOptimization.cs",
               "RelativeToolTip": "LagaExamples\\FunctionOptimization.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwC4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCIAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T09:22:28.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
-              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
-              "RelativeToolTip": "LagaExamples\\Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAowDIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T09:02:42.095Z",
+              "WhenOpened": "2025-05-20T14:36:29.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OneMaxProblem.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\OneMaxProblem.cs",
-              "RelativeDocumentMoniker": "LagaExamples\\OneMaxProblem.cs",
-              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\OneMaxProblem.cs",
-              "RelativeToolTip": "LagaExamples\\OneMaxProblem.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADkAAAAtAAAAAAAAAA==",
+              "Title": "Rastrigin.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\Rastrigin.cs",
+              "RelativeDocumentMoniker": "LagaExamples\\Rastrigin.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\Rastrigin.cs",
+              "RelativeToolTip": "LagaExamples\\Rastrigin.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:36:11.852Z",
+              "WhenOpened": "2025-05-20T10:57:24.248Z",
               "EditorCaption": ""
             }
           ]

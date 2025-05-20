@@ -168,6 +168,22 @@ namespace Laga
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Format the Population string controlling the number of decimals.
+        /// </summary>
+        /// <param name="decimalPlaces"></param>
+        /// <returns></returns>
+        public string ToFormattedString(int decimalPlaces = 2)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Population:");
+
+            for (int i = 0; i < chromosomes.Count; i++)
+                sb.AppendLine($"Chromosome {i}: {chromosomes[i].ToFormattedString(decimalPlaces)}");
+
+            return sb.ToString();
+        }
+
         IEnumerator<Chromosome<T>> IEnumerable<Chromosome<T>>.GetEnumerator() => chromosomes.GetEnumerator();
         /// <summary>
         /// IEnumerator
@@ -344,19 +360,25 @@ namespace Laga
 
         #region Mutation
         /// <summary>
-        /// 
+        /// Mutation parameters
         /// </summary>
-        /// <param name="method"></param>
-        /// <param name="populationRate"></param>
-        /// <param name="chromosomeRate"></param>
-        public void Mutation(string method, double populationRate = 0.1, double chromosomeRate = 0.01, int iMin = 0, int iMax = 100, double dMin = 0, double dMax = 1)
+        /// <param name="method">choose between binary, charRandom, dblRandom, shuffle and dblGaussian types</param>
+        /// <param name="populationRate">Percentage to occur the mutation in the population</param>
+        /// <param name="chromosomeRate">Percentage to occur the mutation in the chromosome</param>
+        /// <param name="iMin">integer min value</param>
+        /// <param name="iMax">integer max value</param>
+        /// <param name="dMin">double min value</param>
+        /// <param name="dMax">double max value</param>
+        /// <param name="mean">mean parameter for guassian mutation</param>
+        /// <param name="stdDev">std Deviation for gaussian mutation</param>
+        public void Mutation(string method, double populationRate = 0.1, double chromosomeRate = 0.01, int iMin = 0, int iMax = 100, double dMin = 0, double dMax = 1, double mean = 0, double stdDev = 0.1)
         {
             List<Chromosome<T>> newChromosome = new List<Chromosome<T>>();
 
             for (int i = 0; i < chromosomes.Count; i++)
             {
                 Chromosome<T> mutatedChromosome = chromosomes[i];
-                if (Numbers.Rand.NextDouble() < populationRate)
+                if (Rand.NextDouble() < populationRate)
                 {
                     switch (method.ToLower())
                     {
@@ -372,6 +394,9 @@ namespace Laga
                         case "shuffle": //only for binary chromosomes...
                             if(Rand.NextDouble() < chromosomeRate)
                                 mutatedChromosome.Shuffle();
+                            break;
+                        case "dblgaussian": //only for double chromosomes...
+                            mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.dblGaussian(chromosomeRate, mean, stdDev);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");

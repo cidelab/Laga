@@ -10,12 +10,9 @@ namespace LagaExamples
             Console.WriteLine("Fitness: A2 + B3 + C4 = 60 (What are the values for A, B and C) \n");
 
             int c = 0;
-            int popSize = 5;
+            int popSize = 30;
             double pr = 0.2;
             double chr = 0.1;
-            Console.WriteLine("GA parameters:");
-            Console.WriteLine("Population size: {0}", popSize);
-            Console.WriteLine("Mutation in population rate: {0} , Mutation in Chromosome rate: {1}", pr, chr);
 
             //initialize the population:
             Population<int> population = new Population<int>();
@@ -39,7 +36,7 @@ namespace LagaExamples
 
         private static void PrintData(Population<int> pop, int c)
         {
-            Console.SetCursorPosition(0, 16);
+            Console.SetCursorPosition(0, 14);
             Chromosome<int> chr = pop.LowestFitnessChromosome();
             Console.WriteLine("Iter:(" + c + ") > LowestFitness: {0} ,  Average fitness: {1}", chr.Fitness, pop.GetAverageFitness());
             Console.WriteLine(chr.ToString());

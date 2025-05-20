@@ -95,6 +95,13 @@
             </summary>
             <returns>string</returns>
         </member>
+        <member name="M:Laga.Chromosome`1.ToFormattedString(System.Int32)">
+            <summary>
+            Format the chromosome string controlling the number of decimals.
+            </summary>
+            <param name="decimalPlaces"> number of decimals, default is 2</param>
+            <returns>string</returns>
+        </member>
         <member name="M:Laga.Chromosome`1.OnePointCrossover(Laga.Chromosome{`0})">
             <summary>
             Perform a crossover with another chromosome using a specified function.
@@ -133,9 +140,18 @@
             <summary>
             
             </summary>
-            <param name="rate"></param>
+            <param name="rate">The percentage possibility to occur the mutation</param>
             <param name="start"></param>
             <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Chromosome`1.dblGaussian(System.Double,System.Double,System.Double)">
+            <summary>
+            Gaussian mutation
+            </summary>
+            <param name="rate">The percentage possibility to occur the mutation</param>
+            <param name="mean"></param>
+            <param name="stdDev"></param>
             <returns></returns>
         </member>
         <member name="M:Laga.Chromosome`1.Shuffle">
@@ -1751,6 +1767,13 @@
             </summary>
             <returns>string</returns>
         </member>
+        <member name="M:Laga.Population`1.ToFormattedString(System.Int32)">
+            <summary>
+            Format the Population string controlling the number of decimals.
+            </summary>
+            <param name="decimalPlaces"></param>
+            <returns></returns>
+        </member>
         <member name="M:Laga.Population`1.GetEnumerator">
             <summary>
             IEnumerator
@@ -1788,13 +1811,19 @@
             <param name="rate"></param>
             <exception cref="T:System.InvalidOperationException"></exception>
         </member>
-        <member name="M:Laga.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32,System.Double,System.Double)">
+        <member name="M:Laga.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32,System.Double,System.Double,System.Double,System.Double)">
             <summary>
-            
+            Mutation parameters
             </summary>
-            <param name="method"></param>
-            <param name="populationRate"></param>
-            <param name="chromosomeRate"></param>
+            <param name="method">choose between binary, charRandom, dblRandom, shuffle and dblGaussian types</param>
+            <param name="populationRate">Percentage to occur the mutation in the population</param>
+            <param name="chromosomeRate">Percentage to occur the mutation in the chromosome</param>
+            <param name="iMin">integer min value</param>
+            <param name="iMax">integer max value</param>
+            <param name="dMin">double min value</param>
+            <param name="dMax">double max value</param>
+            <param name="mean">mean parameter for guassian mutation</param>
+            <param name="stdDev">std Deviation for gaussian mutation</param>
         </member>
         <member name="T:Laga.RankingSort">
             <summary>

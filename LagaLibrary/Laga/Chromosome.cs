@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using Laga.Numbers;
 
@@ -169,6 +168,20 @@ namespace Laga
             return $"Genes: {geneString} | Fitness: {fitnessString}";
         }
 
+        /// <summary>
+        /// Format the chromosome string controlling the number of decimals.
+        /// </summary>
+        /// <param name="decimalPlaces"> number of decimals, default is 2</param>
+        /// <returns>string</returns>
+        public string ToFormattedString(int decimalPlaces = 2)
+        {
+            string format = "F" + decimalPlaces;
+            string geneString = string.Join(", ", genes.Select(g =>
+                g is double d ? d.ToString(format) : g.ToString()));
+            string fitnessString = cachedFitness.HasValue ? cachedFitness.Value.ToString(format) : "No fitness";
+            return $"Genes: {geneString} | Fitness: {fitnessString}";
+        }
+
         #region Crossover
 
         /// <summary>
@@ -302,7 +315,7 @@ namespace Laga
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="rate"></param>
+        /// <param name="rate">The percentage possibility to occur the mutation</param>
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
@@ -313,7 +326,6 @@ namespace Laga
             {
                 if (Rand.NextDouble() < rate)
                 {
-                    //Func<int, char> func = Mutation.Mutate(start, end);
                     chr.Add(Mutation.CharMutation(start, end));
                 }
                 else
@@ -322,6 +334,40 @@ namespace Laga
             return chr;
         }
 
+        /// <summary>
+        /// Gaussian mutation
+        /// </summary>
+        /// <param name="rate">The percentage possibility to occur the mutation</param>
+        /// <param name="mean"></param>
+        /// <param name="stdDev"></param>
+        /// <returns></returns>
+        public Chromosome<double> dblGaussian(double rate, double mean = 0, double stdDev = 0.1)
+        {
+            Chromosome<double> chr = new Chromosome<double>();
+
+            for (int i = 0; i < genes.Count; i++)
+            {
+                if (Rand.NextDouble() < rate)
+                {
+                    // Apply Gaussian mutation
+                    double gene = Convert.ToDouble(genes[i]);
+                    double mutatedGene = gene + NextGaussian(new Random(), 0, stdDev);
+                    chr.Add(mutatedGene);
+                }
+                else
+                    chr.Add(Convert.ToDouble(genes[i]));
+            }
+            return chr;
+        }
+
+        private double NextGaussian(Random rng, double mean = 0, double stdDev = 1)
+        {
+            // Box-Muller transform
+            double u1 = 1.0 - rng.NextDouble(); // Avoid zero
+            double u2 = 1.0 - rng.NextDouble();
+            double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
+            return mean + stdDev * randStdNormal;
+        }
         public Chromosome<double> dblRandom(double rate, double start, double end)
         {
             Chromosome<double> chr = new Chromosome<double>();
