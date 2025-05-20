@@ -33,6 +33,7 @@ namespace LagaExamples
             Console.WriteLine("5. GA: Math Equality Problem");
             Console.WriteLine("6. GA: Combinatorial Problem");
             Console.WriteLine("7. GA: Function Optimization");
+            Console.WriteLine("8. GA: One Max Problem");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -58,6 +59,9 @@ namespace LagaExamples
                     break;
                 case '7':
                     FunctionOptimization.Run();
+                    break;
+                case '8':
+                    OneMaxProblem.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

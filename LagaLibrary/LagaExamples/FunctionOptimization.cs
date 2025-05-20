@@ -44,7 +44,7 @@ namespace LagaExamples
         }
         private static void PrintData(Population<double> pop, int c)
         {
-            Console.SetCursorPosition(0, 16);
+            Console.SetCursorPosition(0, 18);
             Chromosome<double> chr = pop.HighestFitnessChromosome();
             Console.WriteLine("Iter:(" + c + ") > HighestFitness: {0} ,  Average fitness: {1}", chr.Fitness, pop.GetAverageFitness());
             Console.WriteLine(chr.ToString());

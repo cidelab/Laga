@@ -12,16 +12,16 @@ using Eto.Forms;
 
 namespace LagaRhinoExamples
 {
-    public class lre : Rhino.Commands.Command
+    public class Lre : Rhino.Commands.Command
     {
-        public lre()
+        public Lre()
         {
             // Rhino only creates one instance of each command class defined in a
             // plug-in, so it is safe to store a refence in a static property.
             Instance = this;
         }
         ///<summary>The only instance of this command.</summary>
-        public static lre Instance { get; private set; }
+        public static Lre Instance { get; private set; }
         ///<returns>The command name as it appears on the Rhino command line.</returns>
         public override string EnglishName => "lre";
 
