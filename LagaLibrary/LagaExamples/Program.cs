@@ -26,15 +26,16 @@ namespace LagaExamples
         private static ConsoleKeyInfo UI()
         {
             Console.WriteLine("Select an example to run:\n");
-            Console.WriteLine("1. Random Values Examples");
-            Console.WriteLine("2. Chromosome Examples");
-            Console.WriteLine("3. Math Functions");
-            Console.WriteLine("4. Population Examples");
-            Console.WriteLine("5. GA: Math Equality Problem");
-            Console.WriteLine("6. GA: Combinatorial Problem");
-            Console.WriteLine("7. GA: Function Optimization");
-            Console.WriteLine("8. GA: One Max Problem");
+            Console.WriteLine("1. Random values examples");
+            Console.WriteLine("2. Chromosome examples");
+            Console.WriteLine("3. Math functions");
+            Console.WriteLine("4. Population examples");
+            Console.WriteLine("5. GA: Math equality problem");
+            Console.WriteLine("6. GA: Combinatorial problem");
+            Console.WriteLine("7. GA: Function optimization");
+            Console.WriteLine("8. GA: One max Problem");
             Console.WriteLine("9. GA: Rastrigin function");
+            Console.WriteLine("0. GA: Knapsack problem");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -66,6 +67,9 @@ namespace LagaExamples
                     break;
                 case '9':
                     Rastrigin.Run();
+                    break;
+                case '0':
+                    Knapsack.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
