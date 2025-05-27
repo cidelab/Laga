@@ -36,7 +36,7 @@ namespace LagaExamples
                 population.Selection("roulette", invert: true, elitism: true, eliteCount: 2); // Minimize fitness
                 population.Crossover("onepoint", crossoverRate); // For real values, use BLX-alpha or arithmetic crossover
                 //population.Mutation("dblRandom", populationRate: mutationRate, chromosomeRate: crossoverRate, dMin: -0.1, dMax: 0.1); // best results using these parameters.
-                population.Mutation("dblGaussian", populationRate: mutationRate, chromosomeRate: crossoverRate, mean: -0.1, stdDev: 0.1); // Use Gaussian noise
+                population.Mutation("dblGaussian", populationRate: mutationRate, chromosomeRate: crossoverRate, mean: 0.5, stdDev: 1); // Use Gaussian noise
                 population.Evaluation(FitnessFunc);
 
                 c++;

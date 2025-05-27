@@ -145,14 +145,16 @@
             <param name="end"></param>
             <returns></returns>
         </member>
-        <member name="M:Laga.Chromosome`1.dblGaussian(System.Double,System.Double,System.Double)">
+        <member name="M:Laga.Chromosome`1.dblGaussian(System.Double,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Double})">
             <summary>
-            Gaussian mutation
+            Applies Gaussian mutation to the chromosome's genes with a given mutation rate.
             </summary>
-            <param name="rate">The percentage possibility to occur the mutation</param>
-            <param name="mean"></param>
-            <param name="stdDev"></param>
-            <returns></returns>
+            <param name="rate">The probability (0 to 1) that each gene will undergo mutation.</param>
+            <param name="mean">The mean of the Gaussian distribution used for mutation. Default is 0.</param>
+            <param name="stdDev">The standard deviation of the Gaussian distribution. Default is 0.1.</param>
+            <param name="min"> Optional minimum bound for the mutated gene value. The mutated gene will be clamped within the specified range.</param>
+            <param name="max"> Optional maximum bound for the mutated gene value. The mutated gene will be clamped within the specified range.</param>
+            <returns> New Chromosome with the genes mutated according to the Gaussian distribution, optionally bounded by the provided limits.</returns>
         </member>
         <member name="M:Laga.Chromosome`1.Shuffle">
             <summary>
@@ -1754,6 +1756,7 @@
             </summary>
             <param name="index"></param>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:Laga.Population`1.Evaluation(System.Func{Laga.Chromosome{`0},System.Double})" -->
         <member name="M:Laga.Population`1.GetChromosome(System.Int32)">
             <summary>
             Get the chromosome from the population.

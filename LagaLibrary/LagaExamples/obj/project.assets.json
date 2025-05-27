@@ -172,9 +172,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
       "projectName": "LagaExamples",
-      "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
+      "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
       "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\obj\\",
       "projectStyle": "PackageReference",
@@ -198,8 +198,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-              "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+            "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+              "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
             }
           }
         }

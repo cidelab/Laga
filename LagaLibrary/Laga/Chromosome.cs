@@ -335,36 +335,41 @@ namespace Laga
         }
 
         /// <summary>
-        /// Gaussian mutation
+        /// Applies Gaussian mutation to the chromosome's genes with a given mutation rate.
         /// </summary>
-        /// <param name="rate">The percentage possibility to occur the mutation</param>
-        /// <param name="mean"></param>
-        /// <param name="stdDev"></param>
-        /// <returns></returns>
-        public Chromosome<double> dblGaussian(double rate, double mean = 0, double stdDev = 0.1)
+        /// <param name="rate">The probability (0 to 1) that each gene will undergo mutation.</param>
+        /// <param name="mean">The mean of the Gaussian distribution used for mutation. Default is 0.</param>
+        /// <param name="stdDev">The standard deviation of the Gaussian distribution. Default is 0.1.</param>
+        /// <param name="min"> Optional minimum bound for the mutated gene value. The mutated gene will be clamped within the specified range.</param>
+        /// <param name="max"> Optional maximum bound for the mutated gene value. The mutated gene will be clamped within the specified range.</param>
+        /// <returns> New Chromosome with the genes mutated according to the Gaussian distribution, optionally bounded by the provided limits.</returns>
+        public Chromosome<double> dblGaussian(double rate, double mean = 0, double stdDev = 0.1, double? min = null, double? max = null)
         {
             Chromosome<double> chr = new Chromosome<double>();
 
             for (int i = 0; i < genes.Count; i++)
             {
+                double gene = Convert.ToDouble(genes[i]);
                 if (Rand.NextDouble() < rate)
                 {
-                    // Apply Gaussian mutation
-                    double gene = Convert.ToDouble(genes[i]);
-                    double mutatedGene = gene + NextGaussian(new Random(), 0, stdDev);
+                    double mutatedGene = gene + NextGaussian(mean, stdDev);
+                  
+                    if(min.HasValue && max.HasValue)
+                        mutatedGene = Math.Max(min.Value, Math.Min(max.Value, mutatedGene));
+                    
                     chr.Add(mutatedGene);
                 }
                 else
-                    chr.Add(Convert.ToDouble(genes[i]));
+                    chr.Add(gene);
             }
             return chr;
         }
 
-        private double NextGaussian(Random rng, double mean = 0, double stdDev = 1)
+        private double NextGaussian(double mean = 0, double stdDev = 1)
         {
             // Box-Muller transform
-            double u1 = 1.0 - rng.NextDouble(); // Avoid zero
-            double u2 = 1.0 - rng.NextDouble();
+            double u1 = 1.0 - Rand.NextDouble(); // rng.NextDouble(); // Avoid zero
+            double u2 = 1.0 - Rand.NextDouble();
             double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
             return mean + stdDev * randStdNormal;
         }

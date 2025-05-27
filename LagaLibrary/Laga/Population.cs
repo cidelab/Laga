@@ -137,6 +137,16 @@ namespace Laga
             lowestFitnessChromosome = chromosomes.OrderBy(c => c.Fitness).FirstOrDefault();
         }
 
+        /// <summary>
+        /// Evaluates the fitness of each chromosome in the population using the provided fitness function.
+        /// <param name="fitnessFunction">A function delegate that computes the fitness value of a chromosome based on specific criteria.</param>
+        /// <example>
+        /// Example usage:
+        /// <code>
+        /// GeneticAlgorithm ga = new GeneticAlgorithm();
+        /// ga.Evaluation(chromosome => ComputeFitness(chromosome));
+        /// </code>
+        /// </example>
         public void Evaluation(Func<Chromosome<T>, double> fitnessFunction)
         {
             foreach (var chromosome in chromosomes)
@@ -396,7 +406,7 @@ namespace Laga
                                 mutatedChromosome.Shuffle();
                             break;
                         case "dblgaussian": //only for double chromosomes...
-                            mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.dblGaussian(chromosomeRate, mean, stdDev);
+                            mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.dblGaussian(chromosomeRate, mean, stdDev, dMin, dMax);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");
