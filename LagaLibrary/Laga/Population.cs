@@ -334,7 +334,7 @@ namespace Laga
                 Chromosome<T> parent1 = chromosomes[i];
                 Chromosome<T> parent2 = chromosomes[(i + 1) % chromosomes.Count];
 
-                if (Numbers.Rand.NextDouble() < rate)
+                if (Rand.NextDouble() < rate)
                 {
                     Chromosome<T> child1, child2;
                     switch (method.ToLower())

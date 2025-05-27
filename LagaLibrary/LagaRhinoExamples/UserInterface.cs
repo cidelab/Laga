@@ -24,6 +24,7 @@ namespace LagaRhinoExamples
             Title = "LagaRhino examples";
             ClientSize = new Size(300, 500);
             BackgroundColor = Colors.White;
+            Topmost = true;
             
             Button cirBtn = new Button();
             cirBtn.Size = new Size(200, 25);

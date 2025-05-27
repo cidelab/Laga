@@ -23,9 +23,8 @@ namespace LagaRhinoExamples
 
             for (int i = 0; i < numOfCities; i++)
             {
-                cityPoints[i] = new Point3d(Rand.NextFloat(0, 15), Rand.NextFloat(0, 15), 0);
+                cityPoints[i] = new Point3d(Rand.NextFloat(0, 200), Rand.NextFloat(0, 100), 0);
                 doc.Objects.AddPoint(cityPoints[i]);
-                doc.Objects.AddTextDot(i.ToString(), cityPoints[i]);
                 doc.Views.Redraw();
             }
             #endregion
@@ -43,7 +42,22 @@ namespace LagaRhinoExamples
             for (int i = 0; i < popSize; i++)
                 population.Add(new Chromosome<int>(FitnessFunc, GenrGenes.Shuffle_Integer(0, numOfCities - 1).ToList()));
 
-            Polyline poly;
+            Polyline poly = new Polyline();
+
+            topFitness = population.LowestFitnessChromosome().Fitness;
+            RhinoApp.WriteLine("iteration: [" + c.ToString() + "]  " + population.LowestFitnessChromosome().ToString());
+
+            poly = DrawCurve(population.LowestFitnessChromosome());
+            doc.Objects.AddPolyline(poly);
+            doc.Views.Redraw();
+
+            population.Selection("roulette", tournamentSize: 20, invert: false, elitism: true, eliteCount: 10); //Maximize fitness
+            population.Crossover("shuffleonepoint", 0.6); //For real values, use BLX-alpha or arithmetic crossover
+            //population.Mutation("binary", populationRate: 0.2, chromosomeRate: 0.1); //using Binary
+            //population.Evaluation(FitnessFunc);
+
+            /*
+            
 
             //while (iter < c) //Genetic loop
             //{
@@ -62,6 +76,7 @@ namespace LagaRhinoExamples
 
                 //c++;
             //}
+            */
 
         }
         private Polyline DrawCurve(Chromosome<int> chr)
